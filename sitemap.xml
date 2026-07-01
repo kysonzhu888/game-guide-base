@@ -10,12 +10,19 @@
   <url><loc>https://gameguidebase.com/genres/clicker-upgrade/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/crowd-runner/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/drawing-game/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/genres/drawing-precision/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/genres/drawing-toy/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/phone-simulator/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/physics-bounce/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/genres/physics-draw/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/precision-slicing/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/genres/precision-trace/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/genres/reaction-catch/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/reflex-maze/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/genres/speed-tap/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/stretching-game/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/surgery-simulator/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/genres/survival-action/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/tap-counter/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/tapping-game/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/timing-game/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -35,4 +42,11 @@
   <url><loc>https://gameguidebase.com/games/loopit-rate-me-comments/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/games/loopit-cut-into-slices/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/games/loopit-arrow-timing-wheel/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/games/loopit-nightmare-cuphead/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/games/loopit-catch-and-double/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/games/loopit-capybara-smoke-draw/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/games/loopit-million-dollar-ball/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/games/loopit-feather-ink-counter/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/games/loopit-balloon-popper/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/games/loopit-spinning-void-circles/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 </urlset>

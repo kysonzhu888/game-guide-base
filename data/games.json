@@ -1444,5 +1444,497 @@
         "Our automated verification reached Level 2 before Game Over."
       ]
     ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-nightmare-cuphead",
+    "title": "Nightmare Cuphead",
+    "genre": "Survival action",
+    "difficulty": "A drag-to-move survival fight with chests, hazards, and a souls collected counter.",
+    "searchIntent": "Nightmare Cuphead guide, survive the abyss, tap chests, souls collected tips",
+    "sourceUrl": "https://share.loopit.me/game/0e2b8cf5-8dd2-4f01-92f2-4b5d48f536fb?l_data=%7B%22said%22%3A%22sa_crP99TRJ%22%2C%22ssuid%22%3A%22ss_fy7qauqQ%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%220e2b8cf5-8dd2-4f01-92f2-4b5d48f536fb%22%7D",
+    "creator": "heroicguy15",
+    "stats": {
+      "likes": "8",
+      "comments": "",
+      "bookmarks": "",
+      "remixes": ""
+    },
+    "summary": "Nightmare Cuphead opens as a small survival arena: drag to move, dodge the ink, and tap chests for power-ups. Our replay verified the fight state and souls counter, but this behaves like an endless survival run rather than a short level clear.",
+    "quickAnswer": "Drag constantly to stay alive, use the middle of the arena for room, and tap chests only when the path is safe. Our replay reached the active arena with 0 souls collected, so treat this as a survival route, not a cleared level.",
+    "basics": [
+      "Press FIGHT! from the title card.",
+      "Keep dragging the character instead of making isolated taps.",
+      "Watch the SOULS COLLECTED counter and the chest prompt after the arena starts.",
+      "Our replay reached the active SURVIVE THE ABYSS state; no fixed clear screen appeared during the run."
+    ],
+    "controls": [
+      "Drag to move around the arena.",
+      "Tap chests for power-ups when you can reach them without crossing danger.",
+      "Use short movement corrections so your finger does not hide the character."
+    ],
+    "strategy": [
+      "Start near the center so you can dodge in any direction.",
+      "Do not tunnel on chests; staying alive is the first objective.",
+      "Use chest openings after hazards pass, not while moving through tight gaps.",
+      "If you are recording a route, capture the full survival segment because the outcome depends on movement timing."
+    ],
+    "mistakes": [
+      "Running straight to a chest before checking the path.",
+      "Stopping movement after the arena starts.",
+      "Calling the guide cleared when only the survival state was verified."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-nightmare-cuphead/01-entry.png",
+        "alt": "Nightmare Cuphead title card with FIGHT button and drag to move instruction.",
+        "caption": "The opening card explains the survival objective and chest mechanic."
+      },
+      {
+        "src": "/assets/loopit-nightmare-cuphead/02-arena.png",
+        "alt": "Nightmare Cuphead active arena with souls collected counter and survive the abyss text.",
+        "caption": "The replay reached the active arena and souls counter."
+      },
+      {
+        "src": "/assets/loopit-nightmare-cuphead/03-outcome.png",
+        "alt": "Nightmare Cuphead survival arena after movement with the souls counter still visible.",
+        "caption": "No short clear screen appeared in this replay; it plays like survival."
+      }
+    ],
+    "faq": [
+      [
+        "What is the goal?",
+        "Survive the arena, collect souls, and use chests for power-ups."
+      ],
+      [
+        "Did this replay clear the game?",
+        "No. The replay verified the fight state and counter, but no fixed clear screen appeared."
+      ],
+      [
+        "Should I chase every chest?",
+        "No. Open chests only when the route is safe."
+      ]
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-catch-and-double",
+    "title": "Catch and Double",
+    "genre": "Reaction catch",
+    "difficulty": "A falling-ball catcher where each successful catch adds to the captured balls counter.",
+    "searchIntent": "Catch and Double guide, captured balls, falling white balls, circle catcher tips",
+    "sourceUrl": "https://share.loopit.me/game/cf53ff76-4f56-448b-8cb9-f363f4e24a35?l_data=%7B%22said%22%3A%22sa_xapULq53%22%2C%22ssuid%22%3A%22ss_7fnrPUVQ%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%22cf53ff76-4f56-448b-8cb9-f363f4e24a35%22%7D",
+    "creator": "Maddieb2cool",
+    "stats": {
+      "likes": "1.8K",
+      "comments": "1K",
+      "bookmarks": "1.1K",
+      "remixes": ""
+    },
+    "summary": "Catch and Double is a simple but fast reaction game. Our replay reached the active round and registered 1 captured ball, confirming the catcher movement and scoring loop.",
+    "quickAnswer": "Tap START, keep the circle under the falling white balls, and make small horizontal corrections. Our replay verified the round through 1 captured ball.",
+    "basics": [
+      "Tap START from the title card.",
+      "Move the purple catcher circle under the falling white ball.",
+      "The counter changes to CAPTURED BALLS after the round begins.",
+      "Our replay verified at least one successful catch."
+    ],
+    "controls": [
+      "Drag or hold where you want the catcher to move.",
+      "Use short left-right adjustments rather than big swipes.",
+      "Keep your finger below the catcher so the falling ball remains visible."
+    ],
+    "strategy": [
+      "Center the catcher early, then correct after the ball lane is clear.",
+      "React to the ball position, not the text at the top.",
+      "If a ball appears near the edge, start moving early because the catcher needs travel time.",
+      "Record a full run if you want to compare how quickly the counter scales."
+    ],
+    "mistakes": [
+      "Missing the START button and thinking the game is unresponsive.",
+      "Dragging too far and overshooting the falling ball.",
+      "Looking at the counter instead of the ball lane."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-catch-and-double/01-round-start.png",
+        "alt": "Catch and Double active round with falling ball and captured balls counter.",
+        "caption": "The active round starts with a falling white ball and catcher circle."
+      },
+      {
+        "src": "/assets/loopit-catch-and-double/02-first-catch.png",
+        "alt": "Catch and Double showing 1 captured balls after a successful catch.",
+        "caption": "The replay registered 1 captured ball."
+      }
+    ],
+    "faq": [
+      [
+        "How do I score?",
+        "Catch the falling white balls inside the circle."
+      ],
+      [
+        "How far did this replay get?",
+        "The replay verified the active round and 1 captured ball."
+      ],
+      [
+        "Is there a passcode?",
+        "No visible passcode appeared; it is a reaction game."
+      ]
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-capybara-smoke-draw",
+    "title": "Capybara Smoke Draw",
+    "genre": "Drawing toy",
+    "difficulty": "A freeform drawing scene with no visible score or level completion state in replay.",
+    "searchIntent": "Capybara Smoke Draw guide, CAPYBARA ERA ONLY, draw game, no score tips",
+    "sourceUrl": "https://share.loopit.me/game/7725a43d-12af-4f3e-a978-b4cfb0384390?l_data=%7B%22said%22%3A%22sa_2xJMDJPD%22%2C%22ssuid%22%3A%22ss_cFTAHLk9%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%227725a43d-12af-4f3e-a978-b4cfb0384390%22%7D",
+    "creator": "CAPYBARA ERA ONLY!",
+    "stats": {
+      "likes": "85",
+      "comments": "13",
+      "bookmarks": "60",
+      "remixes": "3"
+    },
+    "summary": "Capybara Smoke Draw behaves more like a freeform visual toy than a level-based game. Our replay opened the scene and confirmed dragging leaves a visible bright mark, but there was no score, timer, win screen, or passcode.",
+    "quickAnswer": "Use slow drags to draw visible light strokes. There is no visible completion target in our replay, so the guide focuses on how to interact with the canvas.",
+    "basics": [
+      "Open the shared game link and wait for the canvas to load.",
+      "Drag across the scene to create bright drawing marks.",
+      "The visible stats and caption stay outside the game area.",
+      "Our replay found no score, level, result screen, or passcode."
+    ],
+    "controls": [
+      "Drag on the canvas to draw.",
+      "Use slower strokes if your marks are hard to see.",
+      "Avoid starting from the bottom app controls, because those belong to Loopit rather than the game canvas."
+    ],
+    "strategy": [
+      "Treat it as a shareable drawing canvas rather than a challenge route.",
+      "Use high-contrast areas of the background for clearer marks.",
+      "Take a screenshot after your drawing, because there is no separate result screen.",
+      "If a later version adds scoring, replay from the source link and update the route."
+    ],
+    "mistakes": [
+      "Searching for a hidden passcode when none was visible in replay.",
+      "Dragging on the Loopit action row instead of the canvas.",
+      "Expecting a next level screen from a freeform drawing toy."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-capybara-smoke-draw/01-drawn.png",
+        "alt": "Capybara Smoke Draw canvas after dragging with a visible bright mark.",
+        "caption": "Dragging changes the canvas, but no score or result screen appeared."
+      }
+    ],
+    "faq": [
+      [
+        "Is there a win condition?",
+        "Not in our replay. It behaved like a freeform drawing toy."
+      ],
+      [
+        "What do I do?",
+        "Drag on the canvas to create visible marks."
+      ],
+      [
+        "Is there a passcode?",
+        "No passcode was visible during replay."
+      ]
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-million-dollar-ball",
+    "title": "Million Dollar Ball",
+    "genre": "Physics draw",
+    "difficulty": "A draw-a-wall physics game where the visible objective is to get to 1M dollars.",
+    "searchIntent": "Million Dollar Ball guide, get to 1m dollars, draw walls, cash counter tips",
+    "sourceUrl": "https://share.loopit.me/game/3bb5f1fc-74f7-4165-a55e-7df1f18d92f4?l_data=%7B%22said%22%3A%22sa_mn2nwNMP%22%2C%22ssuid%22%3A%22ss_59MEHMtQ%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%223bb5f1fc-74f7-4165-a55e-7df1f18d92f4%22%7D",
+    "creator": "Ribbit",
+    "stats": {
+      "likes": "124",
+      "comments": "60",
+      "bookmarks": "68",
+      "remixes": "7"
+    },
+    "summary": "Million Dollar Ball asks players to get to 1M dollars by drawing walls around a moving ball. Our replay verified the drawing mechanic and raised the visible CASH counter to $5, but did not reach the long 1M target.",
+    "quickAnswer": "Draw short angled walls under the ball so it bounces toward cash pickups. Our replay verified the mechanic to CASH: $5; the 1M goal still requires a longer optimized run.",
+    "basics": [
+      "Open the shared game and wait for the ball and cash counter.",
+      "Draw cyan wall segments in front of the ball path.",
+      "Use the walls to redirect the green ball toward money pickups.",
+      "Our replay verified early progress to CASH: $5."
+    ],
+    "controls": [
+      "Drag to draw temporary wall lines.",
+      "Use short lines so the ball does not get trapped behind a long barrier.",
+      "Leave gaps for the ball to escape after each bounce."
+    ],
+    "strategy": [
+      "Start with shallow diagonal lines rather than vertical walls.",
+      "Place walls just ahead of the ball, not directly on top of it.",
+      "Use small rebounds to steer toward nearby money before trying big launches.",
+      "For a 1M attempt, record video and review where the ball loses momentum."
+    ],
+    "mistakes": [
+      "Drawing a box that traps the ball away from cash.",
+      "Making lines too long and blocking the route.",
+      "Claiming the 1M target without a full long-run capture."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-million-dollar-ball/01-cash-walls.png",
+        "alt": "Million Dollar Ball showing CASH $5 and cyan drawn wall lines around a green ball.",
+        "caption": "The replay verified wall drawing and early cash gain to $5."
+      }
+    ],
+    "faq": [
+      [
+        "How do I move the ball?",
+        "Draw wall segments so the ball bounces in a useful direction."
+      ],
+      [
+        "Did this replay reach 1M dollars?",
+        "No. It verified the mechanic and early CASH: $5 progress."
+      ],
+      [
+        "What is the safest first move?",
+        "Use a short angled wall below the ball to redirect it without trapping it."
+      ]
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-feather-ink-counter",
+    "title": "Feather Ink Counter",
+    "genre": "Precision trace",
+    "difficulty": "A trace-or-tap precision game with a 0/10 counter and small target dots.",
+    "searchIntent": "Feather Ink Counter guide, 6 out of 10 progress, precision dot tracing tips",
+    "sourceUrl": "https://share.loopit.me/game/0011e990-758a-4570-a956-a1f2266077c6?l_data=%7B%22said%22%3A%22sa_cTfjPVjF%22%2C%22ssuid%22%3A%22ss_dwCAcudw%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%220011e990-758a-4570-a956-a1f2266077c6%22%7D",
+    "creator": "Korra",
+    "stats": {
+      "likes": "3",
+      "comments": "1",
+      "bookmarks": "",
+      "remixes": ""
+    },
+    "summary": "Feather Ink Counter uses a small 0/10 progress counter and punishes imprecise input. Our replay reached 6/10, then later attempts with shorter strokes reset or failed to add progress, so the full 10/10 route is still precision-sensitive.",
+    "quickAnswer": "Use slow controlled strokes toward the small visible target areas. Our replay verified progress up to 6/10, but not a complete 10/10 clear.",
+    "basics": [
+      "Start from the visible feather/drawing area.",
+      "Use deliberate strokes rather than broad screen swipes.",
+      "Watch the counter at the top; our replay moved from 0/10 to 3/10 and then 6/10.",
+      "If the counter drops or stops, reset and use smaller movements around the target dot."
+    ],
+    "controls": [
+      "Drag carefully through the visible target area.",
+      "Lift and restart if your stroke drifts too far from the intended mark.",
+      "Use short strokes near the dot once the counter reaches the middle values."
+    ],
+    "strategy": [
+      "Prioritize accuracy over speed.",
+      "After each increment, pause and locate the next target before moving again.",
+      "At 6/10 the remaining inputs appear more sensitive, so avoid sweeping across the full canvas.",
+      "Record a close-up replay if you are trying to document a full 10/10 route."
+    ],
+    "mistakes": [
+      "Using large swipes that miss the small target zone.",
+      "Continuing after a reset without noticing the counter changed.",
+      "Writing the guide as complete when the replay only verified 6/10."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-feather-ink-counter/01-progress-3.png",
+        "alt": "Feather Ink Counter showing 3 out of 10 progress after initial strokes.",
+        "caption": "Initial controlled strokes moved the counter to 3/10."
+      },
+      {
+        "src": "/assets/loopit-feather-ink-counter/02-progress-6.png",
+        "alt": "Feather Ink Counter showing 6 out of 10 progress with a small target dot visible.",
+        "caption": "The highest verified replay state was 6/10."
+      }
+    ],
+    "faq": [
+      [
+        "How far did the replay get?",
+        "The replay verified progress to 6/10."
+      ],
+      [
+        "Why does progress stop?",
+        "The game appears to require precise strokes near small target areas."
+      ],
+      [
+        "Is this a full clear guide?",
+        "Not yet. It documents the verified path up to 6/10 and the remaining precision blocker."
+      ]
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-balloon-popper",
+    "title": "Balloon Popper",
+    "genre": "Speed tap",
+    "difficulty": "A fast tapping challenge where the target is 20 balloons.",
+    "searchIntent": "Balloon Popper guide, tap 20 balloons, score 17/20, speed tap tips",
+    "sourceUrl": "https://share.loopit.me/game/1eda36ca-aa15-4b97-94ba-0b20b390b9ff?l_data=%7B%22said%22%3A%22sa_Zrp9JKmc%22%2C%22ssuid%22%3A%22ss_2veh2NJV%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%221eda36ca-aa15-4b97-94ba-0b20b390b9ff%22%7D",
+    "creator": "hannialopez1",
+    "stats": {
+      "likes": "2",
+      "comments": "",
+      "bookmarks": "",
+      "remixes": ""
+    },
+    "summary": "Balloon Popper is a speed-tap challenge with a visible Score target of 20. Our replay got the counter as high as 17/20, which verifies the main loop and most of the first challenge, but not the final 20/20 completion screen.",
+    "quickAnswer": "Tap visible balloons quickly, but avoid random empty-screen tapping because it can cost time or reset your rhythm. Our highest verified replay score is 17/20.",
+    "basics": [
+      "Tap Start Popping! from the title card.",
+      "Tap each balloon as soon as it appears.",
+      "Track the Score counter at the top.",
+      "Our replay verified progress to 17/20 out of the 20-balloon target."
+    ],
+    "controls": [
+      "Tap directly on balloons.",
+      "Use one finger for precision unless multiple balloons are visible far apart.",
+      "Keep the hand away from the top score text so you can read progress."
+    ],
+    "strategy": [
+      "Scan from top to bottom, then left to right, instead of tapping randomly.",
+      "Prioritize balloons near the screen edges because they are easier to miss.",
+      "Keep a steady tap rhythm after 10/20, when the remaining balloons can be scattered.",
+      "For a full 20/20 proof, use screen recording and review missed balloons frame by frame."
+    ],
+    "mistakes": [
+      "Over-scanning after a near-complete run and losing the current attempt.",
+      "Tapping empty space instead of confirming balloon positions.",
+      "Calling 17/20 a clear; the target shown by the game is 20."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-balloon-popper/01-score-10.png",
+        "alt": "Balloon Popper showing Score 10 out of 20 during a run.",
+        "caption": "The run crossed the halfway point at 10/20."
+      },
+      {
+        "src": "/assets/loopit-balloon-popper/02-score-17.png",
+        "alt": "Balloon Popper showing Score 17 out of 20 with remaining balloons visible.",
+        "caption": "The highest verified replay state was 17/20."
+      }
+    ],
+    "faq": [
+      [
+        "What is the target score?",
+        "The visible objective is 20 balloons."
+      ],
+      [
+        "Did this replay finish 20/20?",
+        "No. The highest verified replay score was 17/20."
+      ],
+      [
+        "What should I improve first?",
+        "Use a consistent scan pattern so late balloons are not missed."
+      ]
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-spinning-void-circles",
+    "title": "Spinning Void Circles",
+    "genre": "Drawing precision",
+    "difficulty": "A circle drawing challenge where the counter only increments when the loop is recognized.",
+    "searchIntent": "Spinning Void Circles guide, draw circles, circles counter 0, recognition tips",
+    "sourceUrl": "https://share.loopit.me/game/00fcb819-f88b-4c1f-9b2b-0594f1f5bb32?l_data=%7B%22said%22%3A%22sa_XP7fe3cw%22%2C%22ssuid%22%3A%22ss_Ss3FpSDP%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%2200fcb819-f88b-4c1f-9b2b-0594f1f5bb32%22%7D",
+    "creator": "ilovefunnybunny",
+    "stats": {
+      "likes": "24",
+      "comments": "5",
+      "bookmarks": "7",
+      "remixes": ""
+    },
+    "summary": "Spinning Void Circles presents a CIRCLES counter over a galaxy background. Our replay opened the game and drew multiple strokes, but the counter stayed at 0, so the guide records the recognition blocker instead of pretending the route cleared.",
+    "quickAnswer": "Draw closed, smooth circles inside the play area and watch whether CIRCLES increments. Our replay did not register a circle, so the current verified state is counter 0 with unrecognized strokes.",
+    "basics": [
+      "Open the source link and wait for the CIRCLES counter to appear.",
+      "Draw a closed loop inside the central play area.",
+      "Check whether the counter increments after the loop closes.",
+      "Our replay drew visible strokes, but CIRCLES remained 0."
+    ],
+    "controls": [
+      "Drag in a smooth circular path.",
+      "Close the loop cleanly instead of drawing a short slash.",
+      "Stay away from the bottom Loopit controls and the top status area."
+    ],
+    "strategy": [
+      "Use slower circles with a consistent radius.",
+      "Start and end at nearly the same point to improve recognition.",
+      "Try one complete circle at a time, then pause to see if the counter updates.",
+      "Because our replay did not register, a future full guide should include video and frame review."
+    ],
+    "mistakes": [
+      "Drawing a partial arc or slash instead of a closed loop.",
+      "Drawing too close to the app controls.",
+      "Assuming visible ink means the circle was accepted by the game."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-spinning-void-circles/01-entry.png",
+        "alt": "Spinning Void Circles galaxy screen with CIRCLES counter at 0.",
+        "caption": "The game starts with a CIRCLES counter over the play area."
+      },
+      {
+        "src": "/assets/loopit-spinning-void-circles/02-unregistered-stroke.png",
+        "alt": "Spinning Void Circles showing a visible drawn stroke while the counter remains 0.",
+        "caption": "Our replay produced visible strokes, but the counter did not increment."
+      }
+    ],
+    "faq": [
+      [
+        "Why is CIRCLES still 0?",
+        "The game appears to require a recognized closed loop; our replay strokes did not count."
+      ],
+      [
+        "Did this replay clear the challenge?",
+        "No. It verified the entry and recognition blocker only."
+      ],
+      [
+        "What should I try next?",
+        "Draw slower, more complete circles that start and end at the same point."
+      ]
+    ]
   }
 ]

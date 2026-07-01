@@ -467,5 +467,96 @@
     "width": 1200,
     "format": "jpeg",
     "quality": 82
+  },
+  "/assets/loopit-nightmare-cuphead/01-entry.png": {
+    "r2Key": "games/loopit/loopit-nightmare-cuphead/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-nightmare-cuphead/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-nightmare-cuphead/02-arena.png": {
+    "r2Key": "games/loopit/loopit-nightmare-cuphead/screenshots/02-arena-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-nightmare-cuphead/screenshots/02-arena-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-nightmare-cuphead/03-outcome.png": {
+    "r2Key": "games/loopit/loopit-nightmare-cuphead/screenshots/03-outcome-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-nightmare-cuphead/screenshots/03-outcome-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-catch-and-double/01-round-start.png": {
+    "r2Key": "games/loopit/loopit-catch-and-double/screenshots/01-round-start-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-catch-and-double/screenshots/01-round-start-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-catch-and-double/02-first-catch.png": {
+    "r2Key": "games/loopit/loopit-catch-and-double/screenshots/02-first-catch-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-catch-and-double/screenshots/02-first-catch-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-capybara-smoke-draw/01-drawn.png": {
+    "r2Key": "games/loopit/loopit-capybara-smoke-draw/screenshots/01-drawn-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-capybara-smoke-draw/screenshots/01-drawn-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-million-dollar-ball/01-cash-walls.png": {
+    "r2Key": "games/loopit/loopit-million-dollar-ball/screenshots/01-cash-walls-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-million-dollar-ball/screenshots/01-cash-walls-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-feather-ink-counter/01-progress-3.png": {
+    "r2Key": "games/loopit/loopit-feather-ink-counter/screenshots/01-progress-3-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-feather-ink-counter/screenshots/01-progress-3-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-feather-ink-counter/02-progress-6.png": {
+    "r2Key": "games/loopit/loopit-feather-ink-counter/screenshots/02-progress-6-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-feather-ink-counter/screenshots/02-progress-6-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-balloon-popper/01-score-10.png": {
+    "r2Key": "games/loopit/loopit-balloon-popper/screenshots/01-score-10-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-balloon-popper/screenshots/01-score-10-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-balloon-popper/02-score-17.png": {
+    "r2Key": "games/loopit/loopit-balloon-popper/screenshots/02-score-17-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-balloon-popper/screenshots/02-score-17-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-spinning-void-circles/01-entry.png": {
+    "r2Key": "games/loopit/loopit-spinning-void-circles/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-spinning-void-circles/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-spinning-void-circles/02-unregistered-stroke.png": {
+    "r2Key": "games/loopit/loopit-spinning-void-circles/screenshots/02-unregistered-stroke-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-spinning-void-circles/screenshots/02-unregistered-stroke-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
   }
 }
