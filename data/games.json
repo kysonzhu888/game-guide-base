@@ -2134,5 +2134,1530 @@
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Spinning Void Circles, so this guide is based on source-link replay evidence and visible Loopit metadata."
     ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-rollercoaster-builder",
+    "title": "Rollercoaster Builder",
+    "genre": "Track builder",
+    "difficulty": "A sandbox builder with track pieces, undo, clear, shop, and a RIDE button.",
+    "searchIntent": "Rollercoaster Builder Loopit guide, flat long bump wave climb drop loop ride tips",
+    "sourceUrl": "https://share.loopit.me/game/682cc9d2-34c0-44a2-95ec-a058d70e4bbe?l_data=%7B%22said%22%3A%22sa_d9TwVmtS%22%2C%22ssuid%22%3A%22ss_KvjHQDk9%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%22682cc9d2-34c0-44a2-95ec-a058d70e4bbe%22%7D",
+    "creator": "The creator",
+    "creatorSlug": "the-creator",
+    "stats": {
+      "likes": "9.5K",
+      "comments": "542",
+      "bookmarks": "7.3K",
+      "remixes": "488"
+    },
+    "summary": "Rollercoaster Builder lets players place track pieces, then press RIDE to test the route. Our replay verified the builder toolbar and ride controls rather than a fixed clear condition.",
+    "quickAnswer": "Start with Flat or Long pieces, add one height change at a time, then press RIDE. This is a sandbox route builder, so the goal is a working coaster, not a single win screen.",
+    "basics": [
+      "Use the bottom track buttons to add Flat, Long, Bump, Wave, Climb, Drop, Loop, and other pieces.",
+      "Undo removes the last piece; Clear resets the track.",
+      "Press RIDE after building a safe path.",
+      "Our replay verified the builder and ride toolbar; no fixed completion screen appeared."
+    ],
+    "controls": [
+      "Tap a track piece to place it.",
+      "Use Undo before the track gets too tangled.",
+      "Use RIDE only after the path has enough support and a clear route."
+    ],
+    "strategy": [
+      "Build short test sections instead of one huge coaster at once.",
+      "Use gentle climbs before loops or steep drops.",
+      "Clear and rebuild if the coaster path overlaps itself in a confusing way.",
+      "Screenshot your best layout because sandbox progress may not have a final score."
+    ],
+    "mistakes": [
+      "Starting with loops before testing basic track flow.",
+      "Ignoring Undo and letting the path become unreadable.",
+      "Expecting a level-clear overlay from a sandbox builder."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-rollercoaster-builder/01-builder.png",
+        "alt": "Rollercoaster Builder showing track pieces and the RIDE button.",
+        "caption": "The replay verified the track builder toolbar and RIDE button."
+      }
+    ],
+    "faq": [
+      [
+        "How do I test the coaster?",
+        "Press RIDE after placing track pieces."
+      ],
+      [
+        "Did the replay clear a level?",
+        "No. It verified the builder controls and ride button."
+      ],
+      [
+        "Which piece should I use first?",
+        "Flat or Long is the safest first piece."
+      ]
+    ],
+    "creatorContext": [
+      "The creator is the Loopit display name shown on the playable source card for Rollercoaster Builder.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 9.5K likes, 542 comments, 7.3K bookmarks, 488 remixes."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for Rollercoaster Builder yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-paper-cutting",
+    "title": "Paper Cutting",
+    "genre": "Precision craft",
+    "difficulty": "A folding and cutting craft game that advances from dashed-arrow folding to red-paper cutting.",
+    "searchIntent": "Paper Cutting Loopit guide, Step 1 folding, Step 2 cutting, recut unfold tips",
+    "sourceUrl": "https://share.loopit.me/game/efd176cf-bf19-46b9-b524-bc129091f8d5?l_data=%7B%22said%22%3A%22sa_9rJPNwQL%22%2C%22ssuid%22%3A%22ss_dhP3RwAH%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%22efd176cf-bf19-46b9-b524-bc129091f8d5%22%7D",
+    "creator": "Ryan",
+    "creatorSlug": "ryan",
+    "stats": {
+      "likes": "17K",
+      "comments": "5.6K",
+      "bookmarks": "11.9K",
+      "remixes": "539"
+    },
+    "summary": "Paper Cutting is one of the clearest new guides in this batch. Our replay moved from Step 1 Folding into Step 2 Cutting, so the basic route is verified.",
+    "quickAnswer": "Drag along the dashed arrow to fold first, then draw on the red paper in Step 2. If the cut looks wrong, use Recut before Unfold.",
+    "basics": [
+      "Step 1 asks you to drag along the dashed arrow to fold.",
+      "After a successful fold, the game moves to Step 2: Cutting.",
+      "Draw cutting lines on the red paper.",
+      "Use Recut to retry the cutting step or Unfold to view the result."
+    ],
+    "controls": [
+      "Drag in the direction of the dashed arrow.",
+      "Draw deliberate cutting lines instead of scribbling.",
+      "Tap Recut if the shape is off before unfolding."
+    ],
+    "strategy": [
+      "Follow the fold arrow before thinking about the final shape.",
+      "Use fewer clean cuts; messy lines are harder to reason about.",
+      "After cutting, unfold only when the silhouette looks intentional.",
+      "Record both fold and cut screens if you are sharing a solution."
+    ],
+    "mistakes": [
+      "Trying to cut before completing the fold.",
+      "Drawing too many random lines.",
+      "Using Unfold before checking the red paper shape."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-paper-cutting/01-folding.png",
+        "alt": "Paper Cutting Step 1 Folding screen with dashed arrow instruction.",
+        "caption": "Step 1 asks you to fold along the dashed arrow."
+      },
+      {
+        "src": "/assets/loopit-paper-cutting/02-cutting.png",
+        "alt": "Paper Cutting Step 2 Cutting screen with red paper.",
+        "caption": "The replay reached Step 2 and exposed Recut and Unfold."
+      }
+    ],
+    "faq": [
+      [
+        "What is Step 1?",
+        "Folding. Drag along the dashed arrow."
+      ],
+      [
+        "What did the replay verify?",
+        "It reached Step 2: Cutting."
+      ],
+      [
+        "Can I retry the cut?",
+        "Yes, use Recut."
+      ]
+    ],
+    "creatorContext": [
+      "Ryan is the Loopit display name shown on the playable source card for Paper Cutting.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 17K likes, 5.6K comments, 11.9K bookmarks, 539 remixes."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for Paper Cutting yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-car-house-connect",
+    "title": "Car House Connect",
+    "genre": "Path puzzle",
+    "difficulty": "A level puzzle where cars must connect to matching colored houses.",
+    "searchIntent": "Car House Connect Loopit guide, connect cars to matching houses, level 1 path puzzle",
+    "sourceUrl": "https://share.loopit.me/game/3458704e-7df3-4f39-a7e0-ad60d34f21fb?l_data=%7B%22said%22%3A%22sa_fUUqPchZ%22%2C%22ssuid%22%3A%22ss_JCfEyjzs%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%223458704e-7df3-4f39-a7e0-ad60d34f21fb%22%7D",
+    "creator": "Oliver Brunson",
+    "creatorSlug": "oliver-brunson",
+    "stats": {
+      "likes": "5.5K",
+      "comments": "4.5K",
+      "bookmarks": "3.1K",
+      "remixes": "376"
+    },
+    "summary": "Car House Connect opens on a Level 1 grid with red and blue cars and matching houses. Our replay verified the puzzle objective and board layout.",
+    "quickAnswer": "Connect each car to the house of the same color without blocking the other color path. Start with the longest or most constrained route first.",
+    "basics": [
+      "Level 1 says to connect cars to matching houses.",
+      "The board uses separate colored endpoints.",
+      "Draw routes that do not trap the second car.",
+      "Our replay verified Level 1 but did not capture a clear overlay."
+    ],
+    "controls": [
+      "Drag from a car toward its matching house.",
+      "Use short route corrections around corners.",
+      "Restart if a route blocks the other color."
+    ],
+    "strategy": [
+      "Plan both colors before drawing.",
+      "Route the longer path first if one color has fewer options.",
+      "Keep the center cells open until the second route is clear.",
+      "Avoid crossing paths unless the game explicitly allows it."
+    ],
+    "mistakes": [
+      "Connecting to the wrong color house.",
+      "Filling the middle too early.",
+      "Assuming one solved car means the level is done."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-car-house-connect/01-level-1.png",
+        "alt": "Car House Connect Level 1 board with red and blue cars and houses.",
+        "caption": "The replay verified the Level 1 matching objective."
+      }
+    ],
+    "faq": [
+      [
+        "What is the goal?",
+        "Connect cars to matching colored houses."
+      ],
+      [
+        "Did the replay finish Level 1?",
+        "No clear screen was captured; it verified the Level 1 objective and board."
+      ],
+      [
+        "Which route first?",
+        "Use the more constrained color first."
+      ]
+    ],
+    "creatorContext": [
+      "Oliver Brunson is the Loopit display name shown on the playable source card for Car House Connect.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 5.5K likes, 4.5K comments, 3.1K bookmarks, 376 remixes."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for Car House Connect yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-tag-youre-it",
+    "title": "Tag You're It",
+    "genre": "Chase reaction",
+    "difficulty": "A drag-to-move chase game with a time score and a tagger.",
+    "searchIntent": "Tag You're It Loopit guide, drag anywhere to move, score best time tips",
+    "sourceUrl": "https://share.loopit.me/game/d77444e8-b0ef-4eaa-adf0-2df79a509c1c?l_data=%7B%22said%22%3A%22sa_MtWVXhyq%22%2C%22ssuid%22%3A%22ss_kmCTcmtT%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%22d77444e8-b0ef-4eaa-adf0-2df79a509c1c%22%7D",
+    "creator": "Booga Booga",
+    "creatorSlug": "booga-booga",
+    "stats": {
+      "likes": "4.5K",
+      "comments": "779",
+      "bookmarks": "2.2K",
+      "remixes": "145"
+    },
+    "summary": "Tag You're It is a short chase reaction game. Our replay entered the arena and captured the SCORE and BEST timer state.",
+    "quickAnswer": "Drag anywhere to move and keep distance from the tagger. Your score is survival time, so smooth movement matters more than rapid taps.",
+    "basics": [
+      "The arena shows SCORE and BEST timers.",
+      "The instruction says Drag anywhere to move.",
+      "The tagger chases the runner immediately.",
+      "Our replay captured the active arena at 0.0s with a 0.5s best."
+    ],
+    "controls": [
+      "Drag continuously to steer.",
+      "Use wide arcs instead of short jitter taps.",
+      "Keep your finger away from the runner so you can see the tagger."
+    ],
+    "strategy": [
+      "Move diagonally away from the tagger at the start.",
+      "Use the open corners to make the chaser turn.",
+      "Do not stop to read the timer during the run.",
+      "Retry and compare BEST time after each run."
+    ],
+    "mistakes": [
+      "Tapping instead of dragging.",
+      "Running straight into a wall or corner.",
+      "Watching SCORE instead of the tagger."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-tag-youre-it/01-arena.png",
+        "alt": "Tag You're It active arena with score, best time, runner, and tagger.",
+        "caption": "The replay reached the active chase screen."
+      }
+    ],
+    "faq": [
+      [
+        "How do I move?",
+        "Drag anywhere on the screen."
+      ],
+      [
+        "What is the score?",
+        "Survival time before getting tagged."
+      ],
+      [
+        "Did the replay reach gameplay?",
+        "Yes, it captured the active tag arena and timer."
+      ]
+    ],
+    "creatorContext": [
+      "Booga Booga is the Loopit display name shown on the playable source card for Tag You're It.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 4.5K likes, 779 comments, 2.2K bookmarks, 145 remixes."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for Tag You're It yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-shift-weight-server",
+    "title": "Shift Weight Server",
+    "genre": "Balance serving",
+    "difficulty": "A waiter balance game with Served count, next-table timer, and step button.",
+    "searchIntent": "Shift Weight Server Loopit guide, served count, next table timer, balance tips",
+    "sourceUrl": "https://share.loopit.me/game/a7045ea2-194c-410e-907e-ae937be19793?l_data=%7B%22said%22%3A%22sa_Hu3XdtCq%22%2C%22ssuid%22%3A%22ss_a4VrvCwR%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%22a7045ea2-194c-410e-907e-ae937be19793%22%7D",
+    "creator": "Kristen Thompson",
+    "creatorSlug": "kristen-thompson",
+    "stats": {
+      "likes": "1.1K",
+      "comments": "132",
+      "bookmarks": "2K",
+      "remixes": ""
+    },
+    "summary": "Shift Weight Server shows a waiter balancing stacked items while serving tables. Our replay verified the serving screen but did not increment Served past 0.",
+    "quickAnswer": "Use small movement corrections and watch the stacked items before stepping. The verified replay stayed at Served: 0, so treat this as an early-route guide.",
+    "basics": [
+      "The HUD shows Served: 0 and Next table in: 10.",
+      "SHIFT WEIGHT is the main prompt.",
+      "STEP appears as the movement action.",
+      "Our replay verified the starting service state."
+    ],
+    "controls": [
+      "Tap or hold STEP carefully.",
+      "Shift weight before the stack leans too far.",
+      "Avoid repeated large inputs that can throw the stack off balance."
+    ],
+    "strategy": [
+      "Wait for the stack to settle before stepping.",
+      "Correct lean early instead of after the tower swings wide.",
+      "Use short inputs and observe the waiter posture.",
+      "Track Served count to confirm real progress."
+    ],
+    "mistakes": [
+      "Spamming STEP immediately.",
+      "Ignoring the stack angle.",
+      "Calling a clear before Served increases."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-shift-weight-server/01-served-zero.png",
+        "alt": "Shift Weight Server screen with waiter, stacked items, Served 0, and STEP button.",
+        "caption": "The replay verified the serving balance start state."
+      }
+    ],
+    "faq": [
+      [
+        "What does Served mean?",
+        "It is the visible service progress counter."
+      ],
+      [
+        "How far did replay get?",
+        "It verified the starting state at Served: 0."
+      ],
+      [
+        "What should I focus on?",
+        "Balance first, stepping second."
+      ]
+    ],
+    "creatorContext": [
+      "Kristen Thompson is the Loopit display name shown on the playable source card for Shift Weight Server.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 1.1K likes, 132 comments, 2K bookmarks."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for Shift Weight Server yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-pump-it-up-balloon",
+    "title": "Pump It Up Balloon",
+    "genre": "Hold timing",
+    "difficulty": "A balloon sizing challenge with a dotted target circle and START button.",
+    "searchIntent": "Pump It Up Balloon Loopit guide, fill the perfect shape, start button, hold timing tips",
+    "sourceUrl": "https://share.loopit.me/game/a5083ddc-1de0-49c3-8bec-6f51c72efc3c?l_data=%7B%22said%22%3A%22sa_MtZRecXp%22%2C%22ssuid%22%3A%22ss_Qh7FWYTY%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%22a5083ddc-1de0-49c3-8bec-6f51c72efc3c%22%7D",
+    "creator": "rowan_so",
+    "creatorSlug": "rowan-so",
+    "stats": {
+      "likes": "6.6K",
+      "comments": "3.2K",
+      "bookmarks": "2.8K",
+      "remixes": "432"
+    },
+    "summary": "Pump It Up Balloon asks whether you can fill the perfect shape. Our replay verified the start screen and target circle, but did not capture a completed inflation result.",
+    "quickAnswer": "Tap START, then pump gradually toward the dotted target. Stop before the balloon passes the target outline.",
+    "basics": [
+      "The game asks: Can you fill the perfect shape?",
+      "The dotted circle is the apparent target size.",
+      "START begins the challenge.",
+      "Our replay verified the target screen; no result state was captured."
+    ],
+    "controls": [
+      "Tap START to begin.",
+      "Use controlled holds or taps to inflate.",
+      "Watch the balloon edge relative to the dotted outline."
+    ],
+    "strategy": [
+      "Aim slightly under the target rather than overfilling.",
+      "Release early if the balloon grows quickly.",
+      "Use the center dot as a visual anchor.",
+      "Replay with screen recording for exact timing."
+    ],
+    "mistakes": [
+      "Holding too long and overshooting the target.",
+      "Ignoring the dotted target outline.",
+      "Assuming the start screen is a completed run."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-pump-it-up-balloon/01-start.png",
+        "alt": "Pump It Up Balloon start screen with dotted target circle.",
+        "caption": "The replay verified the target circle and START state."
+      }
+    ],
+    "faq": [
+      [
+        "What is the goal?",
+        "Fill the balloon to match the dotted shape."
+      ],
+      [
+        "Did the replay finish?",
+        "No. It verified the start and target screen only."
+      ],
+      [
+        "What is the safest approach?",
+        "Inflate gradually and stop early."
+      ]
+    ],
+    "creatorContext": [
+      "rowan_so is the Loopit display name shown on the playable source card for Pump It Up Balloon.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 6.6K likes, 3.2K comments, 2.8K bookmarks, 432 remixes."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for Pump It Up Balloon yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-depth-digging",
+    "title": "Depth Digging",
+    "genre": "Tap digging",
+    "difficulty": "A tapping dig game with depth, money, bag, taps, monsters, and loot counters.",
+    "searchIntent": "Depth Digging Loopit guide, depth 1m, money, bag taps monsters loot tips",
+    "sourceUrl": "https://share.loopit.me/game/05dac973-7050-48ad-a48e-5821c603afa2?l_data=%7B%22said%22%3A%22sa_XKSc3WLy%22%2C%22ssuid%22%3A%22ss_QZvpXAW3%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%2205dac973-7050-48ad-a48e-5821c603afa2%22%7D",
+    "creator": "Tally93",
+    "creatorSlug": "tally93",
+    "stats": {
+      "likes": "1.9K",
+      "comments": "183",
+      "bookmarks": "1.5K",
+      "remixes": "93"
+    },
+    "summary": "Depth Digging has clear numeric feedback. Our replay moved from Depth 0m and $0 to Depth 1m and $10 after 10 taps.",
+    "quickAnswer": "Tap steadily to dig deeper, watch Bag capacity, and pause when monsters or loot counters appear. Our verified replay reached Depth 1m and $10.",
+    "basics": [
+      "The HUD tracks Depth, money, Bag capacity, TAPS, MONSTERS, and LOOT DROPS.",
+      "Tapping increases progress.",
+      "Our replay moved from 0m to 1m and $10.",
+      "Bag stayed 0/30 during the short verification run."
+    ],
+    "controls": [
+      "Tap the dig area repeatedly.",
+      "Do not hide the HUD with your hand.",
+      "Pause if monsters or loot drops begin changing."
+    ],
+    "strategy": [
+      "Use a steady rhythm instead of frantic tapping.",
+      "Track Bag capacity so you know when to stop or sell.",
+      "Depth is the clearest progression signal.",
+      "A longer run should record when monsters first appear."
+    ],
+    "mistakes": [
+      "Only looking at money and missing Bag capacity.",
+      "Overtapping after a monster appears.",
+      "Not recording the initial depth state for comparison."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-depth-digging/01-depth-zero.png",
+        "alt": "Depth Digging HUD at Depth 0m with $0 and taps 0.",
+        "caption": "The run started at Depth 0m and $0."
+      },
+      {
+        "src": "/assets/loopit-depth-digging/02-depth-one.png",
+        "alt": "Depth Digging HUD at Depth 1m with $10 and taps 10.",
+        "caption": "The replay verified progress to Depth 1m and $10."
+      }
+    ],
+    "faq": [
+      [
+        "How far did replay get?",
+        "Depth 1m, $10, and 10 taps."
+      ],
+      [
+        "What does Bag mean?",
+        "It appears to track carried items out of 30."
+      ],
+      [
+        "Is this a full clear?",
+        "No. It is an early-run verified guide."
+      ]
+    ],
+    "creatorContext": [
+      "Tally93 is the Loopit display name shown on the playable source card for Depth Digging.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 1.9K likes, 183 comments, 1.5K bookmarks, 93 remixes."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for Depth Digging yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-spirostar",
+    "title": "Spirostar",
+    "genre": "Drawing precision",
+    "difficulty": "A geometric drawing game that asks players to drag to draw the star.",
+    "searchIntent": "Spirostar Loopit guide, drag to draw the star, geometric magic tips",
+    "sourceUrl": "https://share.loopit.me/game/28f372c5-95da-46c5-a282-a681d2ed605a?l_data=%7B%22said%22%3A%22sa_pjLfTJC2%22%2C%22ssuid%22%3A%22ss_WpWqQ9Ex%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%2228f372c5-95da-46c5-a282-a681d2ed605a%22%7D",
+    "creator": "Quân Vũ",
+    "creatorSlug": "qu-n-v",
+    "stats": {
+      "likes": "4K",
+      "comments": "1.1K",
+      "bookmarks": "3.1K",
+      "remixes": "86"
+    },
+    "summary": "Spirostar presents a geometric star outline and asks players to drag to draw it. Our replay verified the prompt but did not trigger a new-shape completion state.",
+    "quickAnswer": "Drag slowly along the star outline and close each line cleanly. Our replay verified the draw prompt, not a completed new-shape state.",
+    "basics": [
+      "The screen says SPIROSTAR and GEOMETRIC MAGIC.",
+      "The prompt says DRAG TO DRAW THE STAR.",
+      "NEW SHAPE is visible for changing the target.",
+      "Our replay did not capture an accepted star."
+    ],
+    "controls": [
+      "Drag along the visible outline.",
+      "Use slow strokes at corners.",
+      "Lift only after completing a segment."
+    ],
+    "strategy": [
+      "Trace the outline instead of drawing freehand scribbles.",
+      "Keep a consistent speed through each point.",
+      "If the line is not accepted, clear or switch shape and try again.",
+      "Record a close-up run for a full completion proof."
+    ],
+    "mistakes": [
+      "Drawing through the center instead of the outline.",
+      "Moving too quickly around sharp points.",
+      "Assuming visible ink means the shape was accepted."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-spirostar/01-prompt.png",
+        "alt": "Spirostar screen with geometric magic prompt and star drawing outline.",
+        "caption": "The replay verified the star drawing prompt."
+      }
+    ],
+    "faq": [
+      [
+        "What do I draw?",
+        "Trace the star outline."
+      ],
+      [
+        "Did replay complete it?",
+        "No. It verified the prompt and drawing surface."
+      ],
+      [
+        "What helps most?",
+        "Slow corner control."
+      ]
+    ],
+    "creatorContext": [
+      "Quân Vũ is the Loopit display name shown on the playable source card for Spirostar.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 4K likes, 1.1K comments, 3.1K bookmarks, 86 remixes."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for Spirostar yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-force-playground",
+    "title": "Force Playground",
+    "genre": "Physics sandbox",
+    "difficulty": "A sandbox with Attract, Repel, Explode, Hole, Laser, Zombie, and Reset tools.",
+    "searchIntent": "Force Playground Loopit guide, attract repel explode hole laser zombie reset tips",
+    "sourceUrl": "https://share.loopit.me/game/f0f1dbba-6f27-42a1-b399-53fdb423d5b7?l_data=%7B%22said%22%3A%22sa_4pCSthFy%22%2C%22ssuid%22%3A%22ss_HPe4hwzL%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%22f0f1dbba-6f27-42a1-b399-53fdb423d5b7%22%7D",
+    "creator": "Adele",
+    "creatorSlug": "adele",
+    "stats": {
+      "likes": "14K",
+      "comments": "1.4K",
+      "bookmarks": "11.2K",
+      "remixes": "655"
+    },
+    "summary": "Force Playground is a tool sandbox rather than a level route. Our replay verified the available powers and tool-selection prompt.",
+    "quickAnswer": "Select one power, tap the screen, and observe the effect before switching tools. Start with Attract or Repel before using destructive tools like Explode or Hole.",
+    "basics": [
+      "Available tools include Attract, Repel, Explode, Hole, Laser, Zombie, and Reset.",
+      "The screen says to select a power and tap the screen.",
+      "Reset clears the experiment.",
+      "Our replay verified the tool panel, not a scored ending."
+    ],
+    "controls": [
+      "Tap a tool button to select it.",
+      "Tap inside the play area to apply the selected power.",
+      "Use Reset before testing a new setup."
+    ],
+    "strategy": [
+      "Start with Attract or Repel to learn object movement.",
+      "Use Explode and Hole after you understand the layout.",
+      "Keep one change per test so the result is readable.",
+      "Use Reset often; sandbox states can become messy."
+    ],
+    "mistakes": [
+      "Switching tools too quickly to see effects.",
+      "Using Reset accidentally after a good setup.",
+      "Expecting a win screen from a sandbox."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-force-playground/01-tools.png",
+        "alt": "Force Playground showing Attract Repel Explode Hole Laser Zombie Reset tools.",
+        "caption": "The replay verified the sandbox power panel."
+      }
+    ],
+    "faq": [
+      [
+        "What is the goal?",
+        "Experiment with powers; no fixed clear screen was captured."
+      ],
+      [
+        "Which tool first?",
+        "Attract or Repel."
+      ],
+      [
+        "How do I restart?",
+        "Use Reset."
+      ]
+    ],
+    "creatorContext": [
+      "Adele is the Loopit display name shown on the playable source card for Force Playground.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 14K likes, 1.4K comments, 11.2K bookmarks, 655 remixes."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for Force Playground yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-low-health-boxing",
+    "title": "Low Health Boxing",
+    "genre": "Fighting",
+    "difficulty": "A simple fighting game with punch, block, kick, KO, and rematch controls.",
+    "searchIntent": "Low Health Boxing Loopit guide, punch block kick KO rematch power up low health",
+    "sourceUrl": "https://share.loopit.me/game/5e1bd71c-3d8a-4149-97b5-eb5631169303?l_data=%7B%22said%22%3A%22sa_du7par5M%22%2C%22ssuid%22%3A%22ss_3UyYn2sq%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%225e1bd71c-3d8a-4149-97b5-eb5631169303%22%7D",
+    "creator": "Airam Flore",
+    "creatorSlug": "airam-flore",
+    "stats": {
+      "likes": "3.1K",
+      "comments": "551",
+      "bookmarks": "2K",
+      "remixes": "93"
+    },
+    "summary": "Low Health Boxing is a short fight interface. Our replay reached a KO state and exposed Punch, Block, Kick, and Rematch.",
+    "quickAnswer": "Use Block when under pressure, then alternate Punch and Kick. The replay reached KO, confirming the fight loop and rematch state.",
+    "basics": [
+      "The HUD separates YOU and OPPONENT.",
+      "Actions include PUNCH, BLOCK, and KICK.",
+      "A KO state and REMATCH button appeared in replay.",
+      "The source caption mentions a power-up when health is low."
+    ],
+    "controls": [
+      "Tap Punch for basic attacks.",
+      "Use Block when the opponent is pressuring you.",
+      "Use Kick as a stronger or alternate attack option."
+    ],
+    "strategy": [
+      "Block before your health gets low.",
+      "Mix Punch and Kick instead of repeating one button.",
+      "After KO, use Rematch to replay and test timing.",
+      "Watch for any low-health power-up trigger."
+    ],
+    "mistakes": [
+      "Ignoring Block.",
+      "Button mashing without reading health state.",
+      "Missing the Rematch route after KO."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-low-health-boxing/01-ko.png",
+        "alt": "Low Health Boxing fight screen with KO and Rematch visible.",
+        "caption": "The replay reached KO and exposed the Rematch state."
+      }
+    ],
+    "faq": [
+      [
+        "What buttons matter?",
+        "Punch, Block, and Kick."
+      ],
+      [
+        "Did replay reach an outcome?",
+        "Yes, it reached KO and Rematch."
+      ],
+      [
+        "Is there a power-up?",
+        "The creator caption says low health can grant a power-up; replay did not isolate that trigger."
+      ]
+    ],
+    "creatorContext": [
+      "Airam Flore is the Loopit display name shown on the playable source card for Low Health Boxing.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 3.1K likes, 551 comments, 2K bookmarks, 93 remixes."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for Low Health Boxing yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-street-guy-action",
+    "title": "Street Guy Action",
+    "genre": "Action controls",
+    "difficulty": "A side-view character action toy with Beg, Punch, and Jump controls.",
+    "searchIntent": "Street Guy Action Loopit guide, Beg Punch Jump controls tips",
+    "sourceUrl": "https://share.loopit.me/game/8abd54a8-4e91-4e91-9b3b-4f5f58a6667f?l_data=%7B%22said%22%3A%22sa_CrNhMM9d%22%2C%22ssuid%22%3A%22ss_VkxQmP9s%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%228abd54a8-4e91-4e91-9b3b-4f5f58a6667f%22%7D",
+    "creator": "Katseye Yoonchae",
+    "creatorSlug": "katseye-yoonchae",
+    "stats": {
+      "likes": "2.5K",
+      "comments": "261",
+      "bookmarks": "1.9K",
+      "remixes": "117"
+    },
+    "summary": "Street Guy Action exposes a small action-control panel. Our replay verified Beg, Punch, and Jump controls.",
+    "quickAnswer": "Use Jump for spacing, Punch for interaction, and Beg as the special action. This replay verified the controls but not a scored ending.",
+    "basics": [
+      "The control set includes Beg, Punch, and Jump.",
+      "Arrow buttons appear for switching or movement.",
+      "The source caption says I am street guy.",
+      "Our replay verified the control panel."
+    ],
+    "controls": [
+      "Tap Jump to reposition.",
+      "Tap Punch for the main action.",
+      "Use Beg as the special interaction."
+    ],
+    "strategy": [
+      "Test Jump before Punch so you understand spacing.",
+      "Use one action at a time and watch the character animation.",
+      "If a target appears, move into range before punching.",
+      "Treat the current guide as controls-first because no clear state was captured."
+    ],
+    "mistakes": [
+      "Spamming all actions at once.",
+      "Punching while out of range.",
+      "Expecting a level objective when only controls are visible."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-street-guy-action/01-controls.png",
+        "alt": "Street Guy Action showing Beg Punch and Jump controls.",
+        "caption": "The replay verified the character action controls."
+      }
+    ],
+    "faq": [
+      [
+        "What controls are visible?",
+        "Beg, Punch, and Jump."
+      ],
+      [
+        "Did replay finish a level?",
+        "No fixed objective was captured."
+      ],
+      [
+        "What should I try first?",
+        "Jump, then Punch."
+      ]
+    ],
+    "creatorContext": [
+      "Katseye Yoonchae is the Loopit display name shown on the playable source card for Street Guy Action.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 2.5K likes, 261 comments, 1.9K bookmarks, 117 remixes."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for Street Guy Action yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-dont-look-back",
+    "title": "Don't Look Back",
+    "genre": "Escape chase",
+    "difficulty": "A drag-to-move escape game with a caught failure state.",
+    "searchIntent": "Don't Look Back Loopit guide, drag to move, caught, play again tips",
+    "sourceUrl": "https://share.loopit.me/game/994661dd-5997-419f-bfc1-7d76aac75094?l_data=%7B%22said%22%3A%22sa_Q2qVJazC%22%2C%22ssuid%22%3A%22ss_YjAWn2jZ%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%22994661dd-5997-419f-bfc1-7d76aac75094%22%7D",
+    "creator": "Jaidryan ortiz",
+    "creatorSlug": "jaidryan-ortiz",
+    "stats": {
+      "likes": "1.6K",
+      "comments": "258",
+      "bookmarks": "1K",
+      "remixes": ""
+    },
+    "summary": "Don't Look Back is a chase/escape game. Our replay reached the Caught failure state, so the fail route is verified.",
+    "quickAnswer": "Drag to move and create distance immediately. The replay was caught, so use wider movements and avoid stopping near the pursuer.",
+    "basics": [
+      "The opening instruction says Drag to move. Do not look back.",
+      "The failure state says Caught! with Play Again.",
+      "Our replay captured the failure path.",
+      "Use the failure as a route clue: movement needs to start immediately."
+    ],
+    "controls": [
+      "Drag continuously to steer.",
+      "Use long diagonals to escape.",
+      "Tap Play Again after getting caught."
+    ],
+    "strategy": [
+      "Move as soon as the game loads.",
+      "Avoid short hesitant drags.",
+      "Use corners to change direction only if there is space.",
+      "Record a longer run to find safe zones."
+    ],
+    "mistakes": [
+      "Waiting before moving.",
+      "Dragging too close to the pursuer.",
+      "Stopping after the first turn."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-dont-look-back/01-start.png",
+        "alt": "Don't Look Back opening instruction saying drag to move.",
+        "caption": "The entry screen tells you to drag to move."
+      },
+      {
+        "src": "/assets/loopit-dont-look-back/02-caught.png",
+        "alt": "Don't Look Back Caught failure state with Play Again button.",
+        "caption": "The replay verified the Caught failure state."
+      }
+    ],
+    "faq": [
+      [
+        "What happened in replay?",
+        "The run reached Caught! and Play Again."
+      ],
+      [
+        "How do I move?",
+        "Drag to move."
+      ],
+      [
+        "What is the first improvement?",
+        "Start moving immediately."
+      ]
+    ],
+    "creatorContext": [
+      "Jaidryan ortiz is the Loopit display name shown on the playable source card for Don't Look Back.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 1.6K likes, 258 comments, 1K bookmarks."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for Don't Look Back yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-try-not-to-poop",
+    "title": "Try Not To Poop",
+    "genre": "Hold timing",
+    "difficulty": "A bus hold-timing game that asks players to hold to clench.",
+    "searchIntent": "Try Not To Poop Loopit guide, hold to clench, bumpy bus timing tips",
+    "sourceUrl": "https://share.loopit.me/game/12644e22-efd5-480c-8ee1-c059287d9a56?l_data=%7B%22said%22%3A%22sa_UKsQU2Xs%22%2C%22ssuid%22%3A%22ss_XcZuAhCW%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%2212644e22-efd5-480c-8ee1-c059287d9a56%22%7D",
+    "creator": "Delilah",
+    "creatorSlug": "delilah",
+    "stats": {
+      "likes": "5.2K",
+      "comments": "1.7K",
+      "bookmarks": "3.4K",
+      "remixes": "245"
+    },
+    "summary": "Try Not To Poop is a timing gag game set on a bumpy bus. Our replay verified the start screen and Hold to Clench prompt.",
+    "quickAnswer": "Tap START, then hold during the bumpy sections and release only when safe. Our replay verified the prompt but did not capture a finished ride.",
+    "basics": [
+      "The game says you are on a bumpy bus.",
+      "The visible instruction is HOLD TO CLENCH.",
+      "START begins the run.",
+      "Our replay verified the start and hold prompt."
+    ],
+    "controls": [
+      "Tap START.",
+      "Hold the clench control during danger.",
+      "Release carefully if the game presents safe windows."
+    ],
+    "strategy": [
+      "Read the bus movement before holding blindly.",
+      "Use steady holds rather than rapid taps.",
+      "Watch for timing cues after START.",
+      "Use a screen recording for exact red/green safe windows if they appear."
+    ],
+    "mistakes": [
+      "Letting go too early.",
+      "Holding before the run starts.",
+      "Assuming the prompt screen is a completed run."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-try-not-to-poop/01-start.png",
+        "alt": "Try Not To Poop start screen on a bus with hold to clench prompt.",
+        "caption": "The replay verified the bus start prompt."
+      }
+    ],
+    "faq": [
+      [
+        "What do I press?",
+        "START, then hold to clench."
+      ],
+      [
+        "Did replay complete it?",
+        "No. It verified the start prompt."
+      ],
+      [
+        "What skill matters?",
+        "Timing your hold through bumps."
+      ]
+    ],
+    "creatorContext": [
+      "Delilah is the Loopit display name shown on the playable source card for Try Not To Poop.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 5.2K likes, 1.7K comments, 3.4K bookmarks, 245 remixes."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for Try Not To Poop yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-find-the-hat-guy",
+    "title": "Find the Hat Guy",
+    "genre": "Hidden object",
+    "difficulty": "A visual search game where you tap the person wearing a hat.",
+    "searchIntent": "Find the Hat Guy Loopit guide, tap to snap, hidden object tips",
+    "sourceUrl": "https://share.loopit.me/game/8675b162-e783-454b-8f0d-413cfd2798b9?l_data=%7B%22said%22%3A%22sa_Hc7fcUxV%22%2C%22ssuid%22%3A%22ss_9sumDTjn%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%228675b162-e783-454b-8f0d-413cfd2798b9%22%7D",
+    "creator": "Jimbob_games",
+    "creatorSlug": "jimbob-games",
+    "stats": {
+      "likes": "5K",
+      "comments": "624",
+      "bookmarks": "3.5K",
+      "remixes": "213"
+    },
+    "summary": "Find the Hat Guy is a hidden-object screen full of small people icons. Our replay verified the target prompt but did not capture a successful snap.",
+    "quickAnswer": "Scan the crowd for the single person with a hat, then tap directly on that icon. Do not tap random faces; the goal is precision.",
+    "basics": [
+      "The prompt says: Find the guy with the hat. Tap to snap!",
+      "The screen contains many small people icons.",
+      "The target is likely a single icon with a hat detail.",
+      "Our replay verified the prompt and search board."
+    ],
+    "controls": [
+      "Tap the suspected hat person.",
+      "Use slow visual scanning before tapping.",
+      "Avoid dragging; this is a tap-to-select challenge."
+    ],
+    "strategy": [
+      "Scan corners first, then the dense center.",
+      "Look for head shapes that differ from the normal icons.",
+      "Zoom is not exposed in the replay, so rely on careful tapping.",
+      "If wrong taps reset the board, pause between attempts."
+    ],
+    "mistakes": [
+      "Tapping the largest cluster without checking hats.",
+      "Ignoring edge icons.",
+      "Treating all heads as identical."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-find-the-hat-guy/01-search-board.png",
+        "alt": "Find the Hat Guy search board with many small people icons.",
+        "caption": "The replay verified the hidden-object prompt and board."
+      }
+    ],
+    "faq": [
+      [
+        "What am I looking for?",
+        "The person wearing a hat."
+      ],
+      [
+        "Did replay find him?",
+        "No successful snap was captured."
+      ],
+      [
+        "How should I search?",
+        "Corners first, then dense clusters."
+      ]
+    ],
+    "creatorContext": [
+      "Jimbob_games is the Loopit display name shown on the playable source card for Find the Hat Guy.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 5K likes, 624 comments, 3.5K bookmarks, 213 remixes."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for Find the Hat Guy yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-anger-meter",
+    "title": "Anger Meter",
+    "genre": "Meter timing",
+    "difficulty": "A meter screen with an I HATE YOU action button and anger bar.",
+    "searchIntent": "Anger Meter Loopit guide, I HATE YOU button, anger bar tips",
+    "sourceUrl": "https://share.loopit.me/game/58430054-1510-493a-be1a-df6d8fe1454c?l_data=%7B%22said%22%3A%22sa_HNRtZmyK%22%2C%22ssuid%22%3A%22ss_tzqhJ2vk%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%2258430054-1510-493a-be1a-df6d8fe1454c%22%7D",
+    "creator": "Shadow_crystal",
+    "creatorSlug": "shadow-crystal",
+    "stats": {
+      "likes": "2.8K",
+      "comments": "1.3K",
+      "bookmarks": "1.4K",
+      "remixes": "468"
+    },
+    "summary": "Anger Meter is a reaction/meter toy. Our replay reached the visible meter screen and action button.",
+    "quickAnswer": "Watch the meter before pressing the main button. The replay verified the meter and action state, not a final ending.",
+    "basics": [
+      "The screen shows ANGER METER.",
+      "A large I HATE YOU button is visible.",
+      "A meter bar appears above the character.",
+      "Our replay verified the interactive state."
+    ],
+    "controls": [
+      "Tap the main action button deliberately.",
+      "Watch the meter after each input.",
+      "Pause if the meter moves quickly."
+    ],
+    "strategy": [
+      "Use single presses to learn the meter response.",
+      "Stop before the bar reaches a danger state if one appears.",
+      "Track whether the character expression changes.",
+      "Treat it like meter timing rather than button mashing."
+    ],
+    "mistakes": [
+      "Mashing the button without reading the bar.",
+      "Ignoring visual character feedback.",
+      "Claiming an ending without seeing one."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-anger-meter/01-meter.png",
+        "alt": "Anger Meter screen with I HATE YOU button and meter bar.",
+        "caption": "The replay verified the meter and main action."
+      }
+    ],
+    "faq": [
+      [
+        "What is visible?",
+        "An anger meter and I HATE YOU button."
+      ],
+      [
+        "Did replay reach an ending?",
+        "No. It verified the action state."
+      ],
+      [
+        "How should I play?",
+        "Tap once, observe, repeat."
+      ]
+    ],
+    "creatorContext": [
+      "Shadow_crystal is the Loopit display name shown on the playable source card for Anger Meter.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 2.8K likes, 1.3K comments, 1.4K bookmarks, 468 remixes."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for Anger Meter yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-zombie-town-v2",
+    "title": "Zombie Town V2",
+    "genre": "Town sandbox",
+    "difficulty": "A placement sandbox with people, zombies, houses, and hazard tools.",
+    "searchIntent": "Zombie Town V2 Loopit guide, people zombies houses tools tips",
+    "sourceUrl": "https://share.loopit.me/game/2254c152-a78e-4b59-b39d-81feba968e57?l_data=%7B%22said%22%3A%22sa_WSEc2Mx7%22%2C%22ssuid%22%3A%22ss_HKRAyEfr%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%222254c152-a78e-4b59-b39d-81feba968e57%22%7D",
+    "creator": "Nolan",
+    "creatorSlug": "nolan",
+    "stats": {
+      "likes": "11.6K",
+      "comments": "961",
+      "bookmarks": "11.4K",
+      "remixes": "286"
+    },
+    "summary": "Zombie Town V2 has clear counters and placement tools. Our replay moved PEOPLE from 0 to 9 while zombies stayed 0.",
+    "quickAnswer": "Start by placing people and houses before adding zombies or hazards. Our replay verified PEOPLE rising from 0 to 9.",
+    "basics": [
+      "Counters track PEOPLE, ZOMBIES, and HOUSES.",
+      "Tool buttons include house, person, zombie, and hazard icons.",
+      "Our replay placed people and moved the people counter from 0 to 9.",
+      "No full outbreak ending was captured."
+    ],
+    "controls": [
+      "Tap a tool icon, then tap the map.",
+      "Use people and houses before adding zombies.",
+      "Use hazard tools after the basic town is visible."
+    ],
+    "strategy": [
+      "Build a readable layout first.",
+      "Add zombies slowly so you can observe spread.",
+      "Track PEOPLE and ZOMBIES counters after each tap.",
+      "Reset only after recording the state you want to compare."
+    ],
+    "mistakes": [
+      "Adding hazards before placing people.",
+      "Ignoring counters.",
+      "Overfilling the map until changes are unreadable."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-zombie-town-v2/01-empty-town.png",
+        "alt": "Zombie Town V2 counters at people 0 zombies 0 houses 0.",
+        "caption": "The town starts with all counters at 0."
+      },
+      {
+        "src": "/assets/loopit-zombie-town-v2/02-people-nine.png",
+        "alt": "Zombie Town V2 with people counter increased to 9.",
+        "caption": "The replay verified PEOPLE increasing to 9."
+      }
+    ],
+    "faq": [
+      [
+        "What did replay verify?",
+        "PEOPLE increased from 0 to 9."
+      ],
+      [
+        "What are the main tools?",
+        "House, person, zombie, and hazard."
+      ],
+      [
+        "Is this a level clear?",
+        "No. It is a sandbox state guide."
+      ]
+    ],
+    "creatorContext": [
+      "Nolan is the Loopit display name shown on the playable source card for Zombie Town V2.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 11.6K likes, 961 comments, 11.4K bookmarks, 286 remixes."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for Zombie Town V2 yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-hold-to-grow-line",
+    "title": "Hold to Grow Line",
+    "genre": "Precision hold",
+    "difficulty": "A hold-length precision challenge that reports a percentage result.",
+    "searchIntent": "Hold to Grow Line Loopit guide, 0 percent keep practicing, 100 percent tips",
+    "sourceUrl": "https://share.loopit.me/game/e601105c-901b-42a2-8c0f-fb363acdabbf?l_data=%7B%22said%22%3A%22sa_eSAeHuXT%22%2C%22ssuid%22%3A%22ss_YySsaq3x%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%22e601105c-901b-42a2-8c0f-fb363acdabbf%22%7D",
+    "creator": "Lily",
+    "creatorSlug": "lily",
+    "stats": {
+      "likes": "2.5K",
+      "comments": "2.2K",
+      "bookmarks": "1.9K",
+      "remixes": "70"
+    },
+    "summary": "Hold to Grow Line measures how close your hold length is to the target. Our replay produced 0% and Keep Practicing, proving the result state.",
+    "quickAnswer": "Hold just long enough to match the target line, then release. Our replay missed the target and got 0%, so the key is shorter controlled holds.",
+    "basics": [
+      "The source caption says the creator could not get 100%.",
+      "The result screen shows a percentage.",
+      "Our replay got 0% and KEEP PRACTICING.",
+      "NEXT SHAPE appears after the result."
+    ],
+    "controls": [
+      "Hold to grow the line.",
+      "Release when it reaches the target length.",
+      "Use NEXT SHAPE only after reading your result."
+    ],
+    "strategy": [
+      "Do a short calibration hold first.",
+      "Release earlier than instinct if the line grows fast.",
+      "Use the percentage result to adjust the next attempt.",
+      "Aim for consistency, not speed."
+    ],
+    "mistakes": [
+      "Holding too long.",
+      "Not reading the percentage result.",
+      "Jumping to the next shape before learning from the miss."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-hold-to-grow-line/01-zero-percent.png",
+        "alt": "Hold to Grow Line result screen showing 0 percent and Keep Practicing.",
+        "caption": "The replay verified the result screen at 0%."
+      }
+    ],
+    "faq": [
+      [
+        "What result did replay get?",
+        "0% with Keep Practicing."
+      ],
+      [
+        "How do I improve?",
+        "Use shorter controlled holds and adjust from the percentage."
+      ],
+      [
+        "What is the target?",
+        "A line length close to 100%."
+      ]
+    ],
+    "creatorContext": [
+      "Lily is the Loopit display name shown on the playable source card for Hold to Grow Line.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 2.5K likes, 2.2K comments, 1.9K bookmarks, 70 remixes."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for Hold to Grow Line yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-red-vs-blue-warriors",
+    "title": "Red vs Blue Warriors",
+    "genre": "Unit sandbox",
+    "difficulty": "A red-versus-blue unit sandbox with warrior, archer, juggernaut, healer, trapper, boss, reset, and freeze.",
+    "searchIntent": "Red vs Blue Warriors Loopit guide, warrior archer juggernaut healer trapper boss tips",
+    "sourceUrl": "https://share.loopit.me/game/20e8e480-1929-411a-ae65-42834fdb2f75?l_data=%7B%22said%22%3A%22sa_S7jFDSUT%22%2C%22ssuid%22%3A%22ss_ppJ4SuVk%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%2220e8e480-1929-411a-ae65-42834fdb2f75%22%7D",
+    "creator": "SHRIMPY PIEEEE",
+    "creatorSlug": "shrimpy-pieeee",
+    "stats": {
+      "likes": "3.1K",
+      "comments": "359",
+      "bookmarks": "2.7K",
+      "remixes": "93"
+    },
+    "summary": "Red vs Blue Warriors exposes a unit roster for a battle sandbox. Our replay verified the available unit buttons and split battlefield.",
+    "quickAnswer": "Start with Warriors, add Archers behind them, then use Healer or Trapper to support. Boss and Freeze should come after the board has units.",
+    "basics": [
+      "Visible unit buttons include Warrior, Archer, Juggernaut, Healer, Trapper, and Boss.",
+      "Reset and Freeze are also available.",
+      "The board is split red versus blue.",
+      "Our replay verified the roster, not a full battle outcome."
+    ],
+    "controls": [
+      "Tap a unit button to select it.",
+      "Place units on the battlefield.",
+      "Use Reset to clear and Freeze to pause or control action if needed."
+    ],
+    "strategy": [
+      "Build a front line with Warriors first.",
+      "Place Archers behind tougher units.",
+      "Use Healers after you have units worth supporting.",
+      "Do not place Boss too early if you want to observe normal unit behavior."
+    ],
+    "mistakes": [
+      "Dropping advanced units before learning basic Warrior behavior.",
+      "Forgetting Reset exists.",
+      "Overcrowding one side before testing balance."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-red-vs-blue-warriors/01-roster.png",
+        "alt": "Red vs Blue Warriors screen with Warrior Archer Juggernaut Healer Trapper Boss buttons.",
+        "caption": "The replay verified the unit roster."
+      }
+    ],
+    "faq": [
+      [
+        "Which unit first?",
+        "Warrior is the safest first unit."
+      ],
+      [
+        "Did replay finish a battle?",
+        "No. It verified the unit roster."
+      ],
+      [
+        "What does Freeze do?",
+        "It appears to control or pause the sandbox state."
+      ]
+    ],
+    "creatorContext": [
+      "SHRIMPY PIEEEE is the Loopit display name shown on the playable source card for Red vs Blue Warriors.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 3.1K likes, 359 comments, 2.7K bookmarks, 93 remixes."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for Red vs Blue Warriors yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-trap-the-ants",
+    "title": "Trap the Ants",
+    "genre": "Drawing trap",
+    "difficulty": "A drawing trap game with money counter, pencil, broom, and shop tools.",
+    "searchIntent": "Trap the Ants Loopit guide, draw traps, money counter, pencil broom shop tips",
+    "sourceUrl": "https://share.loopit.me/game/b169096c-4077-417c-af0b-f550d20dfb8b?l_data=%7B%22said%22%3A%22sa_dRzzUuwy%22%2C%22ssuid%22%3A%22ss_u5DdKETa%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%22b169096c-4077-417c-af0b-f550d20dfb8b%22%7D",
+    "creator": "The fun gamesssssssss",
+    "creatorSlug": "the-fun-gamesssssssss",
+    "stats": {
+      "likes": "11K",
+      "comments": "2.8K",
+      "bookmarks": "7K",
+      "remixes": "258"
+    },
+    "summary": "Trap the Ants is one of the stronger sandbox/action entries. Our replay raised the money counter from $0 to $16, confirming real interaction.",
+    "quickAnswer": "Use the pencil tool to draw trap lines around ant paths, then adjust with cleanup tools. Our replay verified progress from $0 to $16.",
+    "basics": [
+      "The HUD shows a money counter and tool buttons.",
+      "Visible tools include pencil, broom, and shop.",
+      "Drawing lines can affect ant movement.",
+      "Our replay raised money from $0 to $16."
+    ],
+    "controls": [
+      "Use the pencil to draw trap lines.",
+      "Use the broom to clean or reset bad lines.",
+      "Open shop after earning enough money."
+    ],
+    "strategy": [
+      "Draw short converging lines near ant paths.",
+      "Leave a small funnel instead of blocking the whole screen.",
+      "Watch the money counter after each trap.",
+      "Clean up messy lines before adding more."
+    ],
+    "mistakes": [
+      "Drawing huge lines that do not guide ants.",
+      "Ignoring the money counter.",
+      "Opening shop before earning money."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-trap-the-ants/01-zero-dollars.png",
+        "alt": "Trap the Ants starting state with zero dollars and tool buttons.",
+        "caption": "The run started at $0 with drawing tools visible."
+      },
+      {
+        "src": "/assets/loopit-trap-the-ants/02-sixteen-dollars.png",
+        "alt": "Trap the Ants after replay showing sixteen dollars.",
+        "caption": "The replay verified progress to $16."
+      }
+    ],
+    "faq": [
+      [
+        "What did replay verify?",
+        "$0 to $16 progress."
+      ],
+      [
+        "Which tool first?",
+        "Pencil."
+      ],
+      [
+        "How do I improve traps?",
+        "Use short funnel-shaped lines."
+      ]
+    ],
+    "creatorContext": [
+      "The fun gamesssssssss is the Loopit display name shown on the playable source card for Trap the Ants.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 11K likes, 2.8K comments, 7K bookmarks, 258 remixes."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for Trap the Ants yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-target-scanner",
+    "title": "Target Scanner",
+    "genre": "Aim scanner",
+    "difficulty": "A scan-and-shoot game with targets 0/5 and drag-to-scan instruction.",
+    "searchIntent": "Target Scanner Loopit guide, targets 0/5, drag to scan, tap trigger to fire tips",
+    "sourceUrl": "https://share.loopit.me/game/6e4936d5-fb7e-43bf-be4b-00987acee3a4?l_data=%7B%22said%22%3A%22sa_CzshjQaf%22%2C%22ssuid%22%3A%22ss_QcjrWase%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%226e4936d5-fb7e-43bf-be4b-00987acee3a4%22%7D",
+    "creator": "Ryker",
+    "creatorSlug": "ryker",
+    "stats": {
+      "likes": "4.6K",
+      "comments": "584",
+      "bookmarks": "3.4K",
+      "remixes": "214"
+    },
+    "summary": "Target Scanner replaces a black-loading candidate from this batch. Our replay verified Level 1, Targets 0/5, and the drag-to-scan plus tap-trigger instruction.",
+    "quickAnswer": "Drag to scan the scene, then tap the trigger only when a target is centered. Our replay verified the Level 1 objective at Targets 0/5.",
+    "basics": [
+      "The screen shows LEVEL 1.",
+      "The target counter starts at TARGETS: 0/5.",
+      "The instruction says DRAG TO SCAN and TAP TRIGGER TO FIRE.",
+      "Our replay verified the target scanner start state."
+    ],
+    "controls": [
+      "Drag to scan around the scene.",
+      "Tap the trigger when a target is lined up.",
+      "Use slow scan movement so targets do not pass by."
+    ],
+    "strategy": [
+      "Sweep horizontally first, then vertically.",
+      "Do not fire until the target is centered.",
+      "Track the 0/5 counter after every shot.",
+      "A full clear needs evidence of the counter reaching 5/5."
+    ],
+    "mistakes": [
+      "Firing before scanning.",
+      "Dragging too quickly to see targets.",
+      "Calling the level clear while the counter is 0/5."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-target-scanner/01-level-1.png",
+        "alt": "Target Scanner Level 1 with targets 0 out of 5 and drag to scan instruction.",
+        "caption": "The replay verified the Level 1 scanner objective."
+      }
+    ],
+    "faq": [
+      [
+        "What is the goal?",
+        "Find and shoot 5 targets."
+      ],
+      [
+        "Did replay clear Level 1?",
+        "No. It verified Targets 0/5 and the controls."
+      ],
+      [
+        "What should I do first?",
+        "Drag slowly to scan."
+      ]
+    ],
+    "creatorContext": [
+      "Ryker is the Loopit display name shown on the playable source card for Target Scanner.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 4.6K likes, 584 comments, 3.4K bookmarks, 214 remixes."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for Target Scanner yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
   }
 ]

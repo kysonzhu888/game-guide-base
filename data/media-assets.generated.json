@@ -558,5 +558,180 @@
     "width": 1200,
     "format": "jpeg",
     "quality": 82
+  },
+  "/assets/loopit-rollercoaster-builder/01-builder.png": {
+    "r2Key": "games/loopit/loopit-rollercoaster-builder/screenshots/01-builder-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-rollercoaster-builder/screenshots/01-builder-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-paper-cutting/01-folding.png": {
+    "r2Key": "games/loopit/loopit-paper-cutting/screenshots/01-folding-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-paper-cutting/screenshots/01-folding-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-paper-cutting/02-cutting.png": {
+    "r2Key": "games/loopit/loopit-paper-cutting/screenshots/02-cutting-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-paper-cutting/screenshots/02-cutting-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-car-house-connect/01-level-1.png": {
+    "r2Key": "games/loopit/loopit-car-house-connect/screenshots/01-level-1-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-car-house-connect/screenshots/01-level-1-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-tag-youre-it/01-arena.png": {
+    "r2Key": "games/loopit/loopit-tag-youre-it/screenshots/01-arena-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-tag-youre-it/screenshots/01-arena-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-shift-weight-server/01-served-zero.png": {
+    "r2Key": "games/loopit/loopit-shift-weight-server/screenshots/01-served-zero-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-shift-weight-server/screenshots/01-served-zero-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-pump-it-up-balloon/01-start.png": {
+    "r2Key": "games/loopit/loopit-pump-it-up-balloon/screenshots/01-start-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-pump-it-up-balloon/screenshots/01-start-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-depth-digging/01-depth-zero.png": {
+    "r2Key": "games/loopit/loopit-depth-digging/screenshots/01-depth-zero-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-depth-digging/screenshots/01-depth-zero-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-depth-digging/02-depth-one.png": {
+    "r2Key": "games/loopit/loopit-depth-digging/screenshots/02-depth-one-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-depth-digging/screenshots/02-depth-one-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-spirostar/01-prompt.png": {
+    "r2Key": "games/loopit/loopit-spirostar/screenshots/01-prompt-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-spirostar/screenshots/01-prompt-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-force-playground/01-tools.png": {
+    "r2Key": "games/loopit/loopit-force-playground/screenshots/01-tools-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-force-playground/screenshots/01-tools-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-low-health-boxing/01-ko.png": {
+    "r2Key": "games/loopit/loopit-low-health-boxing/screenshots/01-ko-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-low-health-boxing/screenshots/01-ko-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-street-guy-action/01-controls.png": {
+    "r2Key": "games/loopit/loopit-street-guy-action/screenshots/01-controls-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-street-guy-action/screenshots/01-controls-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-dont-look-back/01-start.png": {
+    "r2Key": "games/loopit/loopit-dont-look-back/screenshots/01-start-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-dont-look-back/screenshots/01-start-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-dont-look-back/02-caught.png": {
+    "r2Key": "games/loopit/loopit-dont-look-back/screenshots/02-caught-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-dont-look-back/screenshots/02-caught-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-try-not-to-poop/01-start.png": {
+    "r2Key": "games/loopit/loopit-try-not-to-poop/screenshots/01-start-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-try-not-to-poop/screenshots/01-start-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-find-the-hat-guy/01-search-board.png": {
+    "r2Key": "games/loopit/loopit-find-the-hat-guy/screenshots/01-search-board-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-find-the-hat-guy/screenshots/01-search-board-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-anger-meter/01-meter.png": {
+    "r2Key": "games/loopit/loopit-anger-meter/screenshots/01-meter-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-anger-meter/screenshots/01-meter-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-zombie-town-v2/01-empty-town.png": {
+    "r2Key": "games/loopit/loopit-zombie-town-v2/screenshots/01-empty-town-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-zombie-town-v2/screenshots/01-empty-town-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-zombie-town-v2/02-people-nine.png": {
+    "r2Key": "games/loopit/loopit-zombie-town-v2/screenshots/02-people-nine-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-zombie-town-v2/screenshots/02-people-nine-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-hold-to-grow-line/01-zero-percent.png": {
+    "r2Key": "games/loopit/loopit-hold-to-grow-line/screenshots/01-zero-percent-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-hold-to-grow-line/screenshots/01-zero-percent-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-red-vs-blue-warriors/01-roster.png": {
+    "r2Key": "games/loopit/loopit-red-vs-blue-warriors/screenshots/01-roster-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-red-vs-blue-warriors/screenshots/01-roster-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-trap-the-ants/01-zero-dollars.png": {
+    "r2Key": "games/loopit/loopit-trap-the-ants/screenshots/01-zero-dollars-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-trap-the-ants/screenshots/01-zero-dollars-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-trap-the-ants/02-sixteen-dollars.png": {
+    "r2Key": "games/loopit/loopit-trap-the-ants/screenshots/02-sixteen-dollars-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-trap-the-ants/screenshots/02-sixteen-dollars-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-target-scanner/01-level-1.png": {
+    "r2Key": "games/loopit/loopit-target-scanner/screenshots/01-level-1-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-target-scanner/screenshots/01-level-1-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
   }
 }
