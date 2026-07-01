@@ -8,6 +8,7 @@ const root = path.resolve(__dirname, "..");
 const config = readJson("site.config.json");
 const games = readJson(path.join("data", "games.json"));
 const media = readJson(path.join("data", "media.json"));
+const creatorOverrides = readOptionalJson(path.join("data", "creators.json"), []);
 const mediaAssets = readOptionalJson(path.join("data", "media-assets.generated.json"), {});
 
 const site = {
@@ -27,21 +28,24 @@ const site = {
 
 const genres = groupBy(games, (game) => game.genre);
 const platforms = platformGroups(games);
+const creators = creatorGroups(games, creatorOverrides);
+const creatorBySlug = new Map(creators.map((creator) => [creator.slug, creator]));
 
 cleanGenerated();
 generateHomePage();
 generateGamePages();
 generateGenrePages();
 generatePlatformPages();
+generateCreatorPages();
 generateUtilityPages();
 generateSitemap();
 generateRobots();
 generateAdsTxt();
 
-console.log(`Generated ${games.length} game guides, ${genres.size} genre pages, and ${platforms.length} platform pages for ${site.name}.`);
+console.log(`Generated ${games.length} game guides, ${genres.size} genre pages, ${platforms.length} platform pages, and ${creators.length} creator pages for ${site.name}.`);
 
 function cleanGenerated() {
-  for (const dir of ["games", "genres", "platforms", "about", "contact", "privacy"]) {
+  for (const dir of ["games", "genres", "platforms", "creators", "about", "contact", "privacy"]) {
     fs.rmSync(path.join(root, dir), { recursive: true, force: true });
   }
   for (const file of ["index.html", "robots.txt", "sitemap.xml", "ads.txt"]) {
@@ -159,7 +163,7 @@ function generateGamePages() {
 
     writePage(["games", game.slug], layout({
       title: `${game.title} Guide: Rules, Beginner Tips, Strategy, and FAQ`,
-      description: `${game.quickAnswer} Learn ${game.title} rules, controls, strategy, common mistakes, and beginner tips.`,
+      description: gameDescription(game),
       path: `/games/${game.slug}/`,
       depth: 2,
       schema: [gameSchema(game), faqSchema(game)],
@@ -186,6 +190,7 @@ function generateGamePages() {
               ${guideSection("Controls", game.controls)}
               ${guideSection("Strategy tips", game.strategy)}
               ${guideSection("Common mistakes", game.mistakes)}
+              ${creatorContextSection(game)}
               ${screenshotGallery(game)}
               <section class="faq-block">
                 <h2>${escapeHtml(game.title)} FAQ</h2>
@@ -303,6 +308,80 @@ function generatePlatformPages() {
   }
 }
 
+function generateCreatorPages() {
+  writePage(["creators"], layout({
+    title: `Game Creators: Loopit Makers and Playable Sources`,
+    description: `Browse creator profiles for web playable games covered by ${site.name}, including source-site names, guide links, and verified gameplay context.`,
+    path: "/creators/",
+    depth: 1,
+    schema: [itemListSchema(games, "Game guides by creator")],
+    body: `
+      <main class="article-page">
+        ${simpleBreadcrumb("Creators", "../")}
+        <section class="guide-hero compact-hero">
+          <div>
+            <p class="kicker">Creator index</p>
+            <h1>Game creators</h1>
+            <p>Lightweight profiles for the source-site creators behind the games we have replayed. We only treat these as platform display names unless an external identity is verified.</p>
+          </div>
+        </section>
+        <section class="creator-grid">
+          ${creators.map((creator) => creatorCard(creator, "../")).join("")}
+        </section>
+      </main>
+    `,
+  }));
+
+  for (const creator of creators) {
+    writePage(["creators", creator.slug], layout({
+      title: `${creator.name} Game Creator Profile: Guides and Playable Notes`,
+      description: `${creator.name} creator profile with ${creator.games.length} ${creator.sourcePlatform} game guide${creator.games.length === 1 ? "" : "s"}, source attribution, and verified replay notes.`,
+      path: `/creators/${creator.slug}/`,
+      depth: 2,
+      schema: [itemListSchema(creator.games, `${creator.name} game guides`)],
+      body: `
+        <main class="article-page">
+          ${breadcrumb("Creators", "../../")}
+          <section class="guide-hero compact-hero">
+            <div>
+              <p class="kicker">Creator profile</p>
+              <h1>${escapeHtml(creator.name)}</h1>
+              <p>${escapeHtml(creator.summary)}</p>
+            </div>
+          </section>
+          <section class="creator-profile-grid">
+            <section class="guide-section">
+              <h2>Creator notes</h2>
+              <ul>
+                ${creator.notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("")}
+              </ul>
+            </section>
+            <section class="facts-panel">
+              <h2>Profile facts</h2>
+              <dl>
+                <div><dt>Source site</dt><dd>${creator.platformUrl ? `<a href="${escapeHtml(creator.platformUrl)}" target="_blank" rel="noopener">${escapeHtml(creator.sourcePlatform)}</a>` : escapeHtml(creator.sourcePlatform)}</dd></div>
+                <div><dt>Guides tracked</dt><dd>${creator.games.length}</dd></div>
+                <div><dt>Total visible likes</dt><dd>${escapeHtml(formatCount(creator.totalLikes))}</dd></div>
+                <div><dt>Total visible comments</dt><dd>${escapeHtml(formatCount(creator.totalComments))}</dd></div>
+                <div><dt>External identity</dt><dd>${escapeHtml(creator.externalIdentityStatus)}</dd></div>
+              </dl>
+            </section>
+          </section>
+          <section class="section-head">
+            <div>
+              <p class="kicker">Guides</p>
+              <h2>${escapeHtml(creator.name)} games</h2>
+            </div>
+          </section>
+          <section class="guide-grid">
+            ${creator.games.map((game) => guideCard(game, "../../")).join("")}
+          </section>
+        </main>
+      `,
+    }));
+  }
+}
+
 function generateUtilityPages() {
   writePage(["about"], layout({
     title: `About ${site.name}`,
@@ -389,6 +468,7 @@ function layout({ title, description, body, depth, path: pagePath, schema = [] }
     <nav aria-label="Primary navigation">
       <a href="${prefix}#all-guides">Guides</a>
       <a href="${prefix}platforms/">Platforms</a>
+      <a href="${prefix}creators/">Creators</a>
       <a href="${prefix}about/">About</a>
     </nav>
   </header>
@@ -400,6 +480,7 @@ function layout({ title, description, body, depth, path: pagePath, schema = [] }
     </div>
     <nav aria-label="Footer navigation">
       <a href="${prefix}about/">About</a>
+      <a href="${prefix}creators/">Creators</a>
       <a href="${prefix}contact/">Contact</a>
       <a href="${prefix}privacy/">Privacy</a>
       <a href="${prefix}sitemap.xml">Sitemap</a>
@@ -410,12 +491,48 @@ function layout({ title, description, body, depth, path: pagePath, schema = [] }
 </html>`;
 }
 
+function gameDescription(game) {
+  const opener = firstSentence(game.quickAnswer, 150);
+  const context = game.creator || Array.isArray(game.communityNotes) ? " Includes creator context, visible source stats, and public-community search notes." : "";
+  return trimDescription(`${opener}${context} Learn ${game.title} rules, controls, strategy, common mistakes, and beginner tips.`);
+}
+
+function trimDescription(value) {
+  const text = String(value).replace(/\s+/g, " ").trim();
+  if (text.length <= 280) return text;
+  return `${text.slice(0, 277).replace(/\s+\S*$/, "")}...`;
+}
+
+function firstSentence(value, maxLength) {
+  const text = String(value || "").replace(/\s+/g, " ").trim();
+  const sentenceEnd = text.search(/[.!?]/);
+  const sentence = sentenceEnd > 0 ? text.slice(0, sentenceEnd + 1) : text;
+  if (sentence.length <= maxLength) return sentence;
+  return `${sentence.slice(0, maxLength - 3).replace(/\s+\S*$/, "")}...`;
+}
+
 function guideSection(title, items) {
   return `
     <section class="guide-section">
       <h2>${escapeHtml(title)}</h2>
       <ul>
         ${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+      </ul>
+    </section>
+  `;
+}
+
+function creatorContextSection(game) {
+  const notes = [
+    ...(Array.isArray(game.creatorContext) ? game.creatorContext : []),
+    ...(Array.isArray(game.communityNotes) ? game.communityNotes : []),
+  ];
+  if (!notes.length) return "";
+  return `
+    <section class="guide-section creator-notes">
+      <h2>Creator and community notes</h2>
+      <ul>
+        ${notes.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
       </ul>
     </section>
   `;
@@ -670,7 +787,7 @@ function factsPanel(game) {
         <div><dt>Genre</dt><dd>${escapeHtml(game.genre)}</dd></div>
         <div><dt>Platforms</dt><dd>${game.platforms.map(escapeHtml).join(", ")}</dd></div>
         <div><dt>Difficulty</dt><dd>${escapeHtml(game.difficulty)}</dd></div>
-        ${game.creator ? `<div><dt>Creator</dt><dd>${escapeHtml(game.creator)}</dd></div>` : ""}
+        ${game.creator ? `<div><dt>Creator</dt><dd>${creatorLink(game, "../../")}</dd></div>` : ""}
         ${game.stats?.views ? `<div><dt>Views</dt><dd>${escapeHtml(game.stats.views)}</dd></div>` : ""}
         ${game.stats?.likes ? `<div><dt>Likes</dt><dd>${escapeHtml(game.stats.likes)}</dd></div>` : ""}
         ${game.stats?.comments ? `<div><dt>Comments</dt><dd>${escapeHtml(game.stats.comments)}</dd></div>` : ""}
@@ -680,6 +797,31 @@ function factsPanel(game) {
       ${game.sourceUrl ? `<a class="source-link" href="${escapeHtml(game.sourceUrl)}" target="_blank" rel="noopener">Open source playable</a>` : ""}
     </section>
   `;
+}
+
+function creatorCard(creator, prefix) {
+  const topGame = creator.games[0];
+  return `
+    <article class="creator-card">
+      <a href="${prefix}creators/${creator.slug}/">
+        <span>${escapeHtml(creator.sourcePlatform)}</span>
+        <h2>${escapeHtml(creator.name)}</h2>
+        <p>${escapeHtml(creator.summary)}</p>
+        ${topGame ? `<strong>${creator.games.length} guide${creator.games.length === 1 ? "" : "s"} · top guide: ${escapeHtml(topGame.title)}</strong>` : ""}
+      </a>
+    </article>
+  `;
+}
+
+function creatorLink(game, prefix) {
+  const creator = creatorForGame(game);
+  if (!creator) return escapeHtml(game.creator);
+  return `<a href="${prefix}creators/${creator.slug}/">${escapeHtml(creator.name)}</a>`;
+}
+
+function creatorForGame(game) {
+  const slug = game.creatorSlug || slugify(game.creator || "");
+  return creatorBySlug.get(slug);
 }
 
 function platformLinks(game, prefix) {
@@ -784,7 +926,9 @@ function generateSitemap() {
     "/contact/",
     "/privacy/",
     "/platforms/",
+    "/creators/",
     ...platforms.map((platform) => `/platforms/${platform.slug}/`),
+    ...creators.map((creator) => `/creators/${creator.slug}/`),
     ...Array.from(genres.keys()).map((genre) => `/genres/${slugify(genre)}/`),
     ...games.map((game) => `/games/${game.slug}/`),
   ];
@@ -918,6 +1062,62 @@ function platformGroups(rows) {
     bySlug.get(slug).rows.push(game);
   }
   return Array.from(bySlug.values()).sort((a, b) => a.title.localeCompare(b.title));
+}
+
+function creatorGroups(rows, overrides) {
+  const overrideBySlug = new Map(overrides.map((creator) => [creator.slug, creator]));
+  const bySlug = new Map();
+  for (const game of rows) {
+    if (!game.creator) continue;
+    const slug = game.creatorSlug || slugify(game.creator);
+    if (!bySlug.has(slug)) {
+      const override = overrideBySlug.get(slug) || {};
+      bySlug.set(slug, {
+        slug,
+        name: override.name || game.creator,
+        sourcePlatform: override.sourcePlatform || game.sourcePlatform || "Source site",
+        sourcePlatformSlug: override.sourcePlatformSlug || game.sourcePlatformSlug || slugify(game.sourcePlatform || "source"),
+        platformUrl: override.platformUrl || platformUrl(game),
+        summary: override.summary || `${game.creator} is tracked here as a ${game.sourcePlatform || "source-site"} display name for games we have replayed.`,
+        notes: Array.isArray(override.notes) ? override.notes : [],
+        externalIdentityStatus: override.externalIdentityStatus || "No verified external profile linked",
+        games: [],
+        totalLikes: 0,
+        totalComments: 0,
+      });
+    }
+    const creator = bySlug.get(slug);
+    creator.games.push(game);
+    creator.totalLikes += parseHumanCount(game.stats?.likes);
+    creator.totalComments += parseHumanCount(game.stats?.comments);
+  }
+  for (const creator of bySlug.values()) {
+    creator.games.sort((a, b) => parseHumanCount(b.stats?.likes) - parseHumanCount(a.stats?.likes));
+    if (!creator.notes.length) {
+      creator.notes.push("Profile is based on the creator name visible on the source playable page and our replay notes.");
+      creator.notes.push("Exact-name public web search did not produce a reliable external identity match, so this page avoids linking unrelated social accounts.");
+    }
+  }
+  return Array.from(bySlug.values()).sort((a, b) => b.games.length - a.games.length || a.name.localeCompare(b.name));
+}
+
+function parseHumanCount(value) {
+  const raw = String(value || "").trim().toLowerCase();
+  if (!raw) return 0;
+  const match = raw.match(/^([\d.]+)\s*([km])?$/);
+  if (!match) return Number(raw.replace(/[^\d.]/g, "")) || 0;
+  const number = Number(match[1]);
+  if (!Number.isFinite(number)) return 0;
+  if (match[2] === "k") return number * 1000;
+  if (match[2] === "m") return number * 1000000;
+  return number;
+}
+
+function formatCount(value) {
+  if (!value) return "Not visible";
+  if (value >= 1000000) return `${(value / 1000000).toFixed(value >= 10000000 ? 0 : 1)}M`;
+  if (value >= 1000) return `${(value / 1000).toFixed(value >= 10000 ? 0 : 1)}K`;
+  return String(Math.round(value));
 }
 
 function slugify(value) {
