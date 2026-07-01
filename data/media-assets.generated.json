@@ -1,28 +1,42 @@
 {
-  "/assets/loopit-cleaning-asmr-tools/01-entry.png": {
-    "r2Key": "games/loopit/loopit-cleaning-asmr-tools/screenshots/01-entry-1200w.jpg",
-    "localOutput": ".media/games/loopit/loopit-cleaning-asmr-tools/screenshots/01-entry-1200w.jpg",
+  "/assets/loopit-cleaning-asmr-tools/01-level-3-wheel.jpg": {
+    "r2Key": "games/loopit/loopit-cleaning-asmr-tools/screenshots/01-level-3-wheel-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cleaning-asmr-tools/screenshots/01-level-3-wheel-1200w.jpg",
     "width": 1200,
     "format": "jpeg",
     "quality": 82
   },
-  "/assets/loopit-cleaning-asmr-tools/02-foam-tool.png": {
-    "r2Key": "games/loopit/loopit-cleaning-asmr-tools/screenshots/02-foam-tool-1200w.jpg",
-    "localOutput": ".media/games/loopit/loopit-cleaning-asmr-tools/screenshots/02-foam-tool-1200w.jpg",
+  "/assets/loopit-cleaning-asmr-tools/02-level-8-watch.jpg": {
+    "r2Key": "games/loopit/loopit-cleaning-asmr-tools/screenshots/02-level-8-watch-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cleaning-asmr-tools/screenshots/02-level-8-watch-1200w.jpg",
     "width": 1200,
     "format": "jpeg",
     "quality": 82
   },
-  "/assets/loopit-cleaning-asmr-tools/03-brush-tool.png": {
-    "r2Key": "games/loopit/loopit-cleaning-asmr-tools/screenshots/03-brush-tool-1200w.jpg",
-    "localOutput": ".media/games/loopit/loopit-cleaning-asmr-tools/screenshots/03-brush-tool-1200w.jpg",
+  "/assets/loopit-cleaning-asmr-tools/03-level-10-sink.jpg": {
+    "r2Key": "games/loopit/loopit-cleaning-asmr-tools/screenshots/03-level-10-sink-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cleaning-asmr-tools/screenshots/03-level-10-sink-1200w.jpg",
     "width": 1200,
     "format": "jpeg",
     "quality": 82
   },
-  "/assets/loopit-cleaning-asmr-tools/04-water-tool.png": {
-    "r2Key": "games/loopit/loopit-cleaning-asmr-tools/screenshots/04-water-tool-1200w.jpg",
-    "localOutput": ".media/games/loopit/loopit-cleaning-asmr-tools/screenshots/04-water-tool-1200w.jpg",
+  "/assets/loopit-cleaning-asmr-tools/04-level-11-clean-result.jpg": {
+    "r2Key": "games/loopit/loopit-cleaning-asmr-tools/screenshots/04-level-11-clean-result-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cleaning-asmr-tools/screenshots/04-level-11-clean-result-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-cleaning-asmr-tools/05-level-16-statue.jpg": {
+    "r2Key": "games/loopit/loopit-cleaning-asmr-tools/screenshots/05-level-16-statue-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cleaning-asmr-tools/screenshots/05-level-16-statue-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-cleaning-asmr-tools/06-level-20-guitar.jpg": {
+    "r2Key": "games/loopit/loopit-cleaning-asmr-tools/screenshots/06-level-20-guitar-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cleaning-asmr-tools/screenshots/06-level-20-guitar-1200w.jpg",
     "width": 1200,
     "format": "jpeg",
     "quality": 82
@@ -394,6 +408,62 @@
   "/assets/loopit-phone-mini-apps/08-flappy-game-over.png": {
     "r2Key": "games/loopit/loopit-phone-mini-apps/screenshots/08-flappy-game-over-1200w.jpg",
     "localOutput": ".media/games/loopit/loopit-phone-mini-apps/screenshots/08-flappy-game-over-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-rate-me-comments/01-entry.png": {
+    "r2Key": "games/loopit/loopit-rate-me-comments/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-rate-me-comments/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-rate-me-comments/02-counter-60.png": {
+    "r2Key": "games/loopit/loopit-rate-me-comments/screenshots/02-counter-60-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-rate-me-comments/screenshots/02-counter-60-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-cut-into-slices/01-level-1.png": {
+    "r2Key": "games/loopit/loopit-cut-into-slices/screenshots/01-level-1-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cut-into-slices/screenshots/01-level-1-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-cut-into-slices/02-master-chef.png": {
+    "r2Key": "games/loopit/loopit-cut-into-slices/screenshots/02-master-chef-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cut-into-slices/screenshots/02-master-chef-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-cut-into-slices/03-level-2.png": {
+    "r2Key": "games/loopit/loopit-cut-into-slices/screenshots/03-level-2-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cut-into-slices/screenshots/03-level-2-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-cut-into-slices/04-level-2-master-chef.png": {
+    "r2Key": "games/loopit/loopit-cut-into-slices/screenshots/04-level-2-master-chef-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cut-into-slices/screenshots/04-level-2-master-chef-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-arrow-timing-wheel/01-entry.png": {
+    "r2Key": "games/loopit/loopit-arrow-timing-wheel/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-arrow-timing-wheel/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-arrow-timing-wheel/02-game-over-level-2.png": {
+    "r2Key": "games/loopit/loopit-arrow-timing-wheel/screenshots/02-game-over-level-2-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-arrow-timing-wheel/screenshots/02-game-over-level-2-1200w.jpg",
     "width": 1200,
     "format": "jpeg",
     "quality": 82

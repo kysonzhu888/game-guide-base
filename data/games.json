@@ -10,7 +10,7 @@
     "sourcePlatform": "Loopit",
     "sourcePlatformSlug": "loopit",
     "difficulty": "Tool-order cleaning game with spray, brush, water, and vacuum steps",
-    "searchIntent": "Loopit Cleaning ASMR guide, tool order, spray brush water vacuum, and how to clear Level 1",
+    "searchIntent": "Loopit Cleaning ASMR guide, tool order, Satisfyingly Clean result, and what changes through Level 20",
     "sourceUrl": "https://share.loopit.me/game/0945ab1a-5d65-4deb-bc2a-f525bf68ed01?l_data=%7B%22said%22%3A%22sa_nKUC3JpX%22%2C%22ssuid%22%3A%22ss_qMqfPyPd%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%220945ab1a-5d65-4deb-bc2a-f525bf68ed01%22%7D",
     "creator": "Kemberley09",
     "stats": {
@@ -19,79 +19,89 @@
       "bookmarks": "15k",
       "remixes": "509"
     },
-    "summary": "This Loopit playable is a cleaning ASMR tool game. Level 1 shows four tools at the bottom, and the useful pattern is to select a tool, scrub across the dirty surface, then move to the next tool instead of staying on one icon.",
-    "quickAnswer": "Use the tools from left to right: spray first, brush the surface, rinse with water, then finish with the final cleanup tool. Drag across the dirty center area after selecting each tool.",
+    "summary": "This Loopit playable is a multi-level cleaning ASMR tool game. The same four-tool loop repeats across different objects, and user-provided screenshots verify the run through at least Level 20, including Satisfyingly Clean result screens and later targets like a wheel, watch, sink, statue, fridge, and guitar.",
+    "quickAnswer": "Select each cleaning tool, drag it across the dirty object until the progress bar stops moving, then switch tools and repeat. A level is done only when the Satisfyingly Clean overlay appears and the Next Level button unlocks the next object.",
     "basics": [
-      "Open the game from the Loopit feed and wait for Level 1 to load.",
-      "The bottom toolbar shows four circular tools. In our recording they appear as spray, brush, water, and a final cleanup tool.",
-      "Tap the spray tool first, then drag across the dirty surface in long horizontal strokes.",
-      "Switch to the brush and scrub the same area until the visible white foam spreads across the surface.",
-      "Use the water tool after brushing. The water step works best when dragged across the foam instead of tapped in one spot.",
-      "Finish by using the remaining cleanup tool on any area that still looks dirty."
+      "Open the game from the Loopit feed and treat each screen as a separate cleaning job, not as a one-level demo.",
+      "The bottom toolbar shows four circular tools. In the captured run, the tools stay in the same area while the object changes from level to level.",
+      "Tap one tool, drag it across the dirty object, and watch both the visible dirt and the top progress bar.",
+      "When the current tool stops producing progress, switch to the next tool and clean the same object again.",
+      "Keep covering the edges, corners, and curved parts of the object because later levels hide dirt away from the center.",
+      "The confirmed completion state is the Satisfyingly Clean overlay. Tap Next Level to continue to the next object."
     ],
     "controls": [
-      "Tap a tool icon to select it.",
-      "Drag the selected tool across the object or dirty ground area.",
-      "Use slow side-to-side scrubs rather than tiny taps.",
-      "Switch tools when the screen stops changing under the current tool.",
+      "Tap a bottom tool icon to select it.",
+      "Drag the selected tool across the object; tapping alone is not enough.",
+      "Use long side-to-side strokes for flat objects like the sink or fridge.",
+      "Use slower curved strokes around circular objects like the wheel, watch, and helmet.",
       "Keep your finger above the bottom toolbar so you do not accidentally switch tools while scrubbing."
     ],
     "strategy": [
-      "The safest order is spray, brush, water, then final cleanup.",
-      "Do not start with the final tool; it has less visible effect before foam or water is applied.",
-      "Watch the texture change. Foam and wet patches are your feedback that the tool is working.",
-      "Long strokes cover more area than repeatedly rubbing the same center point.",
-      "If Level 1 does not advance, revisit the edges of the dirty surface with the brush and water tools."
+      "Do not stop after one pass. Later levels often need multiple tools across the same dirty zones before the bar reaches full.",
+      "Use the top progress bar as the real objective. The object may still look partly dirty while the bar tells you whether the current stroke is working.",
+      "For detailed objects such as the statue wings or guitar body, trace the outline instead of only scrubbing the center.",
+      "For large rectangular objects such as the sink and fridge, sweep from one edge to the other, then return over missed corners.",
+      "If the level feels stuck, change tools and revisit the smallest remaining dirty patches rather than repeating the same stroke forever."
     ],
     "mistakes": [
-      "Tapping tool icons without dragging on the object.",
-      "Using only one tool for the whole level.",
+      "Assuming the game ends after the first clean result.",
+      "Leaving the level before the Satisfyingly Clean overlay appears.",
+      "Using only one tool for the whole object.",
       "Scrubbing below the object where the game does not register cleaning.",
-      "Switching tools too fast before the visible effect appears.",
-      "Assuming the toolbar order is cosmetic; it is the best beginner route."
+      "Ignoring thin edges, curved rims, spokes, straps, and other detail areas where dirt remains."
     ],
     "screenshots": [
       {
-        "src": "/assets/loopit-cleaning-asmr-tools/01-entry.png",
-        "alt": "Loopit Cleaning ASMR Level 1 screen with a dirty surface and four tool icons.",
-        "caption": "Level 1 starts with four cleaning tools along the bottom."
+        "src": "/assets/loopit-cleaning-asmr-tools/01-level-3-wheel.jpg",
+        "alt": "Loopit Cleaning ASMR Level 3 wheel with the top progress bar and four bottom tool icons.",
+        "caption": "Level 3 shows the multi-level loop: a new object appears, but the four-tool cleaning toolbar remains."
       },
       {
-        "src": "/assets/loopit-cleaning-asmr-tools/02-foam-tool.png",
-        "alt": "Loopit Cleaning ASMR showing white foam after using the first cleaning tool.",
-        "caption": "The first tool creates visible foam across the dirty surface."
+        "src": "/assets/loopit-cleaning-asmr-tools/02-level-8-watch.jpg",
+        "alt": "Loopit Cleaning ASMR Level 8 gold watch being cleaned with a cloth-like tool.",
+        "caption": "By Level 8, detailed objects such as a watch require strokes across edges and straps, not just the center."
       },
       {
-        "src": "/assets/loopit-cleaning-asmr-tools/03-brush-tool.png",
-        "alt": "Loopit Cleaning ASMR with foam spread while the brush tool is active.",
-        "caption": "Brush after spraying so the foam spreads evenly."
+        "src": "/assets/loopit-cleaning-asmr-tools/03-level-10-sink.jpg",
+        "alt": "Loopit Cleaning ASMR Level 10 sink with foam gathered near the lower edge.",
+        "caption": "Large surfaces like the sink reward full-width sweeps and careful corner cleanup."
       },
       {
-        "src": "/assets/loopit-cleaning-asmr-tools/04-water-tool.png",
-        "alt": "Loopit Cleaning ASMR showing the water bottle tool being dragged across the foam.",
-        "caption": "Use water after brushing to rinse the cleaned area."
+        "src": "/assets/loopit-cleaning-asmr-tools/04-level-11-clean-result.jpg",
+        "alt": "Loopit Cleaning ASMR Satisfyingly Clean result overlay after a later level.",
+        "caption": "The reliable success signal is the Satisfyingly Clean overlay with the Next Level button."
+      },
+      {
+        "src": "/assets/loopit-cleaning-asmr-tools/05-level-16-statue.jpg",
+        "alt": "Loopit Cleaning ASMR Level 16 angel statue with dirt around the wings and body.",
+        "caption": "Later objects add narrow detail areas, so trace around wings, curves, and borders."
+      },
+      {
+        "src": "/assets/loopit-cleaning-asmr-tools/06-level-20-guitar.jpg",
+        "alt": "Loopit Cleaning ASMR Level 20 guitar with the progress bar near the top and cleaning tools below.",
+        "caption": "The supplied run reached Level 20, confirming the game continues well past the first few cleans."
       }
     ],
     "faq": [
       [
-        "What is the best tool order in Loopit Cleaning ASMR?",
-        "Use spray first, then brush, then water, then the final cleanup tool. That order produced the clearest visible progress in our run."
+        "How do you finish a level in Loopit Cleaning ASMR?",
+        "Keep dragging the available cleaning tools across the dirty object until the top progress bar fills and the Satisfyingly Clean overlay appears."
       ],
       [
         "Do you tap or drag the tools?",
-        "Tap to select a tool, then drag across the dirty surface. Tapping alone does not clean much."
+        "Tap to select a tool, then drag across the object. The actual cleaning comes from dragging strokes, not from tapping the icon."
       ],
       [
         "Why is the level not changing?",
-        "You may be scrubbing outside the active object area or using the same tool too long. Switch to the next tool and cover the edges."
+        "You may be scrubbing outside the active object area, missing a small edge patch, or staying on one tool after it stopped helping. Switch tools and clean the edges."
       ],
       [
-        "Is Cleaning ASMR a timing game?",
-        "No. It is mostly a tool-order and coverage game, so slow complete strokes are better than fast tapping."
+        "Is Cleaning ASMR only one level?",
+        "No. The supplied screenshots show the run continuing through at least Level 20, with new objects such as a wheel, shoe, pan, watch, sink, statue, fridge, and guitar."
       ],
       [
-        "Did you verify later levels?",
-        "We verified Level 1 tool behavior and visible progress. Later levels may reuse the same tool-order rule with different surfaces."
+        "Did you verify the ending?",
+        "We verified progression through Level 20 from user-provided screenshots, but we are not claiming Level 20 is the final level."
       ]
     ]
   },
@@ -1202,6 +1212,236 @@
       [
         "How do I play Flappy Emoji?",
         "Tap to fly and use small, spaced taps to keep the chick between obstacles. Rapid tapping can lead to an instant Game Over."
+      ]
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-rate-me-comments",
+    "title": "Rate Me Comments",
+    "genre": "Tap counter",
+    "difficulty": "A 100-tap reveal counter where the only objective is to finish the count without hitting the Loopit chrome.",
+    "searchIntent": "Rate Me Comments Loopit guide, tap 100 times, reveal counter, how to finish without missing taps",
+    "sourceUrl": "https://share.loopit.me/game/8b4cbd93-b636-42cd-9b4c-1bf74b7cb8b6?l_data=%7B%22said%22%3A%22sa_her3wK4S%22%2C%22ssuid%22%3A%22ss_xkYwADdR%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%228b4cbd93-b636-42cd-9b4c-1bf74b7cb8b6%22%7D",
+    "creator": "Hello",
+    "stats": {
+      "likes": "233",
+      "comments": "411",
+      "bookmarks": "114",
+      "remixes": "4"
+    },
+    "summary": "Rate Me Comments is a simple Loopit tap counter. The screen asks for 100 taps before the reveal, so the useful trick is finger placement rather than route solving.",
+    "quickAnswer": "Tap the center of the game panel 100 times. Keep your taps above the bottom Loopit buttons, and do not tap the share/comment area while counting.",
+    "basics": [
+      "Open the playable and wait until the large 100 counter is visible.",
+      "Tap inside the black game panel, preferably around the lower center where the TAP SCREEN label appears.",
+      "Watch the pink number drop as the progress bar fills.",
+      "The reveal happens after the counter reaches zero. We do not republish the final face frame in the guide images."
+    ],
+    "controls": [
+      "Single taps are the only required input.",
+      "Use one finger and keep it inside the game rectangle.",
+      "Avoid the bottom navigation, share icon, and remix button because they are outside the playable area."
+    ],
+    "strategy": [
+      "Use steady taps instead of moving around the screen.",
+      "If the number stops changing, move slightly higher in the panel and continue tapping.",
+      "The game does not show a puzzle branch; it is a patience counter.",
+      "Players looking for a passcode do not need one for this playable."
+    ],
+    "mistakes": [
+      "Tapping the Loopit toolbar instead of the game panel.",
+      "Stopping early around 60 because the progress bar moves slowly.",
+      "Sharing or commenting before the counter reaches zero."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-rate-me-comments/01-entry.png",
+        "alt": "Rate Me Comments showing the 100 tap counter before completion.",
+        "caption": "Start with the large 100 counter and tap inside this panel."
+      },
+      {
+        "src": "/assets/loopit-rate-me-comments/02-counter-60.png",
+        "alt": "Rate Me Comments counter at 60 with the progress bar partly filled.",
+        "caption": "At 60 taps remaining, the bar confirms that center taps are registering."
+      }
+    ],
+    "faq": [
+      [
+        "Does Rate Me Comments have a passcode?",
+        "No passcode was visible in our playthrough. The task is to tap the screen 100 times."
+      ],
+      [
+        "Where should I tap?",
+        "Tap inside the black panel around the lower center, above the Loopit toolbar."
+      ],
+      [
+        "Why is the final screenshot not shown here?",
+        "The final frame contains a real face reveal, so this guide uses the non-identifying counter screens instead."
+      ]
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-cut-into-slices",
+    "title": "Cut Into Slices",
+    "genre": "Precision slicing",
+    "difficulty": "A one-cut pizza slicing puzzle where accuracy matters more than speed.",
+    "searchIntent": "Cut Into Slices Loopit guide, Level 1 two slices, Level 2 four slices, Master Chef accuracy",
+    "sourceUrl": "https://share.loopit.me/game/82fab6eb-3759-4652-9c52-bec8ff1ac5a7?l_data=%7B%22said%22%3A%22sa_uduZcKzp%22%2C%22ssuid%22%3A%22ss_5cnqMwe3%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%2282fab6eb-3759-4652-9c52-bec8ff1ac5a7%22%7D",
+    "creator": "lamest Lame",
+    "stats": {
+      "likes": "2.1K",
+      "comments": "482",
+      "bookmarks": "1.3K",
+      "remixes": "117"
+    },
+    "summary": "Cut Into Slices asks you to split food into the requested number of pieces. We verified Level 1 and Level 2: a centered single cut clears Level 1, and a centered cross cut clears Level 2 with a 98% Master Chef result.",
+    "quickAnswer": "Level 1: draw one clean line through the center to make 2 slices. Level 2: draw one vertical and one horizontal center cut to make 4 slices.",
+    "basics": [
+      "Read the level instruction before cutting; the requested slice count changes by level.",
+      "Level 1 says Cut into 2 slices and gives 1 cut left. Draw one straight line through the center.",
+      "Tap Next Level after the Master Chef result.",
+      "Level 2 says Cut into 4 slices and gives 2 cuts left. Use a cross pattern: one vertical center cut and one horizontal center cut.",
+      "After both cuts, the result modal should show accuracy and the Next Level button."
+    ],
+    "controls": [
+      "Swipe once to place the cut line.",
+      "Use a slow, straight drag across the full pizza.",
+      "Do not lift your finger until the line passes through both edges."
+    ],
+    "strategy": [
+      "For 2 slices, symmetry is the goal; a centered line is enough.",
+      "For 4 slices, make a plus sign across the food. The two cuts should cross near the middle.",
+      "Begin each swipe outside one edge and finish outside the opposite edge so the slice is complete.",
+      "Do not rush the second cut; place it perpendicular to the first one.",
+      "If accuracy is low, restart and make the lines straighter and closer to the center."
+    ],
+    "mistakes": [
+      "Cutting only halfway through the object.",
+      "Using a curved line when the game asks for even slices.",
+      "Forgetting that Level 2 needs two cuts, not one.",
+      "Putting both Level 2 cuts in the same direction instead of making a cross."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-cut-into-slices/01-level-1.png",
+        "alt": "Cut Into Slices level 1 pizza with one cut left and score zero.",
+        "caption": "Level 1 asks for exactly 2 slices."
+      },
+      {
+        "src": "/assets/loopit-cut-into-slices/02-master-chef.png",
+        "alt": "Cut Into Slices level 1 result popup showing Master Chef and 99 percent accuracy.",
+        "caption": "A clean center cut produced a 99% Level 1 result."
+      },
+      {
+        "src": "/assets/loopit-cut-into-slices/03-level-2.png",
+        "alt": "Cut Into Slices level 2 screen asking for 4 slices with 2 cuts left.",
+        "caption": "Level 2 changes the target to 4 slices and gives 2 cuts."
+      },
+      {
+        "src": "/assets/loopit-cut-into-slices/04-level-2-master-chef.png",
+        "alt": "Cut Into Slices level 2 result showing Master Chef and 98 percent accuracy.",
+        "caption": "A vertical plus horizontal cross cut cleared Level 2 with 98% accuracy."
+      }
+    ],
+    "faq": [
+      [
+        "How do you beat Level 1?",
+        "Draw one straight line through the center to make 2 slices."
+      ],
+      [
+        "How do you beat Level 2?",
+        "Use two centered cuts: one vertical and one horizontal, forming a cross for 4 slices."
+      ],
+      [
+        "How many cuts does Level 2 give you?",
+        "Level 2 gives 2 cuts and asks for 4 slices."
+      ],
+      [
+        "What score did you verify?",
+        "Our Level 1 run showed 99% Master Chef, and Level 2 showed 98% Master Chef."
+      ]
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-arrow-timing-wheel",
+    "title": "Arrow Timing Wheel",
+    "genre": "Timing tap",
+    "difficulty": "A timing wheel where you tap when the pointer reaches the red segment.",
+    "searchIntent": "Arrow Timing Wheel Loopit guide, tap when arrow hits red, timing wheel level 2 game over",
+    "sourceUrl": "https://share.loopit.me/game/4cf01919-96cd-40ef-8ef1-5280c7ec94e9?l_data=%7B%22said%22%3A%22sa_kRwv7LfM%22%2C%22ssuid%22%3A%22ss_mTSXH79n%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%224cf01919-96cd-40ef-8ef1-5280c7ec94e9%22%7D",
+    "creator": "Christopher",
+    "stats": {
+      "likes": "5.7K",
+      "comments": "1.1K",
+      "bookmarks": "4.4K",
+      "remixes": "173"
+    },
+    "summary": "Arrow Timing Wheel is one of the stronger candidates from this batch. The instruction is explicit: tap when the arrow hits RED. Our automated test reached Level 2 and then failed, which confirms the timing window gets stricter.",
+    "quickAnswer": "Wait until the white arrow points into the red half of the wheel, then tap once. Do not spam; mistimed taps can end the run.",
+    "basics": [
+      "Watch the rotating arrow above the colored wheel.",
+      "The visible instruction says to tap when the arrow hits RED.",
+      "Tap once when the pointer is inside the red segment.",
+      "Our run reached Level 2 before a mistimed tap caused Game Over."
+    ],
+    "controls": [
+      "Single tap to lock in the current arrow position.",
+      "Use visual timing, not rapid tapping.",
+      "Keep your tapping finger below the wheel so it does not hide the pointer."
+    ],
+    "strategy": [
+      "Focus on the pointer tip, not the center number.",
+      "Tap slightly after the arrow crosses into red rather than before it reaches red.",
+      "Expect later levels to move faster or punish mistakes more quickly.",
+      "If you fail at Level 2, retry and slow down your first tap rhythm."
+    ],
+    "mistakes": [
+      "Tapping while the arrow is still in green.",
+      "Spamming multiple taps during one rotation.",
+      "Watching the level number instead of the arrow tip."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-arrow-timing-wheel/01-entry.png",
+        "alt": "Arrow Timing Wheel with green and red halves and pointer above the wheel.",
+        "caption": "Tap only when the arrow reaches the red section."
+      },
+      {
+        "src": "/assets/loopit-arrow-timing-wheel/02-game-over-level-2.png",
+        "alt": "Arrow Timing Wheel game over screen saying the player reached Level 2.",
+        "caption": "A mistimed tap ended our run at Level 2."
+      }
+    ],
+    "faq": [
+      [
+        "When do I tap?",
+        "Tap when the pointer is inside the red section."
+      ],
+      [
+        "Should I tap repeatedly?",
+        "No. Use one deliberate tap per timing window."
+      ],
+      [
+        "How far did your run get?",
+        "Our automated verification reached Level 2 before Game Over."
       ]
     ]
   }
