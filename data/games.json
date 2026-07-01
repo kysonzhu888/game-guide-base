@@ -1,0 +1,443 @@
+[
+  {
+    "slug": "loopit-surgery-incision",
+    "title": "Loopit Surgery",
+    "genre": "Surgery simulator",
+    "platforms": ["Loopit app", "Mobile app"],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "difficulty": "Precision drag game with incision and suturing stages",
+    "searchIntent": "Loopit Surgery guide, how to make the incision, how to suture the wound, and Patient Healed ending",
+    "sourceUrl": "https://share.loopit.me/game/a28ae3b7-0361-4481-a600-f45df9d1d392?l_data=%7B%22said%22%3A%22sa_4an9fkpe%22%2C%22ssuid%22%3A%22ss_3fq9DJ2t%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%22a28ae3b7-0361-4481-a600-f45df9d1d392%22%7D",
+    "creator": "Kylie Juneau",
+    "stats": {
+      "likes": "7.8k",
+      "comments": "758",
+      "bookmarks": "4.6k",
+      "remixes": "278"
+    },
+    "summary": "This Loopit playable is a two-step surgery control game. First, drag the scalpel straight down the dashed incision guide. Then use the needle to suture the wound with a left-right zigzag until the Patient Healed result appears.",
+    "quickAnswer": "Drag the scalpel carefully down the center dashed line, then suture from the top of the red cut to the bottom with a continuous zigzag. The procedure completes only after the stitch reaches the lower end of the wound.",
+    "basics": [
+      "Open the game in the Loopit app feed and wait for the surgery table to load.",
+      "The first prompt is Make the Incision. A dashed vertical guide shows exactly where the cut should go.",
+      "Hold the scalpel and drag slowly down the guide line. Keep the blade centered; drifting far away from the dashed line wastes the attempt.",
+      "After the cut is long enough, the prompt changes to Suture the Wound and a needle appears near the top of the incision.",
+      "Use the needle to cross the red cut left and right, working downward in a zigzag pattern.",
+      "Finish by crossing the bottom of the red line and landing near the lower end of the wound. The verified success result is Procedure Complete with Patient Healed."
+    ],
+    "controls": [
+      "Use one slow drag for the incision instead of quick taps.",
+      "For the scalpel stage, start near the blade and move almost straight down the dashed line.",
+      "For the suture stage, drag the needle across the red wound, alternating left and right as you move downward.",
+      "If the white stitch appears but the prompt stays on screen, keep stitching lower; the game may not complete until the bottom of the wound is covered.",
+      "Avoid lifting too often during the suture path, because disconnected short strokes can leave uncovered gaps."
+    ],
+    "strategy": [
+      "Treat the dashed incision guide like a rail. A slow centered drag is more reliable than a fast swipe.",
+      "Do not stop the scalpel in the middle of the wound. Continue until the red cut reaches close to the bottom of the exposed area.",
+      "When suturing, start from the upper part of the cut and make wide enough crosses that the thread visibly spans both sides of the red line.",
+      "The most important finish is the lower end of the wound. In our recorded run, the game did not complete until a final stitch crossed the bottom segment.",
+      "If you see a long white zigzag but no success message, look for any untouched red section near the bottom and drag the needle through that section.",
+      "The success overlay says Patient Healed, with a Next Patient button."
+    ],
+    "mistakes": [
+      "Trying to tap the scalpel instead of dragging it.",
+      "Cutting beside the dashed guide, which leaves the incision stage incomplete.",
+      "Making only a few stitches near the top and expecting the red line to close.",
+      "Drawing decorative zigzags away from the wound instead of crossing the red cut.",
+      "Stopping before the stitch reaches the bottom endpoint."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-surgery-incision/01-start-incision.png",
+        "alt": "Loopit Surgery starting screen with Make the Incision prompt, scalpel, and dashed vertical guide.",
+        "caption": "Start by following the dashed guide with the scalpel."
+      },
+      {
+        "src": "/assets/loopit-surgery-incision/02-incision-complete.png",
+        "alt": "Loopit Surgery incision stage showing a completed red vertical cut.",
+        "caption": "A centered drag turns the dashed guide into a red incision."
+      },
+      {
+        "src": "/assets/loopit-surgery-incision/03-suture-start.png",
+        "alt": "Loopit Surgery Suture the Wound stage with needle near the top of the red incision.",
+        "caption": "The second stage starts with the needle near the top of the wound."
+      },
+      {
+        "src": "/assets/loopit-surgery-incision/04-suture-zigzag.png",
+        "alt": "Loopit Surgery wound being sutured with a white zigzag stitch crossing the red cut.",
+        "caption": "Work downward with left-right stitches that cross the red line."
+      },
+      {
+        "src": "/assets/loopit-surgery-incision/05-patient-healed.png",
+        "alt": "Loopit Surgery success overlay saying Procedure Complete and Patient Healed.",
+        "caption": "The verified completion screen is Patient Healed."
+      }
+    ],
+    "faq": [
+      ["How do you make the incision in Loopit Surgery?", "Hold the scalpel and drag it slowly down the dashed vertical guide. The goal is a straight cut through the center of the marked line."],
+      ["How do you suture the wound?", "Use the needle to draw a zigzag that crosses the red wound from left to right while moving downward. Keep going until the stitch reaches the bottom of the cut."],
+      ["Why is the surgery not completing?", "Most likely the bottom of the wound is not stitched yet. In our test, the success overlay appeared only after a final stitch crossed the lower end of the red line."],
+      ["What does the success screen say?", "The game shows Procedure Complete and a Patient Healed card with a Next Patient button."],
+      ["Is this a timing game?", "No. It is mostly a precision dragging game. Slow controlled movement worked better than fast swipes in our recording."]
+    ]
+  },
+  {
+    "slug": "loopit-peel-the-fruit",
+    "title": "Loopit Peel the Fruit",
+    "genre": "Timing game",
+    "platforms": ["Loopit app", "Mobile app"],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "difficulty": "Tap-timing fruit peeling with limited tries",
+    "searchIntent": "Loopit Peel the fruit guide, how to drop the peeler, Perfect Peel, blueberry and strawberry levels",
+    "sourceUrl": "https://share.loopit.me/game/4e18e4f8-1683-4b2b-850b-936305582e0e?l_data=%7B%22said%22%3A%22sa_CKsJynpw%22%2C%22ssuid%22%3A%22ss_4ccK3LSu%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%224e18e4f8-1683-4b2b-850b-936305582e0e%22%7D",
+    "creator": "Alyssa J",
+    "stats": {
+      "likes": "9.5k",
+      "comments": "1.1k",
+      "bookmarks": "6.6k",
+      "remixes": "522"
+    },
+    "summary": "This Loopit playable is a fruit-peeling timing game. The peeler swings near the fruit, each tap drops it, and every good hit raises the peeled percentage until a Perfect Peel result unlocks the next fruit.",
+    "quickAnswer": "Wait until the peeler is aligned over the fruit, then tap to drop it. Each clean hit raises the Peeled percentage; finish the bar before tries run out to get Perfect Peel and move to the next level.",
+    "basics": [
+      "Open the game in the Loopit app feed. Level 1 starts with Blueberry, 5 tries, and Peeled 0%.",
+      "Watch the peeler position before tapping. The instruction says Tap to drop the peeler, so the main action is timing the drop, not dragging the fruit.",
+      "Tap when the peeler is directly over or slightly crossing the fruit.",
+      "Good drops reveal the inside of the fruit and increase the Peeled percentage.",
+      "Keep using the remaining tries until the progress bar reaches 100%.",
+      "After a successful Level 1 run, the result overlay says Perfect Peel and the Next Level button opens Level 2: Strawberry with 6 tries."
+    ],
+    "controls": [
+      "Tap once to drop the peeler.",
+      "Do not hold or drag; the game reads the tap timing.",
+      "Use the peeler and fruit overlap as your visual cue, not the center of the full screen.",
+      "The tries counter decreases after drops, while the Peeled percentage shows whether the hit helped enough.",
+      "Tap Next Level after the Perfect Peel overlay to continue to the next fruit."
+    ],
+    "strategy": [
+      "Be patient for the first hit. A clean early hit makes the remaining tries much easier.",
+      "The best tap moment is when the peeler head visually overlaps the fruit, especially the unpeeled side.",
+      "If the percentage barely moves, slow down and wait for a better alignment on the next drop.",
+      "Use the progress bar to judge risk. At 41% with 2 tries left, you still need strong hits rather than random taps.",
+      "The level can complete even if you do not peel the fruit in a perfectly even pattern, as long as the percentage reaches 100%.",
+      "Level 2 keeps the same rule but changes the fruit to Strawberry and gives 6 tries."
+    ],
+    "mistakes": [
+      "Tapping immediately without checking where the peeler is.",
+      "Trying to drag the peeler like a tool instead of using tap timing.",
+      "Watching only the percentage and ignoring the fruit position.",
+      "Using all tries on weak edge hits.",
+      "Assuming Level 1 is the whole game; the Next Level button continues to more fruit."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-peel-the-fruit/01-blueberry-start.png",
+        "alt": "Loopit Peel the Fruit Level 1 Blueberry screen with 5 tries and Peeled 0 percent.",
+        "caption": "Level 1 starts with Blueberry, 5 tries, and a moving peeler."
+      },
+      {
+        "src": "/assets/loopit-peel-the-fruit/02-peel-hit.png",
+        "alt": "Loopit Peel the Fruit showing a successful peeler hit and Peeled 13 percent.",
+        "caption": "Good drops start revealing the fruit interior and raise the percentage."
+      },
+      {
+        "src": "/assets/loopit-peel-the-fruit/03-progress-41.png",
+        "alt": "Loopit Peel the Fruit showing Peeled 41 percent with 2 tries left.",
+        "caption": "Use the remaining tries carefully once the progress bar is partly filled."
+      },
+      {
+        "src": "/assets/loopit-peel-the-fruit/04-perfect-peel.png",
+        "alt": "Loopit Peel the Fruit Perfect Peel success overlay after peeling the blueberry.",
+        "caption": "The Level 1 success result is Perfect Peel."
+      },
+      {
+        "src": "/assets/loopit-peel-the-fruit/05-strawberry-level.png",
+        "alt": "Loopit Peel the Fruit Level 2 Strawberry screen with 6 tries and Peeled 0 percent.",
+        "caption": "Next Level changes the fruit to Strawberry and gives 6 tries."
+      }
+    ],
+    "faq": [
+      ["How do you play Loopit Peel the Fruit?", "Tap to drop the peeler when it lines up with the fruit. Each successful drop increases the Peeled percentage."],
+      ["Do you drag the peeler?", "No. In our recorded run, the game used tap timing. The prompt says Tap to drop the peeler."],
+      ["How do you get Perfect Peel?", "Reach 100% peeled before tries run out. For Level 1 Blueberry, we completed it within the 5 available tries."],
+      ["What happens after Blueberry?", "The Next Level button opens Level 2: Strawberry, with 6 tries and the same tap-to-drop rule."],
+      ["Why did my peeled percentage barely increase?", "You probably dropped the peeler too far from the fruit or clipped only the edge. Wait until the peeler overlaps the fruit more clearly before tapping."]
+    ]
+  },
+  {
+    "slug": "loopit-get-it-to-the-top",
+    "title": "Loopit Get It to the Top",
+    "genre": "Physics bounce",
+    "platforms": ["Loopit app", "Mobile app"],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "difficulty": "Physics timing with a bottom controller and rising cash score",
+    "searchIntent": "Loopit get it to the top guide, green ball, pink ball, cash score, and how to control the bottom ball",
+    "sourceUrl": "https://share.loopit.me/game/725a55eb-16c2-4737-8e53-2cc779443424?l_data=%7B%22said%22%3A%22sa_jUnUehXH%22%2C%22ssuid%22%3A%22ss_CHxEJtqk%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%22725a55eb-16c2-4737-8e53-2cc779443424%22%7D",
+    "creator": "SHRIMPY PIEEEE",
+    "stats": {
+      "likes": "19.2k",
+      "comments": "3.1k",
+      "bookmarks": "19.5k",
+      "remixes": "253"
+    },
+    "summary": "This Loopit playable is a dark-screen physics score game. A green bottom controller and a larger pink ball move inside the playfield, while the Cash counter rises as you keep the interaction going.",
+    "quickAnswer": "Use short horizontal corrections near the bottom green ball and keep the pink ball active in the playfield. In our recorded run, cash climbed from $0 to $105, but we did not verify a final top-of-screen reward.",
+    "basics": [
+      "Open the game in the Loopit app feed. The starting screen shows Cash: $0 and a green ball near the bottom edge.",
+      "The game does not show a tutorial prompt, so treat it like a physics control game rather than a menu puzzle.",
+      "Use swipes or taps near the lower green ball to influence the bottom controller position.",
+      "A larger pink ball appears during play. Keeping the balls active raises the Cash counter in small increments.",
+      "In our recorded run, Cash increased through $20, $70, $100, and $105 while the pink ball bounced around the lower and middle playfield.",
+      "We did not verify a final win screen or a top reward, so the confirmed goal is improving cash and keeping the ball in motion."
+    ],
+    "controls": [
+      "Start from the green ball area near the bottom of the game field.",
+      "Use short horizontal swipes or taps near the bottom to reposition the green controller.",
+      "Avoid long uncontrolled swipes toward the system navigation area; they can move your input away from the game field.",
+      "Watch the pink ball's path and adjust the green ball before it drops too low.",
+      "If the Cash number stops changing, re-center the green ball under the active play area and try smaller corrections."
+    ],
+    "strategy": [
+      "Focus on staying under the pink ball instead of chasing the top immediately.",
+      "Small left-right corrections are more reliable than one huge upward fling, because the green controller mostly stays near the bottom.",
+      "Use the Cash counter as feedback. If it goes up by $5 or $10, the interaction is working.",
+      "When the pink ball drifts to one side, move the green ball toward that side before it reaches the bottom.",
+      "Keep the playfield visible; do not cover the bottom edge with your finger for too long.",
+      "Because the final top reward was not verified, treat this guide as a cash-building and control guide rather than a guaranteed completion route."
+    ],
+    "mistakes": [
+      "Expecting a clear tutorial prompt; this game starts without one.",
+      "Only swiping straight up and ignoring where the pink ball is falling.",
+      "Moving the green controller too far to one edge and leaving the middle uncovered.",
+      "Assuming Cash $100 is a final win state. It is a progress score, not a confirmed completion screen.",
+      "Writing a fake top route without seeing the top reward."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-get-it-to-the-top/01-cash-zero.png",
+        "alt": "Loopit Get It to the Top starting screen with Cash 0 and green ball at the bottom.",
+        "caption": "The game starts with Cash $0 and a green controller at the bottom."
+      },
+      {
+        "src": "/assets/loopit-get-it-to-the-top/02-cash-20.png",
+        "alt": "Loopit Get It to the Top showing Cash 20 with the pink ball entering the playfield.",
+        "caption": "Cash begins to rise once the pink ball is active."
+      },
+      {
+        "src": "/assets/loopit-get-it-to-the-top/03-cash-100.png",
+        "alt": "Loopit Get It to the Top showing Cash 100 with the green ball near the bottom and pink ball above it.",
+        "caption": "Our first recording reached Cash $100 by keeping the balls moving."
+      },
+      {
+        "src": "/assets/loopit-get-it-to-the-top/04-cash-105.png",
+        "alt": "Loopit Get It to the Top showing Cash 105 with the pink ball in the center of the field.",
+        "caption": "A later controlled run reached Cash $105."
+      },
+      {
+        "src": "/assets/loopit-get-it-to-the-top/05-current-state.png",
+        "alt": "Loopit Get It to the Top current state with green ball near the bottom and pink ball above it.",
+        "caption": "Keep the green controller positioned under the pink ball's path."
+      }
+    ],
+    "faq": [
+      ["How do you control Loopit Get It to the Top?", "Use short swipes or taps near the green ball at the bottom. It behaves like a bottom controller for the active playfield."],
+      ["What is the pink ball?", "In our playthrough, the larger pink ball appeared after interaction started and its movement was tied to Cash growth."],
+      ["How do you earn cash?", "Keep the ball interaction going. We saw Cash rise in small steps from $0 to $105 while the pink ball bounced in the field."],
+      ["Did you reach the very top?", "Not yet. We verified the controls and Cash growth, but did not verify a final top-of-screen reward or completion overlay."],
+      ["What is the safest beginner strategy?", "Keep the green ball near the bottom center and make small side corrections toward the falling pink ball instead of using huge upward swipes."]
+    ]
+  },
+  {
+    "slug": "loopit-just-like-the-ads",
+    "title": "Loopit Just Like the Ads",
+    "genre": "Crowd runner",
+    "platforms": ["Loopit app", "Mobile app"],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "difficulty": "Fast reflex runner with scaling enemy counts",
+    "searchIntent": "Loopit Just like the ads guide, best gates, troop count, and how to survive longer",
+    "sourceUrl": "https://share.loopit.me/game/243ab6ff-6c6d-4394-a966-0a5c2239d0ca?l_data=%7B%22said%22%3A%22sa_hyvSQY9A%22%2C%22ssuid%22%3A%22ss_emQPVah4%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%22243ab6ff-6c6d-4394-a966-0a5c2239d0ca%22%7D",
+    "creator": "Bpuppy",
+    "stats": {
+      "likes": "15.5k",
+      "comments": "2.5k",
+      "bookmarks": "8k",
+      "remixes": "683"
+    },
+    "summary": "This Loopit playable is an ad-style crowd runner: one blue troop starts at the bottom of the lane, green gates multiply or add troops, red gates remove troops, and the zombie count climbs quickly as the run continues.",
+    "quickAnswer": "Start in the middle to avoid the first red -11 gates, then steer into green add and multiplier gates. Do not wait in the center: idle play ends with Troops 0 and Swarm Destroyed.",
+    "basics": [
+      "Open the game in the Loopit app feed and tap Try Again if the result overlay is already visible.",
+      "The top counter shows Zombies on the left and Troops on the right. You need enough troops to keep shooting the red zombie blocks before the lane overwhelms you.",
+      "Drag horizontally near the blue troop group. The game reads left-right movement, not taps on the gates.",
+      "Green gates help you: + numbers add troops and x numbers multiply the current troop count.",
+      "Red gates hurt you: negative numbers remove troops and can erase an early run quickly.",
+      "The run keeps scaling: after the early +16 and x2 gates, later screens can jump into hundreds of troops and thousands of zombies."
+    ],
+    "controls": [
+      "Tap Try Again to restart from the result overlay.",
+      "Hold near the lower part of the game area and drag left or right to steer the blue troop group.",
+      "Use small horizontal corrections instead of sharp zigzags, because lifting your finger can leave the group drifting into a bad gate.",
+      "Keep your eyes on the next two gate rows, not only the closest obstacle."
+    ],
+    "strategy": [
+      "For the opening, stay close to the middle lane first. The first red -11 gates leave a narrow safe gap, and moving left too early can shave off troops.",
+      "When you are starting with only one troop, a large add gate such as +16 is better than an early x2, because x2 only turns 1 into 2.",
+      "After you have a real crowd, prioritize multipliers. In our best test route, staying center first and then moving left reached about 500 troops before the zombie counter passed 3,000.",
+      "If both sides are green, choose the larger long-term value: x2 or x3 usually beats a small +6 once you already have hundreds of troops.",
+      "Avoid red gates even when they look small. A -13 gate is minor at 500 troops, but taking several red gates in a row makes the next zombie wave unwinnable.",
+      "Do not trust the middle lane after the opener. Idle play produced a quick Swarm Destroyed result with Troops 0."
+    ],
+    "mistakes": [
+      "Standing still after pressing Try Again.",
+      "Dragging too early into the first red gate instead of using the center gap.",
+      "Choosing x2 at the very start when a large + gate is available.",
+      "Following a green gate without checking the next row, then drifting directly into a red gate.",
+      "Assuming the run has a guaranteed win screen. In our app playthrough, the useful goal was surviving longer and raising the final score."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-just-like-the-ads/01-start.png",
+        "alt": "Loopit Just Like the Ads starting run with one blue troop, two zombies, and red minus gates ahead.",
+        "caption": "The run starts with one troop and immediately asks you to steer around red gates."
+      },
+      {
+        "src": "/assets/loopit-just-like-the-ads/02-first-green-route.png",
+        "alt": "Loopit Just Like the Ads mid-run showing 14 troops, 23 zombies, and an x2 green gate ahead.",
+        "caption": "A successful early route grows the crowd, but you still need more green gates."
+      },
+      {
+        "src": "/assets/loopit-just-like-the-ads/03-big-swarm.png",
+        "alt": "Loopit Just Like the Ads showing 500 troops and over 3000 zombies with x2 and negative gates ahead.",
+        "caption": "The best tested route reached about 500 troops by chaining green gates."
+      },
+      {
+        "src": "/assets/loopit-just-like-the-ads/04-late-green-gates.png",
+        "alt": "Loopit Just Like the Ads late run showing 220 troops, over 4200 zombies, and green plus gates.",
+        "caption": "Late-game zombie counts rise fast, so small add gates may not be enough."
+      },
+      {
+        "src": "/assets/loopit-just-like-the-ads/05-swarm-destroyed.png",
+        "alt": "Loopit Just Like the Ads result overlay showing Swarm Destroyed and final score 5.",
+        "caption": "Doing nothing, or missing the green route, quickly ends with Swarm Destroyed."
+      }
+    ],
+    "faq": [
+      ["How do you control Loopit Just Like the Ads?", "Hold and drag left or right near the bottom of the game area. Tapping gates is not enough; the blue troop group follows horizontal drag movement."],
+      ["What is the best first move?", "Stay near the middle long enough to avoid the first red -11 gates, then steer into the large green add gate. With only one troop, a big + gate is usually better than x2."],
+      ["Are green x gates or green plus gates better?", "Plus gates are better when your troop count is tiny. Multipliers become better once you already have a larger crowd."],
+      ["Why do I keep getting Swarm Destroyed?", "You are either standing still, hitting red gates, or missing too many multiplier gates. The zombie count grows faster than your troops unless you chain green gates."],
+      ["Is there a confirmed win route?", "We did not verify a guaranteed win screen. The reliable advice from testing is to maximize score and survival by avoiding red gates and chaining green add or multiplier gates."]
+    ]
+  },
+  {
+    "slug": "loopit-phone-mini-apps",
+    "title": "Loopit Phone Mini-Apps",
+    "genre": "Phone simulator",
+    "platforms": ["Loopit web", "Mobile web"],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "difficulty": "Easy exploration with a few mini-games",
+    "searchIntent": "Loopit phone mini apps passcode, app list, and how to play",
+    "sourceUrl": "https://share.loopit.me/game/1645463f-830f-46a5-bc56-278ca8798ff8?l_data=%7B%22said%22%3A%22sa_kqeHQ3dp%22%2C%22ssuid%22%3A%22ss_7CFCPApu%22%2C%22sharer%22%3A%2246EAE439-EA5E-473D-9185-CEBE5629A2D5%22%2C%22share_id%22%3A%221645463f-830f-46a5-bc56-278ca8798ff8%22%7D",
+    "creator": "Kitty queen",
+    "stats": {
+      "views": "995k",
+      "likes": "18k",
+      "comments": "3.6k",
+      "remixes": "846"
+    },
+    "summary": "This Loopit playable starts like a new phone setup, unlocks with a visible passcode hint, and then opens a fake phone home screen full of mini-apps such as Messages, Tic Tac Toe, Snake, RPS Game, Flappy, Notes, Weather, and more.",
+    "quickAnswer": "Choose Girl or Boy, enter the hint passcode 1122334455, then explore the phone apps. The core app list is the same, but Boy uses a dark tech wallpaper and changes the first Messages contact from Boyfriend to Girlfriend.",
+    "basics": [
+      "Open the shared Loopit web link and wait for the embedded playable to load.",
+      "On the Welcome screen, choose either Girl or Boy. Both branches use the same passcode, but they do not look identical after setup.",
+      "At Enter Passcode, use the visible hint: 1122334455.",
+      "Girl unlocks into a pink cloud-style phone theme; Boy unlocks into a darker blue-black tech theme.",
+      "After unlocking, both phone home screens show multiple mini-app icons: Messages, Cookies, AI Buddy, TicTacToe, Meme Match, Calculator, 8-Ball, Notes, Weather, RPS Game, Snake, Whack-Meme, Tap Rush, and Flappy.",
+      "Use Home or Back in the top-left area to return from an app to the phone screen."
+    ],
+    "controls": [
+      "Tap cards, keypad numbers, app icons, and in-app buttons directly on the phone screen.",
+      "For the passcode, tap the digits in this exact order: 1 1 2 2 3 3 4 4 5 5.",
+      "Tic Tac Toe uses tap-to-place turns on a 3 by 3 board.",
+      "Flappy Emoji starts with a tap and then uses repeated taps to keep the chick in the air.",
+      "Messages opens contact threads; some screens include an iMessage-style input field, but it is not required for the main unlock route."
+    ],
+    "strategy": [
+      "Do not overthink the passcode: the hint is the complete answer, not a clue to decode.",
+      "Pick Girl if you want the pink cloud phone theme; pick Boy if you want the dark tech wallpaper.",
+      "Check Messages after choosing a branch: Girl shows Boyfriend as the first chat, while Boy shows Girlfriend.",
+      "After unlocking, try the apps from left to right so you do not miss hidden mini-games below the first row.",
+      "In Tic Tac Toe, remember it is local turn-taking; there is no obvious AI opponent in the current web version.",
+      "In Flappy Emoji, use small, steady taps. Rapid tapping sends the chick into a bad path and can end the run with Score 0.",
+      "If Snake opens directly into Game Over, try other apps first. In our browser playthrough, Try Again and the play icon did not reliably restart it."
+    ],
+    "mistakes": [
+      "Trying to guess the passcode instead of reading the hint.",
+      "Assuming the phone home screen is only decoration; most icons are tappable app entries.",
+      "Expecting every mini-app to be fully stable in the web share version.",
+      "Tapping too aggressively in Flappy Emoji.",
+      "Reading the site as a single game instead of a collection of mini-apps inside one playable."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-phone-mini-apps/01-welcome.png",
+        "alt": "Loopit playable welcome screen asking the player to choose Girl or Boy.",
+        "caption": "The playable starts with a fake new-device setup choice."
+      },
+      {
+        "src": "/assets/loopit-phone-mini-apps/02-passcode.png",
+        "alt": "Loopit passcode screen with hint 1122334455.",
+        "caption": "The passcode screen gives the full hint: 1122334455."
+      },
+      {
+        "src": "/assets/loopit-phone-mini-apps/03-home-screen.png",
+        "alt": "Loopit fake phone home screen with mini app icons.",
+        "caption": "After unlocking, the home screen becomes a mini-app hub."
+      },
+      {
+        "src": "/assets/loopit-phone-mini-apps/04-tictactoe-winner.png",
+        "alt": "Tic Tac Toe mini-app showing Winner O.",
+        "caption": "Tic Tac Toe displays a winner once a player completes three in a row."
+      },
+      {
+        "src": "/assets/loopit-phone-mini-apps/05-messages.png",
+        "alt": "Messages mini-app showing contacts such as Boyfriend, Mom, Dad, Bestie, Sister, Brother, and Mr. Smith.",
+        "caption": "In the Girl branch, Messages starts with Boyfriend as the first contact."
+      },
+      {
+        "src": "/assets/loopit-phone-mini-apps/09-boy-passcode.png",
+        "alt": "Boy branch passcode screen with dark blue-black background and hint 1122334455.",
+        "caption": "The Boy branch uses the same passcode hint but switches to a darker visual theme."
+      },
+      {
+        "src": "/assets/loopit-phone-mini-apps/10-boy-home-screen.png",
+        "alt": "Boy branch phone home screen with dark tech wallpaper and the same mini app icons.",
+        "caption": "After unlocking Boy, the app list stays the same but the wallpaper changes to a tech style."
+      },
+      {
+        "src": "/assets/loopit-phone-mini-apps/11-boy-messages.png",
+        "alt": "Boy branch Messages mini-app showing Girlfriend as the first contact.",
+        "caption": "In the Boy branch, Messages starts with Girlfriend instead of Boyfriend."
+      },
+      {
+        "src": "/assets/loopit-phone-mini-apps/08-flappy-game-over.png",
+        "alt": "Flappy Emoji mini-app showing Game Over and Score 0.",
+        "caption": "Flappy Emoji is playable, but it punishes mistimed taps quickly."
+      }
+    ],
+    "faq": [
+      ["What is the passcode for this Loopit phone mini-app game?", "The passcode shown by the hint is 1122334455."],
+      ["Does it matter whether I choose Girl or Boy?", "Yes, visually. Both branches use passcode 1122334455 and unlock to the same app list, but Girl uses a pink cloud theme and Boy uses a dark tech theme. Messages also changes the first contact: Girl shows Boyfriend, while Boy shows Girlfriend."],
+      ["What apps are inside the phone screen?", "The home screen includes Messages, Cookies, AI Buddy, TicTacToe, Meme Match, Calculator, 8-Ball, Notes, Weather, RPS Game, Snake, Whack-Meme, Tap Rush, and Flappy."],
+      ["How do I win Tic Tac Toe?", "Tap empty squares in turn until X or O completes a row, column, or diagonal. The current web version behaves like a local two-player board."],
+      ["Why does Snake show Game Over immediately?", "In our browser playthrough, Snake opened directly into Game Over and did not reliably restart from Try Again. That may be a web-share bug or an app-state issue."],
+      ["How do I play Flappy Emoji?", "Tap to fly and use small, spaced taps to keep the chick between obstacles. Rapid tapping can lead to an instant Game Over."]
+    ]
+  }
+]

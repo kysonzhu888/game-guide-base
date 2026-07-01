@@ -1,0 +1,8 @@
+name = "game-guide-base"
+pages_build_output_dir = ".deploy"
+compatibility_date = "2026-07-01"
+
+[[d1_databases]]
+binding = "COMMENTS_DB"
+database_name = "game-guide-base-comments"
+database_id = "e0c34686-8644-474c-aff1-63fa35a1c88f"
