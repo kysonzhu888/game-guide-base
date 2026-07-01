@@ -265,6 +265,9 @@ main {
 }
 
 .guide-card {
+  min-height: 398px;
+  display: flex;
+  flex-direction: column;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: white;
@@ -276,11 +279,12 @@ main {
   display: none;
 }
 
-.guide-card a {
-  min-height: 398px;
+.card-main-link {
   display: flex;
   flex-direction: column;
+  flex: 1;
   padding: 0;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -323,6 +327,18 @@ main {
   font-weight: 700;
 }
 
+.card-meta a,
+.facts-panel a {
+  color: var(--brand-dark);
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.card-meta a:hover,
+.facts-panel a:hover {
+  text-decoration: underline;
+}
+
 .card-art {
   width: 100%;
   margin: 0;
@@ -351,6 +367,7 @@ main {
   color: var(--brand-dark);
   font-size: 0.9rem;
   font-weight: 900;
+  text-decoration: none;
 }
 
 .read-guide::after {
@@ -770,20 +787,42 @@ main {
 }
 
 .ad-box {
-  background: #fff7e8;
+  display: grid;
+  gap: 12px;
+  place-items: center;
+  min-height: 180px;
+  background:
+    linear-gradient(135deg, rgba(16, 122, 88, 0.05), rgba(226, 89, 63, 0.05)),
+    white;
+}
+
+.ad-box--sidebar {
+  min-height: 280px;
+}
+
+.ad-box--home {
+  min-height: 120px;
 }
 
 .ad-box span {
-  color: var(--gold);
+  color: var(--muted);
   font-size: 0.78rem;
   font-weight: 900;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
-.ad-box p {
-  margin: 8px 0 0;
-  color: #72531d;
+.ad-box ins {
+  width: 100%;
+  min-height: 96px;
+}
+
+.ad-placeholder-fill {
+  width: 100%;
+  min-height: 72px;
+  border: 1px dashed rgba(91, 103, 96, 0.35);
+  border-radius: 8px;
+  background: rgba(247, 248, 244, 0.72);
 }
 
 .narrow-page {

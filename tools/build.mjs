@@ -8,15 +8,20 @@ const root = path.resolve(__dirname, "..");
 const config = readJson("site.config.json");
 const games = readJson(path.join("data", "games.json"));
 const media = readJson(path.join("data", "media.json"));
+const mediaAssets = readOptionalJson(path.join("data", "media-assets.generated.json"), {});
 
 const site = {
   name: config.name,
   url: normalizeSiteUrl(config.siteUrl),
+  mediaBaseUrl: normalizeSiteUrl(config.mediaBaseUrl),
+  mediaVersion: (config.mediaVersion || "").trim(),
   description: config.description,
   contactEmail: config.contactEmail,
   googleAnalyticsId: (config.googleAnalyticsId || "").trim(),
   adsenseClientId: (config.adsenseClientId || "").trim(),
   adsensePublisherId: (config.adsensePublisherId || "").trim(),
+  adsenseSlots: config.adsenseSlots || {},
+  platformUrls: config.platformUrls || {},
   searchConsoleVerification: (config.searchConsoleVerification || "").trim(),
 };
 
@@ -129,6 +134,8 @@ function generateHomePage() {
           </ul>
         </section>
 
+        ${adBox("homeLibrary", "home")}
+
         <section class="section-head" id="all-guides">
           <div>
               <p class="kicker">Guide library</p>
@@ -164,7 +171,7 @@ function generateGamePages() {
               <p class="kicker">${escapeHtml(game.genre)} guide</p>
               <h1>${escapeHtml(game.title)} guide</h1>
               <p>${escapeHtml(game.summary)}</p>
-              ${game.sourceUrl ? `<a class="play-link" href="${escapeHtml(game.sourceUrl)}" target="_blank" rel="noopener">Play on ${escapeHtml(game.sourcePlatform || "source site")}</a>` : ""}
+              ${game.sourceUrl ? `<a class="play-link" href="${escapeHtml(game.sourceUrl)}" target="_blank" rel="noopener">Play source game</a>` : ""}
             </div>
             ${gameVisual(game, "game-hero-art")}
             <aside class="quick-answer">
@@ -193,7 +200,7 @@ function generateGamePages() {
             </article>
             <aside class="article-aside">
               ${factsPanel(game)}
-              ${adBox()}
+              ${adBox("articleSidebar", "sidebar")}
             </aside>
           </section>
 
@@ -284,6 +291,7 @@ function generatePlatformPages() {
               <p class="kicker">Platform collection</p>
               <h1>${escapeHtml(platform.title)} game walkthroughs</h1>
               <p>Hands-on routes, screenshots, passcodes, and mini-game notes for games found on ${escapeHtml(platform.title)}.</p>
+              ${platform.url ? `<a class="play-link" href="${escapeHtml(platform.url)}" target="_blank" rel="noopener">Visit ${escapeHtml(platform.title)}</a>` : ""}
             </div>
           </section>
           <section class="guide-grid">
@@ -416,17 +424,17 @@ function guideSection(title, items) {
 function guideCard(game, prefix) {
   return `
     <article class="guide-card" data-guide-card data-title="${escapeHtml(game.title.toLowerCase())}" data-genre="${escapeHtml(game.genre.toLowerCase())}" data-platform="${escapeHtml(String(game.sourcePlatform || "").toLowerCase())}">
-      <a href="${prefix}games/${game.slug}/" aria-label="${escapeHtml(game.title)} guide">
+      <a class="card-main-link" href="${prefix}games/${game.slug}/" aria-label="${escapeHtml(game.title)} guide">
         ${gameVisual(game, "card-art", prefix)}
         <span class="card-genre">${escapeHtml(game.genre)}</span>
         <h3>${escapeHtml(game.title)}</h3>
         <p>${escapeHtml(game.quickAnswer)}</p>
+      </a>
         <div class="card-meta">
           <span>${escapeHtml(game.difficulty)}</span>
-          <span>${game.platforms.map(escapeHtml).join(" / ")}</span>
+          ${game.sourcePlatform ? `<a href="${prefix}platforms/${game.sourcePlatformSlug || slugify(game.sourcePlatform)}/">Source: ${escapeHtml(game.sourcePlatform)}</a>` : ""}
         </div>
-        <span class="read-guide">Read guide</span>
-      </a>
+        <a class="read-guide" href="${prefix}games/${game.slug}/">Read guide</a>
     </article>
   `;
 }
@@ -439,7 +447,7 @@ function screenshotGallery(game) {
       <div class="screenshot-grid">
         ${game.screenshots.map((shot) => `
           <figure>
-            <img src="../..${shot.src}" alt="${escapeHtml(shot.alt)}" loading="lazy">
+            <img src="${imageUrl(shot.src, "../../")}" alt="${escapeHtml(shot.alt)}" loading="lazy">
             <figcaption>${escapeHtml(shot.caption)}</figcaption>
           </figure>
         `).join("")}
@@ -487,9 +495,19 @@ function gameVisual(game, className, prefix = "") {
 }
 
 function imageSrcForClass(src, className, prefix) {
-  if (className === "card-art") return `${prefix}${src.replace(/^\//, "")}`;
-  if (className === "game-hero-art") return `../..${src}`;
-  return src;
+  if (className === "card-art") return imageUrl(src, prefix);
+  if (className === "game-hero-art") return imageUrl(src, "../../");
+  return imageUrl(src, "");
+}
+
+function imageUrl(src, prefix = "") {
+  const entry = mediaAssets[src];
+  if (site.mediaBaseUrl && entry?.r2Key) {
+    const version = site.mediaVersion ? `?v=${encodeURIComponent(site.mediaVersion)}` : "";
+    return `${site.mediaBaseUrl}/${entry.r2Key}${version}`;
+  }
+  if (/^https?:\/\//.test(src)) return src;
+  return `${prefix}${src.replace(/^\//, "")}`;
 }
 
 function visualPalette(slug) {
@@ -648,7 +666,7 @@ function factsPanel(game) {
     <section class="facts-panel">
       <h2>Guide facts</h2>
       <dl>
-        ${game.sourcePlatform ? `<div><dt>Source site</dt><dd>${escapeHtml(game.sourcePlatform)}</dd></div>` : ""}
+        ${game.sourcePlatform ? `<div><dt>Source site</dt><dd>${platformLinks(game, "../../")}</dd></div>` : ""}
         <div><dt>Genre</dt><dd>${escapeHtml(game.genre)}</dd></div>
         <div><dt>Platforms</dt><dd>${game.platforms.map(escapeHtml).join(", ")}</dd></div>
         <div><dt>Difficulty</dt><dd>${escapeHtml(game.difficulty)}</dd></div>
@@ -662,6 +680,25 @@ function factsPanel(game) {
       ${game.sourceUrl ? `<a class="source-link" href="${escapeHtml(game.sourceUrl)}" target="_blank" rel="noopener">Open source playable</a>` : ""}
     </section>
   `;
+}
+
+function platformLinks(game, prefix) {
+  const title = game.sourcePlatform || "Source site";
+  const slug = game.sourcePlatformSlug || slugify(title);
+  const externalUrl = platformUrl(game);
+  const links = [];
+  if (externalUrl) {
+    links.push(`<a href="${escapeHtml(externalUrl)}" target="_blank" rel="noopener">${escapeHtml(title)}</a>`);
+  } else {
+    links.push(escapeHtml(title));
+  }
+  links.push(`<a href="${prefix}platforms/${slug}/">All ${escapeHtml(title)} guides</a>`);
+  return links.join(" · ");
+}
+
+function platformUrl(game) {
+  const slug = game.sourcePlatformSlug || slugify(game.sourcePlatform || "");
+  return game.sourcePlatformUrl || site.platformUrls[slug] || "";
 }
 
 function commentSection(game) {
@@ -695,11 +732,23 @@ function commentSection(game) {
   `;
 }
 
-function adBox() {
+function adBox(slotName, placement = "block") {
+  const slot = String(site.adsenseSlots?.[slotName] || "").trim();
+  const hasAdUnit = Boolean(site.adsenseClientId && slot);
+  const adClass = `ad-box ad-box--${placement}${hasAdUnit ? " ad-box--live" : " ad-box--placeholder"}`;
+  const adUnit = hasAdUnit ? `
+        <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="${escapeHtml(site.adsenseClientId)}"
+          data-ad-slot="${escapeHtml(slot)}"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      ` : `<div class="ad-placeholder-fill" aria-hidden="true"></div>`;
   return `
-    <section class="ad-box" aria-label="Related guides">
-      <span>Keep exploring</span>
-      <p>Use related guides to compare rules, controls, and beginner strategy across similar games.</p>
+    <section class="${adClass}" aria-label="Advertisement">
+      <span>Advertisement</span>
+      ${adUnit}
     </section>
   `;
 }
@@ -721,7 +770,11 @@ function simpleBreadcrumb(label, prefix) {
 function writePage(parts, html) {
   const dir = path.join(root, ...parts);
   fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, "index.html"), html);
+  fs.writeFileSync(path.join(dir, "index.html"), stripTrailingWhitespace(html));
+}
+
+function stripTrailingWhitespace(value) {
+  return value.replace(/[ \t]+$/gm, "");
 }
 
 function generateSitemap() {
@@ -838,6 +891,12 @@ function readJson(file) {
   return JSON.parse(fs.readFileSync(path.join(root, file), "utf8"));
 }
 
+function readOptionalJson(file, fallback) {
+  const target = path.join(root, file);
+  if (!fs.existsSync(target)) return fallback;
+  return JSON.parse(fs.readFileSync(target, "utf8"));
+}
+
 function groupBy(rows, getKey) {
   const result = new Map();
   for (const row of rows) {
@@ -854,7 +913,7 @@ function platformGroups(rows) {
     const title = game.sourcePlatform || "Other";
     const slug = game.sourcePlatformSlug || slugify(title);
     if (!bySlug.has(slug)) {
-      bySlug.set(slug, { slug, title, rows: [] });
+      bySlug.set(slug, { slug, title, url: platformUrl(game), rows: [] });
     }
     bySlug.get(slug).rows.push(game);
   }

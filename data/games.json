@@ -1,9 +1,684 @@
 [
   {
+    "slug": "loopit-cleaning-asmr-tools",
+    "title": "Cleaning ASMR Tools",
+    "genre": "Cleaning simulator",
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "difficulty": "Tool-order cleaning game with spray, brush, water, and vacuum steps",
+    "searchIntent": "Loopit Cleaning ASMR guide, tool order, spray brush water vacuum, and how to clear Level 1",
+    "sourceUrl": "https://share.loopit.me/game/0945ab1a-5d65-4deb-bc2a-f525bf68ed01?l_data=%7B%22said%22%3A%22sa_nKUC3JpX%22%2C%22ssuid%22%3A%22ss_qMqfPyPd%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%220945ab1a-5d65-4deb-bc2a-f525bf68ed01%22%7D",
+    "creator": "Kemberley09",
+    "stats": {
+      "likes": "24.9k",
+      "comments": "2.1k",
+      "bookmarks": "15k",
+      "remixes": "509"
+    },
+    "summary": "This Loopit playable is a cleaning ASMR tool game. Level 1 shows four tools at the bottom, and the useful pattern is to select a tool, scrub across the dirty surface, then move to the next tool instead of staying on one icon.",
+    "quickAnswer": "Use the tools from left to right: spray first, brush the surface, rinse with water, then finish with the final cleanup tool. Drag across the dirty center area after selecting each tool.",
+    "basics": [
+      "Open the game from the Loopit feed and wait for Level 1 to load.",
+      "The bottom toolbar shows four circular tools. In our recording they appear as spray, brush, water, and a final cleanup tool.",
+      "Tap the spray tool first, then drag across the dirty surface in long horizontal strokes.",
+      "Switch to the brush and scrub the same area until the visible white foam spreads across the surface.",
+      "Use the water tool after brushing. The water step works best when dragged across the foam instead of tapped in one spot.",
+      "Finish by using the remaining cleanup tool on any area that still looks dirty."
+    ],
+    "controls": [
+      "Tap a tool icon to select it.",
+      "Drag the selected tool across the object or dirty ground area.",
+      "Use slow side-to-side scrubs rather than tiny taps.",
+      "Switch tools when the screen stops changing under the current tool.",
+      "Keep your finger above the bottom toolbar so you do not accidentally switch tools while scrubbing."
+    ],
+    "strategy": [
+      "The safest order is spray, brush, water, then final cleanup.",
+      "Do not start with the final tool; it has less visible effect before foam or water is applied.",
+      "Watch the texture change. Foam and wet patches are your feedback that the tool is working.",
+      "Long strokes cover more area than repeatedly rubbing the same center point.",
+      "If Level 1 does not advance, revisit the edges of the dirty surface with the brush and water tools."
+    ],
+    "mistakes": [
+      "Tapping tool icons without dragging on the object.",
+      "Using only one tool for the whole level.",
+      "Scrubbing below the object where the game does not register cleaning.",
+      "Switching tools too fast before the visible effect appears.",
+      "Assuming the toolbar order is cosmetic; it is the best beginner route."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-cleaning-asmr-tools/01-entry.png",
+        "alt": "Loopit Cleaning ASMR Level 1 screen with a dirty surface and four tool icons.",
+        "caption": "Level 1 starts with four cleaning tools along the bottom."
+      },
+      {
+        "src": "/assets/loopit-cleaning-asmr-tools/02-foam-tool.png",
+        "alt": "Loopit Cleaning ASMR showing white foam after using the first cleaning tool.",
+        "caption": "The first tool creates visible foam across the dirty surface."
+      },
+      {
+        "src": "/assets/loopit-cleaning-asmr-tools/03-brush-tool.png",
+        "alt": "Loopit Cleaning ASMR with foam spread while the brush tool is active.",
+        "caption": "Brush after spraying so the foam spreads evenly."
+      },
+      {
+        "src": "/assets/loopit-cleaning-asmr-tools/04-water-tool.png",
+        "alt": "Loopit Cleaning ASMR showing the water bottle tool being dragged across the foam.",
+        "caption": "Use water after brushing to rinse the cleaned area."
+      }
+    ],
+    "faq": [
+      [
+        "What is the best tool order in Loopit Cleaning ASMR?",
+        "Use spray first, then brush, then water, then the final cleanup tool. That order produced the clearest visible progress in our run."
+      ],
+      [
+        "Do you tap or drag the tools?",
+        "Tap to select a tool, then drag across the dirty surface. Tapping alone does not clean much."
+      ],
+      [
+        "Why is the level not changing?",
+        "You may be scrubbing outside the active object area or using the same tool too long. Switch to the next tool and cover the edges."
+      ],
+      [
+        "Is Cleaning ASMR a timing game?",
+        "No. It is mostly a tool-order and coverage game, so slow complete strokes are better than fast tapping."
+      ],
+      [
+        "Did you verify later levels?",
+        "We verified Level 1 tool behavior and visible progress. Later levels may reuse the same tool-order rule with different surfaces."
+      ]
+    ]
+  },
+  {
+    "slug": "loopit-better-finger-clicker",
+    "title": "Better Finger Clicker",
+    "genre": "Clicker upgrade",
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "difficulty": "Incremental clicker with Better Finger and Auto Tapper upgrades",
+    "searchIntent": "Loopit Better Finger clicker guide, upgrade order, Auto Tapper, and how to reach Goal 1",
+    "sourceUrl": "https://share.loopit.me/game/c824d378-b278-44c9-9ee1-0373359ff33f?l_data=%7B%22said%22%3A%22sa_dE2YMH42%22%2C%22ssuid%22%3A%22ss_KVtxCrMq%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%22c824d378-b278-44c9-9ee1-0373359ff33f%22%7D",
+    "creator": "Christopher Finlay",
+    "stats": {
+      "likes": "27.3k",
+      "comments": "3.8k",
+      "bookmarks": "35.6k",
+      "remixes": "1.1k"
+    },
+    "summary": "This Loopit playable is a classic clicker. Tap the large blue button to gain clicks, then buy Better Finger for stronger manual taps before saving for Auto Tapper.",
+    "quickAnswer": "Tap the big blue TAP button until you can buy Better Finger for 10 clicks. Buy that first, then keep tapping toward Auto Tapper and Goal 1.",
+    "basics": [
+      "Start on Goal 1 with 0 out of 100,000 progress.",
+      "Each tap on the large blue TAP button adds 1 click at the beginning.",
+      "The first visible upgrade is Better Finger, which costs 10 clicks at level 0.",
+      "Auto Tapper starts locked behind a higher cost, so do not wait for it before improving manual clicks.",
+      "After reaching 10 clicks in our recording, Better Finger became the first practical upgrade.",
+      "Continue alternating between tapping and upgrades to move toward Goal 1."
+    ],
+    "controls": [
+      "Tap the large blue TAP button repeatedly.",
+      "Tap the Better Finger upgrade card when you have at least 10 clicks.",
+      "Watch the per-click and per-second labels under the progress number.",
+      "Do not tap the top upgrade cards too early if you have not earned enough clicks.",
+      "Use short bursts of tapping so the UI has time to update after buying an upgrade."
+    ],
+    "strategy": [
+      "Buy Better Finger first because it improves the active tapping route immediately.",
+      "Delay Auto Tapper until manual clicking has produced enough surplus.",
+      "Use the top cards as your upgrade checklist: Better Finger first, Auto Tapper later, locked cards after that.",
+      "If the cost number is red or does not respond, return to the TAP button and earn more clicks.",
+      "Goal 1 is long, so the game is about upgrade pacing rather than a short puzzle solution."
+    ],
+    "mistakes": [
+      "Trying to buy Auto Tapper before funding Better Finger.",
+      "Tapping the top cards instead of the large button at the start.",
+      "Missing the 10-click threshold for the first upgrade.",
+      "Assuming the goal can be reached without upgrades.",
+      "Stopping after a few taps because the 100,000 target looks too large."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-better-finger-clicker/01-entry.png",
+        "alt": "Loopit Better Finger Clicker starting screen with Goal 1 and a large blue TAP button.",
+        "caption": "Start by tapping the large blue button."
+      },
+      {
+        "src": "/assets/loopit-better-finger-clicker/02-early-clicks.png",
+        "alt": "Loopit Better Finger Clicker showing early click progress after several taps.",
+        "caption": "Early taps add one click at a time."
+      },
+      {
+        "src": "/assets/loopit-better-finger-clicker/03-first-upgrade.png",
+        "alt": "Loopit Better Finger Clicker showing Better Finger available after reaching 10 clicks.",
+        "caption": "Better Finger is the first practical upgrade."
+      },
+      {
+        "src": "/assets/loopit-better-finger-clicker/04-click-count-19.png",
+        "alt": "Loopit Better Finger Clicker showing 19 progress toward Goal 1.",
+        "caption": "After buying and tapping more, continue building toward Goal 1."
+      }
+    ],
+    "faq": [
+      [
+        "What should I buy first in Better Finger Clicker?",
+        "Buy Better Finger first once you reach 10 clicks. It is the earliest useful upgrade in our run."
+      ],
+      [
+        "How do you earn clicks?",
+        "Tap the large blue TAP button. The starting value is 1 click per tap."
+      ],
+      [
+        "When should I buy Auto Tapper?",
+        "After Better Finger. Auto Tapper costs more, so saving for it before the first manual upgrade slows the start."
+      ],
+      [
+        "What is Goal 1?",
+        "Goal 1 is the first long progress target, shown as 0 out of 100,000 at the start."
+      ],
+      [
+        "Is this a reflex game?",
+        "No. It is an incremental clicker. Upgrade order matters more than timing precision."
+      ]
+    ]
+  },
+  {
+    "slug": "loopit-pin-launch",
+    "title": "Pin Launch",
+    "genre": "Timing game",
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "difficulty": "Tap timing game where pins must hit the ball without colliding",
+    "searchIntent": "Loopit Pin Launch guide, tap to launch, pins level 1, level clear, and level 2 tips",
+    "sourceUrl": "https://share.loopit.me/game/37df0a9d-3cda-421c-8a31-1f15c55b0a4c?l_data=%7B%22said%22%3A%22sa_vNmsqrYX%22%2C%22ssuid%22%3A%22ss_dMvEqDwH%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%2237df0a9d-3cda-421c-8a31-1f15c55b0a4c%22%7D",
+    "creator": "Joseph",
+    "stats": {
+      "likes": "5.1k",
+      "comments": "1.3k",
+      "bookmarks": "7.8k",
+      "remixes": "241"
+    },
+    "summary": "This Loopit playable is a pin-launch timing game. Tap to fire pins into the blue ball, score one point per successful pin, and clear Level 1 after 6 pins.",
+    "quickAnswer": "Tap when there is open space on the ball. Level 1 clears after 6 successful pins, then Level 2 starts with the same rule but tighter timing.",
+    "basics": [
+      "Open the game and wait for the Tap to Launch prompt.",
+      "The blue ball is the target, and the pink pin launches upward from the bottom.",
+      "Tap once to fire one pin.",
+      "Each pin that lands safely raises the score by 1.",
+      "In our recorded run, score 6 triggered the Level Clear overlay for Level 1.",
+      "Level 2 begins immediately after the clear screen with the same tap-to-launch control."
+    ],
+    "controls": [
+      "Tap the screen to launch a single pin.",
+      "Do not spam before checking where existing pins are attached.",
+      "Use the gaps between pink pins as your launch windows.",
+      "After Level Clear, wait for the next level to settle before tapping again.",
+      "The score counter in the top-left confirms each successful hit."
+    ],
+    "strategy": [
+      "Level 1 is forgiving. Tap steadily, but leave a small pause after each hit.",
+      "Avoid firing into a crowded side of the ball.",
+      "Once several pins are attached, look for the widest empty arc before tapping.",
+      "Score 6 is the Level 1 target verified in our run.",
+      "Level 2 should be played slower because pins start taking more of the safe space."
+    ],
+    "mistakes": [
+      "Rapid tapping without watching the pin positions.",
+      "Launching into an area already filled with pins.",
+      "Missing the Level Clear message and continuing to tap too early.",
+      "Assuming every level has exactly the same spacing.",
+      "Watching the launch button instead of the ball."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-pin-launch/01-entry.png",
+        "alt": "Loopit Pin Launch starting screen with blue ball, Tap to Launch prompt, and Level 1.",
+        "caption": "Level 1 starts with a blue ball and one bottom pin."
+      },
+      {
+        "src": "/assets/loopit-pin-launch/02-first-pins.png",
+        "alt": "Loopit Pin Launch with several pink pins attached to the blue ball.",
+        "caption": "Each safe pin raises the score by one."
+      },
+      {
+        "src": "/assets/loopit-pin-launch/03-level-clear.png",
+        "alt": "Loopit Pin Launch Level Clear message after reaching score 6.",
+        "caption": "Score 6 cleared Level 1 in our run."
+      },
+      {
+        "src": "/assets/loopit-pin-launch/04-level-2.png",
+        "alt": "Loopit Pin Launch Level 2 screen with the next pin ready to fire.",
+        "caption": "Level 2 keeps the same rule with tighter spacing."
+      }
+    ],
+    "faq": [
+      [
+        "How do you clear Level 1 in Loopit Pin Launch?",
+        "Land 6 pins safely on the blue ball. Our run showed Level Clear at score 6."
+      ],
+      [
+        "What should I watch before tapping?",
+        "Watch the existing pink pins on the ball and fire into the largest open gap."
+      ],
+      [
+        "Can I spam taps?",
+        "It works briefly at the start, but it becomes risky once several pins are attached."
+      ],
+      [
+        "What changes in Level 2?",
+        "The same tap-to-launch rule continues, but spacing becomes more important."
+      ],
+      [
+        "Is Pin Launch a drag game?",
+        "No. It is a tap timing game."
+      ]
+    ]
+  },
+  {
+    "slug": "loopit-drag-to-stretch",
+    "title": "Drag to Stretch",
+    "genre": "Stretching game",
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "difficulty": "Simple drag toy where the body stretches only when you pull the character area",
+    "searchIntent": "Loopit Drag to Stretch guide, sausage dog stretch game, where to drag, and why dragging does not work",
+    "sourceUrl": "https://share.loopit.me/game/94a0cd56-f6eb-48b0-bf7e-5df9e2d5510f?l_data=%7B%22said%22%3A%22sa_2SPpMvtE%22%2C%22ssuid%22%3A%22ss_PKDQv4PF%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%2294a0cd56-f6eb-48b0-bf7e-5df9e2d5510f%22%7D",
+    "creator": "Ryuuu_",
+    "stats": {
+      "likes": "16.2k",
+      "comments": "4k",
+      "bookmarks": "5.4k",
+      "remixes": "653"
+    },
+    "summary": "This Loopit playable is a simple stretch interaction. The dog-like character sits at the top of the play area, and dragging from the character body gives better feedback than dragging empty space.",
+    "quickAnswer": "Drag from the character body, especially the long middle section, then pull horizontally. Dragging the blank pink background barely changes the pose.",
+    "basics": [
+      "Open the game and wait for the pink background and long character to load.",
+      "The prompt says Drag to Stretch, but the active area is the character, not the whole screen.",
+      "Start your drag on the long body section near the top of the playfield.",
+      "Pull left or right to stretch the body.",
+      "Release and repeat from the body if the character snaps back.",
+      "Vertical pulls are less useful than horizontal pulls for showing the stretch effect."
+    ],
+    "controls": [
+      "Touch directly on the character body.",
+      "Drag horizontally for the most obvious stretch.",
+      "Avoid starting in the empty center of the pink background.",
+      "Use short repeated pulls rather than one long drag from off-screen.",
+      "If nothing moves, lift your finger and restart on the body area."
+    ],
+    "strategy": [
+      "The key trick is where the drag starts. Begin on the body, not the text prompt.",
+      "Horizontal pulls are easier to read because the character is already long.",
+      "Use the head and tail as visual anchors to see whether the body is stretching.",
+      "If the body barely changes, your finger probably started too low on the screen.",
+      "This is more of a toy interaction than a level-based game, so the goal is getting a clean stretch motion."
+    ],
+    "mistakes": [
+      "Dragging from the words Drag to Stretch.",
+      "Starting from empty background space.",
+      "Only pulling vertically.",
+      "Expecting a score or win screen.",
+      "Thinking the game is broken before trying the character body itself."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-drag-to-stretch/01-entry.png",
+        "alt": "Loopit Drag to Stretch starting screen with a long dog-like character on a pink background.",
+        "caption": "The active character sits along the top of the playfield."
+      },
+      {
+        "src": "/assets/loopit-drag-to-stretch/02-stretch-active.png",
+        "alt": "Loopit Drag to Stretch screen after dragging the body area.",
+        "caption": "Start pulls from the body, not the blank background."
+      },
+      {
+        "src": "/assets/loopit-drag-to-stretch/03-body-position.png",
+        "alt": "Loopit Drag to Stretch showing the character body stretched across the top area.",
+        "caption": "Horizontal pulls give the clearest stretch feedback."
+      },
+      {
+        "src": "/assets/loopit-drag-to-stretch/04-reset-pose.png",
+        "alt": "Loopit Drag to Stretch character after releasing the drag.",
+        "caption": "Release and repeat if the character resets."
+      }
+    ],
+    "faq": [
+      [
+        "Where do you drag in Loopit Drag to Stretch?",
+        "Start on the character body near the top. Dragging the empty pink area is unreliable."
+      ],
+      [
+        "Is there a score?",
+        "We did not see a score or completion overlay. It plays like an interactive stretch toy."
+      ],
+      [
+        "Why is nothing stretching?",
+        "Your drag may be starting from the background instead of the character. Touch the long body first."
+      ],
+      [
+        "Which direction works best?",
+        "Horizontal pulls worked best in our test."
+      ],
+      [
+        "Do you need to tap first?",
+        "No. Start with a drag directly on the body."
+      ]
+    ]
+  },
+  {
+    "slug": "loopit-snake-evolution-feed",
+    "title": "Snake Evolution Feed",
+    "genre": "Drawing game",
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "difficulty": "Draw-to-feed evolution game with visible stage progress",
+    "searchIntent": "Loopit Snake Evolution guide, draw to feed the snake, evolution 1 to evolution 2, and feeding tips",
+    "sourceUrl": "https://share.loopit.me/game/d0078f9a-a696-47d7-a3bc-74c1f3f7cc98?l_data=%7B%22said%22%3A%22sa_uvsyeurr%22%2C%22ssuid%22%3A%22ss_DWZ74RXj%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%22d0078f9a-a696-47d7-a3bc-74c1f3f7cc98%22%7D",
+    "creator": "Bro beans",
+    "stats": {
+      "likes": "26k",
+      "comments": "5.6k",
+      "bookmarks": "15.9k",
+      "remixes": "849"
+    },
+    "summary": "This Loopit playable asks you to draw food paths for a snake. In our run, repeated drawn strokes fed the green snake and advanced it from Evolution 1 to Evolution 2.",
+    "quickAnswer": "Draw short strokes close to the snake and food trail. Keep feeding until the progress bar under Evolution 1 fills, then the snake changes into Evolution 2.",
+    "basics": [
+      "Start on the Evolution 1 screen with a small green snake in the center.",
+      "The prompt says Draw to feed the snake, so the action is drawing strokes, not tapping.",
+      "Draw near the snake body so the food trail appears close enough to reach.",
+      "Repeat short strokes from different angles rather than one long scribble far away.",
+      "Watch the progress bar under the Evolution label.",
+      "In our recorded run, the snake changed from green Evolution 1 to blue Evolution 2 after several successful feeds."
+    ],
+    "controls": [
+      "Drag on the playfield to draw feeding strokes.",
+      "Start close to the snake for better pickup.",
+      "Use short angled lines that cross near the snake head.",
+      "Do not draw only at the edge of the screen.",
+      "Keep drawing until the evolution bar visibly advances."
+    ],
+    "strategy": [
+      "Small strokes near the snake work better than large decorative loops.",
+      "If the snake rotates or moves, draw the next stroke in front of its direction.",
+      "Use the evolution bar as confirmation that the food is being counted.",
+      "Once Evolution 2 appears, the same feeding pattern continues with the new snake.",
+      "Avoid covering the entire screen; targeted food paths are easier to read and repeat."
+    ],
+    "mistakes": [
+      "Tapping instead of drawing.",
+      "Drawing far away from the snake.",
+      "Waiting for automatic evolution without feeding.",
+      "Ignoring the progress bar under the Evolution label.",
+      "Assuming the first green form is the final stage."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-snake-evolution-feed/01-entry.png",
+        "alt": "Loopit Snake Evolution starting screen showing Evolution 1 and a green snake.",
+        "caption": "The game starts at Evolution 1 with a green snake."
+      },
+      {
+        "src": "/assets/loopit-snake-evolution-feed/02-first-draw.png",
+        "alt": "Loopit Snake Evolution showing the first drawn feeding stroke near the snake.",
+        "caption": "Draw short feeding paths close to the snake."
+      },
+      {
+        "src": "/assets/loopit-snake-evolution-feed/03-feeding-motion.png",
+        "alt": "Loopit Snake Evolution with the snake moving through drawn food strokes.",
+        "caption": "Repeat strokes from different angles to keep feeding."
+      },
+      {
+        "src": "/assets/loopit-snake-evolution-feed/04-evolution-2.png",
+        "alt": "Loopit Snake Evolution showing Evolution 2 with a blue snake.",
+        "caption": "Our run advanced from Evolution 1 to Evolution 2."
+      }
+    ],
+    "faq": [
+      [
+        "How do you feed the snake?",
+        "Drag to draw short food paths near the snake. The game responds to drawn strokes, not taps."
+      ],
+      [
+        "How do you reach Evolution 2?",
+        "Keep drawing near the snake until the progress bar under Evolution 1 fills. Our run changed to a blue snake at Evolution 2."
+      ],
+      [
+        "Should I draw long lines?",
+        "Short close strokes worked better than long lines far away from the snake."
+      ],
+      [
+        "What confirms that feeding is working?",
+        "The evolution progress bar moves and the snake form eventually changes."
+      ],
+      [
+        "Is this the same as the other snake speed games?",
+        "No. This one verified a visible stage change from Evolution 1 to Evolution 2."
+      ]
+    ]
+  },
+  {
+    "slug": "loopit-tap-layers",
+    "title": "Tap Layers",
+    "genre": "Tapping game",
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "difficulty": "High-count tapping game with 9,999 layers",
+    "searchIntent": "Loopit Layers Left 9999 guide, tap to remove a layer, is it worth it, and how layers change",
+    "sourceUrl": "https://share.loopit.me/game/ba8c2f6b-0de0-4389-a0f3-6040671369ad?l_data=%7B%22said%22%3A%22sa_jTQDYauP%22%2C%22ssuid%22%3A%22ss_z7jZ7pzW%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%22ba8c2f6b-0de0-4389-a0f3-6040671369ad%22%7D",
+    "creator": "2ZFRY",
+    "stats": {
+      "likes": "26.6k",
+      "comments": "7.4k",
+      "bookmarks": "22.6k",
+      "remixes": "2.9k"
+    },
+    "summary": "This Loopit playable starts with Layers Left: 9,999 and removes one visible layer per tap. Early taps reveal new clothing and costume layers, but the count remains extremely high.",
+    "quickAnswer": "Tap the character or visible layer area repeatedly. Each successful tap removes one layer, so the number drops from 9,999 to 9,998, 9,997, and onward.",
+    "basics": [
+      "Open the game and wait for the character with many stacked layers to load.",
+      "The top text shows Layers Left: 9,999.",
+      "Tap the visible clothing or costume area to remove one layer.",
+      "The counter drops by one for each successful tap.",
+      "Early layers reveal different outfits such as armor, poncho, bear, and jacket pieces.",
+      "The game did not show a short ending in our sample because the layer target is intentionally very large."
+    ],
+    "controls": [
+      "Tap the character body or the visible clothing layer.",
+      "Use repeated taps in the center of the layered area.",
+      "Do not tap the bottom Loopit controls or caption area.",
+      "If a layer drifts off to the side, keep tapping the newly exposed clothing.",
+      "Watch the Layers Left counter to confirm each tap counted."
+    ],
+    "strategy": [
+      "Treat this as a patience/clicker game, not a puzzle with a hidden shortcut.",
+      "Tap the largest visible clothing piece for reliable hits.",
+      "Use the counter as proof of progress; visual changes may alternate between costumes.",
+      "Because 9,999 is a huge number, play in short bursts rather than trying to finish in one sitting.",
+      "If you are making a video, capture the first 10-20 layers because that is where the visual changes are clearest."
+    ],
+    "mistakes": [
+      "Tapping the background instead of the character.",
+      "Expecting many layers to disappear from one tap.",
+      "Assuming the outfit sequence means you are close to the end.",
+      "Ignoring the Layers Left counter.",
+      "Trying to swipe; tapping is the verified action."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-tap-layers/01-entry.png",
+        "alt": "Loopit Tap Layers starting screen with Layers Left 9999 and stacked clothing.",
+        "caption": "The game starts with 9,999 layers left."
+      },
+      {
+        "src": "/assets/loopit-tap-layers/02-layer-9998.png",
+        "alt": "Loopit Tap Layers after one tap showing Layers Left 9998.",
+        "caption": "Each successful tap removes one layer."
+      },
+      {
+        "src": "/assets/loopit-tap-layers/03-layer-costume.png",
+        "alt": "Loopit Tap Layers revealing a large costume layer after several taps.",
+        "caption": "Early taps reveal large costume pieces."
+      },
+      {
+        "src": "/assets/loopit-tap-layers/04-layers-9990.png",
+        "alt": "Loopit Tap Layers around Layers Left 9990 with more clothing revealed.",
+        "caption": "The count keeps dropping one at a time."
+      }
+    ],
+    "faq": [
+      [
+        "How do you remove layers?",
+        "Tap the visible clothing or character body. Each successful tap removes one layer."
+      ],
+      [
+        "How many layers are there?",
+        "The starting counter shows 9,999 layers."
+      ],
+      [
+        "Is there a shortcut?",
+        "We did not verify any shortcut. The tested behavior removes one layer per tap."
+      ],
+      [
+        "Why did my tap not count?",
+        "You may have tapped the background or Loopit UI instead of the clothing area."
+      ],
+      [
+        "Is it worth finishing?",
+        "It is designed as a long patience game. The early visual changes are quick, but the full count is huge."
+      ]
+    ]
+  },
+  {
+    "slug": "loopit-coin-spiral-descent",
+    "title": "Coin Spiral Descent",
+    "genre": "Reflex maze",
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "difficulty": "Neon spiral control game with rotating walls and depth progress",
+    "searchIntent": "Loopit coin spiral descent guide, depth 1 of 70, how to rotate the spiral, and collect coins",
+    "sourceUrl": "https://share.loopit.me/game/38c02ac4-5c25-4ea3-86b4-d603cefb5509?l_data=%7B%22said%22%3A%22sa_NvCthXjL%22%2C%22ssuid%22%3A%22ss_efa4dJn2%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%2238c02ac4-5c25-4ea3-86b4-d603cefb5509%22%7D",
+    "creator": "Always",
+    "stats": {
+      "likes": "11.5k",
+      "comments": "1.3k",
+      "bookmarks": "8.8k",
+      "remixes": "516"
+    },
+    "summary": "This Loopit playable is a neon spiral control game. The screen shows Depth 1 / 70, coins, shop, and leaderboard, while the player adjusts the spiral openings so the ball can keep moving inward.",
+    "quickAnswer": "Use short left-right drags to rotate the spiral and line up the gaps. Do not hold one direction too long; the useful move is small correction, wait, then correct again.",
+    "basics": [
+      "Open the game and wait for the neon spiral to load.",
+      "The top bar shows Depth 1 / 70 and Coins 0 at the start.",
+      "A pink ball sits near the lower part of the spiral.",
+      "Drag left or right to rotate the cyan spiral walls.",
+      "Your goal is to line up open gaps so the ball can continue moving through the spiral instead of being blocked.",
+      "In our recorded sample, we verified the rotation control and depth UI but did not verify the final Depth 70 reward."
+    ],
+    "controls": [
+      "Use short horizontal drags on the play area.",
+      "Drag left to rotate one way and right to rotate back.",
+      "Pause after each correction so you can see where the gaps are moving.",
+      "Avoid long continuous swipes that spin the gaps past the ball.",
+      "Keep your finger away from the bottom Loopit navigation bar."
+    ],
+    "strategy": [
+      "Watch the next gap, not only the current ball position.",
+      "Small corrections are safer than spinning the entire maze quickly.",
+      "If the ball is near a wall, rotate just enough to open the closest path.",
+      "Use Coins and Depth as progress indicators, but do not assume the first screen is the full route.",
+      "Because this is a dynamic game, recording a run helps more than relying on one screenshot."
+    ],
+    "mistakes": [
+      "Holding one direction until the spiral over-rotates.",
+      "Trying to tap the shop or leaderboard before learning the control.",
+      "Looking at the ball only after it is already blocked.",
+      "Dragging from the Loopit caption area instead of the game canvas.",
+      "Claiming a final reward without reaching Depth 70."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-coin-spiral-descent/01-entry.png",
+        "alt": "Loopit Coin Spiral Descent starting screen showing Depth 1 of 70, coins, shop, and leaderboard.",
+        "caption": "The game starts at Depth 1 / 70 with Coins 0."
+      },
+      {
+        "src": "/assets/loopit-coin-spiral-descent/02-start-open.png",
+        "alt": "Loopit Coin Spiral Descent with the pink ball below a cyan spiral gap.",
+        "caption": "The pink ball needs gaps to line up through the spiral."
+      },
+      {
+        "src": "/assets/loopit-coin-spiral-descent/03-spiral-rotated.png",
+        "alt": "Loopit Coin Spiral Descent after rotating the spiral walls.",
+        "caption": "Short drags rotate the cyan walls."
+      },
+      {
+        "src": "/assets/loopit-coin-spiral-descent/04-window-position.png",
+        "alt": "Loopit Coin Spiral Descent showing a different gap position after control input.",
+        "caption": "Wait after each correction so the next gap is visible."
+      }
+    ],
+    "faq": [
+      [
+        "How do you control Coin Spiral Descent?",
+        "Use short horizontal drags to rotate the spiral gaps around the ball."
+      ],
+      [
+        "What does Depth 1 / 70 mean?",
+        "It is the long-run progress indicator. We verified the starting depth UI but not the final Depth 70 reward."
+      ],
+      [
+        "Should I tap the ball?",
+        "No. The useful control in our test was rotating the spiral with left-right drags."
+      ],
+      [
+        "Why does the ball get stuck?",
+        "The gap is probably not aligned. Rotate slightly, pause, and watch the next opening."
+      ],
+      [
+        "Is this a screenshot-only game?",
+        "No. It is dynamic, so recording and frame review are better for learning the route."
+      ]
+    ]
+  },
+  {
     "slug": "loopit-surgery-incision",
-    "title": "Loopit Surgery",
+    "title": "Surgery",
     "genre": "Surgery simulator",
-    "platforms": ["Loopit app", "Mobile app"],
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
     "sourcePlatform": "Loopit",
     "sourcePlatformSlug": "loopit",
     "difficulty": "Precision drag game with incision and suturing stages",
@@ -76,18 +751,36 @@
       }
     ],
     "faq": [
-      ["How do you make the incision in Loopit Surgery?", "Hold the scalpel and drag it slowly down the dashed vertical guide. The goal is a straight cut through the center of the marked line."],
-      ["How do you suture the wound?", "Use the needle to draw a zigzag that crosses the red wound from left to right while moving downward. Keep going until the stitch reaches the bottom of the cut."],
-      ["Why is the surgery not completing?", "Most likely the bottom of the wound is not stitched yet. In our test, the success overlay appeared only after a final stitch crossed the lower end of the red line."],
-      ["What does the success screen say?", "The game shows Procedure Complete and a Patient Healed card with a Next Patient button."],
-      ["Is this a timing game?", "No. It is mostly a precision dragging game. Slow controlled movement worked better than fast swipes in our recording."]
+      [
+        "How do you make the incision in Loopit Surgery?",
+        "Hold the scalpel and drag it slowly down the dashed vertical guide. The goal is a straight cut through the center of the marked line."
+      ],
+      [
+        "How do you suture the wound?",
+        "Use the needle to draw a zigzag that crosses the red wound from left to right while moving downward. Keep going until the stitch reaches the bottom of the cut."
+      ],
+      [
+        "Why is the surgery not completing?",
+        "Most likely the bottom of the wound is not stitched yet. In our test, the success overlay appeared only after a final stitch crossed the lower end of the red line."
+      ],
+      [
+        "What does the success screen say?",
+        "The game shows Procedure Complete and a Patient Healed card with a Next Patient button."
+      ],
+      [
+        "Is this a timing game?",
+        "No. It is mostly a precision dragging game. Slow controlled movement worked better than fast swipes in our recording."
+      ]
     ]
   },
   {
     "slug": "loopit-peel-the-fruit",
-    "title": "Loopit Peel the Fruit",
+    "title": "Peel the Fruit",
     "genre": "Timing game",
-    "platforms": ["Loopit app", "Mobile app"],
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
     "sourcePlatform": "Loopit",
     "sourcePlatformSlug": "loopit",
     "difficulty": "Tap-timing fruit peeling with limited tries",
@@ -160,18 +853,36 @@
       }
     ],
     "faq": [
-      ["How do you play Loopit Peel the Fruit?", "Tap to drop the peeler when it lines up with the fruit. Each successful drop increases the Peeled percentage."],
-      ["Do you drag the peeler?", "No. In our recorded run, the game used tap timing. The prompt says Tap to drop the peeler."],
-      ["How do you get Perfect Peel?", "Reach 100% peeled before tries run out. For Level 1 Blueberry, we completed it within the 5 available tries."],
-      ["What happens after Blueberry?", "The Next Level button opens Level 2: Strawberry, with 6 tries and the same tap-to-drop rule."],
-      ["Why did my peeled percentage barely increase?", "You probably dropped the peeler too far from the fruit or clipped only the edge. Wait until the peeler overlaps the fruit more clearly before tapping."]
+      [
+        "How do you play Loopit Peel the Fruit?",
+        "Tap to drop the peeler when it lines up with the fruit. Each successful drop increases the Peeled percentage."
+      ],
+      [
+        "Do you drag the peeler?",
+        "No. In our recorded run, the game used tap timing. The prompt says Tap to drop the peeler."
+      ],
+      [
+        "How do you get Perfect Peel?",
+        "Reach 100% peeled before tries run out. For Level 1 Blueberry, we completed it within the 5 available tries."
+      ],
+      [
+        "What happens after Blueberry?",
+        "The Next Level button opens Level 2: Strawberry, with 6 tries and the same tap-to-drop rule."
+      ],
+      [
+        "Why did my peeled percentage barely increase?",
+        "You probably dropped the peeler too far from the fruit or clipped only the edge. Wait until the peeler overlaps the fruit more clearly before tapping."
+      ]
     ]
   },
   {
     "slug": "loopit-get-it-to-the-top",
-    "title": "Loopit Get It to the Top",
+    "title": "Get It to the Top",
     "genre": "Physics bounce",
-    "platforms": ["Loopit app", "Mobile app"],
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
     "sourcePlatform": "Loopit",
     "sourcePlatformSlug": "loopit",
     "difficulty": "Physics timing with a bottom controller and rising cash score",
@@ -244,18 +955,36 @@
       }
     ],
     "faq": [
-      ["How do you control Loopit Get It to the Top?", "Use short swipes or taps near the green ball at the bottom. It behaves like a bottom controller for the active playfield."],
-      ["What is the pink ball?", "In our playthrough, the larger pink ball appeared after interaction started and its movement was tied to Cash growth."],
-      ["How do you earn cash?", "Keep the ball interaction going. We saw Cash rise in small steps from $0 to $105 while the pink ball bounced in the field."],
-      ["Did you reach the very top?", "Not yet. We verified the controls and Cash growth, but did not verify a final top-of-screen reward or completion overlay."],
-      ["What is the safest beginner strategy?", "Keep the green ball near the bottom center and make small side corrections toward the falling pink ball instead of using huge upward swipes."]
+      [
+        "How do you control Loopit Get It to the Top?",
+        "Use short swipes or taps near the green ball at the bottom. It behaves like a bottom controller for the active playfield."
+      ],
+      [
+        "What is the pink ball?",
+        "In our playthrough, the larger pink ball appeared after interaction started and its movement was tied to Cash growth."
+      ],
+      [
+        "How do you earn cash?",
+        "Keep the ball interaction going. We saw Cash rise in small steps from $0 to $105 while the pink ball bounced in the field."
+      ],
+      [
+        "Did you reach the very top?",
+        "Not yet. We verified the controls and Cash growth, but did not verify a final top-of-screen reward or completion overlay."
+      ],
+      [
+        "What is the safest beginner strategy?",
+        "Keep the green ball near the bottom center and make small side corrections toward the falling pink ball instead of using huge upward swipes."
+      ]
     ]
   },
   {
     "slug": "loopit-just-like-the-ads",
-    "title": "Loopit Just Like the Ads",
+    "title": "Just Like the Ads",
     "genre": "Crowd runner",
-    "platforms": ["Loopit app", "Mobile app"],
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
     "sourcePlatform": "Loopit",
     "sourcePlatformSlug": "loopit",
     "difficulty": "Fast reflex runner with scaling enemy counts",
@@ -327,18 +1056,36 @@
       }
     ],
     "faq": [
-      ["How do you control Loopit Just Like the Ads?", "Hold and drag left or right near the bottom of the game area. Tapping gates is not enough; the blue troop group follows horizontal drag movement."],
-      ["What is the best first move?", "Stay near the middle long enough to avoid the first red -11 gates, then steer into the large green add gate. With only one troop, a big + gate is usually better than x2."],
-      ["Are green x gates or green plus gates better?", "Plus gates are better when your troop count is tiny. Multipliers become better once you already have a larger crowd."],
-      ["Why do I keep getting Swarm Destroyed?", "You are either standing still, hitting red gates, or missing too many multiplier gates. The zombie count grows faster than your troops unless you chain green gates."],
-      ["Is there a confirmed win route?", "We did not verify a guaranteed win screen. The reliable advice from testing is to maximize score and survival by avoiding red gates and chaining green add or multiplier gates."]
+      [
+        "How do you control Loopit Just Like the Ads?",
+        "Hold and drag left or right near the bottom of the game area. Tapping gates is not enough; the blue troop group follows horizontal drag movement."
+      ],
+      [
+        "What is the best first move?",
+        "Stay near the middle long enough to avoid the first red -11 gates, then steer into the large green add gate. With only one troop, a big + gate is usually better than x2."
+      ],
+      [
+        "Are green x gates or green plus gates better?",
+        "Plus gates are better when your troop count is tiny. Multipliers become better once you already have a larger crowd."
+      ],
+      [
+        "Why do I keep getting Swarm Destroyed?",
+        "You are either standing still, hitting red gates, or missing too many multiplier gates. The zombie count grows faster than your troops unless you chain green gates."
+      ],
+      [
+        "Is there a confirmed win route?",
+        "We did not verify a guaranteed win screen. The reliable advice from testing is to maximize score and survival by avoiding red gates and chaining green add or multiplier gates."
+      ]
     ]
   },
   {
     "slug": "loopit-phone-mini-apps",
-    "title": "Loopit Phone Mini-Apps",
+    "title": "Phone Mini-Apps",
     "genre": "Phone simulator",
-    "platforms": ["Loopit web", "Mobile web"],
+    "platforms": [
+      "Loopit web",
+      "Mobile web"
+    ],
     "sourcePlatform": "Loopit",
     "sourcePlatformSlug": "loopit",
     "difficulty": "Easy exploration with a few mini-games",
@@ -432,12 +1179,30 @@
       }
     ],
     "faq": [
-      ["What is the passcode for this Loopit phone mini-app game?", "The passcode shown by the hint is 1122334455."],
-      ["Does it matter whether I choose Girl or Boy?", "Yes, visually. Both branches use passcode 1122334455 and unlock to the same app list, but Girl uses a pink cloud theme and Boy uses a dark tech theme. Messages also changes the first contact: Girl shows Boyfriend, while Boy shows Girlfriend."],
-      ["What apps are inside the phone screen?", "The home screen includes Messages, Cookies, AI Buddy, TicTacToe, Meme Match, Calculator, 8-Ball, Notes, Weather, RPS Game, Snake, Whack-Meme, Tap Rush, and Flappy."],
-      ["How do I win Tic Tac Toe?", "Tap empty squares in turn until X or O completes a row, column, or diagonal. The current web version behaves like a local two-player board."],
-      ["Why does Snake show Game Over immediately?", "In our browser playthrough, Snake opened directly into Game Over and did not reliably restart from Try Again. That may be a web-share bug or an app-state issue."],
-      ["How do I play Flappy Emoji?", "Tap to fly and use small, spaced taps to keep the chick between obstacles. Rapid tapping can lead to an instant Game Over."]
+      [
+        "What is the passcode for this Loopit phone mini-app game?",
+        "The passcode shown by the hint is 1122334455."
+      ],
+      [
+        "Does it matter whether I choose Girl or Boy?",
+        "Yes, visually. Both branches use passcode 1122334455 and unlock to the same app list, but Girl uses a pink cloud theme and Boy uses a dark tech theme. Messages also changes the first contact: Girl shows Boyfriend, while Boy shows Girlfriend."
+      ],
+      [
+        "What apps are inside the phone screen?",
+        "The home screen includes Messages, Cookies, AI Buddy, TicTacToe, Meme Match, Calculator, 8-Ball, Notes, Weather, RPS Game, Snake, Whack-Meme, Tap Rush, and Flappy."
+      ],
+      [
+        "How do I win Tic Tac Toe?",
+        "Tap empty squares in turn until X or O completes a row, column, or diagonal. The current web version behaves like a local two-player board."
+      ],
+      [
+        "Why does Snake show Game Over immediately?",
+        "In our browser playthrough, Snake opened directly into Game Over and did not reliably restart from Try Again. That may be a web-share bug or an app-state issue."
+      ],
+      [
+        "How do I play Flappy Emoji?",
+        "Tap to fly and use small, spaced taps to keep the chick between obstacles. Rapid tapping can lead to an instant Game Over."
+      ]
     ]
   }
 ]

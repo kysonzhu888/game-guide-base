@@ -1,0 +1,401 @@
+{
+  "/assets/loopit-cleaning-asmr-tools/01-entry.png": {
+    "r2Key": "games/loopit/loopit-cleaning-asmr-tools/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cleaning-asmr-tools/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-cleaning-asmr-tools/02-foam-tool.png": {
+    "r2Key": "games/loopit/loopit-cleaning-asmr-tools/screenshots/02-foam-tool-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cleaning-asmr-tools/screenshots/02-foam-tool-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-cleaning-asmr-tools/03-brush-tool.png": {
+    "r2Key": "games/loopit/loopit-cleaning-asmr-tools/screenshots/03-brush-tool-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cleaning-asmr-tools/screenshots/03-brush-tool-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-cleaning-asmr-tools/04-water-tool.png": {
+    "r2Key": "games/loopit/loopit-cleaning-asmr-tools/screenshots/04-water-tool-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cleaning-asmr-tools/screenshots/04-water-tool-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-better-finger-clicker/01-entry.png": {
+    "r2Key": "games/loopit/loopit-better-finger-clicker/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-better-finger-clicker/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-better-finger-clicker/02-early-clicks.png": {
+    "r2Key": "games/loopit/loopit-better-finger-clicker/screenshots/02-early-clicks-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-better-finger-clicker/screenshots/02-early-clicks-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-better-finger-clicker/03-first-upgrade.png": {
+    "r2Key": "games/loopit/loopit-better-finger-clicker/screenshots/03-first-upgrade-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-better-finger-clicker/screenshots/03-first-upgrade-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-better-finger-clicker/04-click-count-19.png": {
+    "r2Key": "games/loopit/loopit-better-finger-clicker/screenshots/04-click-count-19-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-better-finger-clicker/screenshots/04-click-count-19-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-pin-launch/01-entry.png": {
+    "r2Key": "games/loopit/loopit-pin-launch/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-pin-launch/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-pin-launch/02-first-pins.png": {
+    "r2Key": "games/loopit/loopit-pin-launch/screenshots/02-first-pins-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-pin-launch/screenshots/02-first-pins-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-pin-launch/03-level-clear.png": {
+    "r2Key": "games/loopit/loopit-pin-launch/screenshots/03-level-clear-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-pin-launch/screenshots/03-level-clear-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-pin-launch/04-level-2.png": {
+    "r2Key": "games/loopit/loopit-pin-launch/screenshots/04-level-2-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-pin-launch/screenshots/04-level-2-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-drag-to-stretch/01-entry.png": {
+    "r2Key": "games/loopit/loopit-drag-to-stretch/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-drag-to-stretch/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-drag-to-stretch/02-stretch-active.png": {
+    "r2Key": "games/loopit/loopit-drag-to-stretch/screenshots/02-stretch-active-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-drag-to-stretch/screenshots/02-stretch-active-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-drag-to-stretch/03-body-position.png": {
+    "r2Key": "games/loopit/loopit-drag-to-stretch/screenshots/03-body-position-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-drag-to-stretch/screenshots/03-body-position-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-drag-to-stretch/04-reset-pose.png": {
+    "r2Key": "games/loopit/loopit-drag-to-stretch/screenshots/04-reset-pose-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-drag-to-stretch/screenshots/04-reset-pose-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-snake-evolution-feed/01-entry.png": {
+    "r2Key": "games/loopit/loopit-snake-evolution-feed/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-snake-evolution-feed/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-snake-evolution-feed/02-first-draw.png": {
+    "r2Key": "games/loopit/loopit-snake-evolution-feed/screenshots/02-first-draw-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-snake-evolution-feed/screenshots/02-first-draw-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-snake-evolution-feed/03-feeding-motion.png": {
+    "r2Key": "games/loopit/loopit-snake-evolution-feed/screenshots/03-feeding-motion-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-snake-evolution-feed/screenshots/03-feeding-motion-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-snake-evolution-feed/04-evolution-2.png": {
+    "r2Key": "games/loopit/loopit-snake-evolution-feed/screenshots/04-evolution-2-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-snake-evolution-feed/screenshots/04-evolution-2-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-tap-layers/01-entry.png": {
+    "r2Key": "games/loopit/loopit-tap-layers/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-tap-layers/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-tap-layers/02-layer-9998.png": {
+    "r2Key": "games/loopit/loopit-tap-layers/screenshots/02-layer-9998-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-tap-layers/screenshots/02-layer-9998-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-tap-layers/03-layer-costume.png": {
+    "r2Key": "games/loopit/loopit-tap-layers/screenshots/03-layer-costume-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-tap-layers/screenshots/03-layer-costume-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-tap-layers/04-layers-9990.png": {
+    "r2Key": "games/loopit/loopit-tap-layers/screenshots/04-layers-9990-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-tap-layers/screenshots/04-layers-9990-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-coin-spiral-descent/01-entry.png": {
+    "r2Key": "games/loopit/loopit-coin-spiral-descent/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-coin-spiral-descent/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-coin-spiral-descent/02-start-open.png": {
+    "r2Key": "games/loopit/loopit-coin-spiral-descent/screenshots/02-start-open-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-coin-spiral-descent/screenshots/02-start-open-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-coin-spiral-descent/03-spiral-rotated.png": {
+    "r2Key": "games/loopit/loopit-coin-spiral-descent/screenshots/03-spiral-rotated-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-coin-spiral-descent/screenshots/03-spiral-rotated-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-coin-spiral-descent/04-window-position.png": {
+    "r2Key": "games/loopit/loopit-coin-spiral-descent/screenshots/04-window-position-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-coin-spiral-descent/screenshots/04-window-position-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-surgery-incision/01-start-incision.png": {
+    "r2Key": "games/loopit/loopit-surgery-incision/screenshots/01-start-incision-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-surgery-incision/screenshots/01-start-incision-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-surgery-incision/02-incision-complete.png": {
+    "r2Key": "games/loopit/loopit-surgery-incision/screenshots/02-incision-complete-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-surgery-incision/screenshots/02-incision-complete-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-surgery-incision/03-suture-start.png": {
+    "r2Key": "games/loopit/loopit-surgery-incision/screenshots/03-suture-start-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-surgery-incision/screenshots/03-suture-start-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-surgery-incision/04-suture-zigzag.png": {
+    "r2Key": "games/loopit/loopit-surgery-incision/screenshots/04-suture-zigzag-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-surgery-incision/screenshots/04-suture-zigzag-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-surgery-incision/05-patient-healed.png": {
+    "r2Key": "games/loopit/loopit-surgery-incision/screenshots/05-patient-healed-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-surgery-incision/screenshots/05-patient-healed-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-peel-the-fruit/01-blueberry-start.png": {
+    "r2Key": "games/loopit/loopit-peel-the-fruit/screenshots/01-blueberry-start-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-peel-the-fruit/screenshots/01-blueberry-start-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-peel-the-fruit/02-peel-hit.png": {
+    "r2Key": "games/loopit/loopit-peel-the-fruit/screenshots/02-peel-hit-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-peel-the-fruit/screenshots/02-peel-hit-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-peel-the-fruit/03-progress-41.png": {
+    "r2Key": "games/loopit/loopit-peel-the-fruit/screenshots/03-progress-41-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-peel-the-fruit/screenshots/03-progress-41-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-peel-the-fruit/04-perfect-peel.png": {
+    "r2Key": "games/loopit/loopit-peel-the-fruit/screenshots/04-perfect-peel-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-peel-the-fruit/screenshots/04-perfect-peel-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-peel-the-fruit/05-strawberry-level.png": {
+    "r2Key": "games/loopit/loopit-peel-the-fruit/screenshots/05-strawberry-level-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-peel-the-fruit/screenshots/05-strawberry-level-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-get-it-to-the-top/01-cash-zero.png": {
+    "r2Key": "games/loopit/loopit-get-it-to-the-top/screenshots/01-cash-zero-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-get-it-to-the-top/screenshots/01-cash-zero-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-get-it-to-the-top/02-cash-20.png": {
+    "r2Key": "games/loopit/loopit-get-it-to-the-top/screenshots/02-cash-20-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-get-it-to-the-top/screenshots/02-cash-20-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-get-it-to-the-top/03-cash-100.png": {
+    "r2Key": "games/loopit/loopit-get-it-to-the-top/screenshots/03-cash-100-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-get-it-to-the-top/screenshots/03-cash-100-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-get-it-to-the-top/04-cash-105.png": {
+    "r2Key": "games/loopit/loopit-get-it-to-the-top/screenshots/04-cash-105-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-get-it-to-the-top/screenshots/04-cash-105-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-get-it-to-the-top/05-current-state.png": {
+    "r2Key": "games/loopit/loopit-get-it-to-the-top/screenshots/05-current-state-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-get-it-to-the-top/screenshots/05-current-state-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-just-like-the-ads/01-start.png": {
+    "r2Key": "games/loopit/loopit-just-like-the-ads/screenshots/01-start-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-just-like-the-ads/screenshots/01-start-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-just-like-the-ads/02-first-green-route.png": {
+    "r2Key": "games/loopit/loopit-just-like-the-ads/screenshots/02-first-green-route-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-just-like-the-ads/screenshots/02-first-green-route-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-just-like-the-ads/03-big-swarm.png": {
+    "r2Key": "games/loopit/loopit-just-like-the-ads/screenshots/03-big-swarm-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-just-like-the-ads/screenshots/03-big-swarm-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-just-like-the-ads/04-late-green-gates.png": {
+    "r2Key": "games/loopit/loopit-just-like-the-ads/screenshots/04-late-green-gates-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-just-like-the-ads/screenshots/04-late-green-gates-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-just-like-the-ads/05-swarm-destroyed.png": {
+    "r2Key": "games/loopit/loopit-just-like-the-ads/screenshots/05-swarm-destroyed-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-just-like-the-ads/screenshots/05-swarm-destroyed-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-phone-mini-apps/01-welcome.png": {
+    "r2Key": "games/loopit/loopit-phone-mini-apps/screenshots/01-welcome-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-phone-mini-apps/screenshots/01-welcome-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-phone-mini-apps/02-passcode.png": {
+    "r2Key": "games/loopit/loopit-phone-mini-apps/screenshots/02-passcode-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-phone-mini-apps/screenshots/02-passcode-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-phone-mini-apps/03-home-screen.png": {
+    "r2Key": "games/loopit/loopit-phone-mini-apps/screenshots/03-home-screen-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-phone-mini-apps/screenshots/03-home-screen-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-phone-mini-apps/04-tictactoe-winner.png": {
+    "r2Key": "games/loopit/loopit-phone-mini-apps/screenshots/04-tictactoe-winner-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-phone-mini-apps/screenshots/04-tictactoe-winner-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-phone-mini-apps/05-messages.png": {
+    "r2Key": "games/loopit/loopit-phone-mini-apps/screenshots/05-messages-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-phone-mini-apps/screenshots/05-messages-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-phone-mini-apps/09-boy-passcode.png": {
+    "r2Key": "games/loopit/loopit-phone-mini-apps/screenshots/09-boy-passcode-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-phone-mini-apps/screenshots/09-boy-passcode-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-phone-mini-apps/10-boy-home-screen.png": {
+    "r2Key": "games/loopit/loopit-phone-mini-apps/screenshots/10-boy-home-screen-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-phone-mini-apps/screenshots/10-boy-home-screen-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-phone-mini-apps/11-boy-messages.png": {
+    "r2Key": "games/loopit/loopit-phone-mini-apps/screenshots/11-boy-messages-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-phone-mini-apps/screenshots/11-boy-messages-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-phone-mini-apps/08-flappy-game-over.png": {
+    "r2Key": "games/loopit/loopit-phone-mini-apps/screenshots/08-flappy-game-over-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-phone-mini-apps/screenshots/08-flappy-game-over-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  }
+}
