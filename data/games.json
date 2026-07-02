@@ -1,5 +1,485 @@
 [
   {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-epstintapuse-69-levels",
+    "title": "Epstintapuse 69 Levels",
+    "genre": "Survival quest",
+    "difficulty": "A 69-level combat quest with hero selection, absurd enemies, and wave-survival framing.",
+    "searchIntent": "Epstintapuse 69 Levels Loopit guide, Peralous Quest, hero choice, start adventure tips",
+    "sourceUrl": "https://share.loopit.me/game/16c516e4-9f7a-4810-9cff-ac8bbb663858",
+    "creator": "Lady Fang",
+    "creatorSlug": "lady-fang",
+    "stats": {
+      "views": "2.0K",
+      "likes": "14",
+      "comments": "1",
+      "remixes": "1"
+    },
+    "summary": "Epstintapuse 69 Levels is a Loopit survival quest. Web replay loaded the Peralous Quest hero screen with Normal, Knight, Ninja, Wizard, and Pirate options before starting the adventure path.",
+    "quickAnswer": "Pick a hero first, then use Start Adventure. Our replay verified the opening hero-selection screen and input response; the claimed 69-level route still needs a deeper full-clear replay.",
+    "basics": [
+      "The source description frames the game as a 69-level journey with absurd enemies and combat waves.",
+      "The first playable screen is titled Peralous Quest and asks you to choose a hero.",
+      "Visible hero choices include Normal, Knight, Ninja, Wizard, and Pirate.",
+      "Start Adventure is the main progression button after selecting a hero."
+    ],
+    "controls": [
+      "Tap a hero portrait to choose your starting style.",
+      "Use Start Adventure after the hero is selected.",
+      "Expect jump or action inputs once the survival route begins."
+    ],
+    "strategy": [
+      "Choose a straightforward hero first so you can learn the timing before testing specialty heroes.",
+      "Do not rush past the hero screen; the selected character is the first meaningful branch.",
+      "Treat this guide as opening-route coverage until a later replay reaches multiple level outcomes.",
+      "If you are mapping the 69 levels, record each death or wave transition instead of relying on memory."
+    ],
+    "mistakes": [
+      "Calling the game cleared after only seeing the hero screen.",
+      "Missing the hero branch by tapping Start Adventure too quickly.",
+      "Assuming all heroes play the same before testing their movement and action timing."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-epstintapuse-69-levels/01-choose-hero.png",
+        "alt": "Epstintapuse 69 Levels opening screen with Peralous Quest and hero choices.",
+        "caption": "The replay opened on the Peralous Quest hero-selection screen."
+      },
+      {
+        "src": "/assets/loopit-epstintapuse-69-levels/02-hero-selection-after-input.png",
+        "alt": "Epstintapuse 69 Levels hero-selection screen after input.",
+        "caption": "The first branch is choosing between Normal, Knight, Ninja, Wizard, and Pirate."
+      }
+    ],
+    "faq": [
+      [
+        "How do I start Epstintapuse 69 Levels?",
+        "Choose a hero, then tap Start Adventure."
+      ],
+      [
+        "Did this replay clear all 69 levels?",
+        "No. This pass verified the playable entry and hero-selection branch, not a full 69-level clear."
+      ],
+      [
+        "What is the first decision?",
+        "Your hero choice: Normal, Knight, Ninja, Wizard, or Pirate."
+      ]
+    ],
+    "creatorContext": [
+      "Lady Fang is the Loopit display name shown on the playable source card for Epstintapuse 69 Levels.",
+      "The source description mentions Cheato king dragons, Tech mogal snails, and Bubba the centar as part of the absurd enemy framing.",
+      "Visible source-page engagement during capture: 2.0K views, 14 likes, 1 comment, 1 remix."
+    ],
+    "communityNotes": [
+      "No reliable external walkthrough was found during this pass. This guide is based on Loopit metadata and web replay screenshots captured on July 3, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-phuanitmatter-tap-game",
+    "title": "Phuanitmatter Tap Game",
+    "genre": "Dimension tap",
+    "difficulty": "A tap-to-progress dimension game that starts at Dimension 1 of 250.",
+    "searchIntent": "Phuanitmatter Tap Game Loopit guide, Dimension 1 250, tap node tips",
+    "sourceUrl": "https://share.loopit.me/game/a9e8ac4a-97d1-4d0d-8fd7-1299ceedd79b",
+    "creator": "Phu Quoc Nguyen",
+    "creatorSlug": "phu-quoc-nguyen",
+    "stats": {
+      "views": "1.1K",
+      "likes": "10",
+      "comments": "1",
+      "remixes": "4"
+    },
+    "summary": "Phuanitmatter Tap Game is a Loopit dimension-tapping playable. Web replay reached Dimension 1 / 250 with the central triangle and orange node visible.",
+    "quickAnswer": "Tap the visible node and central play area to advance the dimension loop. Our replay verified the Dimension 1 / 250 start screen and first interaction state.",
+    "basics": [
+      "The game opens on a galaxy-like background with a geometric center shape.",
+      "The replay showed Dimension 1 / 250, which implies a long staged progression path.",
+      "An orange node appears near the triangle and is the clearest first target.",
+      "The Loopit source description calls it a tap game to keep your mind from boredom."
+    ],
+    "controls": [
+      "Tap the orange node or central triangle area to test the active target.",
+      "Watch the Dimension counter after each input.",
+      "If the number does not change, retap the node rather than random empty space."
+    ],
+    "strategy": [
+      "Use the Dimension counter as your progress proof; visual motion alone can be ambiguous.",
+      "Keep taps deliberate on visible nodes because empty-space taps may not count.",
+      "For a full route, record every counter jump and note when the visual layout changes.",
+      "Replay on mobile if desktop taps feel imprecise around the triangle."
+    ],
+    "mistakes": [
+      "Thinking the background is only decorative and missing the small active node.",
+      "Assuming the game is complete at Dimension 1 because the first screen is quiet.",
+      "Not tracking the 1 / 250 counter before and after taps."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-phuanitmatter-tap-game/01-dimension-start.png",
+        "alt": "Phuanitmatter Tap Game starting dimension screen.",
+        "caption": "The game starts with a geometric center area over a galaxy background."
+      },
+      {
+        "src": "/assets/loopit-phuanitmatter-tap-game/02-dimension-one-node.png",
+        "alt": "Phuanitmatter Tap Game showing Dimension 1 of 250 and an orange node.",
+        "caption": "Dimension 1 / 250 and the orange node were visible during replay."
+      }
+    ],
+    "faq": [
+      [
+        "What is the first objective?",
+        "Use taps on the visible node or center area and watch the Dimension counter."
+      ],
+      [
+        "How many dimensions are shown?",
+        "The replay screen showed Dimension 1 / 250."
+      ],
+      [
+        "Was the full 250-dimension route cleared?",
+        "No. This guide covers the verified opening state and first-tap target."
+      ]
+    ],
+    "creatorContext": [
+      "Phu Quoc Nguyen is the Loopit display name shown on the source card for Phuanitmatter Tap Game.",
+      "The source text describes the game as a matter tap game meant to keep the mind from boredom.",
+      "Visible source-page engagement during capture: 1.1K views, 10 likes, 1 comment, 4 remixes."
+    ],
+    "communityNotes": [
+      "No separate public walkthrough was confirmed during this pass, so the guide relies on source metadata and web replay screenshots captured on July 3, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-zombie-simulator",
+    "title": "Zombie Simulator",
+    "genre": "Zombie sandbox",
+    "difficulty": "A real-time zombie sandbox with humans, armed units, zombies, and a tap-to-explode action.",
+    "searchIntent": "Zombie Simulator Loopit guide, humans armed zombies, tap to explode, survival sandbox tips",
+    "sourceUrl": "https://share.loopit.me/game/390feabc-3f0c-49e3-8238-8e34e460218d",
+    "creator": "FirestoneX",
+    "creatorSlug": "firestonex",
+    "stats": {
+      "views": "133",
+      "likes": "7",
+      "comments": "2",
+      "remixes": "0"
+    },
+    "summary": "Zombie Simulator is a Loopit real-time sandbox. Web replay reached an active map at 14.5 seconds with Humans 4300, Armed 268, Zombies 237, and a Tap to explode prompt.",
+    "quickAnswer": "Let the simulation run, then tap to explode when the crowd balance matters. Our replay verified live counters at 14.5s: 4300 humans, 268 armed, and 237 zombies.",
+    "basics": [
+      "The HUD tracks time, humans, armed units, and zombies.",
+      "The replay reached 14.5 seconds with all three population counters active.",
+      "A Reset button is visible, so failed or chaotic runs can be restarted quickly.",
+      "Tap to explode is the most explicit player action shown in this pass."
+    ],
+    "controls": [
+      "Let the simulation start and watch the population counters move.",
+      "Tap the battlefield when the Tap to explode prompt is active.",
+      "Use Reset if the population outcome becomes impossible to read."
+    ],
+    "strategy": [
+      "Do not spam immediately; first observe whether zombies or armed units are gaining faster.",
+      "Use explosion taps when clusters form, because the map is dense and timing matters.",
+      "Track humans, armed units, and zombies as separate signals rather than one total population.",
+      "For deeper routing, record a short video and compare counter deltas after each explosion."
+    ],
+    "mistakes": [
+      "Ignoring the armed-unit counter and only watching zombies.",
+      "Resetting before the simulation has enough time to show a trend.",
+      "Treating Tap to explode as a decorative prompt instead of the main intervention."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-zombie-simulator/01-starting-map.png",
+        "alt": "Zombie Simulator starting map with population counters.",
+        "caption": "The starting map shows the counters that drive the sandbox."
+      },
+      {
+        "src": "/assets/loopit-zombie-simulator/02-time-145.png",
+        "alt": "Zombie Simulator at 14.5 seconds showing humans, armed units, zombies, and Tap to explode.",
+        "caption": "At 14.5s, the replay showed 4300 humans, 268 armed units, and 237 zombies."
+      }
+    ],
+    "faq": [
+      [
+        "What should I watch first?",
+        "Watch Humans, Armed, and Zombies together; the balance is the game state."
+      ],
+      [
+        "What does tapping do?",
+        "The visible prompt says Tap to explode, so taps are the main intervention in the simulation."
+      ],
+      [
+        "Did replay reach active gameplay?",
+        "Yes. Replay reached 14.5 seconds with live counters and the explosion prompt visible."
+      ]
+    ],
+    "creatorContext": [
+      "FirestoneX is the Loopit display name shown on the source card for Zombie Simulator.",
+      "The game has a compact source description, so the replay HUD is the main evidence for gameplay interpretation.",
+      "Visible source-page engagement during capture: 133 views, 7 likes, 2 comments, 0 remixes."
+    ],
+    "communityNotes": [
+      "No separate reliable strategy post was confirmed during this pass. This guide is based on source metadata and web replay screenshots captured on July 3, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-solarpunk-idle",
+    "title": "Solarpunk Idle",
+    "genre": "Idle energy",
+    "difficulty": "An idle energy game with manual tapping, production per second, phase goals, and infrastructure upgrades.",
+    "searchIntent": "Solarpunk Idle Loopit guide, energy tap, solar panel cost, wind turbine cost, 5000 J target",
+    "sourceUrl": "https://share.loopit.me/game/9998a4f1-bca0-4410-99b5-a678ac48ef91",
+    "creator": "Chicar",
+    "creatorSlug": "chicar",
+    "stats": {
+      "views": "15",
+      "likes": "0",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Solarpunk Idle is a Loopit idle energy game. Web replay started the game, reached 19 J, showed 0.0 J/sec, and displayed infrastructure costs for Solar Panel and Wind Turbine.",
+    "quickAnswer": "Tap to generate energy until you can buy Solar Panel at 15 J. Our replay verified 19 J, 0.0 J/sec, Phase: TRANSITION, Target: 5000 J, Solar Panel cost 15 J, and Wind Turbine cost 100 J.",
+    "basics": [
+      "The opening overlay says Tap to Start.",
+      "After starting, the main resource is energy measured in J.",
+      "The first visible target is 5000 J during the TRANSITION phase.",
+      "Infrastructure upgrades include Solar Panel at 15 J and Wind Turbine at 100 J."
+    ],
+    "controls": [
+      "Tap the start overlay to enter the main energy screen.",
+      "Tap the main button to generate energy manually.",
+      "Use infrastructure buttons when the resource counter reaches the displayed cost."
+    ],
+    "strategy": [
+      "Buy Solar Panel first because it is visible at 15 J and is cheaper than Wind Turbine.",
+      "Do not wait for passive income at the beginning; replay showed 0.0 J/sec before upgrades.",
+      "Treat 5000 J as the early phase milestone and plan upgrades around reaching it.",
+      "If a button does not fire, confirm you have enough J before assuming the game is broken."
+    ],
+    "mistakes": [
+      "Waiting idle before buying any production source.",
+      "Saving for Wind Turbine too early while Solar Panel is already affordable.",
+      "Missing the phase and target text at the top of the screen."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-solarpunk-idle/01-tap-to-start.png",
+        "alt": "Solarpunk Idle opening overlay saying Tap to Start.",
+        "caption": "The replay begins with a Tap to Start overlay."
+      },
+      {
+        "src": "/assets/loopit-solarpunk-idle/02-energy-19j.png",
+        "alt": "Solarpunk Idle showing 19 J, zero energy per second, target 5000 J, and infrastructure costs.",
+        "caption": "At 19 J, Solar Panel was visible at 15 J and Wind Turbine at 100 J."
+      }
+    ],
+    "faq": [
+      [
+        "What should I buy first?",
+        "Solar Panel is the first visible affordable upgrade at 15 J."
+      ],
+      [
+        "Why is income not increasing?",
+        "Replay showed 0.0 J/sec before infrastructure, so manual tapping is needed at the start."
+      ],
+      [
+        "What is the first milestone?",
+        "The early phase target shown in replay is 5000 J."
+      ]
+    ],
+    "creatorContext": [
+      "Chicar is the Loopit display name shown on the source card for Solarpunk Idle.",
+      "The source card describes it as a Solarpunk Idle Game; gameplay details in this guide come from the replayed UI.",
+      "Visible source-page engagement during capture: 15 views, 0 likes, 0 comments, 0 remixes."
+    ],
+    "communityNotes": [
+      "Two other Chicar solarpunk web playables were checked in this batch, but they showed an Update to play this blocker and were not published as guides."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-stage-music-shifter",
+    "title": "Stage Music Shifter",
+    "genre": "Stage battler",
+    "difficulty": "A stage-based character selection game where the source card says music changes to match the stage.",
+    "searchIntent": "Stage Music Shifter Loopit guide, select your angel, Sophia Michael Gabriel Raphael Uriel Seraph, Hope cost",
+    "sourceUrl": "https://share.loopit.me/game/2c0f9c07-b3aa-41c3-b3e0-b1d747832530",
+    "creator": "Naked Path Music",
+    "creatorSlug": "naked-path-music",
+    "stats": {
+      "views": "89",
+      "likes": "1",
+      "comments": "1",
+      "remixes": "3"
+    },
+    "summary": "Stage Music Shifter is a Loopit stage playable. Web replay reached the Select Your Angel screen with Sophia and Michael available at Level 1 and Gabriel, Raphael, Uriel, and Seraph locked behind Hope.",
+    "quickAnswer": "Start with Sophia or Michael because they are available at Level 1. Gabriel, Raphael, Uriel, and Seraph were locked in replay with 5000 Hope requirements.",
+    "basics": [
+      "The source card says the music changes to match the stage and credits music by Patrick stoltie.",
+      "The replay reached a Select Your Angel screen after the opening state.",
+      "Sophia and Michael were visible as Level 1 available choices.",
+      "Gabriel, Raphael, Uriel, and Seraph appeared locked with 5000 Hope requirements."
+    ],
+    "controls": [
+      "Tap through the opening screen to reach character selection.",
+      "Choose Sophia or Michael for the first run.",
+      "Return later to locked angels after earning enough Hope."
+    ],
+    "strategy": [
+      "Pick an unlocked angel first instead of trying locked options repeatedly.",
+      "Use the 5000 Hope lock text as your medium-term unlock target.",
+      "Because the game emphasizes stage music, replay with audio on when comparing stages.",
+      "Record later runs if you want to map which stage triggers which music style."
+    ],
+    "mistakes": [
+      "Trying to select locked angels before earning Hope.",
+      "Ignoring Sophia and Michael because the locked characters look more advanced.",
+      "Writing music-style conclusions without replaying the stages with audio enabled."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-stage-music-shifter/01-stage-start.png",
+        "alt": "Stage Music Shifter opening screen before angel selection.",
+        "caption": "The replay starts from the stage playable entry."
+      },
+      {
+        "src": "/assets/loopit-stage-music-shifter/02-select-angel.png",
+        "alt": "Stage Music Shifter Select Your Angel screen with Sophia, Michael, and locked angels.",
+        "caption": "Sophia and Michael were available, while later angels showed Hope locks."
+      }
+    ],
+    "faq": [
+      [
+        "Who should I choose first?",
+        "Choose Sophia or Michael; both were available at Level 1 in replay."
+      ],
+      [
+        "How do I unlock the other angels?",
+        "Gabriel, Raphael, Uriel, and Seraph showed 5000 Hope locks in replay."
+      ],
+      [
+        "Did this guide verify the music changes?",
+        "The source card says music changes by stage; this replay verified the visual route to angel selection, not a full audio comparison."
+      ]
+    ],
+    "creatorContext": [
+      "Naked Path Music is the Loopit display name shown on the source card for Stage Music Shifter.",
+      "The source text credits music by Patrick stoltie and asks players which style they like best.",
+      "Visible source-page engagement during capture: 89 views, 1 like, 1 comment, 3 remixes."
+    ],
+    "communityNotes": [
+      "No separate reliable stage-by-stage music guide was confirmed during this pass. This page uses source metadata and web replay screenshots captured on July 3, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-trauma-theory",
+    "title": "Trauma Theory",
+    "genre": "Narrative session",
+    "difficulty": "A fictional narrative session game that opens in Doctor Sigmunds Office.",
+    "searchIntent": "Trauma Theory Loopit guide, Doctor Sigmunds Office, Begin Session, narrative session tips",
+    "sourceUrl": "https://share.loopit.me/game/239086f4-f17b-401b-8511-14a827d29f6e",
+    "creator": "Zombie corporation",
+    "creatorSlug": "zombie-corporation",
+    "stats": {
+      "views": "126",
+      "likes": "3",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Trauma Theory is a Loopit fictional narrative session. Web replay reached Doctor Sigmunds Office with a Begin Session button and a safe-space style prompt.",
+    "quickAnswer": "Tap Begin Session from Doctor Sigmunds Office to start the narrative. Treat it as a fictional game route, not real therapy or medical advice.",
+    "basics": [
+      "The source card asks, Trauma theory anyone?",
+      "The replay opened to Doctor Sigmunds Office.",
+      "The entry screen presents a calm session framing and a Begin Session button.",
+      "This is a game narrative; it should not be used as mental-health support."
+    ],
+    "controls": [
+      "Tap Begin Session to move from the office screen into the route.",
+      "Read prompts carefully because narrative games often branch through text choices.",
+      "Use screenshots if choices appear later, so branches are not mixed up."
+    ],
+    "strategy": [
+      "Start with the default Begin Session path and record the first few prompts.",
+      "If choices appear, map them as branches rather than assuming one correct answer.",
+      "Keep health or trauma-related wording framed as in-game fiction only.",
+      "Do not enter private personal information into a mini-game prompt."
+    ],
+    "mistakes": [
+      "Treating the game as real mental-health advice.",
+      "Skipping text and losing the narrative branch context.",
+      "Publishing deeper branch claims without replay screenshots for those choices."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-trauma-theory/01-office-entry.png",
+        "alt": "Trauma Theory entry screen for Doctor Sigmunds Office.",
+        "caption": "The replay reached the fictional office entry screen."
+      },
+      {
+        "src": "/assets/loopit-trauma-theory/02-begin-session.png",
+        "alt": "Trauma Theory Begin Session button in Doctor Sigmunds Office.",
+        "caption": "Begin Session is the visible next action from the office screen."
+      }
+    ],
+    "faq": [
+      [
+        "How do I start Trauma Theory?",
+        "Tap Begin Session from Doctor Sigmunds Office."
+      ],
+      [
+        "Is this therapy?",
+        "No. This is treated here as a fictional Loopit game narrative, not medical or mental-health advice."
+      ],
+      [
+        "What did replay verify?",
+        "Replay verified the source page, office entry screen, and Begin Session action."
+      ]
+    ],
+    "creatorContext": [
+      "Zombie corporation is the Loopit display name shown on the source card for Trauma Theory.",
+      "No verified external creator profile is linked from this guide; the creator identity here is the Loopit display name only.",
+      "Visible source-page engagement during capture: 126 views, 3 likes, 0 comments, 0 remixes."
+    ],
+    "communityNotes": [
+      "No external player walkthrough was confirmed during this pass. This guide is based on Loopit metadata and web replay screenshots captured on July 3, 2026."
+    ]
+  },
+  {
     "slug": "loopit-cleaning-asmr-tools",
     "title": "Cleaning ASMR Tools",
     "genre": "Cleaning simulator",
