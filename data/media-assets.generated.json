@@ -733,5 +733,75 @@
     "width": 1200,
     "format": "jpeg",
     "quality": 82
+  },
+  "/assets/loopit-who-will-win/01-remaining-70.png": {
+    "r2Key": "games/loopit/loopit-who-will-win/screenshots/01-remaining-70-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-who-will-win/screenshots/01-remaining-70-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-who-will-win/02-remaining-67.png": {
+    "r2Key": "games/loopit/loopit-who-will-win/screenshots/02-remaining-67-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-who-will-win/screenshots/02-remaining-67-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-w-game/01-drag-fluid.png": {
+    "r2Key": "games/loopit/loopit-w-game/screenshots/01-drag-fluid-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-w-game/screenshots/01-drag-fluid-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-w-game/02-fluid-after-taps.png": {
+    "r2Key": "games/loopit/loopit-w-game/screenshots/02-fluid-after-taps-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-w-game/screenshots/02-fluid-after-taps-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-coin-clicker-hint/01-balance-zero.png": {
+    "r2Key": "games/loopit/loopit-coin-clicker-hint/screenshots/01-balance-zero-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-coin-clicker-hint/screenshots/01-balance-zero-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-coin-clicker-hint/02-balance-twenty.png": {
+    "r2Key": "games/loopit/loopit-coin-clicker-hint/screenshots/02-balance-twenty-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-coin-clicker-hint/screenshots/02-balance-twenty-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-where-are-you-from/01-start-creating.png": {
+    "r2Key": "games/loopit/loopit-where-are-you-from/screenshots/01-start-creating-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-where-are-you-from/screenshots/01-start-creating-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-where-are-you-from/02-after-start.png": {
+    "r2Key": "games/loopit/loopit-where-are-you-from/screenshots/02-after-start-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-where-are-you-from/screenshots/02-after-start-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-classic-teddy-bear-clicker/01-total-clicks-zero.png": {
+    "r2Key": "games/loopit/loopit-classic-teddy-bear-clicker/screenshots/01-total-clicks-zero-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-classic-teddy-bear-clicker/screenshots/01-total-clicks-zero-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-classic-teddy-bear-clicker/02-total-clicks-sixteen.png": {
+    "r2Key": "games/loopit/loopit-classic-teddy-bear-clicker/screenshots/02-total-clicks-sixteen-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-classic-teddy-bear-clicker/screenshots/02-total-clicks-sixteen-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
   }
 }

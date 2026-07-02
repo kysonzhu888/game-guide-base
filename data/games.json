@@ -3659,5 +3659,405 @@
     "communityNotes": [
       "No verified external community walkthrough is attached for Target Scanner yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
     ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-who-will-win",
+    "title": "Who Will Win",
+    "genre": "Wheel physics",
+    "difficulty": "A drag-to-spin physics game with a Remaining counter and country-flag balls inside a wheel.",
+    "searchIntent": "Who Will Win Loopit guide, remaining counter, drag wheel to spin, country flags physics tips",
+    "sourceUrl": "https://share.loopit.me/game/6fe91371-a187-4144-9ad5-14d00475ac87",
+    "creator": "Sparks20156",
+    "creatorSlug": "sparks20156",
+    "stats": {
+      "views": "1.56M",
+      "likes": "20.6K",
+      "comments": "7.7K",
+      "remixes": "746"
+    },
+    "summary": "Who Will Win is a popular Loopit physics spinner. Web replay loaded the wheel and reduced the Remaining counter from 70 to 67 after drag input.",
+    "quickAnswer": "Drag the green wheel in a circular motion and watch the Remaining counter. Our replay verified movement from Remaining 70 to Remaining 67, not a full clear.",
+    "basics": [
+      "The game opens with a green circular wheel full of country-flag balls.",
+      "The main objective is tracked by a Remaining counter that starts at 70.",
+      "A drag gesture spins or tilts the wheel; after replay input the counter reached 67.",
+      "The yellow lightning button is visible, but this replay did not verify its full effect."
+    ],
+    "controls": [
+      "Drag along the wheel rim rather than tapping the center.",
+      "Use short circular swipes to move the pile without losing track of the counter.",
+      "Pause after each movement and check whether Remaining changed."
+    ],
+    "strategy": [
+      "Start with a slow clockwise drag so the balls settle together.",
+      "Aim to create a gap at the open part of the wheel before dragging again.",
+      "Use the Remaining counter as the only verified progress signal.",
+      "A full guide update should continue until the counter reaches 0 or a result screen appears."
+    ],
+    "mistakes": [
+      "Tapping instead of dragging the wheel.",
+      "Assuming the level is solved while Remaining is still above 0.",
+      "Dragging too aggressively and making the ball pile harder to read."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-who-will-win/01-remaining-70.png",
+        "alt": "Who Will Win starting screen with Remaining 70 and country flag balls inside a green wheel.",
+        "caption": "The web replay loaded the starting wheel at Remaining 70."
+      },
+      {
+        "src": "/assets/loopit-who-will-win/02-remaining-67.png",
+        "alt": "Who Will Win after drag input showing Remaining 67.",
+        "caption": "After drag input, the Remaining counter reached 67."
+      }
+    ],
+    "faq": [
+      [
+        "What does Remaining mean?",
+        "It is the visible progress counter. Our replay moved it from 70 to 67."
+      ],
+      [
+        "Do I tap or drag?",
+        "Drag the wheel. The on-screen instruction says to drag the wheel to spin."
+      ],
+      [
+        "Did replay finish the whole game?",
+        "No. It verified early progress to Remaining 67."
+      ]
+    ],
+    "creatorContext": [
+      "Sparks20156 is the Loopit display name shown on the playable source card for Who Will Win.",
+      "This guide treats that as a platform display name, not a verified real-world identity.",
+      "Visible source-page engagement during capture: 1.56M views, 20.6K likes, 7.7K comments, 746 remixes."
+    ],
+    "communityNotes": [
+      "A public YouTube Short indexed this Loopit share link, but no reliable external walkthrough was found during this pass. The guide is based on Loopit API metadata and web replay screenshots captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-w-game",
+    "title": "W Game",
+    "genre": "Fluid sandbox",
+    "difficulty": "A visual sandbox that asks the player to drag to fluid through a dense field of colored particles.",
+    "searchIntent": "W Game Loopit guide, drag to fluid, particle sandbox, fluid controls tips",
+    "sourceUrl": "https://share.loopit.me/game/4eb06d24-d55c-4fc6-9662-8b57ca703473",
+    "creator": "Derrick Drewette",
+    "creatorSlug": "derrick-drewette",
+    "stats": {
+      "views": "40K",
+      "likes": "1.3K",
+      "comments": "218",
+      "remixes": "48"
+    },
+    "summary": "W Game is a colorful Loopit fluid sandbox. Web replay reached the playable particle field and verified the on-screen Drag to Fluid prompt.",
+    "quickAnswer": "Drag across the particle field to create fluid motion. This replay verified the start state and prompt, but did not identify a score or clear condition.",
+    "basics": [
+      "The screen is filled with small colored particles on a black background.",
+      "The visible instruction says Drag to Fluid.",
+      "There is no score, timer, or win counter visible in the captured start state.",
+      "Treat it as a sandbox interaction unless a later result state appears."
+    ],
+    "controls": [
+      "Drag through the particle area to stir or move the fluid field.",
+      "Use longer swipes for larger motion and shorter swipes for local changes.",
+      "Do not expect taps alone to show meaningful progress."
+    ],
+    "strategy": [
+      "Start with a slow horizontal drag so you can see how particles respond.",
+      "Then try circular movement if the field needs stronger motion.",
+      "Because no goal counter is visible, describe the interaction rather than claiming a clear.",
+      "For future replay, record video and compare particle motion frame by frame."
+    ],
+    "mistakes": [
+      "Using taps instead of drag gestures.",
+      "Looking for a passcode or level counter that is not visible in the replay.",
+      "Calling it completed without a result screen."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-w-game/01-drag-fluid.png",
+        "alt": "W Game particle field with Drag to Fluid prompt.",
+        "caption": "The replay verified the drag-to-fluid start state."
+      },
+      {
+        "src": "/assets/loopit-w-game/02-fluid-after-taps.png",
+        "alt": "W Game particle field after light input with the same sandbox layout.",
+        "caption": "Light input did not expose a separate result screen."
+      }
+    ],
+    "faq": [
+      [
+        "What is the goal?",
+        "No explicit goal was visible. The captured prompt is Drag to Fluid."
+      ],
+      [
+        "Is it a clicker?",
+        "No. The useful input is drag movement across the particle field."
+      ],
+      [
+        "Did replay find a score?",
+        "No visible score or completion counter appeared in this web replay."
+      ]
+    ],
+    "creatorContext": [
+      "Derrick Drewette is the Loopit display name shown on the playable source card for W Game.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 40K views, 1.3K likes, 218 comments, 48 remixes."
+    ],
+    "communityNotes": [
+      "No verified external community walkthrough is attached for W Game yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-coin-clicker-hint",
+    "title": "Coin Clicker Hint",
+    "genre": "Clicker economy",
+    "difficulty": "A coin-clicking economy game with balance, rebirth, auto-per-second, shop, rank, chat, and casino buttons.",
+    "searchIntent": "Coin Clicker Hint Loopit guide, balance, rebirth 5k, admin panel hint, casino shop rank tips",
+    "sourceUrl": "https://share.loopit.me/game/ddb2c4af-3acb-4e26-8d0a-7576320613e1",
+    "creator": "Your average clicker guy",
+    "creatorSlug": "your-average-clicker-guy",
+    "stats": {
+      "views": "8.5K",
+      "likes": "81",
+      "comments": "29",
+      "remixes": "15"
+    },
+    "summary": "Coin Clicker Hint is a straightforward Loopit clicker. Web replay tapped the coin and raised Balance from $0 to $20.",
+    "quickAnswer": "Tap the center coin to build balance. Our replay verified Balance $0 to $20; Rebirth needs $5K, and the source description hints the admin panel starts with c.",
+    "basics": [
+      "The top panel shows Balance, Rebirths, and Auto / Sec.",
+      "The main coin sits in the center and responds to repeated clicks.",
+      "After repeated taps, the replay reached Balance $20.",
+      "The bottom buttons are Shop, Rank, Chat, and Casino; Rebirth shows a $5K requirement."
+    ],
+    "controls": [
+      "Tap the coin repeatedly to earn money.",
+      "Use Shop after you have enough balance for upgrades.",
+      "Do not press Rebirth until you understand the $5K requirement."
+    ],
+    "strategy": [
+      "Build early balance with manual clicks first.",
+      "Check Auto / Sec before buying automation upgrades.",
+      "Use the source-card hint carefully: it says the admin panel starts with c and is lowercase, but this replay did not verify an admin code entry.",
+      "Avoid Casino until you can afford to lose some balance."
+    ],
+    "mistakes": [
+      "Trying to rebirth at low balance.",
+      "Assuming the admin hint is a confirmed passcode without testing the panel.",
+      "Ignoring Auto / Sec when comparing upgrades."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-coin-clicker-hint/01-balance-zero.png",
+        "alt": "Coin Clicker Hint starting screen with Balance zero and a central coin.",
+        "caption": "The replay started at Balance $0."
+      },
+      {
+        "src": "/assets/loopit-coin-clicker-hint/02-balance-twenty.png",
+        "alt": "Coin Clicker Hint after tapping showing Balance twenty dollars.",
+        "caption": "Repeated taps raised the balance to $20."
+      }
+    ],
+    "faq": [
+      [
+        "How do I earn money?",
+        "Tap the center coin. The replay raised Balance from $0 to $20."
+      ],
+      [
+        "How much is rebirth?",
+        "The visible Rebirth button shows $5K."
+      ],
+      [
+        "What is the admin hint?",
+        "The source description says the admin panel starts with c and is all lowercase, but this replay did not verify the final code."
+      ]
+    ],
+    "creatorContext": [
+      "Your average clicker guy is the Loopit display name shown on the playable source card for Coin Clicker Hint.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 8.5K views, 81 likes, 29 comments, 15 remixes."
+    ],
+    "communityNotes": [
+      "A public YouTube Short indexed this Loopit share link. No separate reliable walkthrough was found, so the guide is based on Loopit metadata and web replay evidence captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-where-are-you-from",
+    "title": "Where Are You From",
+    "genre": "Flag drawing",
+    "difficulty": "A country-flag drawing flow that starts with Flag Drawer and then opens a Choose Your Country grid.",
+    "searchIntent": "Where Are You From Loopit guide, Flag Drawer, choose your country, start creating tips",
+    "sourceUrl": "https://share.loopit.me/game/a309ed9b-c3f2-441e-80f5-7d58fb59a40c",
+    "creator": "Eva",
+    "creatorSlug": "eva",
+    "stats": {
+      "views": "8.8K",
+      "likes": "70",
+      "comments": "188",
+      "remixes": "4"
+    },
+    "summary": "Where Are You From opens as a Flag Drawer mini app. Web replay tapped Start Creating and reached the Choose Your Country flag grid.",
+    "quickAnswer": "Tap Start Creating, then pick a flag from the Choose Your Country grid. This replay verified the route from the landing screen into country selection.",
+    "basics": [
+      "The first screen says FLAG DRAWER and asks you to draw your country and share it with friends.",
+      "The main button is Start Creating.",
+      "After tapping Start Creating, the replay reached a Choose Your Country screen.",
+      "The country grid shows many flag tiles, including white, red, Afghanistan, American Samoa, and more."
+    ],
+    "controls": [
+      "Tap Start Creating on the first screen.",
+      "Scroll or tap through the flag grid to choose a country.",
+      "Use the selected flag as the starting point for the drawing flow."
+    ],
+    "strategy": [
+      "Choose the flag tile before trying to draw.",
+      "If the country is not visible, scan the grid row by row instead of tapping randomly.",
+      "For future replay, capture the draw canvas after selecting one specific flag.",
+      "This replay verified the entry route, not the finished drawing/share step."
+    ],
+    "mistakes": [
+      "Trying to draw before selecting a country.",
+      "Missing the Start Creating button because the first screen looks like a splash page.",
+      "Assuming the first visible flag grid means the drawing is complete."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-where-are-you-from/01-start-creating.png",
+        "alt": "Where Are You From Flag Drawer start screen with Start Creating button.",
+        "caption": "The first screen is the Flag Drawer entry."
+      },
+      {
+        "src": "/assets/loopit-where-are-you-from/02-after-start.png",
+        "alt": "Where Are You From Choose Your Country grid with many flag tiles.",
+        "caption": "Start Creating opened the country selection grid."
+      }
+    ],
+    "faq": [
+      [
+        "What do I tap first?",
+        "Tap Start Creating."
+      ],
+      [
+        "What appears next?",
+        "A Choose Your Country grid with flag tiles."
+      ],
+      [
+        "Did replay finish a drawing?",
+        "No. It verified the entry and country-selection route."
+      ]
+    ],
+    "creatorContext": [
+      "Eva is the Loopit display name shown on the playable source card for Where Are You From.",
+      "The display name included emoji in the source card; the site profile normalizes it to Eva for cleaner navigation.",
+      "Visible source-page engagement during capture: 8.8K views, 70 likes, 188 comments, 4 remixes."
+    ],
+    "communityNotes": [
+      "A public YouTube Short indexed this Loopit share link. No separate reliable walkthrough was found, so the guide is based on Loopit metadata and web replay evidence captured on July 2, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-classic-teddy-bear-clicker",
+    "title": "Classic Teddy Bear Clicker",
+    "genre": "Clicker collection",
+    "difficulty": "A teddy-bear clicker with total clicks, egg counters, skins, upgrades, crafting, ranks, and achievements.",
+    "searchIntent": "Classic Teddy Bear Clicker Loopit guide, total clicks, eggs, skins, awaken, craft, ranks tips",
+    "sourceUrl": "https://share.loopit.me/game/4b30664e-0e69-4b09-9112-6d8b31786e9c",
+    "creator": "Official craftsman",
+    "creatorSlug": "official-craftsman",
+    "stats": {
+      "views": "2.7K",
+      "likes": "24",
+      "comments": "10",
+      "remixes": "1"
+    },
+    "summary": "Classic Teddy Bear Clicker is a Loopit collection clicker. Web replay tapped the bear and raised Total Clicks from 0 to 16.",
+    "quickAnswer": "Tap Classic Teddy to build Total Clicks. Our replay verified 0 to 16 clicks; side buttons include Upgrade, Skins, Chars, Awaken, Craft, Eggs, Ranks, and Achv.",
+    "basics": [
+      "The top panel shows Total Clicks and +1 per tap.",
+      "The center character is Classic Teddy with an x1 multiplier.",
+      "Repeated taps raised Total Clicks from 0 to 16 in web replay.",
+      "Egg and side-menu systems are visible but not fully unlocked in this pass."
+    ],
+    "controls": [
+      "Tap the teddy bear to increase Total Clicks.",
+      "Use Upgrade after you have enough clicks or currency.",
+      "Check side menus such as Eggs, Ranks, and Achv after building progress."
+    ],
+    "strategy": [
+      "Start by tapping until the click counter visibly changes.",
+      "Track multiplier text under the bear before spending on upgrades.",
+      "Do not judge egg progress by the icons alone; each egg counter started at 0 in replay.",
+      "A deeper replay should test Upgrade and Eggs after reaching a higher click count."
+    ],
+    "mistakes": [
+      "Tapping side buttons before confirming the main click loop works.",
+      "Assuming skins or eggs are unlocked while all visible egg counters are still 0.",
+      "Calling this complete before testing Upgrade, Eggs, and Ranks."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-classic-teddy-bear-clicker/01-total-clicks-zero.png",
+        "alt": "Classic Teddy Bear Clicker starting screen with Total Clicks zero.",
+        "caption": "The replay started at Total Clicks 0."
+      },
+      {
+        "src": "/assets/loopit-classic-teddy-bear-clicker/02-total-clicks-sixteen.png",
+        "alt": "Classic Teddy Bear Clicker after tapping showing Total Clicks sixteen.",
+        "caption": "Repeated taps raised Total Clicks to 16."
+      }
+    ],
+    "faq": [
+      [
+        "How do I progress?",
+        "Tap Classic Teddy to increase Total Clicks."
+      ],
+      [
+        "What did replay verify?",
+        "Total Clicks increased from 0 to 16."
+      ],
+      [
+        "Are eggs unlocked at the start?",
+        "The visible egg counters were 0 during this replay."
+      ]
+    ],
+    "creatorContext": [
+      "Official craftsman is the Loopit display name shown on the playable source card for Classic Teddy Bear Clicker.",
+      "This guide links the display name to a site creator profile, but does not treat it as a verified real-world identity.",
+      "Visible source-page engagement during capture: 2.7K views, 24 likes, 10 comments, 1 remix."
+    ],
+    "communityNotes": [
+      "A public Roblox BEAR Wiki discussion indexed this Loopit share link. No separate reliable gameplay walkthrough was found, so this guide is based on Loopit metadata and web replay screenshots captured on July 2, 2026."
+    ]
   }
 ]
