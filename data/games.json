@@ -77,6 +77,18 @@
     ],
     "communityNotes": [
       "This page uses web replay screenshots captured on July 2, 2026, plus fresh source metadata checked on July 3, 2026."
+    ],
+    "coverageStatus": "Campaign-ended browse flow verified; account/tab flows pending",
+    "coverageUpdated": "2026-07-03",
+    "coverageChecklist": [
+      "Source metadata refreshed successfully on July 3, 2026: 313K views, 5.0K likes, 1.7K comments, 31 remixes.",
+      "Campaign state covered: replay shows Campaign ended and Voting is now closed.",
+      "Browse case covered: public pet card and search field are visible after the campaign ended.",
+      "Navigation cases identified: Browse, Ranking, My pets, and Rules tabs are visible.",
+      "Pending case: Ranking, My pets, and Rules tab contents need app replay because My pets may depend on account state."
+    ],
+    "coverageNotes": [
+      "Because voting is closed, the guide should avoid vote-strategy claims and focus on browsing, search, and archived campaign state."
     ]
   },
   {
@@ -982,6 +994,18 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Cleaning ASMR Tools, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Multi-level route verified through Level 20; full endgame still pending",
+    "coverageUpdated": "2026-07-03",
+    "coverageChecklist": [
+      "Source metadata refreshed successfully on July 3, 2026: 1.1M views, 27.2K likes, 2.3K comments, 569 remixes.",
+      "Tool loop covered: replay verifies switching among the four cleaning tools and dragging across dirty areas.",
+      "Completion case covered: Satisfyingly Clean overlay and Next Level button are captured.",
+      "Multi-level cases covered: Level 3 wheel, Level 8 watch, Level 10 sink, Level 11 clean result, Level 16 statue, and Level 20 guitar are captured.",
+      "Pending case: any final level or endgame reward beyond Level 20 remains unverified."
+    ],
+    "coverageNotes": [
+      "This guide is currently one of the strongest coverage examples because it proves the game continues well past the first few levels."
     ]
   },
   {
@@ -1612,6 +1636,18 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Coin Spiral Descent, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Partial route verified; final Depth 70 not cleared yet",
+    "coverageUpdated": "2026-07-03",
+    "coverageChecklist": [
+      "Source metadata refreshed successfully on July 3, 2026: 1.1M views, 11.7K likes, 1.4K comments, 529 remixes.",
+      "Opening case covered: Depth 1 / 70 and Coins 0 are visible at start.",
+      "Control case covered: short left-right drags rotate the cyan spiral walls.",
+      "Progression case covered: screenshots show the pink ball, rotated walls, and gap-alignment waiting state.",
+      "Pending case: final Depth 70 reward or end screen still needs a full long-run replay."
+    ],
+    "coverageNotes": [
+      "This is a dynamic reflex game, so the next pass should record video and extract frames near failed drops, depth changes, and any reward screen."
     ]
   },
   {
@@ -2448,6 +2484,18 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Arrow Timing Wheel, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Level 1 and Level 2 failure verified; deeper clear pending",
+    "coverageUpdated": "2026-07-03",
+    "coverageChecklist": [
+      "Source metadata refreshed successfully on July 3, 2026: 749K views, 5.9K likes, 1.2K comments, 179 remixes.",
+      "Instruction case covered: tap only when the arrow hits the red section.",
+      "Timing case covered: Level 1 timing screen is captured.",
+      "Failure case covered: replay reached Level 2 and captured Game Over after a mistimed tap.",
+      "Pending case: a successful Level 2 clear and later level pattern changes still need replay."
+    ],
+    "coverageNotes": [
+      "This is a timing game, so later passes should capture a short clip around each tap to verify whether failures come from early or late taps."
     ]
   },
   {
@@ -2923,6 +2971,18 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Balloon Popper, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Score route verified to 17/20; 20/20 completion pending",
+    "coverageUpdated": "2026-07-03",
+    "coverageChecklist": [
+      "Source metadata refreshed successfully on July 3, 2026: 74 views, 2 likes, 0 comments, 0 remixes.",
+      "Start case covered: title/start flow is documented in the guide.",
+      "Mid-run case covered: replay shows score reaching 10/20.",
+      "Late-run case covered: replay shows score reaching 17/20.",
+      "Pending case: 20/20 clear, fail state, or reward screen still needs replay."
+    ],
+    "coverageNotes": [
+      "The next pass should record the last 3 balloons because the difference between 17/20 and 20/20 is the real completion proof."
     ]
   },
   {
