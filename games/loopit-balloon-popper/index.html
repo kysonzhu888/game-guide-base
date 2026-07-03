@@ -95,12 +95,12 @@
 
     <section class="guide-section coverage-pass">
       <h2>Coverage pass</h2>
-      <p><strong>Status:</strong> Score route verified to 17/20; 20/20 completion pending</p>
-      <p><strong>Last checked:</strong> 2026-07-03</p>
+      <p><strong>Status:</strong> Start flow and 0/20 active board reverified; higher-score route still pending</p>
+      <p><strong>Last checked:</strong> 2026-07-04</p>
       <ul>
-        <li>Source metadata refreshed successfully on July 3, 2026: 74 views, 2 likes, 0 comments, 0 remixes.</li><li>Start case covered: title/start flow is documented in the guide.</li><li>Mid-run case covered: replay shows score reaching 10/20.</li><li>Late-run case covered: replay shows score reaching 17/20.</li><li>Pending case: 20/20 clear, fail state, or reward screen still needs replay.</li>
+        <li>Source share page loaded successfully on July 4, 2026 in desktop Playwright; sourceUrl remained reachable.</li><li>Title card with Balloon Popper, Tap 20 balloons as fast as you can!, and Start Popping! was visible during this pass.</li><li>After starting, the live board showed Score: 0/20 with active balloon spawns.</li><li>A tap attempt on a visible balloon did not increment the counter during this desktop replay, so the scoring route still needs tighter replay timing or recording.</li><li>Pending case: reproduce the earlier 17/20 route, then verify 20/20 clear, fail state, or reward screen.</li>
       </ul>
-      <p>The next pass should record the last 3 balloons because the difference between 17/20 and 20/20 is the real completion proof.</p>
+      <p>This pass reconfirmed that the playable is live, but it did not improve the previously recorded 17/20 proof.</p>
     </section>
 
 
@@ -186,7 +186,7 @@
         <div><dt>Genre</dt><dd>Speed tap</dd></div>
         <div><dt>Platforms</dt><dd>Loopit app, Mobile app</dd></div>
         <div><dt>Difficulty</dt><dd>A fast tapping challenge where the target is 20 balloons.</dd></div>
-        <div><dt>Coverage</dt><dd>Score route verified to 17/20; 20/20 completion pending</dd></div>
+        <div><dt>Coverage</dt><dd>Start flow and 0/20 active board reverified; higher-score route still pending</dd></div>
         <div><dt>Creator</dt><dd><a href="../../creators/hannialopez1/">hannialopez1</a></dd></div>
 
         <div><dt>Likes</dt><dd>2</dd></div>

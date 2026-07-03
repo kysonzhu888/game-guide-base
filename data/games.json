@@ -78,17 +78,16 @@
     "communityNotes": [
       "This page uses web replay screenshots captured on July 2, 2026, plus fresh source metadata checked on July 3, 2026."
     ],
-    "coverageStatus": "Campaign-ended browse flow verified; account/tab flows pending",
-    "coverageUpdated": "2026-07-03",
+    "coverageStatus": "Campaign-ended browse flow rechecked on July 4; account-dependent tabs still pending",
+    "coverageUpdated": "2026-07-04",
     "coverageChecklist": [
-      "Source metadata refreshed successfully on July 3, 2026: 313K views, 5.0K likes, 1.7K comments, 31 remixes.",
-      "Campaign state covered: replay shows Campaign ended and Voting is now closed.",
-      "Browse case covered: public pet card and search field are visible after the campaign ended.",
-      "Navigation cases identified: Browse, Ranking, My pets, and Rules tabs are visible.",
-      "Pending case: Ranking, My pets, and Rules tab contents need app replay because My pets may depend on account state."
+      "Source share page loaded successfully on July 4, 2026 in desktop Playwright; sourceUrl remained reachable.",
+      "Campaign-ended banner and closed-voting state were visible again during this pass.",
+      "Browse/search shell and bottom-tab navigation were still visible on the published page.",
+      "Pending case: Ranking, My pets, and Rules tab contents still need a fuller replay because My pets appears account-dependent."
     ],
     "coverageNotes": [
-      "Because voting is closed, the guide should avoid vote-strategy claims and focus on browsing, search, and archived campaign state."
+      "This pass reconfirmed the archived browse state, not a live voting route."
     ]
   },
   {
@@ -2404,6 +2403,18 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Cut Into Slices, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Level 1 and Level 2 clears reverified on July 4",
+    "coverageUpdated": "2026-07-04",
+    "coverageChecklist": [
+      "Source share page loaded successfully on July 4, 2026 in desktop Playwright; sourceUrl remained reachable.",
+      "Loader state Baking Pizza... resolved into Level 1 with Cut into 2 slices and Cuts Left: 1.",
+      "One vertical center cut produced a MASTER CHEF result with 97% accuracy on Level 1.",
+      "NEXT LEVEL opened Level 2 with Cut into 4 slices and Cuts Left: 2.",
+      "A vertical plus horizontal cross cut produced a MASTER CHEF result with 99% accuracy on Level 2."
+    ],
+    "coverageNotes": [
+      "This pass revalidated the current web playable directly from the published share page, so the existing two-level quick answer remains grounded."
     ]
   },
   {
@@ -2661,6 +2672,18 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Catch and Double, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Title/start flow and active 0-ball round verified; first-catch proof still pending",
+    "coverageUpdated": "2026-07-04",
+    "coverageChecklist": [
+      "Source share page loaded successfully on July 4, 2026 in desktop Playwright; sourceUrl remained reachable.",
+      "Loader state CALIBRATING RING appeared before the title card.",
+      "Title card with CATCH & DOUBLE, instructions, and START was visible during this pass.",
+      "After tapping START, the live round showed CAPTURED BALLS at 0 with the purple catcher and falling white balls visible.",
+      "Pending case: a successful catch, counter increase, and any fail/scale-up route still need replay or recording."
+    ],
+    "coverageNotes": [
+      "Desktop automation reached the live round, but this pass did not reproduce the earlier 1-catch proof."
     ]
   },
   {
@@ -2972,17 +2995,17 @@
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Balloon Popper, so this guide is based on source-link replay evidence and visible Loopit metadata."
     ],
-    "coverageStatus": "Score route verified to 17/20; 20/20 completion pending",
-    "coverageUpdated": "2026-07-03",
+    "coverageStatus": "Start flow and 0/20 active board reverified; higher-score route still pending",
+    "coverageUpdated": "2026-07-04",
     "coverageChecklist": [
-      "Source metadata refreshed successfully on July 3, 2026: 74 views, 2 likes, 0 comments, 0 remixes.",
-      "Start case covered: title/start flow is documented in the guide.",
-      "Mid-run case covered: replay shows score reaching 10/20.",
-      "Late-run case covered: replay shows score reaching 17/20.",
-      "Pending case: 20/20 clear, fail state, or reward screen still needs replay."
+      "Source share page loaded successfully on July 4, 2026 in desktop Playwright; sourceUrl remained reachable.",
+      "Title card with Balloon Popper, Tap 20 balloons as fast as you can!, and Start Popping! was visible during this pass.",
+      "After starting, the live board showed Score: 0/20 with active balloon spawns.",
+      "A tap attempt on a visible balloon did not increment the counter during this desktop replay, so the scoring route still needs tighter replay timing or recording.",
+      "Pending case: reproduce the earlier 17/20 route, then verify 20/20 clear, fail state, or reward screen."
     ],
     "coverageNotes": [
-      "The next pass should record the last 3 balloons because the difference between 17/20 and 20/20 is the real completion proof."
+      "This pass reconfirmed that the playable is live, but it did not improve the previously recorded 17/20 proof."
     ]
   },
   {
@@ -4128,6 +4151,18 @@
     ],
     "communityNotes": [
       "No verified external community walkthrough is attached for Find the Hat Guy yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ],
+    "coverageStatus": "Prompt and live search board verified; successful snap still unconfirmed",
+    "coverageUpdated": "2026-07-04",
+    "coverageChecklist": [
+      "Source share page loaded successfully on July 4, 2026 in desktop Playwright; sourceUrl remained reachable.",
+      "The prompt Find the guy with the hat. Tap to snap! was visible again during this pass.",
+      "The live board rendered many search targets, including a visible orange-hat candidate on the board.",
+      "Repeated taps during this pass only surfaced the mid-board BORING / NOBODY CARES overlay, not a confirmed success modal or score change.",
+      "Pending case: capture a successful snap and any explicit clear/reset behavior."
+    ],
+    "coverageNotes": [
+      "The playable was not CDN-blocked in the share page shell; the blocker here is result confirmation, not source access."
     ]
   },
   {
