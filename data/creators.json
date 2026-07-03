@@ -70,6 +70,20 @@
     ]
   },
   {
+    "slug": "bmc",
+    "name": "BMC",
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "summary": "BMC is tracked here as a Loopit display-name creator behind replayed or source-verified web playable games on Game Guide Base.",
+    "externalIdentityStatus": "No verified external profile linked",
+    "notes": [
+      "Known on Game Guide Base for: Fan-Made Side Scroller.",
+      "Profile data comes from visible Loopit source-card metadata and replay or preview notes, not from scraped private account data.",
+      "No verified external social profile is linked yet, so unrelated X, TikTok, Instagram, or YouTube accounts are intentionally not linked.",
+      "Most visible engagement among tracked guides: Fan-Made Side Scroller with 9 likes, 1 comment, 0 remixes."
+    ]
+  },
+  {
     "slug": "booga-booga",
     "name": "Booga Booga",
     "sourcePlatform": "Loopit",
@@ -165,6 +179,34 @@
       "Profile data comes from visible Loopit source-card metadata and hands-on replay notes, not from scraped private account data.",
       "No verified external social profile is linked yet, so unrelated X, TikTok, Instagram, or YouTube accounts are intentionally not linked.",
       "Most visible engagement among tracked guides: Better Finger Clicker with 27.3k likes, 3.8k comments, 35.6k bookmarks, 1.1k remixes."
+    ]
+  },
+  {
+    "slug": "courteney-taggart",
+    "name": "Courteney Taggart",
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "summary": "Courteney Taggart is tracked here as a Loopit display-name creator behind replayed or source-verified web playable games on Game Guide Base.",
+    "externalIdentityStatus": "No verified external profile linked",
+    "notes": [
+      "Known on Game Guide Base for: Idle Memes.",
+      "Profile data comes from visible Loopit source-card metadata and replay or preview notes, not from scraped private account data.",
+      "No verified external social profile is linked yet, so unrelated X, TikTok, Instagram, or YouTube accounts are intentionally not linked.",
+      "Most visible engagement among tracked guides: Idle Memes with 13 likes, 3 comments, 3 remixes."
+    ]
+  },
+  {
+    "slug": "daniel-macintyre",
+    "name": "Daniel Macintyre",
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "summary": "Daniel Macintyre is tracked here as a Loopit display-name creator behind replayed or source-verified web playable games on Game Guide Base.",
+    "externalIdentityStatus": "No verified external profile linked",
+    "notes": [
+      "Known on Game Guide Base for: Guano Drop.",
+      "Profile data comes from visible Loopit source-card metadata and replay or preview notes, not from scraped private account data.",
+      "No verified external social profile is linked yet, so unrelated X, TikTok, Instagram, or YouTube accounts are intentionally not linked.",
+      "Most visible engagement among tracked guides: Guano Drop with 6 likes and 0 comments."
     ]
   },
   {
@@ -448,6 +490,20 @@
     ]
   },
   {
+    "slug": "loopit",
+    "name": "Loopit",
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "summary": "Loopit is tracked here as a Loopit display-name creator behind replayed or source-verified web playable games on Game Guide Base.",
+    "externalIdentityStatus": "No verified external profile linked",
+    "notes": [
+      "Known on Game Guide Base for: Paws On Loopit.",
+      "Profile data comes from visible Loopit source-card metadata and replay or preview notes, not from scraped private account data.",
+      "No verified external social profile is linked yet, so unrelated X, TikTok, Instagram, or YouTube accounts are intentionally not linked.",
+      "Most visible engagement among tracked guides: Paws On Loopit with 5.0K likes, 1.7K comments, 31 remixes."
+    ]
+  },
+  {
     "slug": "maddieb2cool",
     "name": "Maddieb2cool",
     "sourcePlatform": "Loopit",
@@ -641,6 +697,20 @@
       "Profile data comes from visible Loopit source-card metadata and hands-on replay notes, not from scraped private account data.",
       "No verified external social profile is linked yet, so unrelated X, TikTok, Instagram, or YouTube accounts are intentionally not linked.",
       "Most visible engagement among tracked guides: Get It to the Top with 19.2k likes, 3.1k comments, 19.5k bookmarks, 253 remixes."
+    ]
+  },
+  {
+    "slug": "sky2cool4u",
+    "name": "𝚂𝚔𝚢𝟸𝚌𝚘𝚘𝚕𝟺𝚞",
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "summary": "𝚂𝚔𝚢𝟸𝚌𝚘𝚘𝚕𝟺𝚞 is tracked here as a Loopit display-name creator behind replayed or source-verified web playable games on Game Guide Base.",
+    "externalIdentityStatus": "No verified external profile linked",
+    "notes": [
+      "Known on Game Guide Base for: Click 1159 Check Mark.",
+      "Profile data comes from visible Loopit source-card metadata and replay or preview notes, not from scraped private account data.",
+      "No verified external social profile is linked yet, so unrelated X, TikTok, Instagram, or YouTube accounts are intentionally not linked.",
+      "Most visible engagement among tracked guides: Click 1159 Check Mark with 13K likes, 2.2K comments, 254 remixes."
     ]
   },
   {

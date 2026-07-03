@@ -13,6 +13,7 @@
   <url><loc>https://gameguidebase.com/creators/airam-flore/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/creators/always/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/creators/alyssa-j/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/creators/bmc/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/creators/booga-booga/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/creators/bpuppy/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/creators/bro-beans/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -20,6 +21,8 @@
   <url><loc>https://gameguidebase.com/creators/chicar/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/creators/christopher/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/creators/christopher-finlay/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/creators/courteney-taggart/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/creators/daniel-macintyre/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/creators/delilah/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/creators/derrick-drewette/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/creators/eva/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -40,6 +43,7 @@
   <url><loc>https://gameguidebase.com/creators/lady-fang/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/creators/lamest-lame/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/creators/lily/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/creators/loopit/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/creators/maddieb2cool/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/creators/naked-path-music/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/creators/nolan/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -53,6 +57,7 @@
   <url><loc>https://gameguidebase.com/creators/ryker/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/creators/ryuuu/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/creators/shadow-crystal/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/creators/sky2cool4u/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/creators/sparks20156/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/creators/tally93/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/creators/the-creator/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -80,9 +85,11 @@
   <url><loc>https://gameguidebase.com/genres/hidden-object/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/hold-timing/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/idle-energy/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/genres/idle-meme/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/meter-timing/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/narrative-session/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/path-puzzle/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/genres/pet-gallery/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/phone-simulator/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/physics-bounce/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/physics-draw/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -93,6 +100,7 @@
   <url><loc>https://gameguidebase.com/genres/precision-trace/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/reaction-catch/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/reflex-maze/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/genres/side-scroller/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/speed-tap/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/stage-battler/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/stretching-game/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -109,6 +117,11 @@
   <url><loc>https://gameguidebase.com/genres/unit-sandbox/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/wheel-physics/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/genres/zombie-sandbox/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/games/loopit-paws-on-loopit/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/games/loopit-click-1159-check-mark/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/games/loopit-guano-drop/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/games/loopit-idle-memes/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://gameguidebase.com/games/loopit-fan-made-side-scroller/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/games/loopit-epstintapuse-69-levels/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/games/loopit-phuanitmatter-tap-game/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://gameguidebase.com/games/loopit-zombie-simulator/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>

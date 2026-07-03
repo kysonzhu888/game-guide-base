@@ -6,6 +6,396 @@
     ],
     "sourcePlatform": "Loopit",
     "sourcePlatformSlug": "loopit",
+    "slug": "loopit-paws-on-loopit",
+    "title": "Paws On Loopit",
+    "genre": "Pet gallery",
+    "difficulty": "A public pet-gallery playable with campaign status, pet search, browse, ranking, my pets, and rules tabs.",
+    "searchIntent": "Paws On Loopit guide, campaign ended, search pet name, browse ranking my pets rules",
+    "sourceUrl": "https://share.loopit.me/game/45561bca-07bb-4e98-9e3b-04d9e689985f",
+    "creator": "Loopit",
+    "creatorSlug": "loopit",
+    "stats": {
+      "views": "313K",
+      "likes": "5.0K",
+      "comments": "1.7K",
+      "remixes": "31"
+    },
+    "summary": "Paws On Loopit is a Loopit pet-gallery playable. Replay capture showed the campaign has ended, voting is closed, and browsing/search still displays pet cards.",
+    "quickAnswer": "Voting is closed, so use it as a browse-and-search pet gallery now. The replay verified Campaign ended, 5/5 left, search by pet name or ID, and bottom tabs for Browse, Ranking, My pets, and Rules.",
+    "basics": [
+      "The top banner says Paws On Loopit with Cats & Dogs framing.",
+      "Replay capture showed Campaign ended and Voting is now closed.",
+      "The search box asks for pet name or ID.",
+      "The Browse tab still displays public pet cards even after the campaign ended."
+    ],
+    "controls": [
+      "Use the search field to find a pet by name or ID.",
+      "Switch between Browse, Ranking, My pets, and Rules from the bottom tabs.",
+      "Use the grid/list toggle near the search box to change browsing layout when available."
+    ],
+    "strategy": [
+      "Do not expect votes to count after the campaign has ended.",
+      "Start in Browse to inspect pet cards, then use Ranking if you want leaderboard context.",
+      "Use exact pet IDs when available because names may be duplicated.",
+      "Treat My pets as account-dependent; it may require the Loopit app or login state."
+    ],
+    "mistakes": [
+      "Trying to vote after voting is closed.",
+      "Confusing campaign tickets left with active voting time.",
+      "Searching broad names when an exact pet ID would be more reliable."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-paws-on-loopit/01-campaign-ended.png",
+        "alt": "Paws On Loopit screen showing the campaign has ended and voting is closed.",
+        "caption": "The replay showed the campaign-ended state."
+      },
+      {
+        "src": "/assets/loopit-paws-on-loopit/02-browse-pet-card.png",
+        "alt": "Paws On Loopit browse screen with a public pet card and bottom navigation.",
+        "caption": "Browse still shows pet cards, search, and tabs."
+      }
+    ],
+    "faq": [
+      [
+        "Can I still vote?",
+        "Replay showed Voting is now closed, so this guide treats the game as a browse/search gallery."
+      ],
+      [
+        "How do I find a pet?",
+        "Use the search box for pet name or ID."
+      ],
+      [
+        "What tabs are available?",
+        "Browse, Ranking, My pets, and Rules were visible during capture."
+      ]
+    ],
+    "creatorContext": [
+      "Loopit is the display name shown on the source card for Paws On Loopit.",
+      "This guide treats it as a platform-posted playable, not a personal creator identity.",
+      "Visible source-page engagement during capture: 313K views, 5.0K likes, 1.7K comments, 31 remixes."
+    ],
+    "communityNotes": [
+      "This page uses web replay screenshots captured on July 2, 2026, plus fresh source metadata checked on July 3, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-click-1159-check-mark",
+    "title": "Click 1159 Check Mark",
+    "genre": "Speed tap",
+    "difficulty": "A 60-second speed-tapping challenge with a target of 1159 clicks.",
+    "searchIntent": "Click 1159 Check Mark Loopit guide, 60 seconds, target 1159, tap to start tips",
+    "sourceUrl": "https://share.loopit.me/game/805e0a36-6d9e-48f4-a59a-7f9226ce0a18",
+    "creator": "𝚂𝚔𝚢𝟸𝚌𝚘𝚘𝚕𝟺𝚞",
+    "creatorSlug": "sky2cool4u",
+    "stats": {
+      "views": "705K",
+      "likes": "13K",
+      "comments": "2.2K",
+      "remixes": "254"
+    },
+    "summary": "Click 1159 Check Mark is a Loopit speed-tap challenge. App capture showed 60.00s time remaining, Clicks 0, Target 1159, and a Tap to Start button.",
+    "quickAnswer": "Tap to start, then average about 19.4 taps per second for 60 seconds to reach 1159. The replay verified the start state and target, not a completed 1159-click clear.",
+    "basics": [
+      "The challenge starts with 60.00 seconds on the timer.",
+      "Clicks starts at 0.",
+      "The visible target is 1159 clicks.",
+      "Tap to Start begins the timed run."
+    ],
+    "controls": [
+      "Tap the center target to start.",
+      "Keep tapping as fast and consistently as possible after the timer begins.",
+      "Use the share menu to copy the source link if you want to replay from the app."
+    ],
+    "strategy": [
+      "The target requires roughly 19.4 taps per second over the full minute.",
+      "Use two thumbs on mobile if the game accepts multi-touch.",
+      "Do a short warm-up before starting because the timer begins after Tap to Start.",
+      "Stop if the counter does not move; desktop browser replay may not match phone multi-touch behavior."
+    ],
+    "mistakes": [
+      "Starting before your fingers are positioned.",
+      "Pausing early because the target looks impossible.",
+      "Claiming a clear without screenshot proof of 1159 or the win state."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-click-1159-check-mark/01-target-1159.png",
+        "alt": "Click 1159 Check Mark start screen with 60 seconds, clicks zero, and target 1159.",
+        "caption": "The timed challenge starts at 60.00s with Target 1159."
+      },
+      {
+        "src": "/assets/loopit-click-1159-check-mark/02-share-menu.png",
+        "alt": "Click 1159 Check Mark share menu with copy link option.",
+        "caption": "The app share menu was used to preserve the real source link."
+      }
+    ],
+    "faq": [
+      [
+        "How fast do I need to tap?",
+        "1159 clicks in 60 seconds is about 19.4 taps per second."
+      ],
+      [
+        "Did replay clear the target?",
+        "No. This guide verifies the start state and target, not a full clear."
+      ],
+      [
+        "What starts the timer?",
+        "The visible Tap to Start target starts the timed run."
+      ]
+    ],
+    "creatorContext": [
+      "The source card uses the stylized display name 𝚂𝚔𝚢𝟸𝚌𝚘𝚘𝚕𝟺𝚞; the site profile slug is normalized as sky2cool4u.",
+      "Visible source-page engagement during capture: 705K views, 13K likes, 2.2K comments, 254 remixes.",
+      "Profile data comes from Loopit source-card metadata and app replay screenshots."
+    ],
+    "communityNotes": [
+      "This guide is based on Android app capture from July 2, 2026 and refreshed source metadata from July 3, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-guano-drop",
+    "title": "Guano Drop",
+    "genre": "Timing tap",
+    "difficulty": "A crude timing-tap stage joke where the visible action prompt is Tap to poop.",
+    "searchIntent": "Guano Drop Loopit guide, tap to poop, level 1 stage, timing tips",
+    "sourceUrl": "https://share.loopit.me/game/34a59cad-c937-42e2-aeac-394f18b0ae7b",
+    "creator": "Daniel Macintyre",
+    "creatorSlug": "daniel-macintyre",
+    "stats": {
+      "views": "69",
+      "likes": "6",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Guano Drop is a Loopit timing-tap gag game. Replay capture reached Level 1 on a concert-stage scene with a bird and the prompt Tap to poop.",
+    "quickAnswer": "Wait for the bird position, then tap when the target moment lines up. The replay verified Level 1 and the Tap to poop prompt, but not a final hit/win state.",
+    "basics": [
+      "The replay opened on Level 1.",
+      "A bird appears above a concert-stage scene.",
+      "The central prompt says Tap to poop.",
+      "The source description says the goal is getting the guano in the mouth."
+    ],
+    "controls": [
+      "Tap when the bird and target timing look aligned.",
+      "Do not tap before the prompt appears.",
+      "Restart the run if the target moment is missed."
+    ],
+    "strategy": [
+      "Treat it as a timing gag rather than a precision platformer.",
+      "Watch the bird position first, then tap once instead of spamming blindly.",
+      "Use screenshots or video if mapping exact hit timing later.",
+      "Keep the guide wording practical because the joke is intentionally crude."
+    ],
+    "mistakes": [
+      "Spamming before the bird reaches the target zone.",
+      "Ignoring the Level 1 label and assuming later levels were checked.",
+      "Publishing a hit route without a captured hit or fail result."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-guano-drop/01-level-one-stage.png",
+        "alt": "Guano Drop Level 1 concert stage with bird and tap prompt.",
+        "caption": "The replay starts on Level 1 with the bird above the stage."
+      },
+      {
+        "src": "/assets/loopit-guano-drop/02-tap-to-poop.png",
+        "alt": "Guano Drop screen showing the Tap to poop prompt.",
+        "caption": "Tap to poop is the visible action prompt."
+      }
+    ],
+    "faq": [
+      [
+        "What do I tap?",
+        "Tap when the bird timing lines up with the target moment."
+      ],
+      [
+        "Did replay beat Level 1?",
+        "No. This pass verified the Level 1 prompt and setup, not the hit result."
+      ],
+      [
+        "Is this a serious game?",
+        "No. It is a crude timing-tap gag playable."
+      ]
+    ],
+    "creatorContext": [
+      "Daniel Macintyre is the Loopit display name shown on the source card for Guano Drop.",
+      "The source card credits music heard in the playable; this guide does not reproduce or host that audio.",
+      "Visible source-page engagement during capture: 69 views, 6 likes, 0 comments, 0 remixes."
+    ],
+    "communityNotes": [
+      "This guide is based on source metadata and web replay screenshots captured on July 3, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-idle-memes",
+    "title": "Idle Memes",
+    "genre": "Idle meme",
+    "difficulty": "A source-preview-only idle meme playable; deeper web replay was blocked by CDN verification during this pass.",
+    "searchIntent": "Idle Memes Loopit guide, daily upd, source preview, replay blocked notes",
+    "sourceUrl": "https://share.loopit.me/game/0dca62f4-7da9-4b39-9f4b-0ae3e901084b",
+    "creator": "Courteney Taggart",
+    "creatorSlug": "courteney-taggart",
+    "stats": {
+      "views": "635",
+      "likes": "13",
+      "comments": "3",
+      "remixes": "3"
+    },
+    "summary": "Idle Memes is a Loopit idle meme playable. The source card describes daily updates; this pass verified the public source metadata and preview image, while deeper web replay hit CDN verification.",
+    "quickAnswer": "Use the source link to open the playable in Loopit. This guide currently covers the public preview and metadata only; deeper hands-on replay was blocked by CDN verification on July 3, 2026.",
+    "basics": [
+      "The source description says Idle memes and mentions daily updates.",
+      "Visible source stats during capture were 635 views, 13 likes, 3 comments, and 3 remixes.",
+      "The source preview image was available even though direct web replay hit CDN verification.",
+      "A future phone replay should confirm the actual idle loop and upgrade/state changes."
+    ],
+    "controls": [
+      "Open the source game link in Loopit or a mobile browser.",
+      "If the web playable shows CDN verification, retry from the Loopit app.",
+      "Record the first resource counter and any upgrade button once the app replay is available."
+    ],
+    "strategy": [
+      "Do not assume the idle loop from the title alone.",
+      "Use the source preview only as a visual identifier.",
+      "Recheck after CDN access improves or when the Android device is available.",
+      "Treat any unverified mechanic as pending until a playable screen is captured."
+    ],
+    "mistakes": [
+      "Calling this a completed walkthrough without replaying the idle loop.",
+      "Using the title to invent upgrade mechanics.",
+      "Ignoring the CDN verification blocker."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-idle-memes/01-source-preview.png",
+        "alt": "Idle Memes Loopit source preview image.",
+        "caption": "Source preview image; deeper web replay was blocked by CDN verification during this pass."
+      }
+    ],
+    "faq": [
+      [
+        "Was Idle Memes fully replayed?",
+        "No. This pass verified the public source page, metadata, and source preview only."
+      ],
+      [
+        "Why is the guide lighter?",
+        "The web playable hit CDN verification, so deeper mechanics are marked pending."
+      ],
+      [
+        "Where should I play it?",
+        "Use the source link in Loopit or retry the web playable from a normal mobile browser."
+      ]
+    ],
+    "creatorContext": [
+      "Courteney Taggart is the Loopit display name shown on the source card for Idle Memes.",
+      "Visible source-page engagement during capture: 635 views, 13 likes, 3 comments, 3 remixes.",
+      "No verified external creator profile is linked from this guide."
+    ],
+    "communityNotes": [
+      "Coverage status: source preview only. This is intentionally labeled so readers do not mistake it for a completed walkthrough."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-fan-made-side-scroller",
+    "title": "Fan-Made Side Scroller",
+    "genre": "Side-scroller",
+    "difficulty": "A source-preview-only fan side-scroller; deeper web replay was blocked by CDN verification during this pass.",
+    "searchIntent": "Fan-Made Side Scroller Loopit guide, platformer, source preview, replay blocked notes",
+    "sourceUrl": "https://share.loopit.me/game/aa79e619-ee18-4d81-9d10-85a28bc7a112",
+    "creator": "BMC",
+    "creatorSlug": "bmc",
+    "stats": {
+      "views": "428",
+      "likes": "9",
+      "comments": "1",
+      "remixes": "0"
+    },
+    "summary": "Fan-Made Side Scroller is a Loopit platformer-style playable. The source card describes a fan-made side-scroller; this pass verified metadata and preview image, while deeper web replay hit CDN verification.",
+    "quickAnswer": "Open the source game link to try the side-scroller. This page currently documents the source preview only; controls, levels, and fail states still need app replay confirmation.",
+    "basics": [
+      "The source description calls it a fan-made side-scroller platformer.",
+      "Visible source stats during capture were 428 views, 9 likes, 1 comment, and 0 remixes.",
+      "The source preview image identifies the game visually.",
+      "Direct web replay hit CDN verification on July 3, 2026, so level route details are pending."
+    ],
+    "controls": [
+      "Try the source link in Loopit for the most reliable play path.",
+      "For a future replay, test left/right movement, jump, enemy collision, and level reset.",
+      "Capture Game Over or next-level state before upgrading this from preview notes to a full walkthrough."
+    ],
+    "strategy": [
+      "Start by confirming movement and jump controls.",
+      "Do not assume standard platformer physics until the replay confirms them.",
+      "Use short screen recordings because side-scrollers can hide hazards between screenshots.",
+      "Avoid treating fan-source branding as official affiliation."
+    ],
+    "mistakes": [
+      "Presenting the source preview as a completed level clear.",
+      "Assuming all side-scrollers use the same keyboard or touch controls.",
+      "Forgetting to document the first fail state."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-fan-made-side-scroller/01-source-preview.png",
+        "alt": "Fan-Made Side Scroller Loopit source preview image.",
+        "caption": "Source preview image; full side-scroller replay remains pending."
+      }
+    ],
+    "faq": [
+      [
+        "Was the first level cleared?",
+        "No. This pass is source-preview coverage because direct web replay was blocked."
+      ],
+      [
+        "What should a future replay test?",
+        "Movement, jump, enemies, reset, first fail state, and next-level state."
+      ],
+      [
+        "Is this official?",
+        "No. The source card describes it as fan-made, so this guide treats it as an unofficial fan playable."
+      ]
+    ],
+    "creatorContext": [
+      "BMC is the Loopit display name shown on the source card for Fan-Made Side Scroller.",
+      "Visible source-page engagement during capture: 428 views, 9 likes, 1 comment, 0 remixes.",
+      "No verified external creator profile is linked from this guide."
+    ],
+    "communityNotes": [
+      "Coverage status: source preview only. The page is kept conservative because direct web replay hit CDN verification during this pass."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
     "slug": "loopit-epstintapuse-69-levels",
     "title": "Epstintapuse 69 Levels",
     "genre": "Survival quest",
