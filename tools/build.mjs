@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
+const assetVersion = "20260702-access-flow-1";
 
 const config = readJson("site.config.json");
 const games = readJson(path.join("data", "games.json"));
@@ -24,8 +25,10 @@ const site = {
   adsenseSlots: config.adsenseSlots || {},
   platformUrls: config.platformUrls || {},
   searchConsoleVerification: (config.searchConsoleVerification || "").trim(),
+  paywall: normalizePaywall(config.paywall || {}),
 };
 
+const freeGuideSlugs = new Set(games.slice(0, site.paywall.freeGuideLimit).map((game) => game.slug));
 const genres = groupBy(games, (game) => game.genre);
 const platforms = platformGroups(games);
 const creators = creatorGroups(games, creatorOverrides);
@@ -41,6 +44,8 @@ generateUtilityPages();
 generateSitemap();
 generateRobots();
 generateAdsTxt();
+generate404();
+generatePremiumContentModule();
 
 console.log(`Generated ${games.length} game guides, ${genres.size} genre pages, ${platforms.length} platform pages, and ${creators.length} creator pages for ${site.name}.`);
 
@@ -56,6 +61,7 @@ function cleanGenerated() {
 function generateHomePage() {
   const featured = games.slice(0, 6);
   const popular = games.slice(0, 6);
+  const lockedCount = Math.max(0, games.length - site.paywall.freeGuideLimit);
 
   writePage([], layout({
     title: `${site.name}: Fast Game Guides, Rules, Tips, and FAQ`,
@@ -69,7 +75,12 @@ function generateHomePage() {
           <div class="hero-copy">
             <p class="kicker">Rules, routes, strategy, answers</p>
             <h1>Playable game walkthroughs, passcodes, and routes.</h1>
-            <p class="hero-lede">We open web mini-games from Loopit, Sekai, Gizmo, and similar sites, play the route, capture the key screens, and write the passcodes, app notes, and practical tips players actually need.</p>
+            <p class="hero-lede">We open web mini-games from Loopit and other playable sites, play the route, capture the key screens, and write the passcodes, app notes, and practical tips players actually need.</p>
+            ${site.paywall.enabled ? `<div class="membership-strip">
+              <strong>${site.paywall.freeGuideLimit} free guides</strong>
+              <span>${lockedCount} premium walkthroughs unlock with ${escapeHtml(site.paywall.productName)}.</span>
+              <a href="#all-guides">Browse library</a>
+            </div>` : ""}
             <form class="search-panel" role="search" action="/" onsubmit="return false">
               <label for="guide-search">Find a game guide</label>
               <div class="search-row">
@@ -79,7 +90,7 @@ function generateHomePage() {
             </form>
           </div>
           <figure class="hero-media">
-            <img src="${media.hero.url.replace(/^\//, "")}" alt="${escapeHtml(media.hero.alt)}">
+            <img src="/${media.hero.url.replace(/^\//, "")}" alt="${escapeHtml(media.hero.alt)}">
             <figcaption>Original visual asset created for Game Guide Base.</figcaption>
           </figure>
         </section>
@@ -92,7 +103,7 @@ function generateHomePage() {
           <a class="text-link" href="#all-guides">View guide library</a>
         </section>
         <section class="guide-grid" data-guide-list>
-          ${popular.map((game) => guideCard(game, "")).join("")}
+          ${popular.map((game) => guideCard(game, "/")).join("")}
         </section>
 
         <section class="section-head">
@@ -100,11 +111,11 @@ function generateHomePage() {
             <p class="kicker">Browse by platform</p>
             <h2>Source sites</h2>
           </div>
-          <a class="text-link" href="platforms/">View platforms</a>
+          <a class="text-link" href="/platforms/">View platforms</a>
         </section>
         <section class="quick-nav" aria-label="Source sites">
           ${platforms.map((platform) => `
-            <a class="genre-chip" href="platforms/${platform.slug}/">
+            <a class="genre-chip" href="/platforms/${platform.slug}/">
               <span>${escapeHtml(platform.title)}</span>
               <strong>${platform.rows.length}</strong>
             </a>
@@ -119,7 +130,7 @@ function generateHomePage() {
         </section>
         <section class="quick-nav" aria-label="Guide categories">
           ${Array.from(genres.entries()).map(([genre, rows]) => `
-            <a class="genre-chip" href="genres/${slugify(genre)}/">
+            <a class="genre-chip" href="/genres/${slugify(genre)}/">
               <span>${escapeHtml(genre)}</span>
               <strong>${rows.length}</strong>
             </a>
@@ -147,7 +158,7 @@ function generateHomePage() {
           </div>
         </section>
         <section class="guide-grid all-guides" data-guide-list>
-          ${featured.concat(games.filter((game) => !featured.includes(game))).map((game) => guideCard(game, "")).join("")}
+          ${featured.concat(games.filter((game) => !featured.includes(game))).map((game) => guideCard(game, "/")).join("")}
         </section>
       </main>
     `,
@@ -156,6 +167,7 @@ function generateHomePage() {
 
 function generateGamePages() {
   for (const game of games) {
+    const access = guideAccess(game);
     const related = games
       .filter((candidate) => candidate.slug !== game.slug)
       .filter((candidate) => candidate.genre === game.genre || candidate.platforms.some((platform) => game.platforms.includes(platform)))
@@ -166,13 +178,13 @@ function generateGamePages() {
       description: gameDescription(game),
       path: `/games/${game.slug}/`,
       depth: 2,
-      schema: [gameSchema(game), faqSchema(game)],
+      schema: access.isPremium ? [gameSchema(game)] : [gameSchema(game), faqSchema(game)],
       body: `
-        <main class="article-page">
-          ${breadcrumb("Games", "../../")}
+        <main class="article-page${access.isPremium ? " paywall-locked" : ""}" ${access.isPremium ? 'data-premium-page="true"' : ""}>
+          ${breadcrumb("Games", "/")}
           <section class="guide-hero">
             <div>
-              <p class="kicker">${escapeHtml(game.genre)} guide</p>
+              <p class="kicker">${escapeHtml(game.genre)} guide · ${access.isPremium ? "Premium" : "Free"}</p>
               <h1>${escapeHtml(game.title)} guide</h1>
               <p>${escapeHtml(game.summary)}</p>
               ${game.sourceUrl ? `<a class="play-link" href="${escapeHtml(game.sourceUrl)}" target="_blank" rel="noopener">Play source game</a>` : ""}
@@ -184,27 +196,16 @@ function generateGamePages() {
             </aside>
           </section>
 
+          ${access.isPremium ? paywallPanel(game) : ""}
+
           <section class="article-grid">
             <article class="article-main">
-              ${guideSection("How to play", game.basics)}
-              ${guideSection("Controls", game.controls)}
-              ${guideSection("Strategy tips", game.strategy)}
-              ${guideSection("Common mistakes", game.mistakes)}
-              ${creatorContextSection(game)}
-              ${screenshotGallery(game)}
-              <section class="faq-block">
-                <h2>${escapeHtml(game.title)} FAQ</h2>
-                ${game.faq.map(([question, answer]) => `
-                  <details>
-                    <summary>${escapeHtml(question)}</summary>
-                    <p>${escapeHtml(answer)}</p>
-                  </details>
-                `).join("")}
-              </section>
-              ${commentSection(game)}
+              ${access.isPremium ? freePreviewSection(game) : ""}
+              ${access.isPremium ? premiumContentPlaceholder(game) : `<div class="premium-content" data-premium-content>${premiumContentHtml(game)}</div>`}
             </article>
             <aside class="article-aside">
               ${factsPanel(game)}
+              ${access.isPremium ? memberStatusPanel() : ""}
               ${adBox("articleSidebar", "sidebar")}
             </aside>
           </section>
@@ -215,9 +216,9 @@ function generateGamePages() {
               <h2>Related guides</h2>
             </div>
           </section>
-          ${relatedLinkList(related, "../../")}
+          ${relatedLinkList(related, "/")}
           <section class="guide-grid related-guides">
-            ${related.map((item) => guideCard(item, "../../")).join("")}
+            ${related.map((item) => guideCard(item, "/")).join("")}
           </section>` : ""}
         </main>
       `,
@@ -235,7 +236,7 @@ function generateGenrePages() {
       schema: [itemListSchema(rows, `${genre} game guides`)],
       body: `
         <main class="article-page">
-          ${breadcrumb("Genres", "../../")}
+          ${breadcrumb("Genres", "/")}
           <section class="guide-hero compact-hero">
             <div>
               <p class="kicker">Genre collection</p>
@@ -244,7 +245,7 @@ function generateGenrePages() {
             </div>
           </section>
           <section class="guide-grid">
-            ${rows.map((game) => guideCard(game, "../../")).join("")}
+            ${rows.map((game) => guideCard(game, "/")).join("")}
           </section>
         </main>
       `,
@@ -254,24 +255,24 @@ function generateGenrePages() {
 
 function generatePlatformPages() {
   writePage(["platforms"], layout({
-    title: `Game Guide Platforms: Loopit, Sekai, Gizmo, and Web Playables`,
-    description: `Browse walkthroughs by source site, including Loopit, Sekai, Gizmo, and similar web playable game platforms.`,
+    title: `Game Guide Platforms: Loopit and Web Playables`,
+    description: `Browse walkthroughs by source site, including Loopit and similar web playable game platforms.`,
     path: "/platforms/",
     depth: 1,
     schema: [itemListSchema(games, "Game guides by platform")],
     body: `
       <main class="article-page">
-        ${simpleBreadcrumb("Platforms", "../")}
+        ${simpleBreadcrumb("Platforms", "/")}
         <section class="guide-hero compact-hero">
           <div>
             <p class="kicker">Source sites</p>
             <h1>Game guide platforms</h1>
-            <p>Walkthroughs grouped by the web playable site where each game was found. This keeps Loopit-specific notes inside Loopit guides while leaving room for Sekai, Gizmo, and other sites.</p>
+            <p>Walkthroughs grouped by the web playable site where each game was found. This keeps Loopit-specific notes inside Loopit guides while leaving room for other playable platforms.</p>
           </div>
         </section>
         <section class="quick-nav" aria-label="Source sites">
           ${platforms.map((platform) => `
-            <a class="genre-chip" href="${platform.slug}/">
+            <a class="genre-chip" href="/platforms/${platform.slug}/">
               <span>${escapeHtml(platform.title)}</span>
               <strong>${platform.rows.length}</strong>
             </a>
@@ -290,7 +291,7 @@ function generatePlatformPages() {
       schema: [itemListSchema(platform.rows, `${platform.title} game walkthroughs`)],
       body: `
         <main class="article-page">
-          ${breadcrumb("Platforms", "../../")}
+          ${breadcrumb("Platforms", "/")}
           <section class="guide-hero compact-hero">
             <div>
               <p class="kicker">Platform collection</p>
@@ -300,7 +301,7 @@ function generatePlatformPages() {
             </div>
           </section>
           <section class="guide-grid">
-            ${platform.rows.map((game) => guideCard(game, "../../")).join("")}
+            ${platform.rows.map((game) => guideCard(game, "/")).join("")}
           </section>
         </main>
       `,
@@ -317,7 +318,7 @@ function generateCreatorPages() {
     schema: [itemListSchema(games, "Game guides by creator")],
     body: `
       <main class="article-page">
-        ${simpleBreadcrumb("Creators", "../")}
+        ${simpleBreadcrumb("Creators", "/")}
         <section class="guide-hero compact-hero">
           <div>
             <p class="kicker">Creator index</p>
@@ -326,7 +327,7 @@ function generateCreatorPages() {
           </div>
         </section>
         <section class="creator-grid">
-          ${creators.map((creator) => creatorCard(creator, "../")).join("")}
+          ${creators.map((creator) => creatorCard(creator, "/")).join("")}
         </section>
       </main>
     `,
@@ -341,7 +342,7 @@ function generateCreatorPages() {
       schema: [itemListSchema(creator.games, `${creator.name} game guides`)],
       body: `
         <main class="article-page">
-          ${breadcrumb("Creators", "../../")}
+          ${breadcrumb("Creators", "/")}
           <section class="guide-hero compact-hero">
             <div>
               <p class="kicker">Creator profile</p>
@@ -374,7 +375,7 @@ function generateCreatorPages() {
             </div>
           </section>
           <section class="guide-grid">
-            ${creator.games.map((game) => guideCard(game, "../../")).join("")}
+            ${creator.games.map((game) => guideCard(game, "/")).join("")}
           </section>
         </main>
       `,
@@ -383,6 +384,36 @@ function generateCreatorPages() {
 }
 
 function generateUtilityPages() {
+  writePage(["access"], layout({
+    title: `Activate access | ${site.name}`,
+    description: `Activate ${site.name} lifetime access with your Lemon Squeezy license key.`,
+    path: "/access/",
+    depth: 1,
+    body: `
+      <main class="article-page narrow-page" data-access-page>
+        ${simpleBreadcrumb("Activate access", "/")}
+        <section class="access-page-panel">
+          <p class="kicker">Payment complete</p>
+          <h1>Activate your guide access</h1>
+          <p>Lemon Squeezy shows your access key on the paid order page and sends it again in the receipt email. Paste that key here to unlock the full walkthrough library on this browser.</p>
+          <form class="access-form" data-access-form>
+            <label for="access-license-key">License key</label>
+            <div>
+              <input id="access-license-key" name="licenseCode" type="text" inputmode="text" autocomplete="off" placeholder="Paste license key">
+              <button type="submit">Activate access</button>
+            </div>
+            <p class="license-status" data-access-status role="status"></p>
+          </form>
+          <div class="access-help">
+            <p>Already activated on this browser? Continue to the guide page.</p>
+            <a href="${site.url}/games/loopit-just-like-the-ads/" data-access-next-link>Continue to guides</a>
+          </div>
+          <p class="key-recovery">Lost the key? <a href="${escapeHtml(site.paywall.myOrdersUrl)}" target="_blank" rel="noopener">Open Lemon Squeezy My Orders</a> with your checkout email.</p>
+        </section>
+      </main>
+    `,
+  }));
+
   writePage(["about"], layout({
     title: `About ${site.name}`,
     description: `${site.name} publishes fast, structured walkthroughs for web playable games across multiple source sites.`,
@@ -390,11 +421,11 @@ function generateUtilityPages() {
     depth: 1,
     body: `
       <main class="article-page narrow-page">
-        ${simpleBreadcrumb("About", "../")}
+        ${simpleBreadcrumb("About", "/")}
         <section class="text-page">
           <h1>About ${site.name}</h1>
           <p>${site.name} is a lightweight guide library for players who want the route, passcode, next move, or beginner strategy without digging through noisy pages.</p>
-          <p>We cover web playable games from Loopit, Sekai, Gizmo, and similar platforms. Each source platform stays as article metadata, so the site can grow without being tied to one brand.</p>
+          <p>We cover web playable games from Loopit and similar platforms. Each source platform stays as article metadata, so the site can grow without being tied to one brand.</p>
           <p>We focus on original summaries, structured FAQ answers, and practical play advice. Screenshots are used as limited walkthrough evidence with source links on each guide page.</p>
         </section>
       </main>
@@ -408,7 +439,7 @@ function generateUtilityPages() {
     depth: 1,
     body: `
       <main class="article-page narrow-page">
-        ${simpleBreadcrumb("Contact", "../")}
+        ${simpleBreadcrumb("Contact", "/")}
         <section class="text-page">
           <h1>Contact</h1>
           <p>For corrections, guide requests, or site questions, email <a href="mailto:${site.contactEmail}">${site.contactEmail}</a>.</p>
@@ -425,7 +456,7 @@ function generateUtilityPages() {
     depth: 1,
     body: `
       <main class="article-page narrow-page">
-        ${simpleBreadcrumb("Privacy", "../")}
+        ${simpleBreadcrumb("Privacy", "/")}
         <section class="text-page">
           <h1>Privacy Policy</h1>
           <p>${site.name} is a static content site. We may use analytics and advertising services to understand traffic and support the site.</p>
@@ -459,7 +490,8 @@ function layout({ title, description, body, depth, path: pagePath, schema = [] }
   ${site.searchConsoleVerification ? `<meta name="google-site-verification" content="${escapeHtml(site.searchConsoleVerification)}">` : ""}
   ${site.googleAnalyticsId ? analyticsTag(site.googleAnalyticsId) : ""}
   ${site.adsenseClientId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${escapeHtml(site.adsenseClientId)}" crossorigin="anonymous"></script>` : ""}
-  <link rel="stylesheet" href="${prefix}styles.css">
+  <link rel="stylesheet" href="${prefix}styles.css?v=${assetVersion}">
+  ${site.paywall.enabled ? `<script>window.GGB_PAYWALL=${JSON.stringify(publicPaywallConfig(site.paywall))};</script>` : ""}
   ${schemaTags}
 </head>
 <body>
@@ -486,7 +518,7 @@ function layout({ title, description, body, depth, path: pagePath, schema = [] }
       <a href="${prefix}sitemap.xml">Sitemap</a>
     </nav>
   </footer>
-  <script src="${prefix}script.js" defer></script>
+  <script src="${prefix}script.js?v=${assetVersion}" defer></script>
 </body>
 </html>`;
 }
@@ -539,11 +571,13 @@ function creatorContextSection(game) {
 }
 
 function guideCard(game, prefix) {
+  const access = guideAccess(game);
   return `
-    <article class="guide-card" data-guide-card data-title="${escapeHtml(game.title.toLowerCase())}" data-genre="${escapeHtml(game.genre.toLowerCase())}" data-platform="${escapeHtml(String(game.sourcePlatform || "").toLowerCase())}">
+    <article class="guide-card${access.isPremium ? " guide-card--premium" : ""}" data-guide-card data-title="${escapeHtml(game.title.toLowerCase())}" data-genre="${escapeHtml(game.genre.toLowerCase())}" data-platform="${escapeHtml(String(game.sourcePlatform || "").toLowerCase())}">
       <a class="card-main-link" href="${prefix}games/${game.slug}/" aria-label="${escapeHtml(game.title)} guide">
         ${gameVisual(game, "card-art", prefix)}
         <span class="card-genre">${escapeHtml(game.genre)}</span>
+        <span class="access-badge ${access.isPremium ? "access-badge--premium" : "access-badge--free"}">${access.isPremium ? "Premium" : "Free"}</span>
         <h3>${escapeHtml(game.title)}</h3>
         <p>${escapeHtml(game.quickAnswer)}</p>
       </a>
@@ -556,6 +590,130 @@ function guideCard(game, prefix) {
   `;
 }
 
+function guideAccess(game) {
+  return {
+    isPremium: Boolean(site.paywall.enabled && !freeGuideSlugs.has(game.slug)),
+  };
+}
+
+function freePreviewSection(game) {
+  const previewItems = Array.isArray(game.basics) ? game.basics.slice(0, 2) : [];
+  if (!previewItems.length) return "";
+  return `
+    <section class="guide-section free-preview">
+      <p class="kicker">Free preview</p>
+      <h2>Start here</h2>
+      <ul>
+        ${previewItems.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+      </ul>
+    </section>
+  `;
+}
+
+function paywallPanel(game) {
+  const accessUrl = `${site.url}/access/?next=${encodeURIComponent(`/games/${game.slug}/`)}`;
+  const paymentAction = site.paywall.paymentUrl
+    ? `<a class="paywall-button" href="${escapeHtml(site.paywall.paymentUrl)}" target="_blank" rel="noopener">Pay once, read all guides</a>`
+    : `<button class="paywall-button paywall-button--disabled" type="button" disabled>Payment link coming soon</button>`;
+  const myOrdersLink = site.paywall.myOrdersUrl
+    ? `<p class="key-recovery">Lost the key? <a href="${escapeHtml(site.paywall.myOrdersUrl)}" target="_blank" rel="noopener">Open Lemon Squeezy My Orders</a> with your checkout email.</p>`
+    : "";
+  return `
+    <section class="paywall-panel" data-paywall-panel data-guide-slug="${escapeHtml(game.slug)}">
+      <div class="paywall-copy">
+        <p class="kicker">Premium guide</p>
+        <h2>Get the full walkthrough library</h2>
+        <p>Read every premium guide, screenshot walkthrough, FAQ answer, and future update on Game Guide Base.</p>
+        <ul class="paywall-benefits">
+          <li>All premium walkthroughs</li>
+          <li>Screenshot routes and mistake notes</li>
+          <li>One-time payment, lifetime access</li>
+        </ul>
+      </div>
+      <div class="paywall-actions">
+        <div class="price-card">
+          <span>Lifetime access</span>
+          <strong>${escapeHtml(site.paywall.priceLabel)}</strong>
+        </div>
+        ${paymentAction}
+        <p class="checkout-note">Use an email you can access. Lemon shows your access key after payment and also sends it by receipt email.</p>
+        <ul class="checkout-reminders" aria-label="Access reminders">
+          <li>If you are not returned automatically, copy the key and use Activate access.</li>
+          <li>New device: paste the receipt key under Already purchased.</li>
+        </ul>
+        <a class="secondary-access-link" href="${escapeHtml(accessUrl)}">Activate access after purchase</a>
+        <details class="license-form-wrap">
+          <summary>Already purchased?</summary>
+          <form class="license-form" data-license-form>
+            <label for="license-code-${escapeHtml(game.slug)}">Paste your license key from the receipt</label>
+            <div>
+              <input id="license-code-${escapeHtml(game.slug)}" name="licenseCode" type="text" inputmode="text" autocomplete="off" placeholder="License key">
+              <button type="submit">Load guides</button>
+            </div>
+            <p class="license-status" data-license-status role="status"></p>
+          </form>
+          ${myOrdersLink}
+        </details>
+      </div>
+    </section>
+  `;
+}
+
+function premiumContentPlaceholder(game) {
+  const lockedItems = [
+    "Complete route and controls",
+    "Strategy tips",
+    "Common mistakes",
+    "Walkthrough screenshots",
+    `${game.title} FAQ`,
+  ];
+  return `
+    <div class="premium-content premium-content-placeholder" data-premium-content data-guide-slug="${escapeHtml(game.slug)}">
+      <section class="locked-preview">
+        <div>
+          <p class="kicker">Locked content</p>
+          <h2>What opens after purchase</h2>
+          <p>The full guide appears here after purchase confirmation.</p>
+        </div>
+        <ul>
+          ${lockedItems.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+        </ul>
+      </section>
+    </div>
+  `;
+}
+
+function premiumContentHtml(game) {
+  return `
+    ${guideSection("How to play", game.basics)}
+    ${guideSection("Controls", game.controls)}
+    ${guideSection("Strategy tips", game.strategy)}
+    ${guideSection("Common mistakes", game.mistakes)}
+    ${creatorContextSection(game)}
+    ${screenshotGallery(game)}
+    <section class="faq-block">
+      <h2>${escapeHtml(game.title)} FAQ</h2>
+      ${game.faq.map(([question, answer]) => `
+        <details>
+          <summary>${escapeHtml(question)}</summary>
+          <p>${escapeHtml(answer)}</p>
+        </details>
+      `).join("")}
+    </section>
+    ${commentSection(game)}
+  `;
+}
+
+function memberStatusPanel() {
+  return `
+    <section class="member-status-panel" data-member-status-panel>
+      <h2>Paid access</h2>
+      <p data-member-status-copy>Use the payment card above to get the full walkthrough library. Returning buyers can use the receipt key under Already purchased.</p>
+      <button type="button" data-lock-access hidden>Lock preview</button>
+    </section>
+  `;
+}
+
 function screenshotGallery(game) {
   if (!Array.isArray(game.screenshots) || !game.screenshots.length) return "";
   return `
@@ -564,7 +722,7 @@ function screenshotGallery(game) {
       <div class="screenshot-grid">
         ${game.screenshots.map((shot) => `
           <figure>
-            <img src="${imageUrl(shot.src, "../../")}" alt="${escapeHtml(shot.alt)}" loading="lazy">
+            <img src="${imageUrl(shot.src, "/")}" alt="${escapeHtml(shot.alt)}" loading="lazy">
             <figcaption>${escapeHtml(shot.caption)}</figcaption>
           </figure>
         `).join("")}
@@ -613,8 +771,8 @@ function gameVisual(game, className, prefix = "") {
 
 function imageSrcForClass(src, className, prefix) {
   if (className === "card-art") return imageUrl(src, prefix);
-  if (className === "game-hero-art") return imageUrl(src, "../../");
-  return imageUrl(src, "");
+  if (className === "game-hero-art") return imageUrl(src, "/");
+  return imageUrl(src, "/");
 }
 
 function imageUrl(src, prefix = "") {
@@ -783,11 +941,11 @@ function factsPanel(game) {
     <section class="facts-panel">
       <h2>Guide facts</h2>
       <dl>
-        ${game.sourcePlatform ? `<div><dt>Source site</dt><dd>${platformLinks(game, "../../")}</dd></div>` : ""}
+        ${game.sourcePlatform ? `<div><dt>Source site</dt><dd>${platformLinks(game, "/")}</dd></div>` : ""}
         <div><dt>Genre</dt><dd>${escapeHtml(game.genre)}</dd></div>
         <div><dt>Platforms</dt><dd>${game.platforms.map(escapeHtml).join(", ")}</dd></div>
         <div><dt>Difficulty</dt><dd>${escapeHtml(game.difficulty)}</dd></div>
-        ${game.creator ? `<div><dt>Creator</dt><dd>${creatorLink(game, "../../")}</dd></div>` : ""}
+        ${game.creator ? `<div><dt>Creator</dt><dd>${creatorLink(game, "/")}</dd></div>` : ""}
         ${game.stats?.views ? `<div><dt>Views</dt><dd>${escapeHtml(game.stats.views)}</dd></div>` : ""}
         ${game.stats?.likes ? `<div><dt>Likes</dt><dd>${escapeHtml(game.stats.likes)}</dd></div>` : ""}
         ${game.stats?.comments ? `<div><dt>Comments</dt><dd>${escapeHtml(game.stats.comments)}</dd></div>` : ""}
@@ -922,6 +1080,7 @@ function stripTrailingWhitespace(value) {
 function generateSitemap() {
   const urls = [
     "/",
+    "/access/",
     "/about/",
     "/contact/",
     "/privacy/",
@@ -950,6 +1109,77 @@ Sitemap: ${site.url}/sitemap.xml
 function generateAdsTxt() {
   const publisher = site.adsensePublisherId.replace(/^pub-/, "");
   fs.writeFileSync(path.join(root, "ads.txt"), publisher ? `google.com, pub-${publisher}, DIRECT, f08c47fec0942fa0\n` : "");
+}
+
+// Real 404 page. Cloudflare Pages serves a root 404.html with a 404 status for
+// unmatched routes, which (together with absolute internal links) stops the
+// soft-404 crawl explosion that was hammering nested nonexistent paths.
+function generate404() {
+  const html = layout({
+    title: `Page not found — ${site.name}`,
+    description: "The page you were looking for does not exist or has moved.",
+    path: "/404",
+    depth: 0,
+    body: `
+      <main class="article-page narrow-page">
+        <section class="text-page">
+          <p class="kicker">404</p>
+          <h1>That page slipped off the board.</h1>
+          <p>The guide or page you were looking for does not exist or has moved.</p>
+          <p><a class="read-guide" href="/#all-guides">Browse all game guides</a></p>
+        </section>
+      </main>
+    `,
+  });
+  fs.writeFileSync(path.join(root, "404.html"), stripTrailingWhitespace(html));
+}
+
+function generatePremiumContentModule() {
+  const premiumEntries = games
+    .filter((game) => guideAccess(game).isPremium)
+    .map((game) => [game.slug, stripTrailingWhitespace(premiumContentHtml(game))]);
+  const outputDir = path.join(root, "functions", "_generated");
+  fs.mkdirSync(outputDir, { recursive: true });
+  fs.writeFileSync(
+    path.join(outputDir, "premium-content.js"),
+    `export const premiumContentBySlug = ${JSON.stringify(Object.fromEntries(premiumEntries), null, 2)};\n`,
+  );
+}
+
+function normalizePaywall(paywallConfig) {
+  const freeGuideLimit = Number.isFinite(Number(paywallConfig.freeGuideLimit))
+    ? Math.max(0, Math.floor(Number(paywallConfig.freeGuideLimit)))
+    : 10;
+  return {
+    enabled: paywallConfig.enabled !== false,
+    freeGuideLimit,
+    productName: String(paywallConfig.productName || "Game Guide Base Lifetime").trim(),
+    priceLabel: String(paywallConfig.priceLabel || "Lifetime access").trim(),
+    paymentUrl: String(paywallConfig.paymentUrl || "").trim(),
+    redirectUrl: String(paywallConfig.redirectUrl || `${normalizeSiteUrl(config.siteUrl)}/access/?license_key=[license_key]&order_id=[order_id]&email=[email]`).trim(),
+    myOrdersUrl: String(paywallConfig.myOrdersUrl || "https://app.lemonsqueezy.com/my-orders").trim(),
+    licenseProductId: String(paywallConfig.licenseProductId || "").trim(),
+    supportEmail: String(paywallConfig.supportEmail || config.contactEmail || "").trim(),
+    accessCodeHashes: Array.isArray(paywallConfig.accessCodeHashes)
+      ? paywallConfig.accessCodeHashes.map((value) => String(value).trim().toLowerCase()).filter(Boolean)
+      : [],
+  };
+}
+
+function publicPaywallConfig(paywallConfig) {
+  return {
+    enabled: paywallConfig.enabled,
+    freeGuideLimit: paywallConfig.freeGuideLimit,
+    productName: paywallConfig.productName,
+    priceLabel: paywallConfig.priceLabel,
+    paymentUrl: paywallConfig.paymentUrl,
+    redirectUrl: paywallConfig.redirectUrl,
+    myOrdersUrl: paywallConfig.myOrdersUrl,
+    licenseProductId: paywallConfig.licenseProductId,
+    supportEmail: paywallConfig.supportEmail,
+    accessCodeHashes: paywallConfig.accessCodeHashes,
+    storageKey: "ggb_lifetime_access",
+  };
 }
 
 function gameSchema(game) {
@@ -1022,9 +1252,11 @@ function analyticsTag(id) {
   </script>`;
 }
 
+// Absolute root-relative links: every internal href/src is "/..." so a
+// crawler that lands on a soft-404 deep path never compounds nested URLs.
+// (depth is kept for call-site compatibility but no longer changes output.)
 function depthPrefix(depth) {
-  if (depth === 0) return "";
-  return "../".repeat(depth);
+  return "/";
 }
 
 function normalizeSiteUrl(value) {
