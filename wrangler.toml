@@ -2,6 +2,10 @@ name = "game-guide-base"
 pages_build_output_dir = ".deploy"
 compatibility_date = "2026-07-01"
 
+[vars]
+COMMENT_SITE_NAME = "Game Guide Base"
+COMMENT_PAGE_PATH_PREFIX = "/games/"
+
 [[d1_databases]]
 binding = "COMMENTS_DB"
 database_name = "game-guide-base-comments"
