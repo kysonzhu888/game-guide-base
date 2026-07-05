@@ -3,7 +3,7 @@
   "siteUrl": "https://gameguidebase.com",
   "mediaBaseUrl": "https://media.gameguidebase.com",
   "mediaVersion": "20260701-r2",
-  "description": "Walkthroughs for web playable mini-games from Loopit, Sekai, Gizmo, and similar game sites, with screenshots, passcodes, app routes, and practical tips.",
+  "description": "Walkthroughs for web playable mini-games from Loopit and other web game platforms, with screenshots, passcodes, app routes, and practical tips.",
   "contactEmail": "hello@gameguidebase.com",
   "googleAnalyticsId": "",
   "adsenseClientId": "ca-pub-7896672979027584",
@@ -15,5 +15,19 @@
   "platformUrls": {
     "loopit": "https://loopit.me"
   },
-  "searchConsoleVerification": ""
+  "searchConsoleVerification": "",
+  "paywall": {
+    "enabled": false,
+    "freeGuideLimit": 10,
+    "productName": "Game Guide Base Lifetime",
+    "priceLabel": "CN¥35.99 lifetime access",
+    "paymentUrl": "https://gameguidebase.lemonsqueezy.com/checkout/buy/1fb81c2d-6ff1-411d-8fd9-eeee319d5145",
+    "redirectUrl": "https://gameguidebase.com/access/?license_key=[license_key]&order_id=[order_id]&email=[email]",
+    "myOrdersUrl": "https://app.lemonsqueezy.com/my-orders",
+    "licenseProductId": "1189903",
+    "supportEmail": "hello@gameguidebase.com",
+    "accessCodeHashes": [
+      "c7174ca53eecb87b1510259f7192ef7c2e0d6aa7bc5c8ba234ca6a3cdc587866"
+    ]
+  }
 }
