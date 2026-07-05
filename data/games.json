@@ -994,17 +994,18 @@
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Cleaning ASMR Tools, so this guide is based on source-link replay evidence and visible Loopit metadata."
     ],
-    "coverageStatus": "Multi-level route verified through Level 20; full endgame still pending",
-    "coverageUpdated": "2026-07-03",
+    "coverageStatus": "Level 1 live tool loop rechecked in desktop Chrome; deeper route still relies on prior Level 20 capture evidence",
+    "coverageUpdated": "2026-07-06",
     "coverageChecklist": [
-      "Source metadata refreshed successfully on July 3, 2026: 1.1M views, 27.2K likes, 2.3K comments, 569 remixes.",
-      "Tool loop covered: replay verifies switching among the four cleaning tools and dragging across dirty areas.",
-      "Completion case covered: Satisfyingly Clean overlay and Next Level button are captured.",
-      "Multi-level cases covered: Level 3 wheel, Level 8 watch, Level 10 sink, Level 11 clean result, Level 16 statue, and Level 20 guitar are captured.",
-      "Pending case: any final level or endgame reward beyond Level 20 remains unverified."
+      "SourceUrl remained reachable in desktop Chrome on July 6, 2026.",
+      "The live playable eventually loaded Level 1 after about 50 seconds on the desktop Chrome pass.",
+      "Live tool loop rechecked: spray, brush, water, and the final tool each changed the rug state during the same session.",
+      "Previously captured multi-level evidence through Level 20 still stands: wheel, watch, sink, clean-result overlay, statue, and guitar stages are already documented in the guide.",
+      "Pending case: this desktop pass still did not reproduce a same-session Satisfyingly Clean overlay or later-level transition after the live recheck."
     ],
     "coverageNotes": [
-      "This guide is currently one of the strongest coverage examples because it proves the game continues well past the first few levels."
+      "This remains one of the stronger guides in the dataset because earlier captured evidence proves the game goes well beyond the opening clean.",
+      "The July 6 live recheck adds sourceUrl accessibility and real tool-response confirmation, but the session was slowed by a very long loader before Level 1 became playable."
     ]
   },
   {
@@ -1215,6 +1216,18 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Pin Launch, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Level 1 and Level 2 live route rechecked; fail state still pending",
+    "coverageUpdated": "2026-07-06",
+    "coverageChecklist": [
+      "SourceUrl remained reachable in desktop Chrome on July 6, 2026.",
+      "The playable initialized after roughly 16 seconds, and the Tap to Launch prompt plus Level 1 HUD rendered normally.",
+      "A live click-through reached Score 6 on Level 1 and auto-transitioned into Level 2 during the same session.",
+      "The same live session continued up to Score 14 on Level 2, confirming that post-clear progression still works.",
+      "Pending case: several rapid-tap samples did not reproduce a visible collision or fail overlay, so the losing state is still unverified."
+    ],
+    "coverageNotes": [
+      "This pass confirms that the guide's Level 1-to-Level 2 route still matches the live sourceUrl, not just archived screenshots."
     ]
   },
   {
@@ -1320,6 +1333,17 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Drag to Stretch, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Source page reachable but live drag response blocked in desktop Chrome",
+    "coverageUpdated": "2026-07-06",
+    "coverageChecklist": [
+      "SourceUrl remained reachable in desktop Chrome on July 6, 2026.",
+      "The entry pose and Drag to Stretch prompt rendered correctly in the live share page.",
+      "Multiple horizontal drags from the visible body and head area in desktop Chrome did not produce a visible stretch response.",
+      "Pending case: active stretch and release states still need a fresh touch-device or alternate-browser replay because this desktop pass could not trigger them."
+    ],
+    "coverageNotes": [
+      "The existing screenshots still show the intended stretched pose, but this pass could not reproduce that state through the current desktop Chrome control surface."
     ]
   },
   {
@@ -1636,17 +1660,17 @@
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Coin Spiral Descent, so this guide is based on source-link replay evidence and visible Loopit metadata."
     ],
-    "coverageStatus": "Partial route verified; final Depth 70 not cleared yet",
-    "coverageUpdated": "2026-07-03",
+    "coverageStatus": "Opening route rechecked live through Depth 2; final Depth 70 still pending",
+    "coverageUpdated": "2026-07-06",
     "coverageChecklist": [
-      "Source metadata refreshed successfully on July 3, 2026: 1.1M views, 11.7K likes, 1.4K comments, 529 remixes.",
-      "Opening case covered: Depth 1 / 70 and Coins 0 are visible at start.",
-      "Control case covered: short left-right drags rotate the cyan spiral walls.",
-      "Progression case covered: screenshots show the pink ball, rotated walls, and gap-alignment waiting state.",
-      "Pending case: final Depth 70 reward or end screen still needs a full long-run replay."
+      "SourceUrl remained reachable in desktop Chrome on July 6, 2026.",
+      "Opening state rechecked live: the session started at Depth 0 with Coins 0 visible in the HUD.",
+      "Two short horizontal drags rotated the maze and advanced the live session from Depth 0 to Depth 1 and then Depth 2.",
+      "The earlier screenshot-backed opening route still matches the current source page, but no coin pickup, fail state, or Depth 70 reward was reached in this light pass.",
+      "Pending case: a longer recorded run is still needed for failure frames, coin collection, and any end reward."
     ],
     "coverageNotes": [
-      "This is a dynamic reflex game, so the next pass should record video and extract frames near failed drops, depth changes, and any reward screen."
+      "This is still a dynamic reflex game where video capture is more valuable than a single screenshot pass."
     ]
   },
   {
@@ -1869,6 +1893,18 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Peel the Fruit, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Blueberry opening and Strawberry transition rechecked live; exhausted-tries fail state still pending",
+    "coverageUpdated": "2026-07-06",
+    "coverageChecklist": [
+      "SourceUrl remained reachable in desktop Chrome on July 6, 2026.",
+      "Level 1 Blueberry start state rechecked live with the tries counter and peeled percentage visible.",
+      "Live tap samples raised the peeled meter from 0 percent to 13 percent and then 28 percent before continuing the same run.",
+      "The same session advanced into Level 2 Strawberry, confirming a next-level transition beyond the Blueberry opener.",
+      "Pending case: this pass did not reproduce an exhausted-tries or fail screen because the run advanced before a loss occurred."
+    ],
+    "coverageNotes": [
+      "The July 6 live recheck confirms the tap-to-drop route still works on the sourceUrl, not just in archived screenshots."
     ]
   },
   {
