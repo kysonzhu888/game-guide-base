@@ -1,0 +1,5 @@
+.tmp/
+# Generated/large media — kept in the working tree, out of git (regenerable by the scripts)
+output/
+audio/
+assets/

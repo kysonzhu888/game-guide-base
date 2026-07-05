@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game Guide Base TikTok Storyboard</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #080b12;
+      color: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 1080px;
+      height: 1920px;
+      margin: 0;
+      overflow: hidden;
+      background: #080b12;
+    }
+
+    .slide {
+      position: fixed;
+      left: 0;
+      top: 0;
+      display: none;
+      width: 1080px;
+      height: 1920px;
+      overflow: hidden;
+      background: #080b12;
+    }
+
+    .slide:first-of-type,
+    .slide:target {
+      display: block;
+    }
+
+    body:has(.slide:target) .slide:first-of-type:not(:target) {
+      display: none;
+    }
+
+    .bg,
+    .screen {
+      position: absolute;
+      object-fit: cover;
+    }
+
+    .bg {
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      filter: blur(34px) saturate(1.2) brightness(0.55);
+      transform: scale(1.09);
+    }
+
+    .wash {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(4, 6, 12, 0.1), rgba(4, 6, 12, 0.46) 50%, rgba(4, 6, 12, 0.9)),
+        radial-gradient(circle at 24% 18%, rgba(255, 45, 85, 0.24), transparent 36%),
+        radial-gradient(circle at 78% 20%, rgba(0, 245, 212, 0.28), transparent 35%);
+    }
+
+    .screen {
+      left: 115px;
+      top: 220px;
+      width: 850px;
+      height: 1190px;
+      border-radius: 52px;
+      box-shadow: 0 50px 150px rgba(0, 0, 0, 0.6);
+    }
+
+    .screen.hero {
+      top: 282px;
+      height: 760px;
+      border-radius: 42px;
+    }
+
+    .presenter {
+      position: absolute;
+      right: -72px;
+      bottom: 430px;
+      width: 540px;
+      filter: drop-shadow(0 40px 45px rgba(0, 0, 0, 0.6));
+    }
+
+    .presenter.left {
+      left: -92px;
+      right: auto;
+      transform: scaleX(-1);
+    }
+
+    .sticker,
+    .caption,
+    .comment,
+    .tag {
+      position: absolute;
+      letter-spacing: 0;
+    }
+
+    .sticker {
+      left: 58px;
+      top: 62px;
+      padding: 18px 26px;
+      border: 4px solid #111;
+      border-radius: 999px;
+      background: #ffe94a;
+      color: #080b12;
+      font-size: 42px;
+      font-weight: 900;
+      transform: rotate(-3deg);
+      box-shadow: 10px 10px 0 #111;
+    }
+
+    .tag {
+      right: 54px;
+      top: 84px;
+      padding: 15px 22px;
+      border-radius: 999px;
+      background: rgba(0, 245, 212, 0.92);
+      color: #03100f;
+      font-size: 32px;
+      font-weight: 900;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.38);
+    }
+
+    .comment {
+      left: 64px;
+      right: 64px;
+      top: 148px;
+      padding: 24px 28px;
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.94);
+      color: #111;
+      font-size: 38px;
+      line-height: 1.12;
+      font-weight: 800;
+      box-shadow: 0 22px 70px rgba(0, 0, 0, 0.42);
+    }
+
+    .caption {
+      left: 52px;
+      right: 52px;
+      bottom: 110px;
+      padding: 36px 36px 34px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 36px;
+      background: rgba(5, 8, 14, 0.8);
+      box-shadow: 0 32px 100px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(16px);
+    }
+
+    h1 {
+      margin: 0 0 20px;
+      color: #fff;
+      font-size: 86px;
+      line-height: 0.96;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 42px;
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    .url {
+      display: block;
+      margin-top: 28px;
+      color: #8ff0c8;
+      font-size: 44px;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+
+    .pop {
+      color: #ffe94a;
+    }
+
+    .beats {
+      position: absolute;
+      left: 64px;
+      right: 64px;
+      bottom: 606px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .beat {
+      width: max-content;
+      max-width: 900px;
+      padding: 16px 22px;
+      border-radius: 22px;
+      background: rgba(0, 0, 0, 0.68);
+      color: white;
+      font-size: 38px;
+      font-weight: 900;
+      box-shadow: 0 16px 42px rgba(0, 0, 0, 0.32);
+    }
+  </style>
+</head>
+<body>
+  <section class="slide" id="slide0">
+    <img class="bg" src="../assets/loopit-phone-mini-apps/02-passcode.png" alt="">
+    <img class="screen" src="../assets/loopit-phone-mini-apps/02-passcode.png" alt="">
+    <div class="wash"></div>
+    <div class="sticker">POV</div>
+    <div class="tag">mini-game help</div>
+    <div class="comment">"Why does this tiny game suddenly need a passcode?"</div>
+    <img class="presenter" src="assets/presenter.png" alt="">
+    <div class="caption">
+      <h1>I already played it.</h1>
+      <p>Passcodes, routes, screenshots, and the weird little steps people miss.</p>
+      <span class="url">gameguidebase.com</span>
+    </div>
+  </section>
+
+  <section class="slide" id="slide1">
+    <img class="bg" src="../assets/loopit-cleaning-asmr-tools/01-level-3-wheel.jpg" alt="">
+    <img class="screen" src="../assets/loopit-cleaning-asmr-tools/01-level-3-wheel.jpg" alt="">
+    <div class="wash"></div>
+    <div class="sticker">STOP GUESSING</div>
+    <div class="tag">Loopit guide</div>
+    <div class="beats">
+      <div class="beat">1. Pick the right tool</div>
+      <div class="beat">2. Drag, don't just tap</div>
+      <div class="beat">3. Check the edges</div>
+    </div>
+    <div class="caption">
+      <h1>Cleaning ASMR Tools</h1>
+      <p>Verified screenshots through <span class="pop">Level 20</span>.</p>
+      <span class="url">gameguidebase.com</span>
+    </div>
+  </section>
+
+  <section class="slide" id="slide2">
+    <img class="bg" src="../assets/loopit-pin-launch/03-level-clear.png" alt="">
+    <img class="screen" src="../assets/loopit-pin-launch/03-level-clear.png" alt="">
+    <div class="wash"></div>
+    <div class="sticker">WAIT FOR IT</div>
+    <div class="tag">timing tip</div>
+    <img class="presenter left" src="assets/presenter.png" alt="">
+    <div class="caption">
+      <h1>Pin Launch timing</h1>
+      <p>Tap when the lane is clear. One greedy tap ruins the run.</p>
+      <span class="url">full route on Game Guide Base</span>
+    </div>
+  </section>
+
+  <section class="slide" id="slide3">
+    <img class="bg" src="../assets/loopit-better-finger-clicker/03-first-upgrade.png" alt="">
+    <img class="screen" src="../assets/loopit-better-finger-clicker/03-first-upgrade.png" alt="">
+    <div class="wash"></div>
+    <div class="sticker">CLICKER ROUTE</div>
+    <div class="tag">upgrade check</div>
+    <div class="comment">If the upgrade button appears, stop panic tapping.</div>
+    <div class="caption">
+      <h1>Better Finger Clicker</h1>
+      <p>Upgrade at the right moment and save your taps.</p>
+      <span class="url">gameguidebase.com</span>
+    </div>
+  </section>
+
+  <section class="slide" id="slide4">
+    <img class="bg" src="../assets/hero-game-guides.png" alt="">
+    <img class="screen hero" src="../assets/hero-game-guides.png" alt="">
+    <div class="wash"></div>
+    <div class="sticker">SAVE THIS</div>
+    <div class="tag">free guide library</div>
+    <img class="presenter" src="assets/presenter.png" alt="">
+    <div class="caption">
+      <h1>Before you rage quit...</h1>
+      <p>Search the game name, passcode, route, or stuck step.</p>
+      <span class="url">gameguidebase.com</span>
+    </div>
+  </section>
+</body>
+</html>
