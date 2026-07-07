@@ -25,8 +25,24 @@ const site = {
   adsenseSlots: config.adsenseSlots || {},
   platformUrls: config.platformUrls || {},
   searchConsoleVerification: (config.searchConsoleVerification || "").trim(),
+  contentUpdatedAt: (config.contentUpdatedAt || "").trim(),
   paywall: normalizePaywall(config.paywall || {}),
 };
+
+const MONTH_NAMES = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"];
+
+// 诚实的"最后更新"日期：优先用单篇 game.lastUpdated，否则回退到站点级 contentUpdatedAt。
+// 绝不用构建时间（否则每次 rebuild 都显示"今天更新"=假新鲜度，Google 会不信任）。
+function guideUpdatedISO(game) {
+  return ((game && game.lastUpdated) || site.contentUpdatedAt || "").trim();
+}
+
+function formatGuideDate(iso) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec((iso || "").trim());
+  if (!m) return "";
+  return `${MONTH_NAMES[Number(m[2]) - 1]} ${Number(m[3])}, ${m[1]}`;
+}
 
 const freeGuideSlugs = new Set(games.slice(0, site.paywall.freeGuideLimit).map((game) => game.slug));
 const genres = groupBy(games, (game) => game.genre);
@@ -187,6 +203,7 @@ function generateGamePages() {
               <p class="kicker">${escapeHtml(game.genre)} guide · ${access.isPremium ? "Premium" : "Free"}</p>
               <h1>${escapeHtml(game.title)} guide</h1>
               <p>${escapeHtml(game.summary)}</p>
+              ${guideUpdatedISO(game) ? `<p class="guide-meta">Last updated <time datetime="${guideUpdatedISO(game)}">${formatGuideDate(guideUpdatedISO(game))}</time></p>` : ""}
               ${game.sourceUrl ? `<a class="play-link" href="${escapeHtml(game.sourceUrl)}" target="_blank" rel="noopener">Play source game</a>` : ""}
             </div>
             ${gameVisual(game, "game-hero-art")}
@@ -519,6 +536,7 @@ function layout({ title, description, body, depth, path: pagePath, schema = [] }
     </nav>
   </footer>
   <script src="${prefix}script.js?v=${assetVersion}" defer></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "8766e0f1c5cf486f81c867118dce77c5"}'></script>
 </body>
 </html>`;
 }
@@ -1183,7 +1201,8 @@ function publicPaywallConfig(paywallConfig) {
 }
 
 function gameSchema(game) {
-  return {
+  const updated = guideUpdatedISO(game);
+  const schema = {
     "@context": "https://schema.org",
     "@type": "VideoGame",
     name: game.title,
@@ -1196,6 +1215,11 @@ function gameSchema(game) {
       name: site.name,
     },
   };
+  if (updated) {
+    schema.datePublished = updated;
+    schema.dateModified = updated;
+  }
+  return schema;
 }
 
 function faqSchema(game) {

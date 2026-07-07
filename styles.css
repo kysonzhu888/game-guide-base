@@ -130,6 +130,12 @@ main {
   text-transform: uppercase;
 }
 
+.guide-meta {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
 .hero-lede,
 .guide-hero p,
 .text-page p {
