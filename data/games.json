@@ -1,5 +1,886 @@
 [
   {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-paws-on-loopit",
+    "title": "Paws On Loopit",
+    "genre": "Pet gallery",
+    "difficulty": "A public pet-gallery playable with campaign status, pet search, browse, ranking, my pets, and rules tabs.",
+    "searchIntent": "Paws On Loopit guide, campaign ended, search pet name, browse ranking my pets rules",
+    "sourceUrl": "https://share.loopit.me/game/45561bca-07bb-4e98-9e3b-04d9e689985f",
+    "creator": "Loopit",
+    "creatorSlug": "loopit",
+    "stats": {
+      "views": "313K",
+      "likes": "5.0K",
+      "comments": "1.7K",
+      "remixes": "31"
+    },
+    "summary": "Paws On Loopit is a Loopit pet-gallery playable. Replay capture showed the campaign has ended, voting is closed, and browsing/search still displays pet cards.",
+    "quickAnswer": "Voting is closed, so use it as a browse-and-search pet gallery now. The replay verified Campaign ended, 5/5 left, search by pet name or ID, and bottom tabs for Browse, Ranking, My pets, and Rules.",
+    "basics": [
+      "The top banner says Paws On Loopit with Cats & Dogs framing.",
+      "Replay capture showed Campaign ended and Voting is now closed.",
+      "The search box asks for pet name or ID.",
+      "The Browse tab still displays public pet cards even after the campaign ended."
+    ],
+    "controls": [
+      "Use the search field to find a pet by name or ID.",
+      "Switch between Browse, Ranking, My pets, and Rules from the bottom tabs.",
+      "Use the grid/list toggle near the search box to change browsing layout when available."
+    ],
+    "strategy": [
+      "Do not expect votes to count after the campaign has ended.",
+      "Start in Browse to inspect pet cards, then use Ranking if you want leaderboard context.",
+      "Use exact pet IDs when available because names may be duplicated.",
+      "Treat My pets as account-dependent; it may require the Loopit app or login state."
+    ],
+    "mistakes": [
+      "Trying to vote after voting is closed.",
+      "Confusing campaign tickets left with active voting time.",
+      "Searching broad names when an exact pet ID would be more reliable."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-paws-on-loopit/01-campaign-ended.png",
+        "alt": "Paws On Loopit screen showing the campaign has ended and voting is closed.",
+        "caption": "The replay showed the campaign-ended state."
+      },
+      {
+        "src": "/assets/loopit-paws-on-loopit/02-browse-pet-card.png",
+        "alt": "Paws On Loopit browse screen with a public pet card and bottom navigation.",
+        "caption": "Browse still shows pet cards, search, and tabs."
+      }
+    ],
+    "faq": [
+      [
+        "Can I still vote?",
+        "Replay showed Voting is now closed, so this guide treats the game as a browse/search gallery."
+      ],
+      [
+        "How do I find a pet?",
+        "Use the search box for pet name or ID."
+      ],
+      [
+        "What tabs are available?",
+        "Browse, Ranking, My pets, and Rules were visible during capture."
+      ]
+    ],
+    "creatorContext": [
+      "Loopit is the display name shown on the source card for Paws On Loopit.",
+      "This guide treats it as a platform-posted playable, not a personal creator identity.",
+      "Visible source-page engagement during capture: 313K views, 5.0K likes, 1.7K comments, 31 remixes."
+    ],
+    "communityNotes": [
+      "This page uses web replay screenshots captured on July 2, 2026, plus fresh source metadata checked on July 3, 2026."
+    ],
+    "coverageStatus": "Campaign-ended browse flow rechecked on July 4; account-dependent tabs still pending",
+    "coverageUpdated": "2026-07-04",
+    "coverageChecklist": [
+      "Source share page loaded successfully on July 4, 2026 in desktop Playwright; sourceUrl remained reachable.",
+      "Campaign-ended banner and closed-voting state were visible again during this pass.",
+      "Browse/search shell and bottom-tab navigation were still visible on the published page.",
+      "Pending case: Ranking, My pets, and Rules tab contents still need a fuller replay because My pets appears account-dependent."
+    ],
+    "coverageNotes": [
+      "This pass reconfirmed the archived browse state, not a live voting route."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-click-1159-check-mark",
+    "title": "Click 1159 Check Mark",
+    "genre": "Speed tap",
+    "difficulty": "A 60-second speed-tapping challenge with a target of 1159 clicks.",
+    "searchIntent": "Click 1159 Check Mark Loopit guide, 60 seconds, target 1159, tap to start tips",
+    "sourceUrl": "https://share.loopit.me/game/805e0a36-6d9e-48f4-a59a-7f9226ce0a18",
+    "creator": "𝚂𝚔𝚢𝟸𝚌𝚘𝚘𝚕𝟺𝚞",
+    "creatorSlug": "sky2cool4u",
+    "stats": {
+      "views": "705K",
+      "likes": "13K",
+      "comments": "2.2K",
+      "remixes": "254"
+    },
+    "summary": "Click 1159 Check Mark is a Loopit speed-tap challenge. App capture showed 60.00s time remaining, Clicks 0, Target 1159, and a Tap to Start button.",
+    "quickAnswer": "Tap to start, then average about 19.4 taps per second for 60 seconds to reach 1159. The replay verified the start state and target, not a completed 1159-click clear.",
+    "basics": [
+      "The challenge starts with 60.00 seconds on the timer.",
+      "Clicks starts at 0.",
+      "The visible target is 1159 clicks.",
+      "Tap to Start begins the timed run."
+    ],
+    "controls": [
+      "Tap the center target to start.",
+      "Keep tapping as fast and consistently as possible after the timer begins.",
+      "Use the share menu to copy the source link if you want to replay from the app."
+    ],
+    "strategy": [
+      "The target requires roughly 19.4 taps per second over the full minute.",
+      "Use two thumbs on mobile if the game accepts multi-touch.",
+      "Do a short warm-up before starting because the timer begins after Tap to Start.",
+      "Stop if the counter does not move; desktop browser replay may not match phone multi-touch behavior."
+    ],
+    "mistakes": [
+      "Starting before your fingers are positioned.",
+      "Pausing early because the target looks impossible.",
+      "Claiming a clear without screenshot proof of 1159 or the win state."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-click-1159-check-mark/01-target-1159.png",
+        "alt": "Click 1159 Check Mark start screen with 60 seconds, clicks zero, and target 1159.",
+        "caption": "The timed challenge starts at 60.00s with Target 1159."
+      },
+      {
+        "src": "/assets/loopit-click-1159-check-mark/02-share-menu.png",
+        "alt": "Click 1159 Check Mark share menu with copy link option.",
+        "caption": "The app share menu was used to preserve the real source link."
+      }
+    ],
+    "faq": [
+      [
+        "How fast do I need to tap?",
+        "1159 clicks in 60 seconds is about 19.4 taps per second."
+      ],
+      [
+        "Did replay clear the target?",
+        "No. This guide verifies the start state and target, not a full clear."
+      ],
+      [
+        "What starts the timer?",
+        "The visible Tap to Start target starts the timed run."
+      ]
+    ],
+    "creatorContext": [
+      "The source card uses the stylized display name 𝚂𝚔𝚢𝟸𝚌𝚘𝚘𝚕𝟺𝚞; the site profile slug is normalized as sky2cool4u.",
+      "Visible source-page engagement during capture: 705K views, 13K likes, 2.2K comments, 254 remixes.",
+      "Profile data comes from Loopit source-card metadata and app replay screenshots."
+    ],
+    "communityNotes": [
+      "This guide is based on Android app capture from July 2, 2026 and refreshed source metadata from July 3, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-guano-drop",
+    "title": "Guano Drop",
+    "genre": "Timing tap",
+    "difficulty": "A crude timing-tap stage joke where the visible action prompt is Tap to poop.",
+    "searchIntent": "Guano Drop Loopit guide, tap to poop, level 1 stage, timing tips",
+    "sourceUrl": "https://share.loopit.me/game/34a59cad-c937-42e2-aeac-394f18b0ae7b",
+    "creator": "Daniel Macintyre",
+    "creatorSlug": "daniel-macintyre",
+    "stats": {
+      "views": "69",
+      "likes": "6",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Guano Drop is a Loopit timing-tap gag game. Replay capture reached Level 1 on a concert-stage scene with a bird and the prompt Tap to poop.",
+    "quickAnswer": "Wait for the bird position, then tap when the target moment lines up. The replay verified Level 1 and the Tap to poop prompt, but not a final hit/win state.",
+    "basics": [
+      "The replay opened on Level 1.",
+      "A bird appears above a concert-stage scene.",
+      "The central prompt says Tap to poop.",
+      "The source description says the goal is getting the guano in the mouth."
+    ],
+    "controls": [
+      "Tap when the bird and target timing look aligned.",
+      "Do not tap before the prompt appears.",
+      "Restart the run if the target moment is missed."
+    ],
+    "strategy": [
+      "Treat it as a timing gag rather than a precision platformer.",
+      "Watch the bird position first, then tap once instead of spamming blindly.",
+      "Use screenshots or video if mapping exact hit timing later.",
+      "Keep the guide wording practical because the joke is intentionally crude."
+    ],
+    "mistakes": [
+      "Spamming before the bird reaches the target zone.",
+      "Ignoring the Level 1 label and assuming later levels were checked.",
+      "Publishing a hit route without a captured hit or fail result."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-guano-drop/01-level-one-stage.png",
+        "alt": "Guano Drop Level 1 concert stage with bird and tap prompt.",
+        "caption": "The replay starts on Level 1 with the bird above the stage."
+      },
+      {
+        "src": "/assets/loopit-guano-drop/02-tap-to-poop.png",
+        "alt": "Guano Drop screen showing the Tap to poop prompt.",
+        "caption": "Tap to poop is the visible action prompt."
+      }
+    ],
+    "faq": [
+      [
+        "What do I tap?",
+        "Tap when the bird timing lines up with the target moment."
+      ],
+      [
+        "Did replay beat Level 1?",
+        "No. This pass verified the Level 1 prompt and setup, not the hit result."
+      ],
+      [
+        "Is this a serious game?",
+        "No. It is a crude timing-tap gag playable."
+      ]
+    ],
+    "creatorContext": [
+      "Daniel Macintyre is the Loopit display name shown on the source card for Guano Drop.",
+      "The source card credits music heard in the playable; this guide does not reproduce or host that audio.",
+      "Visible source-page engagement during capture: 69 views, 6 likes, 0 comments, 0 remixes."
+    ],
+    "communityNotes": [
+      "This guide is based on source metadata and web replay screenshots captured on July 3, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-idle-memes",
+    "title": "Idle Memes",
+    "genre": "Idle meme",
+    "difficulty": "A source-preview-only idle meme playable; deeper web replay was blocked by CDN verification during this pass.",
+    "searchIntent": "Idle Memes Loopit guide, daily upd, source preview, replay blocked notes",
+    "sourceUrl": "https://share.loopit.me/game/0dca62f4-7da9-4b39-9f4b-0ae3e901084b",
+    "creator": "Courteney Taggart",
+    "creatorSlug": "courteney-taggart",
+    "stats": {
+      "views": "635",
+      "likes": "13",
+      "comments": "3",
+      "remixes": "3"
+    },
+    "summary": "Idle Memes is a Loopit idle meme playable. The source card describes daily updates; this pass verified the public source metadata and preview image, while deeper web replay hit CDN verification.",
+    "quickAnswer": "Use the source link to open the playable in Loopit. This guide currently covers the public preview and metadata only; deeper hands-on replay was blocked by CDN verification on July 3, 2026.",
+    "basics": [
+      "The source description says Idle memes and mentions daily updates.",
+      "Visible source stats during capture were 635 views, 13 likes, 3 comments, and 3 remixes.",
+      "The source preview image was available even though direct web replay hit CDN verification.",
+      "A future phone replay should confirm the actual idle loop and upgrade/state changes."
+    ],
+    "controls": [
+      "Open the source game link in Loopit or a mobile browser.",
+      "If the web playable shows CDN verification, retry from the Loopit app.",
+      "Record the first resource counter and any upgrade button once the app replay is available."
+    ],
+    "strategy": [
+      "Do not assume the idle loop from the title alone.",
+      "Use the source preview only as a visual identifier.",
+      "Recheck after CDN access improves or when the Android device is available.",
+      "Treat any unverified mechanic as pending until a playable screen is captured."
+    ],
+    "mistakes": [
+      "Calling this a completed walkthrough without replaying the idle loop.",
+      "Using the title to invent upgrade mechanics.",
+      "Ignoring the CDN verification blocker."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-idle-memes/01-source-preview.png",
+        "alt": "Idle Memes Loopit source preview image.",
+        "caption": "Source preview image; deeper web replay was blocked by CDN verification during this pass."
+      }
+    ],
+    "faq": [
+      [
+        "Was Idle Memes fully replayed?",
+        "No. This pass verified the public source page, metadata, and source preview only."
+      ],
+      [
+        "Why is the guide lighter?",
+        "The web playable hit CDN verification, so deeper mechanics are marked pending."
+      ],
+      [
+        "Where should I play it?",
+        "Use the source link in Loopit or retry the web playable from a normal mobile browser."
+      ]
+    ],
+    "creatorContext": [
+      "Courteney Taggart is the Loopit display name shown on the source card for Idle Memes.",
+      "Visible source-page engagement during capture: 635 views, 13 likes, 3 comments, 3 remixes.",
+      "No verified external creator profile is linked from this guide."
+    ],
+    "communityNotes": [
+      "Coverage status: source preview only. This is intentionally labeled so readers do not mistake it for a completed walkthrough."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-fan-made-side-scroller",
+    "title": "Fan-Made Side Scroller",
+    "genre": "Side-scroller",
+    "difficulty": "A source-preview-only fan side-scroller; deeper web replay was blocked by CDN verification during this pass.",
+    "searchIntent": "Fan-Made Side Scroller Loopit guide, platformer, source preview, replay blocked notes",
+    "sourceUrl": "https://share.loopit.me/game/aa79e619-ee18-4d81-9d10-85a28bc7a112",
+    "creator": "BMC",
+    "creatorSlug": "bmc",
+    "stats": {
+      "views": "428",
+      "likes": "9",
+      "comments": "1",
+      "remixes": "0"
+    },
+    "summary": "Fan-Made Side Scroller is a Loopit platformer-style playable. The source card describes a fan-made side-scroller; this pass verified metadata and preview image, while deeper web replay hit CDN verification.",
+    "quickAnswer": "Open the source game link to try the side-scroller. This page currently documents the source preview only; controls, levels, and fail states still need app replay confirmation.",
+    "basics": [
+      "The source description calls it a fan-made side-scroller platformer.",
+      "Visible source stats during capture were 428 views, 9 likes, 1 comment, and 0 remixes.",
+      "The source preview image identifies the game visually.",
+      "Direct web replay hit CDN verification on July 3, 2026, so level route details are pending."
+    ],
+    "controls": [
+      "Try the source link in Loopit for the most reliable play path.",
+      "For a future replay, test left/right movement, jump, enemy collision, and level reset.",
+      "Capture Game Over or next-level state before upgrading this from preview notes to a full walkthrough."
+    ],
+    "strategy": [
+      "Start by confirming movement and jump controls.",
+      "Do not assume standard platformer physics until the replay confirms them.",
+      "Use short screen recordings because side-scrollers can hide hazards between screenshots.",
+      "Avoid treating fan-source branding as official affiliation."
+    ],
+    "mistakes": [
+      "Presenting the source preview as a completed level clear.",
+      "Assuming all side-scrollers use the same keyboard or touch controls.",
+      "Forgetting to document the first fail state."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-fan-made-side-scroller/01-source-preview.png",
+        "alt": "Fan-Made Side Scroller Loopit source preview image.",
+        "caption": "Source preview image; full side-scroller replay remains pending."
+      }
+    ],
+    "faq": [
+      [
+        "Was the first level cleared?",
+        "No. This pass is source-preview coverage because direct web replay was blocked."
+      ],
+      [
+        "What should a future replay test?",
+        "Movement, jump, enemies, reset, first fail state, and next-level state."
+      ],
+      [
+        "Is this official?",
+        "No. The source card describes it as fan-made, so this guide treats it as an unofficial fan playable."
+      ]
+    ],
+    "creatorContext": [
+      "BMC is the Loopit display name shown on the source card for Fan-Made Side Scroller.",
+      "Visible source-page engagement during capture: 428 views, 9 likes, 1 comment, 0 remixes.",
+      "No verified external creator profile is linked from this guide."
+    ],
+    "communityNotes": [
+      "Coverage status: source preview only. The page is kept conservative because direct web replay hit CDN verification during this pass."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-epstintapuse-69-levels",
+    "title": "Epstintapuse 69 Levels",
+    "genre": "Survival quest",
+    "difficulty": "A 69-level combat quest with hero selection, absurd enemies, and wave-survival framing.",
+    "searchIntent": "Epstintapuse 69 Levels Loopit guide, Peralous Quest, hero choice, start adventure tips",
+    "sourceUrl": "https://share.loopit.me/game/16c516e4-9f7a-4810-9cff-ac8bbb663858",
+    "creator": "Lady Fang",
+    "creatorSlug": "lady-fang",
+    "stats": {
+      "views": "2.0K",
+      "likes": "14",
+      "comments": "1",
+      "remixes": "1"
+    },
+    "summary": "Epstintapuse 69 Levels is a Loopit survival quest. Web replay loaded the Peralous Quest hero screen with Normal, Knight, Ninja, Wizard, and Pirate options before starting the adventure path.",
+    "quickAnswer": "Pick a hero first, then use Start Adventure. Our replay verified the opening hero-selection screen and input response; the claimed 69-level route still needs a deeper full-clear replay.",
+    "basics": [
+      "The source description frames the game as a 69-level journey with absurd enemies and combat waves.",
+      "The first playable screen is titled Peralous Quest and asks you to choose a hero.",
+      "Visible hero choices include Normal, Knight, Ninja, Wizard, and Pirate.",
+      "Start Adventure is the main progression button after selecting a hero."
+    ],
+    "controls": [
+      "Tap a hero portrait to choose your starting style.",
+      "Use Start Adventure after the hero is selected.",
+      "Expect jump or action inputs once the survival route begins."
+    ],
+    "strategy": [
+      "Choose a straightforward hero first so you can learn the timing before testing specialty heroes.",
+      "Do not rush past the hero screen; the selected character is the first meaningful branch.",
+      "Treat this guide as opening-route coverage until a later replay reaches multiple level outcomes.",
+      "If you are mapping the 69 levels, record each death or wave transition instead of relying on memory."
+    ],
+    "mistakes": [
+      "Calling the game cleared after only seeing the hero screen.",
+      "Missing the hero branch by tapping Start Adventure too quickly.",
+      "Assuming all heroes play the same before testing their movement and action timing."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-epstintapuse-69-levels/01-choose-hero.png",
+        "alt": "Epstintapuse 69 Levels opening screen with Peralous Quest and hero choices.",
+        "caption": "The replay opened on the Peralous Quest hero-selection screen."
+      },
+      {
+        "src": "/assets/loopit-epstintapuse-69-levels/02-hero-selection-after-input.png",
+        "alt": "Epstintapuse 69 Levels hero-selection screen after input.",
+        "caption": "The first branch is choosing between Normal, Knight, Ninja, Wizard, and Pirate."
+      }
+    ],
+    "faq": [
+      [
+        "How do I start Epstintapuse 69 Levels?",
+        "Choose a hero, then tap Start Adventure."
+      ],
+      [
+        "Did this replay clear all 69 levels?",
+        "No. This pass verified the playable entry and hero-selection branch, not a full 69-level clear."
+      ],
+      [
+        "What is the first decision?",
+        "Your hero choice: Normal, Knight, Ninja, Wizard, or Pirate."
+      ]
+    ],
+    "creatorContext": [
+      "Lady Fang is the Loopit display name shown on the playable source card for Epstintapuse 69 Levels.",
+      "The source description mentions Cheato king dragons, Tech mogal snails, and Bubba the centar as part of the absurd enemy framing.",
+      "Visible source-page engagement during capture: 2.0K views, 14 likes, 1 comment, 1 remix."
+    ],
+    "communityNotes": [
+      "No reliable external walkthrough was found during this pass. This guide is based on Loopit metadata and web replay screenshots captured on July 3, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-phuanitmatter-tap-game",
+    "title": "Phuanitmatter Tap Game",
+    "genre": "Dimension tap",
+    "difficulty": "A tap-to-progress dimension game that starts at Dimension 1 of 250.",
+    "searchIntent": "Phuanitmatter Tap Game Loopit guide, Dimension 1 250, tap node tips",
+    "sourceUrl": "https://share.loopit.me/game/a9e8ac4a-97d1-4d0d-8fd7-1299ceedd79b",
+    "creator": "Phu Quoc Nguyen",
+    "creatorSlug": "phu-quoc-nguyen",
+    "stats": {
+      "views": "1.1K",
+      "likes": "10",
+      "comments": "1",
+      "remixes": "4"
+    },
+    "summary": "Phuanitmatter Tap Game is a Loopit dimension-tapping playable. Web replay reached Dimension 1 / 250 with the central triangle and orange node visible.",
+    "quickAnswer": "Tap the visible node and central play area to advance the dimension loop. Our replay verified the Dimension 1 / 250 start screen and first interaction state.",
+    "basics": [
+      "The game opens on a galaxy-like background with a geometric center shape.",
+      "The replay showed Dimension 1 / 250, which implies a long staged progression path.",
+      "An orange node appears near the triangle and is the clearest first target.",
+      "The Loopit source description calls it a tap game to keep your mind from boredom."
+    ],
+    "controls": [
+      "Tap the orange node or central triangle area to test the active target.",
+      "Watch the Dimension counter after each input.",
+      "If the number does not change, retap the node rather than random empty space."
+    ],
+    "strategy": [
+      "Use the Dimension counter as your progress proof; visual motion alone can be ambiguous.",
+      "Keep taps deliberate on visible nodes because empty-space taps may not count.",
+      "For a full route, record every counter jump and note when the visual layout changes.",
+      "Replay on mobile if desktop taps feel imprecise around the triangle."
+    ],
+    "mistakes": [
+      "Thinking the background is only decorative and missing the small active node.",
+      "Assuming the game is complete at Dimension 1 because the first screen is quiet.",
+      "Not tracking the 1 / 250 counter before and after taps."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-phuanitmatter-tap-game/01-dimension-start.png",
+        "alt": "Phuanitmatter Tap Game starting dimension screen.",
+        "caption": "The game starts with a geometric center area over a galaxy background."
+      },
+      {
+        "src": "/assets/loopit-phuanitmatter-tap-game/02-dimension-one-node.png",
+        "alt": "Phuanitmatter Tap Game showing Dimension 1 of 250 and an orange node.",
+        "caption": "Dimension 1 / 250 and the orange node were visible during replay."
+      }
+    ],
+    "faq": [
+      [
+        "What is the first objective?",
+        "Use taps on the visible node or center area and watch the Dimension counter."
+      ],
+      [
+        "How many dimensions are shown?",
+        "The replay screen showed Dimension 1 / 250."
+      ],
+      [
+        "Was the full 250-dimension route cleared?",
+        "No. This guide covers the verified opening state and first-tap target."
+      ]
+    ],
+    "creatorContext": [
+      "Phu Quoc Nguyen is the Loopit display name shown on the source card for Phuanitmatter Tap Game.",
+      "The source text describes the game as a matter tap game meant to keep the mind from boredom.",
+      "Visible source-page engagement during capture: 1.1K views, 10 likes, 1 comment, 4 remixes."
+    ],
+    "communityNotes": [
+      "No separate public walkthrough was confirmed during this pass, so the guide relies on source metadata and web replay screenshots captured on July 3, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-zombie-simulator",
+    "title": "Zombie Simulator",
+    "genre": "Zombie sandbox",
+    "difficulty": "A real-time zombie sandbox with humans, armed units, zombies, and a tap-to-explode action.",
+    "searchIntent": "Zombie Simulator Loopit guide, humans armed zombies, tap to explode, survival sandbox tips",
+    "sourceUrl": "https://share.loopit.me/game/390feabc-3f0c-49e3-8238-8e34e460218d",
+    "creator": "FirestoneX",
+    "creatorSlug": "firestonex",
+    "stats": {
+      "views": "133",
+      "likes": "7",
+      "comments": "2",
+      "remixes": "0"
+    },
+    "summary": "Zombie Simulator is a Loopit real-time sandbox. Web replay reached an active map at 14.5 seconds with Humans 4300, Armed 268, Zombies 237, and a Tap to explode prompt.",
+    "quickAnswer": "Let the simulation run, then tap to explode when the crowd balance matters. Our replay verified live counters at 14.5s: 4300 humans, 268 armed, and 237 zombies.",
+    "basics": [
+      "The HUD tracks time, humans, armed units, and zombies.",
+      "The replay reached 14.5 seconds with all three population counters active.",
+      "A Reset button is visible, so failed or chaotic runs can be restarted quickly.",
+      "Tap to explode is the most explicit player action shown in this pass."
+    ],
+    "controls": [
+      "Let the simulation start and watch the population counters move.",
+      "Tap the battlefield when the Tap to explode prompt is active.",
+      "Use Reset if the population outcome becomes impossible to read."
+    ],
+    "strategy": [
+      "Do not spam immediately; first observe whether zombies or armed units are gaining faster.",
+      "Use explosion taps when clusters form, because the map is dense and timing matters.",
+      "Track humans, armed units, and zombies as separate signals rather than one total population.",
+      "For deeper routing, record a short video and compare counter deltas after each explosion."
+    ],
+    "mistakes": [
+      "Ignoring the armed-unit counter and only watching zombies.",
+      "Resetting before the simulation has enough time to show a trend.",
+      "Treating Tap to explode as a decorative prompt instead of the main intervention."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-zombie-simulator/01-starting-map.png",
+        "alt": "Zombie Simulator starting map with population counters.",
+        "caption": "The starting map shows the counters that drive the sandbox."
+      },
+      {
+        "src": "/assets/loopit-zombie-simulator/02-time-145.png",
+        "alt": "Zombie Simulator at 14.5 seconds showing humans, armed units, zombies, and Tap to explode.",
+        "caption": "At 14.5s, the replay showed 4300 humans, 268 armed units, and 237 zombies."
+      }
+    ],
+    "faq": [
+      [
+        "What should I watch first?",
+        "Watch Humans, Armed, and Zombies together; the balance is the game state."
+      ],
+      [
+        "What does tapping do?",
+        "The visible prompt says Tap to explode, so taps are the main intervention in the simulation."
+      ],
+      [
+        "Did replay reach active gameplay?",
+        "Yes. Replay reached 14.5 seconds with live counters and the explosion prompt visible."
+      ]
+    ],
+    "creatorContext": [
+      "FirestoneX is the Loopit display name shown on the source card for Zombie Simulator.",
+      "The game has a compact source description, so the replay HUD is the main evidence for gameplay interpretation.",
+      "Visible source-page engagement during capture: 133 views, 7 likes, 2 comments, 0 remixes."
+    ],
+    "communityNotes": [
+      "No separate reliable strategy post was confirmed during this pass. This guide is based on source metadata and web replay screenshots captured on July 3, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-solarpunk-idle",
+    "title": "Solarpunk Idle",
+    "genre": "Idle energy",
+    "difficulty": "An idle energy game with manual tapping, production per second, phase goals, and infrastructure upgrades.",
+    "searchIntent": "Solarpunk Idle Loopit guide, energy tap, solar panel cost, wind turbine cost, 5000 J target",
+    "sourceUrl": "https://share.loopit.me/game/9998a4f1-bca0-4410-99b5-a678ac48ef91",
+    "creator": "Chicar",
+    "creatorSlug": "chicar",
+    "stats": {
+      "views": "15",
+      "likes": "0",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Solarpunk Idle is a Loopit idle energy game. Web replay started the game, reached 19 J, showed 0.0 J/sec, and displayed infrastructure costs for Solar Panel and Wind Turbine.",
+    "quickAnswer": "Tap to generate energy until you can buy Solar Panel at 15 J. Our replay verified 19 J, 0.0 J/sec, Phase: TRANSITION, Target: 5000 J, Solar Panel cost 15 J, and Wind Turbine cost 100 J.",
+    "basics": [
+      "The opening overlay says Tap to Start.",
+      "After starting, the main resource is energy measured in J.",
+      "The first visible target is 5000 J during the TRANSITION phase.",
+      "Infrastructure upgrades include Solar Panel at 15 J and Wind Turbine at 100 J."
+    ],
+    "controls": [
+      "Tap the start overlay to enter the main energy screen.",
+      "Tap the main button to generate energy manually.",
+      "Use infrastructure buttons when the resource counter reaches the displayed cost."
+    ],
+    "strategy": [
+      "Buy Solar Panel first because it is visible at 15 J and is cheaper than Wind Turbine.",
+      "Do not wait for passive income at the beginning; replay showed 0.0 J/sec before upgrades.",
+      "Treat 5000 J as the early phase milestone and plan upgrades around reaching it.",
+      "If a button does not fire, confirm you have enough J before assuming the game is broken."
+    ],
+    "mistakes": [
+      "Waiting idle before buying any production source.",
+      "Saving for Wind Turbine too early while Solar Panel is already affordable.",
+      "Missing the phase and target text at the top of the screen."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-solarpunk-idle/01-tap-to-start.png",
+        "alt": "Solarpunk Idle opening overlay saying Tap to Start.",
+        "caption": "The replay begins with a Tap to Start overlay."
+      },
+      {
+        "src": "/assets/loopit-solarpunk-idle/02-energy-19j.png",
+        "alt": "Solarpunk Idle showing 19 J, zero energy per second, target 5000 J, and infrastructure costs.",
+        "caption": "At 19 J, Solar Panel was visible at 15 J and Wind Turbine at 100 J."
+      }
+    ],
+    "faq": [
+      [
+        "What should I buy first?",
+        "Solar Panel is the first visible affordable upgrade at 15 J."
+      ],
+      [
+        "Why is income not increasing?",
+        "Replay showed 0.0 J/sec before infrastructure, so manual tapping is needed at the start."
+      ],
+      [
+        "What is the first milestone?",
+        "The early phase target shown in replay is 5000 J."
+      ]
+    ],
+    "creatorContext": [
+      "Chicar is the Loopit display name shown on the source card for Solarpunk Idle.",
+      "The source card describes it as a Solarpunk Idle Game; gameplay details in this guide come from the replayed UI.",
+      "Visible source-page engagement during capture: 15 views, 0 likes, 0 comments, 0 remixes."
+    ],
+    "communityNotes": [
+      "Two other Chicar solarpunk web playables were checked in this batch, but they showed an Update to play this blocker and were not published as guides."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-stage-music-shifter",
+    "title": "Stage Music Shifter",
+    "genre": "Stage battler",
+    "difficulty": "A stage-based character selection game where the source card says music changes to match the stage.",
+    "searchIntent": "Stage Music Shifter Loopit guide, select your angel, Sophia Michael Gabriel Raphael Uriel Seraph, Hope cost",
+    "sourceUrl": "https://share.loopit.me/game/2c0f9c07-b3aa-41c3-b3e0-b1d747832530",
+    "creator": "Naked Path Music",
+    "creatorSlug": "naked-path-music",
+    "stats": {
+      "views": "89",
+      "likes": "1",
+      "comments": "1",
+      "remixes": "3"
+    },
+    "summary": "Stage Music Shifter is a Loopit stage playable. Web replay reached the Select Your Angel screen with Sophia and Michael available at Level 1 and Gabriel, Raphael, Uriel, and Seraph locked behind Hope.",
+    "quickAnswer": "Start with Sophia or Michael because they are available at Level 1. Gabriel, Raphael, Uriel, and Seraph were locked in replay with 5000 Hope requirements.",
+    "basics": [
+      "The source card says the music changes to match the stage and credits music by Patrick stoltie.",
+      "The replay reached a Select Your Angel screen after the opening state.",
+      "Sophia and Michael were visible as Level 1 available choices.",
+      "Gabriel, Raphael, Uriel, and Seraph appeared locked with 5000 Hope requirements."
+    ],
+    "controls": [
+      "Tap through the opening screen to reach character selection.",
+      "Choose Sophia or Michael for the first run.",
+      "Return later to locked angels after earning enough Hope."
+    ],
+    "strategy": [
+      "Pick an unlocked angel first instead of trying locked options repeatedly.",
+      "Use the 5000 Hope lock text as your medium-term unlock target.",
+      "Because the game emphasizes stage music, replay with audio on when comparing stages.",
+      "Record later runs if you want to map which stage triggers which music style."
+    ],
+    "mistakes": [
+      "Trying to select locked angels before earning Hope.",
+      "Ignoring Sophia and Michael because the locked characters look more advanced.",
+      "Writing music-style conclusions without replaying the stages with audio enabled."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-stage-music-shifter/01-stage-start.png",
+        "alt": "Stage Music Shifter opening screen before angel selection.",
+        "caption": "The replay starts from the stage playable entry."
+      },
+      {
+        "src": "/assets/loopit-stage-music-shifter/02-select-angel.png",
+        "alt": "Stage Music Shifter Select Your Angel screen with Sophia, Michael, and locked angels.",
+        "caption": "Sophia and Michael were available, while later angels showed Hope locks."
+      }
+    ],
+    "faq": [
+      [
+        "Who should I choose first?",
+        "Choose Sophia or Michael; both were available at Level 1 in replay."
+      ],
+      [
+        "How do I unlock the other angels?",
+        "Gabriel, Raphael, Uriel, and Seraph showed 5000 Hope locks in replay."
+      ],
+      [
+        "Did this guide verify the music changes?",
+        "The source card says music changes by stage; this replay verified the visual route to angel selection, not a full audio comparison."
+      ]
+    ],
+    "creatorContext": [
+      "Naked Path Music is the Loopit display name shown on the source card for Stage Music Shifter.",
+      "The source text credits music by Patrick stoltie and asks players which style they like best.",
+      "Visible source-page engagement during capture: 89 views, 1 like, 1 comment, 3 remixes."
+    ],
+    "communityNotes": [
+      "No separate reliable stage-by-stage music guide was confirmed during this pass. This page uses source metadata and web replay screenshots captured on July 3, 2026."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-trauma-theory",
+    "title": "Trauma Theory",
+    "genre": "Narrative session",
+    "difficulty": "A fictional narrative session game that opens in Doctor Sigmunds Office.",
+    "searchIntent": "Trauma Theory Loopit guide, Doctor Sigmunds Office, Begin Session, narrative session tips",
+    "sourceUrl": "https://share.loopit.me/game/239086f4-f17b-401b-8511-14a827d29f6e",
+    "creator": "Zombie corporation",
+    "creatorSlug": "zombie-corporation",
+    "stats": {
+      "views": "126",
+      "likes": "3",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Trauma Theory is a Loopit fictional narrative session. Web replay reached Doctor Sigmunds Office with a Begin Session button and a safe-space style prompt.",
+    "quickAnswer": "Tap Begin Session from Doctor Sigmunds Office to start the narrative. Treat it as a fictional game route, not real therapy or medical advice.",
+    "basics": [
+      "The source card asks, Trauma theory anyone?",
+      "The replay opened to Doctor Sigmunds Office.",
+      "The entry screen presents a calm session framing and a Begin Session button.",
+      "This is a game narrative; it should not be used as mental-health support."
+    ],
+    "controls": [
+      "Tap Begin Session to move from the office screen into the route.",
+      "Read prompts carefully because narrative games often branch through text choices.",
+      "Use screenshots if choices appear later, so branches are not mixed up."
+    ],
+    "strategy": [
+      "Start with the default Begin Session path and record the first few prompts.",
+      "If choices appear, map them as branches rather than assuming one correct answer.",
+      "Keep health or trauma-related wording framed as in-game fiction only.",
+      "Do not enter private personal information into a mini-game prompt."
+    ],
+    "mistakes": [
+      "Treating the game as real mental-health advice.",
+      "Skipping text and losing the narrative branch context.",
+      "Publishing deeper branch claims without replay screenshots for those choices."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-trauma-theory/01-office-entry.png",
+        "alt": "Trauma Theory entry screen for Doctor Sigmunds Office.",
+        "caption": "The replay reached the fictional office entry screen."
+      },
+      {
+        "src": "/assets/loopit-trauma-theory/02-begin-session.png",
+        "alt": "Trauma Theory Begin Session button in Doctor Sigmunds Office.",
+        "caption": "Begin Session is the visible next action from the office screen."
+      }
+    ],
+    "faq": [
+      [
+        "How do I start Trauma Theory?",
+        "Tap Begin Session from Doctor Sigmunds Office."
+      ],
+      [
+        "Is this therapy?",
+        "No. This is treated here as a fictional Loopit game narrative, not medical or mental-health advice."
+      ],
+      [
+        "What did replay verify?",
+        "Replay verified the source page, office entry screen, and Begin Session action."
+      ]
+    ],
+    "creatorContext": [
+      "Zombie corporation is the Loopit display name shown on the source card for Trauma Theory.",
+      "No verified external creator profile is linked from this guide; the creator identity here is the Loopit display name only.",
+      "Visible source-page engagement during capture: 126 views, 3 likes, 0 comments, 0 remixes."
+    ],
+    "communityNotes": [
+      "No external player walkthrough was confirmed during this pass. This guide is based on Loopit metadata and web replay screenshots captured on July 3, 2026."
+    ]
+  },
+  {
     "slug": "loopit-cleaning-asmr-tools",
     "title": "Cleaning ASMR Tools",
     "genre": "Cleaning simulator",
@@ -112,6 +993,19 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Cleaning ASMR Tools, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Level 1 live tool loop rechecked in desktop Chrome; deeper route still relies on prior Level 20 capture evidence",
+    "coverageUpdated": "2026-07-06",
+    "coverageChecklist": [
+      "SourceUrl remained reachable in desktop Chrome on July 6, 2026.",
+      "The live playable eventually loaded Level 1 after about 50 seconds on the desktop Chrome pass.",
+      "Live tool loop rechecked: spray, brush, water, and the final tool each changed the rug state during the same session.",
+      "Previously captured multi-level evidence through Level 20 still stands: wheel, watch, sink, clean-result overlay, statue, and guitar stages are already documented in the guide.",
+      "Pending case: this desktop pass still did not reproduce a same-session Satisfyingly Clean overlay or later-level transition after the live recheck."
+    ],
+    "coverageNotes": [
+      "This remains one of the stronger guides in the dataset because earlier captured evidence proves the game goes well beyond the opening clean.",
+      "The July 6 live recheck adds sourceUrl accessibility and real tool-response confirmation, but the session was slowed by a very long loader before Level 1 became playable."
     ]
   },
   {
@@ -322,6 +1216,18 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Pin Launch, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Level 1 and Level 2 live route rechecked; fail state still pending",
+    "coverageUpdated": "2026-07-06",
+    "coverageChecklist": [
+      "SourceUrl remained reachable in desktop Chrome on July 6, 2026.",
+      "The playable initialized after roughly 16 seconds, and the Tap to Launch prompt plus Level 1 HUD rendered normally.",
+      "A live click-through reached Score 6 on Level 1 and auto-transitioned into Level 2 during the same session.",
+      "The same live session continued up to Score 14 on Level 2, confirming that post-clear progression still works.",
+      "Pending case: several rapid-tap samples did not reproduce a visible collision or fail overlay, so the losing state is still unverified."
+    ],
+    "coverageNotes": [
+      "This pass confirms that the guide's Level 1-to-Level 2 route still matches the live sourceUrl, not just archived screenshots."
     ]
   },
   {
@@ -427,6 +1333,17 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Drag to Stretch, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Source page reachable but live drag response blocked in desktop Chrome",
+    "coverageUpdated": "2026-07-06",
+    "coverageChecklist": [
+      "SourceUrl remained reachable in desktop Chrome on July 6, 2026.",
+      "The entry pose and Drag to Stretch prompt rendered correctly in the live share page.",
+      "Multiple horizontal drags from the visible body and head area in desktop Chrome did not produce a visible stretch response.",
+      "Pending case: active stretch and release states still need a fresh touch-device or alternate-browser replay because this desktop pass could not trigger them."
+    ],
+    "coverageNotes": [
+      "The existing screenshots still show the intended stretched pose, but this pass could not reproduce that state through the current desktop Chrome control surface."
     ]
   },
   {
@@ -742,6 +1659,18 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Coin Spiral Descent, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Opening route rechecked live through Depth 2; final Depth 70 still pending",
+    "coverageUpdated": "2026-07-06",
+    "coverageChecklist": [
+      "SourceUrl remained reachable in desktop Chrome on July 6, 2026.",
+      "Opening state rechecked live: the session started at Depth 0 with Coins 0 visible in the HUD.",
+      "Two short horizontal drags rotated the maze and advanced the live session from Depth 0 to Depth 1 and then Depth 2.",
+      "The earlier screenshot-backed opening route still matches the current source page, but no coin pickup, fail state, or Depth 70 reward was reached in this light pass.",
+      "Pending case: a longer recorded run is still needed for failure frames, coin collection, and any end reward."
+    ],
+    "coverageNotes": [
+      "This is still a dynamic reflex game where video capture is more valuable than a single screenshot pass."
     ]
   },
   {
@@ -964,6 +1893,18 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Peel the Fruit, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Blueberry opening and Strawberry transition rechecked live; exhausted-tries fail state still pending",
+    "coverageUpdated": "2026-07-06",
+    "coverageChecklist": [
+      "SourceUrl remained reachable in desktop Chrome on July 6, 2026.",
+      "Level 1 Blueberry start state rechecked live with the tries counter and peeled percentage visible.",
+      "Live tap samples raised the peeled meter from 0 percent to 13 percent and then 28 percent before continuing the same run.",
+      "The same session advanced into Level 2 Strawberry, confirming a next-level transition beyond the Blueberry opener.",
+      "Pending case: this pass did not reproduce an exhausted-tries or fail screen because the run advanced before a loss occurred."
+    ],
+    "coverageNotes": [
+      "The July 6 live recheck confirms the tap-to-drop route still works on the sourceUrl, not just in archived screenshots."
     ]
   },
   {
@@ -1498,6 +2439,18 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Cut Into Slices, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Level 1 and Level 2 clears reverified on July 4",
+    "coverageUpdated": "2026-07-04",
+    "coverageChecklist": [
+      "Source share page loaded successfully on July 4, 2026 in desktop Playwright; sourceUrl remained reachable.",
+      "Loader state Baking Pizza... resolved into Level 1 with Cut into 2 slices and Cuts Left: 1.",
+      "One vertical center cut produced a MASTER CHEF result with 97% accuracy on Level 1.",
+      "NEXT LEVEL opened Level 2 with Cut into 4 slices and Cuts Left: 2.",
+      "A vertical plus horizontal cross cut produced a MASTER CHEF result with 99% accuracy on Level 2."
+    ],
+    "coverageNotes": [
+      "This pass revalidated the current web playable directly from the published share page, so the existing two-level quick answer remains grounded."
     ]
   },
   {
@@ -1578,6 +2531,18 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Arrow Timing Wheel, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Level 1 and Level 2 failure verified; deeper clear pending",
+    "coverageUpdated": "2026-07-03",
+    "coverageChecklist": [
+      "Source metadata refreshed successfully on July 3, 2026: 749K views, 5.9K likes, 1.2K comments, 179 remixes.",
+      "Instruction case covered: tap only when the arrow hits the red section.",
+      "Timing case covered: Level 1 timing screen is captured.",
+      "Failure case covered: replay reached Level 2 and captured Game Over after a mistimed tap.",
+      "Pending case: a successful Level 2 clear and later level pattern changes still need replay."
+    ],
+    "coverageNotes": [
+      "This is a timing game, so later passes should capture a short clip around each tap to verify whether failures come from early or late taps."
     ]
   },
   {
@@ -1743,6 +2708,18 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Catch and Double, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Title/start flow and active 0-ball round verified; first-catch proof still pending",
+    "coverageUpdated": "2026-07-04",
+    "coverageChecklist": [
+      "Source share page loaded successfully on July 4, 2026 in desktop Playwright; sourceUrl remained reachable.",
+      "Loader state CALIBRATING RING appeared before the title card.",
+      "Title card with CATCH & DOUBLE, instructions, and START was visible during this pass.",
+      "After tapping START, the live round showed CAPTURED BALLS at 0 with the purple catcher and falling white balls visible.",
+      "Pending case: a successful catch, counter increase, and any fail/scale-up route still need replay or recording."
+    ],
+    "coverageNotes": [
+      "Desktop automation reached the live round, but this pass did not reproduce the earlier 1-catch proof."
     ]
   },
   {
@@ -2053,6 +3030,18 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Balloon Popper, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Start flow and 0/20 active board reverified; higher-score route still pending",
+    "coverageUpdated": "2026-07-04",
+    "coverageChecklist": [
+      "Source share page loaded successfully on July 4, 2026 in desktop Playwright; sourceUrl remained reachable.",
+      "Title card with Balloon Popper, Tap 20 balloons as fast as you can!, and Start Popping! was visible during this pass.",
+      "After starting, the live board showed Score: 0/20 with active balloon spawns.",
+      "A tap attempt on a visible balloon did not increment the counter during this desktop replay, so the scoring route still needs tighter replay timing or recording.",
+      "Pending case: reproduce the earlier 17/20 route, then verify 20/20 clear, fail state, or reward screen."
+    ],
+    "coverageNotes": [
+      "This pass reconfirmed that the playable is live, but it did not improve the previously recorded 17/20 proof."
     ]
   },
   {
@@ -3198,6 +4187,18 @@
     ],
     "communityNotes": [
       "No verified external community walkthrough is attached for Find the Hat Guy yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ],
+    "coverageStatus": "Prompt and live search board verified; successful snap still unconfirmed",
+    "coverageUpdated": "2026-07-04",
+    "coverageChecklist": [
+      "Source share page loaded successfully on July 4, 2026 in desktop Playwright; sourceUrl remained reachable.",
+      "The prompt Find the guy with the hat. Tap to snap! was visible again during this pass.",
+      "The live board rendered many search targets, including a visible orange-hat candidate on the board.",
+      "Repeated taps during this pass only surfaced the mid-board BORING / NOBODY CARES overlay, not a confirmed success modal or score change.",
+      "Pending case: capture a successful snap and any explicit clear/reset behavior."
+    ],
+    "coverageNotes": [
+      "The playable was not CDN-blocked in the share page shell; the blocker here is result confirmation, not source access."
     ]
   },
   {

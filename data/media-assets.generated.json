@@ -1,4 +1,144 @@
 {
+  "/assets/loopit-paws-on-loopit/01-campaign-ended.png": {
+    "r2Key": "games/loopit/loopit-paws-on-loopit/screenshots/01-campaign-ended-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-paws-on-loopit/screenshots/01-campaign-ended-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-paws-on-loopit/02-browse-pet-card.png": {
+    "r2Key": "games/loopit/loopit-paws-on-loopit/screenshots/02-browse-pet-card-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-paws-on-loopit/screenshots/02-browse-pet-card-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-click-1159-check-mark/01-target-1159.png": {
+    "r2Key": "games/loopit/loopit-click-1159-check-mark/screenshots/01-target-1159-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-click-1159-check-mark/screenshots/01-target-1159-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-click-1159-check-mark/02-share-menu.png": {
+    "r2Key": "games/loopit/loopit-click-1159-check-mark/screenshots/02-share-menu-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-click-1159-check-mark/screenshots/02-share-menu-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-guano-drop/01-level-one-stage.png": {
+    "r2Key": "games/loopit/loopit-guano-drop/screenshots/01-level-one-stage-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-guano-drop/screenshots/01-level-one-stage-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-guano-drop/02-tap-to-poop.png": {
+    "r2Key": "games/loopit/loopit-guano-drop/screenshots/02-tap-to-poop-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-guano-drop/screenshots/02-tap-to-poop-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-idle-memes/01-source-preview.png": {
+    "r2Key": "games/loopit/loopit-idle-memes/screenshots/01-source-preview-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-idle-memes/screenshots/01-source-preview-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-fan-made-side-scroller/01-source-preview.png": {
+    "r2Key": "games/loopit/loopit-fan-made-side-scroller/screenshots/01-source-preview-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-fan-made-side-scroller/screenshots/01-source-preview-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-epstintapuse-69-levels/01-choose-hero.png": {
+    "r2Key": "games/loopit/loopit-epstintapuse-69-levels/screenshots/01-choose-hero-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-epstintapuse-69-levels/screenshots/01-choose-hero-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-epstintapuse-69-levels/02-hero-selection-after-input.png": {
+    "r2Key": "games/loopit/loopit-epstintapuse-69-levels/screenshots/02-hero-selection-after-input-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-epstintapuse-69-levels/screenshots/02-hero-selection-after-input-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-phuanitmatter-tap-game/01-dimension-start.png": {
+    "r2Key": "games/loopit/loopit-phuanitmatter-tap-game/screenshots/01-dimension-start-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-phuanitmatter-tap-game/screenshots/01-dimension-start-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-phuanitmatter-tap-game/02-dimension-one-node.png": {
+    "r2Key": "games/loopit/loopit-phuanitmatter-tap-game/screenshots/02-dimension-one-node-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-phuanitmatter-tap-game/screenshots/02-dimension-one-node-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-zombie-simulator/01-starting-map.png": {
+    "r2Key": "games/loopit/loopit-zombie-simulator/screenshots/01-starting-map-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-zombie-simulator/screenshots/01-starting-map-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-zombie-simulator/02-time-145.png": {
+    "r2Key": "games/loopit/loopit-zombie-simulator/screenshots/02-time-145-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-zombie-simulator/screenshots/02-time-145-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-solarpunk-idle/01-tap-to-start.png": {
+    "r2Key": "games/loopit/loopit-solarpunk-idle/screenshots/01-tap-to-start-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-solarpunk-idle/screenshots/01-tap-to-start-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-solarpunk-idle/02-energy-19j.png": {
+    "r2Key": "games/loopit/loopit-solarpunk-idle/screenshots/02-energy-19j-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-solarpunk-idle/screenshots/02-energy-19j-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-stage-music-shifter/01-stage-start.png": {
+    "r2Key": "games/loopit/loopit-stage-music-shifter/screenshots/01-stage-start-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-stage-music-shifter/screenshots/01-stage-start-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-stage-music-shifter/02-select-angel.png": {
+    "r2Key": "games/loopit/loopit-stage-music-shifter/screenshots/02-select-angel-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-stage-music-shifter/screenshots/02-select-angel-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-trauma-theory/01-office-entry.png": {
+    "r2Key": "games/loopit/loopit-trauma-theory/screenshots/01-office-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-trauma-theory/screenshots/01-office-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-trauma-theory/02-begin-session.png": {
+    "r2Key": "games/loopit/loopit-trauma-theory/screenshots/02-begin-session-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-trauma-theory/screenshots/02-begin-session-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
   "/assets/loopit-cleaning-asmr-tools/01-level-3-wheel.jpg": {
     "r2Key": "games/loopit/loopit-cleaning-asmr-tools/screenshots/01-level-3-wheel-1200w.jpg",
     "localOutput": ".media/games/loopit/loopit-cleaning-asmr-tools/screenshots/01-level-3-wheel-1200w.jpg",

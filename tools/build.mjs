@@ -588,6 +588,24 @@ function creatorContextSection(game) {
   `;
 }
 
+function coverageSection(game) {
+  const checklist = Array.isArray(game.coverageChecklist) ? game.coverageChecklist : [];
+  const notes = Array.isArray(game.coverageNotes) ? game.coverageNotes : [];
+  if (!game.coverageStatus && !checklist.length && !notes.length) return "";
+
+  return `
+    <section class="guide-section coverage-pass">
+      <h2>Coverage pass</h2>
+      ${game.coverageStatus ? `<p><strong>Status:</strong> ${escapeHtml(game.coverageStatus)}</p>` : ""}
+      ${game.coverageUpdated ? `<p><strong>Last checked:</strong> ${escapeHtml(game.coverageUpdated)}</p>` : ""}
+      ${checklist.length ? `<ul>
+        ${checklist.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+      </ul>` : ""}
+      ${notes.length ? `<p>${escapeHtml(notes.join(" "))}</p>` : ""}
+    </section>
+  `;
+}
+
 function guideCard(game, prefix) {
   const access = guideAccess(game);
   return `
@@ -707,6 +725,7 @@ function premiumContentHtml(game) {
     ${guideSection("Controls", game.controls)}
     ${guideSection("Strategy tips", game.strategy)}
     ${guideSection("Common mistakes", game.mistakes)}
+    ${coverageSection(game)}
     ${creatorContextSection(game)}
     ${screenshotGallery(game)}
     <section class="faq-block">
@@ -963,6 +982,7 @@ function factsPanel(game) {
         <div><dt>Genre</dt><dd>${escapeHtml(game.genre)}</dd></div>
         <div><dt>Platforms</dt><dd>${game.platforms.map(escapeHtml).join(", ")}</dd></div>
         <div><dt>Difficulty</dt><dd>${escapeHtml(game.difficulty)}</dd></div>
+        ${game.coverageStatus ? `<div><dt>Coverage</dt><dd>${escapeHtml(game.coverageStatus)}</dd></div>` : ""}
         ${game.creator ? `<div><dt>Creator</dt><dd>${creatorLink(game, "/")}</dd></div>` : ""}
         ${game.stats?.views ? `<div><dt>Views</dt><dd>${escapeHtml(game.stats.views)}</dd></div>` : ""}
         ${game.stats?.likes ? `<div><dt>Likes</dt><dd>${escapeHtml(game.stats.likes)}</dd></div>` : ""}
