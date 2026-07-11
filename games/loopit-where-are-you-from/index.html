@@ -99,6 +99,16 @@
     </section>
 
 
+    <section class="guide-section coverage-pass">
+      <h2>Coverage pass</h2>
+      <p><strong>Status:</strong> Live route rechecked through country selection and drawing canvas; sharing remains unverified</p>
+      <p><strong>Last checked:</strong> 2026-07-11</p>
+      <ul>
+        <li>The source share page and embedded playable both returned 200 in a mobile-size Chrome replay on July 11, 2026.</li><li>Start Creating opened the live Choose Your Country grid.</li><li>Selecting Afghanistan opened the country-name step; Continue accepted an empty name and opened the drawing canvas.</li><li>A live multi-segment drag produced a visible trace on the canvas.</li><li>Pending case: Share was intentionally not invoked, and the footer Clear control stayed below the fixed replay viewport.</li>
+      </ul>
+      <p>This is a drawing/app flow rather than a win-or-lose game. No completion screen is exposed before Share.</p>
+    </section>
+
 
     <section class="guide-section creator-notes">
       <h2>Creator and community notes</h2>
@@ -120,6 +130,16 @@
           <figure>
             <img src="https://media.gameguidebase.com/games/loopit/loopit-where-are-you-from/screenshots/02-after-start-1200w.jpg?v=20260701-r2" alt="Where Are You From Choose Your Country grid with many flag tiles." loading="lazy">
             <figcaption>Start Creating opened the country selection grid.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="https://media.gameguidebase.com/games/loopit/loopit-where-are-you-from/screenshots/03-coverage-country-grid-1200w.jpg?v=20260701-r2" alt="Where Are You From live Choose Your Country grid after Start Creating." loading="lazy">
+            <figcaption>The current replay exposed the full live country-selection grid.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="https://media.gameguidebase.com/games/loopit/loopit-where-are-you-from/screenshots/04-coverage-draw-trace-1200w.jpg?v=20260701-r2" alt="Where Are You From live drawing canvas with a visible multi-segment trace." loading="lazy">
+            <figcaption>The selected country flow opened the canvas and accepted a live drawn trace.</figcaption>
           </figure>
 
       </div>
@@ -183,7 +203,7 @@
         <div><dt>Genre</dt><dd>Flag drawing</dd></div>
         <div><dt>Platforms</dt><dd>Loopit app, Mobile web playable</dd></div>
         <div><dt>Difficulty</dt><dd>A country-flag drawing flow that starts with Flag Drawer and then opens a Choose Your Country grid.</dd></div>
-
+        <div><dt>Coverage</dt><dd>Live route rechecked through country selection and drawing canvas; sharing remains unverified</dd></div>
         <div><dt>Creator</dt><dd><a href="/creators/eva/">Eva</a></dd></div>
         <div><dt>Views</dt><dd>8.8K</dd></div>
         <div><dt>Likes</dt><dd>70</dd></div>

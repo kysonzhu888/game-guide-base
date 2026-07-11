@@ -111,6 +111,27 @@
     "format": "jpeg",
     "quality": 82
   },
+  "/assets/loopit-solarpunk-idle/03-coverage-15j.png": {
+    "r2Key": "games/loopit/loopit-solarpunk-idle/screenshots/03-coverage-15j-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-solarpunk-idle/screenshots/03-coverage-15j-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-solarpunk-idle/04-coverage-solar-panel.png": {
+    "r2Key": "games/loopit/loopit-solarpunk-idle/screenshots/04-coverage-solar-panel-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-solarpunk-idle/screenshots/04-coverage-solar-panel-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-solarpunk-idle/05-coverage-wind-turbine.png": {
+    "r2Key": "games/loopit/loopit-solarpunk-idle/screenshots/05-coverage-wind-turbine-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-solarpunk-idle/screenshots/05-coverage-wind-turbine-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
   "/assets/loopit-stage-music-shifter/01-stage-start.png": {
     "r2Key": "games/loopit/loopit-stage-music-shifter/screenshots/01-stage-start-1200w.jpg",
     "localOutput": ".media/games/loopit/loopit-stage-music-shifter/screenshots/01-stage-start-1200w.jpg",
@@ -629,6 +650,20 @@
     "format": "jpeg",
     "quality": 82
   },
+  "/assets/loopit-nightmare-cuphead/04-coverage-chest-open.png": {
+    "r2Key": "games/loopit/loopit-nightmare-cuphead/screenshots/04-coverage-chest-open-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-nightmare-cuphead/screenshots/04-coverage-chest-open-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-nightmare-cuphead/05-coverage-drag-movement.png": {
+    "r2Key": "games/loopit/loopit-nightmare-cuphead/screenshots/05-coverage-drag-movement-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-nightmare-cuphead/screenshots/05-coverage-drag-movement-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
   "/assets/loopit-catch-and-double/01-round-start.png": {
     "r2Key": "games/loopit/loopit-catch-and-double/screenshots/01-round-start-1200w.jpg",
     "localOutput": ".media/games/loopit/loopit-catch-and-double/screenshots/01-round-start-1200w.jpg",
@@ -769,6 +804,20 @@
     "format": "jpeg",
     "quality": 82
   },
+  "/assets/loopit-spirostar/02-coverage-draw-trace.png": {
+    "r2Key": "games/loopit/loopit-spirostar/screenshots/02-coverage-draw-trace-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-spirostar/screenshots/02-coverage-draw-trace-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-spirostar/03-coverage-new-shape.png": {
+    "r2Key": "games/loopit/loopit-spirostar/screenshots/03-coverage-new-shape-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-spirostar/screenshots/03-coverage-new-shape-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
   "/assets/loopit-force-playground/01-tools.png": {
     "r2Key": "games/loopit/loopit-force-playground/screenshots/01-tools-1200w.jpg",
     "localOutput": ".media/games/loopit/loopit-force-playground/screenshots/01-tools-1200w.jpg",
@@ -835,6 +884,20 @@
   "/assets/loopit-zombie-town-v2/02-people-nine.png": {
     "r2Key": "games/loopit/loopit-zombie-town-v2/screenshots/02-people-nine-1200w.jpg",
     "localOutput": ".media/games/loopit/loopit-zombie-town-v2/screenshots/02-people-nine-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-zombie-town-v2/03-coverage-town-build.png": {
+    "r2Key": "games/loopit/loopit-zombie-town-v2/screenshots/03-coverage-town-build-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-zombie-town-v2/screenshots/03-coverage-town-build-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-zombie-town-v2/04-coverage-zombie-added.png": {
+    "r2Key": "games/loopit/loopit-zombie-town-v2/screenshots/04-coverage-zombie-added-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-zombie-town-v2/screenshots/04-coverage-zombie-added-1200w.jpg",
     "width": 1200,
     "format": "jpeg",
     "quality": 82
@@ -926,6 +989,20 @@
   "/assets/loopit-where-are-you-from/02-after-start.png": {
     "r2Key": "games/loopit/loopit-where-are-you-from/screenshots/02-after-start-1200w.jpg",
     "localOutput": ".media/games/loopit/loopit-where-are-you-from/screenshots/02-after-start-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-where-are-you-from/03-coverage-country-grid.png": {
+    "r2Key": "games/loopit/loopit-where-are-you-from/screenshots/03-coverage-country-grid-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-where-are-you-from/screenshots/03-coverage-country-grid-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-where-are-you-from/04-coverage-draw-trace.png": {
+    "r2Key": "games/loopit/loopit-where-are-you-from/screenshots/04-coverage-draw-trace-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-where-are-you-from/screenshots/04-coverage-draw-trace-1200w.jpg",
     "width": 1200,
     "format": "jpeg",
     "quality": 82

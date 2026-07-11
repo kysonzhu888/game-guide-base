@@ -695,6 +695,21 @@
         "src": "/assets/loopit-solarpunk-idle/02-energy-19j.png",
         "alt": "Solarpunk Idle showing 19 J, zero energy per second, target 5000 J, and infrastructure costs.",
         "caption": "At 19 J, Solar Panel was visible at 15 J and Wind Turbine at 100 J."
+      },
+      {
+        "src": "/assets/loopit-solarpunk-idle/03-coverage-15j.png",
+        "alt": "Solarpunk Idle at 15 J with the Solar Panel upgrade enabled.",
+        "caption": "Fifteen live taps reached the first Solar Panel purchase threshold."
+      },
+      {
+        "src": "/assets/loopit-solarpunk-idle/04-coverage-solar-panel.png",
+        "alt": "Solarpunk Idle after buying Solar Panel showing 1 J and 1.0 J per second.",
+        "caption": "The first Solar Panel purchase changed the live rate to 1.0 J/sec."
+      },
+      {
+        "src": "/assets/loopit-solarpunk-idle/05-coverage-wind-turbine.png",
+        "alt": "Solarpunk Idle after buying Wind Turbine showing 14 J and 6.0 J per second.",
+        "caption": "The live replay bought Wind Turbine and reached 6.0 J/sec."
       }
     ],
     "faq": [
@@ -718,6 +733,19 @@
     ],
     "communityNotes": [
       "Two other Chicar solarpunk web playables were checked in this batch, but they showed an Update to play this blocker and were not published as guides."
+    ],
+    "coverageStatus": "Live start, manual energy, Solar Panel, and Wind Turbine upgrades rechecked",
+    "coverageUpdated": "2026-07-11",
+    "coverageChecklist": [
+      "The source share page and embedded playable both returned 200 in a mobile-size Chrome replay on July 11, 2026.",
+      "A live tap dismissed the Solarpunk Idle start overlay and exposed the manual energy loop.",
+      "Fifteen taps raised energy to 15 J and enabled Solar Panel.",
+      "Buying Solar Panel spent the 15 J and changed the live production rate from 0.0 J/sec to 1.0 J/sec.",
+      "One hundred further taps reached 104 J; buying Wind Turbine left 14 J and raised production to 6.0 J/sec.",
+      "Pending case: the 5000 J phase target, later infrastructure, and any phase-complete state were not reached in this pass."
+    ],
+    "coverageNotes": [
+      "This is a dynamic idle game. The July 11 keyframes preserve the 15 J threshold plus both verified production-rate changes."
     ]
   },
   {
@@ -2565,8 +2593,8 @@
       "bookmarks": "",
       "remixes": ""
     },
-    "summary": "Nightmare Cuphead opens as a small survival arena: drag to move, dodge the ink, and tap chests for power-ups. Our replay verified the fight state and souls counter, but this behaves like an endless survival run rather than a short level clear.",
-    "quickAnswer": "Drag constantly to stay alive, use the middle of the arena for room, and tap chests only when the path is safe. Our replay reached the active arena with 0 souls collected, so treat this as a survival route, not a cleared level.",
+    "summary": "Nightmare Cuphead opens as a small survival arena: drag to move, dodge the ink, and tap chests for power-ups. The July 11 live replay opened a chest to raise SOULS COLLECTED from 0 to 100, but this still behaves like a survival run rather than a short level clear.",
+    "quickAnswer": "Drag constantly to stay alive, use the middle of the arena for room, and tap chests only when the path is safe. The current live replay changed SOULS COLLECTED from 0 to 100 by opening one chest; treat this as a survival route, not a cleared level.",
     "basics": [
       "Press FIGHT! from the title card.",
       "Keep dragging the character instead of making isolated taps.",
@@ -2604,6 +2632,16 @@
         "src": "/assets/loopit-nightmare-cuphead/03-outcome.png",
         "alt": "Nightmare Cuphead survival arena after movement with the souls counter still visible.",
         "caption": "No short clear screen appeared in this replay; it plays like survival."
+      },
+      {
+        "src": "/assets/loopit-nightmare-cuphead/04-coverage-chest-open.png",
+        "alt": "Nightmare Cuphead opened chest with SOULS COLLECTED at 100.",
+        "caption": "Tapping the live chest raised the counter from 0 to 100."
+      },
+      {
+        "src": "/assets/loopit-nightmare-cuphead/05-coverage-drag-movement.png",
+        "alt": "Nightmare Cuphead active arena after a live drag movement.",
+        "caption": "A live drag changed the character position during the survival loop."
       }
     ],
     "faq": [
@@ -2628,6 +2666,19 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Nightmare Cuphead, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Title, active survival arena, chest reward, and drag movement rechecked; fail/end state pending",
+    "coverageUpdated": "2026-07-11",
+    "coverageChecklist": [
+      "The source share page and embedded playable both returned 200 in a mobile-size Chrome replay on July 11, 2026.",
+      "The initially slow loader resolved into the NIGHTMARE CUPHEAD title card with FIGHT! and the drag/chest instructions.",
+      "FIGHT! opened the live SURVIVE THE ABYSS arena with SOULS COLLECTED at 0.",
+      "A tap on the visible chest opened it and changed SOULS COLLECTED from 0 to 100.",
+      "A live multi-point drag changed the character position; the sampled run remained active after 12 seconds.",
+      "Pending case: no loss, restart, fixed clear, or ending screen appeared in the sampled survival run."
+    ],
+    "coverageNotes": [
+      "This is a dynamic survival game. The pass keeps keyframes for the chest reward and movement rather than claiming a completed run."
     ]
   },
   {
@@ -3709,6 +3760,16 @@
         "src": "/assets/loopit-spirostar/01-prompt.png",
         "alt": "Spirostar screen with geometric magic prompt and star drawing outline.",
         "caption": "The replay verified the star drawing prompt."
+      },
+      {
+        "src": "/assets/loopit-spirostar/02-coverage-draw-trace.png",
+        "alt": "Spirostar with a glowing live trace from a continuous drag.",
+        "caption": "A continuous drag produced a visible glowing trace on the live canvas."
+      },
+      {
+        "src": "/assets/loopit-spirostar/03-coverage-new-shape.png",
+        "alt": "Spirostar after New Shape changed the geometric target.",
+        "caption": "New Shape reset the target to a different live outline."
       }
     ],
     "faq": [
@@ -3732,6 +3793,18 @@
     ],
     "communityNotes": [
       "No verified external community walkthrough is attached for Spirostar yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ],
+    "coverageStatus": "Live tracing and New Shape branch rechecked; accepted-shape result still pending",
+    "coverageUpdated": "2026-07-11",
+    "coverageChecklist": [
+      "The source share page and embedded playable both returned 200 in a mobile-size Chrome replay on July 11, 2026.",
+      "The live SPIROSTAR canvas rendered with the DRAG TO DRAW THE STAR prompt and NEW SHAPE control.",
+      "One continuous star-like drag generated a visible glowing trace on the active canvas.",
+      "NEW SHAPE changed the target geometry and cleared the previous trace.",
+      "Pending case: the sampled trace did not trigger an accepted-shape, failure, reward, or completion state."
+    ],
+    "coverageNotes": [
+      "This is a dynamic precision game. A touch-device or longer recorded tracing pass is still needed to prove the acceptance threshold."
     ]
   },
   {
@@ -4331,6 +4404,16 @@
         "src": "/assets/loopit-zombie-town-v2/02-people-nine.png",
         "alt": "Zombie Town V2 with people counter increased to 9.",
         "caption": "The replay verified PEOPLE increasing to 9."
+      },
+      {
+        "src": "/assets/loopit-zombie-town-v2/03-coverage-town-build.png",
+        "alt": "Zombie Town V2 live map with two people and one house placed.",
+        "caption": "The current replay placed two people and one house from the live tool palette."
+      },
+      {
+        "src": "/assets/loopit-zombie-town-v2/04-coverage-zombie-added.png",
+        "alt": "Zombie Town V2 live map with one zombie added to the town.",
+        "caption": "Selecting the zombie tool and tapping the map raised ZOMBIES to 1."
       }
     ],
     "faq": [
@@ -4354,6 +4437,18 @@
     ],
     "communityNotes": [
       "No verified external community walkthrough is attached for Zombie Town V2 yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ],
+    "coverageStatus": "Live placement loop rechecked: people, house, and zombie counters changed; hazard outcome pending",
+    "coverageUpdated": "2026-07-11",
+    "coverageChecklist": [
+      "The source share page and embedded playable both returned 200 in a mobile-size Chrome replay on July 11, 2026.",
+      "The live map opened at PEOPLE 0, ZOMBIES 0, HOUSES 0 with the person tool selected.",
+      "Two map taps raised PEOPLE to 2; switching to house and tapping raised HOUSES to 1.",
+      "Switching to zombie and tapping raised ZOMBIES to 1; current keyframes preserve both placement states.",
+      "The hazard tool could be selected, but its effect at the sampled map point was not visually confirmed and no outbreak/end state occurred."
+    ],
+    "coverageNotes": [
+      "This is a dynamic sandbox rather than a level-clear game. The pass does not infer spread, reset, or an ending from the static counters."
     ]
   },
   {
@@ -4956,6 +5051,16 @@
         "src": "/assets/loopit-where-are-you-from/02-after-start.png",
         "alt": "Where Are You From Choose Your Country grid with many flag tiles.",
         "caption": "Start Creating opened the country selection grid."
+      },
+      {
+        "src": "/assets/loopit-where-are-you-from/03-coverage-country-grid.png",
+        "alt": "Where Are You From live Choose Your Country grid after Start Creating.",
+        "caption": "The current replay exposed the full live country-selection grid."
+      },
+      {
+        "src": "/assets/loopit-where-are-you-from/04-coverage-draw-trace.png",
+        "alt": "Where Are You From live drawing canvas with a visible multi-segment trace.",
+        "caption": "The selected country flow opened the canvas and accepted a live drawn trace."
       }
     ],
     "faq": [
@@ -4979,6 +5084,18 @@
     ],
     "communityNotes": [
       "A public YouTube Short indexed this Loopit share link. No separate reliable walkthrough was found, so the guide is based on Loopit metadata and web replay evidence captured on July 2, 2026."
+    ],
+    "coverageStatus": "Live route rechecked through country selection and drawing canvas; sharing remains unverified",
+    "coverageUpdated": "2026-07-11",
+    "coverageChecklist": [
+      "The source share page and embedded playable both returned 200 in a mobile-size Chrome replay on July 11, 2026.",
+      "Start Creating opened the live Choose Your Country grid.",
+      "Selecting Afghanistan opened the country-name step; Continue accepted an empty name and opened the drawing canvas.",
+      "A live multi-segment drag produced a visible trace on the canvas.",
+      "Pending case: Share was intentionally not invoked, and the footer Clear control stayed below the fixed replay viewport."
+    ],
+    "coverageNotes": [
+      "This is a drawing/app flow rather than a win-or-lose game. No completion screen is exposed before Share."
     ]
   },
   {
