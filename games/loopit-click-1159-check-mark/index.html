@@ -99,6 +99,16 @@
     </section>
 
 
+    <section class="guide-section coverage-pass">
+      <h2>Coverage pass</h2>
+      <p><strong>Status:</strong> Source share page reachable; July 12 replay stalled at Loading and the CDN returned HTTP 403, so result states were not reverified</p>
+      <p><strong>Last checked:</strong> 2026-07-12</p>
+      <ul>
+        <li>Source share page returned HTTP 200 and exposed the Click 1159 Check Mark source card on July 12, 2026.</li><li>Mobile Playwright remained on Loading; the direct cdn-cf.loopit.me playable returned HTTP 403 and X-Frame-Options: SAMEORIGIN.</li><li>A blocker keyframe and mobile browser recording were captured; Tap to Start and the live counter were unreachable in this pass.</li><li>Pending cases: timed start, click-counter progression, fail state, and verified 1159-click result after CDN access is restored.</li>
+      </ul>
+      <p>This pass verified source availability only and did not claim a 1159-click clear. A mobile Playwright recording was retained for the July 12 pass; published keyframe: 03-coverage-cdn-blocked.png.</p>
+    </section>
+
 
     <section class="guide-section creator-notes">
       <h2>Creator and community notes</h2>
@@ -120,6 +130,11 @@
           <figure>
             <img src="https://media.gameguidebase.com/games/loopit/loopit-click-1159-check-mark/screenshots/02-share-menu-1200w.jpg?v=20260701-r2" alt="Click 1159 Check Mark share menu with copy link option." loading="lazy">
             <figcaption>The app share menu was used to preserve the real source link.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="https://media.gameguidebase.com/games/loopit/loopit-click-1159-check-mark/screenshots/03-coverage-cdn-blocked-1200w.jpg?v=20260701-r2" alt="Click 1159 Check Mark share page stalled at Loading because the Loopit CDN did not serve the playable." loading="lazy">
+            <figcaption>The July 12 coverage pass reached the share page, but the playable stayed on Loading and its CDN URL returned HTTP 403.</figcaption>
           </figure>
 
       </div>
@@ -183,7 +198,7 @@
         <div><dt>Genre</dt><dd>Speed tap</dd></div>
         <div><dt>Platforms</dt><dd>Loopit app, Mobile web playable</dd></div>
         <div><dt>Difficulty</dt><dd>A 60-second speed-tapping challenge with a target of 1159 clicks.</dd></div>
-
+        <div><dt>Coverage</dt><dd>Source share page reachable; July 12 replay stalled at Loading and the CDN returned HTTP 403, so result states were not reverified</dd></div>
         <div><dt>Creator</dt><dd><a href="/creators/sky2cool4u/">𝚂𝚔𝚢𝟸𝚌𝚘𝚘𝚕𝟺𝚞</a></dd></div>
         <div><dt>Views</dt><dd>705K</dd></div>
         <div><dt>Likes</dt><dd>13K</dd></div>

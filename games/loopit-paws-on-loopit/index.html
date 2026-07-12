@@ -101,12 +101,12 @@
 
     <section class="guide-section coverage-pass">
       <h2>Coverage pass</h2>
-      <p><strong>Status:</strong> Campaign-ended browse flow rechecked on July 4; account-dependent tabs still pending</p>
-      <p><strong>Last checked:</strong> 2026-07-04</p>
+      <p><strong>Status:</strong> Prior campaign-ended browse evidence remains documented; July 12 replay was blocked by CDN HTTP 403 and could not reverify tabs</p>
+      <p><strong>Last checked:</strong> 2026-07-12</p>
       <ul>
-        <li>Source share page loaded successfully on July 4, 2026 in desktop Playwright; sourceUrl remained reachable.</li><li>Campaign-ended banner and closed-voting state were visible again during this pass.</li><li>Browse/search shell and bottom-tab navigation were still visible on the published page.</li><li>Pending case: Ranking, My pets, and Rules tab contents still need a fuller replay because My pets appears account-dependent.</li>
+        <li>Source share page returned HTTP 200 and exposed the Paws On Loopit source card on July 12, 2026.</li><li>The embedded cdn-cf.loopit.me playable returned HTTP 403 and X-Frame-Options: SAMEORIGIN in mobile Playwright and direct HTTP checks.</li><li>A blocker keyframe and mobile browser recording were captured; campaign, Browse, Ranking, My pets, and Rules states were unreachable in this pass.</li><li>Pending case: reverify the campaign-ended browse state and inspect Ranking, My pets, and Rules after CDN access is restored; My pets may remain account-dependent.</li>
       </ul>
-      <p>This pass reconfirmed the archived browse state, not a live voting route.</p>
+      <p>This pass did not reconfirm the archived browse state because the playable never loaded. A mobile Playwright recording was retained for the July 12 pass; published keyframe: 03-coverage-cdn-blocked.png.</p>
     </section>
 
 
@@ -130,6 +130,11 @@
           <figure>
             <img src="https://media.gameguidebase.com/games/loopit/loopit-paws-on-loopit/screenshots/02-browse-pet-card-1200w.jpg?v=20260701-r2" alt="Paws On Loopit browse screen with a public pet card and bottom navigation." loading="lazy">
             <figcaption>Browse still shows pet cards, search, and tabs.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="https://media.gameguidebase.com/games/loopit/loopit-paws-on-loopit/screenshots/03-coverage-cdn-blocked-1200w.jpg?v=20260701-r2" alt="Paws On Loopit share page with the playable area blocked by the Loopit CDN." loading="lazy">
+            <figcaption>The July 12 coverage pass reached the share page, but the playable iframe returned CDN HTTP 403.</figcaption>
           </figure>
 
       </div>
@@ -193,7 +198,7 @@
         <div><dt>Genre</dt><dd>Pet gallery</dd></div>
         <div><dt>Platforms</dt><dd>Loopit app, Mobile web playable</dd></div>
         <div><dt>Difficulty</dt><dd>A public pet-gallery playable with campaign status, pet search, browse, ranking, my pets, and rules tabs.</dd></div>
-        <div><dt>Coverage</dt><dd>Campaign-ended browse flow rechecked on July 4; account-dependent tabs still pending</dd></div>
+        <div><dt>Coverage</dt><dd>Prior campaign-ended browse evidence remains documented; July 12 replay was blocked by CDN HTTP 403 and could not reverify tabs</dd></div>
         <div><dt>Creator</dt><dd><a href="/creators/loopit/">Loopit</a></dd></div>
         <div><dt>Views</dt><dd>313K</dd></div>
         <div><dt>Likes</dt><dd>5.0K</dd></div>

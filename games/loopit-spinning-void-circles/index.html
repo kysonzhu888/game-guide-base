@@ -99,6 +99,16 @@
     </section>
 
 
+    <section class="guide-section coverage-pass">
+      <h2>Coverage pass</h2>
+      <p><strong>Status:</strong> Source share page reachable; July 12 replay blocked by CDN HTTP 403, so drawing recognition and result states were not reverified</p>
+      <p><strong>Last checked:</strong> 2026-07-12</p>
+      <ul>
+        <li>Source share page returned HTTP 200 and exposed the Spinning Void Circles source card on July 12, 2026.</li><li>The embedded cdn-cf.loopit.me playable returned HTTP 403 and X-Frame-Options: SAMEORIGIN in mobile Playwright and direct HTTP checks.</li><li>A blocker keyframe and mobile browser recording were captured; canvas drawing and the CIRCLES counter were unreachable in this pass.</li><li>Pending cases: recognized and rejected circles, counter progression, fail state, and completion state after CDN access is restored.</li>
+      </ul>
+      <p>This pass verified source availability only and did not claim that a circle registered. A mobile Playwright recording was retained for the July 12 pass; published keyframe: 03-coverage-cdn-blocked.png.</p>
+    </section>
+
 
     <section class="guide-section creator-notes">
       <h2>Creator and community notes</h2>
@@ -120,6 +130,11 @@
           <figure>
             <img src="https://media.gameguidebase.com/games/loopit/loopit-spinning-void-circles/screenshots/02-unregistered-stroke-1200w.jpg?v=20260701-r2" alt="Spinning Void Circles showing a visible drawn stroke while the counter remains 0." loading="lazy">
             <figcaption>Our replay produced visible strokes, but the counter did not increment.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="https://media.gameguidebase.com/games/loopit/loopit-spinning-void-circles/screenshots/03-coverage-cdn-blocked-1200w.jpg?v=20260701-r2" alt="Spinning Void Circles share page with the playable area blocked by the Loopit CDN." loading="lazy">
+            <figcaption>The July 12 coverage pass reached the share page, but the playable iframe returned CDN HTTP 403.</figcaption>
           </figure>
 
       </div>
@@ -183,7 +198,7 @@
         <div><dt>Genre</dt><dd>Drawing precision</dd></div>
         <div><dt>Platforms</dt><dd>Loopit app, Mobile app</dd></div>
         <div><dt>Difficulty</dt><dd>A circle drawing challenge where the counter only increments when the loop is recognized.</dd></div>
-
+        <div><dt>Coverage</dt><dd>Source share page reachable; July 12 replay blocked by CDN HTTP 403, so drawing recognition and result states were not reverified</dd></div>
         <div><dt>Creator</dt><dd><a href="/creators/ilovefunnybunny/">ilovefunnybunny</a></dd></div>
 
         <div><dt>Likes</dt><dd>24</dd></div>

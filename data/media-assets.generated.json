@@ -13,6 +13,13 @@
     "format": "jpeg",
     "quality": 82
   },
+  "/assets/loopit-paws-on-loopit/03-coverage-cdn-blocked.png": {
+    "r2Key": "games/loopit/loopit-paws-on-loopit/screenshots/03-coverage-cdn-blocked-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-paws-on-loopit/screenshots/03-coverage-cdn-blocked-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
   "/assets/loopit-click-1159-check-mark/01-target-1159.png": {
     "r2Key": "games/loopit/loopit-click-1159-check-mark/screenshots/01-target-1159-1200w.jpg",
     "localOutput": ".media/games/loopit/loopit-click-1159-check-mark/screenshots/01-target-1159-1200w.jpg",
@@ -23,6 +30,13 @@
   "/assets/loopit-click-1159-check-mark/02-share-menu.png": {
     "r2Key": "games/loopit/loopit-click-1159-check-mark/screenshots/02-share-menu-1200w.jpg",
     "localOutput": ".media/games/loopit/loopit-click-1159-check-mark/screenshots/02-share-menu-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-click-1159-check-mark/03-coverage-cdn-blocked.png": {
+    "r2Key": "games/loopit/loopit-click-1159-check-mark/screenshots/03-coverage-cdn-blocked-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-click-1159-check-mark/screenshots/03-coverage-cdn-blocked-1200w.jpg",
     "width": 1200,
     "format": "jpeg",
     "quality": 82
@@ -629,6 +643,13 @@
     "format": "jpeg",
     "quality": 82
   },
+  "/assets/loopit-arrow-timing-wheel/03-coverage-cdn-blocked.png": {
+    "r2Key": "games/loopit/loopit-arrow-timing-wheel/screenshots/03-coverage-cdn-blocked-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-arrow-timing-wheel/screenshots/03-coverage-cdn-blocked-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
   "/assets/loopit-nightmare-cuphead/01-entry.png": {
     "r2Key": "games/loopit/loopit-nightmare-cuphead/screenshots/01-entry-1200w.jpg",
     "localOutput": ".media/games/loopit/loopit-nightmare-cuphead/screenshots/01-entry-1200w.jpg",
@@ -720,6 +741,13 @@
     "format": "jpeg",
     "quality": 82
   },
+  "/assets/loopit-balloon-popper/03-coverage-cdn-blocked.png": {
+    "r2Key": "games/loopit/loopit-balloon-popper/screenshots/03-coverage-cdn-blocked-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-balloon-popper/screenshots/03-coverage-cdn-blocked-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
   "/assets/loopit-spinning-void-circles/01-entry.png": {
     "r2Key": "games/loopit/loopit-spinning-void-circles/screenshots/01-entry-1200w.jpg",
     "localOutput": ".media/games/loopit/loopit-spinning-void-circles/screenshots/01-entry-1200w.jpg",
@@ -730,6 +758,13 @@
   "/assets/loopit-spinning-void-circles/02-unregistered-stroke.png": {
     "r2Key": "games/loopit/loopit-spinning-void-circles/screenshots/02-unregistered-stroke-1200w.jpg",
     "localOutput": ".media/games/loopit/loopit-spinning-void-circles/screenshots/02-unregistered-stroke-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-spinning-void-circles/03-coverage-cdn-blocked.png": {
+    "r2Key": "games/loopit/loopit-spinning-void-circles/screenshots/03-coverage-cdn-blocked-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-spinning-void-circles/screenshots/03-coverage-cdn-blocked-1200w.jpg",
     "width": 1200,
     "format": "jpeg",
     "quality": 82

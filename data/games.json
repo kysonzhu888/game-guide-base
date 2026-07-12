@@ -54,6 +54,11 @@
         "src": "/assets/loopit-paws-on-loopit/02-browse-pet-card.png",
         "alt": "Paws On Loopit browse screen with a public pet card and bottom navigation.",
         "caption": "Browse still shows pet cards, search, and tabs."
+      },
+      {
+        "src": "/assets/loopit-paws-on-loopit/03-coverage-cdn-blocked.png",
+        "alt": "Paws On Loopit share page with the playable area blocked by the Loopit CDN.",
+        "caption": "The July 12 coverage pass reached the share page, but the playable iframe returned CDN HTTP 403."
       }
     ],
     "faq": [
@@ -78,16 +83,17 @@
     "communityNotes": [
       "This page uses web replay screenshots captured on July 2, 2026, plus fresh source metadata checked on July 3, 2026."
     ],
-    "coverageStatus": "Campaign-ended browse flow rechecked on July 4; account-dependent tabs still pending",
-    "coverageUpdated": "2026-07-04",
+    "coverageStatus": "Prior campaign-ended browse evidence remains documented; July 12 replay was blocked by CDN HTTP 403 and could not reverify tabs",
+    "coverageUpdated": "2026-07-12",
     "coverageChecklist": [
-      "Source share page loaded successfully on July 4, 2026 in desktop Playwright; sourceUrl remained reachable.",
-      "Campaign-ended banner and closed-voting state were visible again during this pass.",
-      "Browse/search shell and bottom-tab navigation were still visible on the published page.",
-      "Pending case: Ranking, My pets, and Rules tab contents still need a fuller replay because My pets appears account-dependent."
+      "Source share page returned HTTP 200 and exposed the Paws On Loopit source card on July 12, 2026.",
+      "The embedded cdn-cf.loopit.me playable returned HTTP 403 and X-Frame-Options: SAMEORIGIN in mobile Playwright and direct HTTP checks.",
+      "A blocker keyframe and mobile browser recording were captured; campaign, Browse, Ranking, My pets, and Rules states were unreachable in this pass.",
+      "Pending case: reverify the campaign-ended browse state and inspect Ranking, My pets, and Rules after CDN access is restored; My pets may remain account-dependent."
     ],
     "coverageNotes": [
-      "This pass reconfirmed the archived browse state, not a live voting route."
+      "This pass did not reconfirm the archived browse state because the playable never loaded.",
+      "A mobile Playwright recording was retained for the July 12 pass; published keyframe: 03-coverage-cdn-blocked.png."
     ]
   },
   {
@@ -145,6 +151,11 @@
         "src": "/assets/loopit-click-1159-check-mark/02-share-menu.png",
         "alt": "Click 1159 Check Mark share menu with copy link option.",
         "caption": "The app share menu was used to preserve the real source link."
+      },
+      {
+        "src": "/assets/loopit-click-1159-check-mark/03-coverage-cdn-blocked.png",
+        "alt": "Click 1159 Check Mark share page stalled at Loading because the Loopit CDN did not serve the playable.",
+        "caption": "The July 12 coverage pass reached the share page, but the playable stayed on Loading and its CDN URL returned HTTP 403."
       }
     ],
     "faq": [
@@ -168,6 +179,18 @@
     ],
     "communityNotes": [
       "This guide is based on Android app capture from July 2, 2026 and refreshed source metadata from July 3, 2026."
+    ],
+    "coverageStatus": "Source share page reachable; July 12 replay stalled at Loading and the CDN returned HTTP 403, so result states were not reverified",
+    "coverageUpdated": "2026-07-12",
+    "coverageChecklist": [
+      "Source share page returned HTTP 200 and exposed the Click 1159 Check Mark source card on July 12, 2026.",
+      "Mobile Playwright remained on Loading; the direct cdn-cf.loopit.me playable returned HTTP 403 and X-Frame-Options: SAMEORIGIN.",
+      "A blocker keyframe and mobile browser recording were captured; Tap to Start and the live counter were unreachable in this pass.",
+      "Pending cases: timed start, click-counter progression, fail state, and verified 1159-click result after CDN access is restored."
+    ],
+    "coverageNotes": [
+      "This pass verified source availability only and did not claim a 1159-click clear.",
+      "A mobile Playwright recording was retained for the July 12 pass; published keyframe: 03-coverage-cdn-blocked.png."
     ]
   },
   {
@@ -2535,6 +2558,11 @@
         "src": "/assets/loopit-arrow-timing-wheel/02-game-over-level-2.png",
         "alt": "Arrow Timing Wheel game over screen saying the player reached Level 2.",
         "caption": "A mistimed tap ended our run at Level 2."
+      },
+      {
+        "src": "/assets/loopit-arrow-timing-wheel/03-coverage-cdn-blocked.png",
+        "alt": "Arrow Timing Wheel browser error after the Loopit share page failed through the current network tunnel.",
+        "caption": "The July 12 browser replay hit ERR_TUNNEL_CONNECTION_FAILED; curl still reached the share URL, while the playable CDN returned HTTP 403."
       }
     ],
     "faq": [
@@ -2560,17 +2588,17 @@
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Arrow Timing Wheel, so this guide is based on source-link replay evidence and visible Loopit metadata."
     ],
-    "coverageStatus": "Level 1 and Level 2 failure verified; deeper clear pending",
-    "coverageUpdated": "2026-07-03",
+    "coverageStatus": "Prior Level 2 failure remains documented; July 12 browser replay hit a tunnel error and the playable CDN returned HTTP 403",
+    "coverageUpdated": "2026-07-12",
     "coverageChecklist": [
-      "Source metadata refreshed successfully on July 3, 2026: 749K views, 5.9K likes, 1.2K comments, 179 remixes.",
-      "Instruction case covered: tap only when the arrow hits the red section.",
-      "Timing case covered: Level 1 timing screen is captured.",
-      "Failure case covered: replay reached Level 2 and captured Game Over after a mistimed tap.",
-      "Pending case: a successful Level 2 clear and later level pattern changes still need replay."
+      "Source share page returned HTTP 200 in curl on July 12, 2026, while mobile Playwright hit ERR_TUNNEL_CONNECTION_FAILED.",
+      "The direct cdn-cf.loopit.me playable returned HTTP 403 and X-Frame-Options: SAMEORIGIN.",
+      "A blocker keyframe and mobile browser recording were captured; Level 1, Level 2, fail, and clear states were unreachable in this pass.",
+      "Pending case: reverify the prior Level 2 Game Over, then capture a successful Level 2 clear and later patterns after network and CDN access are restored."
     ],
     "coverageNotes": [
-      "This is a timing game, so later passes should capture a short clip around each tap to verify whether failures come from early or late taps."
+      "This pass did not supersede the historical Level 2 failure evidence because the playable never loaded.",
+      "A mobile Playwright recording was retained for the July 12 pass; published keyframe: 03-coverage-cdn-blocked.png."
     ]
   },
   {
@@ -3057,6 +3085,11 @@
         "src": "/assets/loopit-balloon-popper/02-score-17.png",
         "alt": "Balloon Popper showing Score 17 out of 20 with remaining balloons visible.",
         "caption": "The highest verified replay state was 17/20."
+      },
+      {
+        "src": "/assets/loopit-balloon-popper/03-coverage-cdn-blocked.png",
+        "alt": "Balloon Popper share page with the playable area blocked by the Loopit CDN.",
+        "caption": "The July 12 coverage pass reached the share page, but the playable iframe returned CDN HTTP 403."
       }
     ],
     "faq": [
@@ -3082,17 +3115,17 @@
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Balloon Popper, so this guide is based on source-link replay evidence and visible Loopit metadata."
     ],
-    "coverageStatus": "Start flow and 0/20 active board reverified; higher-score route still pending",
-    "coverageUpdated": "2026-07-04",
+    "coverageStatus": "Source share page reachable; July 12 replay blocked by CDN HTTP 403, so the prior 17/20 evidence was not reverified",
+    "coverageUpdated": "2026-07-12",
     "coverageChecklist": [
-      "Source share page loaded successfully on July 4, 2026 in desktop Playwright; sourceUrl remained reachable.",
-      "Title card with Balloon Popper, Tap 20 balloons as fast as you can!, and Start Popping! was visible during this pass.",
-      "After starting, the live board showed Score: 0/20 with active balloon spawns.",
-      "A tap attempt on a visible balloon did not increment the counter during this desktop replay, so the scoring route still needs tighter replay timing or recording.",
-      "Pending case: reproduce the earlier 17/20 route, then verify 20/20 clear, fail state, or reward screen."
+      "Source share page returned HTTP 200 and exposed the Balloon Popper source card on July 12, 2026.",
+      "The embedded cdn-cf.loopit.me playable returned HTTP 403 and X-Frame-Options: SAMEORIGIN in mobile Playwright and direct HTTP checks.",
+      "A blocker keyframe and mobile browser recording were captured; no playable controls or score state were reachable in this pass.",
+      "Pending case: reproduce the earlier 17/20 route, then verify 20/20 clear, fail state, or reward screen after CDN access is restored."
     ],
     "coverageNotes": [
-      "This pass reconfirmed that the playable is live, but it did not improve the previously recorded 17/20 proof."
+      "The share shell was live, but this pass did not reverify gameplay; the prior 17/20 evidence remains historical rather than a July 12 clear.",
+      "A mobile Playwright recording was retained for the July 12 pass; published keyframe: 03-coverage-cdn-blocked.png."
     ]
   },
   {
@@ -3149,6 +3182,11 @@
         "src": "/assets/loopit-spinning-void-circles/02-unregistered-stroke.png",
         "alt": "Spinning Void Circles showing a visible drawn stroke while the counter remains 0.",
         "caption": "Our replay produced visible strokes, but the counter did not increment."
+      },
+      {
+        "src": "/assets/loopit-spinning-void-circles/03-coverage-cdn-blocked.png",
+        "alt": "Spinning Void Circles share page with the playable area blocked by the Loopit CDN.",
+        "caption": "The July 12 coverage pass reached the share page, but the playable iframe returned CDN HTTP 403."
       }
     ],
     "faq": [
@@ -3173,6 +3211,18 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Spinning Void Circles, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Source share page reachable; July 12 replay blocked by CDN HTTP 403, so drawing recognition and result states were not reverified",
+    "coverageUpdated": "2026-07-12",
+    "coverageChecklist": [
+      "Source share page returned HTTP 200 and exposed the Spinning Void Circles source card on July 12, 2026.",
+      "The embedded cdn-cf.loopit.me playable returned HTTP 403 and X-Frame-Options: SAMEORIGIN in mobile Playwright and direct HTTP checks.",
+      "A blocker keyframe and mobile browser recording were captured; canvas drawing and the CIRCLES counter were unreachable in this pass.",
+      "Pending cases: recognized and rejected circles, counter progression, fail state, and completion state after CDN access is restored."
+    ],
+    "coverageNotes": [
+      "This pass verified source availability only and did not claim that a circle registered.",
+      "A mobile Playwright recording was retained for the July 12 pass; published keyframe: 03-coverage-cdn-blocked.png."
     ]
   },
   {

@@ -101,12 +101,12 @@
 
     <section class="guide-section coverage-pass">
       <h2>Coverage pass</h2>
-      <p><strong>Status:</strong> Level 1 and Level 2 failure verified; deeper clear pending</p>
-      <p><strong>Last checked:</strong> 2026-07-03</p>
+      <p><strong>Status:</strong> Prior Level 2 failure remains documented; July 12 browser replay hit a tunnel error and the playable CDN returned HTTP 403</p>
+      <p><strong>Last checked:</strong> 2026-07-12</p>
       <ul>
-        <li>Source metadata refreshed successfully on July 3, 2026: 749K views, 5.9K likes, 1.2K comments, 179 remixes.</li><li>Instruction case covered: tap only when the arrow hits the red section.</li><li>Timing case covered: Level 1 timing screen is captured.</li><li>Failure case covered: replay reached Level 2 and captured Game Over after a mistimed tap.</li><li>Pending case: a successful Level 2 clear and later level pattern changes still need replay.</li>
+        <li>Source share page returned HTTP 200 in curl on July 12, 2026, while mobile Playwright hit ERR_TUNNEL_CONNECTION_FAILED.</li><li>The direct cdn-cf.loopit.me playable returned HTTP 403 and X-Frame-Options: SAMEORIGIN.</li><li>A blocker keyframe and mobile browser recording were captured; Level 1, Level 2, fail, and clear states were unreachable in this pass.</li><li>Pending case: reverify the prior Level 2 Game Over, then capture a successful Level 2 clear and later patterns after network and CDN access are restored.</li>
       </ul>
-      <p>This is a timing game, so later passes should capture a short clip around each tap to verify whether failures come from early or late taps.</p>
+      <p>This pass did not supersede the historical Level 2 failure evidence because the playable never loaded. A mobile Playwright recording was retained for the July 12 pass; published keyframe: 03-coverage-cdn-blocked.png.</p>
     </section>
 
 
@@ -130,6 +130,11 @@
           <figure>
             <img src="https://media.gameguidebase.com/games/loopit/loopit-arrow-timing-wheel/screenshots/02-game-over-level-2-1200w.jpg?v=20260701-r2" alt="Arrow Timing Wheel game over screen saying the player reached Level 2." loading="lazy">
             <figcaption>A mistimed tap ended our run at Level 2.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="https://media.gameguidebase.com/games/loopit/loopit-arrow-timing-wheel/screenshots/03-coverage-cdn-blocked-1200w.jpg?v=20260701-r2" alt="Arrow Timing Wheel browser error after the Loopit share page failed through the current network tunnel." loading="lazy">
+            <figcaption>The July 12 browser replay hit ERR_TUNNEL_CONNECTION_FAILED; curl still reached the share URL, while the playable CDN returned HTTP 403.</figcaption>
           </figure>
 
       </div>
@@ -193,7 +198,7 @@
         <div><dt>Genre</dt><dd>Timing tap</dd></div>
         <div><dt>Platforms</dt><dd>Loopit app, Mobile app</dd></div>
         <div><dt>Difficulty</dt><dd>A timing wheel where you tap when the pointer reaches the red segment.</dd></div>
-        <div><dt>Coverage</dt><dd>Level 1 and Level 2 failure verified; deeper clear pending</dd></div>
+        <div><dt>Coverage</dt><dd>Prior Level 2 failure remains documented; July 12 browser replay hit a tunnel error and the playable CDN returned HTTP 403</dd></div>
         <div><dt>Creator</dt><dd><a href="/creators/christopher/">Christopher</a></dd></div>
 
         <div><dt>Likes</dt><dd>5.7K</dd></div>
