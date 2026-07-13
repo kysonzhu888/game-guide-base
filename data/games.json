@@ -5995,5 +5995,410 @@
     "coverageNotes": [
       "The game is dynamic; the stable evidence set includes the start, Game Over result, and replay reset. The browser control surface did not expose native video recording for this run."
     ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-08",
+    "lastUpdated": "2026-07-08",
+    "communityNotes": [
+      "Web replay screenshots were captured from the public Loopit share page on July 8, 2026."
+    ],
+    "slug": "loopit-love-is-love",
+    "title": "Love Is Love",
+    "genre": "Physics toy",
+    "difficulty": "A rain-and-umbrella physics toy with selectable motion modes.",
+    "searchIntent": "Love Is Love Loopit guide, drag umbrella, Rain Kinetic Fluid Spiral modes",
+    "sourceUrl": "https://share.loopit.me/game/9e9fa910-c265-4702-8bfa-83784ee1c5ce",
+    "creator": "I HAVE YOUR BREAD!!",
+    "creatorSlug": "i-have-your-bread",
+    "stats": {
+      "views": "754K",
+      "likes": "22K",
+      "comments": "8.2K",
+      "remixes": "619"
+    },
+    "summary": "Love Is Love is a Loopit physics toy. Web replay showed a rain scene, two umbrellas, and mode buttons for Rain, Kinetic, Fluid, and Spiral.",
+    "quickAnswer": "Drag the umbrellas to catch the rain, then switch the bottom mode buttons if you want different particle behavior. This pass verified the rain scene and the four visible modes.",
+    "basics": [
+      "The instruction says to drag the umbrellas to catch the rain.",
+      "Two umbrellas are visible in the rain field.",
+      "Bottom controls include Rain, Kinetic, Fluid, and Spiral.",
+      "Rain mode was selected during the first replay."
+    ],
+    "controls": [
+      "Drag an umbrella under falling rain.",
+      "Use the mode buttons to change the particle effect.",
+      "Replay on mobile if desktop dragging feels imprecise."
+    ],
+    "strategy": [
+      "Start in Rain mode because it clearly shows the falling particles.",
+      "Move one umbrella at a time so you can see whether the catch zone follows your drag.",
+      "Use Kinetic, Fluid, and Spiral as variation modes until a deeper pass verifies scoring."
+    ],
+    "mistakes": [
+      "Expecting a passcode or fixed level clear from a physics toy.",
+      "Dragging too quickly and losing track of which umbrella is active.",
+      "Assuming all four modes have the same behavior without testing them separately."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-love-is-love/01-entry.jpg",
+        "alt": "Love Is Love Loopit rain scene with two umbrellas and mode buttons.",
+        "caption": "The entry screen asks you to drag umbrellas to catch the rain."
+      },
+      {
+        "src": "/assets/loopit-love-is-love/02-after-click.jpg",
+        "alt": "Love Is Love Loopit rain scene after replay interaction.",
+        "caption": "The replay kept the rain field and mode controls visible after interaction."
+      }
+    ],
+    "faq": [
+      [
+        "What do I do first?",
+        "Drag an umbrella under the falling rain."
+      ],
+      [
+        "What modes are visible?",
+        "Rain, Kinetic, Fluid, and Spiral."
+      ],
+      [
+        "Did this replay verify a win state?",
+        "No. This pass verified the interactive rain scene and controls, not a final score."
+      ]
+    ],
+    "creatorContext": [
+      "I HAVE YOUR BREAD!! is the Loopit display name shown on the source card.",
+      "Visible source-page engagement during capture: 754K views, 22K likes, 8.2K comments, 619 remixes."
+    ],
+    "coverageStatus": "Entry physics toy verified on July 8; individual mode differences pending"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-08",
+    "lastUpdated": "2026-07-08",
+    "communityNotes": [
+      "Web replay screenshots were captured from the public Loopit share page on July 8, 2026."
+    ],
+    "slug": "loopit-not-only-variable",
+    "title": "Not Only Variable",
+    "genre": "Narrative puzzle",
+    "difficulty": "A Link Lab invitation-letter playable with a typed confidential message.",
+    "searchIntent": "Not Only Variable Loopit guide, Link Lab invitation letter winners pages 4 and 5",
+    "sourceUrl": "https://share.loopit.me/game/5c582784-0c57-4356-b6e1-57bf10c24354",
+    "creator": "Loopit",
+    "creatorSlug": "loopit",
+    "stats": {
+      "views": "396K",
+      "likes": "2.3K",
+      "comments": "705",
+      "remixes": "466"
+    },
+    "summary": "Not Only Variable opens with a confidential invitation letter from Link Lab. Replay showed the letter typing out text about unusual activity and selected participants.",
+    "quickAnswer": "Wait for the letter text to finish typing before deciding your next action. The visible route starts with an invitation to Link Lab and a note that selected participants may continue.",
+    "basics": [
+      "The screen is styled as an invitation letter.",
+      "The letter addresses the player as Dr. Loopiter.",
+      "Link Lab is highlighted in the letter body.",
+      "The visible text types in gradually, so early clicks can miss context."
+    ],
+    "controls": [
+      "Let the typed text finish before interacting.",
+      "Click or tap only after the letter stops adding new words.",
+      "Use the Loopit share page if the direct iframe blocks access."
+    ],
+    "strategy": [
+      "Read the letter as the first clue rather than skipping it.",
+      "Treat highlighted Link Lab text as the central route clue.",
+      "If the page appears stuck, wait a few more seconds because the text is animated."
+    ],
+    "mistakes": [
+      "Clicking away before the confidential message finishes.",
+      "Treating this as a reflex game when it starts as a narrative clue page.",
+      "Assuming winner pages are visible from the first screen."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-not-only-variable/01-entry.jpg",
+        "alt": "Not Only Variable invitation letter with Link Lab highlighted.",
+        "caption": "The letter introduces Link Lab and a confidential invitation."
+      },
+      {
+        "src": "/assets/loopit-not-only-variable/02-after-click.jpg",
+        "alt": "Not Only Variable letter after replay interaction with more typed text.",
+        "caption": "The typed letter continues after waiting and light interaction."
+      }
+    ],
+    "faq": [
+      [
+        "What is the first clue?",
+        "The invitation letter highlights Link Lab."
+      ],
+      [
+        "Should I click immediately?",
+        "No. Wait for the typing animation to reveal the message."
+      ],
+      [
+        "Did replay reach the winners pages?",
+        "No. This pass verified the opening letter only."
+      ]
+    ],
+    "creatorContext": [
+      "Loopit is the display name shown on the public source card.",
+      "Visible source-page engagement during capture: 396K views, 2.3K likes, 705 comments, 466 remixes."
+    ],
+    "coverageStatus": "Opening invitation route verified on July 8; later pages pending"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-08",
+    "lastUpdated": "2026-07-08",
+    "communityNotes": [
+      "Web replay screenshots were captured from the public Loopit share page on July 8, 2026."
+    ],
+    "slug": "loopit-winners-pages-four-five",
+    "title": "Pool Me If You Can",
+    "genre": "Prank contest",
+    "difficulty": "A colorful Loopit contest/prank playable that starts on a Pool Me If You Can cover page.",
+    "searchIntent": "Pool Me If You Can Loopit guide, winners pages 4 5, prank play win 800",
+    "sourceUrl": "https://share.loopit.me/game/f79d3edc-d4e0-4e2f-9221-ad37c23d5d0b",
+    "creator": "Loopit",
+    "creatorSlug": "loopit",
+    "stats": {
+      "views": "207K",
+      "likes": "2.0K",
+      "comments": "672",
+      "remixes": "424"
+    },
+    "summary": "Pool Me If You Can is a Loopit contest-style playable. Web replay showed a cover page saying Prank, Play, and Win $800+ and Scroll for more (1/6).",
+    "quickAnswer": "Start by scrolling through the six-page cover flow. The first verified page says Pool Me If You Can and Scroll for more (1/6); winner details are advertised for pages 4 and 5.",
+    "basics": [
+      "The first screen reads Pool Me If You Can.",
+      "The subtitle says Prank, Play, and Win $800+.",
+      "The bottom prompt says Scroll for more (1/6).",
+      "The source description says winners are out on pages 4 and 5."
+    ],
+    "controls": [
+      "Scroll inside the phone-like game panel.",
+      "Move page by page so you do not skip the winner announcement pages.",
+      "Use the source share page rather than the raw CDN iframe."
+    ],
+    "strategy": [
+      "Treat this as a multi-page announcement flow first, not an arcade game.",
+      "Stop on pages 4 and 5 to check the advertised winner details.",
+      "Capture each page if you are verifying prize or Discord instructions."
+    ],
+    "mistakes": [
+      "Only reading page 1 and assuming there is no winner information.",
+      "Skipping directly through the scroll flow without recording page numbers.",
+      "Treating Discord claim text as verified by this site."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-winners-pages-four-five/01-entry.jpg",
+        "alt": "Pool Me If You Can Loopit cover page saying Prank, Play, and Win $800+.",
+        "caption": "The first verified page is page 1 of 6."
+      },
+      {
+        "src": "/assets/loopit-winners-pages-four-five/02-after-click.jpg",
+        "alt": "Pool Me If You Can cover page after replay interaction.",
+        "caption": "The cover remained visible after light interaction; deeper scrolling is pending."
+      }
+    ],
+    "faq": [
+      [
+        "Where are the winners?",
+        "The source text says pages 4 and 5; this pass verified page 1 only."
+      ],
+      [
+        "How many pages are there?",
+        "The first screen shows 1/6."
+      ],
+      [
+        "Is there a passcode?",
+        "No passcode was visible in the captured opening page."
+      ]
+    ],
+    "creatorContext": [
+      "Loopit is the display name shown on the public source card.",
+      "Visible source-page engagement during capture: 207K views, 2.0K likes, 672 comments, 424 remixes."
+    ],
+    "coverageStatus": "Opening page verified on July 8; pages 4 and 5 still need scroll capture"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-08",
+    "lastUpdated": "2026-07-08",
+    "communityNotes": [
+      "Web replay screenshots were captured from the public Loopit share page on July 8, 2026."
+    ],
+    "slug": "loopit-ink-alive",
+    "title": "Ink Alive",
+    "genre": "Drawing game",
+    "difficulty": "A draw-click-watch game that starts behind a large Play button.",
+    "searchIntent": "Ink Alive Loopit guide, draw it click it watch it move play button",
+    "sourceUrl": "https://share.loopit.me/game/e0ab60a9-5e2d-471e-9767-a0dead218190",
+    "creator": "sohee_ee",
+    "creatorSlug": "sohee-ee",
+    "stats": {
+      "views": "8.2K",
+      "likes": "122",
+      "comments": "57",
+      "remixes": "3"
+    },
+    "summary": "Ink Alive is a Loopit drawing playable. Web replay showed the title card, the instruction Draw it. Click it. Watch it Move!, and a large Play button.",
+    "quickAnswer": "Press Play, then follow the draw-click-watch loop. This pass verified the start card and instructions, but not the full drawing canvas.",
+    "basics": [
+      "The title card reads INK ALIVE!",
+      "The instruction says Draw it. Click it. Watch it Move!",
+      "A large Play button starts the route.",
+      "The game appears to be about animating or moving drawn ink."
+    ],
+    "controls": [
+      "Tap Play to enter the drawing route.",
+      "Draw only after the canvas is visible.",
+      "Click or tap the drawn object to test movement."
+    ],
+    "strategy": [
+      "Read the three-step instruction before pressing Play.",
+      "Make a simple drawing first so movement is easy to see.",
+      "Capture before and after movement if you are documenting a successful run."
+    ],
+    "mistakes": [
+      "Expecting movement before pressing Play.",
+      "Drawing something too complex for the first test.",
+      "Calling the guide complete before verifying the canvas."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-ink-alive/01-entry.jpg",
+        "alt": "Ink Alive start card with Play button and drawing instruction.",
+        "caption": "The title card explains the draw-click-watch loop."
+      },
+      {
+        "src": "/assets/loopit-ink-alive/02-after-click.jpg",
+        "alt": "Ink Alive start card after replay interaction.",
+        "caption": "The Play entry remained visible after light interaction in this pass."
+      }
+    ],
+    "faq": [
+      [
+        "What is the basic loop?",
+        "Draw it, click it, and watch it move."
+      ],
+      [
+        "What starts the game?",
+        "The large Play button."
+      ],
+      [
+        "Did replay verify the drawing canvas?",
+        "No. This pass verified the title card and instruction only."
+      ]
+    ],
+    "creatorContext": [
+      "sohee_ee is the Loopit display name shown on the source card.",
+      "Visible source-page engagement during capture: 8.2K views, 122 likes, 57 comments, 3 remixes."
+    ],
+    "coverageStatus": "Start card verified on July 8; drawing canvas pending"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-08",
+    "lastUpdated": "2026-07-08",
+    "communityNotes": [
+      "Web replay screenshots were captured from the public Loopit share page on July 8, 2026."
+    ],
+    "slug": "loopit-ethereal-gesture-maze",
+    "title": "Ethereal Gesture Maze",
+    "genre": "Gesture maze",
+    "difficulty": "A black-and-white gesture-maze playable with a Begin button.",
+    "searchIntent": "Ethereal Gesture Maze Loopit guide, Begin button, black white maze",
+    "sourceUrl": "https://share.loopit.me/game/82cd848c-5725-4f4b-ac77-7bdaee3fcd9c",
+    "creator": "jiwoo_p",
+    "creatorSlug": "jiwoo-p",
+    "stats": {
+      "views": "5.8K",
+      "likes": "0",
+      "comments": "7",
+      "remixes": "9"
+    },
+    "summary": "Ethereal Gesture Maze is a Loopit maze playable. Web replay showed a grayscale maze background and a Begin button on the title overlay.",
+    "quickAnswer": "Press Begin, then use gesture movement carefully inside the maze. This pass verified the title overlay and maze theme, not a completed route.",
+    "basics": [
+      "The title reads ETHEREAL.",
+      "The subtitle says GESTURE MAZE.",
+      "A Begin button sits in the center overlay.",
+      "The background shows a black-and-white maze path."
+    ],
+    "controls": [
+      "Tap Begin to start.",
+      "Use slow gestures once the maze route appears.",
+      "Avoid quick swipes until you know the collision rules."
+    ],
+    "strategy": [
+      "Study the visible maze layout before pressing Begin.",
+      "Make short movements at turns.",
+      "If you fail, replay from the title and record which corridor caused the miss."
+    ],
+    "mistakes": [
+      "Rushing into the maze without reading the Begin overlay.",
+      "Using long swipes in a tight corridor.",
+      "Treating the grayscale background as decoration rather than route context."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-jiwoo-p-playable/01-entry.jpg",
+        "alt": "Ethereal Gesture Maze title overlay with Begin button.",
+        "caption": "The title overlay identifies the game as a gesture maze."
+      },
+      {
+        "src": "/assets/loopit-jiwoo-p-playable/02-after-click.jpg",
+        "alt": "Ethereal Gesture Maze Begin screen after replay interaction.",
+        "caption": "The Begin state remained visible in this light replay."
+      }
+    ],
+    "faq": [
+      [
+        "What starts the maze?",
+        "The Begin button."
+      ],
+      [
+        "What kind of game is it?",
+        "The title screen calls it a Gesture Maze."
+      ],
+      [
+        "Did replay finish the maze?",
+        "No. This pass verified the start screen only."
+      ]
+    ],
+    "creatorContext": [
+      "jiwoo_p is the Loopit display name shown on the source card.",
+      "Visible source-page engagement during capture: 5.8K views, 0 likes, 7 comments, 9 remixes."
+    ],
+    "coverageStatus": "Title and Begin state verified on July 8; maze route pending"
   }
 ]
