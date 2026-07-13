@@ -2089,6 +2089,17 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Get It to the Top, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Partial live replay: drag interaction raised Cash from $0 to $145; final success/failure state not observed",
+    "coverageUpdated": "2026-07-13",
+    "coverageChecklist": [
+      "The source share page returned 200 and the embedded playable loaded in the in-app browser.",
+      "The game started at Cash $0 with the green controller at the bottom of the playfield.",
+      "Drag interactions changed the live counter through $15, $125, and $145.",
+      "No final top-of-screen reward, win overlay, or failure state was visible during this pass."
+    ],
+    "coverageNotes": [
+      "This pass confirms the live control loop and cash progression, but does not claim completion of the top objective."
     ]
   },
   {
@@ -3375,6 +3386,17 @@
     ],
     "communityNotes": [
       "No verified external community walkthrough is attached for Rollercoaster Builder yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ],
+    "coverageStatus": "Partial live replay: builder loaded and RIDE transitioned to STOP & EDIT; final ride outcome not observed",
+    "coverageUpdated": "2026-07-13",
+    "coverageChecklist": [
+      "The source share page returned 200 and the embedded builder loaded after the initial Building Theme Park state.",
+      "The live toolbar exposed Flat, Long, Bump, Wave, Climb, Drop, Loop, Undo, Clear, Shop, and RIDE controls.",
+      "The RIDE action was triggered and the iframe entered STOP & EDIT.",
+      "No fixed clear, crash, or final ride result was visible during the sampled run."
+    ],
+    "coverageNotes": [
+      "This is a dynamic sandbox; the pass records the editable and running states without inventing a completed coaster result."
     ]
   },
   {
@@ -3455,6 +3477,17 @@
     ],
     "communityNotes": [
       "No verified external community walkthrough is attached for Paper Cutting yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ],
+    "coverageStatus": "Partial live replay: Step 1 Folding loaded; fold gesture did not advance to a result in this pass",
+    "coverageUpdated": "2026-07-13",
+    "coverageChecklist": [
+      "The source share page returned 200 and the embedded playable loaded.",
+      "The visible entry state was Step 1: Folding with the instruction to drag along the dashed arrow.",
+      "Two sampled drag attempts did not produce a visible Step 2 or completion transition.",
+      "No cut result, recut state, unfold state, or failure state was claimed from this pass."
+    ],
+    "coverageNotes": [
+      "The current blocker is reproducing the exact fold gesture in this browser session; the existing guide's prior Step 2 evidence remains historical, not newly re-recorded here."
     ]
   },
   {
@@ -4474,6 +4507,17 @@
     ],
     "communityNotes": [
       "No verified external community walkthrough is attached for Anger Meter yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ],
+    "coverageStatus": "Partial live replay: Anger Meter and I HATE YOU action loaded; click produced no visible state change",
+    "coverageUpdated": "2026-07-13",
+    "coverageChecklist": [
+      "The source share page returned 200 and the embedded playable loaded.",
+      "The visible state showed ANGER METER, Mom, and one I HATE YOU button.",
+      "The unique I HATE YOU button was clicked once in the live iframe.",
+      "No visible meter transition, ending, success state, or failure state followed the click."
+    ],
+    "coverageNotes": [
+      "The action response is unverified in this browser context; this pass does not infer an anger threshold or ending."
     ]
   },
   {
@@ -4566,16 +4610,17 @@
       "No verified external community walkthrough is attached for Zombie Town V2 yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
     ],
     "coverageStatus": "Live placement loop rechecked: people, house, and zombie counters changed; hazard outcome pending",
-    "coverageUpdated": "2026-07-11",
+    "coverageUpdated": "2026-07-13",
     "coverageChecklist": [
       "The source share page and embedded playable both returned 200 in a mobile-size Chrome replay on July 11, 2026.",
       "The live map opened at PEOPLE 0, ZOMBIES 0, HOUSES 0 with the person tool selected.",
       "Two map taps raised PEOPLE to 2; switching to house and tapping raised HOUSES to 1.",
       "Switching to zombie and tapping raised ZOMBIES to 1; current keyframes preserve both placement states.",
-      "The hazard tool could be selected, but its effect at the sampled map point was not visually confirmed and no outbreak/end state occurred."
+      "The hazard tool could be selected, but its effect at the sampled map point was not visually confirmed and no outbreak/end state occurred.",
+      "A July 13 browser replay independently loaded the map and changed PEOPLE/ZOMBIES/HOUSES from 0/0/0 to 1/1/1."
     ],
     "coverageNotes": [
-      "This is a dynamic sandbox rather than a level-clear game. The pass does not infer spread, reset, or an ending from the static counters."
+      "This is a dynamic sandbox rather than a level-clear game. The pass does not infer spread, reset, or an ending from the static counters; the hazard outcome remains pending."
     ]
   },
   {

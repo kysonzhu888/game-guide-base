@@ -99,6 +99,16 @@
     </section>
 
 
+    <section class="guide-section coverage-pass">
+      <h2>Coverage pass</h2>
+      <p><strong>Status:</strong> Partial live replay: drag interaction raised Cash from $0 to $145; final success/failure state not observed</p>
+      <p><strong>Last checked:</strong> 2026-07-13</p>
+      <ul>
+        <li>The source share page returned 200 and the embedded playable loaded in the in-app browser.</li><li>The game started at Cash $0 with the green controller at the bottom of the playfield.</li><li>Drag interactions changed the live counter through $15, $125, and $145.</li><li>No final top-of-screen reward, win overlay, or failure state was visible during this pass.</li>
+      </ul>
+      <p>This pass confirms the live control loop and cash progression, but does not claim completion of the top objective.</p>
+    </section>
+
 
     <section class="guide-section creator-notes">
       <h2>Creator and community notes</h2>
@@ -208,7 +218,7 @@
         <div><dt>Genre</dt><dd>Physics bounce</dd></div>
         <div><dt>Platforms</dt><dd>Loopit app, Mobile app</dd></div>
         <div><dt>Difficulty</dt><dd>Physics timing with a bottom controller and rising cash score</dd></div>
-
+        <div><dt>Coverage</dt><dd>Partial live replay: drag interaction raised Cash from $0 to $145; final success/failure state not observed</dd></div>
         <div><dt>Creator</dt><dd><a href="/creators/shrimpy-pieeee/">SHRIMPY PIEEEE</a></dd></div>
 
         <div><dt>Likes</dt><dd>19.2k</dd></div>
