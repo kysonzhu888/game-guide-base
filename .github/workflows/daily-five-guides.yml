@@ -95,7 +95,8 @@ jobs:
         run: |
           set -euo pipefail
           open -gj -a Codex || true
-          codex -a never -s read-only -m gpt-5.4 -C "$GITHUB_WORKSPACE" \
+          codex -c 'model_reasoning_effort="xhigh"' \
+            -a never -s read-only -m gpt-5.4 -C "$GITHUB_WORKSPACE" \
             exec --ephemeral --output-last-message "$RUNNER_TEMP/codex-preflight.md" \
             - < .github/prompts/daily-five-guides-preflight.txt
 
@@ -105,7 +106,8 @@ jobs:
         run: |
           set -euo pipefail
           open -gj -a Codex || true
-          codex -a never -s danger-full-access --search -m gpt-5.4 \
+          codex -c 'model_reasoning_effort="xhigh"' \
+            -a never -s danger-full-access --search -m gpt-5.4 \
             -C "$GITHUB_WORKSPACE" \
             --add-dir "$DAILY_EVIDENCE_DIR" \
             --add-dir "$HOME/sekai.app.dir/docs" \

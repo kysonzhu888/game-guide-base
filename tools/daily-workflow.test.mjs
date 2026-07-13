@@ -17,6 +17,7 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /fetch-depth:\s*2/);
   assert.match(workflow, /workflow_dispatch:/);
   assert.match(workflow, /codex[\s\S]+exec/);
+  assert.equal(workflow.match(/model_reasoning_effort="xhigh"/g)?.length, 2);
   assert.match(workflow, /verify-daily-guides\.mjs/);
   assert.match(workflow, /build-deploy\.mjs/);
   assert.match(workflow, /wrangler@4\.110\.0 pages deploy \.deploy/);
