@@ -21,7 +21,7 @@ and extension for real gameplay. Use the `control-chrome` skill and select the `
 not `iab`. The user has already authorized you to open a new Chrome window. If the Chrome backend is
 unavailable after setup, read the required bootstrap and Chrome troubleshooting documentation,
 run `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome` directly with the Default profile
-at `about:blank`, wait briefly, and retry the `extension` backend once in the same session. Do not
+in a new window at `about:blank`, wait briefly, and retry the `extension` backend once in the same session. Do not
 ask for permission. The direct executable is required because the runner's LaunchAgent environment
 cannot use LaunchServices to open the Chrome bundle. Close only the temporary recovery tab after
 the browser is attached; do not inspect cookies, passwords, or profile storage.

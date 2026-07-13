@@ -26,8 +26,12 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /upload-artifact@v7/);
   assert.equal(workflow.match(/if: \$\{\{ env\.RUN_MODE == 'preflight' \}\}/g)?.length ?? 0, 0);
   assert.match(workflow, /grep -Fqx "BROWSER_PREFLIGHT_OK"/);
+  assert.match(workflow, /\/Applications\/ChatGPT\.app\/Contents\/MacOS\/ChatGPT/);
   assert.match(workflow, /\/Applications\/Google Chrome\.app\/Contents\/MacOS\/Google Chrome/);
   assert.match(workflow, /nohup "\$CHROME_BIN"/);
+  assert.match(workflow, /--new-window/);
+  assert.match(workflow, /browser-host-diagnostics\.txt/);
+  assert.match(workflow, /check-native-host-manifest\.js/);
   assert.doesNotMatch(workflow, /ubuntu-latest|openai\/codex-action/);
 
   assert.match(prompt, /new-guides 5/);

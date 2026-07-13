@@ -89,15 +89,44 @@ jobs:
           npm run build
           node tools/build-deploy.mjs
 
+      - name: Start and diagnose the local browser bridge
+        shell: bash
+        run: |
+          set -euo pipefail
+          CHATGPT_BIN="/Applications/ChatGPT.app/Contents/MacOS/ChatGPT"
+          CHROME_BIN="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+          BROWSER_NODE="/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node"
+          CHROME_PLUGIN="$HOME/.codex/plugins/cache/openai-bundled/chrome/latest"
+          test -x "$CHATGPT_BIN"
+          test -x "$CHROME_BIN"
+          test -x "$BROWSER_NODE"
+          test -d "$CHROME_PLUGIN/scripts"
+          nohup "$CHATGPT_BIN" >/dev/null 2>&1 &
+          nohup "$CHROME_BIN" \
+            --profile-directory=Default \
+            --new-window \
+            about:blank >/dev/null 2>&1 &
+          sleep 5
+          {
+            echo "# Chrome host diagnostics"
+            for script in \
+              chrome-is-running.js \
+              installed-browsers.js \
+              check-extension-installed.js \
+              check-native-host-manifest.js; do
+              echo
+              echo "## $script"
+              "$BROWSER_NODE" "$CHROME_PLUGIN/scripts/$script" --json
+            done
+            echo
+            echo "## native host processes"
+            pgrep -fl "ChatGPT for Chrome" || true
+          } | tee "$RUNNER_TEMP/browser-host-diagnostics.txt"
+
       - name: Gate the local Codex and Chrome runtime
         shell: bash
         run: |
           set -euo pipefail
-          open -gj -a Codex || true
-          CHROME_BIN="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-          test -x "$CHROME_BIN"
-          nohup "$CHROME_BIN" --profile-directory=Default about:blank >/dev/null 2>&1 &
-          sleep 5
           codex -c 'model_reasoning_effort="xhigh"' \
             -a never -s read-only -m gpt-5.4 -C "$GITHUB_WORKSPACE" \
             exec --ephemeral --output-last-message "$RUNNER_TEMP/codex-preflight.md" \
@@ -113,11 +142,6 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          open -gj -a Codex || true
-          CHROME_BIN="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-          test -x "$CHROME_BIN"
-          nohup "$CHROME_BIN" --profile-directory=Default about:blank >/dev/null 2>&1 &
-          sleep 5
           codex -c 'model_reasoning_effort="xhigh"' \
             -a never -s danger-full-access --search -m gpt-5.4 \
             -C "$GITHUB_WORKSPACE" \
@@ -180,6 +204,7 @@ jobs:
             for report in \
               "$RUNNER_TEMP/codex-preflight.md" \
               "$RUNNER_TEMP/codex-final.md" \
+              "$RUNNER_TEMP/browser-host-diagnostics.txt" \
               "$RUNNER_TEMP/daily-verification.json" \
               "$RUNNER_TEMP/deploy-package.json" \
               "$RUNNER_TEMP/pages-deployment.log"; do
@@ -201,6 +226,7 @@ jobs:
             ${{ runner.temp }}/game-guide-evidence
             ${{ runner.temp }}/codex-preflight.md
             ${{ runner.temp }}/codex-final.md
+            ${{ runner.temp }}/browser-host-diagnostics.txt
             ${{ runner.temp }}/daily-verification.json
             ${{ runner.temp }}/deploy-package.json
             ${{ runner.temp }}/pages-deployment.log

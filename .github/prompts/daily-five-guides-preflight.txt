@@ -5,7 +5,7 @@ the `control-chrome` skill and select the `extension` backend; do not select `ia
 The user has already authorized this scheduled workflow to open a new Chrome window. If the
 Chrome backend is unavailable after setup, read the required bootstrap and Chrome troubleshooting
 documentation, run `nohup "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
---profile-directory=Default about:blank >/dev/null 2>&1 &`, wait briefly, and retry the `extension`
+--profile-directory=Default --new-window about:blank >/dev/null 2>&1 &`, wait briefly, and retry the `extension`
 backend once in the same session. Do not ask for permission. The direct executable is required
 because the runner's LaunchAgent environment cannot use LaunchServices to open the Chrome bundle.
 
