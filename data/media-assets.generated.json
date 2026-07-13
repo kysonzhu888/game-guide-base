@@ -1272,5 +1272,75 @@
     "width": 1200,
     "format": "jpeg",
     "quality": 82
+  },
+  "/assets/loopit-love-is-love/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-love-is-love/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-love-is-love/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-love-is-love/02-after-click.jpg": {
+    "r2Key": "games/loopit/loopit-love-is-love/screenshots/02-after-click-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-love-is-love/screenshots/02-after-click-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-not-only-variable/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-not-only-variable/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-not-only-variable/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-not-only-variable/02-after-click.jpg": {
+    "r2Key": "games/loopit/loopit-not-only-variable/screenshots/02-after-click-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-not-only-variable/screenshots/02-after-click-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-winners-pages-four-five/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-winners-pages-four-five/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-winners-pages-four-five/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-winners-pages-four-five/02-after-click.jpg": {
+    "r2Key": "games/loopit/loopit-winners-pages-four-five/screenshots/02-after-click-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-winners-pages-four-five/screenshots/02-after-click-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-ink-alive/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-ink-alive/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-ink-alive/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-ink-alive/02-after-click.jpg": {
+    "r2Key": "games/loopit/loopit-ink-alive/screenshots/02-after-click-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-ink-alive/screenshots/02-after-click-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-jiwoo-p-playable/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-ethereal-gesture-maze/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-ethereal-gesture-maze/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-jiwoo-p-playable/02-after-click.jpg": {
+    "r2Key": "games/loopit/loopit-ethereal-gesture-maze/screenshots/02-after-click-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-ethereal-gesture-maze/screenshots/02-after-click-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
   }
 }
