@@ -1,0 +1,119 @@
+.guide-meta a {
+  color: var(--brand-dark);
+  font-weight: 850;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.library-update {
+  display: inline-flex;
+  gap: 5px;
+  margin: 4px 0 0;
+  padding: 8px 12px;
+  border: 1px solid rgba(11, 122, 83, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--brand-dark);
+  font-size: 0.82rem;
+  font-weight: 850;
+}
+
+.update-history {
+  background: linear-gradient(145deg, #ffffff 0%, #f3f8ee 100%);
+}
+
+.update-history-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.update-history-head h2 {
+  margin: 0;
+}
+
+.update-history-head .kicker {
+  margin-bottom: 7px;
+}
+
+.update-history-head > span {
+  flex: 0 0 auto;
+  padding: 7px 10px;
+  border: 1px solid rgba(11, 122, 83, 0.18);
+  border-radius: 999px;
+  background: white;
+  color: var(--brand-dark);
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.update-history-note {
+  margin: 12px 0 0;
+  color: var(--muted);
+}
+
+.update-list {
+  display: grid;
+  gap: 18px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.update-list > li {
+  position: relative;
+  margin: 0;
+  padding-left: 28px;
+}
+
+.update-list > li::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 1px;
+  width: 11px;
+  height: 11px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background: var(--coral);
+  box-shadow: 0 0 0 2px rgba(11, 122, 83, 0.2);
+}
+
+.update-list > li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  bottom: -21px;
+  left: 8px;
+  width: 2px;
+  background: rgba(11, 122, 83, 0.18);
+}
+
+.update-list time {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--brand-dark);
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.update-list strong {
+  display: block;
+  line-height: 1.42;
+}
+
+.update-list ul {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .update-history-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
