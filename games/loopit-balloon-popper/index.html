@@ -14,10 +14,11 @@
 
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7896672979027584" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/styles.css?v=20260702-access-flow-1">
+  <link rel="stylesheet" href="/styles.css?v=20260713-update-history-1">
+  <link rel="stylesheet" href="/update-history.css?v=20260713-update-history-1">
 
 
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"Balloon Popper","description":"Balloon Popper is a speed-tap challenge with a visible Score target of 20. Our replay got the counter as high as 17/20, which verifies the main loop and most of the first challenge, but not the final 20/20 completion screen.","genre":"Speed tap","gamePlatform":["Loopit app","Mobile app"],"url":"https://gameguidebase.com/games/loopit-balloon-popper/","publisher":{"@type":"Organization","name":"Game Guide Base"},"datePublished":"2026-07-02","dateModified":"2026-07-02"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"Balloon Popper","description":"Balloon Popper is a speed-tap challenge with a visible Score target of 20. Our replay got the counter as high as 17/20, which verifies the main loop and most of the first challenge, but not the final 20/20 completion screen.","genre":"Speed tap","gamePlatform":["Loopit app","Mobile app"],"url":"https://gameguidebase.com/games/loopit-balloon-popper/","publisher":{"@type":"Organization","name":"Game Guide Base"},"datePublished":"2026-07-12","dateModified":"2026-07-12"}</script>
 
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the target score?","acceptedAnswer":{"@type":"Answer","text":"The visible objective is 20 balloons."}},{"@type":"Question","name":"Did this replay finish 20/20?","acceptedAnswer":{"@type":"Answer","text":"No. The highest verified replay score was 17/20."}},{"@type":"Question","name":"What should I improve first?","acceptedAnswer":{"@type":"Answer","text":"Use a consistent scan pattern so late balloons are not missed."}}]}</script>
 
@@ -46,7 +47,7 @@
               <p class="kicker">Speed tap guide · Free</p>
               <h1>Balloon Popper guide</h1>
               <p>Balloon Popper is a speed-tap challenge with a visible Score target of 20. Our replay got the counter as high as 17/20, which verifies the main loop and most of the first challenge, but not the final 20/20 completion screen.</p>
-              <p class="guide-meta">Last updated <time datetime="2026-07-02">July 2, 2026</time></p>
+              <p class="guide-meta">Last updated <time datetime="2026-07-12">July 12, 2026</time> · <a href="#update-history">1 tracked update</a></p>
               <a class="play-link" href="https://share.loopit.me/game/1eda36ca-aa15-4b97-94ba-0b20b390b9ff?l_data=%7B%22said%22%3A%22sa_Zrp9JKmc%22%2C%22ssuid%22%3A%22ss_2veh2NJV%22%2C%22sharer%22%3A%229c3b828d-0846-4254-bfc3-92888f68eeb0%22%2C%22share_id%22%3A%221eda36ca-aa15-4b97-94ba-0b20b390b9ff%22%7D" target="_blank" rel="noopener">Play source game</a>
             </div>
 
@@ -107,6 +108,27 @@
         <li>Source share page returned HTTP 200 and exposed the Balloon Popper source card on July 12, 2026.</li><li>The embedded cdn-cf.loopit.me playable returned HTTP 403 and X-Frame-Options: SAMEORIGIN in mobile Playwright and direct HTTP checks.</li><li>A blocker keyframe and mobile browser recording were captured; no playable controls or score state were reachable in this pass.</li><li>Pending case: reproduce the earlier 17/20 route, then verify 20/20 clear, fail state, or reward screen after CDN access is restored.</li>
       </ul>
       <p>The share shell was live, but this pass did not reverify gameplay; the prior 17/20 evidence remains historical rather than a July 12 clear. A mobile Playwright recording was retained for the July 12 pass; published keyframe: 03-coverage-cdn-blocked.png.</p>
+    </section>
+
+
+    <section class="guide-section update-history" id="update-history">
+      <div class="update-history-head">
+        <div>
+          <p class="kicker">Freshness log</p>
+          <h2>Guide update history</h2>
+        </div>
+        <span>1 tracked update</span>
+      </div>
+      <p class="update-history-note">Dates change only when we replay a route, verify a source, add evidence, or revise the guide.</p>
+      <ol class="update-list">
+
+          <li>
+            <time datetime="2026-07-12">July 12, 2026</time>
+            <strong>Source share page reachable; July 12 replay blocked by CDN HTTP 403, so the prior 17/20 evidence was not reverified</strong>
+            <ul><li>Source share page returned HTTP 200 and exposed the Balloon Popper source card on July 12, 2026.</li><li>The embedded cdn-cf.loopit.me playable returned HTTP 403 and X-Frame-Options: SAMEORIGIN in mobile Playwright and direct HTTP checks.</li><li>A blocker keyframe and mobile browser recording were captured; no playable controls or score state were reachable in this pass.</li><li>Pending case: reproduce the earlier 17/20 route, then verify 20/20 clear, fail state, or reward screen after CDN access is restored.</li></ul>
+          </li>
+
+      </ol>
     </section>
 
 
@@ -324,7 +346,7 @@
       <a href="/sitemap.xml">Sitemap</a>
     </nav>
   </footer>
-  <script src="/script.js?v=20260702-access-flow-1" defer></script>
+  <script src="/script.js?v=20260713-update-history-1" defer></script>
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "8766e0f1c5cf486f81c867118dce77c5"}'></script>
 </body>
 </html>

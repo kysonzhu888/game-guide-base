@@ -1522,6 +1522,23 @@
     ],
     "coverageNotes": [
       "Dynamic keyframes cover the entry, first accepted drawing response, and the unchanged Evolution 1 state after multiple feeds."
+    ],
+    "updateHistory": [
+      {
+        "date": "2026-07-13",
+        "summary": "Replayed four feeding strokes and documented the unchanged Evolution 1 state.",
+        "details": [
+          "Added entry, first-draw, and multiple-feed keyframes.",
+          "Kept Evolution 2 marked as pending because it was not reproduced."
+        ]
+      },
+      {
+        "date": "2026-07-01",
+        "summary": "Published the initial feeding route and Evolution 2 evidence.",
+        "details": [
+          "Captured the green Evolution 1 form and the blue Evolution 2 form."
+        ]
+      }
     ]
   },
   {
@@ -2232,6 +2249,23 @@
     ],
     "coverageNotes": [
       "Dynamic keyframes cover the starting lane, live counter growth, and the post-steering route; the historical failure image was not reverified today."
+    ],
+    "updateHistory": [
+      {
+        "date": "2026-07-13",
+        "summary": "Rechecked the live runner, counter growth, and rightward steering.",
+        "details": [
+          "Recorded growth to 830 zombies and 65 troops.",
+          "Left the terminal result pending because the run did not end."
+        ]
+      },
+      {
+        "date": "2026-07-01",
+        "summary": "Published the initial green-gate route and Swarm Destroyed evidence.",
+        "details": [
+          "Captured early, large-swarm, late-route, and failure states."
+        ]
+      }
     ]
   },
   {
@@ -2568,6 +2602,30 @@
     ],
     "coverageNotes": [
       "Dynamic keyframes cover Level 1 entry and success, Level 2 entry, and the Level 2 failure result."
+    ],
+    "updateHistory": [
+      {
+        "date": "2026-07-13",
+        "summary": "Added a Level 1 perfect clear and a deliberate Level 2 failure route.",
+        "details": [
+          "Verified Score 100, three stars, and 100% accuracy on Level 1.",
+          "Verified UNEVEN, 0%, and TRY AGAIN after two parallel Level 2 cuts."
+        ]
+      },
+      {
+        "date": "2026-07-04",
+        "summary": "Reverified successful Level 1 and Level 2 clear routes.",
+        "details": [
+          "Used a centered cut for Level 1 and a perpendicular cross for Level 2."
+        ]
+      },
+      {
+        "date": "2026-07-01",
+        "summary": "Published the initial two-level slicing walkthrough.",
+        "details": [
+          "Added the original level and Master Chef screenshots."
+        ]
+      }
     ]
   },
   {
@@ -2962,6 +3020,23 @@
     ],
     "coverageNotes": [
       "Dynamic keyframes cover the loaded sky and the post-draw particle state; no win condition was claimed."
+    ],
+    "updateHistory": [
+      {
+        "date": "2026-07-13",
+        "summary": "Replayed the night-sky canvas and verified a curved firework path.",
+        "details": [
+          "Added sky-entry and green-particle keyframes.",
+          "Kept score and terminal states marked as unverified."
+        ]
+      },
+      {
+        "date": "2026-07-01",
+        "summary": "Published the initial freeform drawing response.",
+        "details": [
+          "Recorded that dragging changed the canvas without a visible result screen."
+        ]
+      }
     ]
   },
   {
@@ -4873,6 +4948,23 @@
     ],
     "coverageNotes": [
       "Dynamic keyframes document both failed trap attempts; this pass did not claim a successful capture or earnings."
+    ],
+    "updateHistory": [
+      {
+        "date": "2026-07-13",
+        "summary": "Replayed two closed-shape trap attempts and documented both misses.",
+        "details": [
+          "Verified that the moving ant escaped both shapes and the counter stayed at $0.",
+          "Kept successful capture and shop branches pending."
+        ]
+      },
+      {
+        "date": "2026-07-02",
+        "summary": "Published the initial pencil route and $16 progress evidence.",
+        "details": [
+          "Captured the $0 start and historical $16 state."
+        ]
+      }
     ]
   },
   {
