@@ -1125,5 +1125,152 @@
     "width": 1200,
     "format": "jpeg",
     "quality": 82
+  },
+  "/assets/loopit-reps-of-muscle/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-reps-of-muscle/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-reps-of-muscle/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-reps-of-muscle/02-reps-10-money-20.jpg": {
+    "r2Key": "games/loopit/loopit-reps-of-muscle/screenshots/02-reps-10-money-20-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-reps-of-muscle/screenshots/02-reps-10-money-20-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-reps-of-muscle/03-store.jpg": {
+    "r2Key": "games/loopit/loopit-reps-of-muscle/screenshots/03-store-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-reps-of-muscle/screenshots/03-store-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-reps-of-muscle/04-rank.jpg": {
+    "r2Key": "games/loopit/loopit-reps-of-muscle/screenshots/04-rank-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-reps-of-muscle/screenshots/04-rank-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-reps-of-muscle/05-reset.jpg": {
+    "r2Key": "games/loopit/loopit-reps-of-muscle/screenshots/05-reset-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-reps-of-muscle/screenshots/05-reset-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-chaos-clicker-game/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-chaos-clicker-game/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-chaos-clicker-game/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-chaos-clicker-game/02-chaos-33.jpg": {
+    "r2Key": "games/loopit/loopit-chaos-clicker-game/screenshots/02-chaos-33-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-chaos-clicker-game/screenshots/02-chaos-33-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-chaos-clicker-game/03-first-upgrade.jpg": {
+    "r2Key": "games/loopit/loopit-chaos-clicker-game/screenshots/03-first-upgrade-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-chaos-clicker-game/screenshots/03-first-upgrade-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-chaos-clicker-game/04-rank.jpg": {
+    "r2Key": "games/loopit/loopit-chaos-clicker-game/screenshots/04-rank-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-chaos-clicker-game/screenshots/04-rank-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-chaos-clicker-game/05-system.jpg": {
+    "r2Key": "games/loopit/loopit-chaos-clicker-game/screenshots/05-system-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-chaos-clicker-game/screenshots/05-system-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-linklab-pet-choice/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-linklab-pet-choice/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-linklab-pet-choice/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-linklab-pet-choice/02-dog.jpg": {
+    "r2Key": "games/loopit/loopit-linklab-pet-choice/screenshots/02-dog-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-linklab-pet-choice/screenshots/02-dog-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-linklab-pet-choice/03-cat.jpg": {
+    "r2Key": "games/loopit/loopit-linklab-pet-choice/screenshots/03-cat-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-linklab-pet-choice/screenshots/03-cat-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-cartoon-network-error/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-cartoon-network-error/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cartoon-network-error/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-cartoon-network-error/02-turn-off.jpg": {
+    "r2Key": "games/loopit/loopit-cartoon-network-error/screenshots/02-turn-off-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cartoon-network-error/screenshots/02-turn-off-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-cartoon-network-error/03-fix-error.jpg": {
+    "r2Key": "games/loopit/loopit-cartoon-network-error/screenshots/03-fix-error-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cartoon-network-error/screenshots/03-fix-error-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-cartoon-network-error/04-do-not-click.jpg": {
+    "r2Key": "games/loopit/loopit-cartoon-network-error/screenshots/04-do-not-click-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cartoon-network-error/screenshots/04-do-not-click-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-cartoon-network-error/05-result.jpg": {
+    "r2Key": "games/loopit/loopit-cartoon-network-error/screenshots/05-result-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cartoon-network-error/screenshots/05-result-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-pie-day/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-pie-day/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-pie-day/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-pie-day/02-game-over-score-2.jpg": {
+    "r2Key": "games/loopit/loopit-pie-day/screenshots/02-game-over-score-2-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-pie-day/screenshots/02-game-over-score-2-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-pie-day/03-play-again.jpg": {
+    "r2Key": "games/loopit/loopit-pie-day/screenshots/03-play-again-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-pie-day/screenshots/03-play-again-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
   }
 }

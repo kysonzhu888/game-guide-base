@@ -5326,5 +5326,537 @@
     "communityNotes": [
       "A public Roblox BEAR Wiki discussion indexed this Loopit share link. No separate reliable gameplay walkthrough was found, so this guide is based on Loopit metadata and web replay screenshots captured on July 2, 2026."
     ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-13",
+    "lastUpdated": "2026-07-13",
+    "communityNotes": [
+      "A full public-share-page replay was performed in the Codex in-app browser on July 13, 2026; published screenshots come from that run."
+    ],
+    "slug": "loopit-reps-of-muscle",
+    "title": "Reps of Muscle",
+    "genre": "Clicker upgrade",
+    "difficulty": "A workout clicker with reps, money, Store, Save, Rank, and Reset buttons.",
+    "searchIntent": "Reps of Muscle Loopit guide, reps money store save rank reset",
+    "sourceUrl": "https://share.loopit.me/game/6723482d-0f32-4b67-96f7-7dd8f4416bce",
+    "creator": "CookieMuffin01",
+    "creatorSlug": "cookiemuffin01",
+    "stats": {
+      "views": "41K",
+      "likes": "628",
+      "comments": "560",
+      "remixes": "26"
+    },
+    "summary": "Reps of Muscle is a workout clicker with money, Store, Save, Rank, and Reset. The July 13 replay reached REPS: 10 and $20, inspected both store upgrades, opened Rank, used Save, and verified Reset returns the game to zero.",
+    "quickAnswer": "Tap the workout canvas to gain 1 rep and $2 per registered input. The first store purchase costs $50, so build at least 25 reps before buying Stronger Lift.",
+    "basics": [
+      "The start state is REPS: 0 and $0.",
+      "The verified run reached REPS: 10 and $20.",
+      "Store lists Stronger Lift (+1) for $50 and Auto Lifter (+1/s) for $100.",
+      "Reset returned the counters to REPS: 0 and $0."
+    ],
+    "controls": [
+      "Tap the character/workout canvas to gain reps and money.",
+      "Use Store to inspect or buy Stronger Lift and Auto Lifter.",
+      "Use Save after progress, Rank for the global ranking panel, and Reset to clear the run."
+    ],
+    "strategy": [
+      "Build to at least $50 before trying the first purchase.",
+      "Save after a meaningful milestone, then verify the visible counters before leaving.",
+      "Use Reset only after recording your result because it immediately returns progress to zero."
+    ],
+    "mistakes": [
+      "Expecting every automated browser click to register; the canvas can coalesce fast inputs.",
+      "Trying to buy Stronger Lift below $50.",
+      "Using Reset before capturing the current reps and money."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-reps-of-muscle/01-entry.jpg",
+        "alt": "Reps of Muscle at REPS zero and money zero.",
+        "caption": "The verified run began at REPS: 0 and $0."
+      },
+      {
+        "src": "/assets/loopit-reps-of-muscle/02-reps-10-money-20.jpg",
+        "alt": "Reps of Muscle showing REPS ten and twenty dollars.",
+        "caption": "Registered workout taps raised the run to REPS: 10 and $20."
+      },
+      {
+        "src": "/assets/loopit-reps-of-muscle/03-store.jpg",
+        "alt": "Reps of Muscle store with Stronger Lift and Auto Lifter upgrades.",
+        "caption": "Store lists $50 Stronger Lift and $100 Auto Lifter purchases."
+      },
+      {
+        "src": "/assets/loopit-reps-of-muscle/04-rank.jpg",
+        "alt": "Reps of Muscle Global Rank loading panel.",
+        "caption": "Rank opens a Global Rank panel; data was loading during capture."
+      },
+      {
+        "src": "/assets/loopit-reps-of-muscle/05-reset.jpg",
+        "alt": "Reps of Muscle reset result showing REPS zero and money zero.",
+        "caption": "Reset returned the game to REPS: 0 and $0."
+      }
+    ],
+    "faq": [
+      [
+        "How much money does a rep give?",
+        "The verified run gained $20 by REPS: 10, or $2 per registered rep."
+      ],
+      [
+        "How much is the first upgrade?",
+        "Stronger Lift (+1) costs $50."
+      ],
+      [
+        "What does Auto Lifter cost?",
+        "Auto Lifter (+1/s) costs $100."
+      ],
+      [
+        "Does Reset clear progress?",
+        "Yes. Reset returned the verified run to REPS: 0 and $0."
+      ]
+    ],
+    "creatorContext": [
+      "CookieMuffin01 is the Loopit display name shown on the source card.",
+      "Visible source-page engagement during capture: 41K views, 628 likes, 560 comments, 26 remixes."
+    ],
+    "coverageStatus": "Click loop, Store, Rank, Save, and Reset verified on July 13; store purchases remain pending",
+    "coverageChecklist": [
+      "Verified the REPS: 0 and $0 start state.",
+      "Reached REPS: 10 and $20 with live canvas input.",
+      "Opened Store and recorded both visible upgrade names, effects, and costs.",
+      "Opened Rank and invoked Save.",
+      "Verified Reset returns both counters to zero.",
+      "Pending: buy Stronger Lift and Auto Lifter after earning enough money."
+    ],
+    "coverageNotes": [
+      "Twenty rapid automation inputs produced ten registered reps, so future automated replays must read the visible counter instead of assuming one event per click.",
+      "Save produced no distinct visible confirmation in this browser replay."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-13",
+    "lastUpdated": "2026-07-13",
+    "communityNotes": [
+      "A full public-share-page replay was performed in the Codex in-app browser on July 13, 2026; published screenshots come from that run."
+    ],
+    "slug": "loopit-chaos-clicker-game",
+    "title": "Chaos Clicker Game",
+    "genre": "Clicker upgrade",
+    "difficulty": "A dark dataplex clicker with Chaos count, C/Click, Fnord level, and upgrade costs.",
+    "searchIntent": "Chaos Clicker Game Loopit guide, Chaos count, dataplex, Fnord level, upgrade costs",
+    "sourceUrl": "https://share.loopit.me/game/95be7117-2082-4bb7-98a5-fbf7d4e0bd78",
+    "creator": "mark ivanun",
+    "creatorSlug": "mark-ivanun",
+    "stats": {
+      "views": "6.2K",
+      "likes": "43",
+      "comments": "5",
+      "remixes": "1"
+    },
+    "summary": "Chaos Clicker Game is a dataplex clicker. The July 13 replay raised CHAOS above the first upgrade cost, bought See the Fnord, verified Fnord Level 1 and 2 C/s, and opened both Rank and System panels.",
+    "quickAnswer": "Tap the central Hypersigil until CHAOS reaches 23, then buy See the Fnord. Our replay confirmed that purchase changes Fnord Level from 0 to 1 and starts 2 C/s passive income.",
+    "basics": [
+      "The run starts at CHAOS: 0, 1 C/Click, and Fnord Level: 0.",
+      "The first upgrade, See the Fnord, costs 23 Chaos.",
+      "Buying it raised Fnord Level to 1, started 2 C/s, and increased the next cost to 28.",
+      "Rank opens a Global Leaderboard modal; System opens effect toggles and an 80% volume slider."
+    ],
+    "controls": [
+      "Tap the central Hypersigil to gain Chaos.",
+      "Tap an affordable Upgrade Dataplex row to buy it.",
+      "Use Rank for the live leaderboard and System for visual/audio settings."
+    ],
+    "strategy": [
+      "Build at least 23 Chaos before attempting the first purchase.",
+      "After buying See the Fnord, let the 2 C/s passive rate continue while you inspect menus.",
+      "Check Fnord Level and the next listed cost to confirm that the purchase applied."
+    ],
+    "mistakes": [
+      "Trying to buy an upgrade while its cost is still unaffordable.",
+      "Assuming Rank contains records immediately; this replay showed a loading state.",
+      "Missing that System has independent flashes, scanlines, color filter, floating text, screen shake, and volume controls."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-chaos-clicker-game/01-entry.jpg",
+        "alt": "Chaos Clicker Game at CHAOS zero with the Upgrade Dataplex list.",
+        "caption": "The July 13 replay began at CHAOS: 0, 1 C/Click, and Fnord Level 0."
+      },
+      {
+        "src": "/assets/loopit-chaos-clicker-game/02-chaos-33.jpg",
+        "alt": "Chaos Clicker Game after tapping beyond the first upgrade cost.",
+        "caption": "Manual tapping raised CHAOS above the 23 required for See the Fnord."
+      },
+      {
+        "src": "/assets/loopit-chaos-clicker-game/03-first-upgrade.jpg",
+        "alt": "Chaos Clicker Game after buying See the Fnord with Fnord Level one and passive income.",
+        "caption": "The first purchase changed Fnord Level to 1 and started 2 C/s."
+      },
+      {
+        "src": "/assets/loopit-chaos-clicker-game/04-rank.jpg",
+        "alt": "Chaos Clicker Game Global Leaderboard modal.",
+        "caption": "Rank opens a live Global Leaderboard panel."
+      },
+      {
+        "src": "/assets/loopit-chaos-clicker-game/05-system.jpg",
+        "alt": "Chaos Clicker Game System Override settings panel.",
+        "caption": "System exposes visual-effect toggles and a master-volume slider."
+      }
+    ],
+    "faq": [
+      [
+        "What is the first upgrade cost?",
+        "See the Fnord costs 23 Chaos in the verified replay."
+      ],
+      [
+        "What does See the Fnord do?",
+        "It raised Fnord Level to 1 and started 2 Chaos per second."
+      ],
+      [
+        "What is in System?",
+        "Effect toggles for flashes, scanlines, color filter, floating text, screen shake, plus master volume."
+      ],
+      [
+        "Does Rank work?",
+        "Rank opened the Global Leaderboard panel; records were still loading during capture."
+      ]
+    ],
+    "creatorContext": [
+      "mark ivanun is the Loopit display name shown on the source card.",
+      "Visible source-page engagement during capture: 6.2K views, 43 likes, 5 comments, 1 remix."
+    ],
+    "coverageStatus": "Main click loop, first upgrade, Rank, and System verified on July 13; later high-cost upgrades remain pending",
+    "coverageChecklist": [
+      "Verified the 0-Chaos start state and central Hypersigil input.",
+      "Raised Chaos above 23 and purchased See the Fnord.",
+      "Verified Fnord Level 1, 2 C/s, and the next cost of 28.",
+      "Opened and captured both Rank and System branches.",
+      "Pending: higher-cost upgrades and late-game progression."
+    ],
+    "coverageNotes": [
+      "Passive income continued while modal branches were open; the counter reached 53 by the System capture."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-13",
+    "lastUpdated": "2026-07-13",
+    "communityNotes": [
+      "A full public-share-page replay was performed in the Codex in-app browser on July 13, 2026; published screenshots come from that run."
+    ],
+    "slug": "loopit-linklab-pet-choice",
+    "title": "LinkLab Pet Choice",
+    "genre": "Pet choice",
+    "difficulty": "A LinkLab onboarding playable with dog, cat, and no-pet choices.",
+    "searchIntent": "LinkLab Pet Choice Loopit guide, Adopt a Pet dog cat choice",
+    "sourceUrl": "https://share.loopit.me/game/81fc4fc7-6bb6-4545-977f-e2bcf459bdbc",
+    "creator": "Selfdreamers",
+    "creatorSlug": "selfdreamers",
+    "stats": {
+      "views": "544",
+      "likes": "13",
+      "comments": "2",
+      "remixes": "1"
+    },
+    "summary": "LinkLab Pet Choice is an onboarding branch inside a room-decorating shell. The July 13 replay verified the Dog and Cat selections both dismiss the adoption modal; the no-pet branch remains pending because the guest choice persisted and Chrome could not bootstrap a fresh Loopit identity.",
+    "quickAnswer": "The first modal offers Dog, Cat, or a no-pet skip. Dog and Cat both return to the main room shell after selection; use a fresh guest identity to compare the skip branch.",
+    "basics": [
+      "The adoption modal says the first companion is free.",
+      "Dog and Cat are separate selectable cards.",
+      "A third option says I don't want a pet right now.",
+      "The room shell also exposes Contest, Shop, furniture, Explore Rooms, Invite Friends, and Design Layout."
+    ],
+    "controls": [
+      "Choose Dog or Cat on the adoption modal.",
+      "Use the no-pet text option only in a fresh guest session if you need the skip route.",
+      "After selection, use the room controls to explore furniture and social branches."
+    ],
+    "strategy": [
+      "Use a fresh browser/App guest identity for each adoption branch because the selection persists.",
+      "Capture the modal before choosing so all three routes remain documented.",
+      "Treat the room shell as the branch outcome unless the selected pet is visibly rendered."
+    ],
+    "mistakes": [
+      "Claiming that a pet is visibly present when the post-selection room screenshot does not show it.",
+      "Reloading the same guest session and expecting the adoption modal to reset.",
+      "Treating Chrome's Open Loopit fallback as proof that the game itself is broken."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-linklab-pet-choice/01-entry.jpg",
+        "alt": "LinkLab Adopt a Pet modal with Dog, Cat, and no-pet choices.",
+        "caption": "The first branch offers Dog, Cat, or a no-pet skip."
+      },
+      {
+        "src": "/assets/loopit-linklab-pet-choice/02-dog.jpg",
+        "alt": "LinkLab room shell after choosing the Dog branch.",
+        "caption": "Choosing Dog dismissed the modal and returned to the room shell."
+      },
+      {
+        "src": "/assets/loopit-linklab-pet-choice/03-cat.jpg",
+        "alt": "LinkLab room shell after choosing the Cat branch.",
+        "caption": "A fresh replay chose Cat and dismissed the adoption modal."
+      }
+    ],
+    "faq": [
+      [
+        "Which choices are available?",
+        "Dog, Cat, and I don't want a pet right now."
+      ],
+      [
+        "What happens after choosing Dog or Cat?",
+        "The adoption modal closes and the room shell becomes available."
+      ],
+      [
+        "Was the no-pet branch verified?",
+        "Not yet. The guest selection persisted, and Chrome failed to bootstrap a fresh Loopit identity."
+      ],
+      [
+        "Can I reset the adoption choice by reloading?",
+        "Not reliably in this replay; use a fresh guest/App identity."
+      ]
+    ],
+    "creatorContext": [
+      "Selfdreamers is the Loopit display name shown on the source card.",
+      "Visible source-page engagement during capture: 544 views, 13 likes, 2 comments, 1 remix."
+    ],
+    "coverageStatus": "Dog and Cat selections verified on July 13; no-pet branch pending due guest-state persistence and browser identity bootstrap",
+    "coverageChecklist": [
+      "Captured the full three-option adoption modal.",
+      "Verified Dog dismisses the modal and returns to the room shell.",
+      "Verified Cat in a fresh replay and captured the post-selection room shell.",
+      "Attempted a separate Chrome context; the playable fell back to Open Loopit after identity bootstrap failures.",
+      "Pending: verify I don't want a pet right now in a fresh App or guest identity."
+    ],
+    "coverageNotes": [
+      "Do not infer which pet is active from these room-shell screenshots; neither selected animal was clearly visible after the modal closed.",
+      "The Chrome fallback logged repeated user/device/auth bootstrap failures and a social capability version mismatch."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-13",
+    "lastUpdated": "2026-07-13",
+    "communityNotes": [
+      "A full public-share-page replay was performed in the Codex in-app browser on July 13, 2026; published screenshots come from that run."
+    ],
+    "slug": "loopit-cartoon-network-error",
+    "title": "Cartoon Network Error",
+    "genre": "Error prank",
+    "difficulty": "A fake Cartoon Network error screen with exactly 200 chances and three visible actions.",
+    "searchIntent": "Cartoon Network Error Loopit guide, 200 chances, turn off computer, fix error",
+    "sourceUrl": "https://share.loopit.me/game/43378fa0-7203-467d-a3a9-b8fa367a5799",
+    "creator": "Shokus Video The Object Thingy",
+    "creatorSlug": "shokus-video-the-object-thingy",
+    "stats": {
+      "views": "142",
+      "likes": "3",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Cartoon Network Error is a prank counter game. The July 13 replay verified all three buttons: Turn Off Computer removed 5 chances, Fix Error removed 10, and Do Not Click This removed 50 before repeated presses reached the scary-logo ending.",
+    "quickAnswer": "All three choices reduce the 200-chance counter. Turn Off Computer costs 5, Fix Error costs 10, and Do Not Click This costs 50; repeated red-button presses reach the final scary-logo screen fastest.",
+    "basics": [
+      "The warning starts at exactly 200 chances.",
+      "Turn Off Computer changed 200 to 195.",
+      "Fix Error then changed 195 to 185.",
+      "Do Not Click This changed 185 to 135, and repeated presses reached the final scary-logo state."
+    ],
+    "controls": [
+      "Tap Turn Off Computer for the 5-chance branch.",
+      "Tap Fix Error for the 10-chance branch.",
+      "Tap Do Not Click This for the 50-chance prank branch."
+    ],
+    "strategy": [
+      "Capture the 200 start state before touching any button.",
+      "Use the red Do Not Click This button when you want the fastest route to the ending.",
+      "Track the displayed counter after every choice because the button labels are intentionally misleading."
+    ],
+    "mistakes": [
+      "Assuming Fix Error restores chances; it reduced the counter in the verified run.",
+      "Assuming Turn Off Computer immediately exits; it only removed 5 chances.",
+      "Stopping before the final logo and missing the actual result state."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-cartoon-network-error/01-entry.jpg",
+        "alt": "Cartoon Network Error start screen showing exactly two hundred chances.",
+        "caption": "The prank starts with exactly 200 chances and three choices."
+      },
+      {
+        "src": "/assets/loopit-cartoon-network-error/02-turn-off.jpg",
+        "alt": "Cartoon Network Error after Turn Off Computer showing one hundred ninety-five chances.",
+        "caption": "Turn Off Computer reduced the counter from 200 to 195."
+      },
+      {
+        "src": "/assets/loopit-cartoon-network-error/03-fix-error.jpg",
+        "alt": "Cartoon Network Error after Fix Error showing one hundred eighty-five chances.",
+        "caption": "Fix Error removed another 10 chances."
+      },
+      {
+        "src": "/assets/loopit-cartoon-network-error/04-do-not-click.jpg",
+        "alt": "Cartoon Network Error after Do Not Click This showing one hundred thirty-five chances.",
+        "caption": "Do Not Click This removed 50 chances in one press."
+      },
+      {
+        "src": "/assets/loopit-cartoon-network-error/05-result.jpg",
+        "alt": "Cartoon Network Error final scary-logo result screen.",
+        "caption": "Repeated red-button presses reached the final scary-logo state."
+      }
+    ],
+    "faq": [
+      [
+        "What does Turn Off Computer do?",
+        "It reduced the counter by 5 in the verified run."
+      ],
+      [
+        "Does Fix Error fix the counter?",
+        "No. It reduced the counter by 10."
+      ],
+      [
+        "What does Do Not Click This do?",
+        "It reduced the counter by 50 and is the fastest verified route to the ending."
+      ],
+      [
+        "What is the ending?",
+        "The regular warning UI disappears and a scary logo fills the playable."
+      ]
+    ],
+    "creatorContext": [
+      "Shokus Video The Object Thingy is the Loopit display name shown on the source card.",
+      "Visible source-page engagement during capture: 142 views, 3 likes, 0 comments, 0 remixes."
+    ],
+    "coverageStatus": "All three button branches and the final scary-logo result verified on July 13",
+    "coverageChecklist": [
+      "Captured the 200-chance start state.",
+      "Verified Turn Off Computer changes 200 to 195.",
+      "Verified Fix Error changes 195 to 185.",
+      "Verified Do Not Click This changes 185 to 135.",
+      "Repeated the red-button route until the final scary-logo result appeared."
+    ],
+    "coverageNotes": [
+      "The branch effects were measured sequentially in one run; each displayed delta was visible immediately after its button press."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-13",
+    "lastUpdated": "2026-07-13",
+    "communityNotes": [
+      "A full public-share-page replay was performed in the Codex in-app browser on July 13, 2026; published screenshots come from that run."
+    ],
+    "slug": "loopit-pie-day",
+    "title": "Pie Day",
+    "genre": "Reaction catch",
+    "difficulty": "A falling-pie catch game with a chef character and visible score.",
+    "searchIntent": "Pie Day Loopit guide, falling pies, score 1, chef catch game",
+    "sourceUrl": "https://share.loopit.me/game/651f7df7-8706-4968-896f-a78c835d4611",
+    "creator": "luis",
+    "creatorSlug": "luis",
+    "stats": {
+      "views": "127",
+      "likes": "8",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Pie Day is a drag-to-catch reaction game. The July 13 replay moved the chef under falling pies, reached Score 2, captured Game Over, and verified Play Again resets the run to Score 0.",
+    "quickAnswer": "Drag the chef horizontally under falling pies. Missing enough pies ends the run; Play Again returns the score to 0.",
+    "basics": [
+      "The round starts at SCORE: 0 with Drag to Catch instructions.",
+      "Pies fall from several horizontal positions.",
+      "The verified run caught two pies before Game Over.",
+      "Play Again restarted the game at SCORE: 0."
+    ],
+    "controls": [
+      "Drag the chef horizontally along the bottom of the chalkboard.",
+      "Align the chef with the next falling pie before it reaches the floor.",
+      "Use Play Again on the Game Over panel to start a fresh round."
+    ],
+    "strategy": [
+      "Watch the upper half for the next spawn before making a large move.",
+      "Stay near the center when no pie is close so both sides remain reachable.",
+      "Use smooth horizontal drags; one calibrated move caught two pies in the verified run."
+    ],
+    "mistakes": [
+      "Waiting until the pie reaches the bottom before moving.",
+      "Dragging vertically instead of keeping the chef near the floor.",
+      "Calling a scored state complete without also capturing Game Over and replay."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-pie-day/01-entry.jpg",
+        "alt": "Pie Day starting board at Score zero with falling pies and a chef.",
+        "caption": "The verified round began at SCORE: 0."
+      },
+      {
+        "src": "/assets/loopit-pie-day/02-game-over-score-2.jpg",
+        "alt": "Pie Day Game Over panel showing Score two.",
+        "caption": "The live drag replay caught two pies before Game Over."
+      },
+      {
+        "src": "/assets/loopit-pie-day/03-play-again.jpg",
+        "alt": "Pie Day after Play Again showing Score zero.",
+        "caption": "Play Again returned the game to SCORE: 0."
+      }
+    ],
+    "faq": [
+      [
+        "How do I score?",
+        "Drag the chef under a falling pie before it reaches the floor."
+      ],
+      [
+        "What result was verified?",
+        "The replay reached Score 2 and then Game Over."
+      ],
+      [
+        "Can I replay?",
+        "Yes. Play Again restarts the game at Score 0."
+      ],
+      [
+        "Is there a passcode?",
+        "No passcode appeared in the verified run."
+      ]
+    ],
+    "creatorContext": [
+      "luis is the Loopit display name shown on the source card.",
+      "Visible source-page engagement during capture: 127 views, 8 likes, 0 comments, 0 remixes."
+    ],
+    "coverageStatus": "Live drag input, Score 2 Game Over, and Play Again reset verified on July 13",
+    "coverageChecklist": [
+      "Captured the SCORE: 0 start state.",
+      "Used live horizontal drag input and caught two pies.",
+      "Captured the Game Over result at Score 2.",
+      "Verified Play Again resets the round to SCORE: 0."
+    ],
+    "coverageNotes": [
+      "The game is dynamic; the stable evidence set includes the start, Game Over result, and replay reset. The browser control surface did not expose native video recording for this run."
+    ]
   }
 ]
