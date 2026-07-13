@@ -1,0 +1,132 @@
+# Game Guide Base daily new-guides 5 run
+
+Execute one production `new-guides 5` run for Game Guide Base. This is not a coverage refresh.
+Five existing guides with new timestamps do not count. Never invent play results, routes,
+creators, statistics, screenshots, or outcomes to reach the target.
+
+The trusted workflow provides these environment variables:
+
+- `DAILY_RUN_DATE`: Asia/Shanghai date in `YYYY-MM-DD`.
+- `BASELINE_SHA`: immutable `origin/main` commit captured before this run.
+- `DAILY_EVIDENCE_DIR`: artifact directory for raw screenshots, frames, and videos.
+- `LINEAR_PARENT_ISSUE`: always `UCH-41`.
+- `TARGET_GUIDES`: always `5`.
+- `GITHUB_RUN_URL`: this workflow run.
+
+Use the `$playable-game-guide` workflow and obey the repository/user AGENTS rules. Work only
+inside the Actions checkout plus `DAILY_EVIDENCE_DIR` and the dated docs evidence directory.
+
+## 1. Ticket and baseline first
+
+Before content or code changes:
+
+1. Read `~/.linear/api_token` without printing it. Verify `organization.urlKey == "uchuu"`
+   and team key `UCH`. Stop if either differs.
+2. Create or reuse one child issue under UCH-41 named
+   `DAILY_RUN_DATE | Loopit 每日 5 个新攻略`, assigned to the current viewer, due that day,
+   and move it to In Progress. Put `GITHUB_RUN_URL` and `BASELINE_SHA` in its rolling comment.
+3. Fetch `origin`, verify `BASELINE_SHA` exists, and record the baseline game count plus all
+   existing slug/sourceUrl values from `BASELINE_SHA:data/games.json`.
+4. Create or reuse branch `automation/daily-five-guides-DAILY_RUN_DATE`. Do not work on main.
+
+## 2. Discover and really play candidates
+
+Prepare at least 8-10 deduplicated Loopit candidates so blocked candidates can be replaced.
+Deduplicate against the baseline, current checkout, remote branches, today's Linear issue,
+and the live site. Every accepted source must be a real `https://share.loopit.me/game/...` URL.
+
+For every candidate:
+
+1. Open the public share page using the available node_repl browser backend and verify the
+   embedded game itself responds. HTTP 200 for the shell is not gameplay evidence.
+2. Record source title, Loopit display name, visible engagement, genre, controls, initial state,
+   progress signal, success/failure/result state, retry behavior, and visible branches.
+3. Reach at least one explicit gameplay outcome or observable state transition. If CDN,
+   identity, device, network, or controls block this, move the candidate to
+   `rejectedCandidates` and choose a replacement. Do not publish five blocker-only pages.
+4. For dynamic or real-time games, record video and extract key frames. Dynamic entries in the
+   manifest must include `video` evidence. For static/turn-based games, retain at least two
+   screenshots showing entry and verified outcome.
+5. Save raw evidence below `DAILY_EVIDENCE_DIR/<slug>/`. Also copy the stable evidence set to
+   `$HOME/sekai.app.dir/docs/YYYYMMDD/game-guide-base-daily/<slug>/`. Never capture secrets.
+
+## 3. Add complete guide records
+
+Add exactly five new unique objects to `data/games.json`. Each must include a real sourceUrl,
+platform/genre/creator metadata, original summary and quick answer, basics, controls, strategy,
+mistakes, FAQ, creator context, community notes, at least two published screenshots with alt and
+caption, coverage status/checklist/notes, and `lastUpdated` plus `coverageUpdated` equal to
+`DAILY_RUN_DATE`. Keep claims within observed evidence and list unverified deeper branches as
+pending.
+
+Validate every published screenshot's real MIME type and place it under
+`assets/<slug>/NN-short-step.<ext>`. Run:
+
+1. `node tools/prepare-media.mjs`
+2. `node tools/upload-media.mjs --dry-run` with one `--source-prefix=/assets/<slug>/` per new game
+3. `node tools/upload-media.mjs` with the same five prefixes
+4. `node tools/build.mjs`
+5. `npm test`
+
+Confirm each published screenshot has a `data/media-assets.generated.json` mapping, every new R2
+URL returns HTTP 200 with an image content type, generated pages contain the new guides, slug and
+sourceUrl sets remain unique, and final game count is baseline +5.
+
+## 4. Write the tracked run manifest
+
+Create `data/daily-runs/DAILY_RUN_DATE.json` with this exact shape:
+
+```json
+{
+  "schemaVersion": 1,
+  "date": "YYYY-MM-DD",
+  "mode": "new-guides",
+  "targetCount": 5,
+  "baseline": { "ref": "FULL_BASELINE_SHA", "gameCount": 63 },
+  "final": { "gameCount": 68 },
+  "linear": { "parentIssue": "UCH-41", "dailyIssue": "UCH-123" },
+  "guides": [
+    {
+      "slug": "loopit-example",
+      "sourceUrl": "https://share.loopit.me/game/example",
+      "status": "verified",
+      "dynamic": true,
+      "outcomes": ["Observed outcome or state transition"],
+      "pending": ["Any unverified deeper branch"],
+      "evidence": [
+        { "type": "video", "path": "loopit-example/run-01.mp4" },
+        { "type": "frame", "path": "loopit-example/01-entry.jpg" }
+      ]
+    }
+  ],
+  "rejectedCandidates": []
+}
+```
+
+Evidence paths are relative to `DAILY_EVIDENCE_DIR`. The five `guides` entries must exactly match
+the five newly added records. The verifier reads Git objects, so create the scoped local commit
+first, then run it against `HEAD` before pushing:
+
+```bash
+node tools/verify-daily-guides.mjs \
+  --before-ref "$BASELINE_SHA" \
+  --after-ref HEAD \
+  --date "$DAILY_RUN_DATE" \
+  --evidence-root "$DAILY_EVIDENCE_DIR" \
+  --expected-count 5
+```
+
+## 5. Git, PR, and Linear handoff
+
+Commit only this run's guide data, published screenshots, media manifest, generated pages, and
+tracked daily manifest. Run the verifier against that commit. Push the dated branch, open a real
+PR to `main`, verify its URL/repo/base/
+head and mergeability with `gh`, then merge it without force push. Verify `origin/main` contains
+the merge. Put the actual PR URL, merge commit, five guide URLs, source URLs, outcomes, pending
+cases, and screenshot evidence into the existing Linear rolling comment. Upload screenshots to
+Linear when supported, then move the daily child issue to In Review. Never mark it Done.
+
+Do not deploy Cloudflare Pages in the Codex phase. The deterministic workflow verifies the merge,
+builds the allowlisted package, deploys Pages, and performs public HTTP checks after this process
+returns. If fewer than five verified new guides are available, do not merge a partial run; keep the
+daily issue In Progress, document blockers and evidence, and report the shortfall honestly.

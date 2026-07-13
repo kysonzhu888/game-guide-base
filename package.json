@@ -1,0 +1,11 @@
+{
+  "name": "game-guide-base",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "package:deploy": "node tools/build-deploy.mjs",
+    "test": "node --test tools/*.test.mjs",
+    "verify:daily": "node tools/verify-daily-guides.mjs"
+  }
+}
