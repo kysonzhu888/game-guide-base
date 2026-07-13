@@ -5,16 +5,21 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
-const args = new Set(process.argv.slice(2));
+const rawArgs = process.argv.slice(2);
+const args = new Set(rawArgs);
 
 const dryRun = args.has("--dry-run");
 const bucket = stringArg("--bucket", process.env.R2_BUCKET || "gameguidebase-media");
+const sourcePrefixes = repeatedArgs("--source-prefix");
 const mediaRoot = path.join(root, ".media");
 const manifest = readJson("data/media-assets.generated.json");
 
-const entries = Object.values(manifest);
+const entries = Object.entries(manifest)
+  .filter(([sourcePath]) => !sourcePrefixes.length
+    || sourcePrefixes.some((prefix) => sourcePath.startsWith(prefix)))
+  .map(([, entry]) => entry);
 if (!entries.length) {
-  throw new Error("No media assets found. Run node tools/prepare-media.mjs first.");
+  throw new Error("No matching media assets found. Run node tools/prepare-media.mjs first and check --source-prefix values.");
 }
 
 for (const entry of entries) {
@@ -62,6 +67,16 @@ function stringArg(name, fallback) {
   const value = raw.slice(name.length + 1).trim();
   if (!value) throw new Error(`Invalid ${name}: empty value`);
   return value;
+}
+
+function repeatedArgs(name) {
+  return rawArgs
+    .filter((arg) => arg.startsWith(`${name}=`))
+    .map((arg) => arg.slice(name.length + 1).trim())
+    .map((value) => {
+      if (!value) throw new Error(`Invalid ${name}: empty value`);
+      return value;
+    });
 }
 
 function readJson(file) {
