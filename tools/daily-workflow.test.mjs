@@ -26,7 +26,8 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /upload-artifact@v7/);
   assert.equal(workflow.match(/if: \$\{\{ env\.RUN_MODE == 'preflight' \}\}/g)?.length ?? 0, 0);
   assert.match(workflow, /grep -Fqx "BROWSER_PREFLIGHT_OK"/);
-  assert.match(workflow, /\/Applications\/Google Chrome\.app/);
+  assert.match(workflow, /\/Applications\/Google Chrome\.app\/Contents\/MacOS\/Google Chrome/);
+  assert.match(workflow, /nohup "\$CHROME_BIN"/);
   assert.doesNotMatch(workflow, /ubuntu-latest|openai\/codex-action/);
 
   assert.match(prompt, /new-guides 5/);
@@ -36,12 +37,12 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(prompt, /dynamic[\s\S]+video/i);
   assert.match(prompt, /do not[\s\S]+deploy Cloudflare Pages/i);
   assert.match(prompt, /Chrome[\s\S]+Default profile/i);
-  assert.match(prompt, /\/Applications\/Google Chrome\.app/);
-  assert.match(prompt, /open a new Chrome window[\s\S]+do not ask/i);
+  assert.match(prompt, /\/Applications\/Google Chrome\.app\/Contents\/MacOS\/Google Chrome/);
+  assert.match(prompt, /open a new Chrome window[\s\S]+do not\s+ask/i);
 
   assert.match(preflightPrompt, /Do not run shell commands/i);
   assert.match(preflightPrompt, /Chrome[\s\S]+Default profile/i);
-  assert.match(preflightPrompt, /\/Applications\/Google Chrome\.app/);
-  assert.match(preflightPrompt, /open a new Chrome window[\s\S]+do not ask/i);
+  assert.match(preflightPrompt, /\/Applications\/Google Chrome\.app\/Contents\/MacOS\/Google Chrome/);
+  assert.match(preflightPrompt, /open a new Chrome window[\s\S]+do not\s+ask/i);
   assert.match(preflightPrompt, /BROWSER_PREFLIGHT_OK/);
 });

@@ -94,9 +94,10 @@ jobs:
         run: |
           set -euo pipefail
           open -gj -a Codex || true
-          /usr/bin/open -a "/Applications/Google Chrome.app" \
-            --args --profile-directory=Default about:blank || true
-          sleep 3
+          CHROME_BIN="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+          test -x "$CHROME_BIN"
+          nohup "$CHROME_BIN" --profile-directory=Default about:blank >/dev/null 2>&1 &
+          sleep 5
           codex -c 'model_reasoning_effort="xhigh"' \
             -a never -s read-only -m gpt-5.4 -C "$GITHUB_WORKSPACE" \
             exec --ephemeral --output-last-message "$RUNNER_TEMP/codex-preflight.md" \
@@ -113,9 +114,10 @@ jobs:
         run: |
           set -euo pipefail
           open -gj -a Codex || true
-          /usr/bin/open -a "/Applications/Google Chrome.app" \
-            --args --profile-directory=Default about:blank || true
-          sleep 3
+          CHROME_BIN="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+          test -x "$CHROME_BIN"
+          nohup "$CHROME_BIN" --profile-directory=Default about:blank >/dev/null 2>&1 &
+          sleep 5
           codex -c 'model_reasoning_effort="xhigh"' \
             -a never -s danger-full-access --search -m gpt-5.4 \
             -C "$GITHUB_WORKSPACE" \
