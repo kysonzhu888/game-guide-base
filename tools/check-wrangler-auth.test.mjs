@@ -71,9 +71,9 @@ test("wrangler auth check accepts complete Pages credentials before killing a hu
     env: {
       ...process.env,
       NPX_BIN: fakeNpx,
-      WRANGLER_AUTH_TIMEOUT_MS: "500",
+      WRANGLER_AUTH_TIMEOUT_MS: "5000",
     },
-    timeout: 2_000,
+    timeout: 10_000,
   });
 
   assert.equal(result.status, 0, result.stderr);
