@@ -1,16 +1,22 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  guideUpdateHistory,
+  guideUpdatedISO as resolveGuideUpdatedISO,
+  latestContentUpdatedISO,
+} from "./update-history.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
-const assetVersion = "20260702-access-flow-1";
+const assetVersion = "20260713-update-history-1";
 
 const config = readJson("site.config.json");
 const games = readJson(path.join("data", "games.json"));
 const media = readJson(path.join("data", "media.json"));
 const creatorOverrides = readOptionalJson(path.join("data", "creators.json"), []);
 const mediaAssets = readOptionalJson(path.join("data", "media-assets.generated.json"), {});
+const configuredContentUpdatedAt = (config.contentUpdatedAt || "").trim();
 
 const site = {
   name: config.name,
@@ -25,17 +31,17 @@ const site = {
   adsenseSlots: config.adsenseSlots || {},
   platformUrls: config.platformUrls || {},
   searchConsoleVerification: (config.searchConsoleVerification || "").trim(),
-  contentUpdatedAt: (config.contentUpdatedAt || "").trim(),
+  contentUpdatedAt: latestContentUpdatedISO(games, configuredContentUpdatedAt),
   paywall: normalizePaywall(config.paywall || {}),
 };
 
 const MONTH_NAMES = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"];
 
-// 诚实的"最后更新"日期：优先用单篇 game.lastUpdated，否则回退到站点级 contentUpdatedAt。
-// 绝不用构建时间（否则每次 rebuild 都显示"今天更新"=假新鲜度，Google 会不信任）。
+// Never use build time as freshness. Coverage, explicit history, and content dates
+// are real editorial events; the configured date remains the legacy fallback.
 function guideUpdatedISO(game) {
-  return ((game && game.lastUpdated) || site.contentUpdatedAt || "").trim();
+  return resolveGuideUpdatedISO(game, configuredContentUpdatedAt);
 }
 
 function formatGuideDate(iso) {
@@ -78,6 +84,7 @@ function generateHomePage() {
   const featured = games.slice(0, 6);
   const popular = games.slice(0, 6);
   const lockedCount = Math.max(0, games.length - site.paywall.freeGuideLimit);
+  const trackedGuideCount = games.filter((game) => guideUpdateHistory(game).length).length;
 
   writePage([], layout({
     title: `${site.name}: Fast Game Guides, Rules, Tips, and FAQ`,
@@ -92,6 +99,7 @@ function generateHomePage() {
             <p class="kicker">Rules, routes, strategy, answers</p>
             <h1>Playable game walkthroughs, passcodes, and routes.</h1>
             <p class="hero-lede">We open web mini-games from Loopit and other playable sites, play the route, capture the key screens, and write the passcodes, app notes, and practical tips players actually need.</p>
+            ${site.contentUpdatedAt ? `<p class="library-update">Library updated <time datetime="${site.contentUpdatedAt}">${formatGuideDate(site.contentUpdatedAt)}</time>${trackedGuideCount ? ` · ${trackedGuideCount} guides with tracked revisions` : ""}</p>` : ""}
             ${site.paywall.enabled ? `<div class="membership-strip">
               <strong>${site.paywall.freeGuideLimit} free guides</strong>
               <span>${lockedCount} premium walkthroughs unlock with ${escapeHtml(site.paywall.productName)}.</span>
@@ -184,6 +192,8 @@ function generateHomePage() {
 function generateGamePages() {
   for (const game of games) {
     const access = guideAccess(game);
+    const updateHistory = guideUpdateHistory(game);
+    const updatedISO = guideUpdatedISO(game);
     const related = games
       .filter((candidate) => candidate.slug !== game.slug)
       .filter((candidate) => candidate.genre === game.genre || candidate.platforms.some((platform) => game.platforms.includes(platform)))
@@ -203,7 +213,7 @@ function generateGamePages() {
               <p class="kicker">${escapeHtml(game.genre)} guide · ${access.isPremium ? "Premium" : "Free"}</p>
               <h1>${escapeHtml(game.title)} guide</h1>
               <p>${escapeHtml(game.summary)}</p>
-              ${guideUpdatedISO(game) ? `<p class="guide-meta">Last updated <time datetime="${guideUpdatedISO(game)}">${formatGuideDate(guideUpdatedISO(game))}</time></p>` : ""}
+              ${updatedISO ? `<p class="guide-meta">Last updated <time datetime="${updatedISO}">${formatGuideDate(updatedISO)}</time>${updateHistory.length ? ` · <a href="#update-history">${updateHistory.length} tracked update${updateHistory.length === 1 ? "" : "s"}</a>` : ""}</p>` : ""}
               ${game.sourceUrl ? `<a class="play-link" href="${escapeHtml(game.sourceUrl)}" target="_blank" rel="noopener">Play source game</a>` : ""}
             </div>
             ${gameVisual(game, "game-hero-art")}
@@ -508,6 +518,7 @@ function layout({ title, description, body, depth, path: pagePath, schema = [] }
   ${site.googleAnalyticsId ? analyticsTag(site.googleAnalyticsId) : ""}
   ${site.adsenseClientId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${escapeHtml(site.adsenseClientId)}" crossorigin="anonymous"></script>` : ""}
   <link rel="stylesheet" href="${prefix}styles.css?v=${assetVersion}">
+  <link rel="stylesheet" href="${prefix}update-history.css?v=${assetVersion}">
   ${site.paywall.enabled ? `<script>window.GGB_PAYWALL=${JSON.stringify(publicPaywallConfig(site.paywall))};</script>` : ""}
   ${schemaTags}
 </head>
@@ -602,6 +613,33 @@ function coverageSection(game) {
         ${checklist.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
       </ul>` : ""}
       ${notes.length ? `<p>${escapeHtml(notes.join(" "))}</p>` : ""}
+    </section>
+  `;
+}
+
+function updateHistorySection(game) {
+  const updates = guideUpdateHistory(game);
+  if (!updates.length) return "";
+
+  return `
+    <section class="guide-section update-history" id="update-history">
+      <div class="update-history-head">
+        <div>
+          <p class="kicker">Freshness log</p>
+          <h2>Guide update history</h2>
+        </div>
+        <span>${updates.length} tracked update${updates.length === 1 ? "" : "s"}</span>
+      </div>
+      <p class="update-history-note">Dates change only when we replay a route, verify a source, add evidence, or revise the guide.</p>
+      <ol class="update-list">
+        ${updates.map((update) => `
+          <li>
+            <time datetime="${update.date}">${formatGuideDate(update.date)}</time>
+            <strong>${escapeHtml(update.summary)}</strong>
+            ${update.details.length ? `<ul>${update.details.map((detail) => `<li>${escapeHtml(detail)}</li>`).join("")}</ul>` : ""}
+          </li>
+        `).join("")}
+      </ol>
     </section>
   `;
 }
@@ -726,6 +764,7 @@ function premiumContentHtml(game) {
     ${guideSection("Strategy tips", game.strategy)}
     ${guideSection("Common mistakes", game.mistakes)}
     ${coverageSection(game)}
+    ${updateHistorySection(game)}
     ${creatorContextSection(game)}
     ${screenshotGallery(game)}
     <section class="faq-block">
