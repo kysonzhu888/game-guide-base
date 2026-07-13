@@ -14,6 +14,7 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /cron:\s*["']17 3 \* \* \*["']/);
   assert.match(workflow, /timezone:\s*["']Asia\/Shanghai["']/);
   assert.match(workflow, /runs-on:\s*\[self-hosted, macOS, ARM64, game-guide-base\]/);
+  assert.match(workflow, /fetch-depth:\s*2/);
   assert.match(workflow, /workflow_dispatch:/);
   assert.match(workflow, /codex[\s\S]+exec/);
   assert.match(workflow, /verify-daily-guides\.mjs/);
