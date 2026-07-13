@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-import { spawnSync } from "node:child_process";
-import { closeSync, openSync, readFileSync } from "node:fs";
+import { spawn } from "node:child_process";
+import { writeFileSync } from "node:fs";
 
-const DEFAULT_TIMEOUT_MS = 60_000;
+const DEFAULT_TIMEOUT_MS = 90_000;
 const WRANGLER_PACKAGE = "wrangler@4.110.0";
 
 const [outputPath] = process.argv.slice(2);
@@ -23,40 +23,78 @@ if (!Number.isSafeInteger(timeoutMs) || timeoutMs <= 0) {
   process.exit(2);
 }
 
-const outputFile = openSync(outputPath, "w");
-const result = spawnSync(
+const result = await runWranglerCheck(
   process.env.NPX_BIN ?? "npx",
-  ["--yes", WRANGLER_PACKAGE, "whoami"],
   {
-    env: {
-      ...process.env,
-      BROWSER: "none",
-      CI: "true",
-    },
-    killSignal: "SIGKILL",
-    stdio: ["ignore", outputFile, outputFile],
-    timeout: timeoutMs,
+    ...process.env,
+    BROWSER: "none",
+    CI: "true",
   },
+  timeoutMs,
 );
-closeSync(outputFile);
+writeFileSync(outputPath, result.output, "utf8");
 
-if (result.status === 0 && !result.error) {
+if (result.kind === "success") process.exit(0);
+
+if (result.kind === "credentials") {
+  console.warn(
+    "Wrangler Pages credentials were confirmed before the process timed out; the lingering process was terminated.",
+  );
   process.exit(0);
 }
 
-const capturedOutput = readFileSync(outputPath, "utf8").trim();
-if (capturedOutput) {
-  console.error(capturedOutput);
-}
+const capturedOutput = result.output.trim();
+if (capturedOutput) console.error(capturedOutput);
 
-if (result.error?.code === "ETIMEDOUT") {
+if (result.kind === "timeout") {
   console.error(
     `Wrangler authentication check timed out after ${timeoutMs} ms; interactive login is not allowed in the scheduled workflow.`,
   );
-} else if (result.error) {
-  console.error(`Wrangler authentication check failed: ${result.error.message}`);
+} else if (result.kind === "error") {
+  console.error(`Wrangler authentication check failed: ${result.detail.message}`);
 } else {
-  console.error(`Wrangler authentication check exited with status ${result.status}.`);
+  console.error(`Wrangler authentication check exited with status ${result.detail}.`);
 }
 
 process.exit(1);
+
+function runWranglerCheck(executable, environment, maximumDurationMs) {
+  return new Promise((resolve) => {
+    const child = spawn(executable, ["--yes", WRANGLER_PACKAGE, "whoami"], {
+      env: environment,
+      stdio: ["ignore", "pipe", "pipe"],
+    });
+    let output = "";
+    let settled = false;
+    let timer;
+
+    const capture = (chunk) => {
+      output += chunk.toString();
+      if (hasRequiredCredentials(output)) finish("credentials");
+    };
+    const finish = (kind, detail) => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timer);
+      child.stdout?.off("data", capture);
+      child.stderr?.off("data", capture);
+      if (child.exitCode === null && (kind === "credentials" || kind === "timeout")) {
+        child.kill("SIGKILL");
+      }
+      resolve({ kind, detail, output });
+    };
+
+    child.stdout.on("data", capture);
+    child.stderr.on("data", capture);
+    child.once("error", (error) => finish("error", error));
+    child.once("close", (status) => finish(status === 0 ? "success" : "exit", status));
+    timer = setTimeout(() => finish("timeout"), maximumDurationMs);
+  });
+}
+
+function hasRequiredCredentials(output) {
+  return (
+    output.includes("You are logged in with an OAuth Token")
+    && /\bpages\s+\(write\)/.test(output)
+  );
+}
