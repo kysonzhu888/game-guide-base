@@ -94,7 +94,8 @@ jobs:
         run: |
           set -euo pipefail
           open -gj -a Codex || true
-          open -a "Google Chrome" --args --profile-directory=Default about:blank || true
+          /usr/bin/open -a "/Applications/Google Chrome.app" \
+            --args --profile-directory=Default about:blank || true
           sleep 3
           codex -c 'model_reasoning_effort="xhigh"' \
             -a never -s read-only -m gpt-5.4 -C "$GITHUB_WORKSPACE" \
@@ -112,7 +113,8 @@ jobs:
         run: |
           set -euo pipefail
           open -gj -a Codex || true
-          open -a "Google Chrome" --args --profile-directory=Default about:blank || true
+          /usr/bin/open -a "/Applications/Google Chrome.app" \
+            --args --profile-directory=Default about:blank || true
           sleep 3
           codex -c 'model_reasoning_effort="xhigh"' \
             -a never -s danger-full-access --search -m gpt-5.4 \

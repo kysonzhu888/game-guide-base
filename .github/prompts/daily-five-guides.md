@@ -18,11 +18,13 @@ inside the Actions checkout plus `DAILY_EVIDENCE_DIR` and the dated docs evidenc
 
 This is an unattended scheduled run and it explicitly requires Chrome's existing Default profile
 and extension for real gameplay. Use the `control-chrome` skill and select the `extension` backend,
-not `iab`. The user has already authorized opening a new Chrome window. If the Chrome backend is
+not `iab`. The user has already authorized you to open a new Chrome window. If the Chrome backend is
 unavailable after setup, read the required bootstrap and Chrome troubleshooting documentation,
-open a new Chrome window with the Default profile at `about:blank`, wait briefly, and retry the
-`extension` backend once in the same session. Do not ask for permission. Close only the temporary
-recovery tab after the browser is attached; do not inspect cookies, passwords, or profile storage.
+open `/Applications/Google Chrome.app` by absolute path with the Default profile at `about:blank`,
+wait briefly, and retry the `extension` backend once in the same session. Do not ask for permission.
+The absolute app path is required because the runner's LaunchAgent environment cannot resolve
+Chrome by display name. Close only the temporary recovery tab after the browser is attached; do not
+inspect cookies, passwords, or profile storage.
 
 ## 1. Ticket and baseline first
 

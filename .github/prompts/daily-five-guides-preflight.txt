@@ -4,8 +4,10 @@ the `control-chrome` skill and select the `extension` backend; do not select `ia
 
 The user has already authorized this scheduled workflow to open a new Chrome window. If the
 Chrome backend is unavailable after setup, read the required bootstrap and Chrome troubleshooting
-documentation, run `open -a "Google Chrome" --args --profile-directory=Default about:blank`, wait
-briefly, and retry the `extension` backend once in the same session. Do not ask for permission.
+documentation, run `/usr/bin/open -a "/Applications/Google Chrome.app" --args
+--profile-directory=Default about:blank`, wait briefly, and retry the `extension` backend once in
+the same session. Do not ask for permission. The absolute app path is required because the runner's
+LaunchAgent environment cannot resolve Chrome by display name.
 
 The preceding workflow step already verified Codex,
 GitHub, Uchuu Linear, Node, ffmpeg, Wrangler, tests, build, and deployment packaging. Do not
