@@ -39,6 +39,7 @@ if (accessPage) {
 licenseForms.forEach((form) => {
   const input = form.querySelector("input[name='licenseCode']");
   const status = form.querySelector("[data-license-status]");
+  const gameSlug = form.closest("[data-guide-slug]")?.dataset.guideSlug || "";
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
     const value = String(input?.value || "").trim();
@@ -47,13 +48,16 @@ licenseForms.forEach((form) => {
       return;
     }
 
+    trackFunnelEvent("license_attempt", { pageType: "guide", gameSlug });
     setLicenseStatus(status, "Checking license key...");
     const result = await validateAccess(value);
     if (!result.ok) {
+      trackFunnelEvent("license_failure", { pageType: "guide", gameSlug });
       setLicenseStatus(status, result.error || "That license key did not unlock access.", "error");
       return;
     }
 
+    trackFunnelEvent("license_success", { pageType: "guide", gameSlug });
     storeLifetimeAccess(value);
     input.value = "";
     applyAccessState(true);
@@ -312,13 +316,17 @@ function initAccessPage(page) {
 }
 
 async function activateLicenseKey(value, status, nextPath, options = {}) {
+  const gameSlug = /^\/games\/([a-z0-9-]+)\/?$/.exec(nextPath)?.[1] || "";
+  trackFunnelEvent("license_attempt", { pageType: "access", gameSlug });
   setLicenseStatus(status, "Checking access key...");
   const result = await validateAccess(value);
   if (!result.ok) {
+    trackFunnelEvent("license_failure", { pageType: "access", gameSlug });
     setLicenseStatus(status, result.error || "That access key did not unlock guides.", "error");
     return false;
   }
 
+  trackFunnelEvent("license_success", { pageType: "access", gameSlug });
   storeLifetimeAccess(value);
   setLicenseStatus(status, `${result.message || "Access activated."} Redirecting to guides...`, "success");
   if (options.cleanUrl) {
@@ -330,6 +338,10 @@ async function activateLicenseKey(value, status, nextPath, options = {}) {
     }, 900);
   }
   return true;
+}
+
+function trackFunnelEvent(eventName, details) {
+  window.GGBFunnel?.track(eventName, details);
 }
 
 function safeNextPath(value) {

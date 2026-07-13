@@ -545,7 +545,8 @@ function layout({ title, description, body, depth, path: pagePath, schema = [] }
       <a href="${prefix}privacy/">Privacy</a>
       <a href="${prefix}sitemap.xml">Sitemap</a>
     </nav>
-  </footer>
+  </footer>${site.paywall.enabled || pagePath === "/access/" ? `
+  <script src="${prefix}funnel.js?v=${assetVersion}" defer></script>` : ""}
   <script src="${prefix}script.js?v=${assetVersion}" defer></script>
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "8766e0f1c5cf486f81c867118dce77c5"}'></script>
 </body>
@@ -687,7 +688,7 @@ function freePreviewSection(game) {
 function paywallPanel(game) {
   const accessUrl = `${site.url}/access/?next=${encodeURIComponent(`/games/${game.slug}/`)}`;
   const paymentAction = site.paywall.paymentUrl
-    ? `<a class="paywall-button" href="${escapeHtml(site.paywall.paymentUrl)}" target="_blank" rel="noopener">Pay once, read all guides</a>`
+    ? `<a class="paywall-button" href="${escapeHtml(site.paywall.paymentUrl)}" target="_blank" rel="noopener" data-funnel-event="checkout_click" data-funnel-page-type="guide" data-funnel-game-slug="${escapeHtml(game.slug)}">Pay once, read all guides</a>`
     : `<button class="paywall-button paywall-button--disabled" type="button" disabled>Payment link coming soon</button>`;
   const myOrdersLink = site.paywall.myOrdersUrl
     ? `<p class="key-recovery">Lost the key? <a href="${escapeHtml(site.paywall.myOrdersUrl)}" target="_blank" rel="noopener">Open Lemon Squeezy My Orders</a> with your checkout email.</p>`
