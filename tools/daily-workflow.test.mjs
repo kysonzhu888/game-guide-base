@@ -32,6 +32,7 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /--new-window/);
   assert.match(workflow, /browser-host-diagnostics\.txt/);
   assert.match(workflow, /check-native-host-manifest\.js/);
+  assert.match(workflow, /check-wrangler-auth\.mjs/);
   assert.doesNotMatch(workflow, /ubuntu-latest|openai\/codex-action/);
 
   assert.match(prompt, /new-guides 5/);

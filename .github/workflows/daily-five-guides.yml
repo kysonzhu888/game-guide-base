@@ -84,7 +84,7 @@ jobs:
             --data '{"query":"{ organization { urlKey } teams { nodes { key } } }"}')"
           test "$(jq -r '.data.organization.urlKey' <<< "$linear_response")" = "uchuu"
           jq -e '.data.teams.nodes | any(.key == "UCH")' <<< "$linear_response" >/dev/null
-          npx --yes wrangler@4.110.0 whoami > "$RUNNER_TEMP/wrangler-whoami.txt"
+          node tools/check-wrangler-auth.mjs "$RUNNER_TEMP/wrangler-whoami.txt"
           npm test
           npm run build
           node tools/build-deploy.mjs
