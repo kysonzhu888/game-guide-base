@@ -495,9 +495,9 @@ function generateUtilityPages() {
   }));
 }
 
-function layout({ title, description, body, depth, path: pagePath, schema = [] }) {
+function layout({ title, description, body, depth, path: pagePath, schema = [], indexable = true }) {
   const prefix = depthPrefix(depth);
-  const canonical = `${site.url}${pagePath === "/" ? "/" : pagePath}`;
+  const canonical = indexable ? `${site.url}${pagePath === "/" ? "/" : pagePath}` : "";
   const schemaTags = schema.filter(Boolean).map((item) => `
     <script type="application/ld+json">${JSON.stringify(item)}</script>
   `).join("");
@@ -508,11 +508,11 @@ function layout({ title, description, body, depth, path: pagePath, schema = [] }
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(title)}</title>
   <meta name="description" content="${escapeHtml(description)}">
-  <link rel="canonical" href="${canonical}">
+  ${canonical ? `<link rel="canonical" href="${canonical}">` : `<meta name="robots" content="noindex,follow">`}
   <meta property="og:title" content="${escapeHtml(title)}">
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="${canonical}">
+  ${canonical ? `<meta property="og:url" content="${canonical}">` : ""}
   <meta property="og:image" content="${site.url}/assets/hero-game-guides.png">
   ${site.searchConsoleVerification ? `<meta name="google-site-verification" content="${escapeHtml(site.searchConsoleVerification)}">` : ""}
   ${site.googleAnalyticsId ? analyticsTag(site.googleAnalyticsId) : ""}
@@ -1198,6 +1198,7 @@ function generate404() {
     description: "The page you were looking for does not exist or has moved.",
     path: "/404",
     depth: 0,
+    indexable: false,
     body: `
       <main class="article-page narrow-page">
         <section class="text-page">
