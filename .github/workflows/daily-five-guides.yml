@@ -89,16 +89,22 @@ jobs:
           npm run build
           node tools/build-deploy.mjs
 
-      - name: Smoke-test the local Codex and browser runtime
-        if: ${{ env.RUN_MODE == 'preflight' }}
+      - name: Gate the local Codex and Chrome runtime
         shell: bash
         run: |
           set -euo pipefail
           open -gj -a Codex || true
+          open -a "Google Chrome" --args --profile-directory=Default about:blank || true
+          sleep 3
           codex -c 'model_reasoning_effort="xhigh"' \
             -a never -s read-only -m gpt-5.4 -C "$GITHUB_WORKSPACE" \
             exec --ephemeral --output-last-message "$RUNNER_TEMP/codex-preflight.md" \
             - < .github/prompts/daily-five-guides-preflight.txt
+          if ! grep -Fqx "BROWSER_PREFLIGHT_OK" "$RUNNER_TEMP/codex-preflight.md"; then
+            echo "Chrome runtime preflight did not return the success marker." >&2
+            cat "$RUNNER_TEMP/codex-preflight.md" >&2
+            exit 1
+          fi
 
       - name: Run the evidence-backed daily Codex agent
         if: ${{ env.RUN_MODE == 'full' }}
@@ -106,6 +112,8 @@ jobs:
         run: |
           set -euo pipefail
           open -gj -a Codex || true
+          open -a "Google Chrome" --args --profile-directory=Default about:blank || true
+          sleep 3
           codex -c 'model_reasoning_effort="xhigh"' \
             -a never -s danger-full-access --search -m gpt-5.4 \
             -C "$GITHUB_WORKSPACE" \

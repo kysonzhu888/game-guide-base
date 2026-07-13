@@ -1,10 +1,20 @@
-Perform only the browser-runtime smoke test. The preceding workflow step already verified Codex,
+Perform only the Chrome-runtime smoke test. This unattended task explicitly requires the existing
+Chrome extension and Default profile because the production run will play Loopit games there. Use
+the `control-chrome` skill and select the `extension` backend; do not select `iab`.
+
+The user has already authorized this scheduled workflow to open a new Chrome window. If the
+Chrome backend is unavailable after setup, read the required bootstrap and Chrome troubleshooting
+documentation, run `open -a "Google Chrome" --args --profile-directory=Default about:blank`, wait
+briefly, and retry the `extension` backend once in the same session. Do not ask for permission.
+
+The preceding workflow step already verified Codex,
 GitHub, Uchuu Linear, Node, ffmpeg, Wrangler, tests, build, and deployment packaging. Do not
 re-check those prerequisites or inspect the repository. Do not run shell commands except to read
-the required browser skill when necessary.
+the required browser skill/troubleshooting text and perform the single authorized Chrome recovery
+command above when necessary.
 
-Use the available browser control skill and its connected browser backend, not standalone
-Playwright. Open a temporary tab at `about:blank`, verify that its URL is exactly `about:blank`,
+Use Chrome through its connected browser backend, not standalone Playwright. Open a temporary tab
+at `about:blank`, verify that its URL is exactly `about:blank`,
 then close that tab. Do not modify files, create tickets, commit, push, upload media, deploy, or
 print credentials. On success, respond exactly `BROWSER_PREFLIGHT_OK`. On failure, respond with
 one line beginning `BROWSER_PREFLIGHT_FAILED:` and the factual reason.
