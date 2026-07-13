@@ -328,6 +328,20 @@
     "format": "jpeg",
     "quality": 82
   },
+  "/assets/loopit-snake-evolution-feed/05-coverage-first-draw.png": {
+    "r2Key": "games/loopit/loopit-snake-evolution-feed/screenshots/05-coverage-first-draw-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-snake-evolution-feed/screenshots/05-coverage-first-draw-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-snake-evolution-feed/06-coverage-multiple-feeds.png": {
+    "r2Key": "games/loopit/loopit-snake-evolution-feed/screenshots/06-coverage-multiple-feeds-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-snake-evolution-feed/screenshots/06-coverage-multiple-feeds-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
   "/assets/loopit-tap-layers/01-entry.png": {
     "r2Key": "games/loopit/loopit-tap-layers/screenshots/01-entry-1200w.jpg",
     "localOutput": ".media/games/loopit/loopit-tap-layers/screenshots/01-entry-1200w.jpg",
@@ -524,6 +538,20 @@
     "format": "jpeg",
     "quality": 82
   },
+  "/assets/loopit-just-like-the-ads/06-coverage-counter-growth.png": {
+    "r2Key": "games/loopit/loopit-just-like-the-ads/screenshots/06-coverage-counter-growth-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-just-like-the-ads/screenshots/06-coverage-counter-growth-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-just-like-the-ads/07-coverage-right-route.png": {
+    "r2Key": "games/loopit/loopit-just-like-the-ads/screenshots/07-coverage-right-route-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-just-like-the-ads/screenshots/07-coverage-right-route-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
   "/assets/loopit-phone-mini-apps/01-welcome.png": {
     "r2Key": "games/loopit/loopit-phone-mini-apps/screenshots/01-welcome-1200w.jpg",
     "localOutput": ".media/games/loopit/loopit-phone-mini-apps/screenshots/01-welcome-1200w.jpg",
@@ -629,6 +657,20 @@
     "format": "jpeg",
     "quality": 82
   },
+  "/assets/loopit-cut-into-slices/05-coverage-level-1-master-chef.png": {
+    "r2Key": "games/loopit/loopit-cut-into-slices/screenshots/05-coverage-level-1-master-chef-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cut-into-slices/screenshots/05-coverage-level-1-master-chef-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-cut-into-slices/06-coverage-level-2-uneven.png": {
+    "r2Key": "games/loopit/loopit-cut-into-slices/screenshots/06-coverage-level-2-uneven-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-cut-into-slices/screenshots/06-coverage-level-2-uneven-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
   "/assets/loopit-arrow-timing-wheel/01-entry.png": {
     "r2Key": "games/loopit/loopit-arrow-timing-wheel/screenshots/01-entry-1200w.jpg",
     "localOutput": ".media/games/loopit/loopit-arrow-timing-wheel/screenshots/01-entry-1200w.jpg",
@@ -702,6 +744,20 @@
   "/assets/loopit-capybara-smoke-draw/01-drawn.png": {
     "r2Key": "games/loopit/loopit-capybara-smoke-draw/screenshots/01-drawn-1200w.jpg",
     "localOutput": ".media/games/loopit/loopit-capybara-smoke-draw/screenshots/01-drawn-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-capybara-smoke-draw/02-coverage-sky-entry.png": {
+    "r2Key": "games/loopit/loopit-capybara-smoke-draw/screenshots/02-coverage-sky-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-capybara-smoke-draw/screenshots/02-coverage-sky-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-capybara-smoke-draw/03-coverage-firework-particles.png": {
+    "r2Key": "games/loopit/loopit-capybara-smoke-draw/screenshots/03-coverage-firework-particles-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-capybara-smoke-draw/screenshots/03-coverage-firework-particles-1200w.jpg",
     "width": 1200,
     "format": "jpeg",
     "quality": 82
@@ -961,6 +1017,20 @@
   "/assets/loopit-trap-the-ants/02-sixteen-dollars.png": {
     "r2Key": "games/loopit/loopit-trap-the-ants/screenshots/02-sixteen-dollars-1200w.jpg",
     "localOutput": ".media/games/loopit/loopit-trap-the-ants/screenshots/02-sixteen-dollars-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-trap-the-ants/03-coverage-missed-circle.png": {
+    "r2Key": "games/loopit/loopit-trap-the-ants/screenshots/03-coverage-missed-circle-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-trap-the-ants/screenshots/03-coverage-missed-circle-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-trap-the-ants/04-coverage-fast-attempt.png": {
+    "r2Key": "games/loopit/loopit-trap-the-ants/screenshots/04-coverage-fast-attempt-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-trap-the-ants/screenshots/04-coverage-fast-attempt-1200w.jpg",
     "width": 1200,
     "format": "jpeg",
     "quality": 82

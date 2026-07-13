@@ -1468,6 +1468,16 @@
         "src": "/assets/loopit-snake-evolution-feed/04-evolution-2.png",
         "alt": "Loopit Snake Evolution showing Evolution 2 with a blue snake.",
         "caption": "Our run advanced from Evolution 1 to Evolution 2."
+      },
+      {
+        "src": "/assets/loopit-snake-evolution-feed/05-coverage-first-draw.png",
+        "alt": "Snake Evolution Feed after a closed feeding stroke with the green snake moving through the grid.",
+        "caption": "The July 13 replay accepted a drawn feeding stroke and moved the snake, but remained at Evolution 1."
+      },
+      {
+        "src": "/assets/loopit-snake-evolution-feed/06-coverage-multiple-feeds.png",
+        "alt": "Snake Evolution Feed after several feeding strokes while the evolution label remains at one.",
+        "caption": "Four drawing attempts were covered without reaching Evolution 2 in this pass."
       }
     ],
     "faq": [
@@ -1500,6 +1510,18 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Snake Evolution Feed, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Live drawing and feeding motion rechecked on July 13; four strokes remained at Evolution 1, so Evolution 2 was not reverified",
+    "coverageUpdated": "2026-07-13",
+    "coverageChecklist": [
+      "Source share page returned HTTP 200 and exposed the live SCRIBBLE SNAKE loader on July 13, 2026.",
+      "The direct playable loaded Evolution 1 with the instruction Draw to feed the snake.",
+      "One closed stroke removed the instruction and changed the snake's position and curve; three additional strokes were also attempted.",
+      "Evolution remained at 1 after four drawing attempts, so the historical Evolution 2 route was not reverified in this pass.",
+      "Pending cases: reproduce Evolution 2, identify the effective feeding distance, and verify any later evolution or end state."
+    ],
+    "coverageNotes": [
+      "Dynamic keyframes cover the entry, first accepted drawing response, and the unchanged Evolution 1 state after multiple feeds."
     ]
   },
   {
@@ -2145,6 +2167,16 @@
         "src": "/assets/loopit-just-like-the-ads/05-swarm-destroyed.png",
         "alt": "Loopit Just Like the Ads result overlay showing Swarm Destroyed and final score 5.",
         "caption": "Doing nothing, or missing the green route, quickly ends with Swarm Destroyed."
+      },
+      {
+        "src": "/assets/loopit-just-like-the-ads/06-coverage-counter-growth.png",
+        "alt": "Just Like the Ads active run with 492 zombies, 56 troops, and red and green gates ahead.",
+        "caption": "The July 13 run verified live counter growth from one troop to 56 troops while zombies reached 492."
+      },
+      {
+        "src": "/assets/loopit-just-like-the-ads/07-coverage-right-route.png",
+        "alt": "Just Like the Ads after a rightward steering drag with the live counters still increasing.",
+        "caption": "A rightward drag was executed during the live run; the counters later reached 830 zombies and 65 troops."
       }
     ],
     "faq": [
@@ -2177,6 +2209,18 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Just Like the Ads, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Live crowd-runner loop and rightward steering rechecked on July 13; counters reached 830 zombies and 65 troops, but no end state appeared",
+    "coverageUpdated": "2026-07-13",
+    "coverageChecklist": [
+      "Source share page returned HTTP 200 and exposed the Just Like the Ads source card on July 13, 2026.",
+      "The direct playable started at Zombies: 1 and Troops: 1 with red and green gates visible.",
+      "The automatic run raised the counters to 492 zombies and 56 troops before manual steering.",
+      "A rightward drag was executed against a visible green-gate route; the counters later reached 830 zombies and 65 troops.",
+      "Pending cases: capture a new Swarm Destroyed failure, determine whether a terminal win exists, and compare deliberate left and right gate choices from a fresh run."
+    ],
+    "coverageNotes": [
+      "Dynamic keyframes cover the starting lane, live counter growth, and the post-steering route; the historical failure image was not reverified today."
     ]
   },
   {
@@ -2462,6 +2506,16 @@
         "src": "/assets/loopit-cut-into-slices/04-level-2-master-chef.png",
         "alt": "Cut Into Slices level 2 result showing Master Chef and 98 percent accuracy.",
         "caption": "A vertical plus horizontal cross cut cleared Level 2 with 98% accuracy."
+      },
+      {
+        "src": "/assets/loopit-cut-into-slices/05-coverage-level-1-master-chef.png",
+        "alt": "Cut Into Slices July 13 Level 1 result showing Master Chef, three stars, and 100 percent accuracy.",
+        "caption": "A vertical center cut cleared Level 1 with Score 100 and 100% accuracy on July 13."
+      },
+      {
+        "src": "/assets/loopit-cut-into-slices/06-coverage-level-2-uneven.png",
+        "alt": "Cut Into Slices July 13 Level 2 result showing Uneven and zero percent accuracy.",
+        "caption": "Two parallel cuts used all Level 2 attempts but produced UNEVEN with 0% accuracy."
       }
     ],
     "faq": [
@@ -2491,17 +2545,18 @@
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Cut Into Slices, so this guide is based on source-link replay evidence and visible Loopit metadata."
     ],
-    "coverageStatus": "Level 1 and Level 2 clears reverified on July 4",
-    "coverageUpdated": "2026-07-04",
+    "coverageStatus": "Level 1 100% clear and Level 2 UNEVEN failure rechecked on July 13; historical Level 2 clear remains documented",
+    "coverageUpdated": "2026-07-13",
     "coverageChecklist": [
-      "Source share page loaded successfully on July 4, 2026 in desktop Playwright; sourceUrl remained reachable.",
-      "Loader state Baking Pizza... resolved into Level 1 with Cut into 2 slices and Cuts Left: 1.",
-      "One vertical center cut produced a MASTER CHEF result with 97% accuracy on Level 1.",
+      "Source share page returned HTTP 200 and loaded the live playable on July 13, 2026.",
+      "Level 1 showed Cut into 2 slices, Cuts Left: 1, and Score: 0.",
+      "One vertical center cut produced Score 100, three stars, MASTER CHEF, and 100% accuracy.",
       "NEXT LEVEL opened Level 2 with Cut into 4 slices and Cuts Left: 2.",
-      "A vertical plus horizontal cross cut produced a MASTER CHEF result with 99% accuracy on Level 2."
+      "Two parallel vertical cuts produced UNEVEN and 0% accuracy, covering a deliberate failure route.",
+      "The historical perpendicular-cross Level 2 clear remains documented but was not repeated in this pass."
     ],
     "coverageNotes": [
-      "This pass revalidated the current web playable directly from the published share page, so the existing two-level quick answer remains grounded."
+      "Dynamic keyframes cover Level 1 entry and success, Level 2 entry, and the Level 2 failure result."
     ]
   },
   {
@@ -2850,6 +2905,16 @@
         "src": "/assets/loopit-capybara-smoke-draw/01-drawn.png",
         "alt": "Capybara Smoke Draw canvas after dragging with a visible bright mark.",
         "caption": "Dragging changes the canvas, but no score or result screen appeared."
+      },
+      {
+        "src": "/assets/loopit-capybara-smoke-draw/02-coverage-sky-entry.png",
+        "alt": "Capybara Smoke Draw night skyline with the instruction to draw a path to launch fireworks.",
+        "caption": "The July 13 replay loaded a night-sky canvas and asked for a drawn firework path."
+      },
+      {
+        "src": "/assets/loopit-capybara-smoke-draw/03-coverage-firework-particles.png",
+        "alt": "Capybara Smoke Draw night sky filled with green firework particles after a curved drag path.",
+        "caption": "A curved upward drag launched visible green firework particles."
       }
     ],
     "faq": [
@@ -2874,6 +2939,18 @@
     ],
     "communityNotes": [
       "Exact-title searches across X/Twitter, Reddit, and the open web on July 1, 2026 did not surface a reliable independent walkthrough for Capybara Smoke Draw, so this guide is based on source-link replay evidence and visible Loopit metadata."
+    ],
+    "coverageStatus": "Night-sky entry and curved firework path rechecked on July 13; green particles launched, with no score or terminal result visible",
+    "coverageUpdated": "2026-07-13",
+    "coverageChecklist": [
+      "Source share page returned HTTP 200 and exposed the Capybara Smoke Draw source card on July 13, 2026.",
+      "The playable passed Preparing the Sky and loaded a night skyline with Draw a path to launch fireworks.",
+      "The first direct-play tab closed after loading; a fresh tab reopened the same verified playable URL successfully.",
+      "A curved upward drag launched a field of visible green firework particles.",
+      "Pending cases: test additional path shapes and colors, and verify whether any score, capybara branch, or terminal result exists."
+    ],
+    "coverageNotes": [
+      "Dynamic keyframes cover the loaded sky and the post-draw particle state; no win condition was claimed."
     ]
   },
   {
@@ -4706,6 +4783,16 @@
         "src": "/assets/loopit-trap-the-ants/02-sixteen-dollars.png",
         "alt": "Trap the Ants after replay showing sixteen dollars.",
         "caption": "The replay verified progress to $16."
+      },
+      {
+        "src": "/assets/loopit-trap-the-ants/03-coverage-missed-circle.png",
+        "alt": "Trap the Ants with a closed drawn circle left behind while the ant has moved away and money remains zero.",
+        "caption": "The first closed circle missed the moving ant and left the counter at $0."
+      },
+      {
+        "src": "/assets/loopit-trap-the-ants/04-coverage-fast-attempt.png",
+        "alt": "Trap the Ants after a second faster closed-shape attempt with the money counter still at zero.",
+        "caption": "A faster second trap attempt also failed to earn money in this replay."
       }
     ],
     "faq": [
@@ -4729,6 +4816,18 @@
     ],
     "communityNotes": [
       "No verified external community walkthrough is attached for Trap the Ants yet; this guide is based on source-link replay evidence, screenshots, and visible Loopit metadata captured on July 2, 2026."
+    ],
+    "coverageStatus": "Live pencil tool and two closed-shape attempts rechecked on July 13; both missed the moving ant and the counter stayed at $0",
+    "coverageUpdated": "2026-07-13",
+    "coverageChecklist": [
+      "Source share page returned HTTP 200 and exposed the Trap the Ants source card on July 13, 2026.",
+      "The playable loader advanced from 0% to a live canvas with $0, pencil, brush, and shop controls.",
+      "A large closed circle was drawn around the ant's starting position, but the ant moved outside before closure and money stayed at $0.",
+      "A smaller, faster closed shape was attempted around the ant's next visible position; money still stayed at $0.",
+      "Pending cases: trap an ant successfully, reverify the historical $16 route, and inspect brush, clear, and shop branches after earning money."
+    ],
+    "coverageNotes": [
+      "Dynamic keyframes document both failed trap attempts; this pass did not claim a successful capture or earnings."
     ]
   },
   {

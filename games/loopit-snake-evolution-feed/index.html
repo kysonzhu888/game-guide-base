@@ -99,6 +99,16 @@
     </section>
 
 
+    <section class="guide-section coverage-pass">
+      <h2>Coverage pass</h2>
+      <p><strong>Status:</strong> Live drawing and feeding motion rechecked on July 13; four strokes remained at Evolution 1, so Evolution 2 was not reverified</p>
+      <p><strong>Last checked:</strong> 2026-07-13</p>
+      <ul>
+        <li>Source share page returned HTTP 200 and exposed the live SCRIBBLE SNAKE loader on July 13, 2026.</li><li>The direct playable loaded Evolution 1 with the instruction Draw to feed the snake.</li><li>One closed stroke removed the instruction and changed the snake&#39;s position and curve; three additional strokes were also attempted.</li><li>Evolution remained at 1 after four drawing attempts, so the historical Evolution 2 route was not reverified in this pass.</li><li>Pending cases: reproduce Evolution 2, identify the effective feeding distance, and verify any later evolution or end state.</li>
+      </ul>
+      <p>Dynamic keyframes cover the entry, first accepted drawing response, and the unchanged Evolution 1 state after multiple feeds.</p>
+    </section>
+
 
     <section class="guide-section creator-notes">
       <h2>Creator and community notes</h2>
@@ -130,6 +140,16 @@
           <figure>
             <img src="https://media.gameguidebase.com/games/loopit/loopit-snake-evolution-feed/screenshots/04-evolution-2-1200w.jpg?v=20260701-r2" alt="Loopit Snake Evolution showing Evolution 2 with a blue snake." loading="lazy">
             <figcaption>Our run advanced from Evolution 1 to Evolution 2.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="https://media.gameguidebase.com/games/loopit/loopit-snake-evolution-feed/screenshots/05-coverage-first-draw-1200w.jpg?v=20260701-r2" alt="Snake Evolution Feed after a closed feeding stroke with the green snake moving through the grid." loading="lazy">
+            <figcaption>The July 13 replay accepted a drawn feeding stroke and moved the snake, but remained at Evolution 1.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="https://media.gameguidebase.com/games/loopit/loopit-snake-evolution-feed/screenshots/06-coverage-multiple-feeds-1200w.jpg?v=20260701-r2" alt="Snake Evolution Feed after several feeding strokes while the evolution label remains at one." loading="lazy">
+            <figcaption>Four drawing attempts were covered without reaching Evolution 2 in this pass.</figcaption>
           </figure>
 
       </div>
@@ -203,7 +223,7 @@
         <div><dt>Genre</dt><dd>Drawing game</dd></div>
         <div><dt>Platforms</dt><dd>Loopit app, Mobile app</dd></div>
         <div><dt>Difficulty</dt><dd>Draw-to-feed evolution game with visible stage progress</dd></div>
-
+        <div><dt>Coverage</dt><dd>Live drawing and feeding motion rechecked on July 13; four strokes remained at Evolution 1, so Evolution 2 was not reverified</dd></div>
         <div><dt>Creator</dt><dd><a href="/creators/bro-beans/">Bro beans</a></dd></div>
 
         <div><dt>Likes</dt><dd>26k</dd></div>
