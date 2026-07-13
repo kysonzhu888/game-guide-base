@@ -4,11 +4,13 @@ import test from "node:test";
 
 const workflowUrl = new URL("../.github/workflows/daily-five-guides.yml", import.meta.url);
 const promptUrl = new URL("../.github/prompts/daily-five-guides.md", import.meta.url);
+const preflightPromptUrl = new URL("../.github/prompts/daily-five-guides-preflight.txt", import.meta.url);
 
 test("daily workflow runs five-guide automation on the trusted Mac", async () => {
-  const [workflow, prompt] = await Promise.all([
+  const [workflow, prompt, preflightPrompt] = await Promise.all([
     readFile(workflowUrl, "utf8"),
     readFile(promptUrl, "utf8"),
+    readFile(preflightPromptUrl, "utf8"),
   ]);
 
   assert.match(workflow, /cron:\s*["']17 3 \* \* \*["']/);
@@ -30,4 +32,7 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(prompt, /data\/daily-runs/);
   assert.match(prompt, /dynamic[\s\S]+video/i);
   assert.match(prompt, /do not[\s\S]+deploy Cloudflare Pages/i);
+
+  assert.match(preflightPrompt, /Do not run shell commands/i);
+  assert.match(preflightPrompt, /BROWSER_PREFLIGHT_OK/);
 });
