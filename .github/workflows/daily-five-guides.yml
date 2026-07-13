@@ -1,0 +1,196 @@
+name: Daily five verified guides
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+      timezone: "Asia/Shanghai"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Run a host preflight or the full five-guide pipeline
+        required: true
+        default: preflight
+        type: choice
+        options:
+          - preflight
+          - full
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: game-guide-base-daily-five
+  cancel-in-progress: false
+
+jobs:
+  daily-guides:
+    name: Play, verify, and deploy five guides
+    runs-on: [self-hosted, macOS, ARM64, game-guide-base]
+    timeout-minutes: 240
+    env:
+      GH_TOKEN: ${{ github.token }}
+      LINEAR_PARENT_ISSUE: UCH-41
+      RUN_MODE: ${{ github.event_name == 'schedule' && 'full' || inputs.mode }}
+      TARGET_GUIDES: "5"
+
+    steps:
+      - name: Check out the production branch
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Add trusted host tools to PATH
+        run: |
+          echo "/opt/homebrew/bin" >> "$GITHUB_PATH"
+          echo "/usr/local/bin" >> "$GITHUB_PATH"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          package-manager-cache: false
+
+      - name: Capture the immutable daily baseline
+        shell: bash
+        run: |
+          set -euo pipefail
+          run_date="$(TZ=Asia/Shanghai date +%F)"
+          baseline_sha="$(git rev-parse origin/main)"
+          evidence_dir="$RUNNER_TEMP/game-guide-evidence/$run_date"
+          mkdir -p "$evidence_dir"
+          {
+            echo "DAILY_RUN_DATE=$run_date"
+            echo "BASELINE_SHA=$baseline_sha"
+            echo "DAILY_EVIDENCE_DIR=$evidence_dir"
+            echo "GITHUB_RUN_URL=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          } >> "$GITHUB_ENV"
+          git config user.name "game-guide-automation"
+          git config user.email "kysonzhu888@gmail.com"
+
+      - name: Verify the trusted Mac prerequisites
+        shell: bash
+        run: |
+          set -euo pipefail
+          for command in codex curl ffmpeg file gh git jq node npm npx; do
+            command -v "$command" >/dev/null
+          done
+          test -s "$HOME/.linear/api_token"
+          codex mcp list | tee "$RUNNER_TEMP/codex-mcp.txt"
+          grep -E '^node_repl[[:space:]].*enabled' "$RUNNER_TEMP/codex-mcp.txt"
+          linear_response="$(curl -sS https://api.linear.app/graphql \
+            -H "Authorization: $(tr -d '\r\n' < "$HOME/.linear/api_token")" \
+            -H "Content-Type: application/json" \
+            --data '{"query":"{ organization { urlKey } teams { nodes { key } } }"}')"
+          test "$(jq -r '.data.organization.urlKey' <<< "$linear_response")" = "uchuu"
+          jq -e '.data.teams.nodes | any(.key == "UCH")' <<< "$linear_response" >/dev/null
+          npx --yes wrangler@4.110.0 whoami > "$RUNNER_TEMP/wrangler-whoami.txt"
+          npm test
+          npm run build
+          node tools/build-deploy.mjs
+
+      - name: Smoke-test the local Codex and browser runtime
+        if: ${{ env.RUN_MODE == 'preflight' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          open -gj -a Codex || true
+          codex -a never -s read-only -m gpt-5.4 -C "$GITHUB_WORKSPACE" \
+            exec --ephemeral --output-last-message "$RUNNER_TEMP/codex-preflight.md" \
+            - < .github/prompts/daily-five-guides-preflight.txt
+
+      - name: Run the evidence-backed daily Codex agent
+        if: ${{ env.RUN_MODE == 'full' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          open -gj -a Codex || true
+          codex -a never -s danger-full-access --search -m gpt-5.4 \
+            -C "$GITHUB_WORKSPACE" \
+            --add-dir "$DAILY_EVIDENCE_DIR" \
+            --add-dir "$HOME/sekai.app.dir/docs" \
+            exec --output-last-message "$RUNNER_TEMP/codex-final.md" \
+            - < .github/prompts/daily-five-guides.md
+
+      - name: Verify exactly five new guides on main
+        if: ${{ env.RUN_MODE == 'full' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main --prune
+          node tools/verify-daily-guides.mjs \
+            --before-ref "$BASELINE_SHA" \
+            --after-ref origin/main \
+            --date "$DAILY_RUN_DATE" \
+            --evidence-root "$DAILY_EVIDENCE_DIR" \
+            --expected-count "$TARGET_GUIDES" \
+            | tee "$RUNNER_TEMP/daily-verification.json"
+
+      - name: Build and deploy the verified main branch
+        if: ${{ env.RUN_MODE == 'full' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git switch --detach origin/main
+          npm test
+          npm run build
+          node tools/build-deploy.mjs | tee "$RUNNER_TEMP/deploy-package.json"
+          npx --yes wrangler@4.110.0 pages deploy .deploy \
+            --project-name game-guide-base \
+            --branch main \
+            | tee "$RUNNER_TEMP/pages-deployment.log"
+
+      - name: Verify the production site
+        if: ${{ env.RUN_MODE == 'full' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --retry 3 \
+            https://gameguidebase.com/sitemap.xml >/dev/null
+          jq -r '.newGuides[]' "$RUNNER_TEMP/daily-verification.json" | while read -r slug; do
+            curl --fail --silent --show-error --retry 3 \
+              "https://gameguidebase.com/games/$slug/?run=$GITHUB_RUN_ID" >/dev/null
+          done
+
+      - name: Publish the run summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "# Game Guide Base daily pipeline"
+            echo
+            echo "- Mode: $RUN_MODE"
+            echo "- Date: ${DAILY_RUN_DATE:-unknown}"
+            echo "- Baseline: ${BASELINE_SHA:-unknown}"
+            echo "- Target: $TARGET_GUIDES verified new guides"
+            for report in \
+              "$RUNNER_TEMP/codex-preflight.md" \
+              "$RUNNER_TEMP/codex-final.md" \
+              "$RUNNER_TEMP/daily-verification.json" \
+              "$RUNNER_TEMP/deploy-package.json" \
+              "$RUNNER_TEMP/pages-deployment.log"; do
+              if test -f "$report"; then
+                echo
+                echo "## $(basename "$report")"
+                echo
+                cat "$report"
+              fi
+            done
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload gameplay and diagnostic evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: game-guide-daily-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/game-guide-evidence
+            ${{ runner.temp }}/codex-preflight.md
+            ${{ runner.temp }}/codex-final.md
+            ${{ runner.temp }}/daily-verification.json
+            ${{ runner.temp }}/deploy-package.json
+            ${{ runner.temp }}/pages-deployment.log
+            ${{ runner.temp }}/codex-mcp.txt
+            ${{ runner.temp }}/wrangler-whoami.txt
+          if-no-files-found: warn
+          retention-days: 30

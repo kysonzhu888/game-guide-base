@@ -1,0 +1,5 @@
+Run a read-only Game Guide Base automation preflight. Do not modify files, create tickets,
+commit, push, upload media, or deploy. Confirm the repository path and current game count,
+confirm the node_repl browser backend is available, and use it only to open about:blank.
+Report whether Codex, GitHub, Linear, browser, Node, ffmpeg, and Wrangler prerequisites are
+ready for a full daily run. Never print credentials or token values.
