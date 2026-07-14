@@ -27,6 +27,12 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /workflow_dispatch:/);
   assert.match(workflow, /options:\s*\n\s+- preflight\s*\n\s+- full\s*\n\s+- resume/);
   assert.match(workflow, /repair-2026-07-14/);
+  assert.match(workflow, /id:\s*run_context/);
+  assert.match(
+    workflow,
+    /effective_mode="\$RUN_MODE"[\s\S]+test "\$effective_mode" = "full"[\s\S]+test -s "data\/daily-runs\/\$run_date\.json"[\s\S]+effective_mode="resume"/,
+  );
+  assert.match(workflow, /echo "mode=\$effective_mode" >> "\$GITHUB_OUTPUT"/);
   assert.match(workflow, /CODEX_BIN:\s*\/Applications\/ChatGPT\.app\/Contents\/Resources\/codex/);
   assert.match(
     workflow,
@@ -96,9 +102,18 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   );
   assert.match(workflow, /upload-artifact@v7/);
   assert.equal(
-    workflow.match(/env\.RUN_MODE == 'full' \|\| env\.RUN_MODE == 'resume'/g)?.length,
+    workflow.match(/steps\.run_context\.outputs\.mode == 'full' \|\| steps\.run_context\.outputs\.mode == 'resume'/g)?.length,
     2,
   );
+  assert.equal(
+    workflow.match(/if: \$\{\{ steps\.run_context\.outputs\.mode == 'full' \}\}/g)?.length,
+    2,
+  );
+  assert.equal(
+    workflow.match(/if: \$\{\{ steps\.run_context\.outputs\.mode == 'resume' \}\}/g)?.length,
+    1,
+  );
+  assert.doesNotMatch(workflow, /if: \$\{\{ env\.RUN_MODE == '(?:full|resume)'/);
   assert.equal(workflow.match(/if: \$\{\{ env\.RUN_MODE == 'preflight' \}\}/g)?.length ?? 0, 0);
   assert.match(workflow, /grep -Fqx "BROWSER_PREFLIGHT_OK"/);
   assert.match(workflow, /\/Applications\/ChatGPT\.app\/Contents\/MacOS\/ChatGPT/);
