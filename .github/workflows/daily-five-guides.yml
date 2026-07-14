@@ -39,6 +39,7 @@ jobs:
       CODEX_MODEL: ${{ vars.GAME_GUIDE_CODEX_MODEL || 'gpt-5.4-mini' }}
       CODEX_QUOTA_TIMEOUT_SECONDS: "90"
       CODEX_PREFLIGHT_TIMEOUT_SECONDS: "180"
+      CODEX_AGENT_TIMEOUT_SECONDS: "13800"
       BROWSER_CLIENT_MJS: /Users/kyson/.codex/plugins/cache/openai-bundled/chrome/latest/scripts/browser-client.mjs
 
     steps:
@@ -225,7 +226,9 @@ jobs:
           rendered_prompt="$RUNNER_TEMP/daily-five-guides.md"
           sed "s|__BROWSER_CLIENT_MJS__|$BROWSER_CLIENT_MJS|g" \
             .github/prompts/daily-five-guides.md > "$rendered_prompt"
-          "$CODEX_BIN" -c 'model_reasoning_effort="xhigh"' \
+          "$CODEX_SIGNED_NODE_BIN" tools/run-with-timeout.mjs \
+            "$CODEX_AGENT_TIMEOUT_SECONDS" \
+            "$CODEX_BIN" -c 'model_reasoning_effort="xhigh"' \
             -c "mcp_servers.node_repl.env.NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S=\"$CODEX_TRUSTED_BROWSER_CLIENT_SHA256S\"" \
             -a never -s danger-full-access --search -m "$CODEX_MODEL" \
             -C "$GITHUB_WORKSPACE" \

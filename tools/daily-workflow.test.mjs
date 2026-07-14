@@ -26,13 +26,22 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /CODEX_MODEL:[^\n]*gpt-5\.4-mini/);
   assert.match(workflow, /CODEX_QUOTA_TIMEOUT_SECONDS:\s*["']90["']/);
   assert.match(workflow, /CODEX_PREFLIGHT_TIMEOUT_SECONDS:\s*["']180["']/);
+  assert.match(workflow, /CODEX_AGENT_TIMEOUT_SECONDS:\s*["']13800["']/);
   assert.match(workflow, /BROWSER_CLIENT_MJS:[^\n]*browser-client\.mjs/);
   assert.equal(workflow.match(/"\$CODEX_BIN"/g)?.length, 6);
   assert.equal(workflow.match(/-m "\$CODEX_MODEL"/g)?.length, 3);
   assert.equal(workflow.match(/\/usr\/bin\/perl -e '[^']*alarm \$seconds; exec @ARGV/g)?.length, 1);
+  assert.equal(
+    workflow.match(/"\$CODEX_SIGNED_NODE_BIN" tools\/run-with-timeout\.mjs/g)?.length,
+    2,
+  );
   assert.match(
     workflow,
     /"\$CODEX_SIGNED_NODE_BIN" tools\/run-with-timeout\.mjs[\s\S]+"\$CODEX_PREFLIGHT_TIMEOUT_SECONDS"[\s\S]+"\$CODEX_BIN"/,
+  );
+  assert.match(
+    workflow,
+    /"\$CODEX_SIGNED_NODE_BIN" tools\/run-with-timeout\.mjs[\s\S]+"\$CODEX_AGENT_TIMEOUT_SECONDS"[\s\S]+"\$CODEX_BIN"/,
   );
   assert.equal(workflow.match(/__BROWSER_CLIENT_MJS__/g)?.length, 2);
   assert.doesNotMatch(workflow, /\n\s+codex\s+-c/);
