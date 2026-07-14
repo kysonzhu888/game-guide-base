@@ -5,12 +5,14 @@ import test from "node:test";
 const workflowUrl = new URL("../.github/workflows/daily-five-guides.yml", import.meta.url);
 const promptUrl = new URL("../.github/prompts/daily-five-guides.md", import.meta.url);
 const preflightPromptUrl = new URL("../.github/prompts/daily-five-guides-preflight.txt", import.meta.url);
+const uploadMediaUrl = new URL("./upload-media.mjs", import.meta.url);
 
 test("daily workflow runs five-guide automation on the trusted Mac", async () => {
-  const [workflow, prompt, preflightPrompt] = await Promise.all([
+  const [workflow, prompt, preflightPrompt, uploadMedia] = await Promise.all([
     readFile(workflowUrl, "utf8"),
     readFile(promptUrl, "utf8"),
     readFile(preflightPromptUrl, "utf8"),
+    readFile(uploadMediaUrl, "utf8"),
   ]);
 
   assert.match(workflow, /cron:\s*["']17 3 \* \* \*["']/);
@@ -27,13 +29,15 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /CODEX_QUOTA_TIMEOUT_SECONDS:\s*["']90["']/);
   assert.match(workflow, /CODEX_PREFLIGHT_TIMEOUT_SECONDS:\s*["']180["']/);
   assert.match(workflow, /CODEX_AGENT_TIMEOUT_SECONDS:\s*["']13800["']/);
+  assert.match(workflow, /PAGES_DEPLOY_TIMEOUT_SECONDS:\s*["']600["']/);
+  assert.match(workflow, /WRANGLER_SEND_METRICS:\s*["']false["']/);
   assert.match(workflow, /BROWSER_CLIENT_MJS:[^\n]*browser-client\.mjs/);
   assert.equal(workflow.match(/"\$CODEX_BIN"/g)?.length, 6);
   assert.equal(workflow.match(/-m "\$CODEX_MODEL"/g)?.length, 3);
   assert.equal(workflow.match(/\/usr\/bin\/perl -e '[^']*alarm \$seconds; exec @ARGV/g)?.length, 1);
   assert.equal(
     workflow.match(/"\$CODEX_SIGNED_NODE_BIN" tools\/run-with-timeout\.mjs/g)?.length,
-    2,
+    3,
   );
   assert.match(
     workflow,
@@ -63,6 +67,10 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /verify-daily-guides\.mjs/);
   assert.match(workflow, /build-deploy\.mjs/);
   assert.match(workflow, /wrangler@4\.110\.0 pages deploy \.deploy/);
+  assert.match(
+    workflow,
+    /"\$CODEX_SIGNED_NODE_BIN" tools\/run-with-timeout\.mjs[\s\S]+"\$PAGES_DEPLOY_TIMEOUT_SECONDS"[\s\S]+wrangler@4\.110\.0 pages deploy/,
+  );
   assert.match(workflow, /upload-artifact@v7/);
   assert.equal(workflow.match(/if: \$\{\{ env\.RUN_MODE == 'preflight' \}\}/g)?.length ?? 0, 0);
   assert.match(workflow, /grep -Fqx "BROWSER_PREFLIGHT_OK"/);
@@ -80,6 +88,10 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(prompt, /DAILY_EVIDENCE_DIR/);
   assert.match(prompt, /data\/daily-runs/);
   assert.match(prompt, /dynamic[\s\S]+video/i);
+  assert.match(prompt, /continuous temporal capture/i);
+  assert.match(prompt, /never[\s\S]+MP4[\s\S]+screenshots/i);
+  assert.match(prompt, /tab\.screenshot\(\)/);
+  assert.match(prompt, /browser-frame-sequence/);
   assert.match(prompt, /do not[\s\S]+deploy Cloudflare Pages/i);
   assert.match(prompt, /Chrome[\s\S]+Default profile/i);
   assert.match(prompt, /setupBrowserRuntime/);
@@ -94,4 +106,9 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(preflightPrompt, /\/Applications\/Google Chrome\.app\/Contents\/MacOS\/Google Chrome/);
   assert.match(preflightPrompt, /open a new Chrome window[\s\S]+do not\s+ask/i);
   assert.match(preflightPrompt, /BROWSER_PREFLIGHT_OK/);
+
+  assert.match(uploadMedia, /WRANGLER_SEND_METRICS:\s*"false"/);
+  assert.match(uploadMedia, /timeout:\s*uploadTimeoutMs/);
+  assert.match(uploadMedia, /R2_UPLOAD_TIMEOUT_MS/);
+  assert.match(uploadMedia, /"--yes",\s*\n\s*"wrangler@4\.110\.0"/);
 });

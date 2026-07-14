@@ -1,6 +1,11 @@
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 const LOOPIT_SOURCE = /^https:\/\/share\.loopit\.me\/game\/[^/?#]+/;
 const ISSUE_ID = /^UCH-\d+$/;
+const MIN_VIDEO_DURATION_SECONDS = 2;
+const MIN_VIDEO_FRAME_COUNT = 12;
+const MIN_VIDEO_SAMPLED_FRAME_COUNT = 6;
+const MIN_VIDEO_UNIQUE_FRAME_COUNT = 6;
+const MIN_VIDEO_UNIQUE_FRAME_RATIO = 0.35;
 
 const REQUIRED_ARRAYS = {
   basics: 4,
@@ -225,6 +230,26 @@ function validateEvidence(slug, evidence, evidenceFiles) {
   const minimumSize = expectedKind === "video" ? 10_000 : 1_000;
   if (file.size < minimumSize) {
     throw new Error(`Evidence file is too small to be credible: ${evidence.path}`);
+  }
+  if (expectedKind === "video") {
+    const videoMetrics = [
+      file.durationSeconds,
+      file.frameCount,
+      file.sampledFrameCount,
+      file.uniqueFrameCount,
+    ];
+    if (videoMetrics.some((value) => !Number.isFinite(value))) {
+      throw new Error(`Video evidence could not be inspected: ${evidence.path}`);
+    }
+    if (
+      file.durationSeconds < MIN_VIDEO_DURATION_SECONDS
+      || file.frameCount < MIN_VIDEO_FRAME_COUNT
+      || file.sampledFrameCount < MIN_VIDEO_SAMPLED_FRAME_COUNT
+      || file.uniqueFrameCount < MIN_VIDEO_UNIQUE_FRAME_COUNT
+      || file.uniqueFrameCount / file.sampledFrameCount < MIN_VIDEO_UNIQUE_FRAME_RATIO
+    ) {
+      throw new Error(`Video evidence must show continuous gameplay, not a still-image slideshow: ${evidence.path}`);
+    }
   }
 }
 

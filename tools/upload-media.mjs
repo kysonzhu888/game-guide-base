@@ -10,6 +10,10 @@ const args = new Set(rawArgs);
 
 const dryRun = args.has("--dry-run");
 const bucket = stringArg("--bucket", process.env.R2_BUCKET || "gameguidebase-media");
+const uploadTimeoutMs = positiveInteger(
+  process.env.R2_UPLOAD_TIMEOUT_MS || "120000",
+  "R2_UPLOAD_TIMEOUT_MS",
+);
 const sourcePrefixes = repeatedArgs("--source-prefix");
 const mediaRoot = path.join(root, ".media");
 const manifest = readJson("data/media-assets.generated.json");
@@ -35,7 +39,8 @@ for (const entry of entries) {
   }
 
   const result = spawnSync("npx", [
-    "wrangler",
+    "--yes",
+    "wrangler@4.110.0",
     "r2",
     "object",
     "put",
@@ -50,9 +55,17 @@ for (const entry of entries) {
   ], {
     cwd: root,
     encoding: "utf8",
+    env: {
+      ...process.env,
+      WRANGLER_SEND_METRICS: "false",
+    },
     stdio: "pipe",
+    timeout: uploadTimeoutMs,
   });
 
+  if (result.error) {
+    throw new Error(`Upload command failed for ${entry.r2Key}: ${result.error.message}`);
+  }
   if (result.status !== 0) {
     throw new Error(`Upload failed for ${entry.r2Key}\n${result.stderr || result.stdout}`);
   }
@@ -77,6 +90,14 @@ function repeatedArgs(name) {
       if (!value) throw new Error(`Invalid ${name}: empty value`);
       return value;
     });
+}
+
+function positiveInteger(raw, name) {
+  const value = Number(raw);
+  if (!Number.isSafeInteger(value) || value <= 0) {
+    throw new Error(`Invalid ${name}: expected a positive integer`);
+  }
+  return value;
 }
 
 function readJson(file) {

@@ -40,6 +40,8 @@ jobs:
       CODEX_QUOTA_TIMEOUT_SECONDS: "90"
       CODEX_PREFLIGHT_TIMEOUT_SECONDS: "180"
       CODEX_AGENT_TIMEOUT_SECONDS: "13800"
+      PAGES_DEPLOY_TIMEOUT_SECONDS: "600"
+      WRANGLER_SEND_METRICS: "false"
       BROWSER_CLIENT_MJS: /Users/kyson/.codex/plugins/cache/openai-bundled/chrome/latest/scripts/browser-client.mjs
 
     steps:
@@ -260,7 +262,9 @@ jobs:
           npm test
           npm run build
           node tools/build-deploy.mjs | tee "$RUNNER_TEMP/deploy-package.json"
-          npx --yes wrangler@4.110.0 pages deploy .deploy \
+          "$CODEX_SIGNED_NODE_BIN" tools/run-with-timeout.mjs \
+            "$PAGES_DEPLOY_TIMEOUT_SECONDS" \
+            npx --yes wrangler@4.110.0 pages deploy .deploy \
             --project-name game-guide-base \
             --branch main \
             | tee "$RUNNER_TEMP/pages-deployment.log"

@@ -38,6 +38,26 @@ test("requires video evidence for dynamic games", () => {
   assert.throws(() => validateDailyRun(fixture), /video evidence/i);
 });
 
+test("rejects a slideshow presented as continuous gameplay video", () => {
+  const fixture = dailyRunFixture();
+  const videoPath = fixture.manifest.guides[0].evidence
+    .find((item) => item.type === "video").path;
+  fixture.evidenceFiles.get(videoPath).uniqueFrameCount = 2;
+
+  assert.throws(() => validateDailyRun(fixture), /continuous gameplay/i);
+});
+
+test("rejects a low-motion slideshow with several still frames", () => {
+  const fixture = dailyRunFixture();
+  const videoPath = fixture.manifest.guides[0].evidence
+    .find((item) => item.type === "video").path;
+  const video = fixture.evidenceFiles.get(videoPath);
+  video.sampledFrameCount = 60;
+  video.uniqueFrameCount = 6;
+
+  assert.throws(() => validateDailyRun(fixture), /continuous gameplay/i);
+});
+
 function dailyRunFixture() {
   const beforeGames = [{
     slug: "loopit-existing-guide",
@@ -68,6 +88,12 @@ function dailyRunFixture() {
       evidenceFiles.set(evidence.path, {
         kind: evidence.type === "video" ? "video" : "image",
         size: evidence.type === "video" ? 50_000 : 5_000,
+        ...(evidence.type === "video" ? {
+          durationSeconds: 4,
+          frameCount: 48,
+          sampledFrameCount: 16,
+          uniqueFrameCount: 12,
+        } : {}),
       });
     }
   }
