@@ -30,6 +30,9 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /CODEX_PREFLIGHT_TIMEOUT_SECONDS:\s*["']180["']/);
   assert.match(workflow, /CODEX_AGENT_TIMEOUT_SECONDS:\s*["']13800["']/);
   assert.match(workflow, /PAGES_DEPLOY_TIMEOUT_SECONDS:\s*["']600["']/);
+  assert.match(workflow, /PRODUCTION_VERIFY_RETRIES:\s*["']18["']/);
+  assert.match(workflow, /PRODUCTION_VERIFY_RETRY_DELAY_SECONDS:\s*["']5["']/);
+  assert.match(workflow, /PRODUCTION_VERIFY_RETRY_MAX_SECONDS:\s*["']120["']/);
   assert.match(workflow, /WRANGLER_SEND_METRICS:\s*["']false["']/);
   assert.match(workflow, /BROWSER_CLIENT_MJS:[^\n]*browser-client\.mjs/);
   assert.equal(workflow.match(/"\$CODEX_BIN"/g)?.length, 6);
@@ -70,6 +73,10 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(
     workflow,
     /"\$CODEX_SIGNED_NODE_BIN" tools\/run-until-output\.mjs[\s\S]+"\$PAGES_DEPLOY_TIMEOUT_SECONDS"[\s\S]+"Deployment complete!"[\s\S]+wrangler@4\.110\.0 pages deploy/,
+  );
+  assert.match(
+    workflow,
+    /curl[\s\S]+--retry "\$PRODUCTION_VERIFY_RETRIES"[\s\S]+--retry-delay "\$PRODUCTION_VERIFY_RETRY_DELAY_SECONDS"[\s\S]+--retry-max-time "\$PRODUCTION_VERIFY_RETRY_MAX_SECONDS"[\s\S]+--retry-all-errors/,
   );
   assert.match(workflow, /upload-artifact@v7/);
   assert.equal(workflow.match(/if: \$\{\{ env\.RUN_MODE == 'preflight' \}\}/g)?.length ?? 0, 0);
