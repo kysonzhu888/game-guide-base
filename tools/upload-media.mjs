@@ -3,6 +3,8 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
+import { waitForPublishedAsset } from "./lib/published-asset-verifier.mjs";
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
 const rawArgs = process.argv.slice(2);
@@ -10,13 +12,26 @@ const args = new Set(rawArgs);
 
 const dryRun = args.has("--dry-run");
 const bucket = stringArg("--bucket", process.env.R2_BUCKET || "gameguidebase-media");
-const uploadTimeoutMs = positiveInteger(
-  process.env.R2_UPLOAD_TIMEOUT_MS || "120000",
-  "R2_UPLOAD_TIMEOUT_MS",
+const uploadTimeoutSeconds = positiveInteger(
+  process.env.R2_UPLOAD_TIMEOUT_SECONDS || "180",
+  "R2_UPLOAD_TIMEOUT_SECONDS",
+);
+const uploadAttempts = positiveInteger(
+  process.env.R2_UPLOAD_ATTEMPTS || "2",
+  "R2_UPLOAD_ATTEMPTS",
+);
+const publicVerifyTimeoutSeconds = positiveInteger(
+  process.env.R2_PUBLIC_VERIFY_TIMEOUT_SECONDS || "45",
+  "R2_PUBLIC_VERIFY_TIMEOUT_SECONDS",
 );
 const sourcePrefixes = repeatedArgs("--source-prefix");
 const mediaRoot = path.join(root, ".media");
 const manifest = readJson("data/media-assets.generated.json");
+const mediaBaseUrl = String(readJson("site.config.json").mediaBaseUrl || "").replace(/\/+$/, "");
+const commandWrapper = path.join(__dirname, "run-until-output.mjs");
+const npxBin = process.env.NPX_BIN || "npx";
+
+if (!mediaBaseUrl) throw new Error("site.config.json mediaBaseUrl is required for upload verification.");
 
 const entries = Object.entries(manifest)
   .filter(([sourcePath]) => !sourcePrefixes.length
@@ -38,38 +53,70 @@ for (const entry of entries) {
     continue;
   }
 
-  const result = spawnSync("npx", [
-    "--yes",
-    "wrangler@4.110.0",
-    "r2",
-    "object",
-    "put",
-    destination,
-    "--remote",
-    "--file",
-    filePath,
-    "--content-type",
-    "image/jpeg",
-    "--cache-control",
-    "public, max-age=31536000, immutable",
-  ], {
-    cwd: root,
-    encoding: "utf8",
-    env: {
-      ...process.env,
-      WRANGLER_SEND_METRICS: "false",
-    },
-    stdio: "pipe",
-    timeout: uploadTimeoutMs,
-  });
+  const expectedBytes = fs.readFileSync(filePath);
+  const publicUrl = new URL(entry.r2Key, `${mediaBaseUrl}/`).href;
+  let uploaded = false;
+  let lastFailure = "unknown failure";
 
-  if (result.error) {
-    throw new Error(`Upload command failed for ${entry.r2Key}: ${result.error.message}`);
+  for (let attempt = 1; attempt <= uploadAttempts; attempt += 1) {
+    const result = spawnSync(process.execPath, [
+      commandWrapper,
+      String(uploadTimeoutSeconds),
+      "Upload complete.",
+      npxBin,
+      "--yes",
+      "wrangler@4.110.0",
+      "r2",
+      "object",
+      "put",
+      destination,
+      "--remote",
+      "--file",
+      filePath,
+      "--content-type",
+      "image/jpeg",
+      "--cache-control",
+      "public, max-age=31536000, immutable",
+    ], {
+      cwd: root,
+      encoding: "utf8",
+      env: {
+        ...process.env,
+        BROWSER: "none",
+        CI: "true",
+        WRANGLER_SEND_METRICS: "false",
+      },
+      stdio: "pipe",
+    });
+
+    if (result.stdout) process.stdout.write(result.stdout);
+    if (result.stderr) process.stderr.write(result.stderr);
+
+    try {
+      const verification = await waitForPublishedAsset({
+        expectedBytes,
+        publicUrl,
+        timeoutMs: publicVerifyTimeoutSeconds * 1_000,
+      });
+      console.log(
+        `Uploaded ${entry.r2Key} and verified ${verification.size} public bytes after ${verification.attempts} check(s).`,
+      );
+      uploaded = true;
+      break;
+    } catch (error) {
+      const commandFailure = result.error?.message || `exit status ${result.status}`;
+      lastFailure = `command ${commandFailure}; ${error.message}`;
+      if (attempt < uploadAttempts) {
+        console.warn(`[R2 upload retry] key=${entry.r2Key} attempt=${attempt} reason=${lastFailure}`);
+      }
+    }
   }
-  if (result.status !== 0) {
-    throw new Error(`Upload failed for ${entry.r2Key}\n${result.stderr || result.stdout}`);
+
+  if (!uploaded) {
+    throw new Error(
+      `Upload failed for ${entry.r2Key} after ${uploadAttempts} attempt(s): ${lastFailure}`,
+    );
   }
-  console.log(`Uploaded ${entry.r2Key}`);
 }
 
 console.log(`${dryRun ? "Checked" : "Uploaded"} ${entries.length} media assets to ${bucket}.`);

@@ -37,7 +37,7 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.equal(workflow.match(/\/usr\/bin\/perl -e '[^']*alarm \$seconds; exec @ARGV/g)?.length, 1);
   assert.equal(
     workflow.match(/"\$CODEX_SIGNED_NODE_BIN" tools\/run-with-timeout\.mjs/g)?.length,
-    3,
+    2,
   );
   assert.match(
     workflow,
@@ -69,7 +69,7 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /wrangler@4\.110\.0 pages deploy \.deploy/);
   assert.match(
     workflow,
-    /"\$CODEX_SIGNED_NODE_BIN" tools\/run-with-timeout\.mjs[\s\S]+"\$PAGES_DEPLOY_TIMEOUT_SECONDS"[\s\S]+wrangler@4\.110\.0 pages deploy/,
+    /"\$CODEX_SIGNED_NODE_BIN" tools\/run-until-output\.mjs[\s\S]+"\$PAGES_DEPLOY_TIMEOUT_SECONDS"[\s\S]+"Deployment complete!"[\s\S]+wrangler@4\.110\.0 pages deploy/,
   );
   assert.match(workflow, /upload-artifact@v7/);
   assert.equal(workflow.match(/if: \$\{\{ env\.RUN_MODE == 'preflight' \}\}/g)?.length ?? 0, 0);
@@ -109,7 +109,11 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(preflightPrompt, /BROWSER_PREFLIGHT_OK/);
 
   assert.match(uploadMedia, /WRANGLER_SEND_METRICS:\s*"false"/);
-  assert.match(uploadMedia, /timeout:\s*uploadTimeoutMs/);
-  assert.match(uploadMedia, /R2_UPLOAD_TIMEOUT_MS/);
+  assert.match(uploadMedia, /run-until-output\.mjs/);
+  assert.match(uploadMedia, /Upload complete\./);
+  assert.match(uploadMedia, /waitForPublishedAsset/);
+  assert.match(uploadMedia, /R2_UPLOAD_TIMEOUT_SECONDS/);
+  assert.match(uploadMedia, /R2_UPLOAD_ATTEMPTS/);
+  assert.match(uploadMedia, /R2_PUBLIC_VERIFY_TIMEOUT_SECONDS/);
   assert.match(uploadMedia, /"--yes",\s*\n\s*"wrangler@4\.110\.0"/);
 });
