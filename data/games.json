@@ -7073,7 +7073,7 @@
       "remixes": "0"
     },
     "summary": "Android 9.0 P is a fake phone puzzle. Entering 4126 unlocks the launcher-style home screen with calculator, calendar, YouTube, messaging, games, and store icons.",
-    "quickAnswer": "Enter 4126 to unlock the launcher screen.",
+    "quickAnswer": "Enter 4126 to unlock the launcher screen, which then shows calculator, calendar, YouTube, messaging, games, and store icons.",
     "basics": [
       "The visible lock screen shows Enter Password: 4126.",
       "The time and date sit above a keypad-style input layout.",
