@@ -4,7 +4,7 @@ import { readFile } from "node:fs/promises";
 import { homedir } from "node:os";
 import { join } from "node:path";
 
-import { normalizeFailureReason, reportDailyFailure } from "./lib/daily-failure-reporter.mjs";
+import { reportDailyFailure, selectFailureReason } from "./lib/daily-failure-reporter.mjs";
 
 const candidateFiles = [
   "codex-quota.md",
@@ -23,10 +23,7 @@ async function readFailureReason() {
       }
     }
   }
-  const marker = contents
-    .flatMap((content) => content.split(/\r?\n/))
-    .find((line) => /FAILED|failure|error|blocked|quota|unavailable/i.test(line));
-  return normalizeFailureReason(marker);
+  return selectFailureReason(contents);
 }
 
 const token = (await readFile(join(homedir(), ".linear/api_token"), "utf8")).trim();
