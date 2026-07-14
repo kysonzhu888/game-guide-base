@@ -15,7 +15,7 @@ test("keeps the five recovered production guides in canonical source", async () 
   const mediaManifest = await readJson("../data/media-assets.generated.json");
   const gameBySlug = new Map(games.map((game) => [game.slug, game]));
 
-  assert.equal(games.length, 68);
+  assert.ok(games.length >= 68, `expected at least the original 68 guides, saw ${games.length}`);
   assert.equal(gameBySlug.size, games.length, "guide slugs must remain unique");
 
   for (const [slug, sourceUrl] of recoveredGuides) {

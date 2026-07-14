@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-07-14",
+  "mode": "new-guides",
+  "targetCount": 5,
+  "baseline": {
+    "ref": "e712d46290e5a4de2c48937a65cf64b9c0cb13f9",
+    "gameCount": 68
+  },
+  "final": {
+    "gameCount": 73
+  },
+  "linear": {
+    "parentIssue": "UCH-41",
+    "dailyIssue": "UCH-133"
+  },
+  "guides": [
+    {
+      "slug": "loopit-sandbox-stairs-stones-drop-wall-zigzag",
+      "sourceUrl": "https://share.loopit.me/game/94097d52-c473-4e1a-8159-2ae5ba7bd6ac",
+      "status": "verified",
+      "dynamic": true,
+      "outcomes": [
+        "Switched to Stairs mode.",
+        "A short drag changed the figure's pose."
+      ],
+      "pending": [
+        "Sandbox, Stones, Drop, Wall, and ZigZag remain pending."
+      ],
+      "evidence": [
+        {
+          "type": "video",
+          "path": "loopit-sandbox-stairs-stones-drop-wall-zigzag/run-01.mp4"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-sandbox-stairs-stones-drop-wall-zigzag/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-sandbox-stairs-stones-drop-wall-zigzag/02-after-drag.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-football-street-practice",
+      "sourceUrl": "https://share.loopit.me/game/49cf9812-e7bf-4479-9d37-c4c1d6f4e395",
+      "status": "verified",
+      "dynamic": true,
+      "outcomes": [
+        "Entered Practice / Make Level.",
+        "The drawn shot missed and the game showed Missed! Tap to retry."
+      ],
+      "pending": [
+        "Campaign progression remains pending.",
+        "Add Obstacle and Clear Field were visible but not deeply tested."
+      ],
+      "evidence": [
+        {
+          "type": "video",
+          "path": "loopit-football-street-practice/run-01.mp4"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-football-street-practice/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-football-street-practice/02-missed-retry.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-touch-me-as-quick-as-possible",
+      "sourceUrl": "https://share.loopit.me/game/2c7c7487-9c03-4853-a987-86b4af1fd360",
+      "status": "verified",
+      "dynamic": true,
+      "outcomes": [
+        "A single tap changed the page to 1 CPS."
+      ],
+      "pending": [
+        "Any hidden score ceiling or deeper branch remains unverified."
+      ],
+      "evidence": [
+        {
+          "type": "video",
+          "path": "loopit-touch-me-as-quick-as-possible/run-01.mp4"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-touch-me-as-quick-as-possible/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-touch-me-as-quick-as-possible/02-after-tap.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-oiia-oiia",
+      "sourceUrl": "https://share.loopit.me/game/a7a67ac0-b867-435b-92d9-5aadad5fd811",
+      "status": "verified",
+      "dynamic": true,
+      "outcomes": [
+        "The drum icon triggered a rainbow scene and a card tilt."
+      ],
+      "pending": [
+        "Guitar, keyboard, and sax icons remain pending."
+      ],
+      "evidence": [
+        {
+          "type": "video",
+          "path": "loopit-oiia-oiia/run-01.mp4"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-oiia-oiia/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-oiia-oiia/02-after-drum.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-the-eye",
+      "sourceUrl": "https://share.loopit.me/game/7d6ba720-9322-410e-bda2-5840faeade5e",
+      "status": "verified",
+      "dynamic": true,
+      "outcomes": [
+        "One click entered the void scene.",
+        "The drag and hold instructions became visible immediately after entry."
+      ],
+      "pending": [
+        "Full drag-path and accelerate tracing remain unverified."
+      ],
+      "evidence": [
+        {
+          "type": "video",
+          "path": "loopit-the-eye/run-01.mp4"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-the-eye/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-the-eye/02-after-enter.jpg"
+        }
+      ]
+    }
+  ],
+  "rejectedCandidates": [
+    {
+      "sourceUrl": "https://share.loopit.me/game/2cae2b3d-ff09-47c1-a64f-ecd4478f94ef",
+      "reason": "The share shell timed out and showed 'Loading timeout. Please refresh.' instead of a playable game.",
+      "evidence": [
+        "loopit-2cae2b3d-loading-timeout/01-loading-timeout.jpg"
+      ]
+    },
+    {
+      "sourceUrl": "https://share.loopit.me/game/fa750a18-1646-458f-9431-ec8b9a3b4cb6",
+      "reason": "The embedded frame stayed blank/black and never reached an interactive state.",
+      "evidence": [
+        "loopit-fa750a18-blank-frame/01-blank-frame.jpg"
+      ]
+    }
+  ]
+}
