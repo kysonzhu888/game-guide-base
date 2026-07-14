@@ -20,9 +20,11 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /workflow_dispatch:/);
   assert.match(workflow, /CODEX_BIN:\s*\/Applications\/ChatGPT\.app\/Contents\/Resources\/codex/);
   assert.match(workflow, /CODEX_MODEL:[^\n]*gpt-5\.4-mini/);
+  assert.match(workflow, /CODEX_PREFLIGHT_TIMEOUT_SECONDS:\s*["']180["']/);
   assert.match(workflow, /BROWSER_CLIENT_MJS:[^\n]*browser-client\.mjs/);
   assert.equal(workflow.match(/"\$CODEX_BIN"/g)?.length, 4);
   assert.equal(workflow.match(/-m "\$CODEX_MODEL"/g)?.length, 2);
+  assert.match(workflow, /\/usr\/bin\/perl -e '[^']*alarm \$seconds; exec @ARGV/);
   assert.equal(workflow.match(/__BROWSER_CLIENT_MJS__/g)?.length, 2);
   assert.doesNotMatch(workflow, /\n\s+codex\s+-c/);
   assert.equal(workflow.match(/model_reasoning_effort="xhigh"/g)?.length, 2);

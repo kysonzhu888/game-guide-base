@@ -35,6 +35,7 @@ jobs:
       TARGET_GUIDES: "5"
       CODEX_BIN: /Applications/ChatGPT.app/Contents/Resources/codex
       CODEX_MODEL: ${{ vars.GAME_GUIDE_CODEX_MODEL || 'gpt-5.4-mini' }}
+      CODEX_PREFLIGHT_TIMEOUT_SECONDS: "180"
       BROWSER_CLIENT_MJS: /Users/kyson/.codex/plugins/cache/openai-bundled/chrome/latest/scripts/browser-client.mjs
 
     steps:
@@ -141,10 +142,24 @@ jobs:
           rendered_prompt="$RUNNER_TEMP/daily-five-guides-preflight.txt"
           sed "s|__BROWSER_CLIENT_MJS__|$BROWSER_CLIENT_MJS|g" \
             .github/prompts/daily-five-guides-preflight.txt > "$rendered_prompt"
-          "$CODEX_BIN" -c 'model_reasoning_effort="xhigh"' \
+          set +e
+          /usr/bin/perl -e 'my $seconds = shift @ARGV; alarm $seconds; exec @ARGV or die $!;' \
+            "$CODEX_PREFLIGHT_TIMEOUT_SECONDS" \
+            "$CODEX_BIN" -c 'model_reasoning_effort="xhigh"' \
             -a never -s read-only -m "$CODEX_MODEL" -C "$GITHUB_WORKSPACE" \
             exec --ephemeral --output-last-message "$RUNNER_TEMP/codex-preflight.md" \
             - < "$rendered_prompt"
+          codex_status=$?
+          set -e
+          if test "$codex_status" -ne 0 && test ! -s "$RUNNER_TEMP/codex-preflight.md"; then
+            if test "$codex_status" -eq 142; then
+              printf 'BROWSER_PREFLIGHT_FAILED: Codex browser preflight timed out after %s seconds.\n' \
+                "$CODEX_PREFLIGHT_TIMEOUT_SECONDS" > "$RUNNER_TEMP/codex-preflight.md"
+            else
+              printf 'BROWSER_PREFLIGHT_FAILED: Codex CLI exited with status %s before completing the browser preflight.\n' \
+                "$codex_status" > "$RUNNER_TEMP/codex-preflight.md"
+            fi
+          fi
           if ! grep -Fqx "BROWSER_PREFLIGHT_OK" "$RUNNER_TEMP/codex-preflight.md"; then
             echo "Chrome runtime preflight did not return the success marker." >&2
             cat "$RUNNER_TEMP/codex-preflight.md" >&2
