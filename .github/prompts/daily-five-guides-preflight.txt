@@ -2,6 +2,19 @@ Perform only the Chrome-runtime smoke test. This unattended task explicitly requ
 Chrome extension and Default profile because the production run will play Loopit games there. Use
 the `control-chrome` skill and select the `extension` backend; do not select `iab`.
 
+After reading the complete `control-chrome` skill, initialize its runtime in the first node_repl
+JavaScript call exactly as follows. Do not assume that `agent` is already a global:
+
+```js
+if (globalThis.agent?.browsers == null) {
+  const { setupBrowserRuntime } = await import("__BROWSER_CLIENT_MJS__");
+  await setupBrowserRuntime({ globals: globalThis });
+}
+```
+
+Then select `extension` using the skill's documented `agent.browsers.get("extension")` flow and
+read the complete Chrome documentation before opening the temporary tab.
+
 The user has already authorized this scheduled workflow to open a new Chrome window. If the
 Chrome backend is unavailable after setup, read the required bootstrap and Chrome troubleshooting
 documentation, run `nohup "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"

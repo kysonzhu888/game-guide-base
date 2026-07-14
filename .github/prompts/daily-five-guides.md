@@ -26,6 +26,19 @@ ask for permission. The direct executable is required because the runner's Launc
 cannot use LaunchServices to open the Chrome bundle. Close only the temporary recovery tab after
 the browser is attached; do not inspect cookies, passwords, or profile storage.
 
+After reading the complete `control-chrome` skill, initialize its runtime in the first node_repl
+JavaScript call exactly as follows. Do not assume that `agent` is already a global:
+
+```js
+if (globalThis.agent?.browsers == null) {
+  const { setupBrowserRuntime } = await import("__BROWSER_CLIENT_MJS__");
+  await setupBrowserRuntime({ globals: globalThis });
+}
+```
+
+Then select `extension` using the skill's documented `agent.browsers.get("extension")` flow and
+read the complete Chrome documentation before gameplay.
+
 ## 1. Ticket and baseline first
 
 Before content or code changes:
