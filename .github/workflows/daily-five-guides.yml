@@ -31,10 +31,12 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       LINEAR_PARENT_ISSUE: UCH-41
+      LINEAR_FAILURE_ISSUE: UCH-125
       RUN_MODE: ${{ github.event_name == 'schedule' && 'full' || inputs.mode }}
       TARGET_GUIDES: "5"
       CODEX_BIN: /Applications/ChatGPT.app/Contents/Resources/codex
       CODEX_MODEL: ${{ vars.GAME_GUIDE_CODEX_MODEL || 'gpt-5.4-mini' }}
+      CODEX_QUOTA_TIMEOUT_SECONDS: "90"
       CODEX_PREFLIGHT_TIMEOUT_SECONDS: "180"
       BROWSER_CLIENT_MJS: /Users/kyson/.codex/plugins/cache/openai-bundled/chrome/latest/scripts/browser-client.mjs
 
@@ -71,6 +73,38 @@ jobs:
           } >> "$GITHUB_ENV"
           git config user.name "game-guide-automation"
           git config user.email "kysonzhu888@gmail.com"
+
+      - name: Gate the local Codex quota
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -x "$CODEX_BIN"
+          set +e
+          printf 'Reply exactly CODEX_QUOTA_OK and do nothing else.\n' \
+            | /usr/bin/perl -e 'my $seconds = shift @ARGV; alarm $seconds; exec @ARGV or die $!;' \
+              "$CODEX_QUOTA_TIMEOUT_SECONDS" \
+              "$CODEX_BIN" -c 'model_reasoning_effort="xhigh"' \
+              -a never -s read-only -m "$CODEX_MODEL" -C "$GITHUB_WORKSPACE" \
+              exec --ephemeral --output-last-message "$RUNNER_TEMP/codex-quota.md" - \
+              >"$RUNNER_TEMP/codex-quota.log" 2>&1
+          codex_status=$?
+          set -e
+          cat "$RUNNER_TEMP/codex-quota.log"
+          if test "$codex_status" -eq 0 \
+            && grep -Fqx "CODEX_QUOTA_OK" "$RUNNER_TEMP/codex-quota.md"; then
+            exit 0
+          fi
+          if grep -Eqi 'usage limit|credits balance|rate.?limit|insufficient.?quota' \
+            "$RUNNER_TEMP/codex-quota.log"; then
+            reason="Codex quota is unavailable for $CODEX_MODEL."
+          elif test "$codex_status" -eq 142; then
+            reason="Codex quota probe timed out after $CODEX_QUOTA_TIMEOUT_SECONDS seconds."
+          else
+            reason="Codex quota probe exited with status $codex_status without the success marker."
+          fi
+          printf 'CODEX_QUOTA_FAILED: %s\n' "$reason" > "$RUNNER_TEMP/codex-quota.md"
+          echo "::error title=Codex daily-guide gate failed::$reason"
+          exit 1
 
       - name: Verify the trusted Mac prerequisites
         shell: bash
@@ -134,6 +168,20 @@ jobs:
             echo "## native host processes"
             pgrep -fl "ChatGPT for Chrome" || true
           } | tee "$RUNNER_TEMP/browser-host-diagnostics.txt"
+          patch_result="$(node tools/patch-browser-client.mjs \
+            "$BROWSER_CLIENT_MJS" "$(dirname "$BROWSER_CLIENT_MJS")/browser-client-safe.mjs")"
+          safe_browser_client="$(jq -r '.outputPath' <<< "$patch_result")"
+          safe_browser_hash="$(jq -r '.sha256' <<< "$patch_result")"
+          trusted_hashes="$($CODEX_BIN mcp get node_repl --json \
+            | jq -r '.transport.env.NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S')"
+          test -n "$safe_browser_client"
+          test -n "$safe_browser_hash"
+          test -n "$trusted_hashes"
+          {
+            echo "BROWSER_CLIENT_MJS=$safe_browser_client"
+            echo "BROWSER_CLIENT_SAFE_MJS=$safe_browser_client"
+            echo "CODEX_TRUSTED_BROWSER_CLIENT_SHA256S=$trusted_hashes,$safe_browser_hash"
+          } >> "$GITHUB_ENV"
 
       - name: Gate the local Codex and Chrome runtime
         shell: bash
@@ -146,11 +194,13 @@ jobs:
           /usr/bin/perl -e 'my $seconds = shift @ARGV; alarm $seconds; exec @ARGV or die $!;' \
             "$CODEX_PREFLIGHT_TIMEOUT_SECONDS" \
             "$CODEX_BIN" -c 'model_reasoning_effort="xhigh"' \
+            -c "mcp_servers.node_repl.env.NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S=\"$CODEX_TRUSTED_BROWSER_CLIENT_SHA256S\"" \
             -a never -s read-only -m "$CODEX_MODEL" -C "$GITHUB_WORKSPACE" \
             exec --ephemeral --output-last-message "$RUNNER_TEMP/codex-preflight.md" \
-            - < "$rendered_prompt"
+            - < "$rendered_prompt" >"$RUNNER_TEMP/codex-preflight.log" 2>&1
           codex_status=$?
           set -e
+          cat "$RUNNER_TEMP/codex-preflight.log"
           if test "$codex_status" -ne 0 && test ! -s "$RUNNER_TEMP/codex-preflight.md"; then
             if test "$codex_status" -eq 142; then
               printf 'BROWSER_PREFLIGHT_FAILED: Codex browser preflight timed out after %s seconds.\n' \
@@ -175,6 +225,7 @@ jobs:
           sed "s|__BROWSER_CLIENT_MJS__|$BROWSER_CLIENT_MJS|g" \
             .github/prompts/daily-five-guides.md > "$rendered_prompt"
           "$CODEX_BIN" -c 'model_reasoning_effort="xhigh"' \
+            -c "mcp_servers.node_repl.env.NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S=\"$CODEX_TRUSTED_BROWSER_CLIENT_SHA256S\"" \
             -a never -s danger-full-access --search -m "$CODEX_MODEL" \
             -C "$GITHUB_WORKSPACE" \
             --add-dir "$DAILY_EVIDENCE_DIR" \
@@ -235,7 +286,10 @@ jobs:
             echo "- Target: $TARGET_GUIDES verified new guides"
             echo "- Codex: $CODEX_MODEL via $CODEX_BIN"
             for report in \
+              "$RUNNER_TEMP/codex-quota.md" \
+              "$RUNNER_TEMP/codex-quota.log" \
               "$RUNNER_TEMP/codex-preflight.md" \
+              "$RUNNER_TEMP/codex-preflight.log" \
               "$RUNNER_TEMP/codex-final.md" \
               "$RUNNER_TEMP/browser-host-diagnostics.txt" \
               "$RUNNER_TEMP/daily-verification.json" \
@@ -249,6 +303,9 @@ jobs:
               fi
             done
           } >> "$GITHUB_STEP_SUMMARY"
+          if test -n "${BROWSER_CLIENT_SAFE_MJS:-}"; then
+            rm -f -- "$BROWSER_CLIENT_SAFE_MJS"
+          fi
 
       - name: Upload gameplay and diagnostic evidence
         if: always()
@@ -257,7 +314,10 @@ jobs:
           name: game-guide-daily-${{ github.run_id }}
           path: |
             ${{ runner.temp }}/game-guide-evidence
+            ${{ runner.temp }}/codex-quota.md
+            ${{ runner.temp }}/codex-quota.log
             ${{ runner.temp }}/codex-preflight.md
+            ${{ runner.temp }}/codex-preflight.log
             ${{ runner.temp }}/codex-final.md
             ${{ runner.temp }}/browser-host-diagnostics.txt
             ${{ runner.temp }}/daily-verification.json
@@ -267,3 +327,14 @@ jobs:
             ${{ runner.temp }}/wrangler-whoami.txt
           if-no-files-found: warn
           retention-days: 30
+
+      - name: Alert the failed daily run
+        if: ${{ failure() }}
+        continue-on-error: true
+        env:
+          FAILURE_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          node tools/report-daily-failure.mjs
+          /usr/bin/osascript -e 'display notification "GameGuideBase daily pipeline failed" with title "Uchuu 自动化异常"'
