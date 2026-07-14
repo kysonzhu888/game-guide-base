@@ -6400,5 +6400,466 @@
       "Visible source-page engagement during capture: 5.8K views, 0 likes, 7 comments, 9 remixes."
     ],
     "coverageStatus": "Title and Begin state verified on July 8; maze route pending"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-14",
+    "lastUpdated": "2026-07-14",
+    "communityNotes": [
+      "The public share page exposed a live three.js canvas; only the Stairs mode was exercised in this run."
+    ],
+    "slug": "loopit-sandbox-stairs-stones-drop-wall-zigzag",
+    "title": "Sandbox Stairs Stones Drop Wall ZigZag",
+    "genre": "Canvas physics toy",
+    "difficulty": "A three.js canvas toy with Sandbox, Stairs, Stones, Drop, Wall, and ZigZag mode buttons.",
+    "searchIntent": "Sandbox Stairs Stones Drop Wall ZigZag guide, drag the ends to make it walk, Loopit",
+    "sourceUrl": "https://share.loopit.me/game/94097d52-c473-4e1a-8159-2ae5ba7bd6ac",
+    "creator": "Ophelia",
+    "creatorSlug": "ophelia",
+    "stats": {
+      "views": "219K",
+      "likes": "2.9K",
+      "comments": "517",
+      "remixes": "127"
+    },
+    "summary": "Sandbox Stairs Stones Drop Wall ZigZag is a Loopit three.js canvas toy. The replay loaded the share page, switched to Stairs mode, and a short drag changed the figure's pose; Sandbox, Stones, Drop, Wall, and ZigZag remain pending.",
+    "quickAnswer": "Open Stairs first and drag the figure's ends on the canvas. I verified the scene reacts immediately, but the other four mode buttons still need separate coverage.",
+    "basics": [
+      "The page loads a three.js canvas and a row of mode buttons.",
+      "The visible modes are Sandbox, Stairs, Stones, Drop, Wall, and ZigZag.",
+      "I verified Stairs mode and one drag-driven pose change.",
+      "The other modes were visible but not individually exercised."
+    ],
+    "controls": [
+      "Click a mode button to switch the scene.",
+      "Drag the figure ends on the canvas to make it walk.",
+      "Reload or re-enter the share page if you want to replay the start state."
+    ],
+    "strategy": [
+      "Start with Stairs because it gives a visible state change quickly.",
+      "Capture both the idle canvas and the post-drag pose for documentation.",
+      "Treat Sandbox, Stones, Drop, Wall, and ZigZag as pending until they are each tested."
+    ],
+    "mistakes": [
+      "Counting the landing page as full coverage.",
+      "Dragging too little and expecting a large animation.",
+      "Claiming the untested modes are equivalent to Stairs."
+    ],
+    "faq": [
+      [
+        "Which mode did you verify?",
+        "Stairs, plus one drag response on the canvas."
+      ],
+      [
+        "Are the other buttons covered?",
+        "Not yet; Sandbox, Stones, Drop, Wall, and ZigZag remain pending."
+      ],
+      [
+        "Does the page use a real engine?",
+        "Yes, the iframe exposed a three.js canvas."
+      ]
+    ],
+    "creatorContext": [
+      "Ophelia is the share-page creator shown on the source card.",
+      "The page showed 219K views, 2.9K likes, 517 comments, and 127 remixes during capture.",
+      "The replay briefly showed load warnings before the canvas became interactive."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-sandbox-stairs-stones-drop-wall-zigzag/01-entry.jpg",
+        "alt": "Sandbox Stairs Stones Drop Wall ZigZag starting screen with a three.js canvas and mode buttons.",
+        "caption": "The entry frame shows the mode row before interaction."
+      },
+      {
+        "src": "/assets/loopit-sandbox-stairs-stones-drop-wall-zigzag/02-after-drag.jpg",
+        "alt": "Sandbox Stairs Stones Drop Wall ZigZag after dragging in Stairs mode.",
+        "caption": "A short drag changed the Stairs scene's pose."
+      }
+    ],
+    "coverageStatus": "Verified on 2026-07-14 through the Stairs-mode drag response; the remaining four modes are still pending.",
+    "coverageChecklist": [
+      "Recorded the share-page sourceUrl and author metadata from the public Loopit card.",
+      "Confirmed the embedded canvas loaded and mode buttons appeared.",
+      "Captured entry and post-drag screenshots from the Stairs scene.",
+      "Tracked Sandbox, Stones, Drop, Wall, and ZigZag as unverified branches.",
+      "Archived video evidence for the dynamic canvas interaction."
+    ],
+    "coverageNotes": [
+      "The game uses a live three.js canvas rather than a static preview.",
+      "Only the Stairs mode was exercised in this run."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-14",
+    "lastUpdated": "2026-07-14",
+    "communityNotes": [
+      "The verified path stayed in Practice / Make Level and documented the miss/retry flow rather than a clean goal."
+    ],
+    "slug": "loopit-football-street-practice",
+    "title": "Football Street",
+    "genre": "Football practice",
+    "difficulty": "A football practice playable with Shop, Rankings, Practice / Make Level, Draw Path, Add Obstacle, and Clear Field.",
+    "searchIntent": "Football Street Loopit guide, Practice / Make Level, draw path to goal",
+    "sourceUrl": "https://share.loopit.me/game/49cf9812-e7bf-4479-9d37-c4c1d6f4e395",
+    "creator": "12345678910",
+    "creatorSlug": "12345678910",
+    "stats": {
+      "views": "16.3K",
+      "likes": "114",
+      "comments": "48",
+      "remixes": "3"
+    },
+    "summary": "Football Street is a Loopit football practice playable. The replay reached Practice / Make Level, drew a path, and immediately hit Missed! Tap to retry instead of a clean goal.",
+    "quickAnswer": "Open Practice / Make Level, draw a path, and use the retry flow if the shot misses. The verified run ended in the Missed! state, so the campaign path remains pending.",
+    "basics": [
+      "The menu shows Shop, Rankings, and Practice / Make Level.",
+      "Practice mode adds Draw Path, Add Obstacle, Clear Field, and Back to Campaign.",
+      "The verified path drew one shot line and landed on Missed! Tap to retry.",
+      "The campaign progression was not advanced in this run."
+    ],
+    "controls": [
+      "Use Practice / Make Level to enter the drawing flow.",
+      "Drag to draw a shot path toward the goal.",
+      "Use Back to Campaign, Add Obstacle, or Clear Field as needed."
+    ],
+    "strategy": [
+      "Start in Practice so you can redraw quickly after misses.",
+      "Draw a simple straight line first to learn the shot behavior.",
+      "Clear the field before retrying if your previous path makes the layout hard to read."
+    ],
+    "mistakes": [
+      "Treating the first drawn line as guaranteed success.",
+      "Forgetting to use the retry prompt after a miss.",
+      "Confusing Practice / Make Level with campaign advancement."
+    ],
+    "faq": [
+      [
+        "Did the verified run score a goal?",
+        "No, it hit Missed! Tap to retry."
+      ],
+      [
+        "What practice controls were visible?",
+        "Draw Path, Add Obstacle, Clear Field, and Back to Campaign."
+      ],
+      [
+        "Can I see the campaign?",
+        "Not in this run; I stayed in practice mode."
+      ]
+    ],
+    "creatorContext": [
+      "12345678910 is the creator name shown on the source card.",
+      "The source page showed 16.3K views, 114 likes, 48 comments, and 3 remixes.",
+      "The shared page title and practice mode are much clearer than the campaign path in this pass."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-football-street-practice/01-entry.jpg",
+        "alt": "Football Street practice menu with Practice / Make Level visible.",
+        "caption": "The entry frame shows the menu before drawing a path."
+      },
+      {
+        "src": "/assets/loopit-football-street-practice/02-missed-retry.jpg",
+        "alt": "Football Street showing the Missed! Tap to retry state after a drawn shot.",
+        "caption": "The verified shot ended in the retry state."
+      }
+    ],
+    "coverageStatus": "Verified on 2026-07-14 through Practice / Make Level and the Missed! retry state; campaign progression remains pending.",
+    "coverageChecklist": [
+      "Recorded the public Loopit sourceUrl and source-card engagement.",
+      "Entered Practice / Make Level and confirmed the visible control set.",
+      "Drew one shot path and captured the Missed! retry state.",
+      "Archived screenshot and video evidence for the practice loop."
+    ],
+    "coverageNotes": [
+      "This run confirms the practice flow but not a successful goal.",
+      "The campaign path remains untested."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-14",
+    "lastUpdated": "2026-07-14",
+    "communityNotes": [
+      "This page behaves like a one-screen meme counter; the before/after tap state is the important proof."
+    ],
+    "slug": "loopit-touch-me-as-quick-as-possible",
+    "title": "Touch Me as Quick as Possible",
+    "genre": "Tap counter",
+    "difficulty": "A cat tap toy where one click flips the page into a live CPS counter.",
+    "searchIntent": "Touch Me as Quick as Possible Loopit guide, 1 CPS cat tap toy",
+    "sourceUrl": "https://share.loopit.me/game/2c7c7487-9c03-4853-a987-86b4af1fd360",
+    "creator": "404",
+    "creatorSlug": "404",
+    "stats": {
+      "views": "45.3K",
+      "likes": "1.1K",
+      "comments": "183",
+      "remixes": "68"
+    },
+    "summary": "Touch Me as Quick as Possible is a Loopit tap toy. A single click on the cat changed the page to 1 CPS, confirming that the visible counter responds immediately to touch.",
+    "quickAnswer": "Tap the cat itself, not the surrounding frame. One successful tap is enough to flip the page into the 1 CPS state, and repeated taps should keep pushing the counter.",
+    "basics": [
+      "The landing screen shows a cat, a TAP FAST!! prompt, and a minimal black stage.",
+      "A successful tap changes the page to a 1 CPS readout.",
+      "No separate win screen or stage list was observed.",
+      "The game is effectively a fast touch counter with a cat target."
+    ],
+    "controls": [
+      "Click or tap the cat image.",
+      "Repeat taps quickly if you want to raise the CPS reading.",
+      "Reload the page to return to the starting state."
+    ],
+    "strategy": [
+      "Target the cat directly so the tap is unambiguous.",
+      "Keep the gesture simple; the game reacts to touch frequency rather than route choice.",
+      "Capture a before/after pair because the visible difference is small but real."
+    ],
+    "mistakes": [
+      "Calling the landing screen complete without tapping.",
+      "Tapping the background instead of the cat.",
+      "Expecting campaign-style branches when the toy is a single-screen counter."
+    ],
+    "faq": [
+      [
+        "What changed after the first tap?",
+        "The page flipped to 1 CPS."
+      ],
+      [
+        "Does it have menus or stages?",
+        "Not in the verified run; it behaved like a one-screen toy."
+      ],
+      [
+        "What is the target?",
+        "The cat in the center card."
+      ]
+    ],
+    "creatorContext": [
+      "404 is the creator label shown on the source card.",
+      "The page showed 45.3K views, 1.1K likes, 183 comments, and 68 remixes.",
+      "The share page title itself is terse; the gameplay reads like a meme counter rather than a structured campaign."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-touch-me-as-quick-as-possible/01-entry.jpg",
+        "alt": "Touch Me as Quick as Possible landing screen with TAP FAST!! and a centered cat.",
+        "caption": "The entry frame shows the cat before any tap is counted."
+      },
+      {
+        "src": "/assets/loopit-touch-me-as-quick-as-possible/02-after-tap.jpg",
+        "alt": "Touch Me as Quick as Possible after a tap changed the page to 1 CPS.",
+        "caption": "A single tap changed the visible state to 1 CPS."
+      }
+    ],
+    "coverageStatus": "Verified on 2026-07-14 through the cat tap response to 1 CPS; no deeper branching was observed.",
+    "coverageChecklist": [
+      "Recorded the public shareUrl and creator label from the Loopit card.",
+      "Captured the TAP FAST!! landing state.",
+      "Tapped the cat once and confirmed the 1 CPS state.",
+      "Archived screenshot and video evidence for the tap transition."
+    ],
+    "coverageNotes": [
+      "The game is a single-screen counter; the key proof is the visible CPS change.",
+      "The tap target is the cat itself, not the page background."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-14",
+    "lastUpdated": "2026-07-14",
+    "communityNotes": [
+      "The cat and background both change when an instrument icon is tapped, so the visual transition is easy to read."
+    ],
+    "slug": "loopit-oiia-oiia",
+    "title": "Oiia Oiia",
+    "genre": "Music toy",
+    "difficulty": "A cat-and-instrument toy with guitar, drum, keyboard, and sax icons that visibly remix the scene.",
+    "searchIntent": "Oiia Oiia Loopit guide, drum icon, rainbow cat music toy",
+    "sourceUrl": "https://share.loopit.me/game/a7a67ac0-b867-435b-92d9-5aadad5fd811",
+    "creator": "AI Iverson",
+    "creatorSlug": "ai-iverson",
+    "stats": {
+      "views": "14.4K",
+      "likes": "289",
+      "comments": "18",
+      "remixes": "12"
+    },
+    "summary": "Oiia Oiia is a Loopit cat-and-music toy. Clicking the drum icon switched the cat into a rainbow scene and rotated the card, proving the instrument icons trigger visible state changes.",
+    "quickAnswer": "Tap the instrument icons around the cat. The drum icon gives the clearest before/after transition, and the other icons are visible alternatives.",
+    "basics": [
+      "The starting screen shows a cat and instrument icons around the card.",
+      "Clicking the drum icon changes the scene to a rainbow background and tilts the cat.",
+      "The guitar, keyboard, and sax icons remain visible as alternate triggers.",
+      "No score or fail state was observed in this run."
+    ],
+    "controls": [
+      "Click any instrument icon around the cat.",
+      "Use the drum icon if you want the most obvious transition.",
+      "Reload to return to the plain purple start scene."
+    ],
+    "strategy": [
+      "Start with the drum because it produces the strongest visual change.",
+      "Treat the other instruments as alternate branches worth testing separately.",
+      "Keep a clean before/after pair because the card animation is subtle but easy to document."
+    ],
+    "mistakes": [
+      "Assuming the cat is decorative only.",
+      "Clicking the background instead of the icon targets.",
+      "Writing all four instruments as tested when only one was verified."
+    ],
+    "faq": [
+      [
+        "Which icon was verified?",
+        "The drum icon."
+      ],
+      [
+        "Does the game track score?",
+        "No score was visible in the verified run."
+      ],
+      [
+        "Are the other instruments real controls?",
+        "Yes, the UI showed guitar, keyboard, and sax icons as alternate targets."
+      ]
+    ],
+    "creatorContext": [
+      "AI Iverson is the creator shown on the source card.",
+      "The source page showed 14.4K views, 289 likes, 18 comments, and 12 remixes.",
+      "This is a visual remix toy; the before/after background change is the main proof."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-oiia-oiia/01-entry.jpg",
+        "alt": "Oiia Oiia purple start scene with a cat and instrument icons.",
+        "caption": "The entry frame shows the default cat-and-instrument layout."
+      },
+      {
+        "src": "/assets/loopit-oiia-oiia/02-after-drum.jpg",
+        "alt": "Oiia Oiia after tapping the drum icon changed the scene to a rainbow background.",
+        "caption": "The drum tap produced the clearest scene remix."
+      }
+    ],
+    "coverageStatus": "Verified on 2026-07-14 with the drum-triggered rainbow scene; the other icons remain untested in this run.",
+    "coverageChecklist": [
+      "Recorded the source card metadata from the public share page.",
+      "Captured the plain purple start scene.",
+      "Clicked the drum icon and verified the rainbow transition.",
+      "Saved screenshot and video evidence for the scene change."
+    ],
+    "coverageNotes": [
+      "The cat and background both change when the drum is clicked.",
+      "Other instruments are visible but pending separate checks."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-14",
+    "lastUpdated": "2026-07-14",
+    "communityNotes": [
+      "The intro-to-void transition is the main proof; the drag and hold instructions are visible immediately after entry."
+    ],
+    "slug": "loopit-the-eye",
+    "title": "The Eye",
+    "genre": "Psychedelic visual toy",
+    "difficulty": "A click-to-enter void toy with drag-to-look and hold-to-accelerate controls.",
+    "searchIntent": "The Eye Loopit guide, click to enter the void, drag to look around",
+    "sourceUrl": "https://share.loopit.me/game/7d6ba720-9322-410e-bda2-5840faeade5e",
+    "creator": "AI Iverson",
+    "creatorSlug": "ai-iverson",
+    "stats": {
+      "views": "24.5K",
+      "likes": "764",
+      "comments": "79",
+      "remixes": "28"
+    },
+    "summary": "The Eye is a Loopit psychedelic eye toy. The intro card said Click / Tap to Enter the Void, and one click switched to the moving eye scene with drag-to-look instructions.",
+    "quickAnswer": "Click the intro card once. The game enters the void scene, then lets you drag to look around and hold to accelerate.",
+    "basics": [
+      "The start screen is a title card with THE EYE and an entry prompt.",
+      "One click opens the animated eye scene.",
+      "After entering, the page says Drag to Look Around and Hold to Accelerate.",
+      "No other branches were uncovered in this run."
+    ],
+    "controls": [
+      "Click or tap the intro screen to begin.",
+      "Drag to pan the view once inside the eye scene.",
+      "Hold to accelerate if you want the more active mode."
+    ],
+    "strategy": [
+      "Use the intro click as the first checkpoint because it clearly changes the state.",
+      "Take a screenshot before and after entry; the contrast is strong.",
+      "Use short drags first so you can read the visual motion."
+    ],
+    "mistakes": [
+      "Looking for buttons instead of clicking the intro art.",
+      "Assuming the title card is already the gameplay scene.",
+      "Forgetting that drag and hold are separate controls."
+    ],
+    "faq": [
+      [
+        "How do I start?",
+        "Click or tap the intro card once."
+      ],
+      [
+        "What did you verify?",
+        "The intro-to-void transition and the drag/look instructions."
+      ],
+      [
+        "Did you test acceleration?",
+        "The instructions were visible, but full acceleration tracing was pending."
+      ]
+    ],
+    "creatorContext": [
+      "AI Iverson is the creator shown on the source card.",
+      "The source page showed 24.5K views, 764 likes, 79 comments, and 28 remixes.",
+      "The game is most readable as a dramatic intro card plus an exploratory void scene."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-the-eye/01-entry.jpg",
+        "alt": "The Eye title card with Click / Tap to Enter the Void.",
+        "caption": "The entry frame shows the start card before gameplay begins."
+      },
+      {
+        "src": "/assets/loopit-the-eye/02-after-enter.jpg",
+        "alt": "The Eye after one click entered the void scene with drag instructions.",
+        "caption": "One click switched the page into the animated eye scene."
+      }
+    ],
+    "coverageStatus": "Verified on 2026-07-14 through the intro-to-void transition; drag and acceleration remain only instruction-level observations.",
+    "coverageChecklist": [
+      "Recorded the public shareUrl and creator metadata from the source card.",
+      "Captured the THE EYE intro card.",
+      "Clicked once and confirmed the void scene with drag instructions.",
+      "Archived screenshot and video evidence for the state transition."
+    ],
+    "coverageNotes": [
+      "The verified transition is the main proof; deeper movement remains pending.",
+      "The scene uses a dramatic visual jump between title and void modes."
+    ]
   }
 ]

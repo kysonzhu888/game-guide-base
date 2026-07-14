@@ -1342,5 +1342,75 @@
     "width": 1200,
     "format": "jpeg",
     "quality": 82
+  },
+  "/assets/loopit-sandbox-stairs-stones-drop-wall-zigzag/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-sandbox-stairs-stones-drop-wall-zigzag/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-sandbox-stairs-stones-drop-wall-zigzag/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-sandbox-stairs-stones-drop-wall-zigzag/02-after-drag.jpg": {
+    "r2Key": "games/loopit/loopit-sandbox-stairs-stones-drop-wall-zigzag/screenshots/02-after-drag-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-sandbox-stairs-stones-drop-wall-zigzag/screenshots/02-after-drag-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-football-street-practice/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-football-street-practice/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-football-street-practice/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-football-street-practice/02-missed-retry.jpg": {
+    "r2Key": "games/loopit/loopit-football-street-practice/screenshots/02-missed-retry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-football-street-practice/screenshots/02-missed-retry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-touch-me-as-quick-as-possible/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-touch-me-as-quick-as-possible/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-touch-me-as-quick-as-possible/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-touch-me-as-quick-as-possible/02-after-tap.jpg": {
+    "r2Key": "games/loopit/loopit-touch-me-as-quick-as-possible/screenshots/02-after-tap-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-touch-me-as-quick-as-possible/screenshots/02-after-tap-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-oiia-oiia/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-oiia-oiia/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-oiia-oiia/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-oiia-oiia/02-after-drum.jpg": {
+    "r2Key": "games/loopit/loopit-oiia-oiia/screenshots/02-after-drum-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-oiia-oiia/screenshots/02-after-drum-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-the-eye/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-the-eye/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-the-eye/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-the-eye/02-after-enter.jpg": {
+    "r2Key": "games/loopit/loopit-the-eye/screenshots/02-after-enter-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-the-eye/screenshots/02-after-enter-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
   }
 }
