@@ -10,14 +10,16 @@ const repairPromptUrl = new URL(
   import.meta.url,
 );
 const uploadMediaUrl = new URL("./upload-media.mjs", import.meta.url);
+const verifierUrl = new URL("./verify-daily-guides.mjs", import.meta.url);
 
 test("daily workflow runs five-guide automation on the trusted Mac", async () => {
-  const [workflow, prompt, preflightPrompt, repairPrompt, uploadMedia] = await Promise.all([
+  const [workflow, prompt, preflightPrompt, repairPrompt, uploadMedia, verifier] = await Promise.all([
     readFile(workflowUrl, "utf8"),
     readFile(promptUrl, "utf8"),
     readFile(preflightPromptUrl, "utf8"),
     readFile(repairPromptUrl, "utf8"),
     readFile(uploadMediaUrl, "utf8"),
+    readFile(verifierUrl, "utf8"),
   ]);
 
   assert.match(workflow, /cron:\s*["']17 3 \* \* \*["']/);
@@ -87,6 +89,7 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /REPAIR_EVIDENCE_DIR/);
   assert.match(workflow, /LINEAR_FAILURE_ISSUE=UCH-133/);
   assert.match(workflow, /verify-daily-guides\.mjs/);
+  assert.equal(workflow.match(/--manifest-ref "\$GITHUB_SHA"/g)?.length, 2);
   assert.match(workflow, /Load the verified daily run for resume/);
   assert.match(workflow, /data\/daily-runs\/\$DAILY_RUN_DATE\.json/);
   assert.match(workflow, /\.newGuides \| length[\s\S]+\$TARGET_GUIDES/);
@@ -156,6 +159,10 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(repairPrompt, /at least 24 time-ordered screenshots/i);
   assert.match(repairPrompt, /Do not modify repository files/i);
   assert.match(repairPrompt, /verify-daily-guides\.mjs/);
+  assert.match(repairPrompt, /--manifest-ref HEAD/);
+
+  assert.match(verifier, /argumentValue\("--manifest-ref"\) \|\| afterRef/);
+  assert.match(verifier, /readJsonAtRef\(manifestSha, manifestPath\)/);
 
   assert.match(uploadMedia, /WRANGLER_SEND_METRICS:\s*"false"/);
   assert.match(uploadMedia, /run-until-output\.mjs/);
