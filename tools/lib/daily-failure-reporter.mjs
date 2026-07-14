@@ -34,6 +34,19 @@ export function normalizeFailureReason(value) {
   return (firstLine || "Workflow failed before producing a failure marker.").slice(0, 800);
 }
 
+export function selectFailureReason(contents) {
+  const lines = contents
+    .flatMap((content) => String(content ?? "").split(/\r?\n/))
+    .map((line) => line.trim())
+    .filter(Boolean);
+  const explicitMarker = lines.find((line) =>
+    /^(?:CODEX_QUOTA_FAILED|BROWSER_PREFLIGHT_FAILED|DAILY_[A-Z_]*FAILED):/i.test(line));
+  if (explicitMarker) return normalizeFailureReason(explicitMarker);
+  const diagnostic = lines.find((line) =>
+    /\b(?:failed|failure|error|blocked|unavailable|timed out)\b|失败|受阻|阻塞|超时|不可用/i.test(line));
+  return normalizeFailureReason(diagnostic);
+}
+
 export function buildFailureBody({ runUrl, reason, runDate }) {
   return [
     `## 自动失败告警 · ${runDate}`,

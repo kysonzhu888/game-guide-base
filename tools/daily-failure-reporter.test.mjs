@@ -5,6 +5,7 @@ import {
   buildFailureBody,
   normalizeFailureReason,
   reportDailyFailure,
+  selectFailureReason,
 } from "./lib/daily-failure-reporter.mjs";
 
 test("normalizes a bounded single-line failure reason", () => {
@@ -13,6 +14,16 @@ test("normalizes a bounded single-line failure reason", () => {
     "BROWSER_PREFLIGHT_FAILED: bridge unavailable",
   );
   assert.equal(normalizeFailureReason("  "), "Workflow failed before producing a failure marker.");
+});
+
+test("prefers an explicit browser failure over a successful quota marker", () => {
+  assert.equal(
+    selectFailureReason([
+      "CODEX_QUOTA_OK\n",
+      "BROWSER_PREFLIGHT_FAILED: extension backend remained unavailable\n",
+    ]),
+    "BROWSER_PREFLIGHT_FAILED: extension backend remained unavailable",
+  );
 });
 
 test("builds a fail-closed Linear handoff", () => {
