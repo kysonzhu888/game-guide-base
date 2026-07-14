@@ -35,6 +35,7 @@ jobs:
       RUN_MODE: ${{ github.event_name == 'schedule' && 'full' || inputs.mode }}
       TARGET_GUIDES: "5"
       CODEX_BIN: /Applications/ChatGPT.app/Contents/Resources/codex
+      CODEX_SIGNED_NODE_BIN: /Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node
       CODEX_MODEL: ${{ vars.GAME_GUIDE_CODEX_MODEL || 'gpt-5.4-mini' }}
       CODEX_QUOTA_TIMEOUT_SECONDS: "90"
       CODEX_PREFLIGHT_TIMEOUT_SECONDS: "180"
@@ -135,7 +136,7 @@ jobs:
           set -euo pipefail
           CHATGPT_BIN="/Applications/ChatGPT.app/Contents/MacOS/ChatGPT"
           CHROME_BIN="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-          BROWSER_NODE="/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node"
+          BROWSER_NODE="$CODEX_SIGNED_NODE_BIN"
           CHROME_PLUGIN="$HOME/.codex/plugins/cache/openai-bundled/chrome/latest"
           test -x "$CHATGPT_BIN"
           test -x "$CHROME_BIN"
@@ -191,7 +192,7 @@ jobs:
           sed "s|__BROWSER_CLIENT_MJS__|$BROWSER_CLIENT_MJS|g" \
             .github/prompts/daily-five-guides-preflight.txt > "$rendered_prompt"
           set +e
-          /usr/bin/perl -e 'my $seconds = shift @ARGV; alarm $seconds; exec @ARGV or die $!;' \
+          "$CODEX_SIGNED_NODE_BIN" tools/run-with-timeout.mjs \
             "$CODEX_PREFLIGHT_TIMEOUT_SECONDS" \
             "$CODEX_BIN" -c 'model_reasoning_effort="xhigh"' \
             -c "mcp_servers.node_repl.env.NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S=\"$CODEX_TRUSTED_BROWSER_CLIENT_SHA256S\"" \
