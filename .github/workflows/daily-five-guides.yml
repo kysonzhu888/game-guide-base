@@ -14,6 +14,7 @@ on:
         options:
           - preflight
           - full
+          - repair-2026-07-14
 
 permissions:
   contents: write
@@ -40,12 +41,15 @@ jobs:
       CODEX_QUOTA_TIMEOUT_SECONDS: "90"
       CODEX_PREFLIGHT_TIMEOUT_SECONDS: "180"
       CODEX_AGENT_TIMEOUT_SECONDS: "13800"
+      CODEX_REPAIR_TIMEOUT_SECONDS: "7200"
       PAGES_DEPLOY_TIMEOUT_SECONDS: "600"
       PRODUCTION_VERIFY_RETRIES: "18"
       PRODUCTION_VERIFY_RETRY_DELAY_SECONDS: "5"
       PRODUCTION_VERIFY_RETRY_MAX_SECONDS: "120"
       WRANGLER_SEND_METRICS: "false"
       BROWSER_CLIENT_MJS: /Users/kyson/.codex/plugins/cache/openai-bundled/chrome/latest/scripts/browser-client.mjs
+      REPAIR_BEFORE_REF: e712d46290e5a4de2c48937a65cf64b9c0cb13f9
+      REPAIR_AFTER_REF: 9c8875f22b27f474793ed211d4180c5509c11f9a
 
     steps:
       - name: Check out the production branch
@@ -242,6 +246,67 @@ jobs:
             exec --output-last-message "$RUNNER_TEMP/codex-final.md" \
             - < "$rendered_prompt"
 
+      - name: Repair the 2026-07-14 gameplay evidence
+        if: ${{ env.RUN_MODE == 'repair-2026-07-14' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          repair_evidence_dir="$RUNNER_TEMP/game-guide-evidence/repair-2026-07-14"
+          stable_evidence_dir="$HOME/sekai.app.dir/docs/20260715/game-guide-base-evidence-repair"
+          mkdir -p "$repair_evidence_dir"
+          while IFS= read -r source_path; do
+            relative_path="${source_path#"$stable_evidence_dir"/}"
+            target_path="$repair_evidence_dir/$relative_path"
+            mkdir -p "$(dirname "$target_path")"
+            cp "$source_path" "$target_path"
+          done < <(find "$stable_evidence_dir" -type f -name '*.jpg' -print)
+          test "$(find "$repair_evidence_dir" -type f -name '*.jpg' | wc -l | tr -d ' ')" = "11"
+          git fetch origin main --deepen=64
+          git cat-file -e "$REPAIR_BEFORE_REF^{commit}"
+          git cat-file -e "$REPAIR_AFTER_REF^{commit}"
+          {
+            echo "REPAIR_EVIDENCE_DIR=$repair_evidence_dir"
+            echo "REPAIR_STABLE_EVIDENCE_DIR=$stable_evidence_dir"
+          } >> "$GITHUB_ENV"
+          rendered_prompt="$RUNNER_TEMP/repair-2026-07-14-evidence.md"
+          sed \
+            -e "s|__BROWSER_CLIENT_MJS__|$BROWSER_CLIENT_MJS|g" \
+            -e "s|__REPAIR_EVIDENCE_DIR__|$repair_evidence_dir|g" \
+            -e "s|__REPOSITORY_PATH__|$GITHUB_WORKSPACE|g" \
+            .github/prompts/repair-2026-07-14-evidence.md > "$rendered_prompt"
+          "$CODEX_SIGNED_NODE_BIN" tools/run-with-timeout.mjs \
+            "$CODEX_REPAIR_TIMEOUT_SECONDS" \
+            "$CODEX_BIN" -c 'model_reasoning_effort="xhigh"' \
+            -c "mcp_servers.node_repl.env.NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S=\"$CODEX_TRUSTED_BROWSER_CLIENT_SHA256S\"" \
+            -a never -s danger-full-access -m "$CODEX_MODEL" \
+            -C "$GITHUB_WORKSPACE" \
+            --add-dir "$repair_evidence_dir" \
+            --add-dir "$HOME/sekai.app.dir/docs" \
+            exec --output-last-message "$RUNNER_TEMP/repair-final.md" \
+            - < "$rendered_prompt" 2>&1 | tee "$RUNNER_TEMP/repair-agent.log"
+
+      - name: Verify and archive the repaired evidence
+        if: ${{ env.RUN_MODE == 'repair-2026-07-14' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          node tools/verify-daily-guides.mjs \
+            --before-ref "$REPAIR_BEFORE_REF" \
+            --after-ref "$REPAIR_AFTER_REF" \
+            --date 2026-07-14 \
+            --evidence-root "$REPAIR_EVIDENCE_DIR" \
+            --expected-count 5 \
+            | tee "$RUNNER_TEMP/repair-verification.json"
+          mkdir -p "$REPAIR_STABLE_EVIDENCE_DIR"
+          cp -R "$REPAIR_EVIDENCE_DIR/." "$REPAIR_STABLE_EVIDENCE_DIR/"
+          node tools/verify-daily-guides.mjs \
+            --before-ref "$REPAIR_BEFORE_REF" \
+            --after-ref "$REPAIR_AFTER_REF" \
+            --date 2026-07-14 \
+            --evidence-root "$REPAIR_STABLE_EVIDENCE_DIR" \
+            --expected-count 5 \
+            | tee "$RUNNER_TEMP/repair-stable-verification.json"
+
       - name: Verify exactly five new guides on main
         if: ${{ env.RUN_MODE == 'full' }}
         shell: bash
@@ -314,6 +379,10 @@ jobs:
               "$RUNNER_TEMP/codex-preflight.md" \
               "$RUNNER_TEMP/codex-preflight.log" \
               "$RUNNER_TEMP/codex-final.md" \
+              "$RUNNER_TEMP/repair-final.md" \
+              "$RUNNER_TEMP/repair-agent.log" \
+              "$RUNNER_TEMP/repair-verification.json" \
+              "$RUNNER_TEMP/repair-stable-verification.json" \
               "$RUNNER_TEMP/browser-host-diagnostics.txt" \
               "$RUNNER_TEMP/daily-verification.json" \
               "$RUNNER_TEMP/deploy-package.json" \
@@ -342,6 +411,10 @@ jobs:
             ${{ runner.temp }}/codex-preflight.md
             ${{ runner.temp }}/codex-preflight.log
             ${{ runner.temp }}/codex-final.md
+            ${{ runner.temp }}/repair-final.md
+            ${{ runner.temp }}/repair-agent.log
+            ${{ runner.temp }}/repair-verification.json
+            ${{ runner.temp }}/repair-stable-verification.json
             ${{ runner.temp }}/browser-host-diagnostics.txt
             ${{ runner.temp }}/daily-verification.json
             ${{ runner.temp }}/deploy-package.json
@@ -359,5 +432,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          if test "$RUN_MODE" = "repair-2026-07-14"; then
+            export LINEAR_FAILURE_ISSUE=UCH-133
+          fi
           node tools/report-daily-failure.mjs
           /usr/bin/osascript -e 'display notification "GameGuideBase daily pipeline failed" with title "Uchuu 自动化异常"'
