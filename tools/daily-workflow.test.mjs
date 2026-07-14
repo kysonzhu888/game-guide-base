@@ -20,14 +20,29 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /workflow_dispatch:/);
   assert.match(workflow, /CODEX_BIN:\s*\/Applications\/ChatGPT\.app\/Contents\/Resources\/codex/);
   assert.match(workflow, /CODEX_MODEL:[^\n]*gpt-5\.4-mini/);
+  assert.match(workflow, /CODEX_QUOTA_TIMEOUT_SECONDS:\s*["']90["']/);
   assert.match(workflow, /CODEX_PREFLIGHT_TIMEOUT_SECONDS:\s*["']180["']/);
   assert.match(workflow, /BROWSER_CLIENT_MJS:[^\n]*browser-client\.mjs/);
-  assert.equal(workflow.match(/"\$CODEX_BIN"/g)?.length, 4);
-  assert.equal(workflow.match(/-m "\$CODEX_MODEL"/g)?.length, 2);
+  assert.equal(workflow.match(/"\$CODEX_BIN"/g)?.length, 6);
+  assert.equal(workflow.match(/-m "\$CODEX_MODEL"/g)?.length, 3);
   assert.match(workflow, /\/usr\/bin\/perl -e '[^']*alarm \$seconds; exec @ARGV/);
   assert.equal(workflow.match(/__BROWSER_CLIENT_MJS__/g)?.length, 2);
   assert.doesNotMatch(workflow, /\n\s+codex\s+-c/);
-  assert.equal(workflow.match(/model_reasoning_effort="xhigh"/g)?.length, 2);
+  assert.equal(workflow.match(/model_reasoning_effort="xhigh"/g)?.length, 3);
+  assert.match(workflow, /CODEX_QUOTA_OK/);
+  assert.match(workflow, /Codex daily-guide gate failed/);
+  assert.match(workflow, /LINEAR_FAILURE_ISSUE:\s*UCH-125/);
+  assert.match(workflow, /report-daily-failure\.mjs/);
+  assert.match(workflow, /if: \$\{\{ failure\(\) \}\}/);
+  assert.match(workflow, /display notification "GameGuideBase daily pipeline failed"/);
+  assert.match(workflow, /patch-browser-client\.mjs/);
+  assert.match(workflow, /BROWSER_CLIENT_SAFE_MJS/);
+  assert.doesNotMatch(workflow, /rm -f "\$BROWSER_CLIENT_MJS"/);
+  assert.match(workflow, /CODEX_TRUSTED_BROWSER_CLIENT_SHA256S/);
+  assert.equal(
+    workflow.match(/NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S=/g)?.length,
+    2,
+  );
   assert.match(workflow, /verify-daily-guides\.mjs/);
   assert.match(workflow, /build-deploy\.mjs/);
   assert.match(workflow, /wrangler@4\.110\.0 pages deploy \.deploy/);
