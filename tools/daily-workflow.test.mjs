@@ -84,6 +84,7 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   );
   assert.match(workflow, /REPAIR_BEFORE_REF:\s*e712d46290e5a4de2c48937a65cf64b9c0cb13f9/);
   assert.match(workflow, /REPAIR_AFTER_REF:\s*9c8875f22b27f474793ed211d4180c5509c11f9a/);
+  assert.match(workflow, /cp -R "\$stable_evidence_dir\/\." "\$repair_evidence_dir\/"/);
   assert.match(workflow, /env\.RUN_MODE == 'repair-2026-07-14'/);
   assert.match(workflow, /repair-verification\.json/);
   assert.match(workflow, /REPAIR_EVIDENCE_DIR/);
@@ -160,6 +161,7 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(repairPrompt, /Do not modify repository files/i);
   assert.match(repairPrompt, /verify-daily-guides\.mjs/);
   assert.match(repairPrompt, /--manifest-ref HEAD/);
+  assert.match(repairPrompt, /run the verifier[\s\S]+before initializing Chrome/i);
 
   assert.match(verifier, /argumentValue\("--manifest-ref"\) \|\| afterRef/);
   assert.match(verifier, /readJsonAtRef\(manifestSha, manifestPath\)/);

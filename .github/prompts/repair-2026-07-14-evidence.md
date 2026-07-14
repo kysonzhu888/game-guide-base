@@ -8,6 +8,11 @@ Repository: `__REPOSITORY_PATH__`
 
 Evidence root: `__REPAIR_EVIDENCE_DIR__`
 
+First run the verifier command at the end of this prompt before initializing Chrome. If it passes,
+the existing evidence is already valid: do not open game tabs or recapture anything, and finish
+with the verifier result and MP4 paths. If it fails because video evidence is missing or invalid,
+continue with the capture workflow below.
+
 Use the `control-chrome` skill and the existing Chrome Default profile. Read that skill completely.
 In the first `node_repl` JavaScript call, initialize the browser runtime exactly once from
 `__BROWSER_CLIENT_MJS__`. Select the Chrome extension backend with
