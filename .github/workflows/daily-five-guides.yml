@@ -262,8 +262,9 @@ jobs:
           npm test
           npm run build
           node tools/build-deploy.mjs | tee "$RUNNER_TEMP/deploy-package.json"
-          "$CODEX_SIGNED_NODE_BIN" tools/run-with-timeout.mjs \
+          "$CODEX_SIGNED_NODE_BIN" tools/run-until-output.mjs \
             "$PAGES_DEPLOY_TIMEOUT_SECONDS" \
+            "Deployment complete!" \
             npx --yes wrangler@4.110.0 pages deploy .deploy \
             --project-name game-guide-base \
             --branch main \

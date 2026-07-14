@@ -58,6 +58,15 @@ test("rejects a low-motion slideshow with several still frames", () => {
   assert.throws(() => validateDailyRun(fixture), /continuous gameplay/i);
 });
 
+test("requires auditable continuous-capture metadata for gameplay video", () => {
+  const fixture = dailyRunFixture();
+  const video = fixture.manifest.guides[0].evidence
+    .find((item) => item.type === "video");
+  delete video.captureMethod;
+
+  assert.throws(() => validateDailyRun(fixture), /capture method/i);
+});
+
 function dailyRunFixture() {
   const beforeGames = [{
     slug: "loopit-existing-guide",
@@ -73,7 +82,12 @@ function dailyRunFixture() {
     pending: [],
     evidence: index === 0
       ? [
-          { type: "video", path: `${game.slug}/run-01.mp4` },
+          {
+            type: "video",
+            path: `${game.slug}/run-01.mp4`,
+            captureMethod: "browser-frame-sequence",
+            sourceFrameCount: 48,
+          },
           { type: "frame", path: `${game.slug}/01-entry.jpg` },
         ]
       : [
