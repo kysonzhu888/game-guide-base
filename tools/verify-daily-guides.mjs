@@ -63,12 +63,59 @@ async function inspectEvidenceFiles(manifestValue, root) {
     }
     const fileStat = await stat(absolutePath);
     if (!fileStat.isFile()) throw new Error(`Evidence is not a file: ${relativePath}`);
+    const kind = await detectMediaKind(absolutePath);
     result.set(relativePath, {
-      kind: await detectMediaKind(absolutePath),
+      kind,
       size: fileStat.size,
+      ...(kind === "video" ? inspectVideoMetrics(absolutePath, relativePath) : {}),
     });
   }
   return result;
+}
+
+function inspectVideoMetrics(filePath, relativePath) {
+  try {
+    const probe = JSON.parse(execFileSync("ffprobe", [
+      "-v", "error",
+      "-select_streams", "v:0",
+      "-count_frames",
+      "-show_entries", "stream=duration,nb_frames,nb_read_frames:format=duration",
+      "-of", "json",
+      filePath,
+    ], commandOptions()));
+    const stream = probe.streams?.[0] || {};
+    const durationSeconds = Number(stream.duration || probe.format?.duration);
+    const frameCount = Number(stream.nb_read_frames || stream.nb_frames);
+    const frameHashes = execFileSync("ffmpeg", [
+      "-v", "error",
+      "-i", filePath,
+      "-t", "15",
+      "-vf", "fps=4,scale=96:-2:flags=area",
+      "-f", "framemd5",
+      "-",
+    ], commandOptions())
+      .split("\n")
+      .filter((line) => line && !line.startsWith("#"))
+      .map((line) => line.split(",").at(-1).trim());
+
+    return {
+      durationSeconds,
+      frameCount,
+      sampledFrameCount: frameHashes.length,
+      uniqueFrameCount: new Set(frameHashes).size,
+    };
+  } catch (error) {
+    throw new Error(`Unable to inspect video evidence ${relativePath}: ${error.message}`);
+  }
+}
+
+function commandOptions() {
+  return {
+    encoding: "utf8",
+    maxBuffer: 10 * 1024 * 1024,
+    stdio: ["ignore", "pipe", "pipe"],
+    timeout: 30_000,
+  };
 }
 
 async function detectMediaKind(filePath) {
