@@ -6,6 +6,7 @@ import { validateDailyRun } from "./lib/daily-guide-verifier.mjs";
 
 const beforeRef = requiredArgument("--before-ref");
 const afterRef = argumentValue("--after-ref") || "origin/main";
+const manifestRef = argumentValue("--manifest-ref") || afterRef;
 const runDate = argumentValue("--date") || process.env.DAILY_RUN_DATE;
 const evidenceRoot = path.resolve(requiredArgument("--evidence-root"));
 const expectedCount = Number(argumentValue("--expected-count") || 5);
@@ -19,12 +20,13 @@ if (!Number.isInteger(expectedCount) || expectedCount < 1) {
 
 const beforeSha = resolveRef(beforeRef);
 const afterSha = resolveRef(afterRef);
+const manifestSha = resolveRef(manifestRef);
 const manifestPath = `data/daily-runs/${runDate}.json`;
 
 const beforeGames = readJsonAtRef(beforeSha, "data/games.json");
 const afterGames = readJsonAtRef(afterSha, "data/games.json");
 const mediaManifest = readJsonAtRef(afterSha, "data/media-assets.generated.json");
-const manifest = readJsonAtRef(afterSha, manifestPath);
+const manifest = readJsonAtRef(manifestSha, manifestPath);
 const trackedPaths = new Set(runGit(["ls-tree", "-r", "--name-only", afterSha])
   .split("\n")
   .filter(Boolean));
@@ -47,6 +49,7 @@ console.log(JSON.stringify({
   date: runDate,
   beforeRef: beforeSha,
   afterRef: afterSha,
+  manifestRef: manifestSha,
   ...result,
 }, null, 2));
 

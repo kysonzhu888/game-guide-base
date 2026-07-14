@@ -303,6 +303,7 @@ jobs:
           node tools/verify-daily-guides.mjs \
             --before-ref "$REPAIR_BEFORE_REF" \
             --after-ref "$REPAIR_AFTER_REF" \
+            --manifest-ref "$GITHUB_SHA" \
             --date 2026-07-14 \
             --evidence-root "$REPAIR_EVIDENCE_DIR" \
             --expected-count 5 \
@@ -312,6 +313,7 @@ jobs:
           node tools/verify-daily-guides.mjs \
             --before-ref "$REPAIR_BEFORE_REF" \
             --after-ref "$REPAIR_AFTER_REF" \
+            --manifest-ref "$GITHUB_SHA" \
             --date 2026-07-14 \
             --evidence-root "$REPAIR_STABLE_EVIDENCE_DIR" \
             --expected-count 5 \

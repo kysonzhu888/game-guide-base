@@ -63,6 +63,7 @@ cd __REPOSITORY_PATH__
 node tools/verify-daily-guides.mjs \
   --before-ref e712d46290e5a4de2c48937a65cf64b9c0cb13f9 \
   --after-ref 9c8875f22b27f474793ed211d4180c5509c11f9a \
+  --manifest-ref HEAD \
   --date 2026-07-14 \
   --evidence-root __REPAIR_EVIDENCE_DIR__ \
   --expected-count 5
