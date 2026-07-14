@@ -5,13 +5,18 @@ import test from "node:test";
 const workflowUrl = new URL("../.github/workflows/daily-five-guides.yml", import.meta.url);
 const promptUrl = new URL("../.github/prompts/daily-five-guides.md", import.meta.url);
 const preflightPromptUrl = new URL("../.github/prompts/daily-five-guides-preflight.txt", import.meta.url);
+const repairPromptUrl = new URL(
+  "../.github/prompts/repair-2026-07-14-evidence.md",
+  import.meta.url,
+);
 const uploadMediaUrl = new URL("./upload-media.mjs", import.meta.url);
 
 test("daily workflow runs five-guide automation on the trusted Mac", async () => {
-  const [workflow, prompt, preflightPrompt, uploadMedia] = await Promise.all([
+  const [workflow, prompt, preflightPrompt, repairPrompt, uploadMedia] = await Promise.all([
     readFile(workflowUrl, "utf8"),
     readFile(promptUrl, "utf8"),
     readFile(preflightPromptUrl, "utf8"),
+    readFile(repairPromptUrl, "utf8"),
     readFile(uploadMediaUrl, "utf8"),
   ]);
 
@@ -21,6 +26,7 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /fetch-depth:\s*2/);
   assert.match(workflow, /workflow_dispatch:/);
   assert.match(workflow, /options:\s*\n\s+- preflight\s*\n\s+- full\s*\n\s+- resume/);
+  assert.match(workflow, /repair-2026-07-14/);
   assert.match(workflow, /CODEX_BIN:\s*\/Applications\/ChatGPT\.app\/Contents\/Resources\/codex/);
   assert.match(
     workflow,
@@ -36,12 +42,12 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /PRODUCTION_VERIFY_RETRY_MAX_SECONDS:\s*["']120["']/);
   assert.match(workflow, /WRANGLER_SEND_METRICS:\s*["']false["']/);
   assert.match(workflow, /BROWSER_CLIENT_MJS:[^\n]*browser-client\.mjs/);
-  assert.equal(workflow.match(/"\$CODEX_BIN"/g)?.length, 6);
-  assert.equal(workflow.match(/-m "\$CODEX_MODEL"/g)?.length, 3);
+  assert.equal(workflow.match(/"\$CODEX_BIN"/g)?.length, 7);
+  assert.equal(workflow.match(/-m "\$CODEX_MODEL"/g)?.length, 4);
   assert.equal(workflow.match(/\/usr\/bin\/perl -e '[^']*alarm \$seconds; exec @ARGV/g)?.length, 1);
   assert.equal(
     workflow.match(/"\$CODEX_SIGNED_NODE_BIN" tools\/run-with-timeout\.mjs/g)?.length,
-    2,
+    3,
   );
   assert.match(
     workflow,
@@ -51,9 +57,9 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
     workflow,
     /"\$CODEX_SIGNED_NODE_BIN" tools\/run-with-timeout\.mjs[\s\S]+"\$CODEX_AGENT_TIMEOUT_SECONDS"[\s\S]+"\$CODEX_BIN"/,
   );
-  assert.equal(workflow.match(/__BROWSER_CLIENT_MJS__/g)?.length, 2);
+  assert.equal(workflow.match(/__BROWSER_CLIENT_MJS__/g)?.length, 3);
   assert.doesNotMatch(workflow, /\n\s+codex\s+-c/);
-  assert.equal(workflow.match(/model_reasoning_effort="xhigh"/g)?.length, 3);
+  assert.equal(workflow.match(/model_reasoning_effort="xhigh"/g)?.length, 4);
   assert.match(workflow, /CODEX_QUOTA_OK/);
   assert.match(workflow, /Codex daily-guide gate failed/);
   assert.match(workflow, /LINEAR_FAILURE_ISSUE:\s*UCH-125/);
@@ -66,8 +72,14 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /CODEX_TRUSTED_BROWSER_CLIENT_SHA256S/);
   assert.equal(
     workflow.match(/NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S=/g)?.length,
-    2,
+    3,
   );
+  assert.match(workflow, /REPAIR_BEFORE_REF:\s*e712d46290e5a4de2c48937a65cf64b9c0cb13f9/);
+  assert.match(workflow, /REPAIR_AFTER_REF:\s*9c8875f22b27f474793ed211d4180c5509c11f9a/);
+  assert.match(workflow, /env\.RUN_MODE == 'repair-2026-07-14'/);
+  assert.match(workflow, /repair-verification\.json/);
+  assert.match(workflow, /REPAIR_EVIDENCE_DIR/);
+  assert.match(workflow, /LINEAR_FAILURE_ISSUE=UCH-133/);
   assert.match(workflow, /verify-daily-guides\.mjs/);
   assert.match(workflow, /Load the verified daily run for resume/);
   assert.match(workflow, /data\/daily-runs\/\$DAILY_RUN_DATE\.json/);
@@ -122,6 +134,13 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(preflightPrompt, /\/Applications\/Google Chrome\.app\/Contents\/MacOS\/Google Chrome/);
   assert.match(preflightPrompt, /open a new Chrome window[\s\S]+do not\s+ask/i);
   assert.match(preflightPrompt, /BROWSER_PREFLIGHT_OK/);
+
+  assert.match(repairPrompt, /Repair only the continuous gameplay evidence/i);
+  assert.match(repairPrompt, /__BROWSER_CLIENT_MJS__/);
+  assert.match(repairPrompt, /__REPAIR_EVIDENCE_DIR__/);
+  assert.match(repairPrompt, /at least 24 time-ordered screenshots/i);
+  assert.match(repairPrompt, /Do not modify repository files/i);
+  assert.match(repairPrompt, /verify-daily-guides\.mjs/);
 
   assert.match(uploadMedia, /WRANGLER_SEND_METRICS:\s*"false"/);
   assert.match(uploadMedia, /run-until-output\.mjs/);
