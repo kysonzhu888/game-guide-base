@@ -1412,5 +1412,82 @@
     "width": 1200,
     "format": "jpeg",
     "quality": 82
+  },
+  "/assets/loopit-dot-clicker/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-dot-clicker/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-dot-clicker/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-dot-clicker/02-terminal-active.jpg": {
+    "r2Key": "games/loopit/loopit-dot-clicker/screenshots/02-terminal-active-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-dot-clicker/screenshots/02-terminal-active-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-k-pop-horror/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-k-pop-horror/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-k-pop-horror/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-k-pop-horror/02-after-debut.jpg": {
+    "r2Key": "games/loopit/loopit-k-pop-horror/screenshots/02-after-debut-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-k-pop-horror/screenshots/02-after-debut-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-android-9-0-p/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-android-9-0-p/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-android-9-0-p/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-android-9-0-p/02-after-code.jpg": {
+    "r2Key": "games/loopit/loopit-android-9-0-p/screenshots/02-after-code-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-android-9-0-p/screenshots/02-after-code-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-elemental-arena/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-elemental-arena/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-elemental-arena/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-elemental-arena/02-after-fire.jpg": {
+    "r2Key": "games/loopit/loopit-elemental-arena/screenshots/02-after-fire-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-elemental-arena/screenshots/02-after-fire-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-rng-era-2/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-rng-era-2/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-rng-era-2/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-rng-era-2/02-after-roll.jpg": {
+    "r2Key": "games/loopit/loopit-rng-era-2/screenshots/02-after-roll-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-rng-era-2/screenshots/02-after-roll-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-rng-era-2/03-after-settle.jpg": {
+    "r2Key": "games/loopit/loopit-rng-era-2/screenshots/03-after-settle-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-rng-era-2/screenshots/03-after-settle-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
   }
 }

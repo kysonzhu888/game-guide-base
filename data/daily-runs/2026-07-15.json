@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-07-15",
+  "mode": "new-guides",
+  "targetCount": 5,
+  "baseline": {
+    "ref": "7156f10154bd4dd74c869eb3dbc886c08128d6a1",
+    "gameCount": 73
+  },
+  "final": {
+    "gameCount": 78
+  },
+  "linear": {
+    "parentIssue": "UCH-41",
+    "dailyIssue": "UCH-140"
+  },
+  "guides": [
+    {
+      "slug": "loopit-dot-clicker",
+      "sourceUrl": "https://share.loopit.me/game/80031ca9-f948-401c-a56c-07bcd3afbd39",
+      "status": "verified",
+      "dynamic": true,
+      "outcomes": [
+        "Play Game opened the Terminal Active HUD."
+      ],
+      "pending": [
+        "Canvas clicking, upgrade costs, and module navigation remain pending."
+      ],
+      "evidence": [
+        {
+          "type": "video",
+          "path": "80031ca9-f948-401c-a56c-07bcd3afbd39/dot-roll/run-01.mp4",
+          "captureMethod": "browser-frame-sequence",
+          "sourceFrameCount": 12
+        },
+        {
+          "type": "frame",
+          "path": "80031ca9-f948-401c-a56c-07bcd3afbd39/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "80031ca9-f948-401c-a56c-07bcd3afbd39/02-terminal-active.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-k-pop-horror",
+      "sourceUrl": "https://share.loopit.me/game/2aae1dd8-294a-4db3-9684-f1b6b25060b2",
+      "status": "verified",
+      "dynamic": true,
+      "outcomes": [
+        "DEBUT switched the page to Heartbeat/Fame."
+      ],
+      "pending": [
+        "Movement controls and fail/retry behavior remain pending."
+      ],
+      "evidence": [
+        {
+          "type": "video",
+          "path": "2aae1dd8-294a-4db3-9684-f1b6b25060b2/kpop-debut/run-01.mp4",
+          "captureMethod": "browser-frame-sequence",
+          "sourceFrameCount": 12
+        },
+        {
+          "type": "frame",
+          "path": "2aae1dd8-294a-4db3-9684-f1b6b25060b2/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "2aae1dd8-294a-4db3-9684-f1b6b25060b2/02-after-debut.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-android-9-0-p",
+      "sourceUrl": "https://share.loopit.me/game/45a32d8a-4127-44ad-99c3-5aa1b06b867c",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "Entering 4126 unlocked the launcher-style home screen."
+      ],
+      "pending": [
+        "Calculator, calendar, YouTube, messaging, games, and store branches remain pending."
+      ],
+      "evidence": [
+        {
+          "type": "frame",
+          "path": "45a32d8a-4127-44ad-99c3-5aa1b06b867c/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "45a32d8a-4127-44ad-99c3-5aa1b06b867c/02-after-code.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-elemental-arena",
+      "sourceUrl": "https://share.loopit.me/game/37095275-c198-424f-9f2a-d2377f2d6fb7",
+      "status": "verified",
+      "dynamic": true,
+      "outcomes": [
+        "FIRE opened the Enter the Arena screen with username, health, and chat controls."
+      ],
+      "pending": [
+        "Username submission and actual match flow remain pending."
+      ],
+      "evidence": [
+        {
+          "type": "video",
+          "path": "37095275-c198-424f-9f2a-d2377f2d6fb7/arena-fire/run-01.mp4",
+          "captureMethod": "browser-frame-sequence",
+          "sourceFrameCount": 12
+        },
+        {
+          "type": "frame",
+          "path": "37095275-c198-424f-9f2a-d2377f2d6fb7/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "37095275-c198-424f-9f2a-d2377f2d6fb7/02-after-fire.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-rng-era-2",
+      "sourceUrl": "https://share.loopit.me/game/f46ebaa8-1a70-4a6b-b3ed-ee55df12a0f6",
+      "status": "verified",
+      "dynamic": true,
+      "outcomes": [
+        "One TAP TO ROLL action incremented ROLLS to 1.",
+        "The roll settled on Common and updated Recent Rolls."
+      ],
+      "pending": [
+        "Skip menus, Codes, Aura Index, and the upgrade/potions branch remain pending."
+      ],
+      "evidence": [
+        {
+          "type": "video",
+          "path": "f46ebaa8-1a70-4a6b-b3ed-ee55df12a0f6/rng-roll/run-01.mp4",
+          "captureMethod": "browser-frame-sequence",
+          "sourceFrameCount": 12
+        },
+        {
+          "type": "frame",
+          "path": "f46ebaa8-1a70-4a6b-b3ed-ee55df12a0f6/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "f46ebaa8-1a70-4a6b-b3ed-ee55df12a0f6/02-after-roll.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "f46ebaa8-1a70-4a6b-b3ed-ee55df12a0f6/03-after-settle.jpg"
+        }
+      ]
+    }
+  ],
+  "rejectedCandidates": []
+}

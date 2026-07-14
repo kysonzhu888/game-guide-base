@@ -6861,5 +6861,470 @@
       "The verified transition is the main proof; deeper movement remains pending.",
       "The scene uses a dramatic visual jump between title and void modes."
     ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-15",
+    "lastUpdated": "2026-07-15",
+    "communityNotes": [
+      "The share card showed 44 views, 7 likes, 0 comments, and a creator note asking for more Dot Clicker v1.1 suggestions."
+    ],
+    "slug": "loopit-dot-clicker",
+    "title": "Dot Clicker",
+    "genre": "Terminal clicker",
+    "difficulty": "A click-to-enter tutorial clicker with upgrade tabs and a terminal-style HUD.",
+    "searchIntent": "Dot Clicker Loopit guide, Play Game, Terminal Active, upgrade tabs",
+    "sourceUrl": "https://share.loopit.me/game/80031ca9-f948-401c-a56c-07bcd3afbd39",
+    "creator": "JayCreates: Content",
+    "creatorSlug": "jaycreates-content",
+    "stats": {
+      "views": "44",
+      "likes": "7",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Dot Clicker is a Loopit terminal clicker. The share page shows Update v1.1 / Clicker Simulation Arc, and Play Game opens a Terminal Active HUD with Gold Dot, Digital Core Score, and upgrade tabs.",
+    "quickAnswer": "Tap Play Game to enter Terminal Active. The verified entry point is the terminal HUD with tutorial modules and upgrade tabs.",
+    "basics": [
+      "The share page shows Update v1.1, Dot Clicker, and Clicker Simulation Arc before play starts.",
+      "Play Game switches the page into Terminal Active.",
+      "The HUD exposes Gold Dot, Digital Core Score, Per Click, Passive Income, and upgrade pages.",
+      "The core click and upgrade branches remain pending."
+    ],
+    "controls": [
+      "Tap Play Game from the share card.",
+      "Use the in-game tabs such as Income, Style, Dots, and Frenzy once Terminal Active is visible.",
+      "The tutorial text points you toward the core, but deeper module actions were not fully traced in this run."
+    ],
+    "strategy": [
+      "Use the share card as the entry screenshot, then verify the Terminal Active HUD immediately after Play Game.",
+      "Treat the module tabs as separate branches and test one at a time.",
+      "Keep a screenshot of the HUD before trying canvas clicks or upgrades."
+    ],
+    "mistakes": [
+      "Counting the share card as gameplay.",
+      "Assuming the core click branch was proven when only the terminal HUD was reached.",
+      "Skipping the module tabs and calling the game finished after the first transition."
+    ],
+    "faq": [
+      [
+        "What is the verified start?",
+        "Play Game opens Terminal Active."
+      ],
+      [
+        "Did you prove the core clicker?",
+        "No, only the terminal entry and tutorial HUD were verified."
+      ],
+      [
+        "Which branches stay pending?",
+        "Canvas clicking, upgrade costs, and module navigation."
+      ]
+    ],
+    "creatorContext": [
+      "JayCreates: Content is the creator name shown on the source card.",
+      "The source card showed 44 views, 7 likes, 0 comments, and Remix 0.",
+      "The page copy asks for more Dot Clicker v1.1 suggestions, which matches the update-focused build."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-dot-clicker/01-entry.jpg",
+        "alt": "Dot Clicker update card with Play Game on the share page.",
+        "caption": "The entry frame shows the update card before gameplay begins."
+      },
+      {
+        "src": "/assets/loopit-dot-clicker/02-terminal-active.jpg",
+        "alt": "Dot Clicker Terminal Active HUD after starting the game.",
+        "caption": "Play Game switched the page into the verified terminal-style HUD."
+      }
+    ],
+    "coverageStatus": "Verified on 2026-07-15 through the Play Game -> Terminal Active transition; core click and deeper upgrade branches remain pending.",
+    "coverageChecklist": [
+      "Recorded the Loopit share URL and public stats.",
+      "Captured the update card with Play Game.",
+      "Captured the Terminal Active HUD after starting.",
+      "Saved a 12-frame browser capture and encoded it to MP4."
+    ],
+    "coverageNotes": [
+      "The verified proof is the start transition, not full upgrade progression.",
+      "Canvas clicking and module progression remain to be explored."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-15",
+    "lastUpdated": "2026-07-15",
+    "communityNotes": [
+      "The share card showed 26 views, 9 likes, 1 comment, and a short Portuguese description for the horror mini-app."
+    ],
+    "slug": "loopit-k-pop-horror",
+    "title": "K-POP HORROR",
+    "genre": "Horror survival mini-app",
+    "difficulty": "A title-card survival toy that jumps into a HUD after DEBUT.",
+    "searchIntent": "K-POP HORROR Loopit guide, DEBUT, Heartbeat, Fame",
+    "sourceUrl": "https://share.loopit.me/game/2aae1dd8-294a-4db3-9684-f1b6b25060b2",
+    "creator": "Aleatórios 👍🏻",
+    "creatorSlug": "aleatorios",
+    "stats": {
+      "views": "26",
+      "likes": "9",
+      "comments": "1",
+      "remixes": "0"
+    },
+    "summary": "K-POP HORROR is a Loopit survival mini-app. DEBUT switches the page from the title card to a Heartbeat/Fame HUD, so the gameplay begins only after the start button.",
+    "quickAnswer": "Tap DEBUT to leave the title card and open the Heartbeat/Fame HUD.",
+    "basics": [
+      "The title screen is a single DEBUT gate.",
+      "After DEBUT, the HUD shows Heartbeat, Fame, and a score value.",
+      "The public card showed 26 views, 9 likes, and 1 comment.",
+      "The movement and fail/retry rules were not yet uncovered."
+    ],
+    "controls": [
+      "Tap DEBUT to start.",
+      "Treat the Heartbeat/Fame HUD as the first verified in-game state.",
+      "Probe movement and scoring only after the HUD appears."
+    ],
+    "strategy": [
+      "Capture the title screen before pressing DEBUT.",
+      "Use the HUD transition as proof that the share page is playable.",
+      "If later runs expose movement, keep the HUD screenshot for comparison."
+    ],
+    "mistakes": [
+      "Writing the title card off as the game itself.",
+      "Assuming the HUD means the whole survival loop has been solved.",
+      "Skipping a start-state screenshot, which hides the transition."
+    ],
+    "faq": [
+      [
+        "How do I start?",
+        "Tap DEBUT."
+      ],
+      [
+        "What changed after start?",
+        "The page switched to Heartbeat/Fame."
+      ],
+      [
+        "Did you verify full survival controls?",
+        "No, only the start transition and HUD state."
+      ]
+    ],
+    "creatorContext": [
+      "Aleatórios 👍🏻 is the creator name shown on the source card.",
+      "The source card showed 26 views, 9 likes, 1 comment, and Remix 0.",
+      "The page description calls it a Make Playable Mini-app, which fits a compact start-to-HUD flow."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-k-pop-horror/01-entry.jpg",
+        "alt": "K-POP HORROR title screen with DEBUT.",
+        "caption": "The entry frame shows the title screen before gameplay starts."
+      },
+      {
+        "src": "/assets/loopit-k-pop-horror/02-after-debut.jpg",
+        "alt": "K-POP HORROR Heartbeat/Fame HUD after pressing DEBUT.",
+        "caption": "DEBUT switched the page into the verified HUD state."
+      }
+    ],
+    "coverageStatus": "Verified on 2026-07-15 through the DEBUT -> Heartbeat/Fame HUD transition; movement and score loops remain pending.",
+    "coverageChecklist": [
+      "Recorded the public share URL and creator metadata.",
+      "Captured the DEBUT title card.",
+      "Captured the Heartbeat/Fame HUD after starting.",
+      "Saved a 12-frame browser capture and encoded it to MP4."
+    ],
+    "coverageNotes": [
+      "The verified transition is the main proof; the survival loop itself remains untested.",
+      "A deeper movement or fail state would need a separate run."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-15",
+    "lastUpdated": "2026-07-15",
+    "communityNotes": [
+      "The share card showed 1.2k views, 12 likes, 1 comment, and a visible password prompt right on the lock screen."
+    ],
+    "slug": "loopit-android-9-0-p",
+    "title": "Android 9.0 P",
+    "genre": "Phone UI puzzle",
+    "difficulty": "A passcode lock-screen puzzle that unlocks a launcher menu.",
+    "searchIntent": "Android 9.0 P Loopit guide, 4126 password, launcher screen",
+    "sourceUrl": "https://share.loopit.me/game/45a32d8a-4127-44ad-99c3-5aa1b06b867c",
+    "creator": "Sebasthian0502",
+    "creatorSlug": "sebasthian0502",
+    "stats": {
+      "views": "1.2k",
+      "likes": "12",
+      "comments": "1",
+      "remixes": "0"
+    },
+    "summary": "Android 9.0 P is a fake phone puzzle. Entering 4126 unlocks the launcher-style home screen with calculator, calendar, YouTube, messaging, games, and store icons.",
+    "quickAnswer": "Enter 4126 to unlock the launcher screen, which then shows calculator, calendar, YouTube, messaging, games, and store icons.",
+    "basics": [
+      "The visible lock screen shows Enter Password: 4126.",
+      "The time and date sit above a keypad-style input layout.",
+      "Unlocking opens a launcher grid with several app icons.",
+      "The verified outcome stops at the home screen, not an in-app app launch."
+    ],
+    "controls": [
+      "Tap the keypad digits exactly as shown.",
+      "Use 4126 as the verified unlock code.",
+      "After unlocking, treat the icon grid as separate branches."
+    ],
+    "strategy": [
+      "Read the password from the prompt instead of guessing.",
+      "Capture the lock screen and launcher screen back to back.",
+      "If you need deeper coverage, open one app icon per run."
+    ],
+    "mistakes": [
+      "Missing the code prompt and treating the keypad as random.",
+      "Assuming the launcher's app icons were all tested.",
+      "Writing a passcode guess without the observed unlock."
+    ],
+    "faq": [
+      [
+        "What is the code?",
+        "4126."
+      ],
+      [
+        "What happens after unlock?",
+        "The phone opens to a launcher-style home screen."
+      ],
+      [
+        "Did you test the app icons?",
+        "No, only the unlock transition was verified."
+      ]
+    ],
+    "creatorContext": [
+      "Sebasthian0502 is the creator name shown on the source card.",
+      "The source card showed 1.2k views, 12 likes, 1 comment, and Remix 0.",
+      "The game reads like a compact phone-unlock puzzle rather than a full app suite."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-android-9-0-p/01-entry.jpg",
+        "alt": "Android 9.0 P lock screen with the 4126 password prompt.",
+        "caption": "The entry frame shows the lock screen before the code is entered."
+      },
+      {
+        "src": "/assets/loopit-android-9-0-p/02-after-code.jpg",
+        "alt": "Android 9.0 P launcher screen after entering 4126.",
+        "caption": "The verified unlock opened the launcher-style home screen."
+      }
+    ],
+    "coverageStatus": "Verified on 2026-07-15 through the 4126 unlock; individual launcher apps remain pending.",
+    "coverageChecklist": [
+      "Recorded the source URL and visible engagement.",
+      "Captured the lock screen with the 4126 prompt.",
+      "Entered the code and captured the launcher home screen.",
+      "Archived the browser evidence in the daily run folder."
+    ],
+    "coverageNotes": [
+      "The unlock path is the main proof.",
+      "Calculator, calendar, and other app branches were not opened."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-15",
+    "lastUpdated": "2026-07-15",
+    "communityNotes": [
+      "The share card showed 77 views, 3 likes, 2 comments, and a visible character-setup screen before entry."
+    ],
+    "slug": "loopit-elemental-arena",
+    "title": "ELEMENTAL ARENA",
+    "genre": "Arena battler",
+    "difficulty": "A setup-first arena toy that funnels you into an arena login/HUD.",
+    "searchIntent": "ELEMENTAL ARENA Loopit guide, FIRE button, arena login, health",
+    "sourceUrl": "https://share.loopit.me/game/37095275-c198-424f-9f2a-d2377f2d6fb7",
+    "creator": "Goudy",
+    "creatorSlug": "goudy",
+    "stats": {
+      "views": "77",
+      "likes": "3",
+      "comments": "2",
+      "remixes": "0"
+    },
+    "summary": "ELEMENTAL ARENA starts as a character setup screen. Choosing FIRE opens an arena login/HUD with health, coins, chat, and action buttons.",
+    "quickAnswer": "Tap FIRE to leave setup and enter the arena login/HUD.",
+    "basics": [
+      "The source page opens on Customize Character with skin and accessory controls.",
+      "Selecting FIRE changes the page to Enter the Arena.",
+      "The arena screen shows a username field, Start Playing, Health 100%, and chat controls.",
+      "Start Playing displayed validation text during this run, so the full match loop remains unproven."
+    ],
+    "controls": [
+      "Use the skin color textbox and accessory buttons on the setup screen.",
+      "Tap FIRE or WATER to choose the element branch.",
+      "Treat the username field as the next gate before actual play."
+    ],
+    "strategy": [
+      "Take a setup screenshot before choosing an element.",
+      "Use FIRE to prove the branch into the arena state.",
+      "Watch for validation messages around Start Playing before assuming the match has begun."
+    ],
+    "mistakes": [
+      "Staying on the customization page and calling it the game.",
+      "Assuming Start Playing worked without a visible state change.",
+      "Skipping the arena HUD screenshot that proves the branch change."
+    ],
+    "faq": [
+      [
+        "What happens when I tap FIRE?",
+        "It opens the arena login/HUD."
+      ],
+      [
+        "Did Start Playing begin a match?",
+        "No, the run showed validation text and stayed on the arena screen."
+      ],
+      [
+        "What branches remain?",
+        "Username entry and actual match flow."
+      ]
+    ],
+    "creatorContext": [
+      "Goudy is the creator name shown on the source card.",
+      "The source card showed 77 views, 3 likes, 2 comments, and Remix 0.",
+      "The description text includes the 'Muitplayer' typo visible on the source card."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-elemental-arena/01-entry.jpg",
+        "alt": "ELEMENTAL ARENA customization screen before choosing an element.",
+        "caption": "The entry frame shows the character setup page."
+      },
+      {
+        "src": "/assets/loopit-elemental-arena/02-after-fire.jpg",
+        "alt": "ELEMENTAL ARENA arena login and HUD after tapping FIRE.",
+        "caption": "FIRE switched the page into the arena login/HUD state."
+      }
+    ],
+    "coverageStatus": "Verified on 2026-07-15 through the FIRE -> Enter the Arena transition; username validation and match flow remain pending.",
+    "coverageChecklist": [
+      "Recorded the public share URL and visible engagement.",
+      "Captured the customization screen.",
+      "Tapped FIRE and captured the arena login/HUD.",
+      "Saved a 12-frame browser capture and encoded it to MP4."
+    ],
+    "coverageNotes": [
+      "The setup-to-arena branch is the verified proof.",
+      "Start Playing still needs a clean follow-up run to confirm actual match entry."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-15",
+    "lastUpdated": "2026-07-15",
+    "communityNotes": [
+      "The share card showed 77 views, 6 likes, 0 comments, and a loot-style RNG loop with global roll messages."
+    ],
+    "slug": "loopit-rng-era-2",
+    "title": "LOOPIT RNG",
+    "genre": "Random roll simulator",
+    "difficulty": "A tap-to-roll RNG simulator with biome and skip controls.",
+    "searchIntent": "Loopit RNG guide, TAP TO ROLL, Common unlock, skip biome",
+    "sourceUrl": "https://share.loopit.me/game/f46ebaa8-1a70-4a6b-b3ed-ee55df12a0f6",
+    "creator": "Lucas Games",
+    "creatorSlug": "lucas-games",
+    "stats": {
+      "views": "77",
+      "likes": "6",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Loopit RNG is a rolling loot simulator. One tap rolls the board, increments ROLLS, and logs the result in Recent Rolls; our observed outcome unlocked Common.",
+    "quickAnswer": "Tap TAP TO ROLL; one verified roll produced Common and incremented ROLLS to 1.",
+    "basics": [
+      "The page starts with ROLLS: 0 and a TAP TO ROLL button.",
+      "A first roll showed an intermediate ROLLING state before settling.",
+      "The settled result added Common to Recent Rolls and showed NEW UNLOCK: Common.",
+      "Skip, Codes, Aura Index, and upgrades were visible but not deeply tested."
+    ],
+    "controls": [
+      "Tap TAP TO ROLL once and wait for the settled result.",
+      "Use the skip dropdown only after you understand the cutscene threshold behavior.",
+      "Read the Recent Rolls row to confirm the roll history."
+    ],
+    "strategy": [
+      "Capture the entry state before rolling.",
+      "Wait for the roll to settle so the rarity card is visible.",
+      "Use the Recent Rolls row to verify that the history updated."
+    ],
+    "mistakes": [
+      "Stopping at the ROLLING intermediate state and calling it the result.",
+      "Assuming the first roll proves every biome or rarity.",
+      "Skipping the Recent Rolls list, which confirms the state history."
+    ],
+    "faq": [
+      [
+        "What did the first verified roll return?",
+        "Common."
+      ],
+      [
+        "Did the roll count change?",
+        "Yes, ROLLS moved from 0 to 1."
+      ],
+      [
+        "What remains pending?",
+        "Skip menus, Codes, Aura Index, and the upgrade/potions branch."
+      ]
+    ],
+    "creatorContext": [
+      "Lucas Games is the creator name shown on the source card.",
+      "The source card showed 77 views, 6 likes, 0 comments, and Remix 0.",
+      "The page reads as a compact RNG progression toy with global roll messaging."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-rng-era-2/01-entry.jpg",
+        "alt": "Loopit RNG entry screen with TAP TO ROLL and ROLLS: 0.",
+        "caption": "The entry frame shows the idle RNG board before the first roll."
+      },
+      {
+        "src": "/assets/loopit-rng-era-2/02-after-roll.jpg",
+        "alt": "Loopit RNG intermediate rolling state after tapping the board.",
+        "caption": "The first tap switched the page into the rolling state."
+      },
+      {
+        "src": "/assets/loopit-rng-era-2/03-after-settle.jpg",
+        "alt": "Loopit RNG settled Common result after the roll finished.",
+        "caption": "The roll settled on Common and updated the Recent Rolls area."
+      }
+    ],
+    "coverageStatus": "Verified on 2026-07-15 through one TAP TO_ROLL action that settled on Common; skip, codes, and upgrade branches remain pending.",
+    "coverageChecklist": [
+      "Recorded the public share URL and visible stats.",
+      "Captured the entry state before rolling.",
+      "Recorded a 12-frame browser capture of the roll.",
+      "Captured the settled Common result and the Recent Rolls update."
+    ],
+    "coverageNotes": [
+      "The intermediate ROLLING state is useful evidence, but the settled card is the actual outcome.",
+      "Biome skipping and upgrade flows were not explored in this run."
+    ]
   }
 ]
