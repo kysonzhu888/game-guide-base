@@ -20,6 +20,7 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /runs-on:\s*\[self-hosted, macOS, ARM64, game-guide-base\]/);
   assert.match(workflow, /fetch-depth:\s*2/);
   assert.match(workflow, /workflow_dispatch:/);
+  assert.match(workflow, /options:\s*\n\s+- preflight\s*\n\s+- full\s*\n\s+- resume/);
   assert.match(workflow, /CODEX_BIN:\s*\/Applications\/ChatGPT\.app\/Contents\/Resources\/codex/);
   assert.match(
     workflow,
@@ -68,6 +69,9 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
     2,
   );
   assert.match(workflow, /verify-daily-guides\.mjs/);
+  assert.match(workflow, /Load the verified daily run for resume/);
+  assert.match(workflow, /data\/daily-runs\/\$DAILY_RUN_DATE\.json/);
+  assert.match(workflow, /\.newGuides \| length[\s\S]+\$TARGET_GUIDES/);
   assert.match(workflow, /build-deploy\.mjs/);
   assert.match(workflow, /wrangler@4\.110\.0 pages deploy \.deploy/);
   assert.match(
@@ -79,6 +83,10 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
     /curl[\s\S]+--retry "\$PRODUCTION_VERIFY_RETRIES"[\s\S]+--retry-delay "\$PRODUCTION_VERIFY_RETRY_DELAY_SECONDS"[\s\S]+--retry-max-time "\$PRODUCTION_VERIFY_RETRY_MAX_SECONDS"[\s\S]+--retry-all-errors/,
   );
   assert.match(workflow, /upload-artifact@v7/);
+  assert.equal(
+    workflow.match(/env\.RUN_MODE == 'full' \|\| env\.RUN_MODE == 'resume'/g)?.length,
+    2,
+  );
   assert.equal(workflow.match(/if: \$\{\{ env\.RUN_MODE == 'preflight' \}\}/g)?.length ?? 0, 0);
   assert.match(workflow, /grep -Fqx "BROWSER_PREFLIGHT_OK"/);
   assert.match(workflow, /\/Applications\/ChatGPT\.app\/Contents\/MacOS\/ChatGPT/);

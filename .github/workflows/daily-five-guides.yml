@@ -7,13 +7,14 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: Run a host preflight or the full five-guide pipeline
+        description: Run a host preflight, the full pipeline, or resume today's deploy
         required: true
         default: preflight
         type: choice
         options:
           - preflight
           - full
+          - resume
 
 permissions:
   contents: write
@@ -256,8 +257,38 @@ jobs:
             --expected-count "$TARGET_GUIDES" \
             | tee "$RUNNER_TEMP/daily-verification.json"
 
+      - name: Load the verified daily run for resume
+        if: ${{ env.RUN_MODE == 'resume' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main --prune
+          git switch --detach origin/main
+          run_file="data/daily-runs/$DAILY_RUN_DATE.json"
+          test -s "$run_file"
+          jq -e \
+            --arg date "$DAILY_RUN_DATE" \
+            --argjson expected "$TARGET_GUIDES" \
+            '.date == $date
+              and (.guides | length) == $expected
+              and ([.guides[].slug] | length) == $expected
+              and ([.guides[].slug] | unique | length) == $expected' \
+            "$run_file" >/dev/null
+          jq \
+            --arg after_ref "$(git rev-parse HEAD)" \
+            '{
+              verified: true,
+              resumed: true,
+              date,
+              afterRef: $after_ref,
+              newGuides: [.guides[].slug],
+              evidenceCount: ([.guides[].evidence[]] | length)
+            }' "$run_file" | tee "$RUNNER_TEMP/daily-verification.json"
+          test "$(jq -r '.newGuides | length' "$RUNNER_TEMP/daily-verification.json")" \
+            -eq "$TARGET_GUIDES"
+
       - name: Build and deploy the verified main branch
-        if: ${{ env.RUN_MODE == 'full' }}
+        if: ${{ env.RUN_MODE == 'full' || env.RUN_MODE == 'resume' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -274,7 +305,7 @@ jobs:
             | tee "$RUNNER_TEMP/pages-deployment.log"
 
       - name: Verify the production site
-        if: ${{ env.RUN_MODE == 'full' }}
+        if: ${{ env.RUN_MODE == 'full' || env.RUN_MODE == 'resume' }}
         shell: bash
         run: |
           set -euo pipefail
