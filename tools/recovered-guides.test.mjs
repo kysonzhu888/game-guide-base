@@ -32,6 +32,18 @@ test("keeps the five recovered production guides in canonical source", async () 
   }
 });
 
+test("keeps auditable metadata for the repaired July 14 gameplay videos", async () => {
+  const dailyRun = await readJson("../data/daily-runs/2026-07-14.json");
+
+  assert.equal(dailyRun.guides.length, 5);
+  for (const guide of dailyRun.guides) {
+    const video = guide.evidence.find((item) => item.type === "video");
+    assert.ok(video, `missing gameplay video metadata: ${guide.slug}`);
+    assert.equal(video.captureMethod, "browser-frame-sequence");
+    assert.equal(video.sourceFrameCount, 28);
+  }
+});
+
 async function readJson(relativePath) {
   return JSON.parse(await readFile(new URL(relativePath, import.meta.url), "utf8"));
 }

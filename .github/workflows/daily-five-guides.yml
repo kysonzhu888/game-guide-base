@@ -264,12 +264,7 @@ jobs:
           repair_evidence_dir="$RUNNER_TEMP/game-guide-evidence/repair-2026-07-14"
           stable_evidence_dir="$HOME/sekai.app.dir/docs/20260715/game-guide-base-evidence-repair"
           mkdir -p "$repair_evidence_dir"
-          while IFS= read -r source_path; do
-            relative_path="${source_path#"$stable_evidence_dir"/}"
-            target_path="$repair_evidence_dir/$relative_path"
-            mkdir -p "$(dirname "$target_path")"
-            cp "$source_path" "$target_path"
-          done < <(find "$stable_evidence_dir" -type f -name '*.jpg' -print)
+          cp -R "$stable_evidence_dir/." "$repair_evidence_dir/"
           test "$(find "$repair_evidence_dir" -type f -name '*.jpg' | wc -l | tr -d ' ')" = "11"
           git fetch origin main --deepen=64
           git cat-file -e "$REPAIR_BEFORE_REF^{commit}"
