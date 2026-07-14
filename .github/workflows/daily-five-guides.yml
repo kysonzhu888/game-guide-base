@@ -69,20 +69,29 @@ jobs:
           node-version: 22
           package-manager-cache: false
 
-      - name: Capture the immutable daily baseline
+      - name: Resolve the run mode and capture the immutable daily baseline
+        id: run_context
         shell: bash
         run: |
           set -euo pipefail
           run_date="$(TZ=Asia/Shanghai date +%F)"
           baseline_sha="$(git rev-parse origin/main)"
           evidence_dir="$RUNNER_TEMP/game-guide-evidence/$run_date"
+          effective_mode="$RUN_MODE"
+          if test "$effective_mode" = "full" \
+            && test -s "data/daily-runs/$run_date.json"; then
+            effective_mode="resume"
+          fi
           mkdir -p "$evidence_dir"
           {
             echo "DAILY_RUN_DATE=$run_date"
             echo "BASELINE_SHA=$baseline_sha"
             echo "DAILY_EVIDENCE_DIR=$evidence_dir"
             echo "GITHUB_RUN_URL=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+            echo "RUN_MODE=$effective_mode"
           } >> "$GITHUB_ENV"
+          echo "mode=$effective_mode" >> "$GITHUB_OUTPUT"
+          echo "Resolved daily run mode: requested=$RUN_MODE effective=$effective_mode"
           git config user.name "game-guide-automation"
           git config user.email "kysonzhu888@gmail.com"
 
@@ -229,7 +238,7 @@ jobs:
           fi
 
       - name: Run the evidence-backed daily Codex agent
-        if: ${{ env.RUN_MODE == 'full' }}
+        if: ${{ steps.run_context.outputs.mode == 'full' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -309,7 +318,7 @@ jobs:
             | tee "$RUNNER_TEMP/repair-stable-verification.json"
 
       - name: Verify exactly five new guides on main
-        if: ${{ env.RUN_MODE == 'full' }}
+        if: ${{ steps.run_context.outputs.mode == 'full' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -323,7 +332,7 @@ jobs:
             | tee "$RUNNER_TEMP/daily-verification.json"
 
       - name: Load the verified daily run for resume
-        if: ${{ env.RUN_MODE == 'resume' }}
+        if: ${{ steps.run_context.outputs.mode == 'resume' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -353,7 +362,7 @@ jobs:
             -eq "$TARGET_GUIDES"
 
       - name: Build and deploy the verified main branch
-        if: ${{ env.RUN_MODE == 'full' || env.RUN_MODE == 'resume' }}
+        if: ${{ steps.run_context.outputs.mode == 'full' || steps.run_context.outputs.mode == 'resume' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -370,7 +379,7 @@ jobs:
             | tee "$RUNNER_TEMP/pages-deployment.log"
 
       - name: Verify the production site
-        if: ${{ env.RUN_MODE == 'full' || env.RUN_MODE == 'resume' }}
+        if: ${{ steps.run_context.outputs.mode == 'full' || steps.run_context.outputs.mode == 'resume' }}
         shell: bash
         run: |
           set -euo pipefail
