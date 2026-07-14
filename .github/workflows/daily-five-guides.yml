@@ -41,6 +41,9 @@ jobs:
       CODEX_PREFLIGHT_TIMEOUT_SECONDS: "180"
       CODEX_AGENT_TIMEOUT_SECONDS: "13800"
       PAGES_DEPLOY_TIMEOUT_SECONDS: "600"
+      PRODUCTION_VERIFY_RETRIES: "18"
+      PRODUCTION_VERIFY_RETRY_DELAY_SECONDS: "5"
+      PRODUCTION_VERIFY_RETRY_MAX_SECONDS: "120"
       WRANGLER_SEND_METRICS: "false"
       BROWSER_CLIENT_MJS: /Users/kyson/.codex/plugins/cache/openai-bundled/chrome/latest/scripts/browser-client.mjs
 
@@ -275,11 +278,22 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          curl --fail --silent --show-error --retry 3 \
-            https://gameguidebase.com/sitemap.xml >/dev/null
+          verify_url() {
+            local url="$1"
+            echo "Waiting for production URL: $url"
+            curl --fail --silent --show-error \
+              --connect-timeout 10 \
+              --max-time 20 \
+              --retry "$PRODUCTION_VERIFY_RETRIES" \
+              --retry-delay "$PRODUCTION_VERIFY_RETRY_DELAY_SECONDS" \
+              --retry-max-time "$PRODUCTION_VERIFY_RETRY_MAX_SECONDS" \
+              --retry-all-errors \
+              "$url" >/dev/null
+            echo "Verified production URL: $url"
+          }
+          verify_url https://gameguidebase.com/sitemap.xml
           jq -r '.newGuides[]' "$RUNNER_TEMP/daily-verification.json" | while read -r slug; do
-            curl --fail --silent --show-error --retry 3 \
-              "https://gameguidebase.com/games/$slug/?run=$GITHUB_RUN_ID" >/dev/null
+            verify_url "https://gameguidebase.com/games/$slug/?run=$GITHUB_RUN_ID"
           done
 
       - name: Publish the run summary
