@@ -69,18 +69,16 @@ For every candidate:
    `rejectedCandidates` and choose a replacement. Do not publish five blocker-only pages.
 4. For dynamic or real-time games, record a continuous temporal capture while the real interaction
    is happening, then extract key frames. Never create an MP4 by concatenating, looping, or
-   animating screenshots or other pre-existing still images. If the browser client has no native
-   recorder, capture a time-ordered frame sequence concurrently with the click, drag, or animation
-   and encode that sequence. Dynamic entries in the manifest must include `video` evidence. The
-   verifier requires at least 2 seconds, 12 decoded frames, 6 distinct sampled frames, and a 35%
-   distinct-frame ratio. For static/turn-based games, retain at least two screenshots showing entry
-   and verified outcome.
-   Use the active browser tab's `tab.screenshot()` API, which returns `Uint8Array`, in a roughly
-   4-fps asynchronous loop that starts before the first real input and stays running while the same
-   tab receives the click, drag, or animation. Save the ordered raw frames below the guide evidence
-   directory, verify their actual image encoding, and encode those frames into `run-01.mp4` with
-   ffmpeg. Do not substitute a few hand-picked screenshots or a slideshow. Record the video evidence
-   as `captureMethod: "browser-frame-sequence"` with the actual integer `sourceFrameCount`.
+   animating screenshots or other pre-existing still images. Use the active browser tab's
+   `tab.screenshot()` API, which returns `Uint8Array`, in a roughly 4-fps asynchronous loop that
+   starts before the first real input and stays running while the same tab receives the click,
+   drag, or animation. Save the ordered raw frames below the guide evidence directory, verify their
+   actual image encoding, and encode those frames into `run-01.mp4` with ffmpeg. Do not substitute
+   a few hand-picked screenshots or a slideshow. Dynamic manifest entries must include `video`
+   evidence with `captureMethod: "browser-frame-sequence"` and the actual integer
+   `sourceFrameCount`. The verifier requires at least 2 seconds, 12 decoded frames, 6 distinct
+   sampled frames, and a 35% distinct-frame ratio. For static/turn-based games, retain at least two
+   screenshots showing entry and verified outcome.
 5. Save raw evidence below `DAILY_EVIDENCE_DIR/<slug>/`. Also copy the stable evidence set to
    `$HOME/sekai.app.dir/docs/YYYYMMDD/game-guide-base-daily/<slug>/`. Never capture secrets.
 

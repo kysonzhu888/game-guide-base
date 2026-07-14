@@ -6,6 +6,10 @@ const MIN_VIDEO_FRAME_COUNT = 12;
 const MIN_VIDEO_SAMPLED_FRAME_COUNT = 6;
 const MIN_VIDEO_UNIQUE_FRAME_COUNT = 6;
 const MIN_VIDEO_UNIQUE_FRAME_RATIO = 0.35;
+const VIDEO_CAPTURE_METHODS = new Set([
+  "browser-frame-sequence",
+  "screen-recording",
+]);
 
 const REQUIRED_ARRAYS = {
   basics: 4,
@@ -232,6 +236,15 @@ function validateEvidence(slug, evidence, evidenceFiles) {
     throw new Error(`Evidence file is too small to be credible: ${evidence.path}`);
   }
   if (expectedKind === "video") {
+    if (!VIDEO_CAPTURE_METHODS.has(evidence.captureMethod)) {
+      throw new Error(`Video evidence requires an auditable continuous capture method: ${evidence.path}`);
+    }
+    if (
+      !Number.isSafeInteger(evidence.sourceFrameCount)
+      || evidence.sourceFrameCount < MIN_VIDEO_FRAME_COUNT
+    ) {
+      throw new Error(`Video evidence requires a credible source frame count: ${evidence.path}`);
+    }
     const videoMetrics = [
       file.durationSeconds,
       file.frameCount,

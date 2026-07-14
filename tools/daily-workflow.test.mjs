@@ -92,6 +92,7 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(prompt, /never[\s\S]+MP4[\s\S]+screenshots/i);
   assert.match(prompt, /tab\.screenshot\(\)/);
   assert.match(prompt, /browser-frame-sequence/);
+  assert.match(prompt, /not[\s\S]+hand-picked screenshots[\s\S]+slideshow/i);
   assert.match(prompt, /do not[\s\S]+deploy Cloudflare Pages/i);
   assert.match(prompt, /Chrome[\s\S]+Default profile/i);
   assert.match(prompt, /setupBrowserRuntime/);
