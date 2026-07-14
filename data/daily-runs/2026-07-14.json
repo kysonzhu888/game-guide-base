@@ -30,7 +30,9 @@
       "evidence": [
         {
           "type": "video",
-          "path": "loopit-sandbox-stairs-stones-drop-wall-zigzag/run-01.mp4"
+          "path": "loopit-sandbox-stairs-stones-drop-wall-zigzag/run-01.mp4",
+          "captureMethod": "browser-frame-sequence",
+          "sourceFrameCount": 28
         },
         {
           "type": "frame",
@@ -58,7 +60,9 @@
       "evidence": [
         {
           "type": "video",
-          "path": "loopit-football-street-practice/run-01.mp4"
+          "path": "loopit-football-street-practice/run-01.mp4",
+          "captureMethod": "browser-frame-sequence",
+          "sourceFrameCount": 28
         },
         {
           "type": "frame",
@@ -84,7 +88,9 @@
       "evidence": [
         {
           "type": "video",
-          "path": "loopit-touch-me-as-quick-as-possible/run-01.mp4"
+          "path": "loopit-touch-me-as-quick-as-possible/run-01.mp4",
+          "captureMethod": "browser-frame-sequence",
+          "sourceFrameCount": 28
         },
         {
           "type": "frame",
@@ -110,7 +116,9 @@
       "evidence": [
         {
           "type": "video",
-          "path": "loopit-oiia-oiia/run-01.mp4"
+          "path": "loopit-oiia-oiia/run-01.mp4",
+          "captureMethod": "browser-frame-sequence",
+          "sourceFrameCount": 28
         },
         {
           "type": "frame",
@@ -137,7 +145,9 @@
       "evidence": [
         {
           "type": "video",
-          "path": "loopit-the-eye/run-01.mp4"
+          "path": "loopit-the-eye/run-01.mp4",
+          "captureMethod": "browser-frame-sequence",
+          "sourceFrameCount": 28
         },
         {
           "type": "frame",
