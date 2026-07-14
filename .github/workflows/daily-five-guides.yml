@@ -33,6 +33,10 @@ jobs:
       LINEAR_PARENT_ISSUE: UCH-41
       RUN_MODE: ${{ github.event_name == 'schedule' && 'full' || inputs.mode }}
       TARGET_GUIDES: "5"
+      CODEX_BIN: /Applications/ChatGPT.app/Contents/Resources/codex
+      CODEX_MODEL: ${{ vars.GAME_GUIDE_CODEX_MODEL || 'gpt-5.4-mini' }}
+      CODEX_PREFLIGHT_TIMEOUT_SECONDS: "180"
+      BROWSER_CLIENT_MJS: /Users/kyson/.codex/plugins/cache/openai-bundled/chrome/latest/scripts/browser-client.mjs
 
     steps:
       - name: Check out the production branch
@@ -72,11 +76,13 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          for command in codex curl ffmpeg file gh git jq node npm npx; do
+          for command in curl ffmpeg file gh git jq node npm npx; do
             command -v "$command" >/dev/null
           done
+          test -x "$CODEX_BIN"
+          test -s "$BROWSER_CLIENT_MJS"
           test -s "$HOME/.linear/api_token"
-          codex mcp list | tee "$RUNNER_TEMP/codex-mcp.txt"
+          "$CODEX_BIN" mcp list | tee "$RUNNER_TEMP/codex-mcp.txt"
           grep -E '^node_repl[[:space:]].*enabled' "$RUNNER_TEMP/codex-mcp.txt"
           linear_response="$(curl -sS https://api.linear.app/graphql \
             -H "Authorization: $(tr -d '\r\n' < "$HOME/.linear/api_token")" \
@@ -101,6 +107,10 @@ jobs:
           test -x "$CHROME_BIN"
           test -x "$BROWSER_NODE"
           test -d "$CHROME_PLUGIN/scripts"
+          app_version="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' \
+            /Applications/ChatGPT.app/Contents/Info.plist)"
+          plugin_version="$(basename "$(readlink "$CHROME_PLUGIN")")"
+          test "$app_version" = "$plugin_version"
           nohup "$CHATGPT_BIN" >/dev/null 2>&1 &
           nohup "$CHROME_BIN" \
             --profile-directory=Default \
@@ -109,6 +119,8 @@ jobs:
           sleep 5
           {
             echo "# Chrome host diagnostics"
+            echo
+            echo "App/plugin version: $app_version"
             for script in \
               chrome-is-running.js \
               installed-browsers.js \
@@ -127,10 +139,27 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          codex -c 'model_reasoning_effort="xhigh"' \
-            -a never -s read-only -m gpt-5.4 -C "$GITHUB_WORKSPACE" \
+          rendered_prompt="$RUNNER_TEMP/daily-five-guides-preflight.txt"
+          sed "s|__BROWSER_CLIENT_MJS__|$BROWSER_CLIENT_MJS|g" \
+            .github/prompts/daily-five-guides-preflight.txt > "$rendered_prompt"
+          set +e
+          /usr/bin/perl -e 'my $seconds = shift @ARGV; alarm $seconds; exec @ARGV or die $!;' \
+            "$CODEX_PREFLIGHT_TIMEOUT_SECONDS" \
+            "$CODEX_BIN" -c 'model_reasoning_effort="xhigh"' \
+            -a never -s read-only -m "$CODEX_MODEL" -C "$GITHUB_WORKSPACE" \
             exec --ephemeral --output-last-message "$RUNNER_TEMP/codex-preflight.md" \
-            - < .github/prompts/daily-five-guides-preflight.txt
+            - < "$rendered_prompt"
+          codex_status=$?
+          set -e
+          if test "$codex_status" -ne 0 && test ! -s "$RUNNER_TEMP/codex-preflight.md"; then
+            if test "$codex_status" -eq 142; then
+              printf 'BROWSER_PREFLIGHT_FAILED: Codex browser preflight timed out after %s seconds.\n' \
+                "$CODEX_PREFLIGHT_TIMEOUT_SECONDS" > "$RUNNER_TEMP/codex-preflight.md"
+            else
+              printf 'BROWSER_PREFLIGHT_FAILED: Codex CLI exited with status %s before completing the browser preflight.\n' \
+                "$codex_status" > "$RUNNER_TEMP/codex-preflight.md"
+            fi
+          fi
           if ! grep -Fqx "BROWSER_PREFLIGHT_OK" "$RUNNER_TEMP/codex-preflight.md"; then
             echo "Chrome runtime preflight did not return the success marker." >&2
             cat "$RUNNER_TEMP/codex-preflight.md" >&2
@@ -142,13 +171,16 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          codex -c 'model_reasoning_effort="xhigh"' \
-            -a never -s danger-full-access --search -m gpt-5.4 \
+          rendered_prompt="$RUNNER_TEMP/daily-five-guides.md"
+          sed "s|__BROWSER_CLIENT_MJS__|$BROWSER_CLIENT_MJS|g" \
+            .github/prompts/daily-five-guides.md > "$rendered_prompt"
+          "$CODEX_BIN" -c 'model_reasoning_effort="xhigh"' \
+            -a never -s danger-full-access --search -m "$CODEX_MODEL" \
             -C "$GITHUB_WORKSPACE" \
             --add-dir "$DAILY_EVIDENCE_DIR" \
             --add-dir "$HOME/sekai.app.dir/docs" \
             exec --output-last-message "$RUNNER_TEMP/codex-final.md" \
-            - < .github/prompts/daily-five-guides.md
+            - < "$rendered_prompt"
 
       - name: Verify exactly five new guides on main
         if: ${{ env.RUN_MODE == 'full' }}
@@ -201,6 +233,7 @@ jobs:
             echo "- Date: ${DAILY_RUN_DATE:-unknown}"
             echo "- Baseline: ${BASELINE_SHA:-unknown}"
             echo "- Target: $TARGET_GUIDES verified new guides"
+            echo "- Codex: $CODEX_MODEL via $CODEX_BIN"
             for report in \
               "$RUNNER_TEMP/codex-preflight.md" \
               "$RUNNER_TEMP/codex-final.md" \
