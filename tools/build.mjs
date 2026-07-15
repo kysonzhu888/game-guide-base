@@ -6,6 +6,12 @@ import {
   guideUpdatedISO as resolveGuideUpdatedISO,
   latestContentUpdatedISO,
 } from "./update-history.mjs";
+import {
+  createPublicGameCatalog,
+  createPublicGameCatalogSchema,
+  renderDeveloperCatalogBody,
+  writePublicGameCatalog,
+} from "./lib/public-catalog.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
@@ -55,6 +61,15 @@ const genres = groupBy(games, (game) => game.genre);
 const platforms = platformGroups(games);
 const creators = creatorGroups(games, creatorOverrides);
 const creatorBySlug = new Map(creators.map((creator) => [creator.slug, creator]));
+const publicGameCatalog = createPublicGameCatalog({
+  games,
+  siteName: site.name,
+  siteUrl: site.url,
+  dataUpdatedAt: site.contentUpdatedAt,
+  isPremium: (game) => site.paywall.enabled && !freeGuideSlugs.has(game.slug),
+  updatedAtForGame: guideUpdatedISO,
+});
+const publicGameCatalogSchema = createPublicGameCatalogSchema(site.url);
 
 cleanGenerated();
 generateHomePage();
@@ -63,6 +78,7 @@ generateGenrePages();
 generatePlatformPages();
 generateCreatorPages();
 generateUtilityPages();
+await generatePublicCatalog();
 generateSitemap();
 generateRobots();
 generateAdsTxt();
@@ -72,7 +88,7 @@ generatePremiumContentModule();
 console.log(`Generated ${games.length} game guides, ${genres.size} genre pages, ${platforms.length} platform pages, and ${creators.length} creator pages for ${site.name}.`);
 
 function cleanGenerated() {
-  for (const dir of ["games", "genres", "platforms", "creators", "about", "contact", "privacy"]) {
+  for (const dir of ["games", "genres", "platforms", "creators", "about", "contact", "privacy", "developers", "api"]) {
     fs.rmSync(path.join(root, dir), { recursive: true, force: true });
   }
   for (const file of ["index.html", "robots.txt", "sitemap.xml", "ads.txt"]) {
@@ -170,6 +186,7 @@ function generateHomePage() {
             <li>Source link kept on the guide page</li>
             <li>FAQ schema for passcodes and app routes</li>
             <li>Screenshots used as walkthrough evidence</li>
+            <li><a href="/developers/">Versioned public catalog for tools and research</a></li>
           </ul>
         </section>
 
@@ -1154,6 +1171,21 @@ function stripTrailingWhitespace(value) {
   return value.replace(/[ \t]+$/gm, "");
 }
 
+async function generatePublicCatalog() {
+  await writePublicGameCatalog({
+    root,
+    catalog: publicGameCatalog,
+    schema: publicGameCatalogSchema,
+  });
+  writePage(["developers"], layout({
+    title: `Developer Data: Public Game Catalog | ${site.name}`,
+    description: `Browse and download versioned public metadata for ${publicGameCatalog.count} Game Guide Base guides.`,
+    path: "/developers/",
+    depth: 1,
+    body: renderDeveloperCatalogBody(publicGameCatalog),
+  }));
+}
+
 function generateSitemap() {
   const urls = [
     "/",
@@ -1161,6 +1193,7 @@ function generateSitemap() {
     "/about/",
     "/contact/",
     "/privacy/",
+    "/developers/",
     "/platforms/",
     "/creators/",
     ...platforms.map((platform) => `/platforms/${platform.slug}/`),
