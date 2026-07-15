@@ -136,6 +136,20 @@ export async function writePublicGameCatalog({ root, catalog, schema }) {
 export function renderDeveloperCatalogBody(catalog) {
   const endpoint = new URL(API_PATH, catalog.schemaUrl).toString();
   const schemaEndpoint = new URL(SCHEMA_PATH, catalog.schemaUrl).toString();
+  const curlExample = `curl -fsSL "${endpoint}" | jq '.games[:5] | .[] | {title, genre, guideUrl}'`;
+  const javascriptExample = `const response = await fetch("${endpoint}");
+if (!response.ok) throw new Error(\`Catalog request failed: \${response.status}\`);
+
+const catalog = await response.json();
+console.table(catalog.games.slice(0, 5), ["title", "genre", "guideUrl"]);`;
+  const pythonExample = `import json
+from urllib.request import urlopen
+
+with urlopen("${endpoint}", timeout=10) as response:
+    catalog = json.load(response)
+
+for game in catalog["games"][:5]:
+    print(game["title"], game["guideUrl"])`;
   return `
     <main class="article-page">
       <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -162,6 +176,15 @@ export function renderDeveloperCatalogBody(catalog) {
           <section class="guide-section">
             <h2>Usage and attribution</h2>
             <p>Link users to each <code>guideUrl</code> and preserve the named source platform. Screenshots and underlying game media are deliberately excluded because this catalog does not grant rights to third-party media.</p>
+          </section>
+          <section class="guide-section api-examples">
+            <h2>Copy-paste examples</h2>
+            <p>Fetch the first five public records with tools that require no SDK or API key.</p>
+            <div class="api-example-grid">
+              ${renderApiExample("curl", "cURL + jq", curlExample)}
+              ${renderApiExample("javascript", "JavaScript", javascriptExample)}
+              ${renderApiExample("python", "Python standard library", pythonExample)}
+            </div>
           </section>
         </article>
         <aside class="article-aside">
@@ -191,6 +214,15 @@ export function renderDeveloperCatalogBody(catalog) {
         ${catalog.games.map(renderCatalogCard).join("")}
       </section>
     </main>
+  `;
+}
+
+function renderApiExample(language, label, source) {
+  return `
+    <article class="api-example" data-api-example="${escapeHtml(language)}">
+      <h3>${escapeHtml(label)}</h3>
+      <pre><code>${escapeHtml(source)}</code></pre>
+    </article>
   `;
 }
 
