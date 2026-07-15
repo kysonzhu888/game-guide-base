@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gameguidebase.com/api/v1/games.schema.json",
+  "title": "Game Guide Base public game catalog",
+  "description": "Versioned public metadata for Game Guide Base guides. Premium walkthrough content and media are intentionally excluded.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaUrl",
+    "schemaVersion",
+    "dataUpdatedAt",
+    "site",
+    "count",
+    "games"
+  ],
+  "properties": {
+    "schemaUrl": {
+      "const": "https://gameguidebase.com/api/v1/games.schema.json"
+    },
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "dataUpdatedAt": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "site": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "url",
+        "developerDocsUrl"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "developerDocsUrl": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "games": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "slug",
+          "title",
+          "genre",
+          "platforms",
+          "sourcePlatform",
+          "creator",
+          "guideUrl",
+          "sourceUrl",
+          "access",
+          "updatedAt"
+        ],
+        "properties": {
+          "slug": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "genre": {
+            "type": "string",
+            "minLength": 1
+          },
+          "platforms": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "sourcePlatform": {
+            "type": "string",
+            "minLength": 1
+          },
+          "creator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "guideUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "sourceUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "access": {
+            "enum": [
+              "free",
+              "premium"
+            ]
+          },
+          "updatedAt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
