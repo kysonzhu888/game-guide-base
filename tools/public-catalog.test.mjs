@@ -42,12 +42,13 @@ test("public catalog is deterministic and excludes premium guide content", () =>
   const catalog = createPublicGameCatalog({
     games,
     siteUrl: "https://gameguidebase.com/",
+    apiBaseUrl: "https://game-guide-base.pages.dev/",
     dataUpdatedAt: "2026-07-15",
     isPremium: (game) => game.slug === "beta-game",
   });
 
   assert.equal(catalog.schemaVersion, "1.0");
-  assert.equal(catalog.schemaUrl, "https://gameguidebase.com/api/v1/games.schema.json");
+  assert.equal(catalog.schemaUrl, "https://game-guide-base.pages.dev/api/v1/games.schema.json");
   assert.equal(Object.hasOwn(catalog, "$schema"), false);
   assert.equal(catalog.count, 2);
   assert.deepEqual(catalog.games.map((game) => game.slug), ["alpha-game", "beta-game"]);
@@ -88,14 +89,17 @@ test("schema and developer browser describe the same public contract", async () 
   const catalog = createPublicGameCatalog({
     games,
     siteUrl: "https://gameguidebase.com",
+    apiBaseUrl: "https://game-guide-base.pages.dev",
     dataUpdatedAt: "2026-07-15",
     isPremium: () => false,
   });
-  const schema = createPublicGameCatalogSchema("https://gameguidebase.com");
+  const schema = createPublicGameCatalogSchema({
+    apiBaseUrl: "https://game-guide-base.pages.dev",
+  });
 
   await writePublicGameCatalog({ root, catalog, schema });
 
-  assert.equal(schema.$id, "https://gameguidebase.com/api/v1/games.schema.json");
+  assert.equal(schema.$id, "https://game-guide-base.pages.dev/api/v1/games.schema.json");
   assert.ok(schema.required.includes("schemaUrl"));
   assert.equal(schema.required.includes("$schema"), false);
   assert.deepEqual(
@@ -108,8 +112,8 @@ test("schema and developer browser describe the same public contract", async () 
   );
 
   const html = renderDeveloperCatalogBody(catalog);
-  assert.match(html, /api\/v1\/games\.json/);
-  assert.match(html, /api\/v1\/games\.schema\.json/);
+  assert.match(html, /https:\/\/game-guide-base\.pages\.dev\/api\/v1\/games\.json/);
+  assert.match(html, /https:\/\/game-guide-base\.pages\.dev\/api\/v1\/games\.schema\.json/);
   assert.match(html, /78|2 games/);
   assert.match(html, /Beta &amp; Beyond/);
   assert.match(html, /Creator &lt;Two&gt;/);

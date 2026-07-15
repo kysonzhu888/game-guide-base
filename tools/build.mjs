@@ -27,6 +27,7 @@ const configuredContentUpdatedAt = (config.contentUpdatedAt || "").trim();
 const site = {
   name: config.name,
   url: normalizeSiteUrl(config.siteUrl),
+  publicApiUrl: normalizeSiteUrl(config.publicApiUrl || config.siteUrl),
   mediaBaseUrl: normalizeSiteUrl(config.mediaBaseUrl),
   mediaVersion: (config.mediaVersion || "").trim(),
   description: config.description,
@@ -65,11 +66,12 @@ const publicGameCatalog = createPublicGameCatalog({
   games,
   siteName: site.name,
   siteUrl: site.url,
+  apiBaseUrl: site.publicApiUrl,
   dataUpdatedAt: site.contentUpdatedAt,
   isPremium: (game) => site.paywall.enabled && !freeGuideSlugs.has(game.slug),
   updatedAtForGame: guideUpdatedISO,
 });
-const publicGameCatalogSchema = createPublicGameCatalogSchema(site.url);
+const publicGameCatalogSchema = createPublicGameCatalogSchema({ apiBaseUrl: site.publicApiUrl });
 
 cleanGenerated();
 generateHomePage();

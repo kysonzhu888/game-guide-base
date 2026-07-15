@@ -10,6 +10,7 @@ const DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
 export function createPublicGameCatalog({
   games,
   siteUrl,
+  apiBaseUrl = siteUrl,
   siteName = "Game Guide Base",
   dataUpdatedAt,
   isPremium = () => false,
@@ -22,6 +23,7 @@ export function createPublicGameCatalog({
   }
 
   const normalizedSiteUrl = normalizeSiteUrl(siteUrl);
+  const normalizedApiBaseUrl = normalizeSiteUrl(apiBaseUrl);
   const seenSlugs = new Set();
   const publicGames = games.map((game) => {
     const slug = requiredText(game?.slug, "slug");
@@ -44,7 +46,7 @@ export function createPublicGameCatalog({
   }).sort((left, right) => left.slug.localeCompare(right.slug));
 
   return {
-    schemaUrl: `${normalizedSiteUrl}${SCHEMA_PATH}`,
+    schemaUrl: `${normalizedApiBaseUrl}${SCHEMA_PATH}`,
     schemaVersion: SCHEMA_VERSION,
     dataUpdatedAt: optionalDate(dataUpdatedAt, "dataUpdatedAt"),
     site: {
@@ -57,18 +59,18 @@ export function createPublicGameCatalog({
   };
 }
 
-export function createPublicGameCatalogSchema(siteUrl) {
-  const normalizedSiteUrl = normalizeSiteUrl(siteUrl);
+export function createPublicGameCatalogSchema({ apiBaseUrl }) {
+  const normalizedApiBaseUrl = normalizeSiteUrl(apiBaseUrl);
   return {
     $schema: "https://json-schema.org/draft/2020-12/schema",
-    $id: `${normalizedSiteUrl}${SCHEMA_PATH}`,
+    $id: `${normalizedApiBaseUrl}${SCHEMA_PATH}`,
     title: "Game Guide Base public game catalog",
     description: "Versioned public metadata for Game Guide Base guides. Premium walkthrough content and media are intentionally excluded.",
     type: "object",
     additionalProperties: false,
     required: ["schemaUrl", "schemaVersion", "dataUpdatedAt", "site", "count", "games"],
     properties: {
-      schemaUrl: { const: `${normalizedSiteUrl}${SCHEMA_PATH}` },
+      schemaUrl: { const: `${normalizedApiBaseUrl}${SCHEMA_PATH}` },
       schemaVersion: { const: SCHEMA_VERSION },
       dataUpdatedAt: dateOrNullSchema(),
       site: {
@@ -132,8 +134,8 @@ export async function writePublicGameCatalog({ root, catalog, schema }) {
 }
 
 export function renderDeveloperCatalogBody(catalog) {
-  const endpoint = API_PATH;
-  const schemaEndpoint = SCHEMA_PATH;
+  const endpoint = new URL(API_PATH, catalog.schemaUrl).toString();
+  const schemaEndpoint = new URL(SCHEMA_PATH, catalog.schemaUrl).toString();
   return `
     <main class="article-page">
       <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -152,8 +154,8 @@ export function renderDeveloperCatalogBody(catalog) {
           <section class="guide-section">
             <h2>Static API endpoints</h2>
             <ul>
-              <li><a href="${endpoint}"><code>${endpoint}</code></a> — public catalog JSON.</li>
-              <li><a href="${schemaEndpoint}"><code>${schemaEndpoint}</code></a> — JSON Schema Draft 2020-12 contract.</li>
+              <li><a href="${escapeHtml(endpoint)}"><code>${escapeHtml(endpoint)}</code></a> — public catalog JSON.</li>
+              <li><a href="${escapeHtml(schemaEndpoint)}"><code>${escapeHtml(schemaEndpoint)}</code></a> — JSON Schema Draft 2020-12 contract.</li>
             </ul>
             <p>No authentication is required. Pin integrations to <code>/api/v1/</code>; a breaking contract change will use a new versioned path.</p>
           </section>

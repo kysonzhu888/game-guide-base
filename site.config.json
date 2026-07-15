@@ -1,6 +1,7 @@
 {
   "name": "Game Guide Base",
   "siteUrl": "https://gameguidebase.com",
+  "publicApiUrl": "https://game-guide-base.pages.dev",
   "mediaBaseUrl": "https://media.gameguidebase.com",
   "mediaVersion": "20260713-r3",
   "description": "Walkthroughs for web playable mini-games from Loopit and other web game platforms, with screenshots, passcodes, app routes, and practical tips.",
