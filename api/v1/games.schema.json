@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://gameguidebase.com/api/v1/games.schema.json",
+  "$id": "https://game-guide-base.pages.dev/api/v1/games.schema.json",
   "title": "Game Guide Base public game catalog",
   "description": "Versioned public metadata for Game Guide Base guides. Premium walkthrough content and media are intentionally excluded.",
   "type": "object",
@@ -15,7 +15,7 @@
   ],
   "properties": {
     "schemaUrl": {
-      "const": "https://gameguidebase.com/api/v1/games.schema.json"
+      "const": "https://game-guide-base.pages.dev/api/v1/games.schema.json"
     },
     "schemaVersion": {
       "const": "1.0"
