@@ -4,6 +4,7 @@ import path from "node:path";
 const ROOT_FILES = [
   "404.html",
   "ads.txt",
+  "google1089c0cca1aa4f0a.html",
   "index.html",
   "robots.txt",
   "script.js",

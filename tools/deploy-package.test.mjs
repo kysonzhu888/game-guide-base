@@ -19,6 +19,7 @@ test("deployment package keeps runtime files and excludes source artifacts", asy
     write(root, "robots.txt", "User-agent: *"),
     write(root, "ads.txt", "publisher"),
     write(root, "update-history.css", ".history{}"),
+    write(root, "google1089c0cca1aa4f0a.html", "google-site-verification: google1089c0cca1aa4f0a.html\n"),
     write(root, "games/example/index.html", "guide"),
     write(root, "functions/api/comments.js", "export {}"),
     write(root, "assets/hero-game-guides.png", "hero"),
@@ -34,6 +35,10 @@ test("deployment package keeps runtime files and excludes source artifacts", asy
   assert.equal(await textAt(output, "games/example/index.html"), "guide");
   assert.equal(await textAt(output, "functions/api/comments.js"), "export {}");
   assert.equal(await textAt(output, "assets/hero-game-guides.png"), "hero");
+  assert.equal(
+    await textAt(output, "google1089c0cca1aa4f0a.html"),
+    "google-site-verification: google1089c0cca1aa4f0a.html\n",
+  );
   await assert.rejects(() => readFile(path.join(output, "data/games.json")), /ENOENT/);
   await assert.rejects(() => readFile(path.join(output, "assets/example/raw.png")), /ENOENT/);
   await assert.rejects(() => readFile(path.join(output, "notes.md")), /ENOENT/);
