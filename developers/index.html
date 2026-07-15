@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Developer Data: Public Game Catalog | Game Guide Base</title>
+  <meta name="description" content="Browse and download versioned public metadata for 78 Game Guide Base guides.">
+  <link rel="canonical" href="https://gameguidebase.com/developers/">
+  <meta property="og:title" content="Developer Data: Public Game Catalog | Game Guide Base">
+  <meta property="og:description" content="Browse and download versioned public metadata for 78 Game Guide Base guides.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gameguidebase.com/developers/">
+  <meta property="og:image" content="https://gameguidebase.com/assets/hero-game-guides.png">
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7896672979027584" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/styles.css?v=20260713-update-history-1">
+  <link rel="stylesheet" href="/update-history.css?v=20260713-update-history-1">
+
+
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/"><span class="brand-mark">G</span><span>Game Guide Base</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="/#all-guides">Guides</a>
+      <a href="/platforms/">Platforms</a>
+      <a href="/creators/">Creators</a>
+      <a href="/about/">About</a>
+    </nav>
+  </header>
+
+    <main class="article-page">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span>/</span><span>Developer data</span>
+      </nav>
+      <section class="guide-hero compact-hero">
+        <div>
+          <p class="kicker">Open catalog · schema 1.0</p>
+          <h1>Game Guide Base data for tools and research</h1>
+          <p>Browse 78 games or consume the same versioned, machine-readable catalog. The feed contains discovery metadata only—never premium walkthroughs, screenshots, FAQ answers, controls, or strategy.</p>
+        </div>
+      </section>
+
+      <section class="article-grid">
+        <article class="article-main">
+          <section class="guide-section">
+            <h2>Static API endpoints</h2>
+            <ul>
+              <li><a href="/api/v1/games.json"><code>/api/v1/games.json</code></a> — public catalog JSON.</li>
+              <li><a href="/api/v1/games.schema.json"><code>/api/v1/games.schema.json</code></a> — JSON Schema Draft 2020-12 contract.</li>
+            </ul>
+            <p>No authentication is required. Pin integrations to <code>/api/v1/</code>; a breaking contract change will use a new versioned path.</p>
+          </section>
+          <section class="guide-section">
+            <h2>Usage and attribution</h2>
+            <p>Link users to each <code>guideUrl</code> and preserve the named source platform. Screenshots and underlying game media are deliberately excluded because this catalog does not grant rights to third-party media.</p>
+          </section>
+        </article>
+        <aside class="article-aside">
+          <section class="facts-panel">
+            <h2>Catalog status</h2>
+            <dl>
+              <div><dt>Schema</dt><dd>1.0</dd></div>
+              <div><dt>Games</dt><dd>78</dd></div>
+              <div><dt>Data updated</dt><dd>2026-07-15</dd></div>
+              <div><dt>Format</dt><dd>Static JSON</dd></div>
+            </dl>
+          </section>
+        </aside>
+      </section>
+
+      <section class="section-head">
+        <div><p class="kicker">Human-readable browser</p><h2>Browse public game metadata</h2></div>
+      </section>
+      <form class="search-panel" role="search" action="/developers/" onsubmit="return false">
+        <label for="guide-search">Filter by game, genre, or platform</label>
+        <div class="search-row">
+          <input id="guide-search" type="search" placeholder="Search title, genre, platform..." autocomplete="off">
+          <button type="button" data-clear-search>Clear</button>
+        </div>
+      </form>
+      <section class="quick-nav" data-guide-list>
+
+    <article data-guide-card data-title="android 9.0 p sebasthian0502" data-genre="phone ui puzzle" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-android-9-0-p/">
+        <span><b>Android 9.0 P</b><br><small>Phone UI puzzle · Sebasthian0502</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="anger meter shadow_crystal" data-genre="meter timing" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-anger-meter/">
+        <span><b>Anger Meter</b><br><small>Meter timing · Shadow_crystal</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="arrow timing wheel christopher" data-genre="timing tap" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-arrow-timing-wheel/">
+        <span><b>Arrow Timing Wheel</b><br><small>Timing tap · Christopher</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="balloon popper hannialopez1" data-genre="speed tap" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-balloon-popper/">
+        <span><b>Balloon Popper</b><br><small>Speed tap · hannialopez1</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="better finger clicker christopher finlay" data-genre="clicker upgrade" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-better-finger-clicker/">
+        <span><b>Better Finger Clicker</b><br><small>Clicker upgrade · Christopher Finlay</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="capybara smoke draw capybara era only!" data-genre="drawing toy" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-capybara-smoke-draw/">
+        <span><b>Capybara Smoke Draw</b><br><small>Drawing toy · CAPYBARA ERA ONLY!</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="car house connect oliver brunson" data-genre="path puzzle" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-car-house-connect/">
+        <span><b>Car House Connect</b><br><small>Path puzzle · Oliver Brunson</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="cartoon network error shokus video the object thingy" data-genre="error prank" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-cartoon-network-error/">
+        <span><b>Cartoon Network Error</b><br><small>Error prank · Shokus Video The Object Thingy</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="catch and double maddieb2cool" data-genre="reaction catch" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-catch-and-double/">
+        <span><b>Catch and Double</b><br><small>Reaction catch · Maddieb2cool</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="chaos clicker game mark ivanun" data-genre="clicker upgrade" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-chaos-clicker-game/">
+        <span><b>Chaos Clicker Game</b><br><small>Clicker upgrade · mark ivanun</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="classic teddy bear clicker official craftsman" data-genre="clicker collection" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-classic-teddy-bear-clicker/">
+        <span><b>Classic Teddy Bear Clicker</b><br><small>Clicker collection · Official craftsman</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="cleaning asmr tools kemberley09" data-genre="cleaning simulator" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-cleaning-asmr-tools/">
+        <span><b>Cleaning ASMR Tools</b><br><small>Cleaning simulator · Kemberley09</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="click 1159 check mark 𝚂𝚔𝚢𝟸𝚌𝚘𝚘𝚕𝟺𝚞" data-genre="speed tap" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-click-1159-check-mark/">
+        <span><b>Click 1159 Check Mark</b><br><small>Speed tap · 𝚂𝚔𝚢𝟸𝚌𝚘𝚘𝚕𝟺𝚞</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="coin clicker hint your average clicker guy" data-genre="clicker economy" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-coin-clicker-hint/">
+        <span><b>Coin Clicker Hint</b><br><small>Clicker economy · Your average clicker guy</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="coin spiral descent always" data-genre="reflex maze" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-coin-spiral-descent/">
+        <span><b>Coin Spiral Descent</b><br><small>Reflex maze · Always</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="cut into slices lamest lame" data-genre="precision slicing" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-cut-into-slices/">
+        <span><b>Cut Into Slices</b><br><small>Precision slicing · lamest Lame</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="depth digging tally93" data-genre="tap digging" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-depth-digging/">
+        <span><b>Depth Digging</b><br><small>Tap digging · Tally93</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="don&#39;t look back jaidryan ortiz" data-genre="escape chase" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-dont-look-back/">
+        <span><b>Don&#39;t Look Back</b><br><small>Escape chase · Jaidryan ortiz</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="dot clicker jaycreates: content" data-genre="terminal clicker" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-dot-clicker/">
+        <span><b>Dot Clicker</b><br><small>Terminal clicker · JayCreates: Content</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="drag to stretch ryuuu_" data-genre="stretching game" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-drag-to-stretch/">
+        <span><b>Drag to Stretch</b><br><small>Stretching game · Ryuuu_</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="elemental arena goudy" data-genre="arena battler" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-elemental-arena/">
+        <span><b>ELEMENTAL ARENA</b><br><small>Arena battler · Goudy</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="epstintapuse 69 levels lady fang" data-genre="survival quest" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-epstintapuse-69-levels/">
+        <span><b>Epstintapuse 69 Levels</b><br><small>Survival quest · Lady Fang</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="ethereal gesture maze jiwoo_p" data-genre="gesture maze" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-ethereal-gesture-maze/">
+        <span><b>Ethereal Gesture Maze</b><br><small>Gesture maze · jiwoo_p</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="fan-made side scroller bmc" data-genre="side-scroller" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-fan-made-side-scroller/">
+        <span><b>Fan-Made Side Scroller</b><br><small>Side-scroller · BMC</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="feather ink counter korra" data-genre="precision trace" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-feather-ink-counter/">
+        <span><b>Feather Ink Counter</b><br><small>Precision trace · Korra</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="find the hat guy jimbob_games" data-genre="hidden object" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-find-the-hat-guy/">
+        <span><b>Find the Hat Guy</b><br><small>Hidden object · Jimbob_games</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="football street 12345678910" data-genre="football practice" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-football-street-practice/">
+        <span><b>Football Street</b><br><small>Football practice · 12345678910</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="force playground adele" data-genre="physics sandbox" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-force-playground/">
+        <span><b>Force Playground</b><br><small>Physics sandbox · Adele</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="get it to the top shrimpy pieeee" data-genre="physics bounce" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-get-it-to-the-top/">
+        <span><b>Get It to the Top</b><br><small>Physics bounce · SHRIMPY PIEEEE</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="guano drop daniel macintyre" data-genre="timing tap" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-guano-drop/">
+        <span><b>Guano Drop</b><br><small>Timing tap · Daniel Macintyre</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="hold to grow line lily" data-genre="precision hold" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-hold-to-grow-line/">
+        <span><b>Hold to Grow Line</b><br><small>Precision hold · Lily</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="idle memes courteney taggart" data-genre="idle meme" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-idle-memes/">
+        <span><b>Idle Memes</b><br><small>Idle meme · Courteney Taggart</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="ink alive sohee_ee" data-genre="drawing game" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-ink-alive/">
+        <span><b>Ink Alive</b><br><small>Drawing game · sohee_ee</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="just like the ads bpuppy" data-genre="crowd runner" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-just-like-the-ads/">
+        <span><b>Just Like the Ads</b><br><small>Crowd runner · Bpuppy</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="k-pop horror aleatórios 👍🏻" data-genre="horror survival mini-app" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-k-pop-horror/">
+        <span><b>K-POP HORROR</b><br><small>Horror survival mini-app · Aleatórios 👍🏻</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="linklab pet choice selfdreamers" data-genre="pet choice" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-linklab-pet-choice/">
+        <span><b>LinkLab Pet Choice</b><br><small>Pet choice · Selfdreamers</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="love is love i have your bread!!" data-genre="physics toy" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-love-is-love/">
+        <span><b>Love Is Love</b><br><small>Physics toy · I HAVE YOUR BREAD!!</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="low health boxing airam flore" data-genre="fighting" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-low-health-boxing/">
+        <span><b>Low Health Boxing</b><br><small>Fighting · Airam Flore</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="million dollar ball ribbit" data-genre="physics draw" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-million-dollar-ball/">
+        <span><b>Million Dollar Ball</b><br><small>Physics draw · Ribbit</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="nightmare cuphead heroicguy15" data-genre="survival action" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-nightmare-cuphead/">
+        <span><b>Nightmare Cuphead</b><br><small>Survival action · heroicguy15</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="not only variable loopit" data-genre="narrative puzzle" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-not-only-variable/">
+        <span><b>Not Only Variable</b><br><small>Narrative puzzle · Loopit</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="oiia oiia ai iverson" data-genre="music toy" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-oiia-oiia/">
+        <span><b>Oiia Oiia</b><br><small>Music toy · AI Iverson</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="paper cutting ryan" data-genre="precision craft" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-paper-cutting/">
+        <span><b>Paper Cutting</b><br><small>Precision craft · Ryan</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="paws on loopit loopit" data-genre="pet gallery" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-paws-on-loopit/">
+        <span><b>Paws On Loopit</b><br><small>Pet gallery · Loopit</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="peel the fruit alyssa j" data-genre="timing game" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-peel-the-fruit/">
+        <span><b>Peel the Fruit</b><br><small>Timing game · Alyssa J</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="phone mini-apps kitty queen" data-genre="phone simulator" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-phone-mini-apps/">
+        <span><b>Phone Mini-Apps</b><br><small>Phone simulator · Kitty queen</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="phuanitmatter tap game phu quoc nguyen" data-genre="dimension tap" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-phuanitmatter-tap-game/">
+        <span><b>Phuanitmatter Tap Game</b><br><small>Dimension tap · Phu Quoc Nguyen</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="pie day luis" data-genre="reaction catch" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-pie-day/">
+        <span><b>Pie Day</b><br><small>Reaction catch · luis</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="pin launch joseph" data-genre="timing game" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-pin-launch/">
+        <span><b>Pin Launch</b><br><small>Timing game · Joseph</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="pump it up balloon rowan_so" data-genre="hold timing" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-pump-it-up-balloon/">
+        <span><b>Pump It Up Balloon</b><br><small>Hold timing · rowan_so</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="rate me comments hello" data-genre="tap counter" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-rate-me-comments/">
+        <span><b>Rate Me Comments</b><br><small>Tap counter · Hello</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="red vs blue warriors shrimpy pieeee" data-genre="unit sandbox" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-red-vs-blue-warriors/">
+        <span><b>Red vs Blue Warriors</b><br><small>Unit sandbox · SHRIMPY PIEEEE</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="reps of muscle cookiemuffin01" data-genre="clicker upgrade" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-reps-of-muscle/">
+        <span><b>Reps of Muscle</b><br><small>Clicker upgrade · CookieMuffin01</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="loopit rng lucas games" data-genre="random roll simulator" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-rng-era-2/">
+        <span><b>LOOPIT RNG</b><br><small>Random roll simulator · Lucas Games</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="rollercoaster builder the creator" data-genre="track builder" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-rollercoaster-builder/">
+        <span><b>Rollercoaster Builder</b><br><small>Track builder · The creator</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="sandbox stairs stones drop wall zigzag ophelia" data-genre="canvas physics toy" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-sandbox-stairs-stones-drop-wall-zigzag/">
+        <span><b>Sandbox Stairs Stones Drop Wall ZigZag</b><br><small>Canvas physics toy · Ophelia</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="shift weight server kristen thompson" data-genre="balance serving" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-shift-weight-server/">
+        <span><b>Shift Weight Server</b><br><small>Balance serving · Kristen Thompson</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="snake evolution feed bro beans" data-genre="drawing game" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-snake-evolution-feed/">
+        <span><b>Snake Evolution Feed</b><br><small>Drawing game · Bro beans</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="solarpunk idle chicar" data-genre="idle energy" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-solarpunk-idle/">
+        <span><b>Solarpunk Idle</b><br><small>Idle energy · Chicar</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="spinning void circles ilovefunnybunny" data-genre="drawing precision" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-spinning-void-circles/">
+        <span><b>Spinning Void Circles</b><br><small>Drawing precision · ilovefunnybunny</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="spirostar quân vũ" data-genre="drawing precision" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-spirostar/">
+        <span><b>Spirostar</b><br><small>Drawing precision · Quân Vũ</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="stage music shifter naked path music" data-genre="stage battler" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-stage-music-shifter/">
+        <span><b>Stage Music Shifter</b><br><small>Stage battler · Naked Path Music</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="street guy action katseye yoonchae" data-genre="action controls" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-street-guy-action/">
+        <span><b>Street Guy Action</b><br><small>Action controls · Katseye Yoonchae</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="surgery kylie juneau" data-genre="surgery simulator" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-surgery-incision/">
+        <span><b>Surgery</b><br><small>Surgery simulator · Kylie Juneau</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="tag you&#39;re it booga booga" data-genre="chase reaction" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-tag-youre-it/">
+        <span><b>Tag You&#39;re It</b><br><small>Chase reaction · Booga Booga</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="tap layers 2zfry" data-genre="tapping game" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-tap-layers/">
+        <span><b>Tap Layers</b><br><small>Tapping game · 2ZFRY</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="target scanner ryker" data-genre="aim scanner" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-target-scanner/">
+        <span><b>Target Scanner</b><br><small>Aim scanner · Ryker</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="the eye ai iverson" data-genre="psychedelic visual toy" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-the-eye/">
+        <span><b>The Eye</b><br><small>Psychedelic visual toy · AI Iverson</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="touch me as quick as possible 404" data-genre="tap counter" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-touch-me-as-quick-as-possible/">
+        <span><b>Touch Me as Quick as Possible</b><br><small>Tap counter · 404</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="trap the ants the fun gamesssssssss" data-genre="drawing trap" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-trap-the-ants/">
+        <span><b>Trap the Ants</b><br><small>Drawing trap · The fun gamesssssssss</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="trauma theory zombie corporation" data-genre="narrative session" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-trauma-theory/">
+        <span><b>Trauma Theory</b><br><small>Narrative session · Zombie corporation</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="try not to poop delilah" data-genre="hold timing" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-try-not-to-poop/">
+        <span><b>Try Not To Poop</b><br><small>Hold timing · Delilah</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="w game derrick drewette" data-genre="fluid sandbox" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-w-game/">
+        <span><b>W Game</b><br><small>Fluid sandbox · Derrick Drewette</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="where are you from eva" data-genre="flag drawing" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-where-are-you-from/">
+        <span><b>Where Are You From</b><br><small>Flag drawing · Eva</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="who will win sparks20156" data-genre="wheel physics" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-who-will-win/">
+        <span><b>Who Will Win</b><br><small>Wheel physics · Sparks20156</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="pool me if you can loopit" data-genre="prank contest" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-winners-pages-four-five/">
+        <span><b>Pool Me If You Can</b><br><small>Prank contest · Loopit</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="zombie simulator firestonex" data-genre="zombie sandbox" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-zombie-simulator/">
+        <span><b>Zombie Simulator</b><br><small>Zombie sandbox · FirestoneX</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+    <article data-guide-card data-title="zombie town v2 nolan" data-genre="town sandbox" data-platform="loopit">
+      <a class="genre-chip" href="/games/loopit-zombie-town-v2/">
+        <span><b>Zombie Town V2</b><br><small>Town sandbox · Nolan</small></span>
+        <strong aria-label="free access">F</strong>
+      </a>
+    </article>
+
+      </section>
+    </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Game Guide Base</strong>
+      <p>Fast routes, passcodes, and beginner tips for web playable games.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="/about/">About</a>
+      <a href="/creators/">Creators</a>
+      <a href="/contact/">Contact</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </nav>
+  </footer>
+  <script src="/script.js?v=20260713-update-history-1" defer></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "8766e0f1c5cf486f81c867118dce77c5"}'></script>
+</body>
+</html>

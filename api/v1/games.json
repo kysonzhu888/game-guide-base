@@ -1,0 +1,1183 @@
+{
+  "schemaUrl": "https://gameguidebase.com/api/v1/games.schema.json",
+  "schemaVersion": "1.0",
+  "dataUpdatedAt": "2026-07-15",
+  "site": {
+    "name": "Game Guide Base",
+    "url": "https://gameguidebase.com/",
+    "developerDocsUrl": "https://gameguidebase.com/developers/"
+  },
+  "count": 78,
+  "games": [
+    {
+      "slug": "loopit-android-9-0-p",
+      "title": "Android 9.0 P",
+      "genre": "Phone UI puzzle",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Sebasthian0502",
+      "guideUrl": "https://gameguidebase.com/games/loopit-android-9-0-p/",
+      "sourceUrl": "https://share.loopit.me/game/45a32d8a-4127-44ad-99c3-5aa1b06b867c",
+      "access": "free",
+      "updatedAt": "2026-07-15"
+    },
+    {
+      "slug": "loopit-anger-meter",
+      "title": "Anger Meter",
+      "genre": "Meter timing",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Shadow_crystal",
+      "guideUrl": "https://gameguidebase.com/games/loopit-anger-meter/",
+      "sourceUrl": "https://share.loopit.me/game/58430054-1510-493a-be1a-df6d8fe1454c",
+      "access": "free",
+      "updatedAt": "2026-07-13"
+    },
+    {
+      "slug": "loopit-arrow-timing-wheel",
+      "title": "Arrow Timing Wheel",
+      "genre": "Timing tap",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Christopher",
+      "guideUrl": "https://gameguidebase.com/games/loopit-arrow-timing-wheel/",
+      "sourceUrl": "https://share.loopit.me/game/4cf01919-96cd-40ef-8ef1-5280c7ec94e9",
+      "access": "free",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "slug": "loopit-balloon-popper",
+      "title": "Balloon Popper",
+      "genre": "Speed tap",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "hannialopez1",
+      "guideUrl": "https://gameguidebase.com/games/loopit-balloon-popper/",
+      "sourceUrl": "https://share.loopit.me/game/1eda36ca-aa15-4b97-94ba-0b20b390b9ff",
+      "access": "free",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "slug": "loopit-better-finger-clicker",
+      "title": "Better Finger Clicker",
+      "genre": "Clicker upgrade",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Christopher Finlay",
+      "guideUrl": "https://gameguidebase.com/games/loopit-better-finger-clicker/",
+      "sourceUrl": "https://share.loopit.me/game/c824d378-b278-44c9-9ee1-0373359ff33f",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-capybara-smoke-draw",
+      "title": "Capybara Smoke Draw",
+      "genre": "Drawing toy",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "CAPYBARA ERA ONLY!",
+      "guideUrl": "https://gameguidebase.com/games/loopit-capybara-smoke-draw/",
+      "sourceUrl": "https://share.loopit.me/game/7725a43d-12af-4f3e-a978-b4cfb0384390",
+      "access": "free",
+      "updatedAt": "2026-07-13"
+    },
+    {
+      "slug": "loopit-car-house-connect",
+      "title": "Car House Connect",
+      "genre": "Path puzzle",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Oliver Brunson",
+      "guideUrl": "https://gameguidebase.com/games/loopit-car-house-connect/",
+      "sourceUrl": "https://share.loopit.me/game/3458704e-7df3-4f39-a7e0-ad60d34f21fb",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-cartoon-network-error",
+      "title": "Cartoon Network Error",
+      "genre": "Error prank",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Shokus Video The Object Thingy",
+      "guideUrl": "https://gameguidebase.com/games/loopit-cartoon-network-error/",
+      "sourceUrl": "https://share.loopit.me/game/43378fa0-7203-467d-a3a9-b8fa367a5799",
+      "access": "free",
+      "updatedAt": "2026-07-13"
+    },
+    {
+      "slug": "loopit-catch-and-double",
+      "title": "Catch and Double",
+      "genre": "Reaction catch",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Maddieb2cool",
+      "guideUrl": "https://gameguidebase.com/games/loopit-catch-and-double/",
+      "sourceUrl": "https://share.loopit.me/game/cf53ff76-4f56-448b-8cb9-f363f4e24a35",
+      "access": "free",
+      "updatedAt": "2026-07-04"
+    },
+    {
+      "slug": "loopit-chaos-clicker-game",
+      "title": "Chaos Clicker Game",
+      "genre": "Clicker upgrade",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "mark ivanun",
+      "guideUrl": "https://gameguidebase.com/games/loopit-chaos-clicker-game/",
+      "sourceUrl": "https://share.loopit.me/game/95be7117-2082-4bb7-98a5-fbf7d4e0bd78",
+      "access": "free",
+      "updatedAt": "2026-07-13"
+    },
+    {
+      "slug": "loopit-classic-teddy-bear-clicker",
+      "title": "Classic Teddy Bear Clicker",
+      "genre": "Clicker collection",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Official craftsman",
+      "guideUrl": "https://gameguidebase.com/games/loopit-classic-teddy-bear-clicker/",
+      "sourceUrl": "https://share.loopit.me/game/4b30664e-0e69-4b09-9112-6d8b31786e9c",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-cleaning-asmr-tools",
+      "title": "Cleaning ASMR Tools",
+      "genre": "Cleaning simulator",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Kemberley09",
+      "guideUrl": "https://gameguidebase.com/games/loopit-cleaning-asmr-tools/",
+      "sourceUrl": "https://share.loopit.me/game/0945ab1a-5d65-4deb-bc2a-f525bf68ed01",
+      "access": "free",
+      "updatedAt": "2026-07-06"
+    },
+    {
+      "slug": "loopit-click-1159-check-mark",
+      "title": "Click 1159 Check Mark",
+      "genre": "Speed tap",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "𝚂𝚔𝚢𝟸𝚌𝚘𝚘𝚕𝟺𝚞",
+      "guideUrl": "https://gameguidebase.com/games/loopit-click-1159-check-mark/",
+      "sourceUrl": "https://share.loopit.me/game/805e0a36-6d9e-48f4-a59a-7f9226ce0a18",
+      "access": "free",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "slug": "loopit-coin-clicker-hint",
+      "title": "Coin Clicker Hint",
+      "genre": "Clicker economy",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Your average clicker guy",
+      "guideUrl": "https://gameguidebase.com/games/loopit-coin-clicker-hint/",
+      "sourceUrl": "https://share.loopit.me/game/ddb2c4af-3acb-4e26-8d0a-7576320613e1",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-coin-spiral-descent",
+      "title": "Coin Spiral Descent",
+      "genre": "Reflex maze",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Always",
+      "guideUrl": "https://gameguidebase.com/games/loopit-coin-spiral-descent/",
+      "sourceUrl": "https://share.loopit.me/game/38c02ac4-5c25-4ea3-86b4-d603cefb5509",
+      "access": "free",
+      "updatedAt": "2026-07-06"
+    },
+    {
+      "slug": "loopit-cut-into-slices",
+      "title": "Cut Into Slices",
+      "genre": "Precision slicing",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "lamest Lame",
+      "guideUrl": "https://gameguidebase.com/games/loopit-cut-into-slices/",
+      "sourceUrl": "https://share.loopit.me/game/82fab6eb-3759-4652-9c52-bec8ff1ac5a7",
+      "access": "free",
+      "updatedAt": "2026-07-13"
+    },
+    {
+      "slug": "loopit-depth-digging",
+      "title": "Depth Digging",
+      "genre": "Tap digging",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Tally93",
+      "guideUrl": "https://gameguidebase.com/games/loopit-depth-digging/",
+      "sourceUrl": "https://share.loopit.me/game/05dac973-7050-48ad-a48e-5821c603afa2",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-dont-look-back",
+      "title": "Don't Look Back",
+      "genre": "Escape chase",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Jaidryan ortiz",
+      "guideUrl": "https://gameguidebase.com/games/loopit-dont-look-back/",
+      "sourceUrl": "https://share.loopit.me/game/994661dd-5997-419f-bfc1-7d76aac75094",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-dot-clicker",
+      "title": "Dot Clicker",
+      "genre": "Terminal clicker",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "JayCreates: Content",
+      "guideUrl": "https://gameguidebase.com/games/loopit-dot-clicker/",
+      "sourceUrl": "https://share.loopit.me/game/80031ca9-f948-401c-a56c-07bcd3afbd39",
+      "access": "free",
+      "updatedAt": "2026-07-15"
+    },
+    {
+      "slug": "loopit-drag-to-stretch",
+      "title": "Drag to Stretch",
+      "genre": "Stretching game",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Ryuuu_",
+      "guideUrl": "https://gameguidebase.com/games/loopit-drag-to-stretch/",
+      "sourceUrl": "https://share.loopit.me/game/94a0cd56-f6eb-48b0-bf7e-5df9e2d5510f",
+      "access": "free",
+      "updatedAt": "2026-07-06"
+    },
+    {
+      "slug": "loopit-elemental-arena",
+      "title": "ELEMENTAL ARENA",
+      "genre": "Arena battler",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Goudy",
+      "guideUrl": "https://gameguidebase.com/games/loopit-elemental-arena/",
+      "sourceUrl": "https://share.loopit.me/game/37095275-c198-424f-9f2a-d2377f2d6fb7",
+      "access": "free",
+      "updatedAt": "2026-07-15"
+    },
+    {
+      "slug": "loopit-epstintapuse-69-levels",
+      "title": "Epstintapuse 69 Levels",
+      "genre": "Survival quest",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Lady Fang",
+      "guideUrl": "https://gameguidebase.com/games/loopit-epstintapuse-69-levels/",
+      "sourceUrl": "https://share.loopit.me/game/16c516e4-9f7a-4810-9cff-ac8bbb663858",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-ethereal-gesture-maze",
+      "title": "Ethereal Gesture Maze",
+      "genre": "Gesture maze",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "jiwoo_p",
+      "guideUrl": "https://gameguidebase.com/games/loopit-ethereal-gesture-maze/",
+      "sourceUrl": "https://share.loopit.me/game/82cd848c-5725-4f4b-ac77-7bdaee3fcd9c",
+      "access": "free",
+      "updatedAt": "2026-07-08"
+    },
+    {
+      "slug": "loopit-fan-made-side-scroller",
+      "title": "Fan-Made Side Scroller",
+      "genre": "Side-scroller",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "BMC",
+      "guideUrl": "https://gameguidebase.com/games/loopit-fan-made-side-scroller/",
+      "sourceUrl": "https://share.loopit.me/game/aa79e619-ee18-4d81-9d10-85a28bc7a112",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-feather-ink-counter",
+      "title": "Feather Ink Counter",
+      "genre": "Precision trace",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Korra",
+      "guideUrl": "https://gameguidebase.com/games/loopit-feather-ink-counter/",
+      "sourceUrl": "https://share.loopit.me/game/0011e990-758a-4570-a956-a1f2266077c6",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-find-the-hat-guy",
+      "title": "Find the Hat Guy",
+      "genre": "Hidden object",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Jimbob_games",
+      "guideUrl": "https://gameguidebase.com/games/loopit-find-the-hat-guy/",
+      "sourceUrl": "https://share.loopit.me/game/8675b162-e783-454b-8f0d-413cfd2798b9",
+      "access": "free",
+      "updatedAt": "2026-07-04"
+    },
+    {
+      "slug": "loopit-football-street-practice",
+      "title": "Football Street",
+      "genre": "Football practice",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "12345678910",
+      "guideUrl": "https://gameguidebase.com/games/loopit-football-street-practice/",
+      "sourceUrl": "https://share.loopit.me/game/49cf9812-e7bf-4479-9d37-c4c1d6f4e395",
+      "access": "free",
+      "updatedAt": "2026-07-14"
+    },
+    {
+      "slug": "loopit-force-playground",
+      "title": "Force Playground",
+      "genre": "Physics sandbox",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Adele",
+      "guideUrl": "https://gameguidebase.com/games/loopit-force-playground/",
+      "sourceUrl": "https://share.loopit.me/game/f0f1dbba-6f27-42a1-b399-53fdb423d5b7",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-get-it-to-the-top",
+      "title": "Get It to the Top",
+      "genre": "Physics bounce",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "SHRIMPY PIEEEE",
+      "guideUrl": "https://gameguidebase.com/games/loopit-get-it-to-the-top/",
+      "sourceUrl": "https://share.loopit.me/game/725a55eb-16c2-4737-8e53-2cc779443424",
+      "access": "free",
+      "updatedAt": "2026-07-13"
+    },
+    {
+      "slug": "loopit-guano-drop",
+      "title": "Guano Drop",
+      "genre": "Timing tap",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Daniel Macintyre",
+      "guideUrl": "https://gameguidebase.com/games/loopit-guano-drop/",
+      "sourceUrl": "https://share.loopit.me/game/34a59cad-c937-42e2-aeac-394f18b0ae7b",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-hold-to-grow-line",
+      "title": "Hold to Grow Line",
+      "genre": "Precision hold",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Lily",
+      "guideUrl": "https://gameguidebase.com/games/loopit-hold-to-grow-line/",
+      "sourceUrl": "https://share.loopit.me/game/e601105c-901b-42a2-8c0f-fb363acdabbf",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-idle-memes",
+      "title": "Idle Memes",
+      "genre": "Idle meme",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Courteney Taggart",
+      "guideUrl": "https://gameguidebase.com/games/loopit-idle-memes/",
+      "sourceUrl": "https://share.loopit.me/game/0dca62f4-7da9-4b39-9f4b-0ae3e901084b",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-ink-alive",
+      "title": "Ink Alive",
+      "genre": "Drawing game",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "sohee_ee",
+      "guideUrl": "https://gameguidebase.com/games/loopit-ink-alive/",
+      "sourceUrl": "https://share.loopit.me/game/e0ab60a9-5e2d-471e-9767-a0dead218190",
+      "access": "free",
+      "updatedAt": "2026-07-08"
+    },
+    {
+      "slug": "loopit-just-like-the-ads",
+      "title": "Just Like the Ads",
+      "genre": "Crowd runner",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Bpuppy",
+      "guideUrl": "https://gameguidebase.com/games/loopit-just-like-the-ads/",
+      "sourceUrl": "https://share.loopit.me/game/243ab6ff-6c6d-4394-a966-0a5c2239d0ca",
+      "access": "free",
+      "updatedAt": "2026-07-13"
+    },
+    {
+      "slug": "loopit-k-pop-horror",
+      "title": "K-POP HORROR",
+      "genre": "Horror survival mini-app",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Aleatórios 👍🏻",
+      "guideUrl": "https://gameguidebase.com/games/loopit-k-pop-horror/",
+      "sourceUrl": "https://share.loopit.me/game/2aae1dd8-294a-4db3-9684-f1b6b25060b2",
+      "access": "free",
+      "updatedAt": "2026-07-15"
+    },
+    {
+      "slug": "loopit-linklab-pet-choice",
+      "title": "LinkLab Pet Choice",
+      "genre": "Pet choice",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Selfdreamers",
+      "guideUrl": "https://gameguidebase.com/games/loopit-linklab-pet-choice/",
+      "sourceUrl": "https://share.loopit.me/game/81fc4fc7-6bb6-4545-977f-e2bcf459bdbc",
+      "access": "free",
+      "updatedAt": "2026-07-13"
+    },
+    {
+      "slug": "loopit-love-is-love",
+      "title": "Love Is Love",
+      "genre": "Physics toy",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "I HAVE YOUR BREAD!!",
+      "guideUrl": "https://gameguidebase.com/games/loopit-love-is-love/",
+      "sourceUrl": "https://share.loopit.me/game/9e9fa910-c265-4702-8bfa-83784ee1c5ce",
+      "access": "free",
+      "updatedAt": "2026-07-08"
+    },
+    {
+      "slug": "loopit-low-health-boxing",
+      "title": "Low Health Boxing",
+      "genre": "Fighting",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Airam Flore",
+      "guideUrl": "https://gameguidebase.com/games/loopit-low-health-boxing/",
+      "sourceUrl": "https://share.loopit.me/game/5e1bd71c-3d8a-4149-97b5-eb5631169303",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-million-dollar-ball",
+      "title": "Million Dollar Ball",
+      "genre": "Physics draw",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Ribbit",
+      "guideUrl": "https://gameguidebase.com/games/loopit-million-dollar-ball/",
+      "sourceUrl": "https://share.loopit.me/game/3bb5f1fc-74f7-4165-a55e-7df1f18d92f4",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-nightmare-cuphead",
+      "title": "Nightmare Cuphead",
+      "genre": "Survival action",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "heroicguy15",
+      "guideUrl": "https://gameguidebase.com/games/loopit-nightmare-cuphead/",
+      "sourceUrl": "https://share.loopit.me/game/0e2b8cf5-8dd2-4f01-92f2-4b5d48f536fb",
+      "access": "free",
+      "updatedAt": "2026-07-11"
+    },
+    {
+      "slug": "loopit-not-only-variable",
+      "title": "Not Only Variable",
+      "genre": "Narrative puzzle",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Loopit",
+      "guideUrl": "https://gameguidebase.com/games/loopit-not-only-variable/",
+      "sourceUrl": "https://share.loopit.me/game/5c582784-0c57-4356-b6e1-57bf10c24354",
+      "access": "free",
+      "updatedAt": "2026-07-08"
+    },
+    {
+      "slug": "loopit-oiia-oiia",
+      "title": "Oiia Oiia",
+      "genre": "Music toy",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "AI Iverson",
+      "guideUrl": "https://gameguidebase.com/games/loopit-oiia-oiia/",
+      "sourceUrl": "https://share.loopit.me/game/a7a67ac0-b867-435b-92d9-5aadad5fd811",
+      "access": "free",
+      "updatedAt": "2026-07-14"
+    },
+    {
+      "slug": "loopit-paper-cutting",
+      "title": "Paper Cutting",
+      "genre": "Precision craft",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Ryan",
+      "guideUrl": "https://gameguidebase.com/games/loopit-paper-cutting/",
+      "sourceUrl": "https://share.loopit.me/game/efd176cf-bf19-46b9-b524-bc129091f8d5",
+      "access": "free",
+      "updatedAt": "2026-07-13"
+    },
+    {
+      "slug": "loopit-paws-on-loopit",
+      "title": "Paws On Loopit",
+      "genre": "Pet gallery",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Loopit",
+      "guideUrl": "https://gameguidebase.com/games/loopit-paws-on-loopit/",
+      "sourceUrl": "https://share.loopit.me/game/45561bca-07bb-4e98-9e3b-04d9e689985f",
+      "access": "free",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "slug": "loopit-peel-the-fruit",
+      "title": "Peel the Fruit",
+      "genre": "Timing game",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Alyssa J",
+      "guideUrl": "https://gameguidebase.com/games/loopit-peel-the-fruit/",
+      "sourceUrl": "https://share.loopit.me/game/4e18e4f8-1683-4b2b-850b-936305582e0e",
+      "access": "free",
+      "updatedAt": "2026-07-06"
+    },
+    {
+      "slug": "loopit-phone-mini-apps",
+      "title": "Phone Mini-Apps",
+      "genre": "Phone simulator",
+      "platforms": [
+        "Loopit web",
+        "Mobile web"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Kitty queen",
+      "guideUrl": "https://gameguidebase.com/games/loopit-phone-mini-apps/",
+      "sourceUrl": "https://share.loopit.me/game/1645463f-830f-46a5-bc56-278ca8798ff8",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-phuanitmatter-tap-game",
+      "title": "Phuanitmatter Tap Game",
+      "genre": "Dimension tap",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Phu Quoc Nguyen",
+      "guideUrl": "https://gameguidebase.com/games/loopit-phuanitmatter-tap-game/",
+      "sourceUrl": "https://share.loopit.me/game/a9e8ac4a-97d1-4d0d-8fd7-1299ceedd79b",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-pie-day",
+      "title": "Pie Day",
+      "genre": "Reaction catch",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "luis",
+      "guideUrl": "https://gameguidebase.com/games/loopit-pie-day/",
+      "sourceUrl": "https://share.loopit.me/game/651f7df7-8706-4968-896f-a78c835d4611",
+      "access": "free",
+      "updatedAt": "2026-07-13"
+    },
+    {
+      "slug": "loopit-pin-launch",
+      "title": "Pin Launch",
+      "genre": "Timing game",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Joseph",
+      "guideUrl": "https://gameguidebase.com/games/loopit-pin-launch/",
+      "sourceUrl": "https://share.loopit.me/game/37df0a9d-3cda-421c-8a31-1f15c55b0a4c",
+      "access": "free",
+      "updatedAt": "2026-07-06"
+    },
+    {
+      "slug": "loopit-pump-it-up-balloon",
+      "title": "Pump It Up Balloon",
+      "genre": "Hold timing",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "rowan_so",
+      "guideUrl": "https://gameguidebase.com/games/loopit-pump-it-up-balloon/",
+      "sourceUrl": "https://share.loopit.me/game/a5083ddc-1de0-49c3-8bec-6f51c72efc3c",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-rate-me-comments",
+      "title": "Rate Me Comments",
+      "genre": "Tap counter",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Hello",
+      "guideUrl": "https://gameguidebase.com/games/loopit-rate-me-comments/",
+      "sourceUrl": "https://share.loopit.me/game/8b4cbd93-b636-42cd-9b4c-1bf74b7cb8b6",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-red-vs-blue-warriors",
+      "title": "Red vs Blue Warriors",
+      "genre": "Unit sandbox",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "SHRIMPY PIEEEE",
+      "guideUrl": "https://gameguidebase.com/games/loopit-red-vs-blue-warriors/",
+      "sourceUrl": "https://share.loopit.me/game/20e8e480-1929-411a-ae65-42834fdb2f75",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-reps-of-muscle",
+      "title": "Reps of Muscle",
+      "genre": "Clicker upgrade",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "CookieMuffin01",
+      "guideUrl": "https://gameguidebase.com/games/loopit-reps-of-muscle/",
+      "sourceUrl": "https://share.loopit.me/game/6723482d-0f32-4b67-96f7-7dd8f4416bce",
+      "access": "free",
+      "updatedAt": "2026-07-13"
+    },
+    {
+      "slug": "loopit-rng-era-2",
+      "title": "LOOPIT RNG",
+      "genre": "Random roll simulator",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Lucas Games",
+      "guideUrl": "https://gameguidebase.com/games/loopit-rng-era-2/",
+      "sourceUrl": "https://share.loopit.me/game/f46ebaa8-1a70-4a6b-b3ed-ee55df12a0f6",
+      "access": "free",
+      "updatedAt": "2026-07-15"
+    },
+    {
+      "slug": "loopit-rollercoaster-builder",
+      "title": "Rollercoaster Builder",
+      "genre": "Track builder",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "The creator",
+      "guideUrl": "https://gameguidebase.com/games/loopit-rollercoaster-builder/",
+      "sourceUrl": "https://share.loopit.me/game/682cc9d2-34c0-44a2-95ec-a058d70e4bbe",
+      "access": "free",
+      "updatedAt": "2026-07-13"
+    },
+    {
+      "slug": "loopit-sandbox-stairs-stones-drop-wall-zigzag",
+      "title": "Sandbox Stairs Stones Drop Wall ZigZag",
+      "genre": "Canvas physics toy",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Ophelia",
+      "guideUrl": "https://gameguidebase.com/games/loopit-sandbox-stairs-stones-drop-wall-zigzag/",
+      "sourceUrl": "https://share.loopit.me/game/94097d52-c473-4e1a-8159-2ae5ba7bd6ac",
+      "access": "free",
+      "updatedAt": "2026-07-14"
+    },
+    {
+      "slug": "loopit-shift-weight-server",
+      "title": "Shift Weight Server",
+      "genre": "Balance serving",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Kristen Thompson",
+      "guideUrl": "https://gameguidebase.com/games/loopit-shift-weight-server/",
+      "sourceUrl": "https://share.loopit.me/game/a7045ea2-194c-410e-907e-ae937be19793",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-snake-evolution-feed",
+      "title": "Snake Evolution Feed",
+      "genre": "Drawing game",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Bro beans",
+      "guideUrl": "https://gameguidebase.com/games/loopit-snake-evolution-feed/",
+      "sourceUrl": "https://share.loopit.me/game/d0078f9a-a696-47d7-a3bc-74c1f3f7cc98",
+      "access": "free",
+      "updatedAt": "2026-07-13"
+    },
+    {
+      "slug": "loopit-solarpunk-idle",
+      "title": "Solarpunk Idle",
+      "genre": "Idle energy",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Chicar",
+      "guideUrl": "https://gameguidebase.com/games/loopit-solarpunk-idle/",
+      "sourceUrl": "https://share.loopit.me/game/9998a4f1-bca0-4410-99b5-a678ac48ef91",
+      "access": "free",
+      "updatedAt": "2026-07-11"
+    },
+    {
+      "slug": "loopit-spinning-void-circles",
+      "title": "Spinning Void Circles",
+      "genre": "Drawing precision",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "ilovefunnybunny",
+      "guideUrl": "https://gameguidebase.com/games/loopit-spinning-void-circles/",
+      "sourceUrl": "https://share.loopit.me/game/00fcb819-f88b-4c1f-9b2b-0594f1f5bb32",
+      "access": "free",
+      "updatedAt": "2026-07-12"
+    },
+    {
+      "slug": "loopit-spirostar",
+      "title": "Spirostar",
+      "genre": "Drawing precision",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Quân Vũ",
+      "guideUrl": "https://gameguidebase.com/games/loopit-spirostar/",
+      "sourceUrl": "https://share.loopit.me/game/28f372c5-95da-46c5-a282-a681d2ed605a",
+      "access": "free",
+      "updatedAt": "2026-07-11"
+    },
+    {
+      "slug": "loopit-stage-music-shifter",
+      "title": "Stage Music Shifter",
+      "genre": "Stage battler",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Naked Path Music",
+      "guideUrl": "https://gameguidebase.com/games/loopit-stage-music-shifter/",
+      "sourceUrl": "https://share.loopit.me/game/2c0f9c07-b3aa-41c3-b3e0-b1d747832530",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-street-guy-action",
+      "title": "Street Guy Action",
+      "genre": "Action controls",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Katseye Yoonchae",
+      "guideUrl": "https://gameguidebase.com/games/loopit-street-guy-action/",
+      "sourceUrl": "https://share.loopit.me/game/8abd54a8-4e91-4e91-9b3b-4f5f58a6667f",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-surgery-incision",
+      "title": "Surgery",
+      "genre": "Surgery simulator",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Kylie Juneau",
+      "guideUrl": "https://gameguidebase.com/games/loopit-surgery-incision/",
+      "sourceUrl": "https://share.loopit.me/game/a28ae3b7-0361-4481-a600-f45df9d1d392",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-tag-youre-it",
+      "title": "Tag You're It",
+      "genre": "Chase reaction",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Booga Booga",
+      "guideUrl": "https://gameguidebase.com/games/loopit-tag-youre-it/",
+      "sourceUrl": "https://share.loopit.me/game/d77444e8-b0ef-4eaa-adf0-2df79a509c1c",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-tap-layers",
+      "title": "Tap Layers",
+      "genre": "Tapping game",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "2ZFRY",
+      "guideUrl": "https://gameguidebase.com/games/loopit-tap-layers/",
+      "sourceUrl": "https://share.loopit.me/game/ba8c2f6b-0de0-4389-a0f3-6040671369ad",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-target-scanner",
+      "title": "Target Scanner",
+      "genre": "Aim scanner",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Ryker",
+      "guideUrl": "https://gameguidebase.com/games/loopit-target-scanner/",
+      "sourceUrl": "https://share.loopit.me/game/6e4936d5-fb7e-43bf-be4b-00987acee3a4",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-the-eye",
+      "title": "The Eye",
+      "genre": "Psychedelic visual toy",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "AI Iverson",
+      "guideUrl": "https://gameguidebase.com/games/loopit-the-eye/",
+      "sourceUrl": "https://share.loopit.me/game/7d6ba720-9322-410e-bda2-5840faeade5e",
+      "access": "free",
+      "updatedAt": "2026-07-14"
+    },
+    {
+      "slug": "loopit-touch-me-as-quick-as-possible",
+      "title": "Touch Me as Quick as Possible",
+      "genre": "Tap counter",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "404",
+      "guideUrl": "https://gameguidebase.com/games/loopit-touch-me-as-quick-as-possible/",
+      "sourceUrl": "https://share.loopit.me/game/2c7c7487-9c03-4853-a987-86b4af1fd360",
+      "access": "free",
+      "updatedAt": "2026-07-14"
+    },
+    {
+      "slug": "loopit-trap-the-ants",
+      "title": "Trap the Ants",
+      "genre": "Drawing trap",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "The fun gamesssssssss",
+      "guideUrl": "https://gameguidebase.com/games/loopit-trap-the-ants/",
+      "sourceUrl": "https://share.loopit.me/game/b169096c-4077-417c-af0b-f550d20dfb8b",
+      "access": "free",
+      "updatedAt": "2026-07-13"
+    },
+    {
+      "slug": "loopit-trauma-theory",
+      "title": "Trauma Theory",
+      "genre": "Narrative session",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Zombie corporation",
+      "guideUrl": "https://gameguidebase.com/games/loopit-trauma-theory/",
+      "sourceUrl": "https://share.loopit.me/game/239086f4-f17b-401b-8511-14a827d29f6e",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-try-not-to-poop",
+      "title": "Try Not To Poop",
+      "genre": "Hold timing",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Delilah",
+      "guideUrl": "https://gameguidebase.com/games/loopit-try-not-to-poop/",
+      "sourceUrl": "https://share.loopit.me/game/12644e22-efd5-480c-8ee1-c059287d9a56",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-w-game",
+      "title": "W Game",
+      "genre": "Fluid sandbox",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Derrick Drewette",
+      "guideUrl": "https://gameguidebase.com/games/loopit-w-game/",
+      "sourceUrl": "https://share.loopit.me/game/4eb06d24-d55c-4fc6-9662-8b57ca703473",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-where-are-you-from",
+      "title": "Where Are You From",
+      "genre": "Flag drawing",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Eva",
+      "guideUrl": "https://gameguidebase.com/games/loopit-where-are-you-from/",
+      "sourceUrl": "https://share.loopit.me/game/a309ed9b-c3f2-441e-80f5-7d58fb59a40c",
+      "access": "free",
+      "updatedAt": "2026-07-11"
+    },
+    {
+      "slug": "loopit-who-will-win",
+      "title": "Who Will Win",
+      "genre": "Wheel physics",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Sparks20156",
+      "guideUrl": "https://gameguidebase.com/games/loopit-who-will-win/",
+      "sourceUrl": "https://share.loopit.me/game/6fe91371-a187-4144-9ad5-14d00475ac87",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-winners-pages-four-five",
+      "title": "Pool Me If You Can",
+      "genre": "Prank contest",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Loopit",
+      "guideUrl": "https://gameguidebase.com/games/loopit-winners-pages-four-five/",
+      "sourceUrl": "https://share.loopit.me/game/f79d3edc-d4e0-4e2f-9221-ad37c23d5d0b",
+      "access": "free",
+      "updatedAt": "2026-07-08"
+    },
+    {
+      "slug": "loopit-zombie-simulator",
+      "title": "Zombie Simulator",
+      "genre": "Zombie sandbox",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "FirestoneX",
+      "guideUrl": "https://gameguidebase.com/games/loopit-zombie-simulator/",
+      "sourceUrl": "https://share.loopit.me/game/390feabc-3f0c-49e3-8238-8e34e460218d",
+      "access": "free",
+      "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-zombie-town-v2",
+      "title": "Zombie Town V2",
+      "genre": "Town sandbox",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Nolan",
+      "guideUrl": "https://gameguidebase.com/games/loopit-zombie-town-v2/",
+      "sourceUrl": "https://share.loopit.me/game/2254c152-a78e-4b59-b39d-81feba968e57",
+      "access": "free",
+      "updatedAt": "2026-07-13"
+    }
+  ]
+}
