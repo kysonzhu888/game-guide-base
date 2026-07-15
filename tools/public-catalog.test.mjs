@@ -114,6 +114,14 @@ test("schema and developer browser describe the same public contract", async () 
   const html = renderDeveloperCatalogBody(catalog);
   assert.match(html, /https:\/\/game-guide-base\.pages\.dev\/api\/v1\/games\.json/);
   assert.match(html, /https:\/\/game-guide-base\.pages\.dev\/api\/v1\/games\.schema\.json/);
+  assert.match(html, /<h2>Copy-paste examples<\/h2>/);
+  assert.match(html, /data-api-example="curl"/);
+  assert.match(html, /curl -fsSL/);
+  assert.match(html, /data-api-example="javascript"/);
+  assert.match(html, /await fetch\(&quot;https:\/\/game-guide-base\.pages\.dev\/api\/v1\/games\.json&quot;\)/);
+  assert.match(html, /data-api-example="python"/);
+  assert.match(html, /from urllib\.request import urlopen/);
+  assert.match(html, /catalog\[&quot;games&quot;\]\[:5\]/);
   assert.match(html, /78|2 games/);
   assert.match(html, /Beta &amp; Beyond/);
   assert.match(html, /Creator &lt;Two&gt;/);

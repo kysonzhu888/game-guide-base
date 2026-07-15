@@ -1131,6 +1131,37 @@ main {
   margin-top: 10px;
 }
 
+.api-example-grid {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.api-example {
+  min-width: 0;
+}
+
+.api-example h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.api-example pre {
+  margin: 0;
+  overflow-x: auto;
+  padding: 16px;
+  border: 1px solid rgba(23, 32, 27, 0.16);
+  border-radius: 8px;
+  background: var(--ink);
+  color: #f7f4e8;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.api-example code {
+  white-space: pre;
+}
+
 .faq-block details {
   border-top: 1px solid var(--line);
   padding: 16px 0;

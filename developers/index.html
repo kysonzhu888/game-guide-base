@@ -56,6 +56,41 @@
             <h2>Usage and attribution</h2>
             <p>Link users to each <code>guideUrl</code> and preserve the named source platform. Screenshots and underlying game media are deliberately excluded because this catalog does not grant rights to third-party media.</p>
           </section>
+          <section class="guide-section api-examples">
+            <h2>Copy-paste examples</h2>
+            <p>Fetch the first five public records with tools that require no SDK or API key.</p>
+            <div class="api-example-grid">
+
+    <article class="api-example" data-api-example="curl">
+      <h3>cURL + jq</h3>
+      <pre><code>curl -fsSL &quot;https://game-guide-base.pages.dev/api/v1/games.json&quot; | jq &#39;.games[:5] | .[] | {title, genre, guideUrl}&#39;</code></pre>
+    </article>
+
+
+    <article class="api-example" data-api-example="javascript">
+      <h3>JavaScript</h3>
+      <pre><code>const response = await fetch(&quot;https://game-guide-base.pages.dev/api/v1/games.json&quot;);
+if (!response.ok) throw new Error(`Catalog request failed: ${response.status}`);
+
+const catalog = await response.json();
+console.table(catalog.games.slice(0, 5), [&quot;title&quot;, &quot;genre&quot;, &quot;guideUrl&quot;]);</code></pre>
+    </article>
+
+
+    <article class="api-example" data-api-example="python">
+      <h3>Python standard library</h3>
+      <pre><code>import json
+from urllib.request import urlopen
+
+with urlopen(&quot;https://game-guide-base.pages.dev/api/v1/games.json&quot;, timeout=10) as response:
+    catalog = json.load(response)
+
+for game in catalog[&quot;games&quot;][:5]:
+    print(game[&quot;title&quot;], game[&quot;guideUrl&quot;])</code></pre>
+    </article>
+
+            </div>
+          </section>
         </article>
         <aside class="article-aside">
           <section class="facts-panel">
