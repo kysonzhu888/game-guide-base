@@ -21,6 +21,9 @@ test("deployment package keeps runtime files and excludes source artifacts", asy
     write(root, "update-history.css", ".history{}"),
     write(root, "google1089c0cca1aa4f0a.html", "google-site-verification: google1089c0cca1aa4f0a.html\n"),
     write(root, "games/example/index.html", "guide"),
+    write(root, "developers/index.html", "developer docs"),
+    write(root, "api/v1/games.json", '{"games":[]}'),
+    write(root, "api/v1/games.schema.json", '{"type":"object"}'),
     write(root, "functions/api/comments.js", "export {}"),
     write(root, "assets/hero-game-guides.png", "hero"),
     write(root, "assets/example/raw.png", "raw screenshot"),
@@ -33,6 +36,9 @@ test("deployment package keeps runtime files and excludes source artifacts", asy
 
   assert.equal(await textAt(output, "index.html"), "home");
   assert.equal(await textAt(output, "games/example/index.html"), "guide");
+  assert.equal(await textAt(output, "developers/index.html"), "developer docs");
+  assert.equal(await textAt(output, "api/v1/games.json"), '{"games":[]}');
+  assert.equal(await textAt(output, "api/v1/games.schema.json"), '{"type":"object"}');
   assert.equal(await textAt(output, "functions/api/comments.js"), "export {}");
   assert.equal(await textAt(output, "assets/hero-game-guides.png"), "hero");
   assert.equal(

@@ -16,8 +16,10 @@ const ROOT_FILES = [
 const RUNTIME_DIRECTORIES = [
   "about",
   "access",
+  "api",
   "contact",
   "creators",
+  "developers",
   "functions",
   "games",
   "genres",
