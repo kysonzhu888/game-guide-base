@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-07-16",
+  "mode": "new-guides",
+  "targetCount": 5,
+  "baseline": {
+    "ref": "0a4b6f4d8bb7e916eb2fc3f2fc1efa879266b1df",
+    "gameCount": 78
+  },
+  "final": {
+    "gameCount": 83
+  },
+  "linear": {
+    "parentIssue": "UCH-41",
+    "dailyIssue": "UCH-173"
+  },
+  "guides": [
+    {
+      "slug": "loopit-sprinkles-salon",
+      "sourceUrl": "https://share.loopit.me/game/fa750a18-1646-458f-9431-ec8b9a3b4cb6",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "Cut once, Dye once, the first visibly pink swatch, and Done reached Shift Done with one star and the message 'Well... it's a unique style!'."
+      ],
+      "pending": [
+        "The full-score three-star route and alternate customer requests remain pending."
+      ],
+      "evidence": [
+        {
+          "type": "frame",
+          "path": "fa750a18-1646-458f-9431-ec8b9a3b4cb6/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "fa750a18-1646-458f-9431-ec8b9a3b4cb6/04-outcome.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-unpack-your-room",
+      "sourceUrl": "https://share.loopit.me/game/924c0ee7-31be-42d1-9df2-6fcf8b6f56e7",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "Living Room with Herringbone flooring and a Geometric wall was visibly applied.",
+        "The playable's Screenshot control exported a real 466 by 720 PNG."
+      ],
+      "pending": [
+        "Tour behavior and all alternate room and preset combinations remain pending."
+      ],
+      "evidence": [
+        {
+          "type": "frame",
+          "path": "924c0ee7-31be-42d1-9df2-6fcf8b6f56e7/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "924c0ee7-31be-42d1-9df2-6fcf8b6f56e7/03-outcome.jpg"
+        },
+        {
+          "type": "screenshot",
+          "path": "924c0ee7-31be-42d1-9df2-6fcf8b6f56e7/04-exported-room.png"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-pull-the-pin",
+      "sourceUrl": "https://share.loopit.me/game/2cae2b3d-ff09-47c1-a64f-ecd4478f94ef",
+      "status": "verified",
+      "dynamic": true,
+      "outcomes": [
+        "Dragging the lower-left red pin handle left while leaving the upper lava pin in place reached LEVEL CLEARED and Play Again."
+      ],
+      "pending": [
+        "Only the observed starting level was verified."
+      ],
+      "evidence": [
+        {
+          "type": "video",
+          "path": "2cae2b3d-ff09-47c1-a64f-ecd4478f94ef/playthrough.mov",
+          "captureMethod": "screen-recording",
+          "sourceFrameCount": 459
+        },
+        {
+          "type": "frame",
+          "path": "2cae2b3d-ff09-47c1-a64f-ecd4478f94ef/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "2cae2b3d-ff09-47c1-a64f-ecd4478f94ef/02-after-pull.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-mantisopedia",
+      "sourceUrl": "https://share.loopit.me/game/7b1ef62f-46e0-4e45-a5be-f78b53a0f8a9",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "Opening Orchid Mantis and pressing UNLOCK NEW FACT three times reached 3/3 Facts."
+      ],
+      "pending": [
+        "The other 22 observed species profiles remain untested."
+      ],
+      "evidence": [
+        {
+          "type": "frame",
+          "path": "7b1ef62f-46e0-4e45-a5be-f78b53a0f8a9/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "7b1ef62f-46e0-4e45-a5be-f78b53a0f8a9/02-orchid-3-of-3.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-escapa-de-los-backrooms-part-1",
+      "sourceUrl": "https://share.loopit.me/game/8638bc10-ccff-4517-9105-1eb635ea83a5",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "The backpack, dark-zone, military-flashlight, and distorted-wall route reached ESCAPE and FIN DE LA PARTE 1."
+      ],
+      "pending": [
+        "Alternate branches, failure endings, and any Part 2 content remain untested."
+      ],
+      "evidence": [
+        {
+          "type": "frame",
+          "path": "8638bc10-ccff-4517-9105-1eb635ea83a5/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "8638bc10-ccff-4517-9105-1eb635ea83a5/02-route.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "8638bc10-ccff-4517-9105-1eb635ea83a5/03-outcome.jpg"
+        }
+      ]
+    }
+  ],
+  "rejectedCandidates": [
+    {
+      "sourceUrl": "https://share.loopit.me/game/78b8ead9-d6d3-4d06-8a5e-00b6c4cfbabf",
+      "reason": "The playable displayed Update to play instead of a usable chess board."
+    },
+    {
+      "sourceUrl": "https://share.loopit.me/game/5dc294a4-c821-4f75-a9c8-e1f2a9dc80da",
+      "reason": "BEGIN JOURNEY redirected to app-store download surfaces instead of an in-browser outcome."
+    },
+    {
+      "sourceUrl": "https://share.loopit.me/game/c6ac06f8-2523-4080-ad4d-c729f71a7f16",
+      "reason": "The run entered an unrecoverable ERROR and reconnect loop before an outcome."
+    },
+    {
+      "sourceUrl": "https://share.loopit.me/game/0273fef5-4bd3-48b3-b1dd-b84113a097dd",
+      "reason": "The isolated fallback session never finished loading the playable assets, so no gameplay outcome was claimed."
+    }
+  ]
+}

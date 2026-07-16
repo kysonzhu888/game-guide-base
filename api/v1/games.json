@@ -1,13 +1,13 @@
 {
   "schemaUrl": "https://game-guide-base.pages.dev/api/v1/games.schema.json",
   "schemaVersion": "1.0",
-  "dataUpdatedAt": "2026-07-15",
+  "dataUpdatedAt": "2026-07-16",
   "site": {
     "name": "Game Guide Base",
     "url": "https://gameguidebase.com/",
     "developerDocsUrl": "https://gameguidebase.com/developers/"
   },
-  "count": 78,
+  "count": 83,
   "games": [
     {
       "slug": "loopit-android-9-0-p",
@@ -340,6 +340,21 @@
       "updatedAt": "2026-07-02"
     },
     {
+      "slug": "loopit-escapa-de-los-backrooms-part-1",
+      "title": "Escapa de los Backrooms: Parte 1",
+      "genre": "Branching survival adventure",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Tomás Alonso",
+      "guideUrl": "https://gameguidebase.com/games/loopit-escapa-de-los-backrooms-part-1/",
+      "sourceUrl": "https://share.loopit.me/game/8638bc10-ccff-4517-9105-1eb635ea83a5",
+      "access": "free",
+      "updatedAt": "2026-07-16"
+    },
+    {
       "slug": "loopit-ethereal-gesture-maze",
       "title": "Ethereal Gesture Maze",
       "genre": "Gesture maze",
@@ -580,6 +595,21 @@
       "updatedAt": "2026-07-02"
     },
     {
+      "slug": "loopit-mantisopedia",
+      "title": "Mantisopedia",
+      "genre": "Investigation clicker",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Jesus sebastian",
+      "guideUrl": "https://gameguidebase.com/games/loopit-mantisopedia/",
+      "sourceUrl": "https://share.loopit.me/game/7b1ef62f-46e0-4e45-a5be-f78b53a0f8a9",
+      "access": "free",
+      "updatedAt": "2026-07-16"
+    },
+    {
       "slug": "loopit-million-dollar-ball",
       "title": "Million Dollar Ball",
       "genre": "Physics draw",
@@ -743,6 +773,21 @@
       "sourceUrl": "https://share.loopit.me/game/37df0a9d-3cda-421c-8a31-1f15c55b0a4c",
       "access": "free",
       "updatedAt": "2026-07-06"
+    },
+    {
+      "slug": "loopit-pull-the-pin",
+      "title": "Pull the Pin",
+      "genre": "Pin-pull physics puzzle",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Giahan Tran",
+      "guideUrl": "https://gameguidebase.com/games/loopit-pull-the-pin/",
+      "sourceUrl": "https://share.loopit.me/game/2cae2b3d-ff09-47c1-a64f-ecd4478f94ef",
+      "access": "free",
+      "updatedAt": "2026-07-16"
     },
     {
       "slug": "loopit-pump-it-up-balloon",
@@ -925,6 +970,21 @@
       "updatedAt": "2026-07-11"
     },
     {
+      "slug": "loopit-sprinkles-salon",
+      "title": "Sprinkles Salon",
+      "genre": "Salon styling puzzle",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Laylah Hadley",
+      "guideUrl": "https://gameguidebase.com/games/loopit-sprinkles-salon/",
+      "sourceUrl": "https://share.loopit.me/game/fa750a18-1646-458f-9431-ec8b9a3b4cb6",
+      "access": "free",
+      "updatedAt": "2026-07-16"
+    },
+    {
       "slug": "loopit-stage-music-shifter",
       "title": "Stage Music Shifter",
       "genre": "Stage battler",
@@ -1088,6 +1148,21 @@
       "sourceUrl": "https://share.loopit.me/game/12644e22-efd5-480c-8ee1-c059287d9a56",
       "access": "free",
       "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-unpack-your-room",
+      "title": "Unpack Your Room",
+      "genre": "Room customization",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "sy_jung",
+      "guideUrl": "https://gameguidebase.com/games/loopit-unpack-your-room/",
+      "sourceUrl": "https://share.loopit.me/game/924c0ee7-31be-42d1-9df2-6fcf8b6f56e7",
+      "access": "free",
+      "updatedAt": "2026-07-16"
     },
     {
       "slug": "loopit-w-game",

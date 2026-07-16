@@ -7326,5 +7326,475 @@
       "The intermediate ROLLING state is useful evidence, but the settled card is the actual outcome.",
       "Biome skipping and upgrade flows were not explored in this run."
     ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "communityNotes": [
+      "The source card showed 6.4k views, 51 likes, 16 comments, and Remix 3 for Laylah Hadley's salon styling game."
+    ],
+    "slug": "loopit-sprinkles-salon",
+    "title": "Sprinkles Salon",
+    "genre": "Salon styling puzzle",
+    "difficulty": "A request-matching salon game with partial-score outcomes.",
+    "searchIntent": "Sprinkles Salon guide, short pink hair, Cut Dye Done, one star outcome",
+    "sourceUrl": "https://share.loopit.me/game/fa750a18-1646-458f-9431-ec8b9a3b4cb6",
+    "creator": "Laylah Hadley",
+    "creatorSlug": "laylah-hadley",
+    "stats": {
+      "views": "6.4k",
+      "likes": "51",
+      "comments": "16",
+      "remixes": "3"
+    },
+    "summary": "Sprinkles Salon asks you to match a customer's requested hairstyle with Cut and Dye actions. The verified short-pink attempt completed the shift but earned one star.",
+    "quickAnswer": "For the verified one-star route, tap Cut once, Dye once, choose the first visibly pink swatch, and tap Done once.",
+    "basics": [
+      "The verified customer asked, 'Hi! Can I get short pink hair?'",
+      "The available styling actions include Cut, Dye, color swatches, and Done.",
+      "The tested route used one Cut action, one Dye action, and the first visibly pink swatch.",
+      "That route reached Shift Done with one star and the message 'Well... it's a unique style!'"
+    ],
+    "controls": [
+      "Tap Cut once to shorten the customer's hair.",
+      "Tap Dye, then tap the first swatch that appears visibly pink.",
+      "Tap Done once to submit the style and reveal the shift result."
+    ],
+    "strategy": [
+      "Read the customer's request before changing the hairstyle.",
+      "Make one deliberate change at a time so the submitted route can be reproduced.",
+      "Treat the one-star result as a verified partial route, not as the optimal solution."
+    ],
+    "mistakes": [
+      "Calling the tested route a perfect match when the outcome awarded only one star.",
+      "Tapping Cut or Dye repeatedly without checking the visible hairstyle state.",
+      "Submitting before confirming that both the requested length and color are visible."
+    ],
+    "faq": [
+      [
+        "What did the customer request?",
+        "Short pink hair."
+      ],
+      [
+        "What result did the verified route earn?",
+        "Shift Done with one star and the message 'Well... it's a unique style!'"
+      ],
+      [
+        "Is the three-star solution known?",
+        "No. This run only establishes a reproducible one-star route; the optimal sequence remains pending."
+      ]
+    ],
+    "creatorContext": [
+      "Laylah Hadley is the creator name shown on the source card.",
+      "The source card showed 6.4k views, 51 likes, 16 comments, and Remix 3.",
+      "The playable uses a compact customer-request and salon-action loop."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-sprinkles-salon/01-entry.jpg",
+        "alt": "Sprinkles Salon entry screen with a customer asking for short pink hair.",
+        "caption": "The opening request establishes the target: short pink hair."
+      },
+      {
+        "src": "/assets/loopit-sprinkles-salon/02-one-star-outcome.jpg",
+        "alt": "Sprinkles Salon Shift Done screen showing a one-star result.",
+        "caption": "The tested Cut, Dye, pink-swatch, and Done route completed the shift with one star."
+      }
+    ],
+    "coverageStatus": "Verified on 2026-07-16 through one reproducible short-pink styling route that reached a one-star Shift Done result; the optimal route remains pending.",
+    "coverageChecklist": [
+      "Recorded the public share URL, creator, and visible source-card stats.",
+      "Captured the customer's short-pink request before styling.",
+      "Replayed the Cut, Dye, first-pink-swatch, and Done sequence.",
+      "Captured the resulting one-star Shift Done screen."
+    ],
+    "coverageNotes": [
+      "The outcome proves that the tested route completes the shift, but not that it is the intended full-score solution.",
+      "No three-star or alternate-customer route was established in this run."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "communityNotes": [
+      "The source card showed 4.3k views, 80 likes, 4 comments, and Remix 5 for sy_jung's room customization playable."
+    ],
+    "slug": "loopit-unpack-your-room",
+    "title": "Unpack Your Room",
+    "genre": "Room customization",
+    "difficulty": "A low-pressure interior customization and export activity.",
+    "searchIntent": "Unpack Your Room guide, Living Room, Herringbone floor, Geometric wall, Screenshot export",
+    "sourceUrl": "https://share.loopit.me/game/924c0ee7-31be-42d1-9df2-6fcf8b6f56e7",
+    "creator": "sy_jung",
+    "creatorSlug": "sy-jung",
+    "stats": {
+      "views": "4.3k",
+      "likes": "80",
+      "comments": "4",
+      "remixes": "5"
+    },
+    "summary": "Unpack Your Room is a room-design playable with floor and wall presets plus a Screenshot export. The verified run customized a Living Room and produced a real PNG export.",
+    "quickAnswer": "Choose Living Room, open Decorate, set FLOOR to Herringbone and WALL to Geometric, then use Screenshot to export the finished room.",
+    "basics": [
+      "The verified route started from the Living Room scene.",
+      "Decorate exposes separate FLOOR and WALL preset selectors.",
+      "The tested combination used Herringbone flooring and a Geometric wall.",
+      "The Screenshot control generated a 466 by 720 PNG of the customized room."
+    ],
+    "controls": [
+      "Use Decorate to open the floor and wall preset controls.",
+      "Tap a FLOOR or WALL preset to apply it to the room preview.",
+      "Use Screenshot to export the current room as an image."
+    ],
+    "strategy": [
+      "Choose the room type before fine-tuning its surface presets.",
+      "Change one surface at a time so each visual difference remains easy to verify.",
+      "Export only after the preview shows the intended floor and wall combination."
+    ],
+    "mistakes": [
+      "Assuming the share iframe title 'Meme Game' is the editorial name of the playable.",
+      "Taking a browser screenshot without testing the playable's own Screenshot export.",
+      "Changing multiple presets without confirming which choice produced the final appearance."
+    ],
+    "faq": [
+      [
+        "Which combination was verified?",
+        "Living Room with Herringbone flooring and a Geometric wall."
+      ],
+      [
+        "Does the Screenshot control produce a real file?",
+        "Yes. The verified run downloaded a 466 by 720 PNG of the customized room."
+      ],
+      [
+        "Which other presets were visible?",
+        "Floor options included Light Oak, Dark Oak, Marble, Grey Tile, Checkered, Concrete, Carpet, Slate, and Hexagon; several additional wall patterns were also visible."
+      ]
+    ],
+    "creatorContext": [
+      "sy_jung is the creator name shown on the source card.",
+      "The source card showed 4.3k views, 80 likes, 4 comments, and Remix 5.",
+      "The creator caption reads 'Unpack your room!' while the embedded iframe title reads 'Meme Game.'"
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-unpack-your-room/01-entry.jpg",
+        "alt": "Unpack Your Room entry screen before the room surfaces are customized.",
+        "caption": "The entry frame shows the room-design interface before the verified changes."
+      },
+      {
+        "src": "/assets/loopit-unpack-your-room/02-customized-room.jpg",
+        "alt": "Unpack Your Room with Herringbone floor and Geometric wall selected.",
+        "caption": "The customized preview shows the verified Herringbone and Geometric combination."
+      },
+      {
+        "src": "/assets/loopit-unpack-your-room/03-exported-room.png",
+        "alt": "PNG exported from the Unpack Your Room Screenshot control.",
+        "caption": "The playable's own Screenshot control exported this finished-room PNG."
+      }
+    ],
+    "coverageStatus": "Verified on 2026-07-16 through Living Room customization with Herringbone flooring, a Geometric wall, and a successful PNG Screenshot export.",
+    "coverageChecklist": [
+      "Recorded the public share URL, creator, caption, and visible stats.",
+      "Captured the initial Living Room state.",
+      "Applied and captured the Herringbone floor and Geometric wall combination.",
+      "Used the playable's Screenshot control and preserved the downloaded PNG."
+    ],
+    "coverageNotes": [
+      "The verified export is stronger evidence than a browser-only capture because it came from the playable's own control.",
+      "Tour behavior and every alternate room or preset combination were not exhaustively tested."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "communityNotes": [
+      "The source card showed 162 views, 6 likes, 0 comments, and Remix 0 for Giahan Tran's pin-pull physics puzzle."
+    ],
+    "slug": "loopit-pull-the-pin",
+    "title": "Pull the Pin",
+    "genre": "Pin-pull physics puzzle",
+    "difficulty": "A short drag-controlled hazard puzzle with one verified solution.",
+    "searchIntent": "Pull the Pin Loopit guide, lower-left red pin, lava pin, level cleared",
+    "sourceUrl": "https://share.loopit.me/game/2cae2b3d-ff09-47c1-a64f-ecd4478f94ef",
+    "creator": "Giahan Tran",
+    "creatorSlug": "giahan-tran",
+    "stats": {
+      "views": "162",
+      "likes": "6",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Pull the Pin is a drag-controlled physics puzzle with a safe lower pin and an upper lava hazard. Pulling only the lower-left red handle cleared the tested level.",
+    "quickAnswer": "Drag the lower-left red pin handle to the left and leave the upper lava pin in place; the verified run ends on LEVEL CLEARED.",
+    "basics": [
+      "The level presents multiple pins around a physics-based hazard layout.",
+      "The lower-left red handle is the safe pin used in the verified solution.",
+      "The upper pin contains the lava hazard and was left untouched.",
+      "One successful pull produced the LEVEL CLEARED screen with a Play Again button."
+    ],
+    "controls": [
+      "Press and drag the lower-left red pin handle toward the left.",
+      "Release after the pin has moved out of the chamber.",
+      "Use Play Again only after the LEVEL CLEARED result appears."
+    ],
+    "strategy": [
+      "Identify which pin releases the safe path before dragging anything.",
+      "Leave the upper lava pin in place so the hazard remains isolated.",
+      "Use a clean horizontal drag on the lower-left handle rather than tapping it."
+    ],
+    "mistakes": [
+      "Pulling the upper lava pin before securing the safe route.",
+      "Tapping the pin without completing the drag gesture.",
+      "Claiming every level is solved when only the observed starting level was verified."
+    ],
+    "faq": [
+      [
+        "Which pin should I pull?",
+        "Pull the lower-left red handle to the left."
+      ],
+      [
+        "Should I move the lava pin?",
+        "No. The verified solution leaves the upper lava pin in place."
+      ],
+      [
+        "How do I know the solution worked?",
+        "The page displays LEVEL CLEARED and a Play Again button."
+      ]
+    ],
+    "creatorContext": [
+      "Giahan Tran is the creator name shown on the source card.",
+      "The source card showed 162 views, 6 likes, 0 comments, and Remix 0.",
+      "The creator caption reads 'Make Playable Mini-apps.'"
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-pull-the-pin/01-entry.jpg",
+        "alt": "Pull the Pin starting level with the lower red pin and upper lava pin visible.",
+        "caption": "The entry frame establishes both the safe lower pin and the upper hazard."
+      },
+      {
+        "src": "/assets/loopit-pull-the-pin/02-level-cleared.jpg",
+        "alt": "Pull the Pin LEVEL CLEARED screen after dragging the lower-left pin.",
+        "caption": "Dragging the lower-left red handle left cleared the verified level."
+      }
+    ],
+    "coverageStatus": "Verified on 2026-07-16 through a recorded drag of the lower-left red pin that reached LEVEL CLEARED while the upper lava pin remained untouched.",
+    "coverageChecklist": [
+      "Recorded the public share URL, creator caption, and visible stats.",
+      "Captured the starting pin and hazard layout.",
+      "Recorded the drag-controlled playthrough of the lower-left pin.",
+      "Captured the LEVEL CLEARED result."
+    ],
+    "coverageNotes": [
+      "The interaction is input-driven and physics-based, but the observed level resolves deterministically with one drag.",
+      "Only the starting level shown in this run was verified."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "communityNotes": [
+      "The source card showed 76 views, 3 likes, 0 comments, and Remix 0 for Jesus sebastian's mantis encyclopedia playable."
+    ],
+    "slug": "loopit-mantisopedia",
+    "title": "Mantisopedia",
+    "genre": "Investigation clicker",
+    "difficulty": "A static species encyclopedia with click-to-unlock fact cards.",
+    "searchIntent": "Mantisopedia guide, Orchid Mantis, unlock new fact, 3 of 3 facts",
+    "sourceUrl": "https://share.loopit.me/game/7b1ef62f-46e0-4e45-a5be-f78b53a0f8a9",
+    "creator": "Jesus sebastian",
+    "creatorSlug": "jesus-sebastian",
+    "stats": {
+      "views": "76",
+      "likes": "3",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Mantisopedia is a clickable mantis encyclopedia with species profiles and unlockable facts. The verified run opened Orchid Mantis and revealed all three of its facts.",
+    "quickAnswer": "Open Orchid Mantis and click UNLOCK NEW FACT three times; the profile reaches 3/3 Facts and reveals all verified Orchid Mantis notes.",
+    "basics": [
+      "The encyclopedia exposed 23 named species buttons in the observed list.",
+      "Selecting Orchid Mantis opens the Hymenopus coronatus profile.",
+      "The profile identifies it as harmless, medium-sized at 5-8 cm, and native to Southeast Asian tropical rainforests.",
+      "Three presses on UNLOCK NEW FACT changed the counter to 3/3 Facts."
+    ],
+    "controls": [
+      "Tap a species name to open its profile.",
+      "Tap UNLOCK NEW FACT once for each hidden fact.",
+      "Read the fact counter to confirm how many profile facts are unlocked."
+    ],
+    "strategy": [
+      "Open one species at a time so its facts remain tied to the correct profile.",
+      "Watch the counter after every unlock instead of assuming a tap registered.",
+      "Capture the completed 3/3 state when documenting a fully revealed species."
+    ],
+    "mistakes": [
+      "Treating the species list as decoration instead of interactive profile buttons.",
+      "Stopping before the fact counter reaches 3/3.",
+      "Generalizing the Orchid Mantis facts to the other 22 listed species."
+    ],
+    "faq": [
+      [
+        "What is the Orchid Mantis scientific name?",
+        "Hymenopus coronatus."
+      ],
+      [
+        "How do I reveal all Orchid Mantis facts?",
+        "Open its profile and press UNLOCK NEW FACT three times until the counter reads 3/3 Facts."
+      ],
+      [
+        "Which facts were revealed?",
+        "Its camouflage can attract more pollinators than real flowers, nymphs resemble firebugs before developing flower mimicry, and it can adjust color intensity to nearby flowers."
+      ]
+    ],
+    "creatorContext": [
+      "Jesus sebastian is the creator name shown on the source card.",
+      "The source card showed 76 views, 3 likes, 0 comments, and Remix 0.",
+      "The creator caption reads 'mantispedia' while this guide uses the displayed editorial title Mantisopedia."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-mantisopedia/01-entry.jpg",
+        "alt": "Mantisopedia entry screen with the mantis species list.",
+        "caption": "The entry frame shows the encyclopedia-style list of selectable species."
+      },
+      {
+        "src": "/assets/loopit-mantisopedia/02-orchid-3-of-3.jpg",
+        "alt": "Mantisopedia Orchid Mantis profile with 3/3 Facts unlocked.",
+        "caption": "Three unlock actions revealed the complete observed Orchid Mantis fact set."
+      }
+    ],
+    "coverageStatus": "Verified on 2026-07-16 through the Orchid Mantis profile and all three UNLOCK NEW FACT actions, ending at 3/3 Facts; other species remain untested.",
+    "coverageChecklist": [
+      "Recorded the public share URL, creator caption, and visible stats.",
+      "Counted the 23 named species buttons exposed by the page.",
+      "Opened the Orchid Mantis profile and recorded its core profile fields.",
+      "Unlocked and captured all three Orchid Mantis facts at 3/3."
+    ],
+    "coverageNotes": [
+      "The Orchid Mantis path is complete for the three facts exposed by this build.",
+      "The remaining 22 listed species were not individually opened or verified in this run."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-16",
+    "lastUpdated": "2026-07-16",
+    "communityNotes": [
+      "The published Loopit API record showed 96 views, 6 likes, 0 comments, and Remix 0 for Tomás Alonso's Spanish Backrooms adventure at verification time."
+    ],
+    "slug": "loopit-escapa-de-los-backrooms-part-1",
+    "title": "Escapa de los Backrooms: Parte 1",
+    "genre": "Branching survival adventure",
+    "difficulty": "A short choice-driven escape route with random resource-loss events.",
+    "searchIntent": "Escapa de los Backrooms Parte 1 guide, Nivel 0, military flashlight, FIN DE LA PARTE 1",
+    "sourceUrl": "https://share.loopit.me/game/8638bc10-ccff-4517-9105-1eb635ea83a5",
+    "creator": "Tomás Alonso",
+    "creatorSlug": "tomas-alonso",
+    "stats": {
+      "views": "96",
+      "likes": "6",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Escapa de los Backrooms: Parte 1 is a Spanish choice-driven survival story set in Nivel 0. The verified flashlight route crossed the distorted wall and reached ESCAPE with FIN DE LA PARTE 1.",
+    "quickAnswer": "Start the connection, investigate the wet carpet, search and keep the abandoned backpack, enter the totally dark zone, use the military flashlight, touch and push through the distorted wall, then choose Despertar.",
+    "basics": [
+      "The opening database screen identifies the scenario as BACKROOMS - NIVEL 0.",
+      "Cordura and Hidratación are visible resources, and random events can change their exact totals between attempts.",
+      "The verified route collects the abandoned backpack before entering the dark zone.",
+      "The terminal result reads ESCAPE, Has escapado... por ahora, and FIN DE LA PARTE 1."
+    ],
+    "controls": [
+      "Tap ESTABLECER ENLACE DE CONEXIÓN to start the expedition.",
+      "Choose one Spanish story-action button at each decision point.",
+      "Use MOCHILA to inspect collected items or REINICIAR to restart the current run."
+    ],
+    "strategy": [
+      "Investigate the wet carpet, then search the abandoned backpack and keep everything before advancing.",
+      "Choose the totally dark route and turn on the military flashlight instead of retreating.",
+      "Touch the distorted wall, push through it, and choose Despertar to finish the verified escape route."
+    ],
+    "mistakes": [
+      "Entering the dark route without first collecting the military flashlight from the backpack.",
+      "Treating the observed Cordura and Hidratación totals as guaranteed because random events can change them.",
+      "Stopping at Has escapado... por ahora without confirming the FIN DE LA PARTE 1 result."
+    ],
+    "faq": [
+      [
+        "What is the verified winning route?",
+        "Investigate the wet carpet, search and keep the backpack, enter the totally dark zone, use the military flashlight, touch and push through the distorted wall, then choose Despertar."
+      ],
+      [
+        "How do I know the route succeeded?",
+        "The final screen shows ESCAPE, Has escapado... por ahora, and FIN DE LA PARTE 1."
+      ],
+      [
+        "Are the resource totals fixed?",
+        "No. The run displayed random Cordura and Hidratación losses, so the route choices are more reliable than copying exact percentages."
+      ]
+    ],
+    "creatorContext": [
+      "Tomás Alonso is the author name returned by the published Loopit API record.",
+      "The source description reads 'Escapa de los Backrooms parte 1 #Backrooms #viral.'",
+      "The published record showed 96 views, 6 likes, 0 comments, and Remix 0 at verification time."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-escapa-de-los-backrooms-part-1/01-entry.jpg",
+        "alt": "M.E.G. database entry for Backrooms Nivel 0 with the connection button.",
+        "caption": "The opening database screen establishes Nivel 0 and starts the expedition through the M.E.G. connection."
+      },
+      {
+        "src": "/assets/loopit-escapa-de-los-backrooms-part-1/02-route.jpg",
+        "alt": "Escapa de los Backrooms route screen after collecting backpack items.",
+        "caption": "The verified route collects two backpack items before choosing the totally dark zone."
+      },
+      {
+        "src": "/assets/loopit-escapa-de-los-backrooms-part-1/03-outcome.jpg",
+        "alt": "Escapa de los Backrooms final ESCAPE screen showing FIN DE LA PARTE 1.",
+        "caption": "Crossing the distorted wall and waking up reached the explicit Part 1 escape ending."
+      }
+    ],
+    "coverageStatus": "Verified on 2026-07-16 through a complete flashlight route from the M.E.G. connection to ESCAPE and FIN DE LA PARTE 1; alternate branches and failure endings remain untested.",
+    "coverageChecklist": [
+      "Recorded the public share URL, published API metadata, creator, and source description.",
+      "Captured the M.E.G. entry screen before beginning the expedition.",
+      "Followed the backpack, dark-zone, flashlight, and distorted-wall decisions in sequence.",
+      "Captured the explicit ESCAPE and FIN DE LA PARTE 1 outcome."
+    ],
+    "coverageNotes": [
+      "The verified route succeeded despite random resource-loss events; exact percentages should not be treated as deterministic.",
+      "Alternate routes, reported failure endings, and a possible Part 2 were not verified in this run."
+    ]
   }
 ]

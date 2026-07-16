@@ -1489,5 +1489,89 @@
     "width": 1200,
     "format": "jpeg",
     "quality": 82
+  },
+  "/assets/loopit-sprinkles-salon/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-sprinkles-salon/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-sprinkles-salon/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-sprinkles-salon/02-one-star-outcome.jpg": {
+    "r2Key": "games/loopit/loopit-sprinkles-salon/screenshots/02-one-star-outcome-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-sprinkles-salon/screenshots/02-one-star-outcome-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-unpack-your-room/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-unpack-your-room/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-unpack-your-room/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-unpack-your-room/02-customized-room.jpg": {
+    "r2Key": "games/loopit/loopit-unpack-your-room/screenshots/02-customized-room-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-unpack-your-room/screenshots/02-customized-room-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-unpack-your-room/03-exported-room.png": {
+    "r2Key": "games/loopit/loopit-unpack-your-room/screenshots/03-exported-room-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-unpack-your-room/screenshots/03-exported-room-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-pull-the-pin/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-pull-the-pin/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-pull-the-pin/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-pull-the-pin/02-level-cleared.jpg": {
+    "r2Key": "games/loopit/loopit-pull-the-pin/screenshots/02-level-cleared-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-pull-the-pin/screenshots/02-level-cleared-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-mantisopedia/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-mantisopedia/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-mantisopedia/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-mantisopedia/02-orchid-3-of-3.jpg": {
+    "r2Key": "games/loopit/loopit-mantisopedia/screenshots/02-orchid-3-of-3-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-mantisopedia/screenshots/02-orchid-3-of-3-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-escapa-de-los-backrooms-part-1/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-escapa-de-los-backrooms-part-1/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-escapa-de-los-backrooms-part-1/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-escapa-de-los-backrooms-part-1/02-route.jpg": {
+    "r2Key": "games/loopit/loopit-escapa-de-los-backrooms-part-1/screenshots/02-route-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-escapa-de-los-backrooms-part-1/screenshots/02-route-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-escapa-de-los-backrooms-part-1/03-outcome.jpg": {
+    "r2Key": "games/loopit/loopit-escapa-de-los-backrooms-part-1/screenshots/03-outcome-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-escapa-de-los-backrooms-part-1/screenshots/03-outcome-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
   }
 }
