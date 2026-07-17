@@ -1,4 +1,39 @@
 {
+  "/assets/loopit-sub-surf/01-source-preview.png": {
+    "r2Key": "games/loopit/loopit-sub-surf/screenshots/01-source-preview-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-sub-surf/screenshots/01-source-preview-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-did-you-follow/01-source-preview.png": {
+    "r2Key": "games/loopit/loopit-did-you-follow/screenshots/01-source-preview-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-did-you-follow/screenshots/01-source-preview-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-no-colors-inc-v4/01-source-preview.png": {
+    "r2Key": "games/loopit/loopit-no-colors-inc-v4/screenshots/01-source-preview-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-no-colors-inc-v4/screenshots/01-source-preview-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-batman-city-defender/01-source-preview.png": {
+    "r2Key": "games/loopit/loopit-batman-city-defender/screenshots/01-source-preview-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-batman-city-defender/screenshots/01-source-preview-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-open-the-chest-safety/01-source-preview.png": {
+    "r2Key": "games/loopit/loopit-open-the-chest-safety/screenshots/01-source-preview-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-open-the-chest-safety/screenshots/01-source-preview-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
   "/assets/loopit-paws-on-loopit/01-campaign-ended.png": {
     "r2Key": "games/loopit/loopit-paws-on-loopit/screenshots/01-campaign-ended-1200w.jpg",
     "localOutput": ".media/games/loopit/loopit-paws-on-loopit/screenshots/01-campaign-ended-1200w.jpg",

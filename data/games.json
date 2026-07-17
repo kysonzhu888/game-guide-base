@@ -6,6 +6,419 @@
     ],
     "sourcePlatform": "Loopit",
     "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-17",
+    "lastUpdated": "2026-07-17",
+    "slug": "loopit-sub-surf",
+    "title": "Graffiti Runner",
+    "genre": "Lane runner",
+    "difficulty": "A neon lane-runner preview with side-switching and jump controls.",
+    "searchIntent": "Graffiti Runner Loopit guide, sub surf, tap side switch lanes, tap top jump",
+    "sourceUrl": "https://share.loopit.me/game/32504ffc-9d03-4824-bf7c-a71fb9b7fad9",
+    "creator": "MrDiePie",
+    "creatorSlug": "mrdiepie",
+    "stats": {
+      "views": "71",
+      "likes": "4",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Graffiti Runner is a Loopit lane-runner playable. The verified source preview shows Score 0, Tap side to switch lanes, and Tap top to jump.",
+    "quickAnswer": "Use the sides of the screen to change lanes and tap the top area to jump. This replay verified the opening control prompt and score HUD; the live run was blocked by the CDN challenge.",
+    "basics": [
+      "The preview title reads Graffiti Runner.",
+      "The score starts at 0.",
+      "The visible control prompt says Tap side to switch lanes.",
+      "A second prompt says Tap top to jump."
+    ],
+    "controls": [
+      "Tap the left or right side of the screen to change lanes.",
+      "Tap the upper play area to jump over hazards.",
+      "Keep one thumb ready for lane switching and one for jump timing on mobile."
+    ],
+    "strategy": [
+      "Treat the first seconds as a control calibration run.",
+      "Switch lanes early instead of waiting until an obstacle reaches the character.",
+      "Use short jump taps only when the game clearly asks for a top tap.",
+      "Replay in the Loopit app if the web iframe remains behind the CDN challenge."
+    ],
+    "mistakes": [
+      "Tapping the center only and expecting lane changes.",
+      "Waiting too late before switching lanes.",
+      "Claiming a high-score route without a playable run screenshot."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-sub-surf/01-source-preview.png",
+        "alt": "Graffiti Runner Loopit source preview with Score 0 and lane-switching instructions.",
+        "caption": "The public source preview verifies the title, score HUD, and lane/jump controls."
+      }
+    ],
+    "faq": [
+      [
+        "How do you switch lanes?",
+        "Tap the side of the screen according to the preview prompt."
+      ],
+      [
+        "How do you jump?",
+        "Tap the top area of the play screen."
+      ],
+      [
+        "Was a full run completed?",
+        "No. The source API and preview were verified, but the CDN playable returned a challenge during web replay."
+      ]
+    ],
+    "creatorContext": [
+      "MrDiePie is the Loopit display name shown by the public project_share API.",
+      "Visible source-page engagement was checked through the public Loopit project_share API on July 17, 2026.",
+      "The source share page returned HTTP 200, but the CDN playable iframe URL returned a Cloudflare challenge / HTTP 403 during this web replay pass."
+    ],
+    "communityNotes": [
+      "Source metadata was pulled from the public Loopit project_share API on July 17, 2026."
+    ],
+    "coverageStatus": "Source preview verified on July 17; playable iframe blocked by CDN HTTP 403 during web replay",
+    "coverageChecklist": [
+      "project_share API returned published metadata for project 32504ffc-9d03-4824-bf7c-a71fb9b7fad9.",
+      "Front-cover screenshot was downloaded and decoded as a real PNG source asset.",
+      "CDN index_url returned a Cloudflare challenge / HTTP 403, so no completion or failure route was verified."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-17",
+    "lastUpdated": "2026-07-17",
+    "slug": "loopit-did-you-follow",
+    "title": "Hypnotic Circle",
+    "genre": "Drawing toy",
+    "difficulty": "A minimalist drawing/flow toy that begins from an Enter Circle button.",
+    "searchIntent": "Hypnotic Circle Loopit guide, Did you follow, enter circle, draw your thoughts change the flow",
+    "sourceUrl": "https://share.loopit.me/game/3d89c824-cd7b-4ea1-98f9-88d3dc86ef2f",
+    "creator": "Kitty kitty baby",
+    "creatorSlug": "kitty-kitty-baby",
+    "stats": {
+      "views": "459.3K",
+      "likes": "33.9K",
+      "comments": "3.5K",
+      "remixes": "167"
+    },
+    "summary": "Hypnotic Circle is a high-engagement Loopit drawing toy. The verified preview shows a circular stroke, Draw your thoughts. Change the flow., and an Enter Circle button.",
+    "quickAnswer": "Press Enter Circle, then use drawing gestures to change the flow. This pass verified the start card and source metadata; the deeper drawing canvas was blocked by the CDN challenge.",
+    "basics": [
+      "The visible title reads Hypnotic Circle.",
+      "The subtitle says Draw your thoughts. Change the flow.",
+      "A white Enter Circle button starts the experience.",
+      "The project_share API reported 459K views and 33.9K likes during this pass."
+    ],
+    "controls": [
+      "Tap Enter Circle to start.",
+      "Draw or drag slowly once the circle canvas opens.",
+      "Use short strokes first so visual changes are easy to compare."
+    ],
+    "strategy": [
+      "Begin with a single stroke and watch how the circle responds.",
+      "Change one gesture at a time instead of scribbling immediately.",
+      "Capture before/after states if you are testing whether a pattern changed the flow."
+    ],
+    "mistakes": [
+      "Expecting a score-based win condition from a drawing toy.",
+      "Skipping the start card before reading the prompt.",
+      "Describing the canvas behavior without a successful post-button replay."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-did-you-follow/01-source-preview.png",
+        "alt": "Hypnotic Circle Loopit preview with Enter Circle button and draw your thoughts prompt.",
+        "caption": "The start card confirms the drawing/flow premise."
+      }
+    ],
+    "faq": [
+      [
+        "What starts Hypnotic Circle?",
+        "The Enter Circle button starts the playable."
+      ],
+      [
+        "Is this a score game?",
+        "The preview looks like a drawing or flow toy rather than a score challenge."
+      ],
+      [
+        "Was the drawing canvas verified?",
+        "No. The source preview was verified, but the CDN playable was blocked during this web pass."
+      ]
+    ],
+    "creatorContext": [
+      "Kitty kitty baby is the Loopit display name shown by the public project_share API.",
+      "Visible source-page engagement was checked through the public Loopit project_share API on July 17, 2026.",
+      "The source share page returned HTTP 200, but the CDN playable iframe URL returned a Cloudflare challenge / HTTP 403 during this web replay pass."
+    ],
+    "communityNotes": [
+      "This was selected as a high-engagement candidate from public search results and verified through the Loopit API."
+    ],
+    "coverageStatus": "Start card and source metadata verified on July 17; canvas route pending because CDN returned HTTP 403",
+    "coverageChecklist": [
+      "project_share API returned published metadata for project 3d89c824-cd7b-4ea1-98f9-88d3dc86ef2f.",
+      "Front-cover screenshot was downloaded and decoded as a real PNG source asset.",
+      "CDN index_url returned a Cloudflare challenge / HTTP 403, so the drawing canvas was not reached."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-17",
+    "lastUpdated": "2026-07-17",
+    "slug": "loopit-no-colors-inc-v4",
+    "title": "NoColorsInc V4.0",
+    "genre": "Protocol menu",
+    "difficulty": "A terminal-style menu game with Start Shift, Settings, Codes, Packs, and Protocol entries.",
+    "searchIntent": "NoColorsInc V4.0 Loopit guide, START SHIFT, codes, packs, protocol menu",
+    "sourceUrl": "https://share.loopit.me/game/c30d6319-ae75-4cd9-8451-e4f8f5f50caa",
+    "creator": "SystemUnitProductions",
+    "creatorSlug": "systemunitproductions",
+    "stats": {
+      "views": "6.1K",
+      "likes": "119",
+      "comments": "15",
+      "remixes": "2"
+    },
+    "summary": "NoColorsInc V4.0 is a Loopit terminal-style menu playable. The source preview shows a NO COLORS INC screen with Start Shift, Settings, Codes, Packs, and Protocol.",
+    "quickAnswer": "Start with Start Shift for the main route; use Codes only when you have a verified code. This pass verified the menu structure but not the shift route behind the CDN challenge.",
+    "basics": [
+      "The title is rendered as NOCOLORSINC.",
+      "The menu includes Start Shift, Settings, Codes, Packs, and Protocol.",
+      "The footer says V4.0 // System Ready.",
+      "The visual style is dark, green, and terminal-like."
+    ],
+    "controls": [
+      "Tap Start Shift to enter the main run.",
+      "Tap Settings before starting if audio or visual settings are needed.",
+      "Open Codes only when you have a code from the creator or source context.",
+      "Use Protocol for rules or lore if it opens in your app session."
+    ],
+    "strategy": [
+      "Use Start Shift first so you can identify the core objective.",
+      "Check Protocol after one run to understand whether the game has hidden rules.",
+      "Do not enter random code guesses without screenshots; code effects are unverified in this replay."
+    ],
+    "mistakes": [
+      "Starting from Codes before understanding the main route.",
+      "Assuming Packs are required for the first shift.",
+      "Treating the menu preview as proof of completed gameplay."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-no-colors-inc-v4/01-source-preview.png",
+        "alt": "NoColorsInc V4.0 Loopit menu with Start Shift, Settings, Codes, Packs, and Protocol.",
+        "caption": "The public preview verifies the full menu layout."
+      }
+    ],
+    "faq": [
+      [
+        "What should I tap first?",
+        "Start Shift is the likely main route entry."
+      ],
+      [
+        "Are there codes?",
+        "The menu has a Codes option, but this replay did not verify any working code."
+      ],
+      [
+        "Was a shift completed?",
+        "No. The web replay reached source metadata and preview only; the CDN iframe was blocked."
+      ]
+    ],
+    "creatorContext": [
+      "SystemUnitProductions is the Loopit display name shown by the public project_share API.",
+      "Visible source-page engagement was checked through the public Loopit project_share API on July 17, 2026.",
+      "The source share page returned HTTP 200, but the CDN playable iframe URL returned a Cloudflare challenge / HTTP 403 during this web replay pass."
+    ],
+    "communityNotes": [
+      "A public YouTube profile snippet referenced this source link; the actual guide data was verified against Loopit project_share."
+    ],
+    "coverageStatus": "Menu preview verified on July 17; Start Shift route pending because CDN returned HTTP 403",
+    "coverageChecklist": [
+      "project_share API returned published metadata for project c30d6319-ae75-4cd9-8451-e4f8f5f50caa.",
+      "Front-cover screenshot was downloaded and decoded as a real PNG source asset.",
+      "CDN index_url returned a Cloudflare challenge / HTTP 403, so menu buttons were not clicked."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-17",
+    "lastUpdated": "2026-07-17",
+    "slug": "loopit-batman-city-defender",
+    "title": "Batman City Defender",
+    "genre": "Defense tap",
+    "difficulty": "A superhero-themed tap-defense preview where threats descend on Gotham.",
+    "searchIntent": "Batman City Defender Loopit guide, Protect Gotham, tap to throw batarangs",
+    "sourceUrl": "https://share.loopit.me/game/83319a7a-865f-4f4d-a72e-17c6d40da722",
+    "creator": "daniel alexander barzola",
+    "creatorSlug": "daniel-alexander-barzola",
+    "stats": {
+      "views": "82",
+      "likes": "6",
+      "comments": "1",
+      "remixes": "0"
+    },
+    "summary": "Batman City Defender is a Loopit tap-defense playable. The verified preview says threats are descending on Gotham and Tap to throw batarangs.",
+    "quickAnswer": "Tap Protect Gotham to start, then tap incoming threats to throw batarangs. This pass verified the start card and control prompt; threat waves remain pending because the CDN blocked the playable.",
+    "basics": [
+      "The title reads Batman City Defender.",
+      "The start card says Threats are descending on Gotham.",
+      "The control prompt says Tap to throw batarangs.",
+      "A large Protect Gotham button starts the run."
+    ],
+    "controls": [
+      "Tap Protect Gotham to begin.",
+      "Tap threats as they descend to throw batarangs.",
+      "Prioritize targets closest to the bottom if multiple threats are visible."
+    ],
+    "strategy": [
+      "Keep taps short and centered on the incoming target.",
+      "Scan top-to-bottom so you do not miss descending threats.",
+      "Replay in the app to confirm whether waves speed up or add new enemy types."
+    ],
+    "mistakes": [
+      "Waiting for threats to reach the bottom before tapping.",
+      "Tapping the button area after the round starts instead of the threats.",
+      "Assuming wave behavior without a playable replay."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-batman-city-defender/01-source-preview.png",
+        "alt": "Batman City Defender Loopit preview with Protect Gotham button and batarang tap prompt.",
+        "caption": "The preview verifies the start button and tap-defense prompt."
+      }
+    ],
+    "faq": [
+      [
+        "How do you start?",
+        "Tap Protect Gotham."
+      ],
+      [
+        "What is the main action?",
+        "Tap to throw batarangs at descending threats."
+      ],
+      [
+        "Were waves completed?",
+        "No. The start card was verified, but web replay did not pass the CDN challenge."
+      ]
+    ],
+    "creatorContext": [
+      "daniel alexander barzola is the Loopit display name shown by the public project_share API.",
+      "Visible source-page engagement was checked through the public Loopit project_share API on July 17, 2026.",
+      "The source share page returned HTTP 200, but the CDN playable iframe URL returned a Cloudflare challenge / HTTP 403 during this web replay pass."
+    ],
+    "communityNotes": [
+      "This candidate was found through public Threads search snippets and verified with the Loopit API."
+    ],
+    "coverageStatus": "Start card verified on July 17; threat-wave route pending because CDN returned HTTP 403",
+    "coverageChecklist": [
+      "project_share API returned published metadata for project 83319a7a-865f-4f4d-a72e-17c6d40da722.",
+      "Front-cover screenshot was downloaded and decoded as a real PNG source asset.",
+      "CDN index_url returned a Cloudflare challenge / HTTP 403, so no threat wave was reached."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-17",
+    "lastUpdated": "2026-07-17",
+    "slug": "loopit-open-the-chest-safety",
+    "title": "Open the Chest Safety Notes",
+    "genre": "Prank clicker",
+    "difficulty": "A chest-tapping prank preview that asks for 67 taps; external reports say it may request photo-library permission.",
+    "searchIntent": "Open the chest Loopit guide, FooledYou, tap 67 times, photo permission warning",
+    "sourceUrl": "https://share.loopit.me/game/b9ca4c24-77fb-4e83-9606-85b09b8def10",
+    "creator": "Numpy",
+    "creatorSlug": "numpy",
+    "stats": {
+      "views": "177",
+      "likes": "7",
+      "comments": "5",
+      "remixes": "7"
+    },
+    "summary": "Open the Chest is a Loopit prank clicker. The source preview says Tap 67 times; this guide treats it as a safety-note page because public Reddit reports say the route can request photo-library permission and save prank images.",
+    "quickAnswer": "Do not grant photo-library or camera permissions just to finish the prank. The verified preview asks for 67 taps, but this replay stopped before any permission-gated action.",
+    "basics": [
+      "The preview prompt says Tap 67 times.",
+      "A red-and-gold chest is shown on a cream background.",
+      "The project description says Open the chest!! What could be inside? and #FooledYou.",
+      "Public Reddit threads describe this as a prank route that may ask for photo permission."
+    ],
+    "controls": [
+      "Tap the chest only if you intentionally want to test the prank.",
+      "Deny photo-library or camera permission if the prompt appears.",
+      "Close the playable if it asks for permissions unrelated to ordinary tapping."
+    ],
+    "strategy": [
+      "Treat this as a permission-safety check, not a normal score guide.",
+      "Read the permission dialog before continuing in the Loopit app.",
+      "If unwanted images are saved, revoke Loopit photo permissions and remove the saved files from the device gallery."
+    ],
+    "mistakes": [
+      "Granting photo-library access without reading why it is requested.",
+      "Continuing to tap after an unexpected permission prompt.",
+      "Letting a child complete the route unattended."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-open-the-chest-safety/01-source-preview.png",
+        "alt": "Open the Chest Loopit preview asking the player to tap 67 times.",
+        "caption": "The verified preview shows the Tap 67 times prompt; permission-gated behavior was not replayed."
+      }
+    ],
+    "faq": [
+      [
+        "Should I grant photo access?",
+        "No. Deny photo-library or camera access unless you fully understand why a prank game wants it."
+      ],
+      [
+        "Did this replay open the chest?",
+        "No. The source preview and API were verified, but the guide intentionally stops before permission-sensitive behavior."
+      ],
+      [
+        "Why is this on Game Guide Base?",
+        "Players search for this Loopit game after seeing the prank; this page records the source link and safety context without encouraging permission grants."
+      ]
+    ],
+    "creatorContext": [
+      "Numpy is the Loopit display name shown by the public project_share API.",
+      "Visible source-page engagement was checked through the public Loopit project_share API on July 17, 2026.",
+      "External Reddit reports describe this game as a prank that can request photo access; this site did not grant permissions or replay that branch."
+    ],
+    "communityNotes": [
+      "Reddit antivirus discussions identified this project ID while discussing unwanted gallery images; this guide uses that public context only as a safety warning.",
+      "This is not a malware verdict; it is a permission hygiene note for a user-generated prank playable."
+    ],
+    "coverageStatus": "Source preview verified on July 17; permission-sensitive prank route intentionally not played",
+    "coverageChecklist": [
+      "project_share API returned published metadata for project b9ca4c24-77fb-4e83-9606-85b09b8def10.",
+      "Front-cover screenshot was downloaded and decoded as a real PNG source asset.",
+      "No photo-library, camera, or account permissions were granted during this workflow."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
     "slug": "loopit-paws-on-loopit",
     "title": "Paws On Loopit",
     "genre": "Pet gallery",

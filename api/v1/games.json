@@ -1,13 +1,13 @@
 {
   "schemaUrl": "https://game-guide-base.pages.dev/api/v1/games.schema.json",
   "schemaVersion": "1.0",
-  "dataUpdatedAt": "2026-07-16",
+  "dataUpdatedAt": "2026-07-17",
   "site": {
     "name": "Game Guide Base",
     "url": "https://gameguidebase.com/",
     "developerDocsUrl": "https://gameguidebase.com/developers/"
   },
-  "count": 83,
+  "count": 88,
   "games": [
     {
       "slug": "loopit-android-9-0-p",
@@ -68,6 +68,21 @@
       "sourceUrl": "https://share.loopit.me/game/1eda36ca-aa15-4b97-94ba-0b20b390b9ff",
       "access": "free",
       "updatedAt": "2026-07-12"
+    },
+    {
+      "slug": "loopit-batman-city-defender",
+      "title": "Batman City Defender",
+      "genre": "Defense tap",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "daniel alexander barzola",
+      "guideUrl": "https://gameguidebase.com/games/loopit-batman-city-defender/",
+      "sourceUrl": "https://share.loopit.me/game/83319a7a-865f-4f4d-a72e-17c6d40da722",
+      "access": "free",
+      "updatedAt": "2026-07-17"
     },
     {
       "slug": "loopit-better-finger-clicker",
@@ -263,6 +278,21 @@
       "sourceUrl": "https://share.loopit.me/game/05dac973-7050-48ad-a48e-5821c603afa2",
       "access": "free",
       "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-did-you-follow",
+      "title": "Hypnotic Circle",
+      "genre": "Drawing toy",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Kitty kitty baby",
+      "guideUrl": "https://gameguidebase.com/games/loopit-did-you-follow/",
+      "sourceUrl": "https://share.loopit.me/game/3d89c824-cd7b-4ea1-98f9-88d3dc86ef2f",
+      "access": "free",
+      "updatedAt": "2026-07-17"
     },
     {
       "slug": "loopit-dont-look-back",
@@ -640,6 +670,21 @@
       "updatedAt": "2026-07-11"
     },
     {
+      "slug": "loopit-no-colors-inc-v4",
+      "title": "NoColorsInc V4.0",
+      "genre": "Protocol menu",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "SystemUnitProductions",
+      "guideUrl": "https://gameguidebase.com/games/loopit-no-colors-inc-v4/",
+      "sourceUrl": "https://share.loopit.me/game/c30d6319-ae75-4cd9-8451-e4f8f5f50caa",
+      "access": "free",
+      "updatedAt": "2026-07-17"
+    },
+    {
       "slug": "loopit-not-only-variable",
       "title": "Not Only Variable",
       "genre": "Narrative puzzle",
@@ -668,6 +713,21 @@
       "sourceUrl": "https://share.loopit.me/game/a7a67ac0-b867-435b-92d9-5aadad5fd811",
       "access": "free",
       "updatedAt": "2026-07-14"
+    },
+    {
+      "slug": "loopit-open-the-chest-safety",
+      "title": "Open the Chest Safety Notes",
+      "genre": "Prank clicker",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Numpy",
+      "guideUrl": "https://gameguidebase.com/games/loopit-open-the-chest-safety/",
+      "sourceUrl": "https://share.loopit.me/game/b9ca4c24-77fb-4e83-9606-85b09b8def10",
+      "access": "free",
+      "updatedAt": "2026-07-17"
     },
     {
       "slug": "loopit-paper-cutting",
@@ -1013,6 +1073,21 @@
       "sourceUrl": "https://share.loopit.me/game/8abd54a8-4e91-4e91-9b3b-4f5f58a6667f",
       "access": "free",
       "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-sub-surf",
+      "title": "Graffiti Runner",
+      "genre": "Lane runner",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "MrDiePie",
+      "guideUrl": "https://gameguidebase.com/games/loopit-sub-surf/",
+      "sourceUrl": "https://share.loopit.me/game/32504ffc-9d03-4824-bf7c-a71fb9b7fad9",
+      "access": "free",
+      "updatedAt": "2026-07-17"
     },
     {
       "slug": "loopit-surgery-incision",
