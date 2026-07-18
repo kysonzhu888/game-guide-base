@@ -1573,5 +1573,75 @@
     "width": 1200,
     "format": "jpeg",
     "quality": 82
+  },
+  "/assets/loopit-blue-emotional-speedrun/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-blue-emotional-speedrun/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-blue-emotional-speedrun/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-blue-emotional-speedrun/02-run-state.jpg": {
+    "r2Key": "games/loopit/loopit-blue-emotional-speedrun/screenshots/02-run-state-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-blue-emotional-speedrun/screenshots/02-run-state-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-solo-eliminate-little-monsters/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-solo-eliminate-little-monsters/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-solo-eliminate-little-monsters/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-solo-eliminate-little-monsters/02-board.jpg": {
+    "r2Key": "games/loopit/loopit-solo-eliminate-little-monsters/screenshots/02-board-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-solo-eliminate-little-monsters/screenshots/02-board-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-haircut/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-haircut/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-haircut/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-haircut/02-after-cut.jpg": {
+    "r2Key": "games/loopit/loopit-haircut/screenshots/02-after-cut-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-haircut/screenshots/02-after-cut-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-igniting-the-night-wordsearch/01-loading.jpg": {
+    "r2Key": "games/loopit/loopit-igniting-the-night-wordsearch/screenshots/01-loading-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-igniting-the-night-wordsearch/screenshots/01-loading-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-igniting-the-night-wordsearch/02-board.jpg": {
+    "r2Key": "games/loopit/loopit-igniting-the-night-wordsearch/screenshots/02-board-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-igniting-the-night-wordsearch/screenshots/02-board-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-if-war-had-never-struck/01-start.jpg": {
+    "r2Key": "games/loopit/loopit-if-war-had-never-struck/screenshots/01-start-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-if-war-had-never-struck/screenshots/01-start-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-if-war-had-never-struck/02-hold-to-walk.jpg": {
+    "r2Key": "games/loopit/loopit-if-war-had-never-struck/screenshots/02-hold-to-walk-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-if-war-had-never-struck/screenshots/02-hold-to-walk-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
   }
 }

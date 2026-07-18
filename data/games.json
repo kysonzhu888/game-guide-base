@@ -7796,5 +7796,460 @@
       "The verified route succeeded despite random resource-loss events; exact percentages should not be treated as deterministic.",
       "Alternate routes, reported failure endings, and a possible Part 2 were not verified in this run."
     ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-blue-emotional-speedrun",
+    "title": "Blue",
+    "genre": "Emotional runner",
+    "difficulty": "Runner with split-side movement and worry-catching aim controls",
+    "searchIntent": "Loopit Blue guide, begin the walk, level 1 worries, and how the aim thread works",
+    "sourceUrl": "https://share.loopit.me/game/20e52a21-fbbf-4313-9882-94ec1212131b",
+    "creator": "Tanya R W",
+    "creatorSlug": "tanya-r-w",
+    "stats": {
+      "likes": "6",
+      "comments": "3",
+      "bookmarks": "410",
+      "remixes": "0"
+    },
+    "summary": "Blue is a moody Loopit runner about carrying worries instead of fighting them. Our run verified the title card, the Begin the Walk entry, and the Level 1 state that asks you to catch a worry.",
+    "quickAnswer": "Tap Begin the Walk, then use the right side to aim the thread while the left side moves the runner. The verified opening state is Level 1 with worries 0/6 and the Step 1 catch-a-worry prompt.",
+    "basics": [
+      "The game opens on a title card for Blue with the line the emotional speedrun.",
+      "The opening state shows Level 1 and a worry counter at 0/6.",
+      "The prompt says Step 1: Catch a Worry and explains the right-side aim control.",
+      "The page text says the goal is to heal 9 friends across 3 levels, which we did not fully play through."
+    ],
+    "controls": [
+      "Tap Begin the Walk to enter the run state.",
+      "Drag on the right side to aim the thread at a worry.",
+      "Use the left side to move while you line up the catch.",
+      "Follow the on-screen prompt once the target worry appears."
+    ],
+    "strategy": [
+      "Treat the opening screen as a setup step and do not rush past the prompt.",
+      "Keep the thread aim centered before releasing so you do not waste the first worry.",
+      "Read the worry counter and the level label together to stay oriented."
+    ],
+    "mistakes": [
+      "Assuming the title card is the play state and missing the Begin the Walk button.",
+      "Dragging before the level prompt appears.",
+      "Ignoring the left/right split and trying to control everything with one side."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-blue-emotional-speedrun/01-entry.jpg",
+        "alt": "Blue title card with the Begin the Walk button on the Loopit share page",
+        "caption": "The opening screen shows Blue, its subtitle, and the first entry button."
+      },
+      {
+        "src": "/assets/loopit-blue-emotional-speedrun/02-run-state.jpg",
+        "alt": "Blue level 1 screen with worries 0/6 and the catch-a-worry prompt",
+        "caption": "The verified playable state shows Level 1, worries 0/6, and the Step 1 prompt."
+      }
+    ],
+    "faq": [
+      [
+        "What does 0/6 mean in Blue?",
+        "It is the Level 1 worry counter shown on the HUD in the verified run state."
+      ],
+      [
+        "What starts the run?",
+        "Tap Begin the Walk on the title card."
+      ],
+      [
+        "Did you finish all 3 levels?",
+        "No. We only verified the opening level state and the catch-a-worry prompt."
+      ]
+    ],
+    "creatorContext": [
+      "Tanya R W is the Loopit display name shown on the source card for Blue.",
+      "The public post stats are on-platform context only; we did not verify an external creator profile."
+    ],
+    "communityNotes": [
+      "We did not find a separate independent walkthrough for the exact share URL, so this guide is based on the live share page and our own capture."
+    ],
+    "coverageStatus": "Start screen and first playable level verified in desktop Chrome; deeper friend-healing branches remain pending.",
+    "coverageUpdated": "2026-07-19",
+    "coverageChecklist": [
+      "Source share page loaded and exposed the Blue title card.",
+      "Captured the Begin the Walk screen as a published screenshot.",
+      "Captured the Level 1 worries 0/6 state as a second screenshot.",
+      "Recorded a 21-frame browser capture and encoded it into run-01.mp4."
+    ],
+    "coverageNotes": [
+      "We verified the opening route only and did not attempt the later friend branches."
+    ],
+    "lastUpdated": "2026-07-19"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-solo-eliminate-little-monsters",
+    "title": "Doodle Link",
+    "genre": "Match-3 puzzle",
+    "difficulty": "Tutorial-driven link puzzle with Magic mode and theme switching",
+    "searchIntent": "Loopit Doodle Link guide, TAP TO START, connect 3 doodles, Magic mode, and theme tips",
+    "sourceUrl": "https://share.loopit.me/game/e90cfa1d-00e6-439e-bd68-91c80e10b8bd",
+    "creator": "Solo",
+    "creatorSlug": "solo",
+    "stats": {
+      "likes": "1.2k",
+      "comments": "77",
+      "bookmarks": "43k",
+      "remixes": "51"
+    },
+    "summary": "Doodle Link is the little-monster match puzzle on Loopit. Our run verified the tutorial flow, the board state, and the locked themes shown after the intro cards.",
+    "quickAnswer": "Tap TAP TO START, step through the tutorial cards, then draw lines through three or more identical doodles. The verified board returns with SCORE 0, Magic, and locked theme cards.",
+    "basics": [
+      "The card shows Doodle Link with the slogan Eliminate the little monsters!",
+      "Tap to start to enter the tutorial chain.",
+      "The tutorial explains linking three or more identical doodles.",
+      "The board state includes Magic mode and theme tiles at the bottom."
+    ],
+    "controls": [
+      "Tap the start card, then tap Next through the tutorial.",
+      "Drag to draw a line through matching doodles on the board.",
+      "Use the theme buttons at the bottom to switch the visual skin.",
+      "Use Magic when it is unlocked and you need a freer link."
+    ],
+    "strategy": [
+      "Clear the tutorial first so you can reach the board state.",
+      "Aim for simple groups of three rather than long risky chains.",
+      "Save Magic for cluttered boards or awkward leftovers."
+    ],
+    "mistakes": [
+      "Trying to play before leaving the tutorial screens.",
+      "Ignoring the theme strip and not checking the board skin.",
+      "Overfilling a chain when a short match would already score."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-solo-eliminate-little-monsters/01-entry.jpg",
+        "alt": "Doodle Link cover art with the TAP TO START prompt on Loopit",
+        "caption": "The opening card shows the Doodle Link cover and the tap-to-start gate."
+      },
+      {
+        "src": "/assets/loopit-solo-eliminate-little-monsters/02-board.jpg",
+        "alt": "Doodle Link board with SCORE 0, Magic, and locked themes",
+        "caption": "After the tutorial, the board returns with score, Magic, and locked theme tiles."
+      }
+    ],
+    "faq": [
+      [
+        "What is the basic rule?",
+        "Connect 3 or more identical doodles to clear them."
+      ],
+      [
+        "What does Magic do?",
+        "Magic mode lets you connect anything, which helps on awkward boards."
+      ],
+      [
+        "Did the verified run reach the board?",
+        "Yes. After the tutorial, the board state returned with SCORE 0, Magic, and locked themes."
+      ]
+    ],
+    "creatorContext": [
+      "Solo is the Loopit display name shown on the source card for Doodle Link.",
+      "The public post stats are platform context only; we did not verify an external creator profile."
+    ],
+    "communityNotes": [
+      "We did not find a separate independent walkthrough for the exact share URL, so this guide is based on the live share page and our own capture."
+    ],
+    "coverageStatus": "Tutorial chain and board state verified in desktop Chrome; full match clears remain pending.",
+    "coverageUpdated": "2026-07-19",
+    "coverageChecklist": [
+      "Source share page loaded and exposed the TAP TO START cover.",
+      "Tutorial screens advanced through How to Play, Score & Magic, and Relax & Enjoy.",
+      "Captured the board state with SCORE 0, Magic, and locked themes.",
+      "Recorded a 48-frame browser capture and encoded it into run-01.mp4."
+    ],
+    "coverageNotes": [
+      "We did not complete a full clear or test the deeper theme branches beyond the verified board."
+    ],
+    "lastUpdated": "2026-07-19"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-haircut",
+    "title": "Haircut",
+    "genre": "Styling simulator",
+    "difficulty": "Tool-order salon puzzle with cut, shave, comb, dry, straight, curl, wash, dye, and grow",
+    "searchIntent": "Loopit Haircut guide, salon tools, Cut, Shave, Comb, and how the palette works",
+    "sourceUrl": "https://share.loopit.me/game/6b5719ce-69e9-4d49-a5eb-b96117d409e9",
+    "creator": "Elina Norbash",
+    "creatorSlug": "elina-norbash",
+    "stats": {
+      "likes": "109",
+      "comments": "52",
+      "bookmarks": "12k",
+      "remixes": "14"
+    },
+    "summary": "Haircut is a Loopit salon tool puzzle. Our run verified the full tool palette and the active-tool change from Comb to Cut on the opening style card.",
+    "quickAnswer": "Tap a tool in the palette, apply it to the hair, and finish with Done when the look is where you want it. The verified pass shows Cut, Shave, Comb, Dry, Straight, Curl, Wash, Dye, and Grow.",
+    "basics": [
+      "The salon card opens on a tall brown hair shape with a Done button.",
+      "The tool palette includes Cut, Shave, Comb, Dry, Straight, Curl, Wash, Dye, and Grow.",
+      "The active tool is highlighted when you pick one from the palette.",
+      "The capture verified the Cut-selected state, not a full final style pass."
+    ],
+    "controls": [
+      "Tap a tool icon in the palette to select it.",
+      "Use the selected tool on the hair card.",
+      "Tap Done when you are satisfied with the current look.",
+      "Switch to another tool if the current one does not change the style enough."
+    ],
+    "strategy": [
+      "Start with Cut or Shave if you want the shape to change fastest.",
+      "Comb and Dry are better once the shape is already close to where you want it.",
+      "Save Dye and Grow for late styling passes."
+    ],
+    "mistakes": [
+      "Assuming Done means the puzzle is finished and ignoring the tool palette.",
+      "Spamming style tools without checking which one is highlighted.",
+      "Skipping the basic shape pass before trying cosmetic tools."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-haircut/01-entry.jpg",
+        "alt": "Haircut salon card with the tool palette and Done button on Loopit",
+        "caption": "The opening screen shows the salon card, the hairstyle, and the tool palette."
+      },
+      {
+        "src": "/assets/loopit-haircut/02-after-cut.jpg",
+        "alt": "Haircut salon card with Cut selected and the hairstyle panel visible",
+        "caption": "The verified follow-up state shows Cut highlighted in the tool palette."
+      }
+    ],
+    "faq": [
+      [
+        "What changed in the verified capture?",
+        "The active tool switched from Comb to Cut on the salon panel."
+      ],
+      [
+        "How many tools are visible?",
+        "Nine controls are visible, including Done and eight style tools."
+      ],
+      [
+        "Did you finish the full style?",
+        "No. The run only verified the palette and a single tool change."
+      ]
+    ],
+    "creatorContext": [
+      "Elina Norbash is the Loopit display name shown on the source card for Haircut.",
+      "The public post stats are platform context only; we did not verify an external creator profile."
+    ],
+    "communityNotes": [
+      "We did not find a separate independent walkthrough for the exact share URL, so this guide is based on the live share page and our own capture."
+    ],
+    "coverageStatus": "Salon palette and one tool change verified in desktop Chrome; alternate style branches remain pending.",
+    "coverageUpdated": "2026-07-19",
+    "coverageChecklist": [
+      "Source share page loaded and showed the salon panel.",
+      "Captured the opening hair card and the tool palette.",
+      "Captured the Cut-selected state after one tool click.",
+      "Verified the page still exposes the Done gate and the remaining tool buttons."
+    ],
+    "coverageNotes": [
+      "We did not cycle every tool combination or drive the style to the Done state."
+    ],
+    "lastUpdated": "2026-07-19"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-igniting-the-night-wordsearch",
+    "title": "Igniting the Night",
+    "genre": "Wordsearch puzzle",
+    "difficulty": "Wordsearch with a loading shell and a 10-word DECADANCE target list",
+    "searchIntent": "Loopit Igniting the Night guide, DECADANCE wordsearch, facility list, and how the board loads",
+    "sourceUrl": "https://share.loopit.me/game/3601e392-858b-49e1-aa69-17a4323b86ef",
+    "creator": "DECsta",
+    "creatorSlug": "decsta",
+    "stats": {
+      "likes": "5",
+      "comments": "0",
+      "bookmarks": "93",
+      "remixes": "0"
+    },
+    "summary": "Igniting the Night is the DECADANCE wordsearch on Loopit. Our run verified the loading shell and the playable board with ten visible facility names above the grid.",
+    "quickAnswer": "Wait for the board to load, then use the target list above the grid to trace each facility word in the puzzle. The verified board lists ten targets, including POOLTABLE, SAUNA, JACUZZI, and BAR.",
+    "basics": [
+      "The page starts with a loading shell before the puzzle board appears.",
+      "The board shows ten hidden DECADANCE facility names above the grid.",
+      "The grid fills the center of the card once loading completes.",
+      "We verified the playable board, not a full solve."
+    ],
+    "controls": [
+      "Wait for the board to render before trying to solve anything.",
+      "Use the top list to choose a target word.",
+      "Trace the matching letters through the grid in the usual wordsearch style.",
+      "Treat the loading shell as pre-play, not as a puzzle state."
+    ],
+    "strategy": [
+      "Start with the longer targets so you can orient yourself faster.",
+      "Keep the target list visible while you scan the grid.",
+      "Do not assume the board is solved just because the card loaded."
+    ],
+    "mistakes": [
+      "Counting the loading screen as progress.",
+      "Ignoring the target list above the grid.",
+      "Trying to read the grid before it has fully rendered."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-igniting-the-night-wordsearch/01-loading.jpg",
+        "alt": "Loopit loading shell for the Igniting the Night wordsearch",
+        "caption": "The entry capture shows the loading shell before the puzzle board appears."
+      },
+      {
+        "src": "/assets/loopit-igniting-the-night-wordsearch/02-board.jpg",
+        "alt": "DECADANCE wordsearch board with ten facility names above the grid",
+        "caption": "The verified board shows the target list and the full wordsearch grid."
+      }
+    ],
+    "faq": [
+      [
+        "How many targets are there?",
+        "Ten hidden facility names appear above the grid."
+      ],
+      [
+        "What kind of puzzle is this?",
+        "A wordsearch-style grid with facility names to find."
+      ],
+      [
+        "Did the run solve it?",
+        "No. We verified the loading shell and the playable board only."
+      ]
+    ],
+    "creatorContext": [
+      "DECsta is the Loopit display name shown on the source card for the wordsearch.",
+      "The public post stats are on-platform context only; we did not verify an external creator profile."
+    ],
+    "communityNotes": [
+      "We did not find a separate independent walkthrough for the exact share URL, so this guide is based on the live share page and our own capture."
+    ],
+    "coverageStatus": "Loading shell and board state verified in desktop Chrome; full solve remains pending.",
+    "coverageUpdated": "2026-07-19",
+    "coverageChecklist": [
+      "Source share page loaded and showed the loading shell.",
+      "Captured the loading state screenshot.",
+      "Captured the loaded board screenshot with the ten-word target list.",
+      "Confirmed the board is the playable state and not just the shell."
+    ],
+    "coverageNotes": [
+      "We did not solve the full list of facility words in this pass."
+    ],
+    "lastUpdated": "2026-07-19"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile app"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-if-war-had-never-struck",
+    "title": "If War Had Never Struck",
+    "genre": "Narrative session",
+    "difficulty": "Long-load opener with a START gate and hold-to-walk prompt",
+    "searchIntent": "Loopit If War Had Never Struck guide, START button, Hold to Walk, and opening route",
+    "sourceUrl": "https://share.loopit.me/game/1aa0a477-f581-4444-aaec-0094c3fb10d7",
+    "creator": "yuna_c",
+    "creatorSlug": "yuna-c",
+    "stats": {
+      "likes": "2.2k",
+      "comments": "146",
+      "bookmarks": "141k",
+      "remixes": "176"
+    },
+    "summary": "If War Had Never Struck is a Loopit narrative opener. Our run verified the long loading wait, the START screen, and the Hold to Walk prompt that appears after pressing START.",
+    "quickAnswer": "Wait for START to appear, click it, and then follow the Hold to Walk prompt. We only verified the opening transition, so deeper story branches remain pending.",
+    "basics": [
+      "The share page can sit on Loading... for a while before the start prompt appears.",
+      "The verified intro screen shows a START button.",
+      "Pressing START advances to a Hold to Walk prompt.",
+      "We did not push farther into the story route."
+    ],
+    "controls": [
+      "Wait for START to appear before interacting.",
+      "Click START to move past the opener.",
+      "Hold to Walk when the prompt asks for movement.",
+      "Read the prompt before trying to continue deeper."
+    ],
+    "strategy": [
+      "Treat the long load as normal and give the page time to initialize.",
+      "Do not click through before START appears.",
+      "Use the opening prompt to confirm the route is live before exploring farther."
+    ],
+    "mistakes": [
+      "Assuming the loading shell is frozen.",
+      "Trying to hold or walk before the START screen appears.",
+      "Rushing past the opening prompt without reading it."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-if-war-had-never-struck/01-start.jpg",
+        "alt": "If War Had Never Struck start card with the START button on Loopit",
+        "caption": "The intro card appears after the long load and exposes the START gate."
+      },
+      {
+        "src": "/assets/loopit-if-war-had-never-struck/02-hold-to-walk.jpg",
+        "alt": "If War Had Never Struck opening route with the Hold to Walk prompt",
+        "caption": "The verified follow-up state shows the hold-to-walk prompt after START."
+      }
+    ],
+    "faq": [
+      [
+        "What appears after the wait?",
+        "A START button on the intro card."
+      ],
+      [
+        "What happens after START?",
+        "The screen changes to Hold to Walk."
+      ],
+      [
+        "Did you explore the full route?",
+        "No. Only the opening transition was verified."
+      ]
+    ],
+    "creatorContext": [
+      "yuna_c is the Loopit display name shown on the source card for the game.",
+      "The public post stats are platform context only; we did not verify an external creator profile."
+    ],
+    "communityNotes": [
+      "We did not find a separate independent walkthrough for the exact share URL, so this guide is based on the live share page and our own capture."
+    ],
+    "coverageStatus": "Long-load opener and Hold to Walk transition verified in desktop Chrome; deeper narrative branches remain pending.",
+    "coverageUpdated": "2026-07-19",
+    "coverageChecklist": [
+      "Source share page loaded after the long wait and exposed START.",
+      "Captured the START screen screenshot.",
+      "Captured the Hold to Walk screenshot after pressing START.",
+      "Confirmed we had the opening route and not just the loading shell."
+    ],
+    "coverageNotes": [
+      "We did not push past the opening route in this pass."
+    ],
+    "lastUpdated": "2026-07-19"
   }
 ]

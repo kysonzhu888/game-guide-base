@@ -1,13 +1,13 @@
 {
   "schemaUrl": "https://game-guide-base.pages.dev/api/v1/games.schema.json",
   "schemaVersion": "1.0",
-  "dataUpdatedAt": "2026-07-16",
+  "dataUpdatedAt": "2026-07-19",
   "site": {
     "name": "Game Guide Base",
     "url": "https://gameguidebase.com/",
     "developerDocsUrl": "https://gameguidebase.com/developers/"
   },
-  "count": 83,
+  "count": 88,
   "games": [
     {
       "slug": "loopit-android-9-0-p",
@@ -83,6 +83,21 @@
       "sourceUrl": "https://share.loopit.me/game/c824d378-b278-44c9-9ee1-0373359ff33f",
       "access": "free",
       "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-blue-emotional-speedrun",
+      "title": "Blue",
+      "genre": "Emotional runner",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Tanya R W",
+      "guideUrl": "https://gameguidebase.com/games/loopit-blue-emotional-speedrun/",
+      "sourceUrl": "https://share.loopit.me/game/20e52a21-fbbf-4313-9882-94ec1212131b",
+      "access": "free",
+      "updatedAt": "2026-07-19"
     },
     {
       "slug": "loopit-capybara-smoke-draw",
@@ -475,6 +490,21 @@
       "updatedAt": "2026-07-02"
     },
     {
+      "slug": "loopit-haircut",
+      "title": "Haircut",
+      "genre": "Styling simulator",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Elina Norbash",
+      "guideUrl": "https://gameguidebase.com/games/loopit-haircut/",
+      "sourceUrl": "https://share.loopit.me/game/6b5719ce-69e9-4d49-a5eb-b96117d409e9",
+      "access": "free",
+      "updatedAt": "2026-07-19"
+    },
+    {
       "slug": "loopit-hold-to-grow-line",
       "title": "Hold to Grow Line",
       "genre": "Precision hold",
@@ -503,6 +533,36 @@
       "sourceUrl": "https://share.loopit.me/game/0dca62f4-7da9-4b39-9f4b-0ae3e901084b",
       "access": "free",
       "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-if-war-had-never-struck",
+      "title": "If War Had Never Struck",
+      "genre": "Narrative session",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "yuna_c",
+      "guideUrl": "https://gameguidebase.com/games/loopit-if-war-had-never-struck/",
+      "sourceUrl": "https://share.loopit.me/game/1aa0a477-f581-4444-aaec-0094c3fb10d7",
+      "access": "free",
+      "updatedAt": "2026-07-19"
+    },
+    {
+      "slug": "loopit-igniting-the-night-wordsearch",
+      "title": "Igniting the Night",
+      "genre": "Wordsearch puzzle",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "DECsta",
+      "guideUrl": "https://gameguidebase.com/games/loopit-igniting-the-night-wordsearch/",
+      "sourceUrl": "https://share.loopit.me/game/3601e392-858b-49e1-aa69-17a4323b86ef",
+      "access": "free",
+      "updatedAt": "2026-07-19"
     },
     {
       "slug": "loopit-ink-alive",
@@ -938,6 +998,21 @@
       "sourceUrl": "https://share.loopit.me/game/9998a4f1-bca0-4410-99b5-a678ac48ef91",
       "access": "free",
       "updatedAt": "2026-07-11"
+    },
+    {
+      "slug": "loopit-solo-eliminate-little-monsters",
+      "title": "Doodle Link",
+      "genre": "Match-3 puzzle",
+      "platforms": [
+        "Loopit app",
+        "Mobile app"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Solo",
+      "guideUrl": "https://gameguidebase.com/games/loopit-solo-eliminate-little-monsters/",
+      "sourceUrl": "https://share.loopit.me/game/e90cfa1d-00e6-439e-bd68-91c80e10b8bd",
+      "access": "free",
+      "updatedAt": "2026-07-19"
     },
     {
       "slug": "loopit-spinning-void-circles",
