@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "17 3 * * *"
       timezone: "Asia/Shanghai"
+  pull_request:
+    types: [closed]
+    branches: [main]
   workflow_dispatch:
     inputs:
       mode:
@@ -28,13 +31,17 @@ concurrency:
 jobs:
   daily-guides:
     name: Play, verify, and deploy five guides
+    if: >-
+      github.event_name != 'pull_request' ||
+      (github.event.pull_request.merged == true &&
+      startsWith(github.event.pull_request.head.ref, 'automation/daily-five-guides-'))
     runs-on: [self-hosted, macOS, ARM64, game-guide-base]
     timeout-minutes: 240
     env:
       GH_TOKEN: ${{ github.token }}
       LINEAR_PARENT_ISSUE: UCH-41
       LINEAR_FAILURE_ISSUE: UCH-125
-      RUN_MODE: ${{ github.event_name == 'schedule' && 'full' || inputs.mode }}
+      RUN_MODE: ${{ github.event_name == 'schedule' && 'full' || github.event_name == 'pull_request' && 'resume' || inputs.mode }}
       TARGET_GUIDES: "5"
       CODEX_BIN: /Applications/ChatGPT.app/Contents/Resources/codex
       CODEX_SIGNED_NODE_BIN: /Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node
@@ -56,6 +63,7 @@ jobs:
       - name: Check out the production branch
         uses: actions/checkout@v7
         with:
+          ref: main
           fetch-depth: 2
 
       - name: Add trusted host tools to PATH
@@ -75,6 +83,15 @@ jobs:
         run: |
           set -euo pipefail
           run_date="$(TZ=Asia/Shanghai date +%F)"
+          if test "$GITHUB_EVENT_NAME" = "pull_request"; then
+            head_ref="$(jq -r '.pull_request.head.ref // empty' "$GITHUB_EVENT_PATH")"
+            if [[ "$head_ref" =~ ^automation/daily-five-guides-([0-9]{4}-[0-9]{2}-[0-9]{2})$ ]]; then
+              run_date="${BASH_REMATCH[1]}"
+            else
+              echo "::error title=Invalid daily-guide branch::Cannot resolve run date from $head_ref"
+              exit 1
+            fi
+          fi
           baseline_sha="$(git rev-parse origin/main)"
           evidence_dir="$RUNNER_TEMP/game-guide-evidence/$run_date"
           effective_mode="$RUN_MODE"
@@ -314,19 +331,36 @@ jobs:
             --expected-count 5 \
             | tee "$RUNNER_TEMP/repair-stable-verification.json"
 
-      - name: Verify exactly five new guides on main
+      - name: Verify the generated daily pull request
         if: ${{ steps.run_context.outputs.mode == 'full' }}
         shell: bash
         run: |
           set -euo pipefail
-          git fetch origin main --prune
+          daily_branch="automation/daily-five-guides-$DAILY_RUN_DATE"
+          git fetch origin "$daily_branch" --prune
           node tools/verify-daily-guides.mjs \
             --before-ref "$BASELINE_SHA" \
-            --after-ref origin/main \
+            --after-ref "origin/$daily_branch" \
             --date "$DAILY_RUN_DATE" \
             --evidence-root "$DAILY_EVIDENCE_DIR" \
             --expected-count "$TARGET_GUIDES" \
             | tee "$RUNNER_TEMP/daily-verification.json"
+          pull_requests="$(gh pr list \
+            --head "$daily_branch" \
+            --base main \
+            --state open \
+            --limit 2 \
+            --json number,url,headRefOid)"
+          test "$(jq 'length' <<< "$pull_requests")" -eq 1
+          test "$(jq -r '.[0].headRefOid' <<< "$pull_requests")" \
+            = "$(git rev-parse "origin/$daily_branch")"
+          {
+            echo
+            echo "## Awaiting user merge"
+            echo
+            echo "The verified content is ready at $(jq -r '.[0].url' <<< "$pull_requests")."
+            echo "Production deployment will resume automatically after that PR is merged."
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Load the verified daily run for resume
         if: ${{ steps.run_context.outputs.mode == 'resume' }}
@@ -359,7 +393,7 @@ jobs:
             -eq "$TARGET_GUIDES"
 
       - name: Build and deploy the verified main branch
-        if: ${{ steps.run_context.outputs.mode == 'full' || steps.run_context.outputs.mode == 'resume' }}
+        if: ${{ steps.run_context.outputs.mode == 'resume' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -376,7 +410,7 @@ jobs:
             | tee "$RUNNER_TEMP/pages-deployment.log"
 
       - name: Verify the production site
-        if: ${{ steps.run_context.outputs.mode == 'full' || steps.run_context.outputs.mode == 'resume' }}
+        if: ${{ steps.run_context.outputs.mode == 'resume' }}
         shell: bash
         run: |
           set -euo pipefail
