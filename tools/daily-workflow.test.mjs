@@ -27,9 +27,25 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /runs-on:\s*\[self-hosted, macOS, ARM64, game-guide-base\]/);
   assert.match(workflow, /fetch-depth:\s*2/);
   assert.match(workflow, /workflow_dispatch:/);
+  assert.match(
+    workflow,
+    /pull_request:\s*\n\s+types:\s*\[closed\]\s*\n\s+branches:\s*\[main\]/,
+  );
+  assert.match(
+    workflow,
+    /github\.event_name != 'pull_request'[\s\S]+github\.event\.pull_request\.merged == true[\s\S]+startsWith\(github\.event\.pull_request\.head\.ref, 'automation\/daily-five-guides-'\)/,
+  );
   assert.match(workflow, /options:\s*\n\s+- preflight\s*\n\s+- full\s*\n\s+- resume/);
   assert.match(workflow, /repair-2026-07-14/);
   assert.match(workflow, /id:\s*run_context/);
+  assert.match(
+    workflow,
+    /github\.event_name == 'pull_request' && 'resume'/,
+  );
+  assert.match(
+    workflow,
+    /jq -r '\.pull_request\.head\.ref \/\/ empty' "\$GITHUB_EVENT_PATH"[\s\S]+automation\/daily-five-guides-\(\[0-9\]\{4\}-\[0-9\]\{2\}-\[0-9\]\{2\}\)/,
+  );
   assert.match(
     workflow,
     /effective_mode="\$RUN_MODE"[\s\S]+test "\$effective_mode" = "full"[\s\S]+test -s "data\/daily-runs\/\$run_date\.json"[\s\S]+effective_mode="resume"/,
@@ -94,6 +110,7 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /Load the verified daily run for resume/);
   assert.match(workflow, /data\/daily-runs\/\$DAILY_RUN_DATE\.json/);
   assert.match(workflow, /\.newGuides \| length[\s\S]+\$TARGET_GUIDES/);
+  assert.match(workflow, /Build and deploy the verified main branch\s*\n\s+if: \$\{\{ steps\.run_context\.outputs\.mode == 'resume' \}\}/);
   assert.match(workflow, /build-deploy\.mjs/);
   assert.match(workflow, /wrangler@4\.110\.0 pages deploy \.deploy/);
   assert.match(
@@ -106,16 +123,16 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   );
   assert.match(workflow, /upload-artifact@v7/);
   assert.equal(
-    workflow.match(/steps\.run_context\.outputs\.mode == 'full' \|\| steps\.run_context\.outputs\.mode == 'resume'/g)?.length,
-    2,
+    workflow.match(/if: \$\{\{ steps\.run_context\.outputs\.mode == 'resume' \}\}/g)?.length,
+    3,
   );
   assert.equal(
     workflow.match(/if: \$\{\{ steps\.run_context\.outputs\.mode == 'full' \}\}/g)?.length,
     2,
   );
-  assert.equal(
-    workflow.match(/if: \$\{\{ steps\.run_context\.outputs\.mode == 'resume' \}\}/g)?.length,
-    1,
+  assert.match(
+    workflow,
+    /Verify the generated daily pull request[\s\S]+--after-ref "origin\/\$daily_branch"[\s\S]+gh pr list[\s\S]+--state open/,
   );
   assert.doesNotMatch(workflow, /if: \$\{\{ env\.RUN_MODE == '(?:full|resume)'/);
   assert.equal(workflow.match(/if: \$\{\{ env\.RUN_MODE == 'preflight' \}\}/g)?.length ?? 0, 0);
