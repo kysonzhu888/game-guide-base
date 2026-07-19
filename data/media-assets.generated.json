@@ -1643,5 +1643,75 @@
     "width": 1200,
     "format": "jpeg",
     "quality": 82
+  },
+  "/assets/loopit-artinte-snake-game/01-start.png": {
+    "r2Key": "games/loopit/loopit-artinte-snake-game/screenshots/01-start-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-artinte-snake-game/screenshots/01-start-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-artinte-snake-game/02-game-over.png": {
+    "r2Key": "games/loopit/loopit-artinte-snake-game/screenshots/02-game-over-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-artinte-snake-game/screenshots/02-game-over-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-sprunki-sandbox/01-sandbox.png": {
+    "r2Key": "games/loopit/loopit-sprunki-sandbox/screenshots/01-sandbox-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-sprunki-sandbox/screenshots/01-sandbox-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-sprunki-sandbox/02-gallery.png": {
+    "r2Key": "games/loopit/loopit-sprunki-sandbox/screenshots/02-gallery-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-sprunki-sandbox/screenshots/02-gallery-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-streamhub-live/01-entry-card.png": {
+    "r2Key": "games/loopit/loopit-streamhub-live/screenshots/01-entry-card-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-streamhub-live/screenshots/01-entry-card-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-streamhub-live/02-dashboard.png": {
+    "r2Key": "games/loopit/loopit-streamhub-live/screenshots/02-dashboard-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-streamhub-live/screenshots/02-dashboard-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-peppa-pig-rock-dodge/01-score-zero.png": {
+    "r2Key": "games/loopit/loopit-peppa-pig-rock-dodge/screenshots/01-score-zero-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-peppa-pig-rock-dodge/screenshots/01-score-zero-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-peppa-pig-rock-dodge/02-score-three-jump.png": {
+    "r2Key": "games/loopit/loopit-peppa-pig-rock-dodge/screenshots/02-score-three-jump-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-peppa-pig-rock-dodge/screenshots/02-score-three-jump-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-loopbox/01-idle.png": {
+    "r2Key": "games/loopit/loopit-loopbox/screenshots/01-idle-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-loopbox/screenshots/01-idle-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-loopbox/02-playing.png": {
+    "r2Key": "games/loopit/loopit-loopbox/screenshots/02-playing-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-loopbox/screenshots/02-playing-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
   }
 }
