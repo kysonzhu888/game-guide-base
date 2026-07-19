@@ -8279,7 +8279,8 @@
     "basics": [
       "The start card shows Score 0, the swipe-or-arrow hint, and a Start Game button.",
       "Restarting exposed a live Swipe to control state before the game ended.",
-      "The observed loss screen reported Game Over and 0 points scored."
+      "The observed loss screen reported Game Over and 0 points scored.",
+      "The route can collapse quickly if you do not steer the snake."
     ],
     "controls": [
       "Tap Start Game to begin the run.",
@@ -8369,7 +8370,8 @@
     "basics": [
       "The sandbox view exposes tabs for Kissing Mode, Settings, Bios, Achievements, Gallery, and Sandbox.",
       "The main panel prompts you to drag characters into the sandbox area.",
-      "Opening Gallery reveals the Gallery of the Fallen & Changed overlay."
+      "Opening Gallery reveals the Gallery of the Fallen & Changed overlay.",
+      "The overlay includes a visible Close button for returning to the sandbox."
     ],
     "controls": [
       "Tap the visible tabs to switch between the sandbox sections.",
@@ -8458,7 +8460,8 @@
     "basics": [
       "The intro card says Real multiplayer live streams. Claim ownership or go live!",
       "The dashboard shows YOU, Anonymous, Offline - Streamer, and a device ID.",
-      "The page reports that no one is live right now."
+      "The page reports that no one is live right now.",
+      "The dashboard also exposes a claim admin button for spawning a test bot."
     ],
     "controls": [
       "Tap Enter App to open the dashboard.",
@@ -8547,7 +8550,8 @@
     "basics": [
       "The start state shows Score 0 and a Tap to Jump hint.",
       "A live drag or jump changed the visible score from 0 to 3.",
-      "The page keeps the score visible while the runner is active."
+      "The page keeps the score visible while the runner is active.",
+      "The visible score makes live progress easy to confirm."
     ],
     "controls": [
       "Tap or click to jump.",
@@ -8637,7 +8641,8 @@
     "basics": [
       "The idle editor shows a Play button and the top menu row.",
       "Pressing Play changes the transport to Pause.",
-      "The layout links out to BeepBox v4.2.2."
+      "The layout links out to BeepBox v4.2.2.",
+      "The transport sits in the header and is the quickest state check."
     ],
     "controls": [
       "Press Play to start playback.",
