@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-07-19",
+  "mode": "new-guides",
+  "targetCount": 5,
+  "baseline": {
+    "ref": "5748a37a21ffd85160115f3dd87dc72277b7525c",
+    "gameCount": 83
+  },
+  "final": {
+    "gameCount": 88
+  },
+  "linear": {
+    "parentIssue": "UCH-41",
+    "dailyIssue": "UCH-183"
+  },
+  "guides": [
+    {
+      "slug": "loopit-blue-emotional-speedrun",
+      "sourceUrl": "https://share.loopit.me/game/20e52a21-fbbf-4313-9882-94ec1212131b",
+      "status": "verified",
+      "dynamic": true,
+      "outcomes": [
+        "Begin the Walk opens the run screen.",
+        "Level 1 shows worries 0/6 and the Step 1 catch-a-worry prompt."
+      ],
+      "pending": [
+        "Later friend-healing levels remain unplayed in this pass."
+      ],
+      "evidence": [
+        {
+          "type": "video",
+          "path": "loopit-blue-emotional-speedrun/run-01.mp4",
+          "captureMethod": "browser-frame-sequence",
+          "sourceFrameCount": 21
+        },
+        {
+          "type": "frame",
+          "path": "loopit-blue-emotional-speedrun/frames/frame-001.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-blue-emotional-speedrun/frames/frame-021.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-solo-eliminate-little-monsters",
+      "sourceUrl": "https://share.loopit.me/game/e90cfa1d-00e6-439e-bd68-91c80e10b8bd",
+      "status": "verified",
+      "dynamic": true,
+      "outcomes": [
+        "TAP TO START advanced through the tutorial cards.",
+        "The board returned with SCORE 0, Magic, and locked themes."
+      ],
+      "pending": [
+        "A full clear and deeper theme branches remain unplayed in this pass."
+      ],
+      "evidence": [
+        {
+          "type": "video",
+          "path": "loopit-solo-eliminate-little-monsters/run-01.mp4",
+          "captureMethod": "browser-frame-sequence",
+          "sourceFrameCount": 48
+        },
+        {
+          "type": "frame",
+          "path": "loopit-solo-eliminate-little-monsters/frames/frame-001.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-solo-eliminate-little-monsters/frames/frame-048.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-haircut",
+      "sourceUrl": "https://share.loopit.me/game/6b5719ce-69e9-4d49-a5eb-b96117d409e9",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "The salon panel exposed the full Cut/Shave/Comb/Dry/Straight/Curl/Wash/Dye/Grow palette.",
+        "The active tool switched from Comb to Cut in the verified follow-up state."
+      ],
+      "pending": [
+        "Other style combinations and the final Done state remain unplayed in this pass."
+      ],
+      "evidence": [
+        {
+          "type": "screenshot",
+          "path": "loopit-haircut/01-entry.jpg"
+        },
+        {
+          "type": "screenshot",
+          "path": "loopit-haircut/02-after-cut.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-igniting-the-night-wordsearch",
+      "sourceUrl": "https://share.loopit.me/game/3601e392-858b-49e1-aa69-17a4323b86ef",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "The loading shell transitioned into the DECADANCE wordsearch board.",
+        "The board exposed ten visible facility targets above the grid."
+      ],
+      "pending": [
+        "The full word list solve remains unplayed in this pass."
+      ],
+      "evidence": [
+        {
+          "type": "screenshot",
+          "path": "loopit-igniting-the-night-wordsearch/01-loading.jpg"
+        },
+        {
+          "type": "screenshot",
+          "path": "loopit-igniting-the-night-wordsearch/02-board.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-if-war-had-never-struck",
+      "sourceUrl": "https://share.loopit.me/game/1aa0a477-f581-4444-aaec-0094c3fb10d7",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "START appeared after the long load.",
+        "Pressing START revealed the Hold to Walk prompt."
+      ],
+      "pending": [
+        "Deeper narrative branches remain unplayed in this pass."
+      ],
+      "evidence": [
+        {
+          "type": "screenshot",
+          "path": "loopit-if-war-had-never-struck/01-start.jpg"
+        },
+        {
+          "type": "screenshot",
+          "path": "loopit-if-war-had-never-struck/02-hold-to-walk.jpg"
+        }
+      ]
+    }
+  ],
+  "rejectedCandidates": [
+    {
+      "sourceUrl": "https://share.loopit.me/game/2828c6b5-1b97-4855-9571-9a798cb0a70d",
+      "reason": "The name prompt did not produce a stable visible transition in this pass."
+    }
+  ]
+}
