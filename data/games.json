@@ -8252,4 +8252,457 @@
     ],
     "lastUpdated": "2026-07-19"
   }
+,
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-artinte-snake-game",
+    "title": "Snake Game",
+    "genre": "Snake arcade",
+    "difficulty": "A swipe-or-arrow snake loop with a fast start card and a short loss path.",
+    "searchIntent": "Loopit Snake Game guide, Swipe or use arrow keys, Start Game, Game Over",
+    "sourceUrl": "https://share.loopit.me/game/e39cff44-73f8-47ed-8f52-f7bed1dd9f86",
+    "creator": "ArtInte",
+    "creatorSlug": "artinte",
+    "stats": {
+      "views": "44",
+      "likes": "9",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Snake Game is a Loopit snake arcade. Our run verified the start card, the live swipe-to-control state after starting, and a game-over result at 0 points.",
+    "quickAnswer": "Tap Start Game, then steer with swipes or arrow keys. The verified run reached Game Over at 0 points after the live control prompt appeared.",
+    "basics": [
+      "The start card shows Score 0, the swipe-or-arrow hint, and a Start Game button.",
+      "Restarting exposed a live Swipe to control state before the game ended.",
+      "The observed loss screen reported Game Over and 0 points scored.",
+      "The route can collapse quickly if you do not steer the snake."
+    ],
+    "controls": [
+      "Tap Start Game to begin the run.",
+      "Use swipe gestures or arrow keys to steer the snake.",
+      "Tap Play Again after the loss screen if you want another attempt."
+    ],
+    "strategy": [
+      "Keep the snake moving cleanly before you try to collect anything.",
+      "Treat the live control prompt as the active play state, not just a menu.",
+      "Expect the game-over route to appear quickly if you do not steer."
+    ],
+    "mistakes": [
+      "Assuming the start card is the whole game.",
+      "Ignoring the swipe-or-arrow hint and waiting for the snake to self-correct.",
+      "Claiming a longer survival route when the verified path ended at 0 points."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-artinte-snake-game/01-start.png",
+        "alt": "Snake Game start card with Score 0 and the Start Game button on Loopit",
+        "caption": "The intro card shows the control hint before play begins."
+      },
+      {
+        "src": "/assets/loopit-artinte-snake-game/02-game-over.png",
+        "alt": "Snake Game Game Over screen showing 0 points scored on Loopit",
+        "caption": "The verified loss screen ends the route at 0 points."
+      }
+    ],
+    "faq": [
+      [
+        "What controls does it show?",
+        "Swipes or arrow keys."
+      ],
+      [
+        "What score did the verified run end on?",
+        "0 points."
+      ],
+      [
+        "Did you verify a longer survival route?",
+        "No. This pass only verified the start, the live control state, and the loss screen."
+      ]
+    ],
+    "creatorContext": [
+      "ArtInte is the creator name shown on the Loopit source card.",
+      "The source card reported 44 views, 9 likes, 0 comments, and Remix 0."
+    ],
+    "communityNotes": [
+      "We did not verify an external walkthrough for this exact share URL, so the guide is based on the live page and our own capture."
+    ],
+    "coverageStatus": "Start card, live swipe-to-control state, game-over screen, and browser-frame-sequence video verified in desktop Chrome; longer survival routes remain pending.",
+    "coverageUpdated": "2026-07-20",
+    "coverageChecklist": [
+      "Captured the start card screenshot.",
+      "Captured the game-over screenshot.",
+      "Captured a 12-frame browser-frame-sequence video while the snake route was active.",
+      "Confirmed the verified route reached Game Over at 0 points."
+    ],
+    "coverageNotes": [
+      "The route was only exercised far enough to prove the live control state and the loss path.",
+      "Longer survival branches remain untested."
+    ],
+    "lastUpdated": "2026-07-20"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-sprunki-sandbox",
+    "title": "Sprunki Sandbox",
+    "genre": "Sandbox rhythm toy",
+    "difficulty": "A tabbed sandbox with a gallery/lore overlay and drag-in characters.",
+    "searchIntent": "Loopit Sprunki Sandbox guide, Kissing Mode, Settings, Bios, Achievements, Gallery",
+    "sourceUrl": "https://share.loopit.me/game/0273fef5-4bd3-48b3-b1dd-b84113a097dd",
+    "creator": "David Gemerek",
+    "creatorSlug": "david-gemerek",
+    "stats": {
+      "views": "126",
+      "likes": "10",
+      "comments": "0",
+      "remixes": "1"
+    },
+    "summary": "Sprunki Sandbox opens into a tabbed sandbox and a gallery modal. Our run verified the sandbox view and the Gallery of the Fallen & Changed overlay.",
+    "quickAnswer": "Open the sandbox, then use the visible tabs to explore. The verified route reaches the Gallery of the Fallen & Changed overlay; deeper character behavior remains pending.",
+    "basics": [
+      "The sandbox view exposes tabs for Kissing Mode, Settings, Bios, Achievements, Gallery, and Sandbox.",
+      "The main panel prompts you to drag characters into the sandbox area.",
+      "Opening Gallery reveals the Gallery of the Fallen & Changed overlay.",
+      "The overlay includes a visible Close button for returning to the sandbox."
+    ],
+    "controls": [
+      "Tap the visible tabs to switch between the sandbox sections.",
+      "Drag characters into the sandbox area when the page asks for it.",
+      "Tap Close to dismiss the gallery overlay."
+    ],
+    "strategy": [
+      "Read the tab labels before assuming the sandbox is a single-screen toy.",
+      "Use the gallery overlay as a checkpoint that the page is fully interactive.",
+      "Keep the sandbox and gallery states separate when describing the route."
+    ],
+    "mistakes": [
+      "Treating the gallery overlay as the entire game.",
+      "Skipping the tab row and missing the sandbox state.",
+      "Claiming deeper character behavior when only the sandbox and gallery were verified."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-sprunki-sandbox/01-sandbox.png",
+        "alt": "Sprunki Sandbox view with the tab row and drag prompt on Loopit",
+        "caption": "The sandbox state shows the tabs and the drag-into-sandbox prompt."
+      },
+      {
+        "src": "/assets/loopit-sprunki-sandbox/02-gallery.png",
+        "alt": "Sprunki Sandbox gallery overlay titled Gallery of the Fallen & Changed",
+        "caption": "The verified follow-up state opens the gallery overlay."
+      }
+    ],
+    "faq": [
+      [
+        "What tabs were visible?",
+        "Kissing Mode, Settings, Bios, Achievements, Gallery, and Sandbox."
+      ],
+      [
+        "What overlay appeared?",
+        "Gallery of the Fallen & Changed."
+      ],
+      [
+        "Did you verify every character branch?",
+        "No. Only the sandbox view and the gallery overlay were verified."
+      ]
+    ],
+    "creatorContext": [
+      "David Gemerek is the creator name shown on the Loopit source card.",
+      "The source card reported 126 views, 10 likes, 0 comments, and Remix 1."
+    ],
+    "communityNotes": [
+      "We did not verify a separate walkthrough for the exact share URL, so the guide is based on the live page and our own capture."
+    ],
+    "coverageStatus": "Sandbox tab layout and gallery overlay verified in desktop Chrome; deeper character, bio, and achievement branches remain pending.",
+    "coverageUpdated": "2026-07-20",
+    "coverageChecklist": [
+      "Captured the sandbox screenshot.",
+      "Captured the gallery overlay screenshot.",
+      "Confirmed the tabbed sandbox loaded in Chrome.",
+      "Confirmed the overlay can be reached from the sandbox state."
+    ],
+    "coverageNotes": [
+      "Deeper character and achievement branches remain untested."
+    ],
+    "lastUpdated": "2026-07-20"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-streamhub-live",
+    "title": "StreamHub Live",
+    "genre": "Live-stream lobby",
+    "difficulty": "A live dashboard with ownership and go-live gates.",
+    "searchIntent": "Loopit StreamHub Live guide, Enter App, Setup & Go Live, Claim Ownership",
+    "sourceUrl": "https://share.loopit.me/game/079aef11-fd91-4e67-82dc-1deba08a396c",
+    "creator": "Kyle Cordes",
+    "creatorSlug": "kyle-cordes",
+    "stats": {
+      "views": "120k",
+      "likes": "1.6k",
+      "comments": "1.3k",
+      "remixes": "376"
+    },
+    "summary": "StreamHub Live opens with an intro card and a dashboard that exposes ownership, setup, and bot controls. Our run verified the intro card and the idle dashboard state with no one live.",
+    "quickAnswer": "Tap Enter App to reach the dashboard. The verified view shows the setup and claim controls, while the live-stream flow itself remains pending.",
+    "basics": [
+      "The intro card says Real multiplayer live streams. Claim ownership or go live!",
+      "The dashboard shows YOU, Anonymous, Offline - Streamer, and a device ID.",
+      "The page reports that no one is live right now.",
+      "The dashboard also exposes a claim admin button for spawning a test bot."
+    ],
+    "controls": [
+      "Tap Enter App to open the dashboard.",
+      "Use SETUP & GO LIVE when you are ready to start the stream flow.",
+      "Use the claim buttons only after reading the visible passcode and ownership prompts."
+    ],
+    "strategy": [
+      "Confirm the dashboard state before treating the page as a live room.",
+      "Read the visible claim labels before attempting to take ownership.",
+      "Treat the idle dashboard as the verified baseline for any later live-stream work."
+    ],
+    "mistakes": [
+      "Assuming the intro card is the whole product.",
+      "Treating the offline dashboard as a broken page instead of an idle state.",
+      "Claiming a live broadcast when the page still says no one is live."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-streamhub-live/01-entry-card.png",
+        "alt": "StreamHub Live intro card with the Enter App button on Loopit",
+        "caption": "The opener sets up the live-stream premise before the dashboard loads."
+      },
+      {
+        "src": "/assets/loopit-streamhub-live/02-dashboard.png",
+        "alt": "StreamHub Live dashboard showing setup and claim controls with no one live",
+        "caption": "The verified dashboard state exposes the go-live and ownership controls."
+      }
+    ],
+    "faq": [
+      [
+        "What appears after Enter App?",
+        "A live dashboard with setup and claim controls."
+      ],
+      [
+        "Was anyone live during the run?",
+        "No. The page said no one is live right now."
+      ],
+      [
+        "Did you verify a live broadcast?",
+        "No. Only the intro card and the idle dashboard were verified."
+      ]
+    ],
+    "creatorContext": [
+      "Kyle Cordes is the creator name shown on the Loopit source card.",
+      "The source card reported 120k views, 1.6k likes, 1.3k comments, and Remix 376."
+    ],
+    "communityNotes": [
+      "The source card engagement is high, but this guide is still based on the live page and the dashboard capture rather than an external walkthrough."
+    ],
+    "coverageStatus": "Intro card and idle dashboard verified in desktop Chrome; ownership and broadcast flows remain pending.",
+    "coverageUpdated": "2026-07-20",
+    "coverageChecklist": [
+      "Captured the entry card screenshot.",
+      "Captured the dashboard screenshot.",
+      "Confirmed no one is live on the dashboard.",
+      "Recorded the visible setup and claim controls."
+    ],
+    "coverageNotes": [
+      "Deeper passcode and live-broadcast branches remain pending."
+    ],
+    "lastUpdated": "2026-07-20"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-peppa-pig-rock-dodge",
+    "title": "Peppa Pig",
+    "genre": "Obstacle runner",
+    "difficulty": "A tap-to-jump dodge loop with a rising score and rocks overhead.",
+    "searchIntent": "Loopit Peppa Pig guide, Tap to Jump, Score 0, Score 3, rock dodge",
+    "sourceUrl": "https://share.loopit.me/game/88530803-5da4-4228-b846-cb260db5cb1f",
+    "creator": "luis",
+    "creatorSlug": "luis",
+    "stats": {
+      "views": "335",
+      "likes": "8",
+      "comments": "1",
+      "remixes": "0"
+    },
+    "summary": "Peppa Pig is a Loopit obstacle runner. Our run verified the Score 0 start state, a later Score 3 live state after a drag or jump, and a 12-frame browser capture.",
+    "quickAnswer": "Tap or click to jump, then keep the runner clear of rocks. The verified route advances from Score 0 to Score 3 during live play.",
+    "basics": [
+      "The start state shows Score 0 and a Tap to Jump hint.",
+      "A live drag or jump changed the visible score from 0 to 3.",
+      "The page keeps the score visible while the runner is active.",
+      "The visible score makes live progress easy to confirm."
+    ],
+    "controls": [
+      "Tap or click to jump.",
+      "Use the game surface to keep the runner clear of rocks.",
+      "Watch the score as a live progress signal."
+    ],
+    "strategy": [
+      "Wait for the first obstacle before judging the pace.",
+      "Use the score change as confirmation that the runner is still live.",
+      "Keep your jumps simple and timed rather than spamming the control."
+    ],
+    "mistakes": [
+      "Assuming the start state is static.",
+      "Spamming random clicks instead of timing the jump.",
+      "Claiming a win path when the verified route only proved a score increase."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-peppa-pig-rock-dodge/01-score-zero.png",
+        "alt": "Peppa Pig start state showing Score 0 and Tap to Jump on Loopit",
+        "caption": "The initial state shows the runner before the score starts climbing."
+      },
+      {
+        "src": "/assets/loopit-peppa-pig-rock-dodge/02-score-three-jump.png",
+        "alt": "Peppa Pig live state showing Score 3 after a jump on Loopit",
+        "caption": "The verified live state advances the score during play."
+      }
+    ],
+    "faq": [
+      [
+        "What score did the verified run reach?",
+        "Score 3."
+      ],
+      [
+        "What input changed the score?",
+        "A drag or jump on the game surface."
+      ],
+      [
+        "Did you verify a full clear?",
+        "No. The run only verified the live score progression."
+      ]
+    ],
+    "creatorContext": [
+      "luis is the creator name shown on the Loopit source card.",
+      "The source card reported 335 views, 8 likes, 1 comment, and Remix 0."
+    ],
+    "communityNotes": [
+      "We did not verify a separate walkthrough for the exact share URL, so the guide is based on the live page, the screenshots, and the frame sequence."
+    ],
+    "coverageStatus": "Start state, live score progression, and browser-frame-sequence video verified in desktop Chrome; longer survival routes remain pending.",
+    "coverageUpdated": "2026-07-20",
+    "coverageChecklist": [
+      "Captured the Score 0 screenshot.",
+      "Captured the Score 3 screenshot.",
+      "Captured a 12-frame browser-frame-sequence video while the runner was active.",
+      "Confirmed the score progressed from 0 to 3."
+    ],
+    "coverageNotes": [
+      "Longer survival branches remain untested.",
+      "The verified run only proves score progression, not a full completion path."
+    ],
+    "lastUpdated": "2026-07-20"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-loopbox",
+    "title": "LoopBox",
+    "genre": "Music editor",
+    "difficulty": "A BeepBox-style sequencer with a play/pause transport.",
+    "searchIntent": "Loopit LoopBox guide, Play button, Pause state, BeepBox v4.2.2",
+    "sourceUrl": "https://share.loopit.me/game/2f77d617-337e-4111-9bdc-71d02755d809",
+    "creator": "Corina Polanco",
+    "creatorSlug": "corina-polanco",
+    "stats": {
+      "views": "57",
+      "likes": "9",
+      "comments": "1",
+      "remixes": "2"
+    },
+    "summary": "LoopBox is a BeepBox-style music editor. Our run verified the idle editor and the transport change from Play to Pause.",
+    "quickAnswer": "Press Play to start the loop and watch the transport turn to Pause. The verified route stops at the editor state; deeper composition branches remain pending.",
+    "basics": [
+      "The idle editor shows a Play button and the top menu row.",
+      "Pressing Play changes the transport to Pause.",
+      "The layout links out to BeepBox v4.2.2.",
+      "The transport sits in the header and is the quickest state check."
+    ],
+    "controls": [
+      "Press Play to start playback.",
+      "Press Pause to stop the loop.",
+      "Use the visible menus to explore the editor after checking the transport state."
+    ],
+    "strategy": [
+      "Use the idle state to understand the panel layout before you start editing.",
+      "Confirm the transport changes to Pause before assuming playback actually started.",
+      "Treat the menu row and transport as separate controls."
+    ],
+    "mistakes": [
+      "Assuming the editor is already playing when the button still says Play.",
+      "Confusing the transport toggle with a composition change.",
+      "Skipping the idle state and missing the menu layout."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-loopbox/01-idle.png",
+        "alt": "LoopBox idle editor with the Play button and menu row on Loopit",
+        "caption": "The idle state shows the BeepBox-style editor before playback starts."
+      },
+      {
+        "src": "/assets/loopit-loopbox/02-playing.png",
+        "alt": "LoopBox playing state with the transport switched to Pause on Loopit",
+        "caption": "The verified follow-up state shows that playback started."
+      }
+    ],
+    "faq": [
+      [
+        "What changed in the verified run?",
+        "The transport switched from Play to Pause."
+      ],
+      [
+        "Is this the BeepBox-style editor?",
+        "Yes. The page links to BeepBox v4.2.2."
+      ],
+      [
+        "Did you edit notes or only start playback?",
+        "Only the idle and playing states were verified."
+      ]
+    ],
+    "creatorContext": [
+      "Corina Polanco is the creator name shown on the Loopit source card.",
+      "The source card reported 57 views, 9 likes, 1 comment, and Remix 2."
+    ],
+    "communityNotes": [
+      "We did not verify a separate walkthrough for the exact share URL, so the guide is based on the live page and our own capture."
+    ],
+    "coverageStatus": "Idle editor and play-to-pause transport verified in desktop Chrome; note-editing and arrangement branches remain pending.",
+    "coverageUpdated": "2026-07-20",
+    "coverageChecklist": [
+      "Captured the idle screenshot.",
+      "Captured the playing screenshot.",
+      "Verified the Play button toggles to Pause.",
+      "Confirmed the page is a BeepBox-style editor."
+    ],
+    "coverageNotes": [
+      "Deeper composition branches remain untested."
+    ],
+    "lastUpdated": "2026-07-20"
+  }
 ]

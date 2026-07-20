@@ -1,13 +1,13 @@
 {
   "schemaUrl": "https://game-guide-base.pages.dev/api/v1/games.schema.json",
   "schemaVersion": "1.0",
-  "dataUpdatedAt": "2026-07-19",
+  "dataUpdatedAt": "2026-07-20",
   "site": {
     "name": "Game Guide Base",
     "url": "https://gameguidebase.com/",
     "developerDocsUrl": "https://gameguidebase.com/developers/"
   },
-  "count": 88,
+  "count": 93,
   "games": [
     {
       "slug": "loopit-android-9-0-p",
@@ -53,6 +53,21 @@
       "sourceUrl": "https://share.loopit.me/game/4cf01919-96cd-40ef-8ef1-5280c7ec94e9",
       "access": "free",
       "updatedAt": "2026-07-12"
+    },
+    {
+      "slug": "loopit-artinte-snake-game",
+      "title": "Snake Game",
+      "genre": "Snake arcade",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "ArtInte",
+      "guideUrl": "https://gameguidebase.com/games/loopit-artinte-snake-game/",
+      "sourceUrl": "https://share.loopit.me/game/e39cff44-73f8-47ed-8f52-f7bed1dd9f86",
+      "access": "free",
+      "updatedAt": "2026-07-20"
     },
     {
       "slug": "loopit-balloon-popper",
@@ -625,6 +640,21 @@
       "updatedAt": "2026-07-13"
     },
     {
+      "slug": "loopit-loopbox",
+      "title": "LoopBox",
+      "genre": "Music editor",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Corina Polanco",
+      "guideUrl": "https://gameguidebase.com/games/loopit-loopbox/",
+      "sourceUrl": "https://share.loopit.me/game/2f77d617-337e-4111-9bdc-71d02755d809",
+      "access": "free",
+      "updatedAt": "2026-07-20"
+    },
+    {
       "slug": "loopit-love-is-love",
       "title": "Love Is Love",
       "genre": "Physics toy",
@@ -773,6 +803,21 @@
       "sourceUrl": "https://share.loopit.me/game/4e18e4f8-1683-4b2b-850b-936305582e0e",
       "access": "free",
       "updatedAt": "2026-07-06"
+    },
+    {
+      "slug": "loopit-peppa-pig-rock-dodge",
+      "title": "Peppa Pig",
+      "genre": "Obstacle runner",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "luis",
+      "guideUrl": "https://gameguidebase.com/games/loopit-peppa-pig-rock-dodge/",
+      "sourceUrl": "https://share.loopit.me/game/88530803-5da4-4228-b846-cb260db5cb1f",
+      "access": "free",
+      "updatedAt": "2026-07-20"
     },
     {
       "slug": "loopit-phone-mini-apps",
@@ -1060,6 +1105,21 @@
       "updatedAt": "2026-07-16"
     },
     {
+      "slug": "loopit-sprunki-sandbox",
+      "title": "Sprunki Sandbox",
+      "genre": "Sandbox rhythm toy",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "David Gemerek",
+      "guideUrl": "https://gameguidebase.com/games/loopit-sprunki-sandbox/",
+      "sourceUrl": "https://share.loopit.me/game/0273fef5-4bd3-48b3-b1dd-b84113a097dd",
+      "access": "free",
+      "updatedAt": "2026-07-20"
+    },
+    {
       "slug": "loopit-stage-music-shifter",
       "title": "Stage Music Shifter",
       "genre": "Stage battler",
@@ -1073,6 +1133,21 @@
       "sourceUrl": "https://share.loopit.me/game/2c0f9c07-b3aa-41c3-b3e0-b1d747832530",
       "access": "free",
       "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-streamhub-live",
+      "title": "StreamHub Live",
+      "genre": "Live-stream lobby",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Kyle Cordes",
+      "guideUrl": "https://gameguidebase.com/games/loopit-streamhub-live/",
+      "sourceUrl": "https://share.loopit.me/game/079aef11-fd91-4e67-82dc-1deba08a396c",
+      "access": "free",
+      "updatedAt": "2026-07-20"
     },
     {
       "slug": "loopit-street-guy-action",

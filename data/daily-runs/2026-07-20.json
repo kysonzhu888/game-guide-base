@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-07-20",
+  "mode": "new-guides",
+  "targetCount": 5,
+  "baseline": {
+    "ref": "b4231067a332e50e80becf29cc9516a68697e874",
+    "gameCount": 88
+  },
+  "final": {
+    "gameCount": 93
+  },
+  "linear": {
+    "parentIssue": "UCH-41",
+    "dailyIssue": "UCH-191"
+  },
+  "guides": [
+    {
+      "slug": "loopit-artinte-snake-game",
+      "sourceUrl": "https://share.loopit.me/game/e39cff44-73f8-47ed-8f52-f7bed1dd9f86",
+      "status": "verified",
+      "dynamic": true,
+      "outcomes": [
+        "Live swipe-to-control state appeared after starting.",
+        "The verified route ended at Game Over with 0 points."
+      ],
+      "pending": [
+        "Longer survival branches"
+      ],
+      "evidence": [
+        {
+          "type": "video",
+          "path": "loopit-artinte-snake-game/run-01.mp4",
+          "captureMethod": "browser-frame-sequence",
+          "sourceFrameCount": 12
+        },
+        {
+          "type": "frame",
+          "path": "loopit-artinte-snake-game/01-start.png"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-artinte-snake-game/02-game-over.png"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-sprunki-sandbox",
+      "sourceUrl": "https://share.loopit.me/game/0273fef5-4bd3-48b3-b1dd-b84113a097dd",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "Sandbox tab layout was visible.",
+        "The Gallery of the Fallen & Changed overlay opened."
+      ],
+      "pending": [
+        "Character behavior",
+        "Bio branches",
+        "Achievement branches"
+      ],
+      "evidence": [
+        {
+          "type": "frame",
+          "path": "loopit-sprunki-sandbox/01-sandbox.png"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-sprunki-sandbox/02-gallery.png"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-streamhub-live",
+      "sourceUrl": "https://share.loopit.me/game/079aef11-fd91-4e67-82dc-1deba08a396c",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "Enter App opened the dashboard.",
+        "The dashboard reported that no one was live."
+      ],
+      "pending": [
+        "Ownership claim flow",
+        "Passcode-gated admin flow",
+        "Live broadcast flow"
+      ],
+      "evidence": [
+        {
+          "type": "frame",
+          "path": "loopit-streamhub-live/01-entry-card.png"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-streamhub-live/02-dashboard.png"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-peppa-pig-rock-dodge",
+      "sourceUrl": "https://share.loopit.me/game/88530803-5da4-4228-b846-cb260db5cb1f",
+      "status": "verified",
+      "dynamic": true,
+      "outcomes": [
+        "The score started at 0 with a Tap to Jump prompt.",
+        "Live play advanced the score to 3."
+      ],
+      "pending": [
+        "Longer survival branches"
+      ],
+      "evidence": [
+        {
+          "type": "video",
+          "path": "loopit-peppa-pig-rock-dodge/run-01.mp4",
+          "captureMethod": "browser-frame-sequence",
+          "sourceFrameCount": 12
+        },
+        {
+          "type": "frame",
+          "path": "loopit-peppa-pig-rock-dodge/01-score-zero.png"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-peppa-pig-rock-dodge/02-score-three-jump.png"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-loopbox",
+      "sourceUrl": "https://share.loopit.me/game/2f77d617-337e-4111-9bdc-71d02755d809",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "The idle editor was visible.",
+        "Pressing Play changed the transport to Pause."
+      ],
+      "pending": [
+        "Note-editing branches",
+        "Arrangement branches"
+      ],
+      "evidence": [
+        {
+          "type": "frame",
+          "path": "loopit-loopbox/01-idle.png"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-loopbox/02-playing.png"
+        }
+      ]
+    }
+  ],
+  "rejectedCandidates": []
+}
