@@ -1,13 +1,13 @@
 {
   "schemaUrl": "https://game-guide-base.pages.dev/api/v1/games.schema.json",
   "schemaVersion": "1.0",
-  "dataUpdatedAt": "2026-07-20",
+  "dataUpdatedAt": "2026-07-21",
   "site": {
     "name": "Game Guide Base",
     "url": "https://gameguidebase.com/",
     "developerDocsUrl": "https://gameguidebase.com/developers/"
   },
-  "count": 93,
+  "count": 98,
   "games": [
     {
       "slug": "loopit-android-9-0-p",
@@ -490,6 +490,21 @@
       "updatedAt": "2026-07-13"
     },
     {
+      "slug": "loopit-graffiti-runner",
+      "title": "Graffiti Runner",
+      "genre": "Obstacle runner",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "MrDiePie",
+      "guideUrl": "https://gameguidebase.com/games/loopit-graffiti-runner/",
+      "sourceUrl": "https://share.loopit.me/game/32504ffc-9d03-4824-bf7c-a71fb9b7fad9",
+      "access": "free",
+      "updatedAt": "2026-07-21"
+    },
+    {
       "slug": "loopit-guano-drop",
       "title": "Guano Drop",
       "genre": "Timing tap",
@@ -533,6 +548,21 @@
       "sourceUrl": "https://share.loopit.me/game/e601105c-901b-42a2-8c0f-fb363acdabbf",
       "access": "free",
       "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-hypnotic-circle",
+      "title": "HYPNOTIC CIRCLE",
+      "genre": "Drawing toy",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Kitty kitty baby",
+      "guideUrl": "https://gameguidebase.com/games/loopit-hypnotic-circle/",
+      "sourceUrl": "https://share.loopit.me/game/3d89c824-cd7b-4ea1-98f9-88d3dc86ef2f",
+      "access": "free",
+      "updatedAt": "2026-07-21"
     },
     {
       "slug": "loopit-idle-memes",
@@ -683,6 +713,21 @@
       "sourceUrl": "https://share.loopit.me/game/5e1bd71c-3d8a-4149-97b5-eb5631169303",
       "access": "free",
       "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-mandys-muddled",
+      "title": "Mandys Muddled",
+      "genre": "Match-3 puzzle",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "DECsta",
+      "guideUrl": "https://gameguidebase.com/games/loopit-mandys-muddled/",
+      "sourceUrl": "https://share.loopit.me/game/9116ee90-ce86-4d04-93fc-6807717bdb1d",
+      "access": "free",
+      "updatedAt": "2026-07-21"
     },
     {
       "slug": "loopit-mantisopedia",
@@ -1180,6 +1225,21 @@
       "updatedAt": "2026-07-02"
     },
     {
+      "slug": "loopit-tag-grandma",
+      "title": "Tag Grandma!",
+      "genre": "Reaction catch",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "sohee_ee",
+      "guideUrl": "https://gameguidebase.com/games/loopit-tag-grandma/",
+      "sourceUrl": "https://share.loopit.me/game/c0e0a2e5-0ec1-48b5-9836-70ca95982c4b",
+      "access": "free",
+      "updatedAt": "2026-07-21"
+    },
+    {
       "slug": "loopit-tag-youre-it",
       "title": "Tag You're It",
       "genre": "Chase reaction",
@@ -1328,6 +1388,21 @@
       "sourceUrl": "https://share.loopit.me/game/4eb06d24-d55c-4fc6-9662-8b57ca703473",
       "access": "free",
       "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-wave",
+      "title": "wave",
+      "genre": "Error prank",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "luis",
+      "guideUrl": "https://gameguidebase.com/games/loopit-wave/",
+      "sourceUrl": "https://share.loopit.me/game/deb55b50-448d-45aa-8aa2-dc6b10e346aa",
+      "access": "free",
+      "updatedAt": "2026-07-21"
     },
     {
       "slug": "loopit-where-are-you-from",

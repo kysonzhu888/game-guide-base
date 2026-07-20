@@ -8251,8 +8251,7 @@
       "We did not push past the opening route in this pass."
     ],
     "lastUpdated": "2026-07-19"
-  }
-,
+  },
   {
     "platforms": [
       "Loopit app",
@@ -8704,5 +8703,455 @@
       "Deeper composition branches remain untested."
     ],
     "lastUpdated": "2026-07-20"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-graffiti-runner",
+    "title": "Graffiti Runner",
+    "genre": "Obstacle runner",
+    "difficulty": "A fast lane-switch runner with jump timing and a busted-end state when the tap timing is off.",
+    "searchIntent": "Loopit Graffiti Runner controls, lane switch, jump, busted screen",
+    "sourceUrl": "https://share.loopit.me/game/32504ffc-9d03-4824-bf7c-a71fb9b7fad9",
+    "creator": "MrDiePie",
+    "creatorSlug": "mrdiepie",
+    "stats": {
+      "views": "73",
+      "likes": "4",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Graffiti Runner is a lane-switch runner with a jump button and a short failure loop. In our verified sample, a tap run ended in a busted final score state.",
+    "quickAnswer": "Use the side taps to switch lanes and the top tap to jump. Our run ended at BUSTED with final score 3, so the guide records the reset branch rather than a full survival route.",
+    "basics": [
+      "The playfield shows GRAFFITI RUNNER with SCORE at the top and a phone-like game card in the center.",
+      "The visible controls are tap side to switch lanes and tap top to jump.",
+      "The run can fall into a busted final-score state quickly when timing is off.",
+      "RUN AGAIN is the visible reset path after a busted state."
+    ],
+    "controls": [
+      "Tap the side of the game area to change lanes.",
+      "Tap the top of the game area to jump.",
+      "Tap RUN AGAIN after a busted run if you want to retry."
+    ],
+    "strategy": [
+      "Keep lane changes small and timed early; late corrections are what pushed our sample into BUSTED.",
+      "Use the jump only when the obstacle gap is obvious rather than as a panic button.",
+      "Treat the run as a short reflex test and watch the score text while you move."
+    ],
+    "mistakes": [
+      "Tapping too late after an obstacle is already on top of you.",
+      "Mixing lane-switch taps and jump taps without a plan.",
+      "Assuming the run will auto-recover after a bust; it does not."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-graffiti-runner/01-entry.jpg",
+        "alt": "Graffiti Runner live run view with lane-switch and jump prompts on Loopit",
+        "caption": "The playable state shows the controls before the run busts."
+      },
+      {
+        "src": "/assets/loopit-graffiti-runner/02-outcome.jpg",
+        "alt": "Graffiti Runner busted run on Loopit with final score 3 and RUN AGAIN",
+        "caption": "The verified outcome shows the busted final-score branch after one tap run."
+      }
+    ],
+    "faq": [
+      [
+        "What are the controls?",
+        "Tap the side to switch lanes and tap the top to jump."
+      ],
+      [
+        "What did the verified run reach?",
+        "It reached a busted final score of 3."
+      ],
+      [
+        "How do you restart?",
+        "Use RUN AGAIN on the busted screen."
+      ]
+    ],
+    "creatorContext": [
+      "MrDiePie is the creator name shown on the Loopit source card.",
+      "The source card reported 73 views, 4 likes, 0 comments, and Remix 0."
+    ],
+    "communityNotes": [
+      "We verified the live share page and our own tap sequence; deeper survival routes beyond the busted branch remain untested."
+    ],
+    "coverageStatus": "Entry state, lane-switch and jump prompts, and the busted final-score branch verified in desktop Chrome; longer survival routes remain pending.",
+    "coverageUpdated": "2026-07-21",
+    "coverageChecklist": [
+      "Captured the live entry screenshot.",
+      "Captured the busted outcome screenshot.",
+      "Recorded the 14-frame browser-frame-sequence run.",
+      "Validated the published screenshot MIME type."
+    ],
+    "coverageNotes": [
+      "The verified route ends in BUSTED; longer survival or cleaner scoring routes remain pending."
+    ],
+    "lastUpdated": "2026-07-21"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-tag-grandma",
+    "title": "Tag Grandma!",
+    "genre": "Reaction catch",
+    "difficulty": "A moving-target tap toy where Grandma relocates after each tap and the score readout stays front-and-center.",
+    "searchIntent": "Loopit Tag Grandma walkthrough, moving target tap, score",
+    "sourceUrl": "https://share.loopit.me/game/c0e0a2e5-0ec1-48b5-9836-70ca95982c4b",
+    "creator": "sohee_ee",
+    "creatorSlug": "sohee-ee",
+    "stats": {
+      "views": "60k",
+      "likes": "1.1k",
+      "comments": "680",
+      "remixes": "56"
+    },
+    "summary": "Tag Grandma! is a moving-target tap toy. In our sample, each tap relocated Grandma on the card while the visible score stayed at 1.",
+    "quickAnswer": "Tap Grandma on the card; the sprite relocates after taps. In this browser sample we verified the movement branch, but the visible score did not increment beyond 1.",
+    "basics": [
+      "The center card shows Tag Grandma!, the score, and a small Grandma sprite.",
+      "The prompt says Tap Grandma to Start! and the game is tap-driven.",
+      "The source card uses a high-engagement social format with views, likes, comments, and remix count.",
+      "The verified branch is the sprite-relocation state after taps."
+    ],
+    "controls": [
+      "Tap the Grandma sprite inside the card.",
+      "Follow the new sprite position after each tap.",
+      "There is no keyboard control in the verified browser sample."
+    ],
+    "strategy": [
+      "Tap cleanly on the sprite rather than on the surrounding cream card.",
+      "Watch the sprite position after every tap because it moves.",
+      "Treat the score as a visible readout, but verify it in the browser because our sample kept showing 1."
+    ],
+    "mistakes": [
+      "Tapping the empty card and assuming the sprite was hit.",
+      "Assuming the score will increment just because Grandma moved.",
+      "Losing track of the relocated sprite and clicking the old position again."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-tag-grandma/01-entry.jpg",
+        "alt": "Tag Grandma entry state with Grandma on the right side of the Loopit card",
+        "caption": "The entry state shows the starting target and score."
+      },
+      {
+        "src": "/assets/loopit-tag-grandma/02-move.jpg",
+        "alt": "Tag Grandma after taps with Grandma relocated inside the card on Loopit",
+        "caption": "The verified follow-up state shows Grandma moved after taps."
+      }
+    ],
+    "faq": [
+      [
+        "Does the score increase in the verified run?",
+        "Not visibly in our sample; the score stayed at 1 while Grandma moved."
+      ],
+      [
+        "What changed after the tap?",
+        "Grandma relocated to a new spot inside the card."
+      ],
+      [
+        "Is there a keyboard route?",
+        "Not in the live sample we verified; this is a tap-only toy."
+      ]
+    ],
+    "creatorContext": [
+      "sohee_ee is the creator name shown on the Loopit source card.",
+      "The source card reported 60k views, 1.1k likes, 680 comments, and Remix 56."
+    ],
+    "communityNotes": [
+      "The page has high social engagement, but we only verified the live tap behavior on the exact share URL."
+    ],
+    "coverageStatus": "Entry card and sprite-relocation taps verified in desktop Chrome; score progression and any deeper branches remain pending.",
+    "coverageUpdated": "2026-07-21",
+    "coverageChecklist": [
+      "Captured the entry screenshot.",
+      "Captured the moved-sprite screenshot.",
+      "Captured the browser-frame-sequence run.",
+      "Validated the published screenshot MIME type."
+    ],
+    "coverageNotes": [
+      "The sprite relocation branch is verified; whether the score can increment in this exact share build remains untested."
+    ],
+    "lastUpdated": "2026-07-21"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-mandys-muddled",
+    "title": "Mandys Muddled",
+    "genre": "Match-3 puzzle",
+    "difficulty": "A photo-tile shuffle puzzle where the board reshuffles under a running timer while the move count stays visible.",
+    "searchIntent": "Loopit Mandys Muddled shuffle button, tile puzzle, timer",
+    "sourceUrl": "https://share.loopit.me/game/9116ee90-ce86-4d04-93fc-6807717bdb1d",
+    "creator": "DECsta",
+    "creatorSlug": "decsta",
+    "stats": {
+      "views": "57",
+      "likes": "5",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Mandys Muddled is a tile-shuffle puzzle with a visible timer, move counter, and a single Shuffle control. Our run verified the reshuffled board after one tap.",
+    "quickAnswer": "Tap Shuffle to reshuffle the 4x4 photo board. In our verified browser pass the timer advanced to 0:05 and the board changed while moves stayed at 0.",
+    "basics": [
+      "The card shows the title, timer, moves, tile grid, and Shuffle button.",
+      "The verified board is a 4x4 photo-tile layout.",
+      "The timer continues while the puzzle is on screen.",
+      "The Shuffle button is the visible state-change control."
+    ],
+    "controls": [
+      "Tap Shuffle to reshuffle the board.",
+      "Use the move counter as the main progress signal.",
+      "Watch the tile arrangement rather than expecting a textual success prompt."
+    ],
+    "strategy": [
+      "Use the first screenshot to understand the tile relationships before shuffling again.",
+      "Treat the timer as a pressure signal rather than a solved-state marker.",
+      "Compare tile edges and landmarks after each shuffle to understand the board layout."
+    ],
+    "mistakes": [
+      "Assuming the puzzle is solved or solvable from the entry board without reshuffling.",
+      "Ignoring the timer and only watching the move count.",
+      "Treating the shuffle as a cosmetic effect; it really rearranges the board."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-mandys-muddled/01-entry.jpg",
+        "alt": "Mandys Muddled entry board with the image tiles and Shuffle button on Loopit",
+        "caption": "The entry state shows the original muddled tile grid."
+      },
+      {
+        "src": "/assets/loopit-mandys-muddled/02-after-shuffle.jpg",
+        "alt": "Mandys Muddled reshuffled board after tapping Shuffle on Loopit",
+        "caption": "The verified follow-up state shows the board reshuffled and the timer advanced."
+      }
+    ],
+    "faq": [
+      [
+        "What changes after Shuffle?",
+        "The tile layout reshuffles and the timer advances."
+      ],
+      [
+        "Did the move counter change in the verified pass?",
+        "No, it stayed at 0 in our sample."
+      ],
+      [
+        "Is there a solved screen in the captured branch?",
+        "Not in the verified branch; we only confirmed the reshuffle state."
+      ]
+    ],
+    "creatorContext": [
+      "DECsta is the creator name shown on the Loopit source card.",
+      "The source card reported 57 views, 5 likes, 0 comments, and Remix 0."
+    ],
+    "communityNotes": [
+      "The share page has very little engagement, so the guide is based on the live shuffle branch we captured ourselves."
+    ],
+    "coverageStatus": "Entry board and reshuffled board verified in desktop Chrome; full solve routes and any hidden branch endings remain pending.",
+    "coverageUpdated": "2026-07-21",
+    "coverageChecklist": [
+      "Captured the entry screenshot.",
+      "Captured the reshuffled board screenshot.",
+      "Verified the Shuffle button changes the board state.",
+      "Validated the published screenshot MIME type."
+    ],
+    "coverageNotes": [
+      "We verified the shuffle branch only; a full solve path was not pursued."
+    ],
+    "lastUpdated": "2026-07-21"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-hypnotic-circle",
+    "title": "HYPNOTIC CIRCLE",
+    "genre": "Drawing toy",
+    "difficulty": "A branchy drawing toy that switches from the landing card into a Reverse Flow drawing mode after you enter the circle.",
+    "searchIntent": "Loopit Hypnotic Circle enter circle reverse flow tap to draw",
+    "sourceUrl": "https://share.loopit.me/game/3d89c824-cd7b-4ea1-98f9-88d3dc86ef2f",
+    "creator": "Kitty kitty baby",
+    "creatorSlug": "kitty-kitty-baby",
+    "stats": {
+      "views": "460k",
+      "likes": "34k",
+      "comments": "3.5k",
+      "remixes": "167"
+    },
+    "summary": "Hypnotic Circle is a drawing toy with a clear branch from the landing card to a Reverse Flow mode. Our verified browser pass covered that branch transition only.",
+    "quickAnswer": "Tap ENTER CIRCLE to switch to Reverse Flow and Tap to draw. We verified the branch change; deeper drawing paths remain pending.",
+    "basics": [
+      "The landing card shows the circle artwork, title, prompt, and an ENTER CIRCLE button.",
+      "The follow-up state becomes Reverse Flow with a Tap to draw prompt.",
+      "The page behaves like a branching drawing toy rather than a level-based puzzle.",
+      "The verified route stops at the mode switch, not a completed drawing outcome."
+    ],
+    "controls": [
+      "Tap ENTER CIRCLE on the landing card.",
+      "In Reverse Flow, tap to draw.",
+      "Treat the page as a mode switcher before you try to make art."
+    ],
+    "strategy": [
+      "Use the entry screen to confirm you are on the right branch before drawing.",
+      "After the mode switch, test the drawing surface rather than expecting a textual win state.",
+      "Keep the branch change screenshot as your reference for the page’s actual start flow."
+    ],
+    "mistakes": [
+      "Assuming the circle artwork itself is the only content and missing the mode switch.",
+      "Looking for a traditional level-clear result when the page is a drawing toy.",
+      "Stopping at the landing card and not entering the Reverse Flow branch."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-hypnotic-circle/01-entry.jpg",
+        "alt": "Hypnotic Circle landing card with ENTER CIRCLE on Loopit",
+        "caption": "The entry state shows the mode-switching prompt."
+      },
+      {
+        "src": "/assets/loopit-hypnotic-circle/02-reverse-flow.jpg",
+        "alt": "Hypnotic Circle Reverse Flow state with Tap to draw on Loopit",
+        "caption": "The verified follow-up state shows the drawing branch after entering the circle."
+      }
+    ],
+    "faq": [
+      [
+        "What happens after ENTER CIRCLE?",
+        "The page switches to Reverse Flow with a Tap to draw prompt."
+      ],
+      [
+        "Did you verify a drawing branch?",
+        "Only the mode switch itself; deeper drawing branches remain unverified."
+      ],
+      [
+        "Is this a puzzle or a toy?",
+        "It behaves more like a drawing toy with a branch change than a rigid puzzle."
+      ]
+    ],
+    "creatorContext": [
+      "Kitty kitty baby is the creator name shown on the Loopit source card.",
+      "The source card reported 460k views, 34k likes, 3.5k comments, and Remix 167."
+    ],
+    "communityNotes": [
+      "The share card has high engagement, but the verified browser sample only covered the entry-to-branch transition."
+    ],
+    "coverageStatus": "Landing card and Reverse Flow drawing branch verified in desktop Chrome; deeper drawing branches remain pending.",
+    "coverageUpdated": "2026-07-21",
+    "coverageChecklist": [
+      "Captured the landing screenshot.",
+      "Captured the Reverse Flow screenshot.",
+      "Verified the mode switch from ENTER CIRCLE to Tap to draw.",
+      "Validated the published screenshot MIME type."
+    ],
+    "coverageNotes": [
+      "We verified the branch switch only, not a full drawing outcome."
+    ],
+    "lastUpdated": "2026-07-21"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-wave",
+    "title": "wave",
+    "genre": "Error prank",
+    "difficulty": "A crash-state replay that opens directly on CRASHED and did not visibly recover from a retry tap in our sample.",
+    "searchIntent": "Loopit wave crashed retry tap no recovery",
+    "sourceUrl": "https://share.loopit.me/game/deb55b50-448d-45aa-8aa2-dc6b10e346aa",
+    "creator": "luis",
+    "creatorSlug": "luis",
+    "stats": {
+      "views": "11k",
+      "likes": "126",
+      "comments": "26",
+      "remixes": "7"
+    },
+    "summary": "Wave opens directly to a CRASHED screen with score 0. In our verified sample, tapping retry did not visibly recover the game.",
+    "quickAnswer": "There is no successful play branch in the verified browser sample; the share page opens crashed and the retry tap leaves it crashed.",
+    "basics": [
+      "The share page opens on a CRASHED state with score 0.",
+      "TAP TO RETRY is the only visible action on the card in the verified sample.",
+      "The outer page still shows the Loopit chrome, views, likes, comments, and author line.",
+      "The verified route did not expose a recovery screen in our browser sample."
+    ],
+    "controls": [
+      "Tap the crash card or the TAP TO RETRY prompt.",
+      "Watch for any visible state change after the tap.",
+      "Treat the retry branch as unverified until the page visibly changes."
+    ],
+    "strategy": [
+      "Take the crash state as the starting point and only claim a recovery if the visible card changes.",
+      "Use the score text and heading as the simplest state check.",
+      "If retry does nothing, record the crash branch honestly instead of inventing a recovery."
+    ],
+    "mistakes": [
+      "Assuming the retry tap succeeded when the card still says CRASHED.",
+      "Treating the static crash screen as a completed playable route.",
+      "Overstating recovery when the browser sample never leaves the crash state."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-wave/01-entry.jpg",
+        "alt": "Wave crash screen with CRASHED and score 0 on Loopit",
+        "caption": "The entry state already opens on the crash screen."
+      },
+      {
+        "src": "/assets/loopit-wave/02-after-retry.jpg",
+        "alt": "Wave crash screen after a retry tap still showing CRASHED on Loopit",
+        "caption": "The verified follow-up state stayed on the crash screen."
+      }
+    ],
+    "faq": [
+      [
+        "Does the retry button recover the game in the verified sample?",
+        "No visible recovery happened in our browser pass."
+      ],
+      [
+        "What state does the share page open in?",
+        "It opens directly on CRASHED with score 0."
+      ],
+      [
+        "Is there a successful play branch here?",
+        "Not in the verified browser sample; we only saw the crash branch."
+      ]
+    ],
+    "creatorContext": [
+      "luis is the creator name shown on the Loopit source card.",
+      "The source card reported 11k views, 126 likes, 26 comments, and Remix 7."
+    ],
+    "communityNotes": [
+      "The share page appears crash-first; we only verified the crash screen and the no-op retry behavior in this browser sample."
+    ],
+    "coverageStatus": "Crash screen and no-op retry branch verified in desktop Chrome; any recovery path or hidden play branch remains pending.",
+    "coverageUpdated": "2026-07-21",
+    "coverageChecklist": [
+      "Captured the crash-screen entry screenshot.",
+      "Captured the post-retry screenshot.",
+      "Verified that the visible retry tap did not change the state in our sample.",
+      "Validated the published screenshot MIME type."
+    ],
+    "coverageNotes": [
+      "The verified branch is the crash state itself; a recovery path was not observed."
+    ],
+    "lastUpdated": "2026-07-21"
   }
 ]

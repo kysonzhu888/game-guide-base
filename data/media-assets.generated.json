@@ -1713,5 +1713,75 @@
     "width": 1200,
     "format": "jpeg",
     "quality": 82
+  },
+  "/assets/loopit-graffiti-runner/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-graffiti-runner/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-graffiti-runner/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-graffiti-runner/02-outcome.jpg": {
+    "r2Key": "games/loopit/loopit-graffiti-runner/screenshots/02-outcome-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-graffiti-runner/screenshots/02-outcome-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-tag-grandma/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-tag-grandma/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-tag-grandma/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-tag-grandma/02-move.jpg": {
+    "r2Key": "games/loopit/loopit-tag-grandma/screenshots/02-move-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-tag-grandma/screenshots/02-move-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-mandys-muddled/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-mandys-muddled/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-mandys-muddled/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-mandys-muddled/02-after-shuffle.jpg": {
+    "r2Key": "games/loopit/loopit-mandys-muddled/screenshots/02-after-shuffle-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-mandys-muddled/screenshots/02-after-shuffle-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-hypnotic-circle/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-hypnotic-circle/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-hypnotic-circle/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-hypnotic-circle/02-reverse-flow.jpg": {
+    "r2Key": "games/loopit/loopit-hypnotic-circle/screenshots/02-reverse-flow-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-hypnotic-circle/screenshots/02-reverse-flow-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-wave/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-wave/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-wave/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-wave/02-after-retry.jpg": {
+    "r2Key": "games/loopit/loopit-wave/screenshots/02-after-retry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-wave/screenshots/02-after-retry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
   }
 }
