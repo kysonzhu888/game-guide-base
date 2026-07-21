@@ -3,6 +3,10 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 const workflowUrl = new URL("../.github/workflows/daily-five-guides.yml", import.meta.url);
+const deploymentWorkflowUrl = new URL(
+  "../.github/workflows/deploy-production.yml",
+  import.meta.url,
+);
 const promptUrl = new URL("../.github/prompts/daily-five-guides.md", import.meta.url);
 const preflightPromptUrl = new URL("../.github/prompts/daily-five-guides-preflight.txt", import.meta.url);
 const repairPromptUrl = new URL(
@@ -27,25 +31,11 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /runs-on:\s*\[self-hosted, macOS, ARM64, game-guide-base\]/);
   assert.match(workflow, /fetch-depth:\s*2/);
   assert.match(workflow, /workflow_dispatch:/);
-  assert.match(
-    workflow,
-    /pull_request:\s*\n\s+types:\s*\[closed\]\s*\n\s+branches:\s*\[main\]/,
-  );
-  assert.match(
-    workflow,
-    /github\.event_name != 'pull_request'[\s\S]+github\.event\.pull_request\.merged == true[\s\S]+startsWith\(github\.event\.pull_request\.head\.ref, 'automation\/daily-five-guides-'\)/,
-  );
+  assert.doesNotMatch(workflow, /\n\s+pull_request:/);
   assert.match(workflow, /options:\s*\n\s+- preflight\s*\n\s+- full\s*\n\s+- resume/);
   assert.match(workflow, /repair-2026-07-14/);
   assert.match(workflow, /id:\s*run_context/);
-  assert.match(
-    workflow,
-    /github\.event_name == 'pull_request' && 'resume'/,
-  );
-  assert.match(
-    workflow,
-    /jq -r '\.pull_request\.head\.ref \/\/ empty' "\$GITHUB_EVENT_PATH"[\s\S]+automation\/daily-five-guides-\(\[0-9\]\{4\}-\[0-9\]\{2\}-\[0-9\]\{2\}\)/,
-  );
+  assert.doesNotMatch(workflow, /github\.event_name == 'pull_request'/);
   assert.match(
     workflow,
     /effective_mode="\$RUN_MODE"[\s\S]+test "\$effective_mode" = "full"[\s\S]+test -s "data\/daily-runs\/\$run_date\.json"[\s\S]+effective_mode="resume"/,
@@ -191,4 +181,30 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(uploadMedia, /R2_UPLOAD_ATTEMPTS/);
   assert.match(uploadMedia, /R2_PUBLIC_VERIFY_TIMEOUT_SECONDS/);
   assert.match(uploadMedia, /"--yes",\s*\n\s*"wrangler@4\.110\.0"/);
+});
+
+test("production workflow deploys every main update and verifies changed guides", async () => {
+  const workflow = await readFile(deploymentWorkflowUrl, "utf8");
+
+  assert.match(workflow, /push:\s*\n\s+branches:\s*\[main\]/);
+  assert.match(workflow, /workflow_dispatch:/);
+  assert.doesNotMatch(workflow, /pull_request:/);
+  assert.match(workflow, /permissions:\s*\n\s+contents:\s*read/);
+  assert.match(workflow, /group:\s*game-guide-base-production/);
+  assert.match(workflow, /runs-on:\s*\[self-hosted, macOS, ARM64, game-guide-base\]/);
+  assert.match(workflow, /ref:\s*\$\{\{ github\.sha \}\}[\s\S]+fetch-depth:\s*0/);
+  assert.match(workflow, /PREVIOUS_SHA:\s*\$\{\{ github\.event\.before \}\}/);
+  assert.match(workflow, /git diff --diff-filter=AMR[\s\S]+games\//);
+  assert.match(workflow, /check-wrangler-auth\.mjs/);
+  assert.match(workflow, /npm test[\s\S]+npm run build[\s\S]+npm run package:deploy/);
+  assert.match(
+    workflow,
+    /run-until-output\.mjs[\s\S]+wrangler@4\.110\.0 pages deploy \.deploy/,
+  );
+  assert.match(workflow, /--commit-hash "\$GITHUB_SHA"/);
+  assert.match(workflow, /--commit-dirty=false/);
+  assert.match(workflow, /https:\/\/gameguidebase\.com\/robots\.txt/);
+  assert.match(workflow, /https:\/\/gameguidebase\.com\/sitemap\.xml/);
+  assert.match(workflow, /https:\/\/gameguidebase\.com\/games\/\$slug\//);
+  assert.doesNotMatch(workflow, /CODEX_BIN|BROWSER_CLIENT|openai\/codex-action/);
 });

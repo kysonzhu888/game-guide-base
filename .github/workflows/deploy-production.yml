@@ -1,0 +1,135 @@
+name: Deploy production
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: game-guide-base-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Build, deploy, and verify main
+    runs-on: [self-hosted, macOS, ARM64, game-guide-base]
+    timeout-minutes: 20
+    env:
+      PAGES_DEPLOY_TIMEOUT_SECONDS: "600"
+      PRODUCTION_VERIFY_RETRIES: "18"
+      PRODUCTION_VERIFY_RETRY_DELAY_SECONDS: "5"
+      PRODUCTION_VERIFY_RETRY_MAX_SECONDS: "120"
+      WRANGLER_SEND_METRICS: "false"
+
+    steps:
+      - name: Check out the exact main commit
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+
+      - name: Add trusted host tools to PATH
+        run: |
+          echo "/opt/homebrew/bin" >> "$GITHUB_PATH"
+          echo "/usr/local/bin" >> "$GITHUB_PATH"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          package-manager-cache: false
+
+      - name: Capture changed guide routes
+        env:
+          PREVIOUS_SHA: ${{ github.event.before }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          changed_guides="$RUNNER_TEMP/changed-guides.txt"
+          : > "$changed_guides"
+          if test -n "${PREVIOUS_SHA:-}" \
+            && test "$PREVIOUS_SHA" != "0000000000000000000000000000000000000000" \
+            && git cat-file -e "$PREVIOUS_SHA^{commit}" 2>/dev/null; then
+            git diff --diff-filter=AMR --name-only "$PREVIOUS_SHA" "$GITHUB_SHA" \
+              | sed -n 's#^games/\([^/][^/]*\)/index\.html$#\1#p' \
+              | sort -u > "$changed_guides"
+          fi
+          echo "CHANGED_GUIDES_FILE=$changed_guides" >> "$GITHUB_ENV"
+          echo "Changed guide routes: $(wc -l < "$changed_guides" | tr -d ' ')"
+          cat "$changed_guides"
+
+      - name: Test and package the production site
+        shell: bash
+        run: |
+          set -euo pipefail
+          for command in curl git node npm npx; do
+            command -v "$command" >/dev/null
+          done
+          node tools/check-wrangler-auth.mjs "$RUNNER_TEMP/wrangler-whoami.txt"
+          npm test
+          npm run build
+          npm run package:deploy | tee "$RUNNER_TEMP/deploy-package.json"
+
+      - name: Deploy the exact commit to Cloudflare Pages
+        shell: bash
+        run: |
+          set -euo pipefail
+          commit_message="$(git log -1 --format=%s)"
+          node tools/run-until-output.mjs \
+            "$PAGES_DEPLOY_TIMEOUT_SECONDS" \
+            "Deployment complete!" \
+            npx --yes wrangler@4.110.0 pages deploy .deploy \
+            --project-name game-guide-base \
+            --branch main \
+            --commit-hash "$GITHUB_SHA" \
+            --commit-message "$commit_message" \
+            --commit-dirty=false \
+            | tee "$RUNNER_TEMP/pages-deployment.log"
+
+      - name: Verify the production domain and changed guides
+        shell: bash
+        run: |
+          set -euo pipefail
+          verify_url() {
+            local url="$1"
+            echo "Waiting for production URL: $url"
+            curl --fail --silent --show-error \
+              --connect-timeout 10 \
+              --max-time 20 \
+              --retry "$PRODUCTION_VERIFY_RETRIES" \
+              --retry-delay "$PRODUCTION_VERIFY_RETRY_DELAY_SECONDS" \
+              --retry-max-time "$PRODUCTION_VERIFY_RETRY_MAX_SECONDS" \
+              --retry-all-errors \
+              "$url" >/dev/null
+            echo "Verified production URL: $url"
+          }
+          verify_url "https://gameguidebase.com/?run=$GITHUB_RUN_ID"
+          verify_url "https://gameguidebase.com/robots.txt?run=$GITHUB_RUN_ID"
+          verify_url "https://gameguidebase.com/sitemap.xml?run=$GITHUB_RUN_ID"
+          while read -r slug; do
+            test -n "$slug" || continue
+            verify_url "https://gameguidebase.com/games/$slug/?run=$GITHUB_RUN_ID"
+          done < "$CHANGED_GUIDES_FILE"
+
+      - name: Publish the deployment summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "# Game Guide Base production deployment"
+            echo
+            echo "- Commit: $GITHUB_SHA"
+            echo "- Branch: $GITHUB_REF_NAME"
+            echo "- Production: https://gameguidebase.com/"
+            echo "- Changed guide routes: $(wc -l < "${CHANGED_GUIDES_FILE:-/dev/null}" 2>/dev/null | tr -d ' ' || echo 0)"
+            if test -s "$RUNNER_TEMP/pages-deployment.log"; then
+              echo
+              echo "## Cloudflare Pages"
+              echo '```text'
+              tail -20 "$RUNNER_TEMP/pages-deployment.log"
+              echo '```'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
