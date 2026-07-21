@@ -1783,5 +1783,75 @@
     "width": 1200,
     "format": "jpeg",
     "quality": 82
+  },
+  "/assets/loopit-choose-your-egg/01-egg-choice.jpg": {
+    "r2Key": "games/loopit/loopit-choose-your-egg/screenshots/01-egg-choice-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-choose-your-egg/screenshots/01-egg-choice-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-choose-your-egg/02-hatch-prompt.jpg": {
+    "r2Key": "games/loopit/loopit-choose-your-egg/screenshots/02-hatch-prompt-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-choose-your-egg/screenshots/02-hatch-prompt-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-stock-simulator/01-intro.jpg": {
+    "r2Key": "games/loopit/loopit-stock-simulator/screenshots/01-intro-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-stock-simulator/screenshots/01-intro-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-stock-simulator/02-bankruptcy.jpg": {
+    "r2Key": "games/loopit/loopit-stock-simulator/screenshots/02-bankruptcy-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-stock-simulator/screenshots/02-bankruptcy-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-touch-to-channel-power/01-touch-prompt.jpg": {
+    "r2Key": "games/loopit/loopit-touch-to-channel-power/screenshots/01-touch-prompt-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-touch-to-channel-power/screenshots/01-touch-prompt-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-touch-to-channel-power/02-blank-canvas.jpg": {
+    "r2Key": "games/loopit/loopit-touch-to-channel-power/screenshots/02-blank-canvas-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-touch-to-channel-power/screenshots/02-blank-canvas-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-seebeedee-visualizer/01-no-disc.jpg": {
+    "r2Key": "games/loopit/loopit-seebeedee-visualizer/screenshots/01-no-disc-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-seebeedee-visualizer/screenshots/01-no-disc-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-seebeedee-visualizer/02-visualizer.jpg": {
+    "r2Key": "games/loopit/loopit-seebeedee-visualizer/screenshots/02-visualizer-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-seebeedee-visualizer/screenshots/02-visualizer-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-bouncy-soccer/01-entry.jpg": {
+    "r2Key": "games/loopit/loopit-bouncy-soccer/screenshots/01-entry-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-bouncy-soccer/screenshots/01-entry-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-bouncy-soccer/02-play-state.jpg": {
+    "r2Key": "games/loopit/loopit-bouncy-soccer/screenshots/02-play-state-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-bouncy-soccer/screenshots/02-play-state-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
   }
 }

@@ -9153,5 +9153,460 @@
       "The verified branch is the crash state itself; a recovery path was not observed."
     ],
     "lastUpdated": "2026-07-21"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-22",
+    "lastUpdated": "2026-07-22",
+    "slug": "loopit-choose-your-egg",
+    "title": "Choose Your Egg",
+    "genre": "Choice game",
+    "difficulty": "A two-egg selection screen that branches into an egg-hatch prompt once you pick a character card.",
+    "searchIntent": "Choose Your Egg Loopit guide, OREN Pinki egg, hatch prompt",
+    "sourceUrl": "https://share.loopit.me/game/d0dfbce8-3981-4c93-929a-de17af4870dc",
+    "creator": "Corina Polanco",
+    "creatorSlug": "corina-polanco",
+    "stats": {
+      "views": "62",
+      "likes": "4",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Choose Your Egg is a small Loopit branch picker. The verified pass opened a clean OREN/PINKI selection screen, then moved into an egg-hatch prompt with OREN marked active after the first pick.",
+    "quickAnswer": "Pick OREN or PINKI first. In the verified pass, choosing OREN opened the hatch prompt, so the useful guide is about making the branch choice rather than hunting for hidden systems.",
+    "basics": [
+      "The landing screen shows CHOOSE YOUR EGG with OREN and PINKI cards.",
+      "Picking OREN opened a hatch prompt with the egg highlighted as active.",
+      "The direct frame is very short and does not expose a long chain of branches in this pass.",
+      "Treat the egg picker as a branch-select screen before any deeper content."
+    ],
+    "controls": [
+      "Click the OREN or PINKI egg card.",
+      "Tap the egg again when the hatch prompt appears.",
+      "Watch the highlighted/active state to confirm your choice stuck."
+    ],
+    "strategy": [
+      "Choose the egg with the vibe you want before worrying about deeper content.",
+      "Use the active highlight as your success check instead of guessing from the emoji alone.",
+      "If you need a second branch later, restart from the egg choice rather than forcing the hatch prompt."
+    ],
+    "mistakes": [
+      "Stopping at the first card without confirming the active egg state.",
+      "Assuming the hatch prompt is a dead end when it is actually the next state.",
+      "Treating the screen as a long game; in the verified pass it is a short branch picker."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-choose-your-egg/01-egg-choice.jpg",
+        "alt": "Choose Your Egg landing screen with OREN and PINKI choices.",
+        "caption": "The entry state offers OREN and PINKI cards."
+      },
+      {
+        "src": "/assets/loopit-choose-your-egg/02-hatch-prompt.jpg",
+        "alt": "Choose Your Egg hatch prompt with OREN selected and marked active.",
+        "caption": "Picking OREN opened the hatch prompt and set the egg active."
+      }
+    ],
+    "faq": [
+      [
+        "What did the verified pass prove?",
+        "It proved that the egg selection branches into a hatch prompt and the selected egg becomes active."
+      ],
+      [
+        "Do both cards do the same thing?",
+        "The verified pass only confirmed OREN; PINKI was visible as the alternative branch and remains pending."
+      ],
+      [
+        "Is there a longer gameplay loop here?",
+        "Not in the verified pass. The visible branch ends at the hatch prompt, so deeper content stays pending."
+      ]
+    ],
+    "creatorContext": [
+      "Corina Polanco is the creator shown on the Loopit source card.",
+      "The card label reads Make Playable Mini-apps, matching the short branch-pick feel of the page."
+    ],
+    "communityNotes": [
+      "The source card showed 62 views, 4 likes, 0 comments, and Remix 0.",
+      "This run only verified the OREN branch and the hatch prompt; PINKI and anything beyond it remain pending."
+    ],
+    "coverageStatus": "Verified in the 2026-07-22 daily run from egg choice to hatch prompt; deeper branches remain pending.",
+    "coverageChecklist": [
+      "Captured the egg-choice entry state.",
+      "Verified the OREN branch opens the hatch prompt.",
+      "Published two still screenshots under the asset slug.",
+      "Kept the deeper PINKI branch pending because it was not fully exercised."
+    ],
+    "coverageNotes": [
+      "The verified path is short but real: a card click clearly changes the page state."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-22",
+    "lastUpdated": "2026-07-22",
+    "slug": "loopit-stock-simulator",
+    "title": "股票模拟器",
+    "genre": "Stock simulator",
+    "difficulty": "A Chinese-language trading simulator that starts from a tap-to-trade landing page and then exposes buy/sell decisions plus a liquidation branch.",
+    "searchIntent": "股票模拟器 Loopit guide, 全仓卖出, 梭哈, 再借一千股",
+    "sourceUrl": "https://share.loopit.me/game/bcd0afcb-9922-4066-bf48-d6460c2b57a0",
+    "creator": "ruozhibaTV",
+    "creatorSlug": "ruozhibatv",
+    "stats": {
+      "views": "37",
+      "likes": "5",
+      "comments": "1",
+      "remixes": "5"
+    },
+    "summary": "股票模拟器 is a tongue-in-cheek stock-trading mini-game. The verified pass moved from the tap-to-start intro into the trading dashboard, then sold the whole position to trigger a liquidation screen with a $0 final asset value and a retry-style button.",
+    "quickAnswer": "Tap the intro, then use the big buy/sell buttons. The verified route opens a trading dashboard and a full sell immediately drops into bankruptcy liquidation, so the safe reading is that the obvious loss branch is intentional.",
+    "basics": [
+      "The intro says you win by reaching one million in assets.",
+      "The first visible game screen shows total assets, cash, holdings, and a price chart.",
+      "The sell branch can terminate the run immediately if you dump the whole position.",
+      "The liquidation screen offers 再借一千股 as the obvious retry action."
+    ],
+    "controls": [
+      "Tap the opening prompt to start trading.",
+      "Use 全仓买入 梭哈 or 全仓卖出 提桶跑路 from the dashboard.",
+      "Treat the liquidation screen as a hard result state, not a soft warning."
+    ],
+    "strategy": [
+      "If you want to test the loop, start from the intro and watch how the dashboard numbers react to a full sell.",
+      "Use the chart and the total-asset number together; the page is about money management, not just button labels.",
+      "Treat the bankruptcy branch as a legitimate observed ending and record it honestly."
+    ],
+    "mistakes": [
+      "Trying to infer a winning route from the liquidation screen without rebuilding a position first.",
+      "Ignoring the Chinese button labels and guessing at the trade controls.",
+      "Calling the result a bug when the page explicitly labels the branch as liquidation."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-stock-simulator/01-intro.jpg",
+        "alt": "Stock Simulator intro screen prompting the player to start trading.",
+        "caption": "The entry screen asks the player to tap the screen to begin trading."
+      },
+      {
+        "src": "/assets/loopit-stock-simulator/02-bankruptcy.jpg",
+        "alt": "Stock Simulator liquidation screen after a full sell with total assets at zero.",
+        "caption": "A full sell sent the verified run into the bankruptcy branch."
+      }
+    ],
+    "faq": [
+      [
+        "How do you start?",
+        "Tap the intro prompt to enter the trading dashboard."
+      ],
+      [
+        "What happens after a full sell?",
+        "The verified pass dropped into a liquidation screen with $0 final assets."
+      ],
+      [
+        "Is there a retry?",
+        "Yes, the liquidation page shows 再借一千股 as the obvious retry action."
+      ]
+    ],
+    "creatorContext": [
+      "ruozhibaTV is the creator shown on the source card.",
+      "The card caption is 股票模拟器, which matches the trading-parody tone of the page."
+    ],
+    "communityNotes": [
+      "The source card showed 37 views, 5 likes, 1 comment, and Remix 5.",
+      "The verified browser sample exercised the loss branch because it was the clearest observable outcome."
+    ],
+    "coverageStatus": "Verified in the 2026-07-22 daily run from intro to liquidation; a recovery route remains pending.",
+    "coverageChecklist": [
+      "Captured the intro screen with the start prompt.",
+      "Captured the trading dashboard after entering the game.",
+      "Captured the liquidation branch after a full sell.",
+      "Published two still screenshots under the asset slug."
+    ],
+    "coverageNotes": [
+      "The observed outcome is the liquidation branch, which is a valid result state for this guide."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-22",
+    "lastUpdated": "2026-07-22",
+    "slug": "loopit-touch-to-channel-power",
+    "title": "Touch to Channel Power",
+    "genre": "Reaction canvas",
+    "difficulty": "A minimal canvas reaction page that swaps from an all-caps prompt into a blank drawing surface when you touch it.",
+    "searchIntent": "Touch to Channel Power Loopit guide, blank canvas, channel power",
+    "sourceUrl": "https://share.loopit.me/game/c3efe544-b201-49df-8d04-abab36588fef",
+    "creator": "RJ Grant",
+    "creatorSlug": "rj-grant",
+    "stats": {
+      "views": "54",
+      "likes": "10",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Touch to Channel Power is a tiny reaction canvas. The verified pass opened on a single prompt, then one tap cleared the text away and left a blank black drawing surface behind, proving the page actually responds to input.",
+    "quickAnswer": "Tap the prompt once. The page turns into a blank canvas, so the useful guide is simply that the input changes the mode from instruction to free canvas.",
+    "basics": [
+      "The entry state is one line of text: TOUCH TO CHANNEL POWER.",
+      "A single touch removes the prompt and reveals a blank canvas.",
+      "The page does not expose a long menu in the verified pass.",
+      "The visible change is immediate enough to use as your success check."
+    ],
+    "controls": [
+      "Tap the prompt text or the canvas area.",
+      "Watch for the text to disappear.",
+      "Use the blank canvas as the active play state."
+    ],
+    "strategy": [
+      "Use the prompt screen as a before/after check: if the text is gone, you are in the active canvas state.",
+      "Treat the blank canvas as the result state and note that the page is intentionally minimal.",
+      "If you are building a guide, keep the explanation short because the control loop is one tap long."
+    ],
+    "mistakes": [
+      "Expecting a complex menu when the page is really a one-tap transition.",
+      "Overwriting the prompt state in your notes and forgetting to mention the blank canvas outcome.",
+      "Calling the blank canvas a loading error when it is the verified post-tap state."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-touch-to-channel-power/01-touch-prompt.jpg",
+        "alt": "Touch to Channel Power prompt screen with the all-caps instruction.",
+        "caption": "The entry state is a single prompt line."
+      },
+      {
+        "src": "/assets/loopit-touch-to-channel-power/02-blank-canvas.jpg",
+        "alt": "Touch to Channel Power blank canvas after the prompt is tapped.",
+        "caption": "One tap clears the prompt and leaves a blank canvas."
+      }
+    ],
+    "faq": [
+      [
+        "What is the visible outcome?",
+        "The prompt disappears and the page becomes a blank canvas."
+      ],
+      [
+        "Is there a multi-step menu?",
+        "Not in the verified pass; the control loop is a one-tap mode switch."
+      ],
+      [
+        "Should I call the blank screen a bug?",
+        "No. It is the verified active state after the tap."
+      ]
+    ],
+    "creatorContext": [
+      "RJ Grant is the creator shown on the source card.",
+      "The source card caption reads Maker Of Peace Mind Of Electricity, which matches the minimal, experimental feel of the page."
+    ],
+    "communityNotes": [
+      "The card showed 54 views, 10 likes, 0 comments, and Remix 0.",
+      "The verified pass treated the blank canvas as the actual result state instead of a loading problem."
+    ],
+    "coverageStatus": "Verified in the 2026-07-22 daily run from prompt to blank canvas; deeper branches remain pending.",
+    "coverageChecklist": [
+      "Captured the prompt state.",
+      "Verified the prompt tap removes the text.",
+      "Published two still screenshots under the asset slug.",
+      "Documented the blank canvas as the resulting play state."
+    ],
+    "coverageNotes": [
+      "The page is intentionally sparse; the important observation is the visible state switch after touch."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-22",
+    "lastUpdated": "2026-07-22",
+    "slug": "loopit-seebeedee-visualizer",
+    "title": "Play SEeBEeDEe",
+    "genre": "Music visualizer",
+    "difficulty": "A music player / visualizer that begins on a No Disc state, then flips into an animated full-screen visual mode when you toggle the visualizer.",
+    "searchIntent": "Play SEeBEeDEe Loopit guide, Toggle Visualizer, No Disc, music visualizer",
+    "sourceUrl": "https://share.loopit.me/game/e66a040f-8909-46ba-bd66-6e36b5ab0584",
+    "creator": "Fry DabRx",
+    "creatorSlug": "fry-dabrx",
+    "stats": {
+      "views": "119",
+      "likes": "7",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Play SEeBEeDEe is a music/visualizer page with a strong before-and-after. The verified pass started on No Disc, showed a failed search banner after Play, and then switched into a full visualizer with an album-art style scene after toggling the visualizer control.",
+    "quickAnswer": "Hit Play SEeBEeDEe, then toggle the visualizer. The useful observation is that the page visibly changes from No Disc into a full visual mode, even though the search attempt reports failure.",
+    "basics": [
+      "The initial state says No Disc and tells you to click Play SEeBEeDEe above to begin.",
+      "Play produces a failed-search banner in the verified pass.",
+      "Toggle Visualizer switches the page into a full-screen visual scene.",
+      "The page behaves like a media-player state machine rather than a standard menu."
+    ],
+    "controls": [
+      "Click Play SEeBEeDEe.",
+      "Toggle the visualizer control in the top-right corner.",
+      "Watch the No Disc / visual scene transition as your outcome marker."
+    ],
+    "strategy": [
+      "Use the Play button first, then flip the visualizer so you can see the full mode change.",
+      "Treat the failed-search banner as part of the observed state, not as a fatal blocker.",
+      "If you are documenting the page, show both the No Disc start and the visualizer mode so the transition is obvious."
+    ],
+    "mistakes": [
+      "Expecting the first Play click to immediately load a track.",
+      "Ignoring the toggle visualizer control, which is the part that makes the state change visually obvious.",
+      "Assuming the failed-search banner means the page is dead; the visualizer still changes state afterward."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-seebeedee-visualizer/01-no-disc.jpg",
+        "alt": "SEeBEeDEe music page showing No Disc and the Play button.",
+        "caption": "The entry state is No Disc with a Play button."
+      },
+      {
+        "src": "/assets/loopit-seebeedee-visualizer/02-visualizer.jpg",
+        "alt": "SEeBEeDEe page after toggling the visualizer into a full animated scene.",
+        "caption": "Toggling the visualizer flips the page into a full visual mode."
+      }
+    ],
+    "faq": [
+      [
+        "What is the first visible state?",
+        "No Disc, with a Play SEeBEeDEe button and a prompt to begin."
+      ],
+      [
+        "Does Play work immediately?",
+        "The verified pass showed a failed-search banner first, then a visualizer toggle changed the page state."
+      ],
+      [
+        "What should I document as the outcome?",
+        "The switch into the full visualizer mode is the clearest observed outcome."
+      ]
+    ],
+    "creatorContext": [
+      "Fry DabRx is the creator shown on the source card.",
+      "The caption asks whether the music version is ready yet and mentions visuals, which matches the player / visualizer behavior."
+    ],
+    "communityNotes": [
+      "The card showed 119 views, 7 likes, 0 comments, and Remix 0.",
+      "The verified pass recorded both the failed-search banner and the visualizer switch instead of claiming a track loaded cleanly."
+    ],
+    "coverageStatus": "Verified in the 2026-07-22 daily run from No Disc to visualizer mode; deeper audio branches remain pending.",
+    "coverageChecklist": [
+      "Captured the No Disc entry state.",
+      "Verified the failed-search banner after Play.",
+      "Captured the full visualizer mode after toggling.",
+      "Published two still screenshots under the asset slug."
+    ],
+    "coverageNotes": [
+      "The important result is the visualizer-state switch, not a successful track search."
+    ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "coverageUpdated": "2026-07-22",
+    "lastUpdated": "2026-07-22",
+    "slug": "loopit-bouncy-soccer",
+    "title": "Bouncy Soccer",
+    "genre": "Arcade soccer",
+    "difficulty": "A playful soccer mini-game with day/night art, a character switcher, and a live play button that we recorded as a frame sequence.",
+    "searchIntent": "Bouncy Soccer Loopit guide, Change Character, Play Bouncy Soccer, day night backgrounds",
+    "sourceUrl": "https://share.loopit.me/game/be963672-26a3-4077-afd5-4a26eac23611",
+    "creator": "Corina Polanco",
+    "creatorSlug": "corina-polanco",
+    "stats": {
+      "views": "103",
+      "likes": "7",
+      "comments": "2",
+      "remixes": "0"
+    },
+    "summary": "Bouncy Soccer is the one dynamic entry in this daily run. The share page exposes a small control cluster with Change Character, Play Bouncy Soccer, and a chat box; we recorded a 12-frame browser-frame-sequence clip to show the live motion instead of pretending a still image was enough.",
+    "quickAnswer": "Use the Play Bouncy Soccer button as the start point, then watch the live sequence rather than treating the page as a static card. The verified run used a 12-frame capture because the game is motion-driven.",
+    "basics": [
+      "The direct frame shows day/night art, a character switcher, a play button, and a chat box.",
+      "This is the dynamic entry in the run, so the evidence includes a short video plus key frames.",
+      "The page behaves like a live mini-game rather than a static gallery card.",
+      "The recorded frame sequence shows the game in motion; the still screenshots are just the published highlights."
+    ],
+    "controls": [
+      "Click Change Character to swap the on-screen character.",
+      "Click Play Bouncy Soccer to start the soccer sequence.",
+      "Use the chat box if you want to attach a short message to the share page."
+    ],
+    "strategy": [
+      "For documentation, keep the sequence short and honest: start, record, and pull two key frames from the motion clip.",
+      "Do not collapse the motion into a slideshow; the frame sequence is the real evidence here.",
+      "Use the dynamic video branch whenever the game is clearly alive and animated."
+    ],
+    "mistakes": [
+      "Treating the dynamic soccer screen as a static screenshot-only page.",
+      "Skipping the frame-sequence capture and trying to fake motion with still images.",
+      "Ignoring the day/night art and control cluster, which are the visible affordances on the share frame."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-bouncy-soccer/01-entry.jpg",
+        "alt": "Bouncy Soccer start screen with day/night art and the Play Bouncy Soccer button.",
+        "caption": "The entry frame shows the soccer controls before motion starts."
+      },
+      {
+        "src": "/assets/loopit-bouncy-soccer/02-play-state.jpg",
+        "alt": "Bouncy Soccer in its live play state after the sequence starts.",
+        "caption": "The second still comes from the live frame sequence."
+      }
+    ],
+    "faq": [
+      [
+        "Why is this guide dynamic?",
+        "Because the game clearly behaves like a live mini-game and the evidence was captured as a continuous frame sequence."
+      ],
+      [
+        "Do the still screenshots replace the video?",
+        "No. The stills are just published highlights pulled from the motion capture."
+      ],
+      [
+        "What should I treat as the result state?",
+        "The moving soccer sequence itself is the result state; the static share card is only the launch surface."
+      ]
+    ],
+    "creatorContext": [
+      "Corina Polanco is the creator shown on the source card.",
+      "The outer card calls the source Make Playable Mini-apps, and the direct frame makes the live play button obvious."
+    ],
+    "communityNotes": [
+      "The source card showed 103 views, 7 likes, 2 comments, and Remix 0.",
+      "The dynamic capture used a 12-frame, 3-second browser frame sequence because the page is motion-driven."
+    ],
+    "coverageStatus": "Verified in the 2026-07-22 daily run with a frame-sequence video and highlighted stills; deeper soccer branches remain pending.",
+    "coverageChecklist": [
+      "Captured the launch frame before play started.",
+      "Recorded a 12-frame browser-frame-sequence clip.",
+      "Exported highlight stills from the motion sequence.",
+      "Published two still screenshots under the asset slug."
+    ],
+    "coverageNotes": [
+      "This is the only dynamic guide in the run; the evidence stays honest by keeping the motion clip and the key frames together."
+    ]
   }
 ]

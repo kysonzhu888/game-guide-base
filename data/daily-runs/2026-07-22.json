@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-07-22",
+  "mode": "new-guides",
+  "targetCount": 5,
+  "baseline": {
+    "ref": "7d913b188bf1cf9617b75943abf21a65b637f2d2",
+    "gameCount": 98
+  },
+  "final": {
+    "gameCount": 103
+  },
+  "linear": {
+    "parentIssue": "UCH-41",
+    "dailyIssue": "UCH-214"
+  },
+  "guides": [
+    {
+      "slug": "loopit-choose-your-egg",
+      "sourceUrl": "https://share.loopit.me/game/d0dfbce8-3981-4c93-929a-de17af4870dc",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "OREN selected the hatch prompt and marked the egg active."
+      ],
+      "pending": [
+        "PINKI remains unverified.",
+        "Anything beyond the hatch prompt remains pending."
+      ],
+      "evidence": [
+        {
+          "type": "screenshot",
+          "path": "loopit-choose-your-egg/01-egg-choice.jpg"
+        },
+        {
+          "type": "screenshot",
+          "path": "loopit-choose-your-egg/02-hatch-prompt.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-stock-simulator",
+      "sourceUrl": "https://share.loopit.me/game/bcd0afcb-9922-4066-bf48-d6460c2b57a0",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "A full sell triggered the bankruptcy/liquidation screen."
+      ],
+      "pending": [
+        "A recovery route after liquidation remains pending."
+      ],
+      "evidence": [
+        {
+          "type": "screenshot",
+          "path": "loopit-stock-simulator/01-intro.jpg"
+        },
+        {
+          "type": "screenshot",
+          "path": "loopit-stock-simulator/02-bankruptcy.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-touch-to-channel-power",
+      "sourceUrl": "https://share.loopit.me/game/c3efe544-b201-49df-8d04-abab36588fef",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "A tap cleared the prompt and left a blank canvas."
+      ],
+      "pending": [
+        "Any deeper drawing or follow-up branches remain pending."
+      ],
+      "evidence": [
+        {
+          "type": "screenshot",
+          "path": "loopit-touch-to-channel-power/01-touch-prompt.jpg"
+        },
+        {
+          "type": "screenshot",
+          "path": "loopit-touch-to-channel-power/02-blank-canvas.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-seebeedee-visualizer",
+      "sourceUrl": "https://share.loopit.me/game/e66a040f-8909-46ba-bd66-6e36b5ab0584",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "Play produced a failed-search banner, and toggling the visualizer opened a full animated scene."
+      ],
+      "pending": [
+        "Any successful search/loading branch remains pending.",
+        "Track selection beyond the visualizer remains pending."
+      ],
+      "evidence": [
+        {
+          "type": "screenshot",
+          "path": "loopit-seebeedee-visualizer/01-no-disc.jpg"
+        },
+        {
+          "type": "screenshot",
+          "path": "loopit-seebeedee-visualizer/02-visualizer.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-bouncy-soccer",
+      "sourceUrl": "https://share.loopit.me/game/be963672-26a3-4077-afd5-4a26eac23611",
+      "status": "verified",
+      "dynamic": true,
+      "outcomes": [
+        "The 12-frame capture showed the soccer scene moving after Play Bouncy Soccer started."
+      ],
+      "pending": [
+        "More soccer branches and character swaps remain pending.",
+        "No deeper score objective was verified in this pass."
+      ],
+      "evidence": [
+        {
+          "type": "video",
+          "path": "loopit-bouncy-soccer/run-01.mp4",
+          "captureMethod": "browser-frame-sequence",
+          "sourceFrameCount": 12
+        },
+        {
+          "type": "frame",
+          "path": "loopit-bouncy-soccer/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-bouncy-soccer/02-play-state.jpg"
+        }
+      ]
+    }
+  ],
+  "rejectedCandidates": []
+}

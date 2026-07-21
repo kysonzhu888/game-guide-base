@@ -1,13 +1,13 @@
 {
   "schemaUrl": "https://game-guide-base.pages.dev/api/v1/games.schema.json",
   "schemaVersion": "1.0",
-  "dataUpdatedAt": "2026-07-21",
+  "dataUpdatedAt": "2026-07-22",
   "site": {
     "name": "Game Guide Base",
     "url": "https://gameguidebase.com/",
     "developerDocsUrl": "https://gameguidebase.com/developers/"
   },
-  "count": 98,
+  "count": 103,
   "games": [
     {
       "slug": "loopit-android-9-0-p",
@@ -115,6 +115,21 @@
       "updatedAt": "2026-07-19"
     },
     {
+      "slug": "loopit-bouncy-soccer",
+      "title": "Bouncy Soccer",
+      "genre": "Arcade soccer",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Corina Polanco",
+      "guideUrl": "https://gameguidebase.com/games/loopit-bouncy-soccer/",
+      "sourceUrl": "https://share.loopit.me/game/be963672-26a3-4077-afd5-4a26eac23611",
+      "access": "free",
+      "updatedAt": "2026-07-22"
+    },
+    {
       "slug": "loopit-capybara-smoke-draw",
       "title": "Capybara Smoke Draw",
       "genre": "Drawing toy",
@@ -188,6 +203,21 @@
       "sourceUrl": "https://share.loopit.me/game/95be7117-2082-4bb7-98a5-fbf7d4e0bd78",
       "access": "free",
       "updatedAt": "2026-07-13"
+    },
+    {
+      "slug": "loopit-choose-your-egg",
+      "title": "Choose Your Egg",
+      "genre": "Choice game",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Corina Polanco",
+      "guideUrl": "https://gameguidebase.com/games/loopit-choose-your-egg/",
+      "sourceUrl": "https://share.loopit.me/game/d0dfbce8-3981-4c93-929a-de17af4870dc",
+      "access": "free",
+      "updatedAt": "2026-07-22"
     },
     {
       "slug": "loopit-classic-teddy-bear-clicker",
@@ -1045,6 +1075,21 @@
       "updatedAt": "2026-07-14"
     },
     {
+      "slug": "loopit-seebeedee-visualizer",
+      "title": "Play SEeBEeDEe",
+      "genre": "Music visualizer",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Fry DabRx",
+      "guideUrl": "https://gameguidebase.com/games/loopit-seebeedee-visualizer/",
+      "sourceUrl": "https://share.loopit.me/game/e66a040f-8909-46ba-bd66-6e36b5ab0584",
+      "access": "free",
+      "updatedAt": "2026-07-22"
+    },
+    {
       "slug": "loopit-shift-weight-server",
       "title": "Shift Weight Server",
       "genre": "Balance serving",
@@ -1180,6 +1225,21 @@
       "updatedAt": "2026-07-02"
     },
     {
+      "slug": "loopit-stock-simulator",
+      "title": "股票模拟器",
+      "genre": "Stock simulator",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "ruozhibaTV",
+      "guideUrl": "https://gameguidebase.com/games/loopit-stock-simulator/",
+      "sourceUrl": "https://share.loopit.me/game/bcd0afcb-9922-4066-bf48-d6460c2b57a0",
+      "access": "free",
+      "updatedAt": "2026-07-22"
+    },
+    {
       "slug": "loopit-streamhub-live",
       "title": "StreamHub Live",
       "genre": "Live-stream lobby",
@@ -1313,6 +1373,21 @@
       "sourceUrl": "https://share.loopit.me/game/2c7c7487-9c03-4853-a987-86b4af1fd360",
       "access": "free",
       "updatedAt": "2026-07-14"
+    },
+    {
+      "slug": "loopit-touch-to-channel-power",
+      "title": "Touch to Channel Power",
+      "genre": "Reaction canvas",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "RJ Grant",
+      "guideUrl": "https://gameguidebase.com/games/loopit-touch-to-channel-power/",
+      "sourceUrl": "https://share.loopit.me/game/c3efe544-b201-49df-8d04-abab36588fef",
+      "access": "free",
+      "updatedAt": "2026-07-22"
     },
     {
       "slug": "loopit-trap-the-ants",
