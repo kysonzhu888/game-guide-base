@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-07-21",
+  "mode": "new-guides",
+  "targetCount": 5,
+  "baseline": {
+    "ref": "abcbdfd32a42f0e34e3e8e3bc65ba5ca697eccaf",
+    "gameCount": 93
+  },
+  "final": {
+    "gameCount": 98
+  },
+  "linear": {
+    "parentIssue": "UCH-41",
+    "dailyIssue": "UCH-207"
+  },
+  "guides": [
+    {
+      "slug": "loopit-graffiti-runner",
+      "sourceUrl": "https://share.loopit.me/game/32504ffc-9d03-4824-bf7c-a71fb9b7fad9",
+      "status": "verified",
+      "dynamic": true,
+      "outcomes": [
+        "The run reset into the live lane-switch and jump state.",
+        "A tap run ended in BUSTED with final score 3."
+      ],
+      "pending": [
+        "Longer survival routes"
+      ],
+      "evidence": [
+        {
+          "type": "video",
+          "path": "loopit-graffiti-runner/run-01.mp4",
+          "captureMethod": "browser-frame-sequence",
+          "sourceFrameCount": 14
+        },
+        {
+          "type": "frame",
+          "path": "loopit-graffiti-runner/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-graffiti-runner/02-outcome.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-tag-grandma",
+      "sourceUrl": "https://share.loopit.me/game/c0e0a2e5-0ec1-48b5-9836-70ca95982c4b",
+      "status": "verified",
+      "dynamic": true,
+      "outcomes": [
+        "Grandma moved to new positions after taps.",
+        "The visible score stayed at 1 in our sample."
+      ],
+      "pending": [
+        "Whether a tighter hit path increments the score beyond 1"
+      ],
+      "evidence": [
+        {
+          "type": "video",
+          "path": "loopit-tag-grandma/run-01.mp4",
+          "captureMethod": "browser-frame-sequence",
+          "sourceFrameCount": 16
+        },
+        {
+          "type": "frame",
+          "path": "loopit-tag-grandma/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-tag-grandma/02-move.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-mandys-muddled",
+      "sourceUrl": "https://share.loopit.me/game/9116ee90-ce86-4d04-93fc-6807717bdb1d",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "The board reshuffled after Shuffle.",
+        "The timer advanced from 0:04 to 0:05 while moves stayed at 0."
+      ],
+      "pending": [
+        "Full solve route"
+      ],
+      "evidence": [
+        {
+          "type": "frame",
+          "path": "loopit-mandys-muddled/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-mandys-muddled/02-after-shuffle.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-hypnotic-circle",
+      "sourceUrl": "https://share.loopit.me/game/3d89c824-cd7b-4ea1-98f9-88d3dc86ef2f",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "Enter Circle switched the card into Reverse Flow.",
+        "The prompt changed to Tap to draw."
+      ],
+      "pending": [
+        "Deeper drawing branches"
+      ],
+      "evidence": [
+        {
+          "type": "frame",
+          "path": "loopit-hypnotic-circle/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-hypnotic-circle/02-reverse-flow.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-wave",
+      "sourceUrl": "https://share.loopit.me/game/deb55b50-448d-45aa-8aa2-dc6b10e346aa",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "The share page opened directly on CRASHED with score 0.",
+        "The retry tap did not visibly recover the game."
+      ],
+      "pending": [
+        "Any recovery path or hidden play branch"
+      ],
+      "evidence": [
+        {
+          "type": "frame",
+          "path": "loopit-wave/01-entry.jpg"
+        },
+        {
+          "type": "frame",
+          "path": "loopit-wave/02-after-retry.jpg"
+        }
+      ]
+    }
+  ],
+  "rejectedCandidates": [
+    {
+      "sourceUrl": "https://share.loopit.me/game/63734746-dc7e-46fc-9ebe-5b32fe38ee3a",
+      "title": "Monika chat",
+      "reason": "The share page only showed an Open the Loopit app overlay and never reached a playable state in this browser sample."
+    },
+    {
+      "sourceUrl": "https://share.loopit.me/game/84762000-ade6-41f0-aaf4-6d7e8023df42",
+      "reason": "The iframe returned 404."
+    },
+    {
+      "sourceUrl": "https://share.loopit.me/game/a37f70f6-2c80-4b99-9e27-1791616fc84c",
+      "reason": "The iframe returned 404."
+    },
+    {
+      "sourceUrl": "https://share.loopit.me/game/5be50fcf-f8a3-4fbc-a248-8c1d6b6826b7",
+      "title": "Hacker Phone Escape",
+      "reason": "The iframe returned 404."
+    },
+    {
+      "sourceUrl": "https://share.loopit.me/game/5a0ff7c8-9c56-4f0e-8d3a-8debe006143f",
+      "title": "Scarlett♡ YouTube",
+      "reason": "The iframe returned 404."
+    }
+  ]
+}
