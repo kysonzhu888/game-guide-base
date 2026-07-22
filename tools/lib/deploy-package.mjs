@@ -62,9 +62,9 @@ export async function buildDeployPackage({ root, output }) {
     await cp(source, path.join(outputRoot, directory), { recursive: true });
   }
 
-  const heroSource = path.join(sourceRoot, "assets", "hero-game-guides.png");
+  const heroSource = path.join(sourceRoot, "assets", "hero-game-guides-1200w.jpg");
   if (!await exists(heroSource)) throw new Error("Missing hero image for deployment.");
-  const heroTarget = path.join(outputRoot, "assets", "hero-game-guides.png");
+  const heroTarget = path.join(outputRoot, "assets", "hero-game-guides-1200w.jpg");
   await mkdir(path.dirname(heroTarget), { recursive: true });
   await cp(heroSource, heroTarget);
 

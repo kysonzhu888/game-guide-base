@@ -1,10 +1,12 @@
 {
   "hero": {
-    "url": "/assets/hero-game-guides.png",
+    "url": "/assets/hero-game-guides-1200w.jpg",
     "sourceUrl": "",
     "creator": "OpenAI image generation",
     "license": "Project-owned generated asset",
     "licenseUrl": "",
-    "alt": "A clean desk with game maps, puzzle tiles, a phone, a keyboard, and a strategy notebook."
+    "alt": "A clean desk with game maps, puzzle tiles, a phone, a keyboard, and a strategy notebook.",
+    "width": 1200,
+    "height": 675
   }
 }
