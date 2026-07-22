@@ -132,7 +132,7 @@ function generateHomePage() {
             </form>
           </div>
           <figure class="hero-media">
-            <img src="/${media.hero.url.replace(/^\//, "")}" alt="${escapeHtml(media.hero.alt)}">
+            <img src="/${media.hero.url.replace(/^\//, "")}" alt="${escapeHtml(media.hero.alt)}"${heroDimensionAttributes()} fetchpriority="high" decoding="async">
             <figcaption>Original visual asset created for Game Guide Base.</figcaption>
           </figure>
         </section>
@@ -532,7 +532,9 @@ function layout({ title, description, body, depth, path: pagePath, schema = [] }
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${canonical}">
-  <meta property="og:image" content="${site.url}/assets/hero-game-guides.png">
+  ${site.mediaBaseUrl ? `<link rel="preconnect" href="${site.mediaBaseUrl}">` : ""}
+  ${site.adsenseClientId ? `<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>` : ""}
+  <meta property="og:image" content="${site.url}${media.hero.url}">
   ${site.searchConsoleVerification ? `<meta name="google-site-verification" content="${escapeHtml(site.searchConsoleVerification)}">` : ""}
   ${site.googleAnalyticsId ? analyticsTag(site.googleAnalyticsId) : ""}
   ${site.adsenseClientId ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${escapeHtml(site.adsenseClientId)}" crossorigin="anonymous"></script>` : ""}
@@ -834,12 +836,23 @@ function relatedLinkList(related, prefix) {
   `;
 }
 
+function heroDimensionAttributes() {
+  const width = Number(media.hero.width);
+  const height = Number(media.hero.height);
+  if (!Number.isInteger(width) || !Number.isInteger(height) || width <= 0 || height <= 0) return "";
+  return ` width="${width}" height="${height}"`;
+}
+
 function gameVisual(game, className, prefix = "") {
   const firstShot = Array.isArray(game.screenshots) ? game.screenshots[0] : null;
   if (firstShot) {
+    // The game-page hero art is the LCP element; everything else stays lazy.
+    const loadingAttributes = className === "game-hero-art"
+      ? 'fetchpriority="high" decoding="async"'
+      : 'loading="lazy"';
     return `
       <figure class="${className}" aria-label="${escapeHtml(game.title)} walkthrough screenshot">
-        <img src="${imageSrcForClass(firstShot.src, className, prefix)}" alt="${escapeHtml(firstShot.alt)}" loading="lazy">
+        <img src="${imageSrcForClass(firstShot.src, className, prefix)}" alt="${escapeHtml(firstShot.alt)}" ${loadingAttributes}>
       </figure>
     `;
   }
