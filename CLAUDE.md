@@ -80,6 +80,18 @@ and are intentionally not in GitHub secrets.
 - `.media/` holds generated optimized media and must never be deployed to Pages.
 - Keep guides to 4–6 screenshots unless the game meaningfully branches.
 
+## Repo size and data layout constraints
+
+- Source screenshots under `assets/<game-slug>/` are load-bearing for the daily pipeline:
+  `tools/lib/daily-guide-verifier.mjs` requires each new guide's screenshot `src` to start
+  with `/assets/<game-slug>/`, and the automation commits them. Do not move them out of git
+  without also changing the verifier, the daily prompt, and the Mac-side Codex workflow.
+  Recompressing them losslessly (identical rendered pixels) is safe — the media manifest
+  stores only `r2Key`/dimensions, never source hashes or byte sizes. Some `.png` files are
+  actually JPEG/WebP; leave their names alone (manifest keys and verifier paths depend on them).
+- `data/games.json` stays a single file on purpose: the daily automation and verifier both
+  read/write that exact path, and the Codex workflow lives outside this repo. Do not shard it.
+
 ## Content integrity rules
 
 Guides are evidence-backed: never invent play results, routes, creators, stats, screenshots,
