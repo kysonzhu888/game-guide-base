@@ -12,4 +12,5 @@ node_modules/
 *.md
 !README.md
 !MEDIA_RULES.md
+!CLAUDE.md
 !.github/prompts/daily-five-guides.md
