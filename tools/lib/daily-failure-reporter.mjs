@@ -40,7 +40,7 @@ export function selectFailureReason(contents) {
     .map((line) => line.trim())
     .filter(Boolean);
   const explicitMarker = lines.find((line) =>
-    /^(?:CODEX_QUOTA_FAILED|BROWSER_PREFLIGHT_FAILED|DAILY_[A-Z_]*FAILED):/i.test(line));
+    /^(?:CODEX_QUOTA_FAILED|CLAUDE_[A-Z_]*FAILED|BROWSER_PREFLIGHT_FAILED|DAILY_[A-Z_]*FAILED):/i.test(line));
   if (explicitMarker) return normalizeFailureReason(explicitMarker);
   const diagnostic = lines.find((line) =>
     /\b(?:failed|failure|error|blocked|unavailable|timed out)\b|失败|受阻|阻塞|超时|不可用/i.test(line));

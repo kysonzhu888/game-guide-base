@@ -26,6 +26,20 @@ test("prefers an explicit browser failure over a successful quota marker", () =>
   );
 });
 
+test("selects Claude engine failure markers", () => {
+  assert.equal(
+    selectFailureReason(["CLAUDE_QUOTA_FAILED: Claude quota is unavailable.\n"]),
+    "CLAUDE_QUOTA_FAILED: Claude quota is unavailable.",
+  );
+  assert.equal(
+    selectFailureReason([
+      "some noise\n",
+      "CLAUDE_AGENT_FAILED: Claude agent exited before writing the run manifest.\n",
+    ]),
+    "CLAUDE_AGENT_FAILED: Claude agent exited before writing the run manifest.",
+  );
+});
+
 test("builds a fail-closed Linear handoff", () => {
   const body = buildFailureBody({
     runUrl: "https://github.com/example/repo/actions/runs/123",

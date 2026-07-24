@@ -10,6 +10,9 @@ const candidateFiles = [
   "codex-quota.md",
   "codex-preflight.md",
   "codex-final.md",
+  "claude-quota.md",
+  "claude-preflight.md",
+  "claude-final.md",
 ].map((name) => join(process.env.RUNNER_TEMP || "", name));
 
 async function readFailureReason() {
