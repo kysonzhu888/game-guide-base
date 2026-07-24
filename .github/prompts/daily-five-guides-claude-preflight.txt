@@ -1,0 +1,27 @@
+Perform only the Chrome-runtime smoke test for the Claude engine. This unattended task plays
+Loopit games later, so it must confirm the browser chain works first. Do not inspect the
+repository, modify files, create tickets, commit, push, upload media, deploy, or print credentials.
+
+The workflow step before this one already launched a real Google Chrome (a fresh temporary
+`--user-data-dir` with `--remote-debugging-port=__CDP_PORT__`) and ran `agent-browser connect
+__CDP_PORT__`, so an `agent-browser` session is already attached to that Chrome. A real Chrome is
+required because Loopit games are served from `cdn-cf.loopit.me` behind a Cloudflare challenge that
+blocks agent-browser's own bundled Chromium; only a real Chrome clears that challenge.
+
+Read the `agent-browser` skill first (`agent-browser skills get core --full`). Then run the
+`agent-browser` CLI through the Bash tool to smoke-test the runtime:
+
+1. `agent-browser open about:blank`
+2. Confirm the current URL is exactly `about:blank` (e.g. `agent-browser eval "location.href"`).
+3. `agent-browser screenshot` to a temporary path and confirm the file is a non-empty PNG.
+
+If the session is unavailable (no browser connected), recover once in the same run: launch Chrome
+directly, because the runner's LaunchAgent environment cannot use LaunchServices to open the
+bundle —
+`"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --remote-debugging-port=__CDP_PORT__ --user-data-dir=__CDP_PROFILE__ --no-first-run --no-default-browser-check --new-window about:blank >/dev/null 2>&1 &`
+— wait a few seconds, run `agent-browser connect __CDP_PORT__`, and retry the smoke test once. Do
+not ask for permission. Do not open any logged-in profile and do not inspect cookies, passwords, or
+profile storage.
+
+On success, respond with exactly `BROWSER_PREFLIGHT_OK`. On failure, respond with one line
+beginning `BROWSER_PREFLIGHT_FAILED:` and the factual reason.

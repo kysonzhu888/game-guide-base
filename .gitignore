@@ -14,3 +14,4 @@ node_modules/
 !MEDIA_RULES.md
 !CLAUDE.md
 !.github/prompts/daily-five-guides.md
+!.github/prompts/daily-five-guides-claude.md
