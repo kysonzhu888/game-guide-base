@@ -64,6 +64,9 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /CLAUDE_MODEL:[^\n]*sonnet/);
   assert.match(workflow, /CLAUDE_AGENT_TIMEOUT_SECONDS:\s*["']13800["']/);
   assert.match(workflow, /CDP_PORT:\s*["']9333["']/);
+  assert.match(workflow, /Load the Claude subscription token\s*\n\s+if: \$\{\{ env\.RUN_ENGINE != 'codex' \}\}/);
+  assert.match(workflow, /CLAUDE_CODE_OAUTH_TOKEN=\$token" >> "\$GITHUB_ENV"/);
+  assert.match(workflow, /::add-mask::\$token/);
   assert.match(workflow, /Select the daily engine[\s\S]+CODEX_QUOTA_OK[\s\S]+CLAUDE_QUOTA_OK/);
   assert.match(workflow, /CLAUDE_QUOTA_FAILED/);
   assert.match(workflow, /echo "ENGINE=\$engine" >> "\$GITHUB_ENV"/);
