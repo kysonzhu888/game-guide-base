@@ -56,6 +56,23 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   assert.match(workflow, /PRODUCTION_VERIFY_RETRY_MAX_SECONDS:\s*["']120["']/);
   assert.match(workflow, /WRANGLER_SEND_METRICS:\s*["']false["']/);
   assert.match(workflow, /BROWSER_CLIENT_MJS:[^\n]*browser-client\.mjs/);
+
+  // Engine router: Codex-first with a Claude fallback.
+  assert.match(workflow, /engine:\s*\n\s+description:[^\n]*auto[\s\S]+options:\s*\n\s+- auto\s*\n\s+- codex\s*\n\s+- claude/);
+  assert.match(workflow, /RUN_ENGINE:\s*\$\{\{ github\.event_name == 'schedule' && 'auto' \|\| inputs\.engine \}\}/);
+  assert.match(workflow, /CLAUDE_BIN:\s*claude/);
+  assert.match(workflow, /CLAUDE_MODEL:[^\n]*sonnet/);
+  assert.match(workflow, /CLAUDE_AGENT_TIMEOUT_SECONDS:\s*["']13800["']/);
+  assert.match(workflow, /CDP_PORT:\s*["']9333["']/);
+  assert.match(workflow, /Select the daily engine[\s\S]+CODEX_QUOTA_OK[\s\S]+CLAUDE_QUOTA_OK/);
+  assert.match(workflow, /CLAUDE_QUOTA_FAILED/);
+  assert.match(workflow, /echo "ENGINE=\$engine" >> "\$GITHUB_ENV"/);
+  assert.match(workflow, /Start the local Chrome for the Claude engine\s*\n\s+if: \$\{\{ env\.ENGINE == 'claude' \}\}/);
+  assert.match(workflow, /agent-browser connect "\$CDP_PORT"/);
+  assert.match(workflow, /Gate the Claude browser runtime\s*\n\s+if: \$\{\{ env\.ENGINE == 'claude' \}\}/);
+  assert.match(workflow, /Gate the local Codex and Chrome runtime\s*\n\s+if: \$\{\{ env\.ENGINE == 'codex' \}\}/);
+  assert.equal(workflow.match(/--dangerously-skip-permissions/g)?.length, 2);
+  assert.match(workflow, /Stop the Claude engine Chrome/);
   assert.equal(workflow.match(/"\$CODEX_BIN"/g)?.length, 7);
   assert.equal(workflow.match(/-m "\$CODEX_MODEL"/g)?.length, 4);
   assert.equal(workflow.match(/\/usr\/bin\/perl -e '[^']*alarm \$seconds; exec @ARGV/g)?.length, 1);
@@ -73,7 +90,8 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   );
   assert.equal(workflow.match(/__BROWSER_CLIENT_MJS__/g)?.length, 3);
   assert.doesNotMatch(workflow, /\n\s+codex\s+-c/);
-  assert.equal(workflow.match(/model_reasoning_effort="xhigh"/g)?.length, 4);
+  assert.equal(workflow.match(/model_reasoning_effort="high"/g)?.length, 3);
+  assert.equal(workflow.match(/model_reasoning_effort="low"/g)?.length, 1);
   assert.match(workflow, /CODEX_QUOTA_OK/);
   assert.match(workflow, /Codex daily-guide gate failed/);
   assert.match(workflow, /LINEAR_FAILURE_ISSUE:\s*UCH-125/);
@@ -118,7 +136,15 @@ test("daily workflow runs five-guide automation on the trusted Mac", async () =>
   );
   assert.equal(
     workflow.match(/if: \$\{\{ steps\.run_context\.outputs\.mode == 'full' \}\}/g)?.length,
-    2,
+    1,
+  );
+  assert.match(
+    workflow,
+    /Run the evidence-backed daily Codex agent\s*\n\s+if: \$\{\{ steps\.run_context\.outputs\.mode == 'full' && env\.ENGINE == 'codex' \}\}/,
+  );
+  assert.match(
+    workflow,
+    /Run the evidence-backed daily Claude agent\s*\n\s+if: \$\{\{ steps\.run_context\.outputs\.mode == 'full' && env\.ENGINE == 'claude' \}\}/,
   );
   assert.match(
     workflow,

@@ -16,6 +16,15 @@ on:
           - full
           - resume
           - repair-2026-07-14
+      engine:
+        description: Which engine plays the games (auto prefers Codex, falls back to Claude)
+        required: true
+        default: auto
+        type: choice
+        options:
+          - auto
+          - codex
+          - claude
 
 permissions:
   contents: write
@@ -35,7 +44,14 @@ jobs:
       LINEAR_PARENT_ISSUE: UCH-41
       LINEAR_FAILURE_ISSUE: UCH-125
       RUN_MODE: ${{ github.event_name == 'schedule' && 'full' || inputs.mode }}
+      RUN_ENGINE: ${{ github.event_name == 'schedule' && 'auto' || inputs.engine }}
       TARGET_GUIDES: "5"
+      CLAUDE_BIN: claude
+      CLAUDE_MODEL: ${{ vars.GAME_GUIDE_CLAUDE_MODEL || 'sonnet' }}
+      CLAUDE_QUOTA_TIMEOUT_SECONDS: "120"
+      CLAUDE_PREFLIGHT_TIMEOUT_SECONDS: "300"
+      CLAUDE_AGENT_TIMEOUT_SECONDS: "13800"
+      CDP_PORT: "9333"
       CODEX_BIN: /Applications/ChatGPT.app/Contents/Resources/codex
       CODEX_SIGNED_NODE_BIN: /Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node
       CODEX_MODEL: ${{ vars.GAME_GUIDE_CODEX_MODEL || 'gpt-5.4-mini' }}
@@ -96,37 +112,84 @@ jobs:
           git config user.name "game-guide-automation"
           git config user.email "kysonzhu888@gmail.com"
 
-      - name: Gate the local Codex quota
+      - name: Select the daily engine (Codex quota gate, Claude fallback)
+        id: engine
         shell: bash
         run: |
           set -euo pipefail
-          test -x "$CODEX_BIN"
-          set +e
-          printf 'Reply exactly CODEX_QUOTA_OK and do nothing else.\n' \
-            | /usr/bin/perl -e 'my $seconds = shift @ARGV; alarm $seconds; exec @ARGV or die $!;' \
-              "$CODEX_QUOTA_TIMEOUT_SECONDS" \
-              "$CODEX_BIN" -c 'model_reasoning_effort="low"' \
-              -a never -s read-only -m "$CODEX_MODEL" -C "$GITHUB_WORKSPACE" \
-              exec --ephemeral --output-last-message "$RUNNER_TEMP/codex-quota.md" - \
-              >"$RUNNER_TEMP/codex-quota.log" 2>&1
-          codex_status=$?
-          set -e
-          cat "$RUNNER_TEMP/codex-quota.log"
-          if test "$codex_status" -eq 0 \
-            && grep -Fqx "CODEX_QUOTA_OK" "$RUNNER_TEMP/codex-quota.md"; then
-            exit 0
+          requested="${RUN_ENGINE:-auto}"
+          engine=""
+          codex_reason=""
+
+          # Probe Codex unless the run explicitly forces Claude.
+          if test "$requested" = "codex" || test "$requested" = "auto"; then
+            test -x "$CODEX_BIN"
+            set +e
+            printf 'Reply exactly CODEX_QUOTA_OK and do nothing else.\n' \
+              | /usr/bin/perl -e 'my $seconds = shift @ARGV; alarm $seconds; exec @ARGV or die $!;' \
+                "$CODEX_QUOTA_TIMEOUT_SECONDS" \
+                "$CODEX_BIN" -c 'model_reasoning_effort="low"' \
+                -a never -s read-only -m "$CODEX_MODEL" -C "$GITHUB_WORKSPACE" \
+                exec --ephemeral --output-last-message "$RUNNER_TEMP/codex-quota.md" - \
+                >"$RUNNER_TEMP/codex-quota.log" 2>&1
+            codex_status=$?
+            set -e
+            cat "$RUNNER_TEMP/codex-quota.log" || true
+            if test "$codex_status" -eq 0 \
+              && grep -Fqx "CODEX_QUOTA_OK" "$RUNNER_TEMP/codex-quota.md"; then
+              engine="codex"
+            else
+              if grep -Eqi 'usage limit|credits balance|rate.?limit|insufficient.?quota' \
+                "$RUNNER_TEMP/codex-quota.log"; then
+                codex_reason="Codex quota is unavailable for $CODEX_MODEL."
+              elif test "$codex_status" -eq 142; then
+                codex_reason="Codex quota probe timed out after $CODEX_QUOTA_TIMEOUT_SECONDS seconds."
+              else
+                codex_reason="Codex quota probe exited with status $codex_status without the success marker."
+              fi
+              printf 'CODEX_QUOTA_FAILED: %s\n' "$codex_reason" > "$RUNNER_TEMP/codex-quota.md"
+              echo "Codex unavailable: $codex_reason"
+              if test "$requested" = "codex"; then
+                echo "::error title=Codex daily-guide gate failed::$codex_reason"
+                exit 1
+              fi
+            fi
           fi
-          if grep -Eqi 'usage limit|credits balance|rate.?limit|insufficient.?quota' \
-            "$RUNNER_TEMP/codex-quota.log"; then
-            reason="Codex quota is unavailable for $CODEX_MODEL."
-          elif test "$codex_status" -eq 142; then
-            reason="Codex quota probe timed out after $CODEX_QUOTA_TIMEOUT_SECONDS seconds."
-          else
-            reason="Codex quota probe exited with status $codex_status without the success marker."
+
+          # Probe Claude when Codex is not selected and Claude is allowed.
+          if test -z "$engine" && { test "$requested" = "claude" || test "$requested" = "auto"; }; then
+            command -v "$CLAUDE_BIN" >/dev/null
+            set +e
+            claude_out="$("$CLAUDE_BIN" -p 'Reply with exactly the token CLAUDE_QUOTA_OK and nothing else.' \
+              --model "$CLAUDE_MODEL" --output-format text 2>"$RUNNER_TEMP/claude-quota.log")"
+            claude_status=$?
+            set -e
+            printf '%s\n' "$claude_out" | tee "$RUNNER_TEMP/claude-quota.out"
+            if test "$claude_status" -eq 0 && printf '%s' "$claude_out" | grep -Fq "CLAUDE_QUOTA_OK"; then
+              engine="claude"
+            else
+              if grep -Eqi 'usage limit|rate.?limit|overloaded|insufficient|quota' \
+                "$RUNNER_TEMP/claude-quota.log" "$RUNNER_TEMP/claude-quota.out"; then
+                claude_reason="Claude quota is unavailable for $CLAUDE_MODEL."
+              else
+                claude_reason="Claude quota probe exited with status $claude_status without the success marker."
+              fi
+              printf 'CLAUDE_QUOTA_FAILED: %s\n' "$claude_reason" > "$RUNNER_TEMP/claude-quota.md"
+              echo "Claude unavailable: $claude_reason"
+            fi
           fi
-          printf 'CODEX_QUOTA_FAILED: %s\n' "$reason" > "$RUNNER_TEMP/codex-quota.md"
-          echo "::error title=Codex daily-guide gate failed::$reason"
-          exit 1
+
+          if test -z "$engine"; then
+            if test ! -f "$RUNNER_TEMP/codex-quota.md" && test ! -f "$RUNNER_TEMP/claude-quota.md"; then
+              printf 'DAILY_ENGINE_FAILED: No engine could be selected for %s.\n' "$requested" > "$RUNNER_TEMP/claude-quota.md"
+            fi
+            echo "::error title=Daily engine gate failed::No engine (Codex or Claude) is available for request '$requested'."
+            exit 1
+          fi
+
+          echo "ENGINE=$engine" >> "$GITHUB_ENV"
+          echo "engine=$engine" >> "$GITHUB_OUTPUT"
+          echo "Selected daily engine: $engine"
 
       - name: Verify the trusted Mac prerequisites
         shell: bash
@@ -135,11 +198,16 @@ jobs:
           for command in curl ffmpeg file gh git jq node npm npx; do
             command -v "$command" >/dev/null
           done
-          test -x "$CODEX_BIN"
-          test -s "$BROWSER_CLIENT_MJS"
           test -s "$HOME/.linear/api_token"
-          "$CODEX_BIN" mcp list | tee "$RUNNER_TEMP/codex-mcp.txt"
-          grep -E '^node_repl[[:space:]].*enabled' "$RUNNER_TEMP/codex-mcp.txt"
+          if test "$ENGINE" = "codex"; then
+            test -x "$CODEX_BIN"
+            test -s "$BROWSER_CLIENT_MJS"
+            "$CODEX_BIN" mcp list | tee "$RUNNER_TEMP/codex-mcp.txt"
+            grep -E '^node_repl[[:space:]].*enabled' "$RUNNER_TEMP/codex-mcp.txt"
+          else
+            command -v "$CLAUDE_BIN" >/dev/null
+            command -v agent-browser >/dev/null
+          fi
           linear_response="$(curl -sS https://api.linear.app/graphql \
             -H "Authorization: $(tr -d '\r\n' < "$HOME/.linear/api_token")" \
             -H "Content-Type: application/json" \
@@ -152,6 +220,7 @@ jobs:
           node tools/build-deploy.mjs
 
       - name: Start and diagnose the local browser bridge
+        if: ${{ env.ENGINE == 'codex' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -205,7 +274,69 @@ jobs:
             echo "CODEX_TRUSTED_BROWSER_CLIENT_SHA256S=$trusted_hashes,$safe_browser_hash"
           } >> "$GITHUB_ENV"
 
+      - name: Start the local Chrome for the Claude engine
+        if: ${{ env.ENGINE == 'claude' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          CHROME_BIN="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+          test -x "$CHROME_BIN"
+          profile="$RUNNER_TEMP/claude-chrome-profile"
+          rm -rf "$profile"; mkdir -p "$profile"
+          # Real Chrome is required: Loopit games sit behind a Cloudflare challenge
+          # that blocks agent-browser's bundled Chromium. A fresh temporary profile
+          # clears the challenge and avoids conflicting with any interactive Chrome.
+          pkill -f "remote-debugging-port=$CDP_PORT" 2>/dev/null || true
+          sleep 1
+          nohup "$CHROME_BIN" \
+            --remote-debugging-port="$CDP_PORT" \
+            --user-data-dir="$profile" \
+            --no-first-run --no-default-browser-check \
+            --new-window about:blank >"$RUNNER_TEMP/claude-chrome.log" 2>&1 &
+          echo $! > "$RUNNER_TEMP/claude-chrome.pid"
+          ok=""
+          for _ in $(seq 1 20); do
+            if curl -sS --max-time 3 "http://127.0.0.1:$CDP_PORT/json/version" >/dev/null 2>&1; then
+              ok="1"; break
+            fi
+            sleep 1
+          done
+          test "$ok" = "1"
+          agent-browser connect "$CDP_PORT"
+          echo "CDP_PROFILE=$profile" >> "$GITHUB_ENV"
+
+      - name: Gate the Claude browser runtime
+        if: ${{ env.ENGINE == 'claude' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          rendered_prompt="$RUNNER_TEMP/daily-five-guides-claude-preflight.txt"
+          sed -e "s|__CDP_PORT__|$CDP_PORT|g" -e "s|__CDP_PROFILE__|$CDP_PROFILE|g" \
+            .github/prompts/daily-five-guides-claude-preflight.txt > "$rendered_prompt"
+          set +e
+          node tools/run-with-timeout.mjs \
+            "$CLAUDE_PREFLIGHT_TIMEOUT_SECONDS" \
+            "$CLAUDE_BIN" --model "$CLAUDE_MODEL" --dangerously-skip-permissions \
+            -p "$(cat "$rendered_prompt")" \
+            >"$RUNNER_TEMP/claude-preflight.log" 2>&1
+          claude_status=$?
+          set -e
+          cat "$RUNNER_TEMP/claude-preflight.log"
+          if grep -Fq "BROWSER_PREFLIGHT_OK" "$RUNNER_TEMP/claude-preflight.log"; then
+            exit 0
+          fi
+          if test "$claude_status" -eq 142; then
+            printf 'BROWSER_PREFLIGHT_FAILED: Claude browser preflight timed out after %s seconds.\n' \
+              "$CLAUDE_PREFLIGHT_TIMEOUT_SECONDS" > "$RUNNER_TEMP/claude-preflight.md"
+          else
+            printf 'BROWSER_PREFLIGHT_FAILED: Claude browser preflight did not return the success marker (status %s).\n' \
+              "$claude_status" > "$RUNNER_TEMP/claude-preflight.md"
+          fi
+          echo "::error title=Claude browser preflight failed::see claude-preflight.md" >&2
+          exit 1
+
       - name: Gate the local Codex and Chrome runtime
+        if: ${{ env.ENGINE == 'codex' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -239,7 +370,7 @@ jobs:
           fi
 
       - name: Run the evidence-backed daily Codex agent
-        if: ${{ steps.run_context.outputs.mode == 'full' }}
+        if: ${{ steps.run_context.outputs.mode == 'full' && env.ENGINE == 'codex' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -256,6 +387,21 @@ jobs:
             --add-dir "$HOME/sekai.app.dir/docs" \
             exec --output-last-message "$RUNNER_TEMP/codex-final.md" \
             - < "$rendered_prompt"
+
+      - name: Run the evidence-backed daily Claude agent
+        if: ${{ steps.run_context.outputs.mode == 'full' && env.ENGINE == 'claude' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          rendered_prompt="$RUNNER_TEMP/daily-five-guides-claude.md"
+          cp .github/prompts/daily-five-guides-claude.md "$rendered_prompt"
+          node tools/run-with-timeout.mjs \
+            "$CLAUDE_AGENT_TIMEOUT_SECONDS" \
+            "$CLAUDE_BIN" --model "$CLAUDE_MODEL" --dangerously-skip-permissions \
+            --add-dir "$DAILY_EVIDENCE_DIR" \
+            --add-dir "$HOME/sekai.app.dir/docs" \
+            -p "$(cat "$rendered_prompt")" \
+            2>&1 | tee "$RUNNER_TEMP/claude-final.md"
 
       - name: Repair the 2026-07-14 gameplay evidence
         if: ${{ env.RUN_MODE == 'repair-2026-07-14' }}
@@ -427,13 +573,20 @@ jobs:
             echo "- Date: ${DAILY_RUN_DATE:-unknown}"
             echo "- Baseline: ${BASELINE_SHA:-unknown}"
             echo "- Target: $TARGET_GUIDES verified new guides"
+            echo "- Engine: ${ENGINE:-unresolved} (requested ${RUN_ENGINE:-auto})"
             echo "- Codex: $CODEX_MODEL via $CODEX_BIN"
+            echo "- Claude: $CLAUDE_MODEL via $CLAUDE_BIN"
             for report in \
               "$RUNNER_TEMP/codex-quota.md" \
               "$RUNNER_TEMP/codex-quota.log" \
               "$RUNNER_TEMP/codex-preflight.md" \
               "$RUNNER_TEMP/codex-preflight.log" \
               "$RUNNER_TEMP/codex-final.md" \
+              "$RUNNER_TEMP/claude-quota.md" \
+              "$RUNNER_TEMP/claude-quota.log" \
+              "$RUNNER_TEMP/claude-preflight.md" \
+              "$RUNNER_TEMP/claude-preflight.log" \
+              "$RUNNER_TEMP/claude-final.md" \
               "$RUNNER_TEMP/repair-final.md" \
               "$RUNNER_TEMP/repair-agent.log" \
               "$RUNNER_TEMP/repair-verification.json" \
@@ -454,6 +607,17 @@ jobs:
             rm -f -- "$BROWSER_CLIENT_SAFE_MJS"
           fi
 
+      - name: Stop the Claude engine Chrome
+        if: ${{ always() }}
+        continue-on-error: true
+        shell: bash
+        run: |
+          agent-browser close --all >/dev/null 2>&1 || true
+          if test -f "$RUNNER_TEMP/claude-chrome.pid"; then
+            kill "$(cat "$RUNNER_TEMP/claude-chrome.pid")" 2>/dev/null || true
+          fi
+          pkill -f "remote-debugging-port=$CDP_PORT" 2>/dev/null || true
+
       - name: Upload gameplay and diagnostic evidence
         if: always()
         uses: actions/upload-artifact@v7
@@ -466,6 +630,12 @@ jobs:
             ${{ runner.temp }}/codex-preflight.md
             ${{ runner.temp }}/codex-preflight.log
             ${{ runner.temp }}/codex-final.md
+            ${{ runner.temp }}/claude-quota.md
+            ${{ runner.temp }}/claude-quota.log
+            ${{ runner.temp }}/claude-preflight.md
+            ${{ runner.temp }}/claude-preflight.log
+            ${{ runner.temp }}/claude-final.md
+            ${{ runner.temp }}/claude-chrome.log
             ${{ runner.temp }}/repair-final.md
             ${{ runner.temp }}/repair-agent.log
             ${{ runner.temp }}/repair-verification.json
