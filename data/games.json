@@ -9608,5 +9608,544 @@
     "coverageNotes": [
       "This is the only dynamic guide in the run; the evidence stays honest by keeping the motion clip and the key frames together."
     ]
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-sipscapes",
+    "title": "Sipscapes",
+    "genre": "Drink recipe game",
+    "difficulty": "Enter your name and birthday to unlock a personalized mocktail and cocktail recipe browser.",
+    "searchIntent": "Sipscapes Loopit guide, drink recipe game, mocktail cocktail browser, how to play, Mojito recipe",
+    "sourceUrl": "https://share.loopit.me/game/2828c6b5-1b97-4855-9571-9a798cb0a70d",
+    "creator": "RainbowPuppy",
+    "creatorSlug": "rainbowpuppy",
+    "stats": {
+      "views": "790",
+      "likes": "13",
+      "comments": "80",
+      "remixes": "0"
+    },
+    "summary": "Sipscapes is a Loopit drink recipe game by RainbowPuppy. Browser gameplay on July 25, 2026 confirmed: name and birthday entry, main drink category screen with Mocktails tab, Mojito selection, and a full Mojito recipe displayed after tapping Make Drink.",
+    "quickAnswer": "Enter your name and birthday on the intro screen, tap Let's Go, select a drink category such as Mocktails, pick a drink like Mojito, and tap Make Drink to see the full recipe.",
+    "basics": [
+      "The game opens with a name input and a birthday date picker.",
+      "After filling in both fields, the Let's Go button activates.",
+      "Tapping Let's Go moves to the main drink browser.",
+      "The main screen has category tabs — Mocktails was confirmed during gameplay.",
+      "Selecting a drink opens its recipe card with a Make Drink button."
+    ],
+    "controls": [
+      "Tap the name field and type your name.",
+      "Tap the birthday field to open the date picker and set your birthday.",
+      "Tap Let's Go once both fields are complete.",
+      "Tap a category tab (e.g., Mocktails) to browse that type of drink.",
+      "Tap a drink name to open its recipe card.",
+      "Tap Make Drink to reveal the full step-by-step recipe."
+    ],
+    "strategy": [
+      "Both the name and birthday fields must be filled before Let's Go becomes active.",
+      "Explore all category tabs — additional categories beyond Mocktails may be present.",
+      "Scroll within a category if not all drinks are visible at first.",
+      "The full recipe including ingredients and steps appears only after tapping Make Drink."
+    ],
+    "mistakes": [
+      "Leaving the birthday field empty — Let's Go stays inactive without it.",
+      "Assuming only one drink category exists; Mocktails was confirmed but other tabs may be available.",
+      "Not tapping Make Drink — the full recipe is hidden until that step."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-sipscapes/01-game-loaded.png",
+        "alt": "Sipscapes game loaded in browser with the intro title and name entry field visible.",
+        "caption": "The game loads in the browser with a name prompt."
+      },
+      {
+        "src": "/assets/loopit-sipscapes/02-game-start.png",
+        "alt": "Sipscapes name and birthday entry screen with the Let's Go button.",
+        "caption": "Enter your name and birthday, then tap Let's Go."
+      },
+      {
+        "src": "/assets/loopit-sipscapes/03-drink-selection.png",
+        "alt": "Sipscapes main drink browser with category tabs and a list of available drinks.",
+        "caption": "The main screen shows drink categories; Mocktails was confirmed."
+      },
+      {
+        "src": "/assets/loopit-sipscapes/04-mojito-selected.png",
+        "alt": "Sipscapes Mojito selected in the Mocktails category list.",
+        "caption": "Tapping Mojito in the Mocktails list opens its recipe card."
+      },
+      {
+        "src": "/assets/loopit-sipscapes/05-drink-recipe.png",
+        "alt": "Sipscapes full Mojito recipe displayed after tapping Make Drink.",
+        "caption": "The Make Drink button reveals the complete recipe."
+      }
+    ],
+    "faq": [
+      [
+        "Do I need a Loopit account to play?",
+        "Gameplay ran in a browser without a visible login screen. The share page may behave differently inside the Loopit app."
+      ],
+      [
+        "What drinks are available?",
+        "Mocktails including Mojito were confirmed. Other categories may appear on the main screen."
+      ],
+      [
+        "Can I restart with a different name or birthday?",
+        "Refreshing the page or reopening the share link should restart the intro sequence."
+      ]
+    ],
+    "creatorContext": [
+      "Creator display name: RainbowPuppy (with emoji suffix); slug normalized as rainbowpuppy.",
+      "Game description: 'Sipscapes new update! Thank you guys for really loving my game. Follow me to see more of my games like these such as recipe generator. Thank you! #cooking #drinks #fun #mustplay #game'",
+      "Source-page engagement on July 25, 2026: 790 views, 13 likes, 80 comments, 0 remixes."
+    ],
+    "communityNotes": [
+      "Guide based on browser gameplay evidence captured July 25, 2026."
+    ],
+    "coverageStatus": "Confirmed playable in browser on July 25, 2026; name entry, birthday picker, Mocktails category, Mojito selection, and recipe result all verified.",
+    "coverageUpdated": "2026-07-25",
+    "coverageChecklist": [
+      "Share page returned HTTP 200 and the Sipscapes playable loaded in browser on July 25, 2026.",
+      "Name input field confirmed interactive; text entry captured.",
+      "Birthday date picker confirmed functional.",
+      "Let's Go button activated after both fields filled.",
+      "Main drink browser with Mocktails tab confirmed; Mojito selected and recipe revealed via Make Drink."
+    ],
+    "coverageNotes": [
+      "Other drink categories beyond Mocktails were not fully explored in this pass."
+    ],
+    "lastUpdated": "2026-07-25"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-dexters-rooms",
+    "title": "Dexter's Rooms",
+    "genre": "Room exploration",
+    "difficulty": "Navigate between rooms and find items hidden in each environment.",
+    "searchIntent": "Dexter's Rooms Loopit guide DECsta, room exploration game, how to play, items puzzle",
+    "sourceUrl": "https://share.loopit.me/game/8522e663-5ef6-46d1-957a-fd6ea32d8a24",
+    "creator": "DECsta",
+    "creatorSlug": "decsta",
+    "stats": {
+      "views": "75",
+      "likes": "4",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Dexter's Rooms is a Loopit room exploration game by DECsta. Browser gameplay on July 25, 2026 confirmed: a loaded game screen, a Swing Room environment with interactive objects, an items-found state, and navigation to the next room.",
+    "quickAnswer": "Open the game, enter the first room and interact with objects to find hidden items. Use the navigation controls to move to the next room and continue exploring.",
+    "basics": [
+      "The game loads directly into a room environment without a separate title screen.",
+      "Each room contains interactive objects and hidden items to discover.",
+      "The Swing Room was the first confirmed environment.",
+      "Finding items in a room unlocks navigation to the next room.",
+      "Multiple rooms are connected in sequence."
+    ],
+    "controls": [
+      "Tap or click on objects in the room to interact with them.",
+      "Explore the full room area to find all hidden items.",
+      "Use the next-room button or arrow to advance when all items are found.",
+      "Review your found items list to track progress."
+    ],
+    "strategy": [
+      "Tap every visible object in a room — items can be hidden behind ordinary-looking furniture or decorations.",
+      "Check corners and edges of the room view for off-center items.",
+      "The items-found indicator shows how many items remain before you can advance.",
+      "Move to the next room only after you have collected everything in the current one to avoid missing items."
+    ],
+    "mistakes": [
+      "Advancing to the next room before finding all items in the current room.",
+      "Tapping only the center of the room and missing objects near the edges.",
+      "Overlooking the items list indicator that shows remaining undiscovered items."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-dexters-rooms/01-game-loaded.png",
+        "alt": "Dexter's Rooms game loaded in browser showing the initial room environment.",
+        "caption": "The game loads directly into the first room."
+      },
+      {
+        "src": "/assets/loopit-dexters-rooms/02-swing-room.png",
+        "alt": "Dexter's Rooms Swing Room with interactive objects visible.",
+        "caption": "The Swing Room was the first confirmed environment."
+      },
+      {
+        "src": "/assets/loopit-dexters-rooms/03-items-found.png",
+        "alt": "Dexter's Rooms items-found state showing discovered objects in the room.",
+        "caption": "Finding all items in a room unlocks the path to the next room."
+      },
+      {
+        "src": "/assets/loopit-dexters-rooms/04-next-room.png",
+        "alt": "Dexter's Rooms navigation screen for moving to the next room.",
+        "caption": "Use the next-room control to advance through the room sequence."
+      }
+    ],
+    "faq": [
+      [
+        "How many rooms are there?",
+        "At least two rooms were confirmed during gameplay; the full room count is not shown on a visible map."
+      ],
+      [
+        "What happens if I miss an item?",
+        "The game appears to require all items in a room before the next-room navigation activates."
+      ],
+      [
+        "Do I need a Loopit account?",
+        "Gameplay ran in a browser without a visible login requirement."
+      ]
+    ],
+    "creatorContext": [
+      "Creator display name: DECsta; slug normalized as decsta.",
+      "Source-page engagement on July 25, 2026: 75 views, 4 likes, 0 comments, 0 remixes."
+    ],
+    "communityNotes": [
+      "Guide based on browser gameplay evidence captured July 25, 2026."
+    ],
+    "coverageStatus": "Confirmed playable in browser on July 25, 2026; Swing Room, items-found state, and next-room navigation all verified.",
+    "coverageUpdated": "2026-07-25",
+    "coverageChecklist": [
+      "Share page returned HTTP 200 and Dexter's Rooms loaded in browser on July 25, 2026.",
+      "Swing Room environment confirmed with interactive objects.",
+      "Items-found state captured after interacting with room objects.",
+      "Next-room navigation confirmed functional."
+    ],
+    "coverageNotes": [
+      "Full room count and later rooms beyond the Swing Room were not explored in this pass."
+    ],
+    "lastUpdated": "2026-07-25"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-strongest-remix-artist",
+    "title": "The Strongest Remix Artist",
+    "genre": "Music rhythm",
+    "difficulty": "Select instruments for your kit, then tap the rhythm grid to compose a beat.",
+    "searchIntent": "Strongest Remix Artist Loopit guide Solo, music rhythm game, how to play, instrument kit, rhythm grid",
+    "sourceUrl": "https://share.loopit.me/game/4eafa52a-7c27-45bd-a72d-8d7ba54d9c39",
+    "creator": "Solo",
+    "creatorSlug": "solo",
+    "stats": {
+      "views": "26.6K",
+      "likes": "749",
+      "comments": "51",
+      "remixes": "30"
+    },
+    "summary": "The Strongest Remix Artist is a Loopit music rhythm game by Solo with over 26,000 plays. Browser gameplay on July 25, 2026 confirmed: a title screen, an empty kit setup screen, instrument selection (4 instruments chosen via keyboard navigation), a Start Mixing button, and a rhythm grid for composing beats.",
+    "quickAnswer": "On the setup screen, select instruments for your kit using Tab and Enter or by tapping. Once 4 instruments are chosen, tap Start Mixing to reach the rhythm grid. Tap cells in the grid to build your beat and play it back.",
+    "basics": [
+      "The game opens with a title screen showing 'The Strongest Remix Artist'.",
+      "A setup screen follows where you configure your kit by choosing instruments.",
+      "The setup screen starts empty; instruments must be selected one at a time.",
+      "After 4 instruments are selected, the Start Mixing button becomes active.",
+      "Tapping Start Mixing opens the rhythm grid where you compose a beat."
+    ],
+    "controls": [
+      "On the setup screen, tap each instrument button to add it to your kit.",
+      "Alternatively, use Tab to move between instrument options and Enter or Space to select.",
+      "Once 4 instruments fill the kit, tap Start Mixing.",
+      "On the rhythm grid, tap cells in each instrument row to activate beat steps.",
+      "Use the playback control to hear your composition."
+    ],
+    "strategy": [
+      "Choose instruments that complement each other — a beat foundation (drums/bass) plus melodic layers works well.",
+      "On the rhythm grid, activate cells evenly across the timeline for a steady beat.",
+      "You can tap cells multiple times to toggle them on or off if you want to adjust.",
+      "Listen to the playback and refine your pattern before sharing."
+    ],
+    "mistakes": [
+      "Clicking instrument options when accessibility overlays block click events — use Tab+Enter keyboard navigation instead.",
+      "Leaving the kit with fewer than 4 instruments; Start Mixing is inactive until the kit is full.",
+      "Tapping cells in only one row; use multiple instrument rows to create a layered rhythm."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-strongest-remix-artist/01-title-screen.png",
+        "alt": "The Strongest Remix Artist title screen showing the game name.",
+        "caption": "The game opens with a title screen."
+      },
+      {
+        "src": "/assets/loopit-strongest-remix-artist/02-setup-empty.png",
+        "alt": "The Strongest Remix Artist kit setup screen before any instruments are selected.",
+        "caption": "The setup screen starts empty; select instruments to fill the kit."
+      },
+      {
+        "src": "/assets/loopit-strongest-remix-artist/03-setup-instruments.png",
+        "alt": "The Strongest Remix Artist setup screen with 4 instruments selected and Start Mixing active.",
+        "caption": "After 4 instruments are chosen, Start Mixing becomes available."
+      },
+      {
+        "src": "/assets/loopit-strongest-remix-artist/04-rhythm-grid.png",
+        "alt": "The Strongest Remix Artist rhythm grid for composing a beat with the selected instruments.",
+        "caption": "The rhythm grid lets you tap cells to build your beat."
+      }
+    ],
+    "faq": [
+      [
+        "How many instruments can I pick?",
+        "Gameplay confirmed 4 instrument slots in the kit setup screen."
+      ],
+      [
+        "What if the instrument buttons are not responding?",
+        "Accessibility overlays can block clicks. Use Tab to move between options and Enter to select."
+      ],
+      [
+        "Can I change instruments after starting?",
+        "The kit setup screen appears before mixing; restart from the share link to reconfigure."
+      ],
+      [
+        "Do I need a Loopit account?",
+        "Gameplay ran in a browser without a login screen."
+      ]
+    ],
+    "creatorContext": [
+      "Creator display name: Solo; slug normalized as solo.",
+      "Game description: 'You are the strongest remix artist!！'",
+      "Source-page engagement on July 25, 2026: 26,565 views, 749 likes, 51 comments, 30 remixes."
+    ],
+    "communityNotes": [
+      "Guide based on browser gameplay evidence captured July 25, 2026.",
+      "Tab+Enter keyboard navigation was required to select instruments due to click overlay conflicts."
+    ],
+    "coverageStatus": "Confirmed playable in browser on July 25, 2026; title screen, kit setup, 4-instrument selection, Start Mixing, and rhythm grid all verified.",
+    "coverageUpdated": "2026-07-25",
+    "coverageChecklist": [
+      "Share page returned HTTP 200 and The Strongest Remix Artist loaded in browser on July 25, 2026.",
+      "Title screen captured.",
+      "Kit setup screen confirmed; 4 instruments selected via Tab+Enter navigation.",
+      "Start Mixing button activated after 4-instrument selection.",
+      "Rhythm grid displayed and cells confirmed interactive."
+    ],
+    "coverageNotes": [
+      "Full playback and sharing flows were not captured in this pass."
+    ],
+    "lastUpdated": "2026-07-25"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-retros95",
+    "title": "Windows 95 Simulator (Retro95)",
+    "genre": "Nostalgia simulator",
+    "difficulty": "Explore a simulated Windows 95 desktop, open the Start menu, and play classic mini-games.",
+    "searchIntent": "Retro95 Loopit guide drr dre, Windows 95 simulator game, start menu, Snake game, how to play",
+    "sourceUrl": "https://share.loopit.me/game/9ea30774-b7aa-4a05-a584-e9b270b44ba4",
+    "creator": "drr dre",
+    "creatorSlug": "drr-dre",
+    "stats": {
+      "views": "299",
+      "likes": "7",
+      "comments": "0",
+      "remixes": "0"
+    },
+    "summary": "Windows 95 Simulator (Retro95) is a Loopit nostalgia game by drr dre that recreates the Windows 95 experience in-browser. Gameplay on July 25, 2026 confirmed: a Windows 95-style desktop with icons, a working Start menu, a Games submenu listing classic games, and a playable Snake game.",
+    "quickAnswer": "Click the Start button on the desktop taskbar to open the Start menu. Navigate to Games in the submenu, then open Snake (or another available game) to start playing.",
+    "basics": [
+      "The game opens to a Windows 95-style desktop with icons and a taskbar at the bottom.",
+      "The Start button on the taskbar opens the classic Start menu.",
+      "The Start menu has submenus including Programs and Games.",
+      "The Games submenu lists classic mini-games; Snake was confirmed.",
+      "Opening a game from the menu launches it in a window on the simulated desktop."
+    ],
+    "controls": [
+      "Click the Start button (bottom-left of the taskbar) to open the Start menu.",
+      "Hover over Programs, then Games to reveal the games list.",
+      "Click a game name such as Snake to launch it.",
+      "In Snake, use the arrow keys or on-screen controls to steer the snake.",
+      "Eat food pellets to grow; avoid walls and your own tail."
+    ],
+    "strategy": [
+      "Explore all desktop icons first — they may open additional applications or mini-games.",
+      "In Snake, hug the edges of the play area to give yourself more space as the snake grows.",
+      "Move deliberately rather than fast; quick turns in a long snake cause self-collisions.",
+      "Check all submenu entries in the Start menu for additional programs beyond Games."
+    ],
+    "mistakes": [
+      "Double-clicking desktop icons too quickly — some items may require a single click to activate.",
+      "Steering into your own tail in Snake after growing long.",
+      "Ignoring the Start menu submenus and missing the Games section."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-retros95/01-desktop.png",
+        "alt": "Retro95 Windows 95-style desktop with icons and taskbar.",
+        "caption": "The game opens to a Windows 95-style desktop."
+      },
+      {
+        "src": "/assets/loopit-retros95/02-start-menu.png",
+        "alt": "Retro95 Start menu open showing Programs and other entries.",
+        "caption": "Click Start to open the classic Start menu."
+      },
+      {
+        "src": "/assets/loopit-retros95/03-games-submenu.png",
+        "alt": "Retro95 Games submenu listing available classic mini-games.",
+        "caption": "The Games submenu lists playable mini-games including Snake."
+      },
+      {
+        "src": "/assets/loopit-retros95/04-snake-game.png",
+        "alt": "Retro95 Snake game running in a simulated window on the desktop.",
+        "caption": "Snake opens in a window on the simulated desktop."
+      }
+    ],
+    "faq": [
+      [
+        "What games are available in the simulator?",
+        "Snake was confirmed via the Games submenu. Additional games may appear depending on the current version."
+      ],
+      [
+        "Does it work on mobile?",
+        "The game is hosted as a Loopit web playable; touch taps may substitute for mouse clicks on the menus."
+      ],
+      [
+        "Can I open multiple windows at once?",
+        "This was not tested in the July 25 gameplay pass; desktop icon behavior on simultaneous windows is unconfirmed."
+      ],
+      [
+        "Do I need a Loopit account?",
+        "Gameplay ran in a browser without a visible login requirement."
+      ]
+    ],
+    "creatorContext": [
+      "Creator display name: drr dre; slug normalized as drr-dre.",
+      "Game description: 'Windows 95 (Retro95)'.",
+      "Source-page engagement on July 25, 2026: 299 views, 7 likes, 0 comments, 0 remixes."
+    ],
+    "communityNotes": [
+      "Guide based on browser gameplay evidence captured July 25, 2026."
+    ],
+    "coverageStatus": "Confirmed playable in browser on July 25, 2026; desktop, Start menu, Games submenu, and Snake game all verified.",
+    "coverageUpdated": "2026-07-25",
+    "coverageChecklist": [
+      "Share page returned HTTP 200 and the Windows 95 Simulator loaded in browser on July 25, 2026.",
+      "Desktop with icons and taskbar confirmed.",
+      "Start menu opened and Programs/Games submenu confirmed.",
+      "Snake game launched from the Games submenu and confirmed playable."
+    ],
+    "coverageNotes": [
+      "Other applications in the Start menu beyond Games were not fully explored in this pass."
+    ],
+    "lastUpdated": "2026-07-25"
+  },
+  {
+    "platforms": [
+      "Loopit app",
+      "Mobile web playable"
+    ],
+    "sourcePlatform": "Loopit",
+    "sourcePlatformSlug": "loopit",
+    "slug": "loopit-escape-from-einstein",
+    "title": "Escape from Einstein",
+    "genre": "Stealth escape",
+    "difficulty": "Move your character during the day to escape Einstein's island before being caught at night.",
+    "searchIntent": "Escape from Einstein Loopit guide, stealth escape game, how to play, avoid being caught, побег с острова Эйнштейна",
+    "sourceUrl": "https://share.loopit.me/game/1b9e753b-2ef6-44bc-b1ad-e4598f598ce4",
+    "creator": "Хз",
+    "creatorSlug": "khz",
+    "stats": {
+      "views": "117",
+      "likes": "4",
+      "comments": "0",
+      "remixes": "1"
+    },
+    "summary": "Escape from Einstein is a Loopit stealth escape game. Browser gameplay on July 25, 2026 confirmed: a title screen (побег с острова Эйнштейна — Escape from Einstein's Island), daytime gameplay with directional movement controls, and a caught-at-night failure state.",
+    "quickAnswer": "Use the arrow or directional buttons to move your character during the day phase. Reach the escape point before nightfall to avoid being caught. Getting caught at night results in a failure screen.",
+    "basics": [
+      "The title screen shows the game name in Russian (побег с острова Эйнштейна) and English.",
+      "Gameplay has two phases: daytime (move freely) and nighttime (danger zone).",
+      "During the day, use directional controls to navigate your character toward the exit.",
+      "At night, Einstein or a guard patrols and can catch you.",
+      "Being caught at night ends the run with a failure state."
+    ],
+    "controls": [
+      "Use the on-screen arrow buttons or keyboard arrow keys to move the character.",
+      "Move toward the escape point during the day phase.",
+      "Avoid open areas at night; stay hidden or reach the exit before darkness falls.",
+      "If caught, look for a restart or retry button on the failure screen."
+    ],
+    "strategy": [
+      "Plan your route before moving — the day phase has a time limit before night begins.",
+      "Move efficiently in a direct path rather than exploring; every step counts against the timer.",
+      "Use visual coordinate mouse clicks on the arrow buttons if touch input is unresponsive inside the iframe.",
+      "The failure state shows you were caught; study where you were to improve the next run."
+    ],
+    "mistakes": [
+      "Pausing too long during the day — night falls on a timer regardless of movement.",
+      "Moving into open sight lines at night where the patrol can see you.",
+      "Not finding the restart button after the failure state; it may require scrolling or tapping the screen."
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/loopit-escape-from-einstein/01-title-screen.png",
+        "alt": "Escape from Einstein title screen showing the game name in Russian and English.",
+        "caption": "The title screen shows the game name: Escape from Einstein's Island."
+      },
+      {
+        "src": "/assets/loopit-escape-from-einstein/02-gameplay-day.png",
+        "alt": "Escape from Einstein daytime gameplay with the character and directional controls visible.",
+        "caption": "During the day phase, use the arrow controls to navigate toward the escape point."
+      },
+      {
+        "src": "/assets/loopit-escape-from-einstein/03-caught-night.png",
+        "alt": "Escape from Einstein failure screen showing the character caught at night.",
+        "caption": "Being caught at night ends the run."
+      }
+    ],
+    "faq": [
+      [
+        "How long is the day phase?",
+        "The exact timer was not captured; gameplay showed the transition to night occurring during normal movement."
+      ],
+      [
+        "What happens when you are caught?",
+        "A failure screen appears. Use the restart or retry option to try again."
+      ],
+      [
+        "Is the game in Russian or English?",
+        "The title uses Russian text (побег с острова Эйнштейна); UI elements during gameplay may mix both languages."
+      ],
+      [
+        "Do I need a Loopit account?",
+        "Gameplay ran in a browser without a visible login screen."
+      ]
+    ],
+    "creatorContext": [
+      "Creator display name: Хз (Russian colloquial for 'who knows' or 'idk'); slug normalized as khz.",
+      "Game description: 'побег с острова Эйнштейна' (Russian: Escape from Einstein's Island).",
+      "Source-page engagement on July 25, 2026: 117 views, 4 likes, 0 comments, 1 remix."
+    ],
+    "communityNotes": [
+      "Guide based on browser gameplay evidence captured July 25, 2026.",
+      "Directional arrow buttons inside the cross-origin iframe required visual-coordinate mouse clicks to activate."
+    ],
+    "coverageStatus": "Confirmed playable in browser on July 25, 2026; title screen, daytime movement, and caught-at-night failure state all verified.",
+    "coverageUpdated": "2026-07-25",
+    "coverageChecklist": [
+      "Share page returned HTTP 200 and Escape from Einstein loaded in browser on July 25, 2026.",
+      "Title screen in Russian (побег с острова Эйнштейна) confirmed.",
+      "Daytime gameplay with directional controls captured.",
+      "Night failure state (caught) captured in screenshot."
+    ],
+    "coverageNotes": [
+      "Successful escape completion was not achieved; only the failure state was verified in this pass."
+    ],
+    "lastUpdated": "2026-07-25"
   }
 ]

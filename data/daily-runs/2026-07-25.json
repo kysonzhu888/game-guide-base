@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-07-25",
+  "mode": "new-guides",
+  "targetCount": 5,
+  "baseline": {
+    "ref": "df40bec255fc9cdca9cc68ce2a12d12eb4762096",
+    "gameCount": 103
+  },
+  "final": {
+    "gameCount": 108
+  },
+  "linear": {
+    "parentIssue": "UCH-41",
+    "dailyIssue": "UCH-220"
+  },
+  "guides": [
+    {
+      "slug": "loopit-sipscapes",
+      "sourceUrl": "https://share.loopit.me/game/2828c6b5-1b97-4855-9571-9a798cb0a70d",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "Name and birthday entry confirmed; Let's Go button activated after both fields filled.",
+        "Main drink browser opened with Mocktails category tab confirmed.",
+        "Mojito selected from Mocktails list; Make Drink tapped; full Mojito recipe displayed."
+      ],
+      "pending": [
+        "Other drink categories beyond Mocktails were not fully explored.",
+        "Cocktail or smoothie tabs, if present, remain unverified."
+      ],
+      "evidence": [
+        {
+          "type": "screenshot",
+          "path": "sipscapes/01-game-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "path": "sipscapes/17-game-start.png"
+        },
+        {
+          "type": "screenshot",
+          "path": "sipscapes/28-main-drink-screen.png"
+        },
+        {
+          "type": "screenshot",
+          "path": "sipscapes/33-mojito-selected.png"
+        },
+        {
+          "type": "screenshot",
+          "path": "sipscapes/35-drink-recipe.png"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-dexters-rooms",
+      "sourceUrl": "https://share.loopit.me/game/8522e663-5ef6-46d1-957a-fd6ea32d8a24",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "Game loaded in browser showing the first room environment.",
+        "Swing Room confirmed as first environment with interactive objects.",
+        "Items-found state reached after interacting with room objects.",
+        "Next-room navigation confirmed functional."
+      ],
+      "pending": [
+        "Full room count and rooms beyond the Swing Room remain unverified.",
+        "Final completion state or ending not reached in this pass."
+      ],
+      "evidence": [
+        {
+          "type": "screenshot",
+          "path": "new-game-decsta/02-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "path": "new-game-decsta/03-swing-room.png"
+        },
+        {
+          "type": "screenshot",
+          "path": "new-game-decsta/04-items-found.png"
+        },
+        {
+          "type": "screenshot",
+          "path": "new-game-decsta/05-next-room.png"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-strongest-remix-artist",
+      "sourceUrl": "https://share.loopit.me/game/4eafa52a-7c27-45bd-a72d-8d7ba54d9c39",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "Title screen displayed: The Strongest Remix Artist.",
+        "Kit setup screen confirmed empty at start; 4 instruments selected via Tab+Enter keyboard navigation.",
+        "Start Mixing button activated after 4-instrument selection.",
+        "Rhythm grid displayed with instrument rows and tappable beat cells confirmed."
+      ],
+      "pending": [
+        "Full playback and track sharing flows not captured in this pass."
+      ],
+      "evidence": [
+        {
+          "type": "screenshot",
+          "path": "strongest-remix-artist/01-title-screen.png"
+        },
+        {
+          "type": "screenshot",
+          "path": "strongest-remix-artist/02-setup-kit-empty.png"
+        },
+        {
+          "type": "screenshot",
+          "path": "strongest-remix-artist/03-setup-4-instruments.png"
+        },
+        {
+          "type": "screenshot",
+          "path": "strongest-remix-artist/04-rhythm-grid.png"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-retros95",
+      "sourceUrl": "https://share.loopit.me/game/9ea30774-b7aa-4a05-a584-e9b270b44ba4",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "Windows 95-style desktop with icons and taskbar confirmed.",
+        "Start menu opened showing Programs and other submenu entries.",
+        "Games submenu confirmed listing classic mini-games.",
+        "Snake game launched from Games submenu and confirmed playable."
+      ],
+      "pending": [
+        "Other applications and desktop icons beyond the Games submenu were not fully explored."
+      ],
+      "evidence": [
+        {
+          "type": "screenshot",
+          "path": "retros95/01-desktop.png"
+        },
+        {
+          "type": "screenshot",
+          "path": "retros95/02-start-menu.png"
+        },
+        {
+          "type": "screenshot",
+          "path": "retros95/03-games-submenu.png"
+        },
+        {
+          "type": "screenshot",
+          "path": "retros95/04-snake-game.png"
+        }
+      ]
+    },
+    {
+      "slug": "loopit-escape-from-einstein",
+      "sourceUrl": "https://share.loopit.me/game/1b9e753b-2ef6-44bc-b1ad-e4598f598ce4",
+      "status": "verified",
+      "dynamic": false,
+      "outcomes": [
+        "Title screen confirmed: побег с острова Эйнштейна (Escape from Einstein's Island).",
+        "Daytime gameplay confirmed with character and directional movement controls visible.",
+        "Night failure state confirmed: character caught at night triggers failure screen."
+      ],
+      "pending": [
+        "Successful escape completion was not achieved in this pass.",
+        "Full route and escape mechanics beyond the failure state remain pending."
+      ],
+      "evidence": [
+        {
+          "type": "screenshot",
+          "path": "escape-from-einstein/01-title-screen.png"
+        },
+        {
+          "type": "screenshot",
+          "path": "escape-from-einstein/02-gameplay-day.png"
+        },
+        {
+          "type": "screenshot",
+          "path": "escape-from-einstein/03-caught-night.png"
+        }
+      ]
+    }
+  ],
+  "rejectedCandidates": [
+    {
+      "id": "ca8d8ecb-50a3-4038-8e65-9edd8dd31cf3",
+      "reason": "Canvas overlay blocked all click interactions; no mouse events reached game content."
+    },
+    {
+      "id": "b4b3f4f1-7a6a-4b33-b1cd-6d0cdfc5d3c5",
+      "reason": "Drag mechanic required cross-origin iframe mouse events which cannot be reliably delivered."
+    }
+  ]
+}
