@@ -1853,5 +1853,145 @@
     "width": 1200,
     "format": "jpeg",
     "quality": 82
+  },
+  "/assets/loopit-sipscapes/01-game-loaded.png": {
+    "r2Key": "games/loopit/loopit-sipscapes/screenshots/01-game-loaded-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-sipscapes/screenshots/01-game-loaded-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-sipscapes/02-game-start.png": {
+    "r2Key": "games/loopit/loopit-sipscapes/screenshots/02-game-start-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-sipscapes/screenshots/02-game-start-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-sipscapes/03-drink-selection.png": {
+    "r2Key": "games/loopit/loopit-sipscapes/screenshots/03-drink-selection-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-sipscapes/screenshots/03-drink-selection-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-sipscapes/04-mojito-selected.png": {
+    "r2Key": "games/loopit/loopit-sipscapes/screenshots/04-mojito-selected-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-sipscapes/screenshots/04-mojito-selected-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-sipscapes/05-drink-recipe.png": {
+    "r2Key": "games/loopit/loopit-sipscapes/screenshots/05-drink-recipe-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-sipscapes/screenshots/05-drink-recipe-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-dexters-rooms/01-game-loaded.png": {
+    "r2Key": "games/loopit/loopit-dexters-rooms/screenshots/01-game-loaded-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-dexters-rooms/screenshots/01-game-loaded-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-dexters-rooms/02-swing-room.png": {
+    "r2Key": "games/loopit/loopit-dexters-rooms/screenshots/02-swing-room-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-dexters-rooms/screenshots/02-swing-room-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-dexters-rooms/03-items-found.png": {
+    "r2Key": "games/loopit/loopit-dexters-rooms/screenshots/03-items-found-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-dexters-rooms/screenshots/03-items-found-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-dexters-rooms/04-next-room.png": {
+    "r2Key": "games/loopit/loopit-dexters-rooms/screenshots/04-next-room-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-dexters-rooms/screenshots/04-next-room-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-strongest-remix-artist/01-title-screen.png": {
+    "r2Key": "games/loopit/loopit-strongest-remix-artist/screenshots/01-title-screen-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-strongest-remix-artist/screenshots/01-title-screen-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-strongest-remix-artist/02-setup-empty.png": {
+    "r2Key": "games/loopit/loopit-strongest-remix-artist/screenshots/02-setup-empty-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-strongest-remix-artist/screenshots/02-setup-empty-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-strongest-remix-artist/03-setup-instruments.png": {
+    "r2Key": "games/loopit/loopit-strongest-remix-artist/screenshots/03-setup-instruments-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-strongest-remix-artist/screenshots/03-setup-instruments-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-strongest-remix-artist/04-rhythm-grid.png": {
+    "r2Key": "games/loopit/loopit-strongest-remix-artist/screenshots/04-rhythm-grid-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-strongest-remix-artist/screenshots/04-rhythm-grid-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-retros95/01-desktop.png": {
+    "r2Key": "games/loopit/loopit-retros95/screenshots/01-desktop-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-retros95/screenshots/01-desktop-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-retros95/02-start-menu.png": {
+    "r2Key": "games/loopit/loopit-retros95/screenshots/02-start-menu-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-retros95/screenshots/02-start-menu-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-retros95/03-games-submenu.png": {
+    "r2Key": "games/loopit/loopit-retros95/screenshots/03-games-submenu-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-retros95/screenshots/03-games-submenu-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-retros95/04-snake-game.png": {
+    "r2Key": "games/loopit/loopit-retros95/screenshots/04-snake-game-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-retros95/screenshots/04-snake-game-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-escape-from-einstein/01-title-screen.png": {
+    "r2Key": "games/loopit/loopit-escape-from-einstein/screenshots/01-title-screen-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-escape-from-einstein/screenshots/01-title-screen-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-escape-from-einstein/02-gameplay-day.png": {
+    "r2Key": "games/loopit/loopit-escape-from-einstein/screenshots/02-gameplay-day-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-escape-from-einstein/screenshots/02-gameplay-day-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
+  },
+  "/assets/loopit-escape-from-einstein/03-caught-night.png": {
+    "r2Key": "games/loopit/loopit-escape-from-einstein/screenshots/03-caught-night-1200w.jpg",
+    "localOutput": ".media/games/loopit/loopit-escape-from-einstein/screenshots/03-caught-night-1200w.jpg",
+    "width": 1200,
+    "format": "jpeg",
+    "quality": 82
   }
 }

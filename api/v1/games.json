@@ -1,13 +1,13 @@
 {
   "schemaUrl": "https://game-guide-base.pages.dev/api/v1/games.schema.json",
   "schemaVersion": "1.0",
-  "dataUpdatedAt": "2026-07-22",
+  "dataUpdatedAt": "2026-07-25",
   "site": {
     "name": "Game Guide Base",
     "url": "https://gameguidebase.com/",
     "developerDocsUrl": "https://gameguidebase.com/developers/"
   },
-  "count": 103,
+  "count": 108,
   "games": [
     {
       "slug": "loopit-android-9-0-p",
@@ -325,6 +325,21 @@
       "updatedAt": "2026-07-02"
     },
     {
+      "slug": "loopit-dexters-rooms",
+      "title": "Dexter's Rooms",
+      "genre": "Room exploration",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "DECsta",
+      "guideUrl": "https://gameguidebase.com/games/loopit-dexters-rooms/",
+      "sourceUrl": "https://share.loopit.me/game/8522e663-5ef6-46d1-957a-fd6ea32d8a24",
+      "access": "free",
+      "updatedAt": "2026-07-25"
+    },
+    {
       "slug": "loopit-dont-look-back",
       "title": "Don't Look Back",
       "genre": "Escape chase",
@@ -413,6 +428,21 @@
       "sourceUrl": "https://share.loopit.me/game/8638bc10-ccff-4517-9105-1eb635ea83a5",
       "access": "free",
       "updatedAt": "2026-07-16"
+    },
+    {
+      "slug": "loopit-escape-from-einstein",
+      "title": "Escape from Einstein",
+      "genre": "Stealth escape",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Хз",
+      "guideUrl": "https://gameguidebase.com/games/loopit-escape-from-einstein/",
+      "sourceUrl": "https://share.loopit.me/game/1b9e753b-2ef6-44bc-b1ad-e4598f598ce4",
+      "access": "free",
+      "updatedAt": "2026-07-25"
     },
     {
       "slug": "loopit-ethereal-gesture-maze",
@@ -1030,6 +1060,21 @@
       "updatedAt": "2026-07-13"
     },
     {
+      "slug": "loopit-retros95",
+      "title": "Windows 95 Simulator (Retro95)",
+      "genre": "Nostalgia simulator",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "drr dre",
+      "guideUrl": "https://gameguidebase.com/games/loopit-retros95/",
+      "sourceUrl": "https://share.loopit.me/game/9ea30774-b7aa-4a05-a584-e9b270b44ba4",
+      "access": "free",
+      "updatedAt": "2026-07-25"
+    },
+    {
       "slug": "loopit-rng-era-2",
       "title": "LOOPIT RNG",
       "genre": "Random roll simulator",
@@ -1103,6 +1148,21 @@
       "sourceUrl": "https://share.loopit.me/game/a7045ea2-194c-410e-907e-ae937be19793",
       "access": "free",
       "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-sipscapes",
+      "title": "Sipscapes",
+      "genre": "Drink recipe game",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "RainbowPuppy",
+      "guideUrl": "https://gameguidebase.com/games/loopit-sipscapes/",
+      "sourceUrl": "https://share.loopit.me/game/2828c6b5-1b97-4855-9571-9a798cb0a70d",
+      "access": "free",
+      "updatedAt": "2026-07-25"
     },
     {
       "slug": "loopit-snake-evolution-feed",
@@ -1268,6 +1328,21 @@
       "sourceUrl": "https://share.loopit.me/game/8abd54a8-4e91-4e91-9b3b-4f5f58a6667f",
       "access": "free",
       "updatedAt": "2026-07-02"
+    },
+    {
+      "slug": "loopit-strongest-remix-artist",
+      "title": "The Strongest Remix Artist",
+      "genre": "Music rhythm",
+      "platforms": [
+        "Loopit app",
+        "Mobile web playable"
+      ],
+      "sourcePlatform": "Loopit",
+      "creator": "Solo",
+      "guideUrl": "https://gameguidebase.com/games/loopit-strongest-remix-artist/",
+      "sourceUrl": "https://share.loopit.me/game/4eafa52a-7c27-45bd-a72d-8d7ba54d9c39",
+      "access": "free",
+      "updatedAt": "2026-07-25"
     },
     {
       "slug": "loopit-surgery-incision",
