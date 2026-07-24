@@ -112,6 +112,30 @@ jobs:
           git config user.name "game-guide-automation"
           git config user.email "kysonzhu888@gmail.com"
 
+      - name: Prepare the login keychain for the Claude engine
+        if: ${{ env.RUN_ENGINE != 'codex' }}
+        shell: bash
+        run: |
+          set -uo pipefail
+          # The Claude subscription credential lives in the login keychain, which a
+          # launchd runner session may not carry in its search list. Restore it (no
+          # password needed while the user session keeps the keychain unlocked) so the
+          # claude CLI can authenticate. Never print the secret itself.
+          login_kc="$HOME/Library/Keychains/login.keychain-db"
+          echo "search list before:"; security list-keychains || true
+          if test -f "$login_kc"; then
+            security list-keychains -d user -s "$login_kc" "/Library/Keychains/System.keychain" || true
+            echo "search list after:"; security list-keychains || true
+            echo "lock state:"; security show-keychain-info "$login_kc" 2>&1 || true
+            if security find-generic-password -s "Claude Code-credentials" -w >/dev/null 2>&1; then
+              echo "keychain: Claude Code-credentials READABLE"
+            else
+              echo "keychain: Claude Code-credentials NOT readable in this session"
+            fi
+          else
+            echo "login keychain not found at $login_kc"
+          fi
+
       - name: Select the daily engine (Codex quota gate, Claude fallback)
         id: engine
         shell: bash
