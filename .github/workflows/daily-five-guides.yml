@@ -215,7 +215,7 @@ jobs:
           set +e
           "$CODEX_SIGNED_NODE_BIN" tools/run-with-timeout.mjs \
             "$CODEX_PREFLIGHT_TIMEOUT_SECONDS" \
-            "$CODEX_BIN" -c 'model_reasoning_effort="xhigh"' \
+            "$CODEX_BIN" -c 'model_reasoning_effort="high"' \
             -c "mcp_servers.node_repl.env.NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S=\"$CODEX_TRUSTED_BROWSER_CLIENT_SHA256S\"" \
             -a never -s read-only -m "$CODEX_MODEL" -C "$GITHUB_WORKSPACE" \
             exec --ephemeral --output-last-message "$RUNNER_TEMP/codex-preflight.md" \
@@ -248,7 +248,7 @@ jobs:
             .github/prompts/daily-five-guides.md > "$rendered_prompt"
           "$CODEX_SIGNED_NODE_BIN" tools/run-with-timeout.mjs \
             "$CODEX_AGENT_TIMEOUT_SECONDS" \
-            "$CODEX_BIN" -c 'model_reasoning_effort="xhigh"' \
+            "$CODEX_BIN" -c 'model_reasoning_effort="high"' \
             -c "mcp_servers.node_repl.env.NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S=\"$CODEX_TRUSTED_BROWSER_CLIENT_SHA256S\"" \
             -a never -s danger-full-access --search -m "$CODEX_MODEL" \
             -C "$GITHUB_WORKSPACE" \
@@ -282,7 +282,7 @@ jobs:
             .github/prompts/repair-2026-07-14-evidence.md > "$rendered_prompt"
           "$CODEX_SIGNED_NODE_BIN" tools/run-with-timeout.mjs \
             "$CODEX_REPAIR_TIMEOUT_SECONDS" \
-            "$CODEX_BIN" -c 'model_reasoning_effort="xhigh"' \
+            "$CODEX_BIN" -c 'model_reasoning_effort="high"' \
             -c "mcp_servers.node_repl.env.NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S=\"$CODEX_TRUSTED_BROWSER_CLIENT_SHA256S\"" \
             -a never -s danger-full-access -m "$CODEX_MODEL" \
             -C "$GITHUB_WORKSPACE" \
