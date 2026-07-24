@@ -105,7 +105,7 @@ jobs:
           printf 'Reply exactly CODEX_QUOTA_OK and do nothing else.\n' \
             | /usr/bin/perl -e 'my $seconds = shift @ARGV; alarm $seconds; exec @ARGV or die $!;' \
               "$CODEX_QUOTA_TIMEOUT_SECONDS" \
-              "$CODEX_BIN" -c 'model_reasoning_effort="xhigh"' \
+              "$CODEX_BIN" -c 'model_reasoning_effort="low"' \
               -a never -s read-only -m "$CODEX_MODEL" -C "$GITHUB_WORKSPACE" \
               exec --ephemeral --output-last-message "$RUNNER_TEMP/codex-quota.md" - \
               >"$RUNNER_TEMP/codex-quota.log" 2>&1
