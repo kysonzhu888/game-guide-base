@@ -182,17 +182,21 @@ node tools/verify-daily-guides.mjs \
 ## 5. Git, PR, and Linear handoff
 
 Commit only this run's guide data, published screenshots, media manifest, generated pages, and
-tracked daily manifest. Run the verifier against that commit. Push the dated branch, open a real PR
-to `main`, verify its URL/repo/base/head and mergeability with `gh`, then merge it without force
-push. Verify `origin/main` contains the merge. Put the actual PR URL, merge commit, five guide URLs,
+tracked daily manifest. Run the verifier against that commit. Push the dated branch and open a real
+PR to `main`, then verify its URL/repo/base/head and mergeability with `gh`. **Do not merge the PR
+and do not delete its branch.** Leave the PR open: the workflow's own "Verify the generated daily
+pull request" step reads `origin/<daily-branch>` and asserts exactly one open PR, and the human
+review + merge is an intentional quality gate before anything reaches production. Merging here breaks
+that verify step (the branch disappears) and bypasses review. Put the actual PR URL, five guide URLs,
 source URLs, outcomes, pending cases, and screenshot evidence into the existing Linear rolling
 comment, and note that the Claude fallback engine produced this run. Upload screenshots to Linear
 when supported, then move the daily child issue to In Review. Never mark it Done.
 
-Do not deploy Cloudflare Pages in this phase. The deterministic workflow verifies the merge, builds
-the allowlisted package, deploys Pages, and performs public HTTP checks after this process returns.
-If fewer than five verified new guides are available, do not merge a partial run; keep the daily
-issue In Progress, document blockers and evidence, and report the shortfall honestly.
+Do not merge and do not deploy Cloudflare Pages in this phase. After you leave the PR open, the
+deterministic workflow verifies it; the user merges it; a later resume run builds the allowlisted
+package, deploys Pages, and performs public HTTP checks. If fewer than five verified new guides are
+available, do not open a partial-run PR; keep the daily issue In Progress, document blockers and
+evidence, and report the shortfall honestly.
 
 On an unrecoverable failure, print one line beginning `CLAUDE_AGENT_FAILED:` with the factual reason
 so the workflow's failure reporter can pick it up.
